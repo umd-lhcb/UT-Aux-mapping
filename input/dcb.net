@@ -1,0 +1,8588 @@
+{COMPONENT PROTEL.PCB
+  {ENVIRONMENT PROTEL.SCH}
+  {DETAIL
+    {SUBCOMP
+      {I DCB_OptModule_PCB_Holes.PRT OMDB23
+        {CN
+        }
+      }
+      {I DCB_OptModule_PCB_Holes.PRT OMDB45
+        {CN
+        }
+      }
+      {I DCB_OptModule_PCB_Holes.PRT OMDB61
+        {CN
+        }
+      }
+      {I DCB_OptModule_PCB_Holes.PRT OMDBMC
+        {CN
+        }
+      }
+      {I c130h80.PRT B1
+        {CN
+        1 NetB1_1
+        }
+      }
+      {I c130h80.PRT B2
+        {CN
+        1 GND
+        }
+      }
+      {I c130h80.PRT B3
+        {CN
+        1 NetB3_1
+        }
+      }
+      {I c130h80.PRT B4
+        {CN
+        1 GND
+        }
+      }
+      {I CAPC2012X135N.PRT C1
+        {CN
+        1 1V5
+        2 GND
+        }
+      }
+      {I CAPC1005X55N.PRT C2
+        {CN
+        1 GND
+        2 1V5
+        }
+      }
+      {I CAPC1005X55N.PRT C3
+        {CN
+        1 GND
+        2 1V5
+        }
+      }
+      {I CAPC1005X55N.PRT C4
+        {CN
+        1 GND
+        2 1V5
+        }
+      }
+      {I CAPC1005X55N.PRT C5
+        {CN
+        1 GND
+        2 1V5
+        }
+      }
+      {I CAPC1005X55N.PRT C6
+        {CN
+        1 GND
+        2 1V5
+        }
+      }
+      {I CAPC0603X33N.PRT C7
+        {CN
+        1 GND
+        2 1V5
+        }
+      }
+      {I CAPC0603X33N.PRT C8
+        {CN
+        1 GND
+        2 1V5
+        }
+      }
+      {I CAPC0603X33N.PRT C9
+        {CN
+        1 GND
+        2 1V5
+        }
+      }
+      {I CAPC0603X33N.PRT C10
+        {CN
+        1 GND
+        2 1V5
+        }
+      }
+      {I CAPC0603X33N.PRT C11
+        {CN
+        1 GND
+        2 1V5
+        }
+      }
+      {I CAPC0603X33N.PRT C12
+        {CN
+        1 GND
+        2 1V5
+        }
+      }
+      {I CAPC2012X135N.PRT C13
+        {CN
+        1 GBT_AVDD_PS
+        2 DC_PLAT_RTD_B
+        }
+      }
+      {I CAPC2012X135N.PRT C14
+        {CN
+        1 GBT_AVDD_PS
+        2 DC_PLAT_RTD_B
+        }
+      }
+      {I CAPC1005X55N.PRT C15
+        {CN
+        1 DC_PLAT_RTD_B
+        2 GBT_AVDD_PS
+        }
+      }
+      {I CAPC1005X55N.PRT C16
+        {CN
+        1 DC_PLAT_RTD_B
+        2 GBT_AVDD_PS
+        }
+      }
+      {I CAPC1005X55N.PRT C17
+        {CN
+        1 DC_PLAT_RTD_B
+        2 GBT_AVDD_PS
+        }
+      }
+      {I CAPC0603X33N.PRT C18
+        {CN
+        1 DC_PLAT_RTD_B
+        2 GBT_AVDD_PS
+        }
+      }
+      {I CAPC0603X33N.PRT C19
+        {CN
+        1 DC_PLAT_RTD_B
+        2 GBT_AVDD_PS
+        }
+      }
+      {I CAPC0603X33N.PRT C20
+        {CN
+        1 DC_PLAT_RTD_B
+        2 GBT_AVDD_PS
+        }
+      }
+      {I CAPC0603X33N.PRT C61
+        {CN
+        1 DC_PLAT_RTD_A_1
+        2 DC_PLAT_RTD_B
+        }
+      }
+      {I CAPC0603X33N.PRT C62
+        {CN
+        1 OM45_THERMISTOR_A_1
+        2 DC_PLAT_RTD_B
+        }
+      }
+      {I CAPC0603X33N.PRT C63
+        {CN
+        1 EC_ADC_2
+        2 DC_PLAT_RTD_B
+        }
+      }
+      {I CAPC0603X33N.PRT C64
+        {CN
+        1 EC_ADC_3
+        2 DC_PLAT_RTD_B
+        }
+      }
+      {I CAPC0603X33N.PRT C65
+        {CN
+        1 EC_ADC_4
+        2 DC_PLAT_RTD_B
+        }
+      }
+      {I CAPC0603X33N.PRT C66
+        {CN
+        1 EC_ADC_5
+        2 DC_PLAT_RTD_B
+        }
+      }
+      {I CAPC0603X33N.PRT C67
+        {CN
+        1 EC_ADC_6
+        2 DC_PLAT_RTD_B
+        }
+      }
+      {I CAPC0603X33N.PRT C68
+        {CN
+        1 EC_ADC_7
+        2 DC_PLAT_RTD_B
+        }
+      }
+      {I CAPC0603X33N.PRT C69
+        {CN
+        1 DC_PLAT_RTD_B
+        2 ADC_CH8_5
+        }
+      }
+      {I CAPC0603X33N.PRT C70
+        {CN
+        1 DC_PLAT_RTD_B
+        2 ADC_CH9_5
+        }
+      }
+      {I CAPC0603X33N.PRT C71
+        {CN
+        1 DC_PLAT_RTD_B
+        2 ADC_CH10_5
+        }
+      }
+      {I CAPC2012X135N.PRT C72
+        {CN
+        1 GND
+        2 NetC72_2
+        }
+      }
+      {I CAPC0603X33N.PRT C73
+        {CN
+        1 DC_PLAT_RTD_B
+        2 ADC_CH11_5
+        }
+      }
+      {I CAPC0603X33N.PRT C74
+        {CN
+        1 DC_PLAT_RTD_B
+        2 ADC_CH12_5
+        }
+      }
+      {I CAPC0603X33N.PRT C75
+        {CN
+        1 DC_PLAT_RTD_B
+        2 ADC_CH13_5
+        }
+      }
+      {I CAPC0603X33N.PRT C76
+        {CN
+        1 DC_PLAT_RTD_B
+        2 ADC_CH14_5
+        }
+      }
+      {I CAPC0603X33N.PRT C77
+        {CN
+        1 DC_PLAT_RTD_B
+        2 ADC_CH15_5
+        }
+      }
+      {I CAPC0603X33N.PRT C78
+        {CN
+        1 OM23_THERMISTOR_A_1
+        2 DC_PLAT_RTD_B
+        }
+      }
+      {I CAPC0603X33N.PRT C79
+        {CN
+        1 OM61_THERMISTOR_A_1
+        2 DC_PLAT_RTD_B
+        }
+      }
+      {I CAPC0603X33N.PRT C80
+        {CN
+        1 OMMC_THERMISTOR_A_1
+        2 DC_PLAT_RTD_B
+        }
+      }
+      {I CAPC0603X33N.PRT C81
+        {CN
+        1 ADC_CH19_5
+        2 DC_PLAT_RTD_B
+        }
+      }
+      {I CAPC0603X33N.PRT C82
+        {CN
+        1 ADC_CH20_5
+        2 DC_PLAT_RTD_B
+        }
+      }
+      {I CAPC0603X33N.PRT C83
+        {CN
+        1 ADC_CH21_5
+        2 DC_PLAT_RTD_B
+        }
+      }
+      {I CAPC0603X33N.PRT C84
+        {CN
+        1 ADC_CH22_5
+        2 DC_PLAT_RTD_B
+        }
+      }
+      {I CAPC0603X33N.PRT C85
+        {CN
+        1 ADC_CH23_5
+        2 DC_PLAT_RTD_B
+        }
+      }
+      {I CAPC0603X33N.PRT C86
+        {CN
+        1 DC_PLAT_RTD_B
+        2 ADC_CH24_5
+        }
+      }
+      {I CAPC0603X33N.PRT C87
+        {CN
+        1 DC_PLAT_RTD_B
+        2 ADC_CH25_5
+        }
+      }
+      {I CAPC0603X33N.PRT C88
+        {CN
+        1 DC_PLAT_RTD_B
+        2 ADC_CH26_5
+        }
+      }
+      {I CAPC0603X33N.PRT C89
+        {CN
+        1 DC_PLAT_RTD_B
+        2 ADC_CH27_5
+        }
+      }
+      {I CAPC0603X33N.PRT C90
+        {CN
+        1 DC_PLAT_RTD_B
+        2 ADC_CH28_5
+        }
+      }
+      {I CAPC0603X33N.PRT C91
+        {CN
+        1 DC_PLAT_RTD_B
+        2 ADC_CH29_5
+        }
+      }
+      {I CAPC0603X33N.PRT C92
+        {CN
+        1 DC_PLAT_RTD_B
+        2 ADC_CH30_5
+        }
+      }
+      {I CAPC1005X55N.PRT C95
+        {CN
+        1 GND
+        2 1V5
+        }
+      }
+      {I CAPC1005X55N.PRT C96
+        {CN
+        1 GND
+        2 1V5
+        }
+      }
+      {I CAPC1005X55N.PRT C97
+        {CN
+        1 GND
+        2 1V5
+        }
+      }
+      {I CAPC1005X55N.PRT C98
+        {CN
+        1 GND
+        2 1V5
+        }
+      }
+      {I CAPC1005X55N.PRT C99
+        {CN
+        1 GND
+        2 1V5
+        }
+      }
+      {I CAPC1005X55N.PRT C100
+        {CN
+        1 GND
+        2 1V5
+        }
+      }
+      {I CAPC0603X33N.PRT C101
+        {CN
+        1 GND
+        2 1V5
+        }
+      }
+      {I CAPC0603X33N.PRT C102
+        {CN
+        1 GND
+        2 1V5
+        }
+      }
+      {I CAPC0603X33N.PRT C103
+        {CN
+        1 GND
+        2 1V5
+        }
+      }
+      {I CAPC0603X33N.PRT C104
+        {CN
+        1 GND
+        2 1V5
+        }
+      }
+      {I CAPC0603X33N.PRT C105
+        {CN
+        1 GND
+        2 1V5
+        }
+      }
+      {I CAPC0603X33N.PRT C106
+        {CN
+        1 GND
+        2 1V5
+        }
+      }
+      {I CAPC1005X55N.PRT C107
+        {CN
+        1 GND
+        2 2V5
+        }
+      }
+      {I CAPC1005X55N.PRT C108
+        {CN
+        1 GND
+        2 2V5
+        }
+      }
+      {I CAPC1005X55N.PRT C109
+        {CN
+        1 GND
+        2 2V5
+        }
+      }
+      {I CAPC1005X55N.PRT C110
+        {CN
+        1 GND
+        2 2V5
+        }
+      }
+      {I CAPC1005X55N.PRT C111
+        {CN
+        1 GND
+        2 2V5
+        }
+      }
+      {I CAPC1005X55N.PRT C112
+        {CN
+        1 GND
+        2 2V5
+        }
+      }
+      {I CAPC0603X33N.PRT C113
+        {CN
+        1 GND
+        2 2V5
+        }
+      }
+      {I CAPC0603X33N.PRT C114
+        {CN
+        1 GND
+        2 2V5
+        }
+      }
+      {I CAPC0603X33N.PRT C115
+        {CN
+        1 GND
+        2 2V5
+        }
+      }
+      {I CAPC0603X33N.PRT C116
+        {CN
+        1 GND
+        2 2V5
+        }
+      }
+      {I CAPC0603X33N.PRT C117
+        {CN
+        1 GND
+        2 2V5
+        }
+      }
+      {I CAPC0603X33N.PRT C118
+        {CN
+        1 GND
+        2 2V5
+        }
+      }
+      {I CAPMP3528X210N.PRT C119
+        {CN
+        1 NetC119_1
+        2 GND
+        }
+      }
+      {I CAPMP3528X210N.PRT C120
+        {CN
+        1 NetC120_1
+        2 GND
+        }
+      }
+      {I CAPMP3528X210N.PRT C121
+        {CN
+        1 NetC121_1
+        2 GND
+        }
+      }
+      {I CAPC0603X33N.PRT C122
+        {CN
+        1 DC_PLAT_RTD_B
+        2 ADC_CH13_5
+        }
+      }
+      {I CAPC0603X33N.PRT C123
+        {CN
+        1 GND
+        2 NetC123_2
+        }
+      }
+      {I CAPC0603X33N.PRT C124
+        {CN
+        1 GND
+        2 NetC124_2
+        }
+      }
+      {I CAPC0603X33N.PRT C125
+        {CN
+        1 DC_PLAT_RTD_B
+        2 ADC_CH14_5
+        }
+      }
+      {I CAPC0603X33N.PRT C126
+        {CN
+        1 DC_PLAT_RTD_B
+        2 ADC_CH15_5
+        }
+      }
+      {I CAPC2012X135N.PRT C127
+        {CN
+        1 SCA_EFUSE_PWR_1
+        2 GND
+        }
+      }
+      {I CAPC1005X55N.PRT C128
+        {CN
+        1 GND
+        2 SCA_EFUSE_PWR_1
+        }
+      }
+      {I BGA196C80P14X14_1200X1200X170.PRT IC1
+        {CN
+       A1 NetIC1_A1
+       A2 NetIC1_A2
+       A3 NetIC1_A3
+       A4 NetIC1_A4
+       A5 NetIC1_A5
+       A6 NetIC1_A6
+       A7 NetIC1_A7
+       A8 NetIC1_A8
+       A9 NetIC1_A9
+      A10 NetIC1_A10
+      A11 NetIC1_A11
+      A12 NetIC1_A12
+      A13 NetIC1_A13
+      A14 NetIC1_A14
+       B1 EC_HYB_i2C_SCL_0_1
+       B2 EC_HYB_i2C_SDA_0_1
+       B3 NetIC1_B3
+       B4 NetIC1_B4
+       B5 NetIC1_B5
+       B6 NetIC1_B6
+       B7 NetIC1_B7
+       B8 NetIC1_B8
+       B9 NetIC1_B9
+      B10 NetIC1_B10
+      B11 NetIC1_B11
+      B12 NetIC1_B12
+      B13 NetIC1_B13
+      B14 SPI_CLK_5
+       C1 EC_HYB_i2C_SCL_1_1
+       C2 EC_HYB_i2C_SDA_1_1
+       C3 EC_HYB_i2C_SCL_4_1
+       C4 NetIC1_C4
+       C5 NetIC1_C5
+       C6 NetIC1_C6
+       C7 NetIC1_C7
+       C8 NetIC1_C8
+       C9 NetIC1_C9
+      C10 NetIC1_C10
+      C11 NetIC1_C11
+      C12 NetIC1_C12
+      C13 SPI_SS_3_5
+      C14 SPI_MOSI_5
+       D1 EC_HYB_i2C_SCL_2_1
+       D2 EC_HYB_i2C_SDA_2_1
+       D3 EC_HYB_i2C_SDA_4_1
+       D4 GND
+       D5 GND
+       D6 GND
+       D7 GND
+       D8 GND
+       D9 1V5
+      D10 1V5
+      D11 1V5
+      D12 NetIC1_D12
+      D13 SPI_SS_2_5
+      D14 SPI_MISI_5
+       E1 EC_HYB_i2C_SCL_3_1
+       E2 EC_HYB_i2C_SDA_3_1
+       E3 EC_HYB_i2C_SCL_6_1
+       E4 GND
+       E5 GND
+       E6 GND
+       E7 GND
+       E8 GND
+       E9 1V5
+      E10 1V5
+      E11 1V5
+      E12 NetIC1_E12
+      E13 SPI_SS_1_5
+      E14 SPI_SS_0_5
+       F1 EC_HYB_i2C_SCL_5_1
+       F2 EC_HYB_i2C_SDA_5_1
+       F3 EC_HYB_i2C_SDA_6_1
+       F4 GND
+       F5 GND
+       F6 GND
+       F7 GND
+       F8 1V5
+       F9 1V5
+      F10 1V5
+      F11 1V5
+      F12 NetIC1_F12
+      F13 EC_SEC_DOUT_ELK_1_N
+      F14 EC_SEC_DOUT_ELK_1_P
+       G1 NetIC1_G1
+       G2 NetIC1_G2
+       G3 NetIC1_G3
+       G4 NetIC1_G4
+       G5 GND
+       G6 GND
+       G7 GND
+       G8 1V5
+       G9 1V5
+      G10 1V5
+      G11 1V5
+      G12 SCA_EFUSE_PWR_1
+      G13 EC_SEC_DIN_ELK_1_N
+      G14 EC_SEC_DIN_ELK_1_P
+       H1 NetIC1_H1
+       H2 NetIC1_H2
+       H3 NetIC1_H3
+       H4 NetIC1_H4
+       H5 GND
+       H6 GND
+       H7 GND
+       H8 1V5
+       H9 1V5
+      H10 1V5
+      H11 1V5
+      H12 NetJ10_1
+      H13 EC_SEC_CLK_ELK_1_N
+      H14 EC_SEC_CLK_ELK_1_P
+       J1 NetIC1_J1
+       J2 NetIC1_J2
+       J3 NetIC1_J3
+       J4 NetIC1_J4
+       J5 DC_PLAT_RTD_B
+       J6 DC_PLAT_RTD_B
+       J7 GBT_AVDD_PS
+       J8 GBT_AVDD_PS
+       J9 GBT_AVDD_PS
+      J10 GBT_AVDD_PS
+      J11 GBT_AVDD_PS
+      J12 NetJ10_2
+      J13 SCA_PRI_DAT_IN_3_N
+      J14 SCA_PRI_DAT_IN_3_P
+       K1 SCA_TMS_5
+       K2 NetIC1_K2
+       K3 NetIC1_K3
+       K4 DC_PLAT_RTD_B
+       K5 DC_PLAT_RTD_B
+       K6 DC_PLAT_RTD_B
+       K7 GBT_AVDD_PS
+       K8 GBT_AVDD_PS
+       K9 GBT_AVDD_PS
+      K10 GBT_AVDD_PS
+      K11 GBT_AVDD_PS
+      K12 NetJ10_4
+      K13 SCA_PRI_CLK_3_N
+      K14 SCA_PRI_CLK_3_P
+       L1 SCA_TCK_5
+       L2 NetIC1_L2
+       L3 NetIC1_L3
+       L4 DC_PLAT_RTD_B
+       L5 DC_PLAT_RTD_B
+       L6 DC_PLAT_RTD_B
+       L7 DC_PLAT_RTD_B
+       L8 DC_PLAT_RTD_B
+       L9 DC_PLAT_RTD_B
+      L10 DC_PLAT_RTD_B
+      L11 DC_PLAT_RTD_B
+      L12 NetJ10_6
+      L13 SCA_PRI_DAT_OUT_3_N
+      L14 SCA_PRI_DAT_OUT_3_P
+       M1 SCA_TDI_5
+       M2 NetIC1_M2
+       M3 NetIC1_M3
+       M4 ADC_CH28_5
+       M5 ADC_CH25_5
+       M6 ADC_CH22_5
+       M7 ADC_CH19_5
+       M8 OM23_THERMISTOR_A_1
+       M9 ADC_CH13_5
+      M10 ADC_CH10_5
+      M11 EC_ADC_7
+      M12 EC_ADC_4
+      M13 U_SCA_EFUSEPROGPLS_1
+      M14 NetC72_2
+       N1 SCA_TDO_5
+       N2 DAC_1_5
+       N3 DAC_0_5
+       N4 ADC_CH29_5
+       N5 ADC_CH26_5
+       N6 ADC_CH23_5
+       N7 ADC_CH20_5
+       N8 OM61_THERMISTOR_A_1
+       N9 ADC_CH14_5
+      N10 ADC_CH11_5
+      N11 ADC_CH8_5
+      N12 EC_ADC_5
+      N13 EC_ADC_2
+      N14 DC_PLAT_RTD_A_1
+       P1 SCA_JTAG_RESET_5
+       P2 DAC_3_5
+       P3 DAC_2_5
+       P4 ADC_CH30_5
+       P5 ADC_CH27_5
+       P6 ADC_CH24_5
+       P7 ADC_CH21_5
+       P8 OMMC_THERMISTOR_A_1
+       P9 ADC_CH15_5
+      P10 ADC_CH12_5
+      P11 ADC_CH9_5
+      P12 EC_ADC_6
+      P13 EC_ADC_3
+      P14 OM45_THERMISTOR_A_1
+        }
+      }
+      {I FTSH-125-XX-XXX-DV-ES-A.PRT J1
+        {CN
+        1 1V5
+        2 GND
+        3 1V5
+        4 GND
+        5 1V5
+        6 GND
+        7 1V5
+        8 GND
+        9 1V5
+       10 GND
+       11 1V5
+       12 GND
+       13 1V5
+       14 GND
+       15 1V5
+       16 GND
+       17 1v5_senseP_1
+       18 1v5_senseN_1
+       19 2V5
+       20 GND
+       21 2v5_senseP_1
+       22 2v5_senseN_1
+       23 EFUSE_3V3_PWR
+       24 GND
+       25 GND
+       26 GND
+       27 GND
+       28 EFUSE_3V3_PWR
+       29 2v5_senseN_1
+       30 2v5_senseP_1
+       31 GND
+       32 2V5
+       33 1v5_senseN_1
+       34 1v5_senseP_1
+       35 GND
+       36 1V5
+       37 GND
+       38 1V5
+       39 GND
+       40 1V5
+       41 GND
+       42 1V5
+       43 GND
+       44 1V5
+       45 GND
+       46 1V5
+       47 GND
+       48 1V5
+       49 GND
+       50 1V5
+        }
+      }
+      {I SAMTEC_TMM-103-01-L-D-SM-P-TR.PRT J2
+        {CN
+        1 1V5
+        2 1V5
+        3 SCA_EFUSE_PWR_1
+        4 MC_EFUSE_PWR_1
+        5 EFUSE_3V3_PWR
+        6 EFUSE_3V3_PWR
+        }
+      }
+      {I SEAF-50-01-X-08-X-RA-GP.PRT J3
+        {CN
+       A1 1V5
+       A2 1V5
+       A3 DC5_ELKS.GBTX_ELK_CH0_1_N
+       A4 DC5_ELKS.GBTX_ELK_CH0_1_P
+       A5 1V5
+       A6 1V5
+       A7 DC5_ELKS.GBTX_ELK_CH1_1_N
+       A8 DC5_ELKS.GBTX_ELK_CH1_1_P
+       A9 1V5
+      A10 1V5
+      A11 DC4_ELKS.GBTX_ELK_CH0_1_N
+      A12 DC4_ELKS.GBTX_ELK_CH0_1_P
+      A13 1V5
+      A14 1V5
+      A15 DC4_ELKS.GBTX_ELK_CH1_1_N
+      A16 DC4_ELKS.GBTX_ELK_CH1_1_P
+      A17 1V5
+      A18 1V5
+      A19 DC3_ELKS.GBTX_ELK_CH0_1_N
+      A20 DC3_ELKS.GBTX_ELK_CH0_1_P
+      A21 1V5
+      A22 1V5
+      A23 DC3_ELKS.GBTX_ELK_CH1_1_N
+      A24 DC3_ELKS.GBTX_ELK_CH1_1_P
+      A25 1V5
+      A26 1V5
+      A27 DC2_ELKS.GBTX_ELK_CH0_1_N
+      A28 DC2_ELKS.GBTX_ELK_CH0_1_P
+      A29 1V5
+      A30 1V5
+      A31 DC2_ELKS.GBTX_ELK_CH1_1_N
+      A32 DC2_ELKS.GBTX_ELK_CH1_1_P
+      A33 1V5
+      A34 1V5
+      A35 DC1_ELKS.GBTX_ELK_CH0_1_N
+      A36 DC1_ELKS.GBTX_ELK_CH0_1_P
+      A37 1V5
+      A38 1V5
+      A39 DC1_ELKS.GBTX_ELK_CH1_1_N
+      A40 DC1_ELKS.GBTX_ELK_CH1_1_P
+      A41 1V5
+      A42 1V5
+      A43 DC0_ELKS.GBTX_ELK_CH0_1_N
+      A44 DC0_ELKS.GBTX_ELK_CH0_1_P
+      A45 1V5
+      A46 1V5
+      A47 DC0_ELKS.GBTX_ELK_CH1_1_N
+      A48 DC0_ELKS.GBTX_ELK_CH1_1_P
+      A49 1V5
+      A50 1V5
+       B1 MC_TFC0_N
+       B2 MC_TFC0_P
+       B3 GND
+       B4 GND
+       B5 DC5_ELKS.GBTX_ELK_CH2_1_N
+       B6 DC5_ELKS.GBTX_ELK_CH2_1_P
+       B7 GND
+       B8 GND
+       B9 DC5_ELKS.GBTX_ELK_CH3_1_N
+      B10 DC5_ELKS.GBTX_ELK_CH3_1_P
+      B11 GND
+      B12 GND
+      B13 DC4_ELKS.GBTX_ELK_CH2_1_N
+      B14 DC4_ELKS.GBTX_ELK_CH2_1_P
+      B15 GND
+      B16 GND
+      B17 DC4_ELKS.GBTX_ELK_CH3_1_N
+      B18 DC4_ELKS.GBTX_ELK_CH3_1_P
+      B19 GND
+      B20 GND
+      B21 DC3_ELKS.GBTX_ELK_CH2_1_N
+      B22 DC3_ELKS.GBTX_ELK_CH2_1_P
+      B23 GND
+      B24 GND
+      B25 DC3_ELKS.GBTX_ELK_CH3_1_N
+      B26 DC3_ELKS.GBTX_ELK_CH3_1_P
+      B27 GND
+      B28 GND
+      B29 DC2_ELKS.GBTX_ELK_CH2_1_N
+      B30 DC2_ELKS.GBTX_ELK_CH2_1_P
+      B31 GND
+      B32 GND
+      B33 DC2_ELKS.GBTX_ELK_CH3_1_N
+      B34 DC2_ELKS.GBTX_ELK_CH3_1_P
+      B35 GND
+      B36 GND
+      B37 DC1_ELKS.GBTX_ELK_CH2_1_N
+      B38 DC1_ELKS.GBTX_ELK_CH2_1_P
+      B39 GND
+      B40 GND
+      B41 DC1_ELKS.GBTX_ELK_CH3_1_N
+      B42 DC1_ELKS.GBTX_ELK_CH3_1_P
+      B43 GND
+      B44 GND
+      B45 DC0_ELKS.GBTX_ELK_CH2_1_N
+      B46 DC0_ELKS.GBTX_ELK_CH2_1_P
+      B47 GND
+      B48 GND
+      B49 DC0_ELKS.GBTX_ELK_CH3_1_N
+      B50 DC0_ELKS.GBTX_ELK_CH3_1_P
+       C1 EC_RESET_GPIO_0_1
+       C2 GND
+       C3 DC5_ELKS.GBTX_ELK_CH4_1_N
+       C4 DC5_ELKS.GBTX_ELK_CH4_1_P
+       C5 GND
+       C6 GND
+       C7 DC5_ELKS.GBTX_ELK_CH5_1_N
+       C8 DC5_ELKS.GBTX_ELK_CH5_1_P
+       C9 GND
+      C10 GND
+      C11 DC4_ELKS.GBTX_ELK_CH4_1_N
+      C12 DC4_ELKS.GBTX_ELK_CH4_1_P
+      C13 GND
+      C14 GND
+      C15 DC4_ELKS.GBTX_ELK_CH5_1_N
+      C16 DC4_ELKS.GBTX_ELK_CH5_1_P
+      C17 GND
+      C18 GND
+      C19 DC3_ELKS.GBTX_ELK_CH4_1_N
+      C20 DC3_ELKS.GBTX_ELK_CH4_1_P
+      C21 GND
+      C22 GND
+      C23 DC3_ELKS.GBTX_ELK_CH5_1_N
+      C24 DC3_ELKS.GBTX_ELK_CH5_1_P
+      C25 GND
+      C26 GND
+      C27 DC2_ELKS.GBTX_ELK_CH4_1_N
+      C28 DC2_ELKS.GBTX_ELK_CH4_1_P
+      C29 GND
+      C30 GND
+      C31 DC2_ELKS.GBTX_ELK_CH5_1_N
+      C32 DC2_ELKS.GBTX_ELK_CH5_1_P
+      C33 GND
+      C34 GND
+      C35 DC1_ELKS.GBTX_ELK_CH4_1_N
+      C36 DC1_ELKS.GBTX_ELK_CH4_1_P
+      C37 GND
+      C38 GND
+      C39 DC1_ELKS.GBTX_ELK_CH5_1_N
+      C40 DC1_ELKS.GBTX_ELK_CH5_1_P
+      C41 GND
+      C42 GND
+      C43 DC0_ELKS.GBTX_ELK_CH4_1_N
+      C44 DC0_ELKS.GBTX_ELK_CH4_1_P
+      C45 GND
+      C46 GND
+      C47 DC0_ELKS.GBTX_ELK_CH5_1_N
+      C48 DC0_ELKS.GBTX_ELK_CH5_1_P
+      C49 1V5_SENSE_POS_2
+      C50 1V5_SENSE_NEG_2
+       D1 EC_ADC_REF13
+       D2 EC_ADC_REF14
+       D3 GND
+       D4 GND
+       D5 DC5_ELKS.GBTX_ELK_CH6_1_N
+       D6 DC5_ELKS.GBTX_ELK_CH6_1_P
+       D7 GND
+       D8 GND
+       D9 DC5_ELKS.GBTX_ELK_CH7_1_N
+      D10 DC5_ELKS.GBTX_ELK_CH7_1_P
+      D11 GND
+      D12 GND
+      D13 DC4_ELKS.GBTX_ELK_CH6_1_N
+      D14 DC4_ELKS.GBTX_ELK_CH6_1_P
+      D15 GND
+      D16 GND
+      D17 DC4_ELKS.GBTX_ELK_CH7_1_N
+      D18 DC4_ELKS.GBTX_ELK_CH7_1_P
+      D19 GND
+      D20 GND
+      D21 DC3_ELKS.GBTX_ELK_CH6_1_N
+      D22 DC3_ELKS.GBTX_ELK_CH6_1_P
+      D23 GND
+      D24 GND
+      D25 DC3_ELKS.GBTX_ELK_CH7_1_N
+      D26 DC3_ELKS.GBTX_ELK_CH7_1_P
+      D27 GND
+      D28 GND
+      D29 DC2_ELKS.GBTX_ELK_CH6_1_N
+      D30 DC2_ELKS.GBTX_ELK_CH6_1_P
+      D31 GND
+      D32 GND
+      D33 DC2_ELKS.GBTX_ELK_CH7_1_N
+      D34 DC2_ELKS.GBTX_ELK_CH7_1_P
+      D35 GND
+      D36 GND
+      D37 DC1_ELKS.GBTX_ELK_CH6_1_N
+      D38 DC1_ELKS.GBTX_ELK_CH6_1_P
+      D39 GND
+      D40 GND
+      D41 DC1_ELKS.GBTX_ELK_CH7_1_N
+      D42 DC1_ELKS.GBTX_ELK_CH7_1_P
+      D43 GND
+      D44 GND
+      D45 DC0_ELKS.GBTX_ELK_CH6_1_N
+      D46 DC0_ELKS.GBTX_ELK_CH6_1_P
+      D47 GND
+      D48 GND
+      D49 DC0_ELKS.GBTX_ELK_CH7_1_N
+      D50 DC0_ELKS.GBTX_ELK_CH7_1_P
+       E1 EC_ADC_REF15
+       E2 NetB1_1
+       E3 DC5_ELKS.GBTX_ELK_CH8_1_N
+       E4 DC5_ELKS.GBTX_ELK_CH8_1_P
+       E5 GND
+       E6 GND
+       E7 DC5_ELKS.GBTX_ELK_CH9_1_N
+       E8 DC5_ELKS.GBTX_ELK_CH9_1_P
+       E9 GND
+      E10 GND
+      E11 DC4_ELKS.GBTX_ELK_CH8_1_N
+      E12 DC4_ELKS.GBTX_ELK_CH8_1_P
+      E13 GND
+      E14 GND
+      E15 DC4_ELKS.GBTX_ELK_CH9_1_N
+      E16 DC4_ELKS.GBTX_ELK_CH9_1_P
+      E17 GND
+      E18 GND
+      E19 DC3_ELKS.GBTX_ELK_CH8_1_N
+      E20 DC3_ELKS.GBTX_ELK_CH8_1_P
+      E21 GND
+      E22 GND
+      E23 DC3_ELKS.GBTX_ELK_CH9_1_N
+      E24 DC3_ELKS.GBTX_ELK_CH9_1_P
+      E25 GND
+      E26 GND
+      E27 DC2_ELKS.GBTX_ELK_CH8_1_N
+      E28 DC2_ELKS.GBTX_ELK_CH8_1_P
+      E29 GND
+      E30 GND
+      E31 DC2_ELKS.GBTX_ELK_CH9_1_N
+      E32 DC2_ELKS.GBTX_ELK_CH9_1_P
+      E33 GND
+      E34 GND
+      E35 DC1_ELKS.GBTX_ELK_CH8_1_N
+      E36 DC1_ELKS.GBTX_ELK_CH8_1_P
+      E37 GND
+      E38 GND
+      E39 DC1_ELKS.GBTX_ELK_CH9_1_N
+      E40 DC1_ELKS.GBTX_ELK_CH9_1_P
+      E41 GND
+      E42 GND
+      E43 DC0_ELKS.GBTX_ELK_CH8_1_N
+      E44 DC0_ELKS.GBTX_ELK_CH8_1_P
+      E45 GND
+      E46 GND
+      E47 DC0_ELKS.GBTX_ELK_CH9_1_N
+      E48 DC0_ELKS.GBTX_ELK_CH9_1_P
+      E49 GND
+      E50 NetB3_1
+       F1 MC_TFC1_N
+       F2 MC_TFC1_P
+       F3 GND
+       F4 GND
+       F5 DC5_ELKS.GBTX_ELK_CH10_1_N
+       F6 DC5_ELKS.GBTX_ELK_CH10_1_P
+       F7 GND
+       F8 GND
+       F9 DC5_ELKS.GBTX_ELK_CH11_1_N
+      F10 DC5_ELKS.GBTX_ELK_CH11_1_P
+      F11 GND
+      F12 GND
+      F13 DC4_ELKS.GBTX_ELK_CH10_1_N
+      F14 DC4_ELKS.GBTX_ELK_CH10_1_P
+      F15 GND
+      F16 GND
+      F17 DC4_ELKS.GBTX_ELK_CH11_1_N
+      F18 DC4_ELKS.GBTX_ELK_CH11_1_P
+      F19 GND
+      F20 GND
+      F21 DC3_ELKS.GBTX_ELK_CH10_1_N
+      F22 DC3_ELKS.GBTX_ELK_CH10_1_P
+      F23 GND
+      F24 GND
+      F25 DC3_ELKS.GBTX_ELK_CH11_1_N
+      F26 DC3_ELKS.GBTX_ELK_CH11_1_P
+      F27 GND
+      F28 GND
+      F29 DC2_ELKS.GBTX_ELK_CH10_1_N
+      F30 DC2_ELKS.GBTX_ELK_CH10_1_P
+      F31 GND
+      F32 GND
+      F33 DC2_ELKS.GBTX_ELK_CH11_1_N
+      F34 DC2_ELKS.GBTX_ELK_CH11_1_P
+      F35 GND
+      F36 GND
+      F37 DC1_ELKS.GBTX_ELK_CH10_1_N
+      F38 DC1_ELKS.GBTX_ELK_CH10_1_P
+      F39 GND
+      F40 GND
+      F41 DC1_ELKS.GBTX_ELK_CH11_1_N
+      F42 DC1_ELKS.GBTX_ELK_CH11_1_P
+      F43 GND
+      F44 GND
+      F45 DC0_ELKS.GBTX_ELK_CH10_1_N
+      F46 DC0_ELKS.GBTX_ELK_CH10_1_P
+      F47 GND
+      F48 GND
+      F49 DC0_ELKS.GBTX_ELK_CH11_1_N
+      F50 DC0_ELKS.GBTX_ELK_CH11_1_P
+       G1 2V5
+       G2 2V5
+       G3 MC_SCA_SEC_ELKS.SCA_SEC_DAT_OUT_1_N
+       G4 MC_SCA_SEC_ELKS.SCA_SEC_DAT_OUT_1_P
+       G5 2V5
+       G6 2V5
+       G7 EC_SEC_DOUT_ELK_1_N
+       G8 EC_SEC_DOUT_ELK_1_P
+       G9 2V5
+      G10 2V5
+      G11 MC_SCA_SEC_ELKS.SCA_SEC_DAT_IN_1_N
+      G12 MC_SCA_SEC_ELKS.SCA_SEC_DAT_IN_1_P
+      G13 2V5
+      G14 2V5
+      G15 EC_SEC_DIN_ELK_1_N
+      G16 EC_SEC_DIN_ELK_1_P
+      G17 2V5
+      G18 2V5
+      G19 MC_SCA_SEC_ELKS.SCA_SEC_CLK_1_N
+      G20 MC_SCA_SEC_ELKS.SCA_SEC_CLK_1_P
+      G21 2V5
+      G22 2V5
+      G23 EC_SEC_CLK_ELK_1_N
+      G24 EC_SEC_CLK_ELK_1_P
+      G25 2V5
+      G26 2V5
+      G27 DC_OUT_RCLK4_N
+      G28 DC_OUT_RCLK4_P
+      G29 2V5
+      G30 2V5
+      G31 DC_OUT_RCLK5_N
+      G32 DC_OUT_RCLK5_P
+      G33 2V5
+      G34 2V5
+      G35 DC_OUT_RCLK0_N
+      G36 DC_OUT_RCLK0_P
+      G37 2V5
+      G38 2V5
+      G39 DC_OUT_RCLK1_N
+      G40 DC_OUT_RCLK1_P
+      G41 2V5
+      G42 2V5
+      G43 DC_OUT_RCLK2_N
+      G44 DC_OUT_RCLK2_P
+      G45 2V5
+      G46 2V5
+      G47 DC_OUT_RCLK3_N
+      G48 DC_OUT_RCLK3_P
+      G49 2V5
+      G50 2V5
+       H1 MC_TFC2_N
+       H2 MC_TFC2_P
+       H3 GND
+       H4 GND
+       H5 MC_TFC3_N
+       H6 MC_TFC3_P
+       H7 GND
+       H8 GND
+       H9 EC_HYB_i2C_SCL_0_1
+      H10 EC_HYB_i2C_SDA_0_1
+      H11 EC_RESET_GPIO_2_1
+      H12 GND
+      H13 EC_HYB_i2C_SCL_1_1
+      H14 EC_HYB_i2C_SDA_1_1
+      H15 EC_RESET_GPIO_3_1
+      H16 GND
+      H17 EC_HYB_i2C_SCL_2_1
+      H18 EC_HYB_i2C_SDA_2_1
+      H19 EC_RESET_GPIO_4_1
+      H20 GND
+      H21 EC_HYB_i2C_SCL_3_1
+      H22 EC_HYB_i2C_SDA_3_1
+      H23 EC_RESET_GPIO_5_1
+      H24 GND
+      H25 EC_HYB_i2C_SCL_4_1
+      H26 EC_HYB_i2C_SDA_4_1
+      H27 EC_RESET_GPIO_1_1
+      H28 GND
+      H29 MC_TFC4_N
+      H30 MC_TFC4_P
+      H31 GND
+      H32 GND
+      H33 MC_TFC5_N
+      H34 MC_TFC5_P
+      H35 GND
+      H36 GND
+      H37 EC_ADC_2
+      H38 EC_ADC_3
+      H39 DC_PLAT_RTD_B
+      H40 DC_PLAT_RTD_B
+      H41 EC_ADC_4
+      H42 EC_ADC_5
+      H43 GND
+      H44 GND
+      H45 EC_ADC_6
+      H46 EC_ADC_7
+      H47 GND
+      H48 GND
+      H49 EC_HYB_i2C_SCL_5_1
+      H50 EC_HYB_i2C_SDA_5_1
+       W1 GND
+       W2 GND
+       W3 GND
+       W4 GND
+        }
+      }
+      {I SAMTEC_TMM-110-01-L-D-SM-A.PRT J4
+        {CN
+        1 U_MC_CFG.CONFIGSELECT_1
+        2 GND
+        3 U_MC_CFG.REFCLKSEL_1
+        4 GND
+        5 U_MC_CFG.RXLOCK_0MODE_1
+        6 GND
+        7 U_MC_CFG.RXLOCK_1MODE_1
+        8 GND
+        9 U_MC_CFG.STATEOVERRIDE_1
+       10 GND
+       11 GND
+       12 GND
+       13 U_MC_CFG.TXMODE_0SEL_1
+       14 GND
+       15 U_MC_CFG.TXMODE_1SEL_1
+       16 GND
+       17 U_MC_CFG.TXMODE_2SEL_1
+       18 GND
+       19 U_MC_CFG.TXMODE_3SEL_1
+       20 GND
+        }
+      }
+      {I SAMTEC_TMM-112-01-L-D-SM-A.PRT J5
+        {CN
+        1 SCA_TCK_5
+        2 SCA_TDI_5
+        3 SCA_TDO_5
+        4 SCA_TMS_5
+        5 SCA_JTAG_RESET_5
+        6 GND
+        7 SPI_CLK_5
+        8 GND
+        9 SPI_MOSI_5
+       10 GND
+       11 SPI_MISI_5
+       12 GND
+       13 SPI_SS_0_5
+       14 SPI_SS_1_5
+       15 SPI_SS_2_5
+       16 GND
+       17 SPI_SS_3_5
+       18 GND
+       19 DAC_0_5
+       20 DAC_1_5
+       21 DAC_2_5
+       22 GND
+       23 DAC_3_5
+       24 GND
+        }
+      }
+      {I LSHM-130-XX.X-XX-DV-A-S.PRT J6
+        {CN
+        1 2V5
+        2 U1_EFUSEPROGPLS_1
+        3 U1_GTX_1_N
+        4 GND
+        5 U1_GTX_1_P
+        6 U1_DC_TST.TXDATAVALID_1
+        7 GND
+        8 GND
+        9 U1_LDSDA_1
+       10 U6_DC_TST.TESTOUTPUT_1
+       11 U1_LDSCL_1
+       12 GND
+       13 GND
+       14 GND
+       15 U1_DC_TST.RX_DATVAL_1
+       16 GND
+       17 GND
+       18 GND
+       19 U1_DC_TST.RX_RDY_1
+       20 U6_DC_TST.TEST_DAT_OUT_1_P
+       21 GND
+       22 U6_DC_TST.TEST_DAT_OUT_1_N
+       23 U1_DC_TST.TX_RDY_1
+       24 GND
+       25 GND
+       26 U6_DC_TST.TEST_DAT_CLK_1_P
+       27 U1_DC_TST.TEST_DAT_IN_1_N
+       28 U6_DC_TST.TEST_DAT_CLK_1_N
+       29 U1_DC_TST.TEST_DAT_IN_1_P
+       30 GND
+       31 GND
+       32 U6_DC_TST.TEST_DAT_IN_1_P
+       33 U1_DC_TST.TEST_DAT_CLK_1_N
+       34 U6_DC_TST.TEST_DAT_IN_1_N
+       35 U1_DC_TST.TEST_DAT_CLK_1_P
+       36 GND
+       37 GND
+       38 U6_DC_TST.TX_RDY_1
+       39 U1_DC_TST.TEST_DAT_OUT_1_N
+       40 GND
+       41 U1_DC_TST.TEST_DAT_OUT_1_P
+       42 U6_DC_TST.RX_RDY_1
+       43 GND
+       44 GND
+       45 OM61_THERMISTOR_A_1
+       46 U6_DC_TST.RX_DATVAL_1
+       47 DC_PLAT_RTD_B
+       48 GND
+       49 GND
+       50 U6_LDSCL_1
+       51 U1_DC_TST.TESTOUTPUT_1
+       52 U6_LDSDA_1
+       53 GND
+       54 GND
+       55 U1_DC_TST.DF_AUTORESET_TESTINJ_1
+       56 U6_GTX_1_P
+       57 GND
+       58 U6_GTX_1_N
+       59 U6_EFUSEPROGPLS_1
+       60 2V5
+       G1 GND
+       G2 GND
+        }
+      }
+      {I LSHM-130-XX.X-XX-DV-A-S.PRT J7
+        {CN
+        1 2V5
+        2 U_SCA_EFUSEPROGPLS_1
+        3 MC_GTX_1_N
+        4 GND
+        5 MC_GTX_1_P
+        6 U_MC_TST.TXDATAVALID_1
+        7 GND
+        8 GND
+        9 MC_LDSDA_1
+       10 NetJ7_10
+       11 MC_LDSCL_1
+       12 GND
+       13 GND
+       14 GND
+       15 U_MC_TST.RX_DATVAL_1
+       16 GND
+       17 GND
+       18 GND
+       19 U_MC_TST.RX_RDY_1
+       20 DC_I2C_SDA_1
+       21 GND
+       22 DC_I2C_SCL_1
+       23 U_MC_TST.TX_RDY_1
+       24 GND
+       25 GND
+       26 NetJ7_26
+       27 U_MC_TST.TEST_DAT_IN_1_N
+       28 NetJ7_28
+       29 U_MC_TST.TEST_DAT_IN_1_P
+       30 GND
+       31 GND
+       32 MC_I2C_SDA_1
+       33 U_MC_TST.TEST_DAT_CLK_1_N
+       34 MC_I2C_SCL_1
+       35 U_MC_TST.TEST_DAT_CLK_1_P
+       36 GND
+       37 GND
+       38 MC_RESETB_1
+       39 U_MC_TST.TEST_DAT_OUT_1_N
+       40 GND
+       41 U_MC_TST.TEST_DAT_OUT_1_P
+       42 NetJ7_42
+       43 GND
+       44 GND
+       45 OMMC_THERMISTOR_A_1
+       46 DC_RESETB_1
+       47 DC_PLAT_RTD_B
+       48 GND
+       49 GND
+       50 NetJ7_50
+       51 U_MC_TST.TESTOUTPUT_1
+       52 NetJ7_52
+       53 GND
+       54 GND
+       55 U_MC_TST.DF_AUTORESET_TESTINJ_1
+       56 MC_GRX_1_P
+       57 GND
+       58 MC_GRX_1_N
+       59 U_MC_EFUSEPROGPLS_1
+       60 2V5
+       G1 GND
+       G2 GND
+        }
+      }
+      {I SAMTEC_TMM-112-01-L-D-SM-A.PRT J8
+        {CN
+        1 DC_PLAT_RTD_A_1
+        2 OM45_THERMISTOR_A_1
+        3 EC_ADC_2
+        4 DC_PLAT_RTD_B
+        5 DC_PLAT_RTD_B
+        6 EC_ADC_3
+        7 EC_ADC_4
+        8 EC_ADC_5
+        9 DC_PLAT_RTD_B
+       10 DC_PLAT_RTD_B
+       11 EC_ADC_6
+       12 EC_ADC_7
+       13 ADC_CH8_5
+       14 DC_PLAT_RTD_B
+       15 ADC_CH9_5
+       16 ADC_CH10_5
+       17 ADC_CH11_PLATINUM_PU_5
+       18 ADC_CH11_5
+       19 ADC_CH12_PLATINUM_PU_5
+       20 ADC_CH12_5
+       21 ADC_CH13_5
+       22 ADC_CH14_5
+       23 DC_PLAT_RTD_B
+       24 ADC_CH15_5
+        }
+      }
+      {I SAMTEC_TMM-112-01-L-D-SM-A.PRT J9
+        {CN
+        1 OM23_THERMISTOR_A_1
+        2 OM61_THERMISTOR_A_1
+        3 OMMC_THERMISTOR_A_1
+        4 DC_PLAT_RTD_B
+        5 DC_PLAT_RTD_B
+        6 ADC_CH19_5
+        7 ADC_CH20_5
+        8 ADC_CH21_5
+        9 DC_PLAT_RTD_B
+       10 DC_PLAT_RTD_B
+       11 ADC_CH22_5
+       12 ADC_CH23_5
+       13 ADC_CH24_5
+       14 DC_PLAT_RTD_B
+       15 DC_PLAT_RTD_B
+       16 ADC_CH25_5
+       17 ADC_CH26_5
+       18 ADC_CH27_5
+       19 DC_PLAT_RTD_B
+       20 ADC_CH28_5
+       21 ADC_CH29_5
+       22 ADC_CH30_5
+       23 DC_PLAT_RTD_B
+       24 DC_PLAT_RTD_B
+        }
+      }
+      {I SAMTEC_TMM-103-01-L-D-SM-P-TR.PRT J10
+        {CN
+        1 NetJ10_1
+        2 NetJ10_2
+        3 GND
+        4 NetJ10_4
+        5 GND
+        6 NetJ10_6
+        }
+      }
+      {I SAMTEC_TMM-110-01-L-D-SM-A.PRT J11
+        {CN
+        1 U1_DC_CFG.CONFIGSELECT_1
+        2 GND
+        3 U1_DC_CFG.REFCLKSEL_1
+        4 GND
+        5 U1_DC_CFG.RXLOCK_0MODE_1
+        6 GND
+        7 U1_DC_CFG.RXLOCK_1MODE_1
+        8 GND
+        9 U1_DC_CFG.STATEOVERRIDE_1
+       10 GND
+       11 GND
+       12 GND
+       13 U1_DC_CFG.TXMODE_0SEL_1
+       14 GND
+       15 U1_DC_CFG.TXMODE_1SEL_1
+       16 GND
+       17 U1_DC_CFG.TXMODE_2SEL_1
+       18 GND
+       19 U1_DC_CFG.TXMODE_3SEL_1
+       20 GND
+        }
+      }
+      {I SAMTEC_TMM-103-01-L-D-SM-P-TR.PRT J12
+        {CN
+        1 EC_RESET_GPIO_6_1
+        2 DC_RESETB_1
+        3 EC_HYB_i2C_SCL_6_1
+        4 DC_I2C_SCL_1
+        5 EC_HYB_i2C_SDA_6_1
+        6 DC_I2C_SDA_1
+        }
+      }
+      {I SAMTEC_TMM-103-01-L-D-SM-P-TR.PRT J13
+        {CN
+        1 1V5
+        2 1V5
+        3 DC_EFUSE_PWR
+        4 DC_EFUSE_PWR
+        5 EFUSE_3V3_PWR
+        6 EFUSE_3V3_PWR
+        }
+      }
+      {I HIROSE_U.FL-R-SMT-1(10).PRT J14
+        {CN
+        1 DelayLine_2_P
+        2 GND
+        }
+      }
+      {I SAMTEC_TMM-103-01-L-D-SM-P-TR.PRT J15
+        {CN
+        1 U1_DC_TST.DF_AUTORESET_TESTINJ_1
+        2 GND
+        3 NetJ15_3
+        4 NetJ15_4
+        5 GND
+        6 U4_DC_TST.DF_AUTORESET_TESTINJ_1
+        }
+      }
+      {I LSHM-130-XX.X-XX-DV-A-S.PRT J16
+        {CN
+        1 2V5
+        2 U3_EFUSEPROGPLS_1
+        3 U3_GTX_1_N
+        4 GND
+        5 U3_GTX_1_P
+        6 U2_DC_TST.TXDATAVALID_1
+        7 GND
+        8 GND
+        9 U3_LDSDA_1
+       10 U2_DC_TST.TESTOUTPUT_1
+       11 U3_LDSCL_1
+       12 GND
+       13 GND
+       14 GND
+       15 U3_DC_TST.RX_DATVAL_1
+       16 GND
+       17 GND
+       18 GND
+       19 U3_DC_TST.RX_RDY_1
+       20 U2_DC_TST.TEST_DAT_OUT_1_P
+       21 GND
+       22 U2_DC_TST.TEST_DAT_OUT_1_N
+       23 U3_DC_TST.TX_RDY_1
+       24 GND
+       25 GND
+       26 U2_DC_TST.TEST_DAT_CLK_1_P
+       27 U3_DC_TST.TEST_DAT_IN_1_N
+       28 U2_DC_TST.TEST_DAT_CLK_1_N
+       29 U3_DC_TST.TEST_DAT_IN_1_P
+       30 GND
+       31 GND
+       32 U2_DC_TST.TEST_DAT_IN_1_P
+       33 U3_DC_TST.TEST_DAT_CLK_1_N
+       34 U2_DC_TST.TEST_DAT_IN_1_N
+       35 U3_DC_TST.TEST_DAT_CLK_1_P
+       36 GND
+       37 GND
+       38 U2_DC_TST.TX_RDY_1
+       39 U3_DC_TST.TEST_DAT_OUT_1_N
+       40 GND
+       41 U3_DC_TST.TEST_DAT_OUT_1_P
+       42 U2_DC_TST.RX_RDY_1
+       43 GND
+       44 GND
+       45 OM23_THERMISTOR_A_1
+       46 U2_DC_TST.RX_DATVAL_1
+       47 DC_PLAT_RTD_B
+       48 GND
+       49 GND
+       50 U2_LDSCL_1
+       51 U3_DC_TST.TESTOUTPUT_1
+       52 U2_LDSDA_1
+       53 GND
+       54 GND
+       55 U2_DC_TST.DF_AUTORESET_TESTINJ_1
+       56 U2_GTX_1_P
+       57 GND
+       58 U2_GTX_1_N
+       59 U2_EFUSEPROGPLS_1
+       60 2V5
+       G1 GND
+       G2 GND
+        }
+      }
+      {I LSHM-130-XX.X-XX-DV-A-S.PRT J17
+        {CN
+        1 2V5
+        2 U5_EFUSEPROGPLS_1
+        3 U4_GTX_1_N
+        4 GND
+        5 U4_GTX_1_P
+        6 U4_DC_TST.TXDATAVALID_1
+        7 GND
+        8 GND
+        9 U4_LDSDA_1
+       10 U5_DC_TST.TESTOUTPUT_1
+       11 U4_LDSCL_1
+       12 GND
+       13 GND
+       14 GND
+       15 U4_DC_TST.RX_DATVAL_1
+       16 GND
+       17 GND
+       18 GND
+       19 U4_DC_TST.RX_RDY_1
+       20 U5_DC_TST.TEST_DAT_OUT_1_P
+       21 GND
+       22 U5_DC_TST.TEST_DAT_OUT_1_N
+       23 U4_DC_TST.TX_RDY_1
+       24 GND
+       25 GND
+       26 U5_DC_TST.TEST_DAT_CLK_1_P
+       27 U4_DC_TST.TEST_DAT_IN_1_N
+       28 U5_DC_TST.TEST_DAT_CLK_1_N
+       29 U4_DC_TST.TEST_DAT_IN_1_P
+       30 GND
+       31 GND
+       32 U5_DC_TST.TEST_DAT_IN_1_P
+       33 U4_DC_TST.TEST_DAT_CLK_1_N
+       34 U5_DC_TST.TEST_DAT_IN_1_N
+       35 U4_DC_TST.TEST_DAT_CLK_1_P
+       36 GND
+       37 GND
+       38 U5_DC_TST.TX_RDY_1
+       39 U4_DC_TST.TEST_DAT_OUT_1_N
+       40 GND
+       41 U4_DC_TST.TEST_DAT_OUT_1_P
+       42 U5_DC_TST.RX_RDY_1
+       43 GND
+       44 GND
+       45 OM45_THERMISTOR_A_1
+       46 U5_DC_TST.RX_DATVAL_1
+       47 DC_PLAT_RTD_B
+       48 GND
+       49 GND
+       50 U5_LDSCL_1
+       51 U4_DC_TST.TESTOUTPUT_1
+       52 U5_LDSDA_1
+       53 GND
+       54 GND
+       55 U4_DC_TST.DF_AUTORESET_TESTINJ_1
+       56 U5_GTX_1_P
+       57 GND
+       58 U5_GTX_1_N
+       59 U4_EFUSEPROGPLS_1
+       60 2V5
+       G1 GND
+       G2 GND
+        }
+      }
+      {I SAMTEC_TMM-103-01-L-D-SM-P-TR.PRT J18
+        {CN
+        1 U_MC_TST.DF_AUTORESET_TESTINJ_1
+        2 GND
+        3 NetJ18_3
+        4 NetJ18_4
+        5 GND
+        6 U2_DC_TST.DF_AUTORESET_TESTINJ_1
+        }
+      }
+      {I HIROSE_U.FL-R-SMT-1(10).PRT J19
+        {CN
+        1 RCLK_IN_1_N
+        2 GND
+        }
+      }
+      {I HIROSE_U.FL-R-SMT-1(10).PRT J20
+        {CN
+        1 RCLK_IN_1_P
+        2 GND
+        }
+      }
+      {I HIROSE_U.FL-R-SMT-1(10).PRT J21
+        {CN
+        1 DelayLine_2_P
+        2 GND
+        }
+      }
+      {I HIROSE_U.FL-R-SMT-1(10).PRT J22
+        {CN
+        1 DelayLine_2_N
+        2 GND
+        }
+      }
+      {I HIROSE_U.FL-R-SMT-1(10).PRT J23
+        {CN
+        1 DelayLine_2_N
+        2 GND
+        }
+      }
+      {I LQW31HN23NJ03L_Murata_coil.PRT L1
+        {CN
+        1 1V5
+        2 GBT_AVDD_PS
+        }
+      }
+      {I LED_DIALIGHT_597-2111-407F.PRT LD1
+        {CN
+        1 NetLD1_1
+        2 NetLD1_2
+        }
+      }
+      {I MTG320.PRT NonPlated1
+        {CN
+        1 NetNonPlated1_1
+        }
+      }
+      {I MTG320.PRT NonPlated2
+        {CN
+        1 NetNonPlated2_1
+        }
+      }
+      {I MTG320.PRT NonPlated3
+        {CN
+        1 NetNonPlated3_1
+        }
+      }
+      {I MTG320.PRT NonPlated4
+        {CN
+        1 NetNonPlated4_1
+        }
+      }
+      {I MTG320.PRT NonPlated5
+        {CN
+        1 NetNonPlated5_1
+        }
+      }
+      {I MTG320.PRT NonPlated6
+        {CN
+        1 NetNonPlated6_1
+        }
+      }
+      {I MTG320.PRT NonPlated7
+        {CN
+        1 NetNonPlated7_1
+        }
+      }
+      {I MTG320.PRT NonPlated8
+        {CN
+        1 NetNonPlated8_1
+        }
+      }
+      {I MTG320.PRT NonPlated9
+        {CN
+        1 NetNonPlated9_1
+        }
+      }
+      {I MTG320.PRT NonPlated10
+        {CN
+        1 NetNonPlated10_1
+        }
+      }
+      {I RESC1005X40N.PRT R1
+        {CN
+        1 NetJ10_1
+        2 1V5
+        }
+      }
+      {I RESC1005X40N.PRT R2
+        {CN
+        1 NetJ10_2
+        2 1V5
+        }
+      }
+      {I RESC1005X40N.PRT R3
+        {CN
+        1 NetJ10_6
+        2 1V5
+        }
+      }
+      {I RESC1005X40N.PRT R4
+        {CN
+        1 SLVS_ONE_3_N
+        2 SLVS_ONE_3_P
+        }
+      }
+      {I RESC1005X40N.PRT R5
+        {CN
+        1 NetJ10_4
+        2 1V5
+        }
+      }
+      {I RESC1005X40N.PRT R6
+        {CN
+        1 SCA_PRI_CLK_3_P
+        2 SCA_PRI_CLK_3_N
+        }
+      }
+      {I RESC1005X40N.PRT R7
+        {CN
+        1 SCA_PRI_DAT_OUT_3_P
+        2 SCA_PRI_DAT_OUT_3_N
+        }
+      }
+      {I RESC1005X40N.PRT R8
+        {CN
+        1 EC_SEC_CLK_ELK_1_P
+        2 EC_SEC_CLK_ELK_1_N
+        }
+      }
+      {I RESC1005X40N.PRT R9
+        {CN
+        1 EC_SEC_DIN_ELK_1_P
+        2 EC_SEC_DIN_ELK_1_N
+        }
+      }
+      {I RESC1005X40N.PRT R10
+        {CN
+        1 U1_DC_CFG.CONFIGSELECT_1
+        2 1V5
+        }
+      }
+      {I RESC1005X40N.PRT R11
+        {CN
+        1 EC_RESET_GPIO_0_1
+        2 NetIC1_B13
+        }
+      }
+      {I RESC1005X40N.PRT R12
+        {CN
+        1 EC_RESET_GPIO_1_1
+        2 NetIC1_A13
+        }
+      }
+      {I RESC1005X40N.PRT R13
+        {CN
+        1 EC_RESET_GPIO_2_1
+        2 NetIC1_B12
+        }
+      }
+      {I RESC1005X40N.PRT R14
+        {CN
+        1 EC_RESET_GPIO_3_1
+        2 NetIC1_A12
+        }
+      }
+      {I RESC1005X40N.PRT R15
+        {CN
+        1 EC_RESET_GPIO_4_1
+        2 NetIC1_C11
+        }
+      }
+      {I RESC1005X40N.PRT R16
+        {CN
+        1 EC_RESET_GPIO_5_1
+        2 NetIC1_B11
+        }
+      }
+      {I RESC1005X40N.PRT R17
+        {CN
+        1 EC_RESET_GPIO_6_1
+        2 NetIC1_A11
+        }
+      }
+      {I RESC1005X40N.PRT R18
+        {CN
+        1 1V5
+        2 ADC_CH13_5
+        }
+      }
+      {I RESC1005X40N.PRT R19
+        {CN
+        1 EC_ADC_REF13
+        2 ADC_CH13_5
+        }
+      }
+      {I RESC1005X40N.PRT R20
+        {CN
+        1 DC_PLAT_RTD_B
+        2 ADC_CH13_5
+        }
+      }
+      {I RESC1005X40N.PRT R21
+        {CN
+        1 EC_ADC_REF14
+        2 ADC_CH14_5
+        }
+      }
+      {I RESC1005X40N.PRT R22
+        {CN
+        1 DC_PLAT_RTD_B
+        2 ADC_CH14_5
+        }
+      }
+      {I RESC1005X40N.PRT R23
+        {CN
+        1 1V5
+        2 1V5_SENSE_POS_2
+        }
+      }
+      {I RESC1005X40N.PRT R24
+        {CN
+        1 1V5_SENSE_NEG_2
+        2 GND
+        }
+      }
+      {I RESC1005X40N.PRT R25
+        {CN
+        1 EC_ADC_REF15
+        2 ADC_CH15_5
+        }
+      }
+      {I RESC1005X40N.PRT R26
+        {CN
+        1 DC_PLAT_RTD_B
+        2 ADC_CH15_5
+        }
+      }
+      {I RESC1005X40N.PRT R27
+        {CN
+        1 SLVS_ONE_3_P
+        2 1V5
+        }
+      }
+      {I RESC1005X40N.PRT R28
+        {CN
+        1 GND
+        2 SLVS_ONE_3_N
+        }
+      }
+      {I RESC1005X40N.PRT R32
+        {CN
+        1 GND
+        2 U_SCA_EFUSEPROGPLS_1
+        }
+      }
+      {I RESC1005X40N.PRT R33
+        {CN
+        1 U_MC_CFG.REFCLKSEL_1
+        2 1V5
+        }
+      }
+      {I RESC1005X40N.PRT R34
+        {CN
+        1 U_MC_CFG.RXLOCK_0MODE_1
+        2 1V5
+        }
+      }
+      {I RESC1005X40N.PRT R35
+        {CN
+        1 U_MC_CFG.RXLOCK_1MODE_1
+        2 1V5
+        }
+      }
+      {I RESC1005X40N.PRT R36
+        {CN
+        1 U_MC_CFG.STATEOVERRIDE_1
+        2 1V5
+        }
+      }
+      {I RESC1005X40N.PRT R37
+        {CN
+        1 U_MC_CFG.TXMODE_0SEL_1
+        2 1V5
+        }
+      }
+      {I RESC1005X40N.PRT R38
+        {CN
+        1 U_MC_CFG.TXMODE_1SEL_1
+        2 1V5
+        }
+      }
+      {I RESC1005X40N.PRT R39
+        {CN
+        1 U_MC_CFG.TXMODE_2SEL_1
+        2 1V5
+        }
+      }
+      {I RESC1005X40N.PRT R40
+        {CN
+        1 U_MC_CFG.TXMODE_3SEL_1
+        2 1V5
+        }
+      }
+      {I RESC1005X40N.PRT R41
+        {CN
+        1 U_MC_CFG.CONFIGSELECT_1
+        2 1V5
+        }
+      }
+      {I RESC1005X40N.PRT R42
+        {CN
+        1 U1_DC_CFG.REFCLKSEL_1
+        2 1V5
+        }
+      }
+      {I RESC1005X40N.PRT R44
+        {CN
+        1 U1_DC_CFG.RXLOCK_0MODE_1
+        2 1V5
+        }
+      }
+      {I RESC1005X40N.PRT R45
+        {CN
+        1 DC_I2C_SDA_1
+        2 1V5
+        }
+      }
+      {I RESC1005X40N.PRT R46
+        {CN
+        1 DC_I2C_SCL_1
+        2 1V5
+        }
+      }
+      {I RESC1005X40N.PRT R47
+        {CN
+        1 DC_RESETB_1
+        2 1V5
+        }
+      }
+      {I RESC1005X40N.PRT R49
+        {CN
+        1 MC_RESETB_1
+        2 NetC72_2
+        }
+      }
+      {I RESC1005X40N.PRT R55
+        {CN
+        1 U1_DC_CFG.RXLOCK_1MODE_1
+        2 1V5
+        }
+      }
+      {I RESC1005X40N.PRT R56
+        {CN
+        1 U1_DC_CFG.STATEOVERRIDE_1
+        2 1V5
+        }
+      }
+      {I RESC1005X40N.PRT R57
+        {CN
+        1 U1_DC_CFG.TXMODE_0SEL_1
+        2 1V5
+        }
+      }
+      {I RESC1005X40N.PRT R58
+        {CN
+        1 U1_DC_CFG.TXMODE_1SEL_1
+        2 1V5
+        }
+      }
+      {I RESC1005X40N.PRT R76
+        {CN
+        1 NetC72_2
+        2 1V5
+        }
+      }
+      {I RESC1005X40N.PRT R77
+        {CN
+        1 U1_DC_CFG.TXMODE_2SEL_1
+        2 1V5
+        }
+      }
+      {I RESC1005X40N.PRT R78
+        {CN
+        1 U1_DC_CFG.TXMODE_3SEL_1
+        2 1V5
+        }
+      }
+      {I RESC5226X80N.PRT R79
+        {CN
+        1 1V5
+        2 GBT_AVDD_PS
+        }
+      }
+      {I RESC1005X40N.PRT R80
+        {CN
+        1 1V5
+        2 ADC_CH14_5
+        }
+      }
+      {I RESC1005X40N.PRT R81
+        {CN
+        1 1V5
+        2 ADC_CH15_5
+        }
+      }
+      {I RESC1005X40N.PRT R82
+        {CN
+        1 DC_PLAT_RTD_A_1
+        2 1V5
+        }
+      }
+      {I RESC1005X40N.PRT R83
+        {CN
+        1 EC_ADC_2
+        2 1V5
+        }
+      }
+      {I RESC2012X60N.PRT R84
+        {CN
+        1 DC_PLAT_RTD_B
+        2 GND
+        }
+      }
+      {I RESC1005X40N.PRT R85
+        {CN
+        1 DC_PLAT_RTD_B
+        2 OM23_THERMISTOR_A_1
+        }
+      }
+      {I RESC1005X40N.PRT R86
+        {CN
+        1 DC_PLAT_RTD_B
+        2 OM61_THERMISTOR_A_1
+        }
+      }
+      {I RESC5226X80N.PRT R89
+        {CN
+        1 NetC119_1
+        2 1V5
+        }
+      }
+      {I RESC5226X80N.PRT R90
+        {CN
+        1 NetC120_1
+        2 1V5
+        }
+      }
+      {I RESC5226X80N.PRT R91
+        {CN
+        1 NetC121_1
+        2 2V5
+        }
+      }
+      {I RESC1005X40N.PRT R92
+        {CN
+        1 SLVS_HIGH_1_P
+        2 1V5
+        }
+      }
+      {I RESC1005X40N.PRT R93
+        {CN
+        1 SLVS_HIGH_1_N
+        2 SLVS_HIGH_1_P
+        }
+      }
+      {I RESC1005X40N.PRT R94
+        {CN
+        1 GND
+        2 SLVS_HIGH_1_N
+        }
+      }
+      {I RESC1005X40N.PRT R95
+        {CN
+        1 EC_ADC_3
+        2 1V5
+        }
+      }
+      {I RESC1005X40N.PRT R96
+        {CN
+        1 DC_PLAT_RTD_B
+        2 ADC_CH11_5
+        }
+      }
+      {I RESC1005X40N.PRT R97
+        {CN
+        1 DC_PLAT_RTD_B
+        2 ADC_CH12_5
+        }
+      }
+      {I RESC1005X40N.PRT R98
+        {CN
+        1 NetC123_2
+        2 SCA_TDI_5
+        }
+      }
+      {I RESC1005X40N.PRT R99
+        {CN
+        1 GND
+        2 SCA_TDI_5
+        }
+      }
+      {I RESC1005X40N.PRT R100
+        {CN
+        1 NetC124_2
+        2 SPI_MISI_5
+        }
+      }
+      {I RESC1005X40N.PRT R101
+        {CN
+        1 GND
+        2 SPI_MISI_5
+        }
+      }
+      {I RESC1005X40N.PRT R102
+        {CN
+        1 2V5
+        2 ADC_CH24_5
+        }
+      }
+      {I RESC1005X40N.PRT R103
+        {CN
+        1 1V5
+        2 ADC_CH25_5
+        }
+      }
+      {I RESC1005X40N.PRT R104
+        {CN
+        1 DC_PLAT_RTD_B
+        2 ADC_CH24_5
+        }
+      }
+      {I RESC1005X40N.PRT R105
+        {CN
+        1 DC_PLAT_RTD_B
+        2 ADC_CH25_5
+        }
+      }
+      {I RESC1005X40N.PRT R106
+        {CN
+        1 EC_ADC_4
+        2 1V5
+        }
+      }
+      {I RESC1005X40N.PRT R107
+        {CN
+        1 DC_PLAT_RTD_B
+        2 OM45_THERMISTOR_A_1
+        }
+      }
+      {I RESC1005X40N.PRT R108
+        {CN
+        1 EC_ADC_5
+        2 1V5
+        }
+      }
+      {I RESC1005X40N.PRT R109
+        {CN
+        1 EC_ADC_6
+        2 1V5
+        }
+      }
+      {I RESC1005X40N.PRT R110
+        {CN
+        1 EC_ADC_7
+        2 1V5
+        }
+      }
+      {I RESC1005X40N.PRT R111
+        {CN
+        1 ADC_CH8_5
+        2 1V5
+        }
+      }
+      {I RESC1005X40N.PRT R112
+        {CN
+        1 ADC_CH9_5
+        2 1V5
+        }
+      }
+      {I RESC1005X40N.PRT R113
+        {CN
+        1 ADC_CH10_5
+        2 1V5
+        }
+      }
+      {I RESC1005X40N.PRT R114
+        {CN
+        1 ADC_CH12_PLATINUM_PU_5
+        2 1V5
+        }
+      }
+      {I RESC1005X40N.PRT R115
+        {CN
+        1 ADC_CH11_PLATINUM_PU_5
+        2 1V5
+        }
+      }
+      {I RESC1005X40N.PRT R116
+        {CN
+        1 DC_PLAT_RTD_B
+        2 DC_PLAT_RTD_A_1
+        }
+      }
+      {I RESC1005X40N.PRT R117
+        {CN
+        1 DC_PLAT_RTD_B
+        2 EC_ADC_2
+        }
+      }
+      {I RESC1005X40N.PRT R118
+        {CN
+        1 DC_PLAT_RTD_B
+        2 EC_ADC_3
+        }
+      }
+      {I RESC1005X40N.PRT R119
+        {CN
+        1 DC_PLAT_RTD_B
+        2 EC_ADC_4
+        }
+      }
+      {I RESC1005X40N.PRT R120
+        {CN
+        1 DC_PLAT_RTD_B
+        2 EC_ADC_5
+        }
+      }
+      {I RESC1005X40N.PRT R121
+        {CN
+        1 DC_PLAT_RTD_B
+        2 EC_ADC_6
+        }
+      }
+      {I RESC1005X40N.PRT R122
+        {CN
+        1 DC_PLAT_RTD_B
+        2 EC_ADC_7
+        }
+      }
+      {I RESC1005X40N.PRT R123
+        {CN
+        1 DC_PLAT_RTD_B
+        2 ADC_CH8_5
+        }
+      }
+      {I RESC1005X40N.PRT R124
+        {CN
+        1 DC_PLAT_RTD_B
+        2 ADC_CH9_5
+        }
+      }
+      {I RESC1005X40N.PRT R125
+        {CN
+        1 DC_PLAT_RTD_B
+        2 ADC_CH10_5
+        }
+      }
+      {I RESC1005X40N.PRT R126
+        {CN
+        1 DC_PLAT_RTD_B
+        2 ADC_CH12_PLATINUM_PU_5
+        }
+      }
+      {I RESC1005X40N.PRT R127
+        {CN
+        1 DC_PLAT_RTD_B
+        2 ADC_CH11_PLATINUM_PU_5
+        }
+      }
+      {I RESC1005X40N.PRT R128
+        {CN
+        1 DC_PLAT_RTD_B
+        2 OMMC_THERMISTOR_A_1
+        }
+      }
+      {I RESC1005X40N.PRT R129
+        {CN
+        1 NetLD1_2
+        2 2V5
+        }
+      }
+      {I RESC1005X40N.PRT R130
+        {CN
+        1 1v5_senseN_1
+        2 GND
+        }
+      }
+      {I RESC1005X40N.PRT R131
+        {CN
+        1 NetLD1_1
+        2 2V5
+        }
+      }
+      {I RESC1005X40N.PRT R132
+        {CN
+        1 DC_PLAT_RTD_B
+        2 ADC_CH19_5
+        }
+      }
+      {I RESC1005X40N.PRT R133
+        {CN
+        1 DC_PLAT_RTD_B
+        2 ADC_CH20_5
+        }
+      }
+      {I RESC1005X40N.PRT R134
+        {CN
+        1 DC_PLAT_RTD_B
+        2 ADC_CH21_5
+        }
+      }
+      {I RESC1005X40N.PRT R135
+        {CN
+        1 DC_PLAT_RTD_B
+        2 ADC_CH22_5
+        }
+      }
+      {I RESC1005X40N.PRT R136
+        {CN
+        1 DC_PLAT_RTD_B
+        2 ADC_CH23_5
+        }
+      }
+      {I RESC1005X40N.PRT R137
+        {CN
+        1 DC_PLAT_RTD_B
+        2 ADC_CH26_5
+        }
+      }
+      {I RESC1005X40N.PRT R138
+        {CN
+        1 DC_PLAT_RTD_B
+        2 ADC_CH27_5
+        }
+      }
+      {I RESC1005X40N.PRT R139
+        {CN
+        1 DC_PLAT_RTD_B
+        2 ADC_CH28_5
+        }
+      }
+      {I RESC1005X40N.PRT R140
+        {CN
+        1 DC_PLAT_RTD_B
+        2 ADC_CH29_5
+        }
+      }
+      {I RESC1005X40N.PRT R141
+        {CN
+        1 DC_PLAT_RTD_B
+        2 ADC_CH30_5
+        }
+      }
+      {I RESC1005X40N.PRT R142
+        {CN
+        1 GND
+        2 2v5_senseN_1
+        }
+      }
+      {I RESC1005X40N.PRT R143
+        {CN
+        1 GND
+        2 NetR143_2
+        }
+      }
+      {I RESC1005X40N.PRT R144
+        {CN
+        1 2V5
+        2 2v5_senseP_1
+        }
+      }
+      {I RESC1005X40N.PRT R145
+        {CN
+        1 NetR143_2
+        2 1V5
+        }
+      }
+      {I RESC1005X40N.PRT R146
+        {CN
+        1 1V5
+        2 1v5_senseP_1
+        }
+      }
+      {I THERMC3216X130N.PRT RT1
+        {CN
+        1 DC_PLAT_RTD_A_1
+        2 DC_PLAT_RTD_B
+        }
+      }
+      {I SOT95P230X110-3N.PRT T1
+        {CN
+        1 NetR143_2
+        2 GND
+        3 NetLD1_1
+        }
+      }
+      {I TPS127.PRT TP3
+        {CN
+        1 SLVS_HIGH_1_P
+        }
+      }
+      {I TPS127.PRT TP4
+        {CN
+        1 SLVS_HIGH_1_N
+        }
+      }
+      {I TPS127.PRT TP6
+        {CN
+        1 GND
+        }
+      }
+      {I CAPC2012X135N.PRT U1_C21
+        {CN
+        1 1V5
+        2 GND
+        }
+      }
+      {I CAPC2012X135N.PRT U1_C22
+        {CN
+        1 1V5
+        2 GND
+        }
+      }
+      {I CAPC1005X55N.PRT U1_C23
+        {CN
+        1 GND
+        2 1V5
+        }
+      }
+      {I CAPC1005X55N.PRT U1_C24
+        {CN
+        1 GND
+        2 1V5
+        }
+      }
+      {I CAPC1005X55N.PRT U1_C25
+        {CN
+        1 GND
+        2 1V5
+        }
+      }
+      {I CAPC1005X55N.PRT U1_C26
+        {CN
+        1 GND
+        2 1V5
+        }
+      }
+      {I CAPC1005X55N.PRT U1_C27
+        {CN
+        1 GND
+        2 1V5
+        }
+      }
+      {I CAPC1005X55N.PRT U1_C28
+        {CN
+        1 GND
+        2 1V5
+        }
+      }
+      {I CAPC1005X55N.PRT U1_C29
+        {CN
+        1 GND
+        2 1V5
+        }
+      }
+      {I CAPC1005X55N.PRT U1_C30
+        {CN
+        1 GND
+        2 1V5
+        }
+      }
+      {I CAPC0603X33N.PRT U1_C31
+        {CN
+        1 GND
+        2 1V5
+        }
+      }
+      {I CAPC0603X33N.PRT U1_C32
+        {CN
+        1 GND
+        2 1V5
+        }
+      }
+      {I CAPC0603X33N.PRT U1_C33
+        {CN
+        1 GND
+        2 1V5
+        }
+      }
+      {I CAPC0603X33N.PRT U1_C34
+        {CN
+        1 GND
+        2 1V5
+        }
+      }
+      {I CAPC0603X33N.PRT U1_C35
+        {CN
+        1 GND
+        2 1V5
+        }
+      }
+      {I CAPC0603X33N.PRT U1_C36
+        {CN
+        1 GND
+        2 1V5
+        }
+      }
+      {I CAPC2012X135N.PRT U1_C37
+        {CN
+        1 U1_GBTX_VDD_SERDES
+        2 GND
+        }
+      }
+      {I CAPC2012X135N.PRT U1_C38
+        {CN
+        1 U1_GBTX_VDD_SERDES
+        2 GND
+        }
+      }
+      {I CAPC1005X55N.PRT U1_C39
+        {CN
+        1 GND
+        2 U1_GBTX_VDD_SERDES
+        }
+      }
+      {I CAPC1005X55N.PRT U1_C40
+        {CN
+        1 GND
+        2 U1_GBTX_VDD_SERDES
+        }
+      }
+      {I CAPC1005X55N.PRT U1_C41
+        {CN
+        1 GND
+        2 U1_GBTX_VDD_SERDES
+        }
+      }
+      {I CAPC1005X55N.PRT U1_C42
+        {CN
+        1 GND
+        2 U1_GBTX_VDD_SERDES
+        }
+      }
+      {I CAPC1005X55N.PRT U1_C43
+        {CN
+        1 GND
+        2 U1_GBTX_VDD_SERDES
+        }
+      }
+      {I CAPC1005X55N.PRT U1_C44
+        {CN
+        1 GND
+        2 U1_GBTX_VDD_SERDES
+        }
+      }
+      {I CAPC1005X55N.PRT U1_C45
+        {CN
+        1 GND
+        2 U1_GBTX_VDD_SERDES
+        }
+      }
+      {I CAPC1005X55N.PRT U1_C46
+        {CN
+        1 GND
+        2 U1_GBTX_VDD_SERDES
+        }
+      }
+      {I CAPC0603X33N.PRT U1_C47
+        {CN
+        1 GND
+        2 U1_GBTX_VDD_SERDES
+        }
+      }
+      {I CAPC0603X33N.PRT U1_C48
+        {CN
+        1 GND
+        2 U1_GBTX_VDD_SERDES
+        }
+      }
+      {I CAPC0603X33N.PRT U1_C49
+        {CN
+        1 GND
+        2 U1_GBTX_VDD_SERDES
+        }
+      }
+      {I CAPC0603X33N.PRT U1_C50
+        {CN
+        1 GND
+        2 U1_GBTX_VDD_SERDES
+        }
+      }
+      {I CAPC0603X33N.PRT U1_C51
+        {CN
+        1 GND
+        2 U1_GBTX_VDD_SERDES
+        }
+      }
+      {I CAPC0603X33N.PRT U1_C52
+        {CN
+        1 GND
+        2 U1_GBTX_VDD_SERDES
+        }
+      }
+      {I CAPC2012X135N.PRT U1_C53
+        {CN
+        1 U1_GBTX_VDDP_PS
+        2 GND
+        }
+      }
+      {I CAPC2012X135N.PRT U1_C54
+        {CN
+        1 U1_GBTX_VDDP_PS
+        2 GND
+        }
+      }
+      {I CAPC1005X55N.PRT U1_C55
+        {CN
+        1 GND
+        2 U1_GBTX_VDDP_PS
+        }
+      }
+      {I CAPC1005X55N.PRT U1_C56
+        {CN
+        1 GND
+        2 U1_GBTX_VDDP_PS
+        }
+      }
+      {I CAPC1005X55N.PRT U1_C57
+        {CN
+        1 GND
+        2 U1_GBTX_VDDP_PS
+        }
+      }
+      {I CAPC0603X33N.PRT U1_C58
+        {CN
+        1 GND
+        2 U1_GBTX_VDDP_PS
+        }
+      }
+      {I CAPC0603X33N.PRT U1_C59
+        {CN
+        1 GND
+        2 U1_GBTX_VDDP_PS
+        }
+      }
+      {I CAPC0603X33N.PRT U1_C60
+        {CN
+        1 GND
+        2 U1_GBTX_VDDP_PS
+        }
+      }
+      {I CAPC0603X33N.PRT U1_C93
+        {CN
+        1 GND
+        2 1V5
+        }
+      }
+      {I CAPC1005X55N.PRT U1_C94
+        {CN
+        1 GND
+        2 1V5
+        }
+      }
+      {I CAPC2012X135N.PRT U1_C129
+        {CN
+        1 DC_EFUSE_PWR
+        2 GND
+        }
+      }
+      {I CAPC1005X55N.PRT U1_C130
+        {CN
+        1 GND
+        2 DC_EFUSE_PWR
+        }
+      }
+      {I CERN_GBTX ASIC_V0.1.PRT U1_IC2
+        {CN
+       A1 NetU1_IC2_A1
+       A2 NetU1_IC2_A2
+       A3 NetU1_IC2_A3
+       A4 NetU1_IC2_A4
+       A5 NetU1_IC2_A5
+       A6 NetU1_IC2_A6
+       A7 DC0_ELKS.GBTX_ELK_CH3_1_P
+       A8 DC0_ELKS.GBTX_ELK_CH3_1_N
+       A9 U1_MC_TFC3_P
+      A10 U1_MC_TFC3_N
+      A11 NetU1_IC2_A11
+      A12 NetU1_IC2_A12
+      A13 NetU1_IC2_A13
+      A14 NetU1_IC2_A14
+      A15 DC0_ELKS.GBTX_ELK_CH2_1_P
+      A16 DC0_ELKS.GBTX_ELK_CH2_1_N
+      A17 U1_MC_TFC2_P
+      A18 U1_MC_TFC2_N
+      A19 GND
+      A20 U1_MC_TFC5_P
+       B1 U1_SLVS_ONE_P
+       B2 U1_SLVS_ONE_N
+       B3 U1_SLVS_ONE_N
+       B4 U1_SLVS_ONE_P
+       B5 NetU1_IC2_B5
+       B6 NetU1_IC2_B6
+       B7 NetU1_IC2_B7
+       B8 NetU1_IC2_B8
+       B9 GND
+      B10 1V5
+      B11 NetU1_IC2_B11
+      B12 NetU1_IC2_B12
+      B13 NetU1_IC2_B13
+      B14 NetU1_IC2_B14
+      B15 NetU1_IC2_B15
+      B16 NetU1_IC2_B16
+      B17 NetU1_IC2_B17
+      B18 NetU1_IC2_B18
+      B19 1V5
+      B20 U1_MC_TFC5_N
+       C1 GND
+       C2 GND
+       C3 U1_GBTX_VDD_SERDES
+       C4 U1_SLVS_ONE_P
+       C5 NetU1_IC2_C5
+       C6 NetU1_IC2_C6
+       C7 NetU1_IC2_C7
+       C8 NetU1_IC2_C8
+       C9 NetU1_IC2_C9
+      C10 NetU1_IC2_C10
+      C11 U1_SLVS_ONE_N
+      C12 NetU1_IC2_C12
+      C13 GND
+      C14 1V5
+      C15 NetU1_IC2_C15
+      C16 NetU1_IC2_C16
+      C17 NetU1_IC2_C17
+      C18 NetU1_IC2_C18
+      C19 NetU1_IC2_C19
+      C20 NetU1_IC2_C20
+       D1 U1_GTX_1_N
+       D2 GND
+       D3 U1_GBTX_VDD_SERDES
+       D4 U1_SLVS_ONE_N
+       D5 U1_SLVS_ONE_N
+       D6 U1_SLVS_ONE_P
+       D7 U1_SLVS_ONE_N
+       D8 U1_SLVS_ONE_P
+       D9 DC0_ELKS.GBTX_ELK_CH6_1_P
+      D10 DC0_ELKS.GBTX_ELK_CH6_1_N
+      D11 U1_SLVS_ONE_P
+      D12 NetU1_IC2_D12
+      D13 U1_SLVS_ONE_P
+      D14 U1_SLVS_ONE_N
+      D15 U1_SLVS_ONE_P
+      D16 U1_SLVS_ONE_N
+      D17 NetU1_IC2_D17
+      D18 NetU1_IC2_D18
+      D19 NetU1_IC2_D19
+      D20 NetU1_IC2_D20
+       E1 U1_GTX_1_P
+       E2 GND
+       E3 U1_GBTX_VDD_SERDES
+       E4 U1_SLVS_ONE_N
+       E5 NetU1_IC2_E5
+       E6 NetU1_IC2_E6
+       E7 NetU1_IC2_E7
+       E8 NetU1_IC2_E8
+       E9 U1_SLVS_ONE_P
+      E10 U1_SLVS_ONE_N
+      E11 DC0_ELKS.GBTX_ELK_CH9_1_N
+      E12 DC0_ELKS.GBTX_ELK_CH9_1_P
+      E13 NetU1_IC2_E13
+      E14 NetU1_IC2_E14
+      E15 U1_SLVS_ONE_N
+      E16 U1_SLVS_ONE_P
+      E17 U1_SLVS_ONE_N
+      E18 NetU1_IC2_E18
+      E19 NetU1_IC2_E19
+      E20 NetU1_IC2_E20
+       F1 GND
+       F2 U1_GBTX_VDD_SERDES
+       F3 U1_GBTX_VDD_SERDES
+       F4 U1_SLVS_ONE_P
+       F5 NetU1_IC2_F5
+       F6 NetU1_IC2_F6
+       F7 DC0_ELKS.GBTX_ELK_CH7_1_P
+       F8 DC0_ELKS.GBTX_ELK_CH7_1_N
+       F9 1V5
+      F10 GND
+      F11 GND
+      F12 GND
+      F13 NetU1_IC2_F13
+      F14 NetU1_IC2_F14
+      F15 U1_SLVS_ONE_P
+      F16 U1_SLVS_ONE_P
+      F17 GND
+      F18 DC0_ELKS.GBTX_ELK_CH8_1_P
+      F19 1V5
+      F20 NetU1_IC2_F20
+       G1 DC_OUT_RCLK0_P
+       G2 U1_GBTX_VDDP_PS
+       G3 NetU1_IC2_G3
+       G4 NetU1_IC2_G4
+       G5 DC_I2C_SCL_1
+       G6 U1_SLVS_ONE_N
+       G7 U1_SLVS_ONE_P
+       G8 NetU1_IC2_G8
+       G9 NetU1_IC2_G9
+      G10 GND
+      G11 GND
+      G12 GND
+      G13 GND
+      G14 1V5
+      G15 1V5
+      G16 U1_SLVS_ONE_N
+      G17 NetU1_IC2_G17
+      G18 DC0_ELKS.GBTX_ELK_CH8_1_N
+      G19 NetU1_IC2_G19
+      G20 NetU1_IC2_G20
+       H1 DC_OUT_RCLK0_N
+       H2 GND
+       H3 U1_GBTX_VDDP_PS
+       H4 DC_OUT_RCLK1_P
+       H5 DC_I2C_SDA_1
+       H6 NetU1_IC2_H6
+       H7 1V5
+       H8 U1_LDSDA_1
+       H9 U1_DC_CFG.STATEOVERRIDE_1
+      H10 GND
+      H11 GND
+      H12 GND
+      H13 1V5
+      H14 1V5
+      H15 U1_DC_TST.DF_AUTORESET_TESTINJ_1
+      H16 U1_SLVS_ONE_N
+      H17 NetU1_IC2_H17
+      H18 U1_MC_TFC4_N
+      H19 NetU1_IC2_H19
+      H20 NetU1_IC2_H20
+       J1 GND
+       J2 NetU1_IC2_J2
+       J3 U1_GBTX_VDD_SERDES
+       J4 DC_OUT_RCLK1_N
+       J5 GND
+       J6 U1_GBTX_VDDP_PS
+       J7 NetU1_IC2_J7
+       J8 U1_DC_CFG.RXLOCK_0MODE_1
+       J9 U1_DC_CFG.REFCLKSEL_1
+      J10 GND
+      J11 GND
+      J12 1V5
+      J13 1V5
+      J14 1V5
+      J15 GND
+      J16 U1_SLVS_ONE_P
+      J17 NetU1_IC2_J17
+      J18 U1_MC_TFC4_P
+      J19 NetU1_IC2_J19
+      J20 GND
+       K1 MC_OUT_RCLK0_1_N
+       K2 GND
+       K3 U1_GBTX_VDD_SERDES
+       K4 DC_OUT_RCLK2_P
+       K5 DC_OUT_RCLK2_N
+       K6 U1_GBTX_VDDP_PS
+       K7 U1_DC_CFG.CONFIGSELECT_1
+       K8 U1_LDSCL_1
+       K9 U1_GBTX_VDDP_PS
+      K10 NetU1_IC2_K10
+      K11 GND
+      K12 GND
+      K13 1V5
+      K14 1V5
+      K15 DC0_ELKS.GBTX_ELK_CH11_1_N
+      K16 U1_SLVS_ONE_N
+      K17 NetU1_IC2_K17
+      K18 NetU1_IC2_K18
+      K19 NetU1_IC2_K19
+      K20 1V5
+       L1 MC_OUT_RCLK0_1_P
+       L2 GND
+       L3 U1_GBTX_VDD_SERDES
+       L4 DC_OUT_RCLK3_P
+       L5 DC_OUT_RCLK3_N
+       L6 GND
+       L7 U1_DC_CFG.TXMODE_1SEL_1
+       L8 1V5
+       L9 GND
+      L10 U1_DC_CFG.TXMODE_2SEL_1
+      L11 GND
+      L12 GND
+      L13 NetU1_IC2_L13
+      L14 1V5
+      L15 DC0_ELKS.GBTX_ELK_CH11_1_P
+      L16 U1_SLVS_ONE_P
+      L17 NetU1_IC2_L17
+      L18 NetU1_IC2_L18
+      L19 NetU1_IC2_L19
+      L20 NetU1_IC2_L20
+       M1 GND
+       M2 NetU1_IC2_M2
+       M3 U1_GBTX_VDD_SERDES
+       M4 DC_OUT_RCLK4_P
+       M5 DC_OUT_RCLK4_N
+       M6 DC_OUT_RCLK6_P
+       M7 DC_OUT_RCLK6_N
+       M8 NetU1_IC2_M8
+       M9 U1_DC_CFG.RXLOCK_1MODE_1
+      M10 DC_RESETB_1
+      M11 GND
+      M12 GND
+      M13 1V5
+      M14 1V5
+      M15 U1_SLVS_ONE_N
+      M16 NetU1_IC2_M16
+      M17 U1_SLVS_ONE_P
+      M18 U1_SLVS_ONE_P
+      M19 NetU1_IC2_M19
+      M20 NetU1_IC2_M20
+       N1 DC_OUT_RCLK5_P
+       N2 DC_OUT_RCLK5_N
+       N3 GND
+       N4 U1_GBTX_VDDP_PS
+       N5 U1_DC_CFG.TXMODE_0SEL_1
+       N6 GND
+       N7 GND
+       N8 NetU1_IC2_N8
+       N9 NetU1_IC2_N9
+      N10 NetU1_IC2_N10
+      N11 U1_DC_TST.TXDATAVALID_1
+      N12 1V5
+      N13 1V5
+      N14 1V5
+      N15 U1_SLVS_ONE_P
+      N16 NetU1_IC2_N16
+      N17 U1_SLVS_ONE_N
+      N18 U1_SLVS_ONE_N
+      N19 NetU1_IC2_N19
+      N20 NetU1_IC2_N20
+       P1 DC_OUT_RCLK7_P
+       P2 DC_OUT_RCLK7_N
+       P3 U1_SCA_PRI_DAT_OUT_N
+       P4 U1_SCA_PRI_DAT_OUT_P
+       P5 GND
+       P6 U1_SCA_PRI_CLK_P
+       P7 NetU1_IC2_P7
+       P8 NetU1_IC2_P8
+       P9 NetU1_IC2_P9
+      P10 U1_DC_CFG.TXMODE_3SEL_1
+      P11 U1_EFUSEPROGPLS_1
+      P12 U1_SCA_PRI_DAT_IN_P
+      P13 U1_SCA_PRI_DAT_IN_N
+      P14 DC_EFUSE_PWR
+      P15 NetU1_IC2_P15
+      P16 NetU1_IC2_P16
+      P17 DC0_ELKS.GBTX_ELK_CH10_1_P
+      P18 GND
+      P19 NetU1_IC2_P19
+      P20 NetU1_IC2_P20
+       R1 GND
+       R2 U1_GBTX_VDD_SERDES
+       R3 U1_GBTX_VDD_SERDES
+       R4 U1_SLVS_ONE_N
+       R5 U1_SLVS_ONE_P
+       R6 U1_SCA_PRI_CLK_N
+       R7 NetU1_IC2_R7
+       R8 NetU1_IC2_R8
+       R9 U1_SLVS_ONE_P
+      R10 U1_SLVS_ONE_N
+      R11 U1_SLVS_ONE_P
+      R12 U1_SLVS_ONE_N
+      R13 1V5
+      R14 GND
+      R15 U1_SLVS_ONE_P
+      R16 U1_SLVS_ONE_N
+      R17 DC0_ELKS.GBTX_ELK_CH10_1_N
+      R18 1V5
+      R19 U1_SCA_SEC_DAT_IN_N
+      R20 NetU1_IC2_R20
+       T1 SLVS_HIGH_1_N
+       T2 GND
+       T3 U1_GBTX_VDD_SERDES
+       T4 DC0_ELKS.GBTX_ELK_CH0_1_N
+       T5 U1_SLVS_ONE_P
+       T6 U1_SLVS_ONE_N
+       T7 NetU1_IC2_T7
+       T8 NetU1_IC2_T8
+       T9 NetU1_IC2_T9
+      T10 NetU1_IC2_T10
+      T11 DC0_ELKS.GBTX_ELK_CH5_1_P
+      T12 DC0_ELKS.GBTX_ELK_CH5_1_N
+      T13 U1_DC_TST.TEST_DAT_OUT_1_N
+      T14 U1_DC_TST.TEST_DAT_OUT_1_P
+      T15 U1_SLVS_ONE_N
+      T16 U1_SLVS_ONE_P
+      T17 U1_SLVS_ONE_N
+      T18 U1_SLVS_ONE_P
+      T19 U1_SCA_SEC_DAT_IN_P
+      T20 NetU1_IC2_T20
+       U1 SLVS_HIGH_1_P
+       U2 GND
+       U3 U1_GBTX_VDD_SERDES
+       U4 DC0_ELKS.GBTX_ELK_CH0_1_P
+       U5 DC0_ELKS.GBTX_ELK_CH4_1_N
+       U6 DC0_ELKS.GBTX_ELK_CH4_1_P
+       U7 U1_SLVS_ONE_P
+       U8 U1_SLVS_ONE_N
+       U9 NetU1_IC2_U9
+      U10 NetU1_IC2_U10
+      U11 U1_SLVS_ONE_N
+      U12 U1_SLVS_ONE_P
+      U13 U1_SLVS_ONE_P
+      U14 U1_SLVS_ONE_N
+      U15 U1_DC_TST.TEST_DAT_IN_1_P
+      U16 U1_DC_TST.TEST_DAT_IN_1_N
+      U17 U1_SLVS_ONE_N
+      U18 U1_SCA_SEC_DAT_OUT_N
+      U19 NetU1_IC2_U19
+      U20 NetU1_IC2_U20
+       V1 GND
+       V2 U1_GBTX_VDD_SERDES
+       V3 NetU1_IC2_V3
+       V4 NetU1_IC2_V4
+       V5 NetU1_IC2_V5
+       V6 NetU1_IC2_V6
+       V7 DC0_ELKS.GBTX_ELK_CH1_1_P
+       V8 NetU1_IC2_V8
+       V9 NetU1_IC2_V9
+      V10 NetU1_IC2_V10
+      V11 U1_DC_TST.TEST_DAT_CLK_1_N
+      V12 U1_DC_TST.TEST_DAT_CLK_1_P
+      V13 NetU1_IC2_V13
+      V14 NetU1_IC2_V14
+      V15 NetU1_IC2_V15
+      V16 NetU1_IC2_V16
+      V17 U1_SLVS_ONE_P
+      V18 U1_SCA_SEC_DAT_OUT_P
+      V19 NetU1_IC2_V19
+      V20 U1_SCA_SEC_CLK_P
+       W1 NetU1_IC2_W1
+       W2 NetU1_IC2_W2
+       W3 NetU1_IC2_W3
+       W4 GND
+       W5 1V5
+       W6 NetU1_IC2_W6
+       W7 DC0_ELKS.GBTX_ELK_CH1_1_N
+       W8 NetU1_IC2_W8
+       W9 GND
+      W10 1V5
+      W11 NetU1_IC2_W11
+      W12 NetU1_IC2_W12
+      W13 GND
+      W14 1V5
+      W15 NetU1_IC2_W15
+      W16 NetU1_IC2_W16
+      W17 GND
+      W18 1V5
+      W19 NetU1_IC2_W19
+      W20 U1_SCA_SEC_CLK_N
+       Y1 U1_MC_TFC0_N
+       Y2 U1_MC_TFC0_P
+       Y3 NetU1_IC2_Y3
+       Y4 NetU1_IC2_Y4
+       Y5 NetU1_IC2_Y5
+       Y6 NetU1_IC2_Y6
+       Y7 U1_MC_TFC1_N
+       Y8 U1_MC_TFC1_P
+       Y9 NetU1_IC2_Y9
+      Y10 NetU1_IC2_Y10
+      Y11 NetU1_IC2_Y11
+      Y12 NetU1_IC2_Y12
+      Y13 NetU1_IC2_Y13
+      Y14 NetU1_IC2_Y14
+      Y15 NetU1_IC2_Y15
+      Y16 NetU1_IC2_Y16
+      Y17 NetU1_IC2_Y17
+      Y18 NetU1_IC2_Y18
+      Y19 NetU1_IC2_Y19
+      Y20 NetU1_IC2_Y20
+        }
+      }
+      {I LQW31HN23NJ03L_Murata_coil.PRT U1_L2
+        {CN
+        1 1V5
+        2 U1_GBTX_VDD_SERDES
+        }
+      }
+      {I LQW31HN23NJ03L_Murata_coil.PRT U1_L3
+        {CN
+        1 1V5
+        2 U1_GBTX_VDDP_PS
+        }
+      }
+      {I RESC1005X40N.PRT U1_R29
+        {CN
+        1 U1_SLVS_ONE_P
+        2 1V5
+        }
+      }
+      {I RESC1005X40N.PRT U1_R30
+        {CN
+        1 U1_SLVS_ONE_N
+        2 U1_SLVS_ONE_P
+        }
+      }
+      {I RESC1005X40N.PRT U1_R31
+        {CN
+        1 GND
+        2 U1_SLVS_ONE_N
+        }
+      }
+      {I RESC1005X40N.PRT U1_R43
+        {CN
+        1 GND
+        2 U1_EFUSEPROGPLS_1
+        }
+      }
+      {I RESC1005X40N.PRT U1_R48
+        {CN
+        1 NetU1_IC2_K10
+        2 U1_DC_TST.TESTOUTPUT_1
+        }
+      }
+      {I RESC1005X40N.PRT U1_R50
+        {CN
+        1 U1_LDSCL_1
+        2 1V5
+        }
+      }
+      {I RESC1005X40N.PRT U1_R51
+        {CN
+        1 U1_LDSDA_1
+        2 1V5
+        }
+      }
+      {I RESC1005X40N.PRT U1_R52
+        {CN
+        1 NetU1_IC2_L13
+        2 U1_DC_TST.TX_RDY_1
+        }
+      }
+      {I RESC1005X40N.PRT U1_R53
+        {CN
+        1 U1_DC_TST.RX_RDY_1
+        2 NetU1_IC2_N10
+        }
+      }
+      {I RESC1005X40N.PRT U1_R54
+        {CN
+        1 U1_DC_TST.RX_DATVAL_1
+        2 NetU1_IC2_N9
+        }
+      }
+      {I RESC1005X40N.PRT U1_R59
+        {CN
+        1 U1_SLVS_ONE_P
+        2 NetU1_IC2_A3
+        }
+      }
+      {I RESC1005X40N.PRT U1_R60
+        {CN
+        1 U1_SLVS_ONE_N
+        2 NetU1_IC2_A4
+        }
+      }
+      {I RESC1005X40N.PRT U1_R61
+        {CN
+        1 U1_SLVS_ONE_P
+        2 NetU1_IC2_A6
+        }
+      }
+      {I RESC1005X40N.PRT U1_R62
+        {CN
+        1 U1_SLVS_ONE_N
+        2 NetU1_IC2_A5
+        }
+      }
+      {I RESC1005X40N.PRT U1_R63
+        {CN
+        1 U1_SLVS_ONE_P
+        2 NetU1_IC2_A12
+        }
+      }
+      {I RESC1005X40N.PRT U1_R64
+        {CN
+        1 U1_SLVS_ONE_N
+        2 NetU1_IC2_A11
+        }
+      }
+      {I RESC1005X40N.PRT U1_R65
+        {CN
+        1 U1_SLVS_ONE_P
+        2 NetU1_IC2_A14
+        }
+      }
+      {I RESC1005X40N.PRT U1_R66
+        {CN
+        1 U1_SLVS_ONE_N
+        2 NetU1_IC2_A13
+        }
+      }
+      {I RESC1005X40N.PRT U1_R67
+        {CN
+        1 U1_SLVS_ONE_P
+        2 NetU1_IC2_V19
+        }
+      }
+      {I RESC1005X40N.PRT U1_R68
+        {CN
+        1 U1_SLVS_ONE_N
+        2 NetU1_IC2_W19
+        }
+      }
+      {I RESC1005X40N.PRT U1_R69
+        {CN
+        1 U1_SLVS_ONE_P
+        2 NetU1_IC2_Y9
+        }
+      }
+      {I RESC1005X40N.PRT U1_R70
+        {CN
+        1 U1_SLVS_ONE_N
+        2 NetU1_IC2_Y10
+        }
+      }
+      {I RESC1005X40N.PRT U1_R71
+        {CN
+        1 U1_SLVS_ONE_P
+        2 NetU1_IC2_W3
+        }
+      }
+      {I RESC1005X40N.PRT U1_R72
+        {CN
+        1 U1_SLVS_ONE_N
+        2 NetU1_IC2_V3
+        }
+      }
+      {I RESC1005X40N.PRT U1_R73
+        {CN
+        1 U1_SLVS_ONE_P
+        2 NetU1_IC2_Y3
+        }
+      }
+      {I RESC1005X40N.PRT U1_R74
+        {CN
+        1 U1_SLVS_ONE_N
+        2 NetU1_IC2_Y4
+        }
+      }
+      {I RESC1005X40N.PRT U1_R75
+        {CN
+        1 1V5
+        2 U1_DC_TST.DF_AUTORESET_TESTINJ_1
+        }
+      }
+      {I RESC5226X80N.PRT U1_R87
+        {CN
+        1 1V5
+        2 U1_GBTX_VDD_SERDES
+        }
+      }
+      {I RESC5226X80N.PRT U1_R88
+        {CN
+        1 1V5
+        2 U1_GBTX_VDDP_PS
+        }
+      }
+      {I TPS127.PRT U1_TP1
+        {CN
+        1 U1_SLVS_ONE_P
+        }
+      }
+      {I TPS127.PRT U1_TP2
+        {CN
+        1 U1_SLVS_ONE_N
+        }
+      }
+      {I TPS127.PRT U1_TP5
+        {CN
+        1 GND
+        }
+      }
+      {I CAPC2012X135N.PRT U2_C21
+        {CN
+        1 1V5
+        2 GND
+        }
+      }
+      {I CAPC2012X135N.PRT U2_C22
+        {CN
+        1 1V5
+        2 GND
+        }
+      }
+      {I CAPC1005X55N.PRT U2_C23
+        {CN
+        1 GND
+        2 1V5
+        }
+      }
+      {I CAPC1005X55N.PRT U2_C24
+        {CN
+        1 GND
+        2 1V5
+        }
+      }
+      {I CAPC1005X55N.PRT U2_C25
+        {CN
+        1 GND
+        2 1V5
+        }
+      }
+      {I CAPC1005X55N.PRT U2_C26
+        {CN
+        1 GND
+        2 1V5
+        }
+      }
+      {I CAPC1005X55N.PRT U2_C27
+        {CN
+        1 GND
+        2 1V5
+        }
+      }
+      {I CAPC1005X55N.PRT U2_C28
+        {CN
+        1 GND
+        2 1V5
+        }
+      }
+      {I CAPC1005X55N.PRT U2_C29
+        {CN
+        1 GND
+        2 1V5
+        }
+      }
+      {I CAPC1005X55N.PRT U2_C30
+        {CN
+        1 GND
+        2 1V5
+        }
+      }
+      {I CAPC0603X33N.PRT U2_C31
+        {CN
+        1 GND
+        2 1V5
+        }
+      }
+      {I CAPC0603X33N.PRT U2_C32
+        {CN
+        1 GND
+        2 1V5
+        }
+      }
+      {I CAPC0603X33N.PRT U2_C33
+        {CN
+        1 GND
+        2 1V5
+        }
+      }
+      {I CAPC0603X33N.PRT U2_C34
+        {CN
+        1 GND
+        2 1V5
+        }
+      }
+      {I CAPC0603X33N.PRT U2_C35
+        {CN
+        1 GND
+        2 1V5
+        }
+      }
+      {I CAPC0603X33N.PRT U2_C36
+        {CN
+        1 GND
+        2 1V5
+        }
+      }
+      {I CAPC2012X135N.PRT U2_C37
+        {CN
+        1 U2_GBTX_VDD_SERDES
+        2 GND
+        }
+      }
+      {I CAPC2012X135N.PRT U2_C38
+        {CN
+        1 U2_GBTX_VDD_SERDES
+        2 GND
+        }
+      }
+      {I CAPC1005X55N.PRT U2_C39
+        {CN
+        1 GND
+        2 U2_GBTX_VDD_SERDES
+        }
+      }
+      {I CAPC1005X55N.PRT U2_C40
+        {CN
+        1 GND
+        2 U2_GBTX_VDD_SERDES
+        }
+      }
+      {I CAPC1005X55N.PRT U2_C41
+        {CN
+        1 GND
+        2 U2_GBTX_VDD_SERDES
+        }
+      }
+      {I CAPC1005X55N.PRT U2_C42
+        {CN
+        1 GND
+        2 U2_GBTX_VDD_SERDES
+        }
+      }
+      {I CAPC1005X55N.PRT U2_C43
+        {CN
+        1 GND
+        2 U2_GBTX_VDD_SERDES
+        }
+      }
+      {I CAPC1005X55N.PRT U2_C44
+        {CN
+        1 GND
+        2 U2_GBTX_VDD_SERDES
+        }
+      }
+      {I CAPC1005X55N.PRT U2_C45
+        {CN
+        1 GND
+        2 U2_GBTX_VDD_SERDES
+        }
+      }
+      {I CAPC1005X55N.PRT U2_C46
+        {CN
+        1 GND
+        2 U2_GBTX_VDD_SERDES
+        }
+      }
+      {I CAPC0603X33N.PRT U2_C47
+        {CN
+        1 GND
+        2 U2_GBTX_VDD_SERDES
+        }
+      }
+      {I CAPC0603X33N.PRT U2_C48
+        {CN
+        1 GND
+        2 U2_GBTX_VDD_SERDES
+        }
+      }
+      {I CAPC0603X33N.PRT U2_C49
+        {CN
+        1 GND
+        2 U2_GBTX_VDD_SERDES
+        }
+      }
+      {I CAPC0603X33N.PRT U2_C50
+        {CN
+        1 GND
+        2 U2_GBTX_VDD_SERDES
+        }
+      }
+      {I CAPC0603X33N.PRT U2_C51
+        {CN
+        1 GND
+        2 U2_GBTX_VDD_SERDES
+        }
+      }
+      {I CAPC0603X33N.PRT U2_C52
+        {CN
+        1 GND
+        2 U2_GBTX_VDD_SERDES
+        }
+      }
+      {I CAPC2012X135N.PRT U2_C53
+        {CN
+        1 U2_GBTX_VDDP_PS
+        2 GND
+        }
+      }
+      {I CAPC2012X135N.PRT U2_C54
+        {CN
+        1 U2_GBTX_VDDP_PS
+        2 GND
+        }
+      }
+      {I CAPC1005X55N.PRT U2_C55
+        {CN
+        1 GND
+        2 U2_GBTX_VDDP_PS
+        }
+      }
+      {I CAPC1005X55N.PRT U2_C56
+        {CN
+        1 GND
+        2 U2_GBTX_VDDP_PS
+        }
+      }
+      {I CAPC1005X55N.PRT U2_C57
+        {CN
+        1 GND
+        2 U2_GBTX_VDDP_PS
+        }
+      }
+      {I CAPC0603X33N.PRT U2_C58
+        {CN
+        1 GND
+        2 U2_GBTX_VDDP_PS
+        }
+      }
+      {I CAPC0603X33N.PRT U2_C59
+        {CN
+        1 GND
+        2 U2_GBTX_VDDP_PS
+        }
+      }
+      {I CAPC0603X33N.PRT U2_C60
+        {CN
+        1 GND
+        2 U2_GBTX_VDDP_PS
+        }
+      }
+      {I CAPC0603X33N.PRT U2_C93
+        {CN
+        1 GND
+        2 1V5
+        }
+      }
+      {I CAPC1005X55N.PRT U2_C94
+        {CN
+        1 GND
+        2 1V5
+        }
+      }
+      {I CAPC2012X135N.PRT U2_C129
+        {CN
+        1 DC_EFUSE_PWR
+        2 GND
+        }
+      }
+      {I CAPC1005X55N.PRT U2_C130
+        {CN
+        1 GND
+        2 DC_EFUSE_PWR
+        }
+      }
+      {I CERN_GBTX ASIC_V0.1.PRT U2_IC2
+        {CN
+       A1 NetU2_IC2_A1
+       A2 NetU2_IC2_A2
+       A3 NetU2_IC2_A3
+       A4 NetU2_IC2_A4
+       A5 NetU2_IC2_A5
+       A6 NetU2_IC2_A6
+       A7 DC1_ELKS.GBTX_ELK_CH3_1_P
+       A8 DC1_ELKS.GBTX_ELK_CH3_1_N
+       A9 U2_MC_TFC3_P
+      A10 U2_MC_TFC3_N
+      A11 NetU2_IC2_A11
+      A12 NetU2_IC2_A12
+      A13 NetU2_IC2_A13
+      A14 NetU2_IC2_A14
+      A15 DC1_ELKS.GBTX_ELK_CH2_1_P
+      A16 DC1_ELKS.GBTX_ELK_CH2_1_N
+      A17 U2_MC_TFC2_P
+      A18 U2_MC_TFC2_N
+      A19 GND
+      A20 U2_MC_TFC5_P
+       B1 U2_SLVS_ONE_P
+       B2 U2_SLVS_ONE_N
+       B3 U2_SLVS_ONE_N
+       B4 U2_SLVS_ONE_P
+       B5 NetU2_IC2_B5
+       B6 NetU2_IC2_B6
+       B7 NetU2_IC2_B7
+       B8 NetU2_IC2_B8
+       B9 GND
+      B10 1V5
+      B11 NetU2_IC2_B11
+      B12 NetU2_IC2_B12
+      B13 NetU2_IC2_B13
+      B14 NetU2_IC2_B14
+      B15 NetU2_IC2_B15
+      B16 NetU2_IC2_B16
+      B17 NetU2_IC2_B17
+      B18 NetU2_IC2_B18
+      B19 1V5
+      B20 U2_MC_TFC5_N
+       C1 GND
+       C2 GND
+       C3 U2_GBTX_VDD_SERDES
+       C4 U2_SLVS_ONE_P
+       C5 NetU2_IC2_C5
+       C6 NetU2_IC2_C6
+       C7 NetU2_IC2_C7
+       C8 NetU2_IC2_C8
+       C9 NetU2_IC2_C9
+      C10 NetU2_IC2_C10
+      C11 U2_SLVS_ONE_N
+      C12 NetU2_IC2_C12
+      C13 GND
+      C14 1V5
+      C15 NetU2_IC2_C15
+      C16 NetU2_IC2_C16
+      C17 NetU2_IC2_C17
+      C18 NetU2_IC2_C18
+      C19 NetU2_IC2_C19
+      C20 NetU2_IC2_C20
+       D1 U2_GTX_1_N
+       D2 GND
+       D3 U2_GBTX_VDD_SERDES
+       D4 U2_SLVS_ONE_N
+       D5 U2_SLVS_ONE_N
+       D6 U2_SLVS_ONE_P
+       D7 U2_SLVS_ONE_N
+       D8 U2_SLVS_ONE_P
+       D9 DC1_ELKS.GBTX_ELK_CH6_1_P
+      D10 DC1_ELKS.GBTX_ELK_CH6_1_N
+      D11 U2_SLVS_ONE_P
+      D12 NetU2_IC2_D12
+      D13 U2_SLVS_ONE_P
+      D14 U2_SLVS_ONE_N
+      D15 U2_SLVS_ONE_P
+      D16 U2_SLVS_ONE_N
+      D17 NetU2_IC2_D17
+      D18 NetU2_IC2_D18
+      D19 NetU2_IC2_D19
+      D20 NetU2_IC2_D20
+       E1 U2_GTX_1_P
+       E2 GND
+       E3 U2_GBTX_VDD_SERDES
+       E4 U2_SLVS_ONE_N
+       E5 NetU2_IC2_E5
+       E6 NetU2_IC2_E6
+       E7 NetU2_IC2_E7
+       E8 NetU2_IC2_E8
+       E9 U2_SLVS_ONE_P
+      E10 U2_SLVS_ONE_N
+      E11 DC1_ELKS.GBTX_ELK_CH9_1_N
+      E12 DC1_ELKS.GBTX_ELK_CH9_1_P
+      E13 NetU2_IC2_E13
+      E14 NetU2_IC2_E14
+      E15 U2_SLVS_ONE_N
+      E16 U2_SLVS_ONE_P
+      E17 U2_SLVS_ONE_N
+      E18 NetU2_IC2_E18
+      E19 NetU2_IC2_E19
+      E20 NetU2_IC2_E20
+       F1 GND
+       F2 U2_GBTX_VDD_SERDES
+       F3 U2_GBTX_VDD_SERDES
+       F4 U2_SLVS_ONE_P
+       F5 NetU2_IC2_F5
+       F6 NetU2_IC2_F6
+       F7 DC1_ELKS.GBTX_ELK_CH7_1_P
+       F8 DC1_ELKS.GBTX_ELK_CH7_1_N
+       F9 1V5
+      F10 GND
+      F11 GND
+      F12 GND
+      F13 NetU2_IC2_F13
+      F14 NetU2_IC2_F14
+      F15 U2_SLVS_ONE_P
+      F16 U2_SLVS_ONE_P
+      F17 GND
+      F18 DC1_ELKS.GBTX_ELK_CH8_1_P
+      F19 1V5
+      F20 NetU2_IC2_F20
+       G1 U2_XX_OUT_RCLK0_P
+       G2 U2_GBTX_VDDP_PS
+       G3 NetU2_IC2_G3
+       G4 NetU2_IC2_G4
+       G5 DC_I2C_SCL_1
+       G6 U2_SLVS_ONE_N
+       G7 U2_SLVS_ONE_P
+       G8 NetU2_IC2_G8
+       G9 NetU2_IC2_G9
+      G10 GND
+      G11 GND
+      G12 GND
+      G13 GND
+      G14 1V5
+      G15 1V5
+      G16 U2_SLVS_ONE_N
+      G17 NetU2_IC2_G17
+      G18 DC1_ELKS.GBTX_ELK_CH8_1_N
+      G19 NetU2_IC2_G19
+      G20 NetU2_IC2_G20
+       H1 U2_XX_OUT_RCLK0_N
+       H2 GND
+       H3 U2_GBTX_VDDP_PS
+       H4 U2_XX_OUT_RCLK1_P
+       H5 DC_I2C_SDA_1
+       H6 NetU2_IC2_H6
+       H7 1V5
+       H8 U2_LDSDA_1
+       H9 U1_DC_CFG.STATEOVERRIDE_1
+      H10 GND
+      H11 GND
+      H12 GND
+      H13 1V5
+      H14 1V5
+      H15 U2_DC_TST.DF_AUTORESET_TESTINJ_1
+      H16 U2_SLVS_ONE_N
+      H17 NetU2_IC2_H17
+      H18 U2_MC_TFC4_N
+      H19 NetU2_IC2_H19
+      H20 NetU2_IC2_H20
+       J1 GND
+       J2 NetU2_IC2_J2
+       J3 U2_GBTX_VDD_SERDES
+       J4 U2_XX_OUT_RCLK1_N
+       J5 GND
+       J6 U2_GBTX_VDDP_PS
+       J7 NetU2_IC2_J7
+       J8 U1_DC_CFG.RXLOCK_0MODE_1
+       J9 U1_DC_CFG.REFCLKSEL_1
+      J10 GND
+      J11 GND
+      J12 1V5
+      J13 1V5
+      J14 1V5
+      J15 GND
+      J16 U2_SLVS_ONE_P
+      J17 NetU2_IC2_J17
+      J18 U2_MC_TFC4_P
+      J19 NetU2_IC2_J19
+      J20 GND
+       K1 MC_OUT_RCLK1_1_N
+       K2 GND
+       K3 U2_GBTX_VDD_SERDES
+       K4 U2_XX_OUT_RCLK2_P
+       K5 U2_XX_OUT_RCLK2_N
+       K6 U2_GBTX_VDDP_PS
+       K7 U1_DC_CFG.CONFIGSELECT_1
+       K8 U2_LDSCL_1
+       K9 U2_GBTX_VDDP_PS
+      K10 NetU2_IC2_K10
+      K11 GND
+      K12 GND
+      K13 1V5
+      K14 1V5
+      K15 DC1_ELKS.GBTX_ELK_CH11_1_N
+      K16 U2_SLVS_ONE_N
+      K17 NetU2_IC2_K17
+      K18 NetU2_IC2_K18
+      K19 NetU2_IC2_K19
+      K20 1V5
+       L1 MC_OUT_RCLK1_1_P
+       L2 GND
+       L3 U2_GBTX_VDD_SERDES
+       L4 U2_XX_OUT_RCLK3_P
+       L5 U2_XX_OUT_RCLK3_N
+       L6 GND
+       L7 U1_DC_CFG.TXMODE_1SEL_1
+       L8 GND
+       L9 GND
+      L10 U1_DC_CFG.TXMODE_2SEL_1
+      L11 GND
+      L12 GND
+      L13 NetU2_IC2_L13
+      L14 1V5
+      L15 DC1_ELKS.GBTX_ELK_CH11_1_P
+      L16 U2_SLVS_ONE_P
+      L17 NetU2_IC2_L17
+      L18 NetU2_IC2_L18
+      L19 NetU2_IC2_L19
+      L20 NetU2_IC2_L20
+       M1 GND
+       M2 NetU2_IC2_M2
+       M3 U2_GBTX_VDD_SERDES
+       M4 U2_XX_OUT_RCLK4_P
+       M5 U2_XX_OUT_RCLK4_N
+       M6 U2_XX_OUT_RCLK6_P
+       M7 U2_XX_OUT_RCLK6_N
+       M8 NetU2_IC2_M8
+       M9 U1_DC_CFG.RXLOCK_1MODE_1
+      M10 DC_RESETB_1
+      M11 GND
+      M12 GND
+      M13 1V5
+      M14 1V5
+      M15 U2_SLVS_ONE_N
+      M16 NetU2_IC2_M16
+      M17 U2_SLVS_ONE_P
+      M18 U2_SLVS_ONE_P
+      M19 NetU2_IC2_M19
+      M20 NetU2_IC2_M20
+       N1 U2_XX_OUT_RCLK5_P
+       N2 U2_XX_OUT_RCLK5_N
+       N3 GND
+       N4 U2_GBTX_VDDP_PS
+       N5 U1_DC_CFG.TXMODE_0SEL_1
+       N6 1V5
+       N7 GND
+       N8 NetU2_IC2_N8
+       N9 NetU2_IC2_N9
+      N10 NetU2_IC2_N10
+      N11 U2_DC_TST.TXDATAVALID_1
+      N12 1V5
+      N13 1V5
+      N14 1V5
+      N15 U2_SLVS_ONE_P
+      N16 NetU2_IC2_N16
+      N17 U2_SLVS_ONE_N
+      N18 U2_SLVS_ONE_N
+      N19 NetU2_IC2_N19
+      N20 NetU2_IC2_N20
+       P1 U2_XX_OUT_RCLK7_P
+       P2 U2_XX_OUT_RCLK7_N
+       P3 U2_SCA_PRI_DAT_OUT_N
+       P4 U2_SCA_PRI_DAT_OUT_P
+       P5 GND
+       P6 U2_SCA_PRI_CLK_P
+       P7 NetU2_IC2_P7
+       P8 NetU2_IC2_P8
+       P9 NetU2_IC2_P9
+      P10 U1_DC_CFG.TXMODE_3SEL_1
+      P11 U2_EFUSEPROGPLS_1
+      P12 U2_SCA_PRI_DAT_IN_P
+      P13 U2_SCA_PRI_DAT_IN_N
+      P14 DC_EFUSE_PWR
+      P15 NetU2_IC2_P15
+      P16 NetU2_IC2_P16
+      P17 DC1_ELKS.GBTX_ELK_CH10_1_P
+      P18 GND
+      P19 NetU2_IC2_P19
+      P20 NetU2_IC2_P20
+       R1 GND
+       R2 U2_GBTX_VDD_SERDES
+       R3 U2_GBTX_VDD_SERDES
+       R4 U2_SLVS_ONE_N
+       R5 U2_SLVS_ONE_P
+       R6 U2_SCA_PRI_CLK_N
+       R7 NetU2_IC2_R7
+       R8 NetU2_IC2_R8
+       R9 U2_SLVS_ONE_P
+      R10 U2_SLVS_ONE_N
+      R11 U2_SLVS_ONE_P
+      R12 U2_SLVS_ONE_N
+      R13 1V5
+      R14 GND
+      R15 U2_SLVS_ONE_P
+      R16 U2_SLVS_ONE_N
+      R17 DC1_ELKS.GBTX_ELK_CH10_1_N
+      R18 1V5
+      R19 U2_SCA_SEC_DAT_IN_N
+      R20 NetU2_IC2_R20
+       T1 SLVS_HIGH_1_N
+       T2 GND
+       T3 U2_GBTX_VDD_SERDES
+       T4 DC1_ELKS.GBTX_ELK_CH0_1_N
+       T5 U2_SLVS_ONE_P
+       T6 U2_SLVS_ONE_N
+       T7 NetU2_IC2_T7
+       T8 NetU2_IC2_T8
+       T9 NetU2_IC2_T9
+      T10 NetU2_IC2_T10
+      T11 DC1_ELKS.GBTX_ELK_CH5_1_P
+      T12 DC1_ELKS.GBTX_ELK_CH5_1_N
+      T13 U2_DC_TST.TEST_DAT_OUT_1_N
+      T14 U2_DC_TST.TEST_DAT_OUT_1_P
+      T15 U2_SLVS_ONE_N
+      T16 U2_SLVS_ONE_P
+      T17 U2_SLVS_ONE_N
+      T18 U2_SLVS_ONE_P
+      T19 U2_SCA_SEC_DAT_IN_P
+      T20 NetU2_IC2_T20
+       U1 SLVS_HIGH_1_P
+       U2 GND
+       U3 U2_GBTX_VDD_SERDES
+       U4 DC1_ELKS.GBTX_ELK_CH0_1_P
+       U5 DC1_ELKS.GBTX_ELK_CH4_1_N
+       U6 DC1_ELKS.GBTX_ELK_CH4_1_P
+       U7 U2_SLVS_ONE_P
+       U8 U2_SLVS_ONE_N
+       U9 NetU2_IC2_U9
+      U10 NetU2_IC2_U10
+      U11 U2_SLVS_ONE_N
+      U12 U2_SLVS_ONE_P
+      U13 U2_SLVS_ONE_P
+      U14 U2_SLVS_ONE_N
+      U15 U2_DC_TST.TEST_DAT_IN_1_P
+      U16 U2_DC_TST.TEST_DAT_IN_1_N
+      U17 U2_SLVS_ONE_N
+      U18 U2_SCA_SEC_DAT_OUT_N
+      U19 NetU2_IC2_U19
+      U20 NetU2_IC2_U20
+       V1 GND
+       V2 U2_GBTX_VDD_SERDES
+       V3 NetU2_IC2_V3
+       V4 NetU2_IC2_V4
+       V5 NetU2_IC2_V5
+       V6 NetU2_IC2_V6
+       V7 DC1_ELKS.GBTX_ELK_CH1_1_P
+       V8 NetU2_IC2_V8
+       V9 NetU2_IC2_V9
+      V10 NetU2_IC2_V10
+      V11 U2_DC_TST.TEST_DAT_CLK_1_N
+      V12 U2_DC_TST.TEST_DAT_CLK_1_P
+      V13 NetU2_IC2_V13
+      V14 NetU2_IC2_V14
+      V15 NetU2_IC2_V15
+      V16 NetU2_IC2_V16
+      V17 U2_SLVS_ONE_P
+      V18 U2_SCA_SEC_DAT_OUT_P
+      V19 NetU2_IC2_V19
+      V20 U2_SCA_SEC_CLK_P
+       W1 NetU2_IC2_W1
+       W2 NetU2_IC2_W2
+       W3 NetU2_IC2_W3
+       W4 GND
+       W5 1V5
+       W6 NetU2_IC2_W6
+       W7 DC1_ELKS.GBTX_ELK_CH1_1_N
+       W8 NetU2_IC2_W8
+       W9 GND
+      W10 1V5
+      W11 NetU2_IC2_W11
+      W12 NetU2_IC2_W12
+      W13 GND
+      W14 1V5
+      W15 NetU2_IC2_W15
+      W16 NetU2_IC2_W16
+      W17 GND
+      W18 1V5
+      W19 NetU2_IC2_W19
+      W20 U2_SCA_SEC_CLK_N
+       Y1 U2_MC_TFC0_N
+       Y2 U2_MC_TFC0_P
+       Y3 NetU2_IC2_Y3
+       Y4 NetU2_IC2_Y4
+       Y5 NetU2_IC2_Y5
+       Y6 NetU2_IC2_Y6
+       Y7 U2_MC_TFC1_N
+       Y8 U2_MC_TFC1_P
+       Y9 NetU2_IC2_Y9
+      Y10 NetU2_IC2_Y10
+      Y11 NetU2_IC2_Y11
+      Y12 NetU2_IC2_Y12
+      Y13 NetU2_IC2_Y13
+      Y14 NetU2_IC2_Y14
+      Y15 NetU2_IC2_Y15
+      Y16 NetU2_IC2_Y16
+      Y17 NetU2_IC2_Y17
+      Y18 NetU2_IC2_Y18
+      Y19 NetU2_IC2_Y19
+      Y20 NetU2_IC2_Y20
+        }
+      }
+      {I LQW31HN23NJ03L_Murata_coil.PRT U2_L2
+        {CN
+        1 1V5
+        2 U2_GBTX_VDD_SERDES
+        }
+      }
+      {I LQW31HN23NJ03L_Murata_coil.PRT U2_L3
+        {CN
+        1 1V5
+        2 U2_GBTX_VDDP_PS
+        }
+      }
+      {I RESC1005X40N.PRT U2_R29
+        {CN
+        1 U2_SLVS_ONE_P
+        2 1V5
+        }
+      }
+      {I RESC1005X40N.PRT U2_R30
+        {CN
+        1 U2_SLVS_ONE_N
+        2 U2_SLVS_ONE_P
+        }
+      }
+      {I RESC1005X40N.PRT U2_R31
+        {CN
+        1 GND
+        2 U2_SLVS_ONE_N
+        }
+      }
+      {I RESC1005X40N.PRT U2_R43
+        {CN
+        1 GND
+        2 U2_EFUSEPROGPLS_1
+        }
+      }
+      {I RESC1005X40N.PRT U2_R48
+        {CN
+        1 NetU2_IC2_K10
+        2 U2_DC_TST.TESTOUTPUT_1
+        }
+      }
+      {I RESC1005X40N.PRT U2_R50
+        {CN
+        1 U2_LDSCL_1
+        2 1V5
+        }
+      }
+      {I RESC1005X40N.PRT U2_R51
+        {CN
+        1 U2_LDSDA_1
+        2 1V5
+        }
+      }
+      {I RESC1005X40N.PRT U2_R52
+        {CN
+        1 NetU2_IC2_L13
+        2 U2_DC_TST.TX_RDY_1
+        }
+      }
+      {I RESC1005X40N.PRT U2_R53
+        {CN
+        1 U2_DC_TST.RX_RDY_1
+        2 NetU2_IC2_N10
+        }
+      }
+      {I RESC1005X40N.PRT U2_R54
+        {CN
+        1 U2_DC_TST.RX_DATVAL_1
+        2 NetU2_IC2_N9
+        }
+      }
+      {I RESC1005X40N.PRT U2_R59
+        {CN
+        1 U2_SLVS_ONE_P
+        2 NetU2_IC2_A3
+        }
+      }
+      {I RESC1005X40N.PRT U2_R60
+        {CN
+        1 U2_SLVS_ONE_N
+        2 NetU2_IC2_A4
+        }
+      }
+      {I RESC1005X40N.PRT U2_R61
+        {CN
+        1 U2_SLVS_ONE_P
+        2 NetU2_IC2_A6
+        }
+      }
+      {I RESC1005X40N.PRT U2_R62
+        {CN
+        1 U2_SLVS_ONE_N
+        2 NetU2_IC2_A5
+        }
+      }
+      {I RESC1005X40N.PRT U2_R63
+        {CN
+        1 U2_SLVS_ONE_P
+        2 NetU2_IC2_A12
+        }
+      }
+      {I RESC1005X40N.PRT U2_R64
+        {CN
+        1 U2_SLVS_ONE_N
+        2 NetU2_IC2_A11
+        }
+      }
+      {I RESC1005X40N.PRT U2_R65
+        {CN
+        1 U2_SLVS_ONE_P
+        2 NetU2_IC2_A14
+        }
+      }
+      {I RESC1005X40N.PRT U2_R66
+        {CN
+        1 U2_SLVS_ONE_N
+        2 NetU2_IC2_A13
+        }
+      }
+      {I RESC1005X40N.PRT U2_R67
+        {CN
+        1 U2_SLVS_ONE_P
+        2 NetU2_IC2_V19
+        }
+      }
+      {I RESC1005X40N.PRT U2_R68
+        {CN
+        1 U2_SLVS_ONE_N
+        2 NetU2_IC2_W19
+        }
+      }
+      {I RESC1005X40N.PRT U2_R69
+        {CN
+        1 U2_SLVS_ONE_P
+        2 NetU2_IC2_Y9
+        }
+      }
+      {I RESC1005X40N.PRT U2_R70
+        {CN
+        1 U2_SLVS_ONE_N
+        2 NetU2_IC2_Y10
+        }
+      }
+      {I RESC1005X40N.PRT U2_R71
+        {CN
+        1 U2_SLVS_ONE_P
+        2 NetU2_IC2_W3
+        }
+      }
+      {I RESC1005X40N.PRT U2_R72
+        {CN
+        1 U2_SLVS_ONE_N
+        2 NetU2_IC2_V3
+        }
+      }
+      {I RESC1005X40N.PRT U2_R73
+        {CN
+        1 U2_SLVS_ONE_P
+        2 NetU2_IC2_Y3
+        }
+      }
+      {I RESC1005X40N.PRT U2_R74
+        {CN
+        1 U2_SLVS_ONE_N
+        2 NetU2_IC2_Y4
+        }
+      }
+      {I RESC1005X40N.PRT U2_R75
+        {CN
+        1 1V5
+        2 U2_DC_TST.DF_AUTORESET_TESTINJ_1
+        }
+      }
+      {I RESC5226X80N.PRT U2_R87
+        {CN
+        1 1V5
+        2 U2_GBTX_VDD_SERDES
+        }
+      }
+      {I RESC5226X80N.PRT U2_R88
+        {CN
+        1 1V5
+        2 U2_GBTX_VDDP_PS
+        }
+      }
+      {I TPS127.PRT U2_TP1
+        {CN
+        1 U2_SLVS_ONE_P
+        }
+      }
+      {I TPS127.PRT U2_TP2
+        {CN
+        1 U2_SLVS_ONE_N
+        }
+      }
+      {I TPS127.PRT U2_TP5
+        {CN
+        1 GND
+        }
+      }
+      {I CAPC2012X135N.PRT U3_C21
+        {CN
+        1 1V5
+        2 GND
+        }
+      }
+      {I CAPC2012X135N.PRT U3_C22
+        {CN
+        1 1V5
+        2 GND
+        }
+      }
+      {I CAPC1005X55N.PRT U3_C23
+        {CN
+        1 GND
+        2 1V5
+        }
+      }
+      {I CAPC1005X55N.PRT U3_C24
+        {CN
+        1 GND
+        2 1V5
+        }
+      }
+      {I CAPC1005X55N.PRT U3_C25
+        {CN
+        1 GND
+        2 1V5
+        }
+      }
+      {I CAPC1005X55N.PRT U3_C26
+        {CN
+        1 GND
+        2 1V5
+        }
+      }
+      {I CAPC1005X55N.PRT U3_C27
+        {CN
+        1 GND
+        2 1V5
+        }
+      }
+      {I CAPC1005X55N.PRT U3_C28
+        {CN
+        1 GND
+        2 1V5
+        }
+      }
+      {I CAPC1005X55N.PRT U3_C29
+        {CN
+        1 GND
+        2 1V5
+        }
+      }
+      {I CAPC1005X55N.PRT U3_C30
+        {CN
+        1 GND
+        2 1V5
+        }
+      }
+      {I CAPC0603X33N.PRT U3_C31
+        {CN
+        1 GND
+        2 1V5
+        }
+      }
+      {I CAPC0603X33N.PRT U3_C32
+        {CN
+        1 GND
+        2 1V5
+        }
+      }
+      {I CAPC0603X33N.PRT U3_C33
+        {CN
+        1 GND
+        2 1V5
+        }
+      }
+      {I CAPC0603X33N.PRT U3_C34
+        {CN
+        1 GND
+        2 1V5
+        }
+      }
+      {I CAPC0603X33N.PRT U3_C35
+        {CN
+        1 GND
+        2 1V5
+        }
+      }
+      {I CAPC0603X33N.PRT U3_C36
+        {CN
+        1 GND
+        2 1V5
+        }
+      }
+      {I CAPC2012X135N.PRT U3_C37
+        {CN
+        1 U3_GBTX_VDD_SERDES
+        2 GND
+        }
+      }
+      {I CAPC2012X135N.PRT U3_C38
+        {CN
+        1 U3_GBTX_VDD_SERDES
+        2 GND
+        }
+      }
+      {I CAPC1005X55N.PRT U3_C39
+        {CN
+        1 GND
+        2 U3_GBTX_VDD_SERDES
+        }
+      }
+      {I CAPC1005X55N.PRT U3_C40
+        {CN
+        1 GND
+        2 U3_GBTX_VDD_SERDES
+        }
+      }
+      {I CAPC1005X55N.PRT U3_C41
+        {CN
+        1 GND
+        2 U3_GBTX_VDD_SERDES
+        }
+      }
+      {I CAPC1005X55N.PRT U3_C42
+        {CN
+        1 GND
+        2 U3_GBTX_VDD_SERDES
+        }
+      }
+      {I CAPC1005X55N.PRT U3_C43
+        {CN
+        1 GND
+        2 U3_GBTX_VDD_SERDES
+        }
+      }
+      {I CAPC1005X55N.PRT U3_C44
+        {CN
+        1 GND
+        2 U3_GBTX_VDD_SERDES
+        }
+      }
+      {I CAPC1005X55N.PRT U3_C45
+        {CN
+        1 GND
+        2 U3_GBTX_VDD_SERDES
+        }
+      }
+      {I CAPC1005X55N.PRT U3_C46
+        {CN
+        1 GND
+        2 U3_GBTX_VDD_SERDES
+        }
+      }
+      {I CAPC0603X33N.PRT U3_C47
+        {CN
+        1 GND
+        2 U3_GBTX_VDD_SERDES
+        }
+      }
+      {I CAPC0603X33N.PRT U3_C48
+        {CN
+        1 GND
+        2 U3_GBTX_VDD_SERDES
+        }
+      }
+      {I CAPC0603X33N.PRT U3_C49
+        {CN
+        1 GND
+        2 U3_GBTX_VDD_SERDES
+        }
+      }
+      {I CAPC0603X33N.PRT U3_C50
+        {CN
+        1 GND
+        2 U3_GBTX_VDD_SERDES
+        }
+      }
+      {I CAPC0603X33N.PRT U3_C51
+        {CN
+        1 GND
+        2 U3_GBTX_VDD_SERDES
+        }
+      }
+      {I CAPC0603X33N.PRT U3_C52
+        {CN
+        1 GND
+        2 U3_GBTX_VDD_SERDES
+        }
+      }
+      {I CAPC2012X135N.PRT U3_C53
+        {CN
+        1 U3_GBTX_VDDP_PS
+        2 GND
+        }
+      }
+      {I CAPC2012X135N.PRT U3_C54
+        {CN
+        1 U3_GBTX_VDDP_PS
+        2 GND
+        }
+      }
+      {I CAPC1005X55N.PRT U3_C55
+        {CN
+        1 GND
+        2 U3_GBTX_VDDP_PS
+        }
+      }
+      {I CAPC1005X55N.PRT U3_C56
+        {CN
+        1 GND
+        2 U3_GBTX_VDDP_PS
+        }
+      }
+      {I CAPC1005X55N.PRT U3_C57
+        {CN
+        1 GND
+        2 U3_GBTX_VDDP_PS
+        }
+      }
+      {I CAPC0603X33N.PRT U3_C58
+        {CN
+        1 GND
+        2 U3_GBTX_VDDP_PS
+        }
+      }
+      {I CAPC0603X33N.PRT U3_C59
+        {CN
+        1 GND
+        2 U3_GBTX_VDDP_PS
+        }
+      }
+      {I CAPC0603X33N.PRT U3_C60
+        {CN
+        1 GND
+        2 U3_GBTX_VDDP_PS
+        }
+      }
+      {I CAPC0603X33N.PRT U3_C93
+        {CN
+        1 GND
+        2 1V5
+        }
+      }
+      {I CAPC1005X55N.PRT U3_C94
+        {CN
+        1 GND
+        2 1V5
+        }
+      }
+      {I CAPC2012X135N.PRT U3_C129
+        {CN
+        1 DC_EFUSE_PWR
+        2 GND
+        }
+      }
+      {I CAPC1005X55N.PRT U3_C130
+        {CN
+        1 GND
+        2 DC_EFUSE_PWR
+        }
+      }
+      {I CERN_GBTX ASIC_V0.1.PRT U3_IC2
+        {CN
+       A1 NetU3_IC2_A1
+       A2 NetU3_IC2_A2
+       A3 NetU3_IC2_A3
+       A4 NetU3_IC2_A4
+       A5 NetU3_IC2_A5
+       A6 NetU3_IC2_A6
+       A7 DC2_ELKS.GBTX_ELK_CH3_1_P
+       A8 DC2_ELKS.GBTX_ELK_CH3_1_N
+       A9 U3_MC_TFC3_P
+      A10 U3_MC_TFC3_N
+      A11 NetU3_IC2_A11
+      A12 NetU3_IC2_A12
+      A13 NetU3_IC2_A13
+      A14 NetU3_IC2_A14
+      A15 DC2_ELKS.GBTX_ELK_CH2_1_P
+      A16 DC2_ELKS.GBTX_ELK_CH2_1_N
+      A17 U3_MC_TFC2_P
+      A18 U3_MC_TFC2_N
+      A19 GND
+      A20 U3_MC_TFC5_P
+       B1 U3_SLVS_ONE_P
+       B2 U3_SLVS_ONE_N
+       B3 U3_SLVS_ONE_N
+       B4 U3_SLVS_ONE_P
+       B5 NetU3_IC2_B5
+       B6 NetU3_IC2_B6
+       B7 NetU3_IC2_B7
+       B8 NetU3_IC2_B8
+       B9 GND
+      B10 1V5
+      B11 NetU3_IC2_B11
+      B12 NetU3_IC2_B12
+      B13 NetU3_IC2_B13
+      B14 NetU3_IC2_B14
+      B15 NetU3_IC2_B15
+      B16 NetU3_IC2_B16
+      B17 NetU3_IC2_B17
+      B18 NetU3_IC2_B18
+      B19 1V5
+      B20 U3_MC_TFC5_N
+       C1 GND
+       C2 GND
+       C3 U3_GBTX_VDD_SERDES
+       C4 U3_SLVS_ONE_P
+       C5 NetU3_IC2_C5
+       C6 NetU3_IC2_C6
+       C7 NetU3_IC2_C7
+       C8 NetU3_IC2_C8
+       C9 NetU3_IC2_C9
+      C10 NetU3_IC2_C10
+      C11 U3_SLVS_ONE_N
+      C12 NetU3_IC2_C12
+      C13 GND
+      C14 1V5
+      C15 NetU3_IC2_C15
+      C16 NetU3_IC2_C16
+      C17 NetU3_IC2_C17
+      C18 NetU3_IC2_C18
+      C19 NetU3_IC2_C19
+      C20 NetU3_IC2_C20
+       D1 U3_GTX_1_N
+       D2 GND
+       D3 U3_GBTX_VDD_SERDES
+       D4 U3_SLVS_ONE_N
+       D5 U3_SLVS_ONE_N
+       D6 U3_SLVS_ONE_P
+       D7 U3_SLVS_ONE_N
+       D8 U3_SLVS_ONE_P
+       D9 DC2_ELKS.GBTX_ELK_CH6_1_P
+      D10 DC2_ELKS.GBTX_ELK_CH6_1_N
+      D11 U3_SLVS_ONE_P
+      D12 NetU3_IC2_D12
+      D13 U3_SLVS_ONE_P
+      D14 U3_SLVS_ONE_N
+      D15 U3_SLVS_ONE_P
+      D16 U3_SLVS_ONE_N
+      D17 NetU3_IC2_D17
+      D18 NetU3_IC2_D18
+      D19 NetU3_IC2_D19
+      D20 NetU3_IC2_D20
+       E1 U3_GTX_1_P
+       E2 GND
+       E3 U3_GBTX_VDD_SERDES
+       E4 U3_SLVS_ONE_N
+       E5 NetU3_IC2_E5
+       E6 NetU3_IC2_E6
+       E7 NetU3_IC2_E7
+       E8 NetU3_IC2_E8
+       E9 U3_SLVS_ONE_P
+      E10 U3_SLVS_ONE_N
+      E11 DC2_ELKS.GBTX_ELK_CH9_1_N
+      E12 DC2_ELKS.GBTX_ELK_CH9_1_P
+      E13 NetU3_IC2_E13
+      E14 NetU3_IC2_E14
+      E15 U3_SLVS_ONE_N
+      E16 U3_SLVS_ONE_P
+      E17 U3_SLVS_ONE_N
+      E18 NetU3_IC2_E18
+      E19 NetU3_IC2_E19
+      E20 NetU3_IC2_E20
+       F1 GND
+       F2 U3_GBTX_VDD_SERDES
+       F3 U3_GBTX_VDD_SERDES
+       F4 U3_SLVS_ONE_P
+       F5 NetU3_IC2_F5
+       F6 NetU3_IC2_F6
+       F7 DC2_ELKS.GBTX_ELK_CH7_1_P
+       F8 DC2_ELKS.GBTX_ELK_CH7_1_N
+       F9 1V5
+      F10 GND
+      F11 GND
+      F12 GND
+      F13 NetU3_IC2_F13
+      F14 NetU3_IC2_F14
+      F15 U3_SLVS_ONE_P
+      F16 U3_SLVS_ONE_P
+      F17 GND
+      F18 DC2_ELKS.GBTX_ELK_CH8_1_P
+      F19 1V5
+      F20 NetU3_IC2_F20
+       G1 U3_XX_OUT_RCLK0_P
+       G2 U3_GBTX_VDDP_PS
+       G3 NetU3_IC2_G3
+       G4 NetU3_IC2_G4
+       G5 DC_I2C_SCL_1
+       G6 U3_SLVS_ONE_N
+       G7 U3_SLVS_ONE_P
+       G8 NetU3_IC2_G8
+       G9 NetU3_IC2_G9
+      G10 GND
+      G11 GND
+      G12 GND
+      G13 GND
+      G14 1V5
+      G15 1V5
+      G16 U3_SLVS_ONE_N
+      G17 NetU3_IC2_G17
+      G18 DC2_ELKS.GBTX_ELK_CH8_1_N
+      G19 NetU3_IC2_G19
+      G20 NetU3_IC2_G20
+       H1 U3_XX_OUT_RCLK0_N
+       H2 GND
+       H3 U3_GBTX_VDDP_PS
+       H4 U3_XX_OUT_RCLK1_P
+       H5 DC_I2C_SDA_1
+       H6 NetU3_IC2_H6
+       H7 1V5
+       H8 U3_LDSDA_1
+       H9 U1_DC_CFG.STATEOVERRIDE_1
+      H10 GND
+      H11 GND
+      H12 GND
+      H13 1V5
+      H14 1V5
+      H15 U2_DC_TST.DF_AUTORESET_TESTINJ_1
+      H16 U3_SLVS_ONE_N
+      H17 NetU3_IC2_H17
+      H18 U3_MC_TFC4_N
+      H19 NetU3_IC2_H19
+      H20 NetU3_IC2_H20
+       J1 GND
+       J2 NetU3_IC2_J2
+       J3 U3_GBTX_VDD_SERDES
+       J4 U3_XX_OUT_RCLK1_N
+       J5 GND
+       J6 U3_GBTX_VDDP_PS
+       J7 NetU3_IC2_J7
+       J8 U1_DC_CFG.RXLOCK_0MODE_1
+       J9 U1_DC_CFG.REFCLKSEL_1
+      J10 GND
+      J11 GND
+      J12 1V5
+      J13 1V5
+      J14 1V5
+      J15 GND
+      J16 U3_SLVS_ONE_P
+      J17 NetU3_IC2_J17
+      J18 U3_MC_TFC4_P
+      J19 NetU3_IC2_J19
+      J20 GND
+       K1 MC_OUT_RCLK2_1_N
+       K2 GND
+       K3 U3_GBTX_VDD_SERDES
+       K4 U3_XX_OUT_RCLK2_P
+       K5 U3_XX_OUT_RCLK2_N
+       K6 U3_GBTX_VDDP_PS
+       K7 U1_DC_CFG.CONFIGSELECT_1
+       K8 U3_LDSCL_1
+       K9 U3_GBTX_VDDP_PS
+      K10 NetU3_IC2_K10
+      K11 GND
+      K12 GND
+      K13 1V5
+      K14 1V5
+      K15 DC2_ELKS.GBTX_ELK_CH11_1_N
+      K16 U3_SLVS_ONE_N
+      K17 NetU3_IC2_K17
+      K18 NetU3_IC2_K18
+      K19 NetU3_IC2_K19
+      K20 1V5
+       L1 MC_OUT_RCLK2_1_P
+       L2 GND
+       L3 U3_GBTX_VDD_SERDES
+       L4 U3_XX_OUT_RCLK3_P
+       L5 U3_XX_OUT_RCLK3_N
+       L6 GND
+       L7 U1_DC_CFG.TXMODE_1SEL_1
+       L8 1V5
+       L9 GND
+      L10 U1_DC_CFG.TXMODE_2SEL_1
+      L11 GND
+      L12 GND
+      L13 NetU3_IC2_L13
+      L14 1V5
+      L15 DC2_ELKS.GBTX_ELK_CH11_1_P
+      L16 U3_SLVS_ONE_P
+      L17 NetU3_IC2_L17
+      L18 NetU3_IC2_L18
+      L19 NetU3_IC2_L19
+      L20 NetU3_IC2_L20
+       M1 GND
+       M2 NetU3_IC2_M2
+       M3 U3_GBTX_VDD_SERDES
+       M4 U3_XX_OUT_RCLK4_P
+       M5 U3_XX_OUT_RCLK4_N
+       M6 U3_XX_OUT_RCLK6_P
+       M7 U3_XX_OUT_RCLK6_N
+       M8 NetU3_IC2_M8
+       M9 U1_DC_CFG.RXLOCK_1MODE_1
+      M10 DC_RESETB_1
+      M11 GND
+      M12 GND
+      M13 1V5
+      M14 1V5
+      M15 U3_SLVS_ONE_N
+      M16 NetU3_IC2_M16
+      M17 U3_SLVS_ONE_P
+      M18 U3_SLVS_ONE_P
+      M19 NetU3_IC2_M19
+      M20 NetU3_IC2_M20
+       N1 U3_XX_OUT_RCLK5_P
+       N2 U3_XX_OUT_RCLK5_N
+       N3 GND
+       N4 U3_GBTX_VDDP_PS
+       N5 U1_DC_CFG.TXMODE_0SEL_1
+       N6 1V5
+       N7 GND
+       N8 NetU3_IC2_N8
+       N9 NetU3_IC2_N9
+      N10 NetU3_IC2_N10
+      N11 U2_DC_TST.TXDATAVALID_1
+      N12 1V5
+      N13 1V5
+      N14 1V5
+      N15 U3_SLVS_ONE_P
+      N16 NetU3_IC2_N16
+      N17 U3_SLVS_ONE_N
+      N18 U3_SLVS_ONE_N
+      N19 NetU3_IC2_N19
+      N20 NetU3_IC2_N20
+       P1 U3_XX_OUT_RCLK7_P
+       P2 U3_XX_OUT_RCLK7_N
+       P3 U3_SCA_PRI_DAT_OUT_N
+       P4 U3_SCA_PRI_DAT_OUT_P
+       P5 GND
+       P6 U3_SCA_PRI_CLK_P
+       P7 NetU3_IC2_P7
+       P8 NetU3_IC2_P8
+       P9 NetU3_IC2_P9
+      P10 U1_DC_CFG.TXMODE_3SEL_1
+      P11 U3_EFUSEPROGPLS_1
+      P12 U3_SCA_PRI_DAT_IN_P
+      P13 U3_SCA_PRI_DAT_IN_N
+      P14 DC_EFUSE_PWR
+      P15 NetU3_IC2_P15
+      P16 NetU3_IC2_P16
+      P17 DC2_ELKS.GBTX_ELK_CH10_1_P
+      P18 GND
+      P19 NetU3_IC2_P19
+      P20 NetU3_IC2_P20
+       R1 GND
+       R2 U3_GBTX_VDD_SERDES
+       R3 U3_GBTX_VDD_SERDES
+       R4 U3_SLVS_ONE_N
+       R5 U3_SLVS_ONE_P
+       R6 U3_SCA_PRI_CLK_N
+       R7 NetU3_IC2_R7
+       R8 NetU3_IC2_R8
+       R9 U3_SLVS_ONE_P
+      R10 U3_SLVS_ONE_N
+      R11 U3_SLVS_ONE_P
+      R12 U3_SLVS_ONE_N
+      R13 1V5
+      R14 GND
+      R15 U3_SLVS_ONE_P
+      R16 U3_SLVS_ONE_N
+      R17 DC2_ELKS.GBTX_ELK_CH10_1_N
+      R18 1V5
+      R19 U3_SCA_SEC_DAT_IN_N
+      R20 NetU3_IC2_R20
+       T1 SLVS_HIGH_1_N
+       T2 GND
+       T3 U3_GBTX_VDD_SERDES
+       T4 DC2_ELKS.GBTX_ELK_CH0_1_N
+       T5 U3_SLVS_ONE_P
+       T6 U3_SLVS_ONE_N
+       T7 NetU3_IC2_T7
+       T8 NetU3_IC2_T8
+       T9 NetU3_IC2_T9
+      T10 NetU3_IC2_T10
+      T11 DC2_ELKS.GBTX_ELK_CH5_1_P
+      T12 DC2_ELKS.GBTX_ELK_CH5_1_N
+      T13 U3_DC_TST.TEST_DAT_OUT_1_N
+      T14 U3_DC_TST.TEST_DAT_OUT_1_P
+      T15 U3_SLVS_ONE_N
+      T16 U3_SLVS_ONE_P
+      T17 U3_SLVS_ONE_N
+      T18 U3_SLVS_ONE_P
+      T19 U3_SCA_SEC_DAT_IN_P
+      T20 NetU3_IC2_T20
+       U1 SLVS_HIGH_1_P
+       U2 GND
+       U3 U3_GBTX_VDD_SERDES
+       U4 DC2_ELKS.GBTX_ELK_CH0_1_P
+       U5 DC2_ELKS.GBTX_ELK_CH4_1_N
+       U6 DC2_ELKS.GBTX_ELK_CH4_1_P
+       U7 U3_SLVS_ONE_P
+       U8 U3_SLVS_ONE_N
+       U9 NetU3_IC2_U9
+      U10 NetU3_IC2_U10
+      U11 U3_SLVS_ONE_N
+      U12 U3_SLVS_ONE_P
+      U13 U3_SLVS_ONE_P
+      U14 U3_SLVS_ONE_N
+      U15 U3_DC_TST.TEST_DAT_IN_1_P
+      U16 U3_DC_TST.TEST_DAT_IN_1_N
+      U17 U3_SLVS_ONE_N
+      U18 U3_SCA_SEC_DAT_OUT_N
+      U19 NetU3_IC2_U19
+      U20 NetU3_IC2_U20
+       V1 GND
+       V2 U3_GBTX_VDD_SERDES
+       V3 NetU3_IC2_V3
+       V4 NetU3_IC2_V4
+       V5 NetU3_IC2_V5
+       V6 NetU3_IC2_V6
+       V7 DC2_ELKS.GBTX_ELK_CH1_1_P
+       V8 NetU3_IC2_V8
+       V9 NetU3_IC2_V9
+      V10 NetU3_IC2_V10
+      V11 U3_DC_TST.TEST_DAT_CLK_1_N
+      V12 U3_DC_TST.TEST_DAT_CLK_1_P
+      V13 NetU3_IC2_V13
+      V14 NetU3_IC2_V14
+      V15 NetU3_IC2_V15
+      V16 NetU3_IC2_V16
+      V17 U3_SLVS_ONE_P
+      V18 U3_SCA_SEC_DAT_OUT_P
+      V19 NetU3_IC2_V19
+      V20 U3_SCA_SEC_CLK_P
+       W1 NetU3_IC2_W1
+       W2 NetU3_IC2_W2
+       W3 NetU3_IC2_W3
+       W4 GND
+       W5 1V5
+       W6 NetU3_IC2_W6
+       W7 DC2_ELKS.GBTX_ELK_CH1_1_N
+       W8 NetU3_IC2_W8
+       W9 GND
+      W10 1V5
+      W11 NetU3_IC2_W11
+      W12 NetU3_IC2_W12
+      W13 GND
+      W14 1V5
+      W15 NetU3_IC2_W15
+      W16 NetU3_IC2_W16
+      W17 GND
+      W18 1V5
+      W19 NetU3_IC2_W19
+      W20 U3_SCA_SEC_CLK_N
+       Y1 U3_MC_TFC0_N
+       Y2 U3_MC_TFC0_P
+       Y3 NetU3_IC2_Y3
+       Y4 NetU3_IC2_Y4
+       Y5 NetU3_IC2_Y5
+       Y6 NetU3_IC2_Y6
+       Y7 U3_MC_TFC1_N
+       Y8 U3_MC_TFC1_P
+       Y9 NetU3_IC2_Y9
+      Y10 NetU3_IC2_Y10
+      Y11 NetU3_IC2_Y11
+      Y12 NetU3_IC2_Y12
+      Y13 NetU3_IC2_Y13
+      Y14 NetU3_IC2_Y14
+      Y15 NetU3_IC2_Y15
+      Y16 NetU3_IC2_Y16
+      Y17 NetU3_IC2_Y17
+      Y18 NetU3_IC2_Y18
+      Y19 NetU3_IC2_Y19
+      Y20 NetU3_IC2_Y20
+        }
+      }
+      {I LQW31HN23NJ03L_Murata_coil.PRT U3_L2
+        {CN
+        1 1V5
+        2 U3_GBTX_VDD_SERDES
+        }
+      }
+      {I LQW31HN23NJ03L_Murata_coil.PRT U3_L3
+        {CN
+        1 1V5
+        2 U3_GBTX_VDDP_PS
+        }
+      }
+      {I RESC1005X40N.PRT U3_R29
+        {CN
+        1 U3_SLVS_ONE_P
+        2 1V5
+        }
+      }
+      {I RESC1005X40N.PRT U3_R30
+        {CN
+        1 U3_SLVS_ONE_N
+        2 U3_SLVS_ONE_P
+        }
+      }
+      {I RESC1005X40N.PRT U3_R31
+        {CN
+        1 GND
+        2 U3_SLVS_ONE_N
+        }
+      }
+      {I RESC1005X40N.PRT U3_R43
+        {CN
+        1 GND
+        2 U3_EFUSEPROGPLS_1
+        }
+      }
+      {I RESC1005X40N.PRT U3_R48
+        {CN
+        1 NetU3_IC2_K10
+        2 U3_DC_TST.TESTOUTPUT_1
+        }
+      }
+      {I RESC1005X40N.PRT U3_R50
+        {CN
+        1 U3_LDSCL_1
+        2 1V5
+        }
+      }
+      {I RESC1005X40N.PRT U3_R51
+        {CN
+        1 U3_LDSDA_1
+        2 1V5
+        }
+      }
+      {I RESC1005X40N.PRT U3_R52
+        {CN
+        1 NetU3_IC2_L13
+        2 U3_DC_TST.TX_RDY_1
+        }
+      }
+      {I RESC1005X40N.PRT U3_R53
+        {CN
+        1 U3_DC_TST.RX_RDY_1
+        2 NetU3_IC2_N10
+        }
+      }
+      {I RESC1005X40N.PRT U3_R54
+        {CN
+        1 U3_DC_TST.RX_DATVAL_1
+        2 NetU3_IC2_N9
+        }
+      }
+      {I RESC1005X40N.PRT U3_R59
+        {CN
+        1 U3_SLVS_ONE_P
+        2 NetU3_IC2_A3
+        }
+      }
+      {I RESC1005X40N.PRT U3_R60
+        {CN
+        1 U3_SLVS_ONE_N
+        2 NetU3_IC2_A4
+        }
+      }
+      {I RESC1005X40N.PRT U3_R61
+        {CN
+        1 U3_SLVS_ONE_P
+        2 NetU3_IC2_A6
+        }
+      }
+      {I RESC1005X40N.PRT U3_R62
+        {CN
+        1 U3_SLVS_ONE_N
+        2 NetU3_IC2_A5
+        }
+      }
+      {I RESC1005X40N.PRT U3_R63
+        {CN
+        1 U3_SLVS_ONE_P
+        2 NetU3_IC2_A12
+        }
+      }
+      {I RESC1005X40N.PRT U3_R64
+        {CN
+        1 U3_SLVS_ONE_N
+        2 NetU3_IC2_A11
+        }
+      }
+      {I RESC1005X40N.PRT U3_R65
+        {CN
+        1 U3_SLVS_ONE_P
+        2 NetU3_IC2_A14
+        }
+      }
+      {I RESC1005X40N.PRT U3_R66
+        {CN
+        1 U3_SLVS_ONE_N
+        2 NetU3_IC2_A13
+        }
+      }
+      {I RESC1005X40N.PRT U3_R67
+        {CN
+        1 U3_SLVS_ONE_P
+        2 NetU3_IC2_V19
+        }
+      }
+      {I RESC1005X40N.PRT U3_R68
+        {CN
+        1 U3_SLVS_ONE_N
+        2 NetU3_IC2_W19
+        }
+      }
+      {I RESC1005X40N.PRT U3_R69
+        {CN
+        1 U3_SLVS_ONE_P
+        2 NetU3_IC2_Y9
+        }
+      }
+      {I RESC1005X40N.PRT U3_R70
+        {CN
+        1 U3_SLVS_ONE_N
+        2 NetU3_IC2_Y10
+        }
+      }
+      {I RESC1005X40N.PRT U3_R71
+        {CN
+        1 U3_SLVS_ONE_P
+        2 NetU3_IC2_W3
+        }
+      }
+      {I RESC1005X40N.PRT U3_R72
+        {CN
+        1 U3_SLVS_ONE_N
+        2 NetU3_IC2_V3
+        }
+      }
+      {I RESC1005X40N.PRT U3_R73
+        {CN
+        1 U3_SLVS_ONE_P
+        2 NetU3_IC2_Y3
+        }
+      }
+      {I RESC1005X40N.PRT U3_R74
+        {CN
+        1 U3_SLVS_ONE_N
+        2 NetU3_IC2_Y4
+        }
+      }
+      {I RESC1005X40N.PRT U3_R75
+        {CN
+        1 1V5
+        2 U2_DC_TST.DF_AUTORESET_TESTINJ_1
+        }
+      }
+      {I RESC5226X80N.PRT U3_R87
+        {CN
+        1 1V5
+        2 U3_GBTX_VDD_SERDES
+        }
+      }
+      {I RESC5226X80N.PRT U3_R88
+        {CN
+        1 1V5
+        2 U3_GBTX_VDDP_PS
+        }
+      }
+      {I TPS127.PRT U3_TP1
+        {CN
+        1 U3_SLVS_ONE_P
+        }
+      }
+      {I TPS127.PRT U3_TP2
+        {CN
+        1 U3_SLVS_ONE_N
+        }
+      }
+      {I TPS127.PRT U3_TP5
+        {CN
+        1 GND
+        }
+      }
+      {I CAPC2012X135N.PRT U4_C21
+        {CN
+        1 1V5
+        2 GND
+        }
+      }
+      {I CAPC2012X135N.PRT U4_C22
+        {CN
+        1 1V5
+        2 GND
+        }
+      }
+      {I CAPC1005X55N.PRT U4_C23
+        {CN
+        1 GND
+        2 1V5
+        }
+      }
+      {I CAPC1005X55N.PRT U4_C24
+        {CN
+        1 GND
+        2 1V5
+        }
+      }
+      {I CAPC1005X55N.PRT U4_C25
+        {CN
+        1 GND
+        2 1V5
+        }
+      }
+      {I CAPC1005X55N.PRT U4_C26
+        {CN
+        1 GND
+        2 1V5
+        }
+      }
+      {I CAPC1005X55N.PRT U4_C27
+        {CN
+        1 GND
+        2 1V5
+        }
+      }
+      {I CAPC1005X55N.PRT U4_C28
+        {CN
+        1 GND
+        2 1V5
+        }
+      }
+      {I CAPC1005X55N.PRT U4_C29
+        {CN
+        1 GND
+        2 1V5
+        }
+      }
+      {I CAPC1005X55N.PRT U4_C30
+        {CN
+        1 GND
+        2 1V5
+        }
+      }
+      {I CAPC0603X33N.PRT U4_C31
+        {CN
+        1 GND
+        2 1V5
+        }
+      }
+      {I CAPC0603X33N.PRT U4_C32
+        {CN
+        1 GND
+        2 1V5
+        }
+      }
+      {I CAPC0603X33N.PRT U4_C33
+        {CN
+        1 GND
+        2 1V5
+        }
+      }
+      {I CAPC0603X33N.PRT U4_C34
+        {CN
+        1 GND
+        2 1V5
+        }
+      }
+      {I CAPC0603X33N.PRT U4_C35
+        {CN
+        1 GND
+        2 1V5
+        }
+      }
+      {I CAPC0603X33N.PRT U4_C36
+        {CN
+        1 GND
+        2 1V5
+        }
+      }
+      {I CAPC2012X135N.PRT U4_C37
+        {CN
+        1 U4_GBTX_VDD_SERDES
+        2 GND
+        }
+      }
+      {I CAPC2012X135N.PRT U4_C38
+        {CN
+        1 U4_GBTX_VDD_SERDES
+        2 GND
+        }
+      }
+      {I CAPC1005X55N.PRT U4_C39
+        {CN
+        1 GND
+        2 U4_GBTX_VDD_SERDES
+        }
+      }
+      {I CAPC1005X55N.PRT U4_C40
+        {CN
+        1 GND
+        2 U4_GBTX_VDD_SERDES
+        }
+      }
+      {I CAPC1005X55N.PRT U4_C41
+        {CN
+        1 GND
+        2 U4_GBTX_VDD_SERDES
+        }
+      }
+      {I CAPC1005X55N.PRT U4_C42
+        {CN
+        1 GND
+        2 U4_GBTX_VDD_SERDES
+        }
+      }
+      {I CAPC1005X55N.PRT U4_C43
+        {CN
+        1 GND
+        2 U4_GBTX_VDD_SERDES
+        }
+      }
+      {I CAPC1005X55N.PRT U4_C44
+        {CN
+        1 GND
+        2 U4_GBTX_VDD_SERDES
+        }
+      }
+      {I CAPC1005X55N.PRT U4_C45
+        {CN
+        1 GND
+        2 U4_GBTX_VDD_SERDES
+        }
+      }
+      {I CAPC1005X55N.PRT U4_C46
+        {CN
+        1 GND
+        2 U4_GBTX_VDD_SERDES
+        }
+      }
+      {I CAPC0603X33N.PRT U4_C47
+        {CN
+        1 GND
+        2 U4_GBTX_VDD_SERDES
+        }
+      }
+      {I CAPC0603X33N.PRT U4_C48
+        {CN
+        1 GND
+        2 U4_GBTX_VDD_SERDES
+        }
+      }
+      {I CAPC0603X33N.PRT U4_C49
+        {CN
+        1 GND
+        2 U4_GBTX_VDD_SERDES
+        }
+      }
+      {I CAPC0603X33N.PRT U4_C50
+        {CN
+        1 GND
+        2 U4_GBTX_VDD_SERDES
+        }
+      }
+      {I CAPC0603X33N.PRT U4_C51
+        {CN
+        1 GND
+        2 U4_GBTX_VDD_SERDES
+        }
+      }
+      {I CAPC0603X33N.PRT U4_C52
+        {CN
+        1 GND
+        2 U4_GBTX_VDD_SERDES
+        }
+      }
+      {I CAPC2012X135N.PRT U4_C53
+        {CN
+        1 U4_GBTX_VDDP_PS
+        2 GND
+        }
+      }
+      {I CAPC2012X135N.PRT U4_C54
+        {CN
+        1 U4_GBTX_VDDP_PS
+        2 GND
+        }
+      }
+      {I CAPC1005X55N.PRT U4_C55
+        {CN
+        1 GND
+        2 U4_GBTX_VDDP_PS
+        }
+      }
+      {I CAPC1005X55N.PRT U4_C56
+        {CN
+        1 GND
+        2 U4_GBTX_VDDP_PS
+        }
+      }
+      {I CAPC1005X55N.PRT U4_C57
+        {CN
+        1 GND
+        2 U4_GBTX_VDDP_PS
+        }
+      }
+      {I CAPC0603X33N.PRT U4_C58
+        {CN
+        1 GND
+        2 U4_GBTX_VDDP_PS
+        }
+      }
+      {I CAPC0603X33N.PRT U4_C59
+        {CN
+        1 GND
+        2 U4_GBTX_VDDP_PS
+        }
+      }
+      {I CAPC0603X33N.PRT U4_C60
+        {CN
+        1 GND
+        2 U4_GBTX_VDDP_PS
+        }
+      }
+      {I CAPC0603X33N.PRT U4_C93
+        {CN
+        1 GND
+        2 1V5
+        }
+      }
+      {I CAPC1005X55N.PRT U4_C94
+        {CN
+        1 GND
+        2 1V5
+        }
+      }
+      {I CAPC2012X135N.PRT U4_C129
+        {CN
+        1 DC_EFUSE_PWR
+        2 GND
+        }
+      }
+      {I CAPC1005X55N.PRT U4_C130
+        {CN
+        1 GND
+        2 DC_EFUSE_PWR
+        }
+      }
+      {I CERN_GBTX ASIC_V0.1.PRT U4_IC2
+        {CN
+       A1 NetU4_IC2_A1
+       A2 NetU4_IC2_A2
+       A3 NetU4_IC2_A3
+       A4 NetU4_IC2_A4
+       A5 NetU4_IC2_A5
+       A6 NetU4_IC2_A6
+       A7 DC3_ELKS.GBTX_ELK_CH3_1_P
+       A8 DC3_ELKS.GBTX_ELK_CH3_1_N
+       A9 U4_MC_TFC3_P
+      A10 U4_MC_TFC3_N
+      A11 NetU4_IC2_A11
+      A12 NetU4_IC2_A12
+      A13 NetU4_IC2_A13
+      A14 NetU4_IC2_A14
+      A15 DC3_ELKS.GBTX_ELK_CH2_1_P
+      A16 DC3_ELKS.GBTX_ELK_CH2_1_N
+      A17 U4_MC_TFC2_P
+      A18 U4_MC_TFC2_N
+      A19 GND
+      A20 U4_MC_TFC5_P
+       B1 U4_SLVS_ONE_P
+       B2 U4_SLVS_ONE_N
+       B3 U4_SLVS_ONE_N
+       B4 U4_SLVS_ONE_P
+       B5 NetU4_IC2_B5
+       B6 NetU4_IC2_B6
+       B7 NetU4_IC2_B7
+       B8 NetU4_IC2_B8
+       B9 GND
+      B10 1V5
+      B11 NetU4_IC2_B11
+      B12 NetU4_IC2_B12
+      B13 NetU4_IC2_B13
+      B14 NetU4_IC2_B14
+      B15 NetU4_IC2_B15
+      B16 NetU4_IC2_B16
+      B17 NetU4_IC2_B17
+      B18 NetU4_IC2_B18
+      B19 1V5
+      B20 U4_MC_TFC5_N
+       C1 GND
+       C2 GND
+       C3 U4_GBTX_VDD_SERDES
+       C4 U4_SLVS_ONE_P
+       C5 NetU4_IC2_C5
+       C6 NetU4_IC2_C6
+       C7 NetU4_IC2_C7
+       C8 NetU4_IC2_C8
+       C9 NetU4_IC2_C9
+      C10 NetU4_IC2_C10
+      C11 U4_SLVS_ONE_N
+      C12 NetU4_IC2_C12
+      C13 GND
+      C14 1V5
+      C15 NetU4_IC2_C15
+      C16 NetU4_IC2_C16
+      C17 NetU4_IC2_C17
+      C18 NetU4_IC2_C18
+      C19 NetU4_IC2_C19
+      C20 NetU4_IC2_C20
+       D1 U4_GTX_1_N
+       D2 GND
+       D3 U4_GBTX_VDD_SERDES
+       D4 U4_SLVS_ONE_N
+       D5 U4_SLVS_ONE_N
+       D6 U4_SLVS_ONE_P
+       D7 U4_SLVS_ONE_N
+       D8 U4_SLVS_ONE_P
+       D9 DC3_ELKS.GBTX_ELK_CH6_1_P
+      D10 DC3_ELKS.GBTX_ELK_CH6_1_N
+      D11 U4_SLVS_ONE_P
+      D12 NetU4_IC2_D12
+      D13 U4_SLVS_ONE_P
+      D14 U4_SLVS_ONE_N
+      D15 U4_SLVS_ONE_P
+      D16 U4_SLVS_ONE_N
+      D17 NetU4_IC2_D17
+      D18 NetU4_IC2_D18
+      D19 NetU4_IC2_D19
+      D20 NetU4_IC2_D20
+       E1 U4_GTX_1_P
+       E2 GND
+       E3 U4_GBTX_VDD_SERDES
+       E4 U4_SLVS_ONE_N
+       E5 NetU4_IC2_E5
+       E6 NetU4_IC2_E6
+       E7 NetU4_IC2_E7
+       E8 NetU4_IC2_E8
+       E9 U4_SLVS_ONE_P
+      E10 U4_SLVS_ONE_N
+      E11 DC3_ELKS.GBTX_ELK_CH9_1_N
+      E12 DC3_ELKS.GBTX_ELK_CH9_1_P
+      E13 NetU4_IC2_E13
+      E14 NetU4_IC2_E14
+      E15 U4_SLVS_ONE_N
+      E16 U4_SLVS_ONE_P
+      E17 U4_SLVS_ONE_N
+      E18 NetU4_IC2_E18
+      E19 NetU4_IC2_E19
+      E20 NetU4_IC2_E20
+       F1 GND
+       F2 U4_GBTX_VDD_SERDES
+       F3 U4_GBTX_VDD_SERDES
+       F4 U4_SLVS_ONE_P
+       F5 NetU4_IC2_F5
+       F6 NetU4_IC2_F6
+       F7 DC3_ELKS.GBTX_ELK_CH7_1_P
+       F8 DC3_ELKS.GBTX_ELK_CH7_1_N
+       F9 1V5
+      F10 GND
+      F11 GND
+      F12 GND
+      F13 NetU4_IC2_F13
+      F14 NetU4_IC2_F14
+      F15 U4_SLVS_ONE_P
+      F16 U4_SLVS_ONE_P
+      F17 GND
+      F18 DC3_ELKS.GBTX_ELK_CH8_1_P
+      F19 1V5
+      F20 NetU4_IC2_F20
+       G1 U4_XX_OUT_RCLK0_P
+       G2 U4_GBTX_VDDP_PS
+       G3 NetU4_IC2_G3
+       G4 NetU4_IC2_G4
+       G5 DC_I2C_SCL_1
+       G6 U4_SLVS_ONE_N
+       G7 U4_SLVS_ONE_P
+       G8 NetU4_IC2_G8
+       G9 NetU4_IC2_G9
+      G10 GND
+      G11 GND
+      G12 GND
+      G13 GND
+      G14 1V5
+      G15 1V5
+      G16 U4_SLVS_ONE_N
+      G17 NetU4_IC2_G17
+      G18 DC3_ELKS.GBTX_ELK_CH8_1_N
+      G19 NetU4_IC2_G19
+      G20 NetU4_IC2_G20
+       H1 U4_XX_OUT_RCLK0_N
+       H2 GND
+       H3 U4_GBTX_VDDP_PS
+       H4 U4_XX_OUT_RCLK1_P
+       H5 DC_I2C_SDA_1
+       H6 NetU4_IC2_H6
+       H7 1V5
+       H8 U4_LDSDA_1
+       H9 U1_DC_CFG.STATEOVERRIDE_1
+      H10 GND
+      H11 GND
+      H12 GND
+      H13 1V5
+      H14 1V5
+      H15 U4_DC_TST.DF_AUTORESET_TESTINJ_1
+      H16 U4_SLVS_ONE_N
+      H17 NetU4_IC2_H17
+      H18 U4_MC_TFC4_N
+      H19 NetU4_IC2_H19
+      H20 NetU4_IC2_H20
+       J1 GND
+       J2 NetU4_IC2_J2
+       J3 U4_GBTX_VDD_SERDES
+       J4 U4_XX_OUT_RCLK1_N
+       J5 GND
+       J6 U4_GBTX_VDDP_PS
+       J7 NetU4_IC2_J7
+       J8 U1_DC_CFG.RXLOCK_0MODE_1
+       J9 U1_DC_CFG.REFCLKSEL_1
+      J10 GND
+      J11 GND
+      J12 1V5
+      J13 1V5
+      J14 1V5
+      J15 GND
+      J16 U4_SLVS_ONE_P
+      J17 NetU4_IC2_J17
+      J18 U4_MC_TFC4_P
+      J19 NetU4_IC2_J19
+      J20 GND
+       K1 MC_OUT_RCLK3_1_N
+       K2 GND
+       K3 U4_GBTX_VDD_SERDES
+       K4 U4_XX_OUT_RCLK2_P
+       K5 U4_XX_OUT_RCLK2_N
+       K6 U4_GBTX_VDDP_PS
+       K7 U1_DC_CFG.CONFIGSELECT_1
+       K8 U4_LDSCL_1
+       K9 U4_GBTX_VDDP_PS
+      K10 NetU4_IC2_K10
+      K11 GND
+      K12 GND
+      K13 1V5
+      K14 1V5
+      K15 DC3_ELKS.GBTX_ELK_CH11_1_N
+      K16 U4_SLVS_ONE_N
+      K17 NetU4_IC2_K17
+      K18 NetU4_IC2_K18
+      K19 NetU4_IC2_K19
+      K20 1V5
+       L1 MC_OUT_RCLK3_1_P
+       L2 GND
+       L3 U4_GBTX_VDD_SERDES
+       L4 U4_XX_OUT_RCLK3_P
+       L5 U4_XX_OUT_RCLK3_N
+       L6 GND
+       L7 U1_DC_CFG.TXMODE_1SEL_1
+       L8 GND
+       L9 GND
+      L10 U1_DC_CFG.TXMODE_2SEL_1
+      L11 GND
+      L12 GND
+      L13 NetU4_IC2_L13
+      L14 1V5
+      L15 DC3_ELKS.GBTX_ELK_CH11_1_P
+      L16 U4_SLVS_ONE_P
+      L17 NetU4_IC2_L17
+      L18 NetU4_IC2_L18
+      L19 NetU4_IC2_L19
+      L20 NetU4_IC2_L20
+       M1 GND
+       M2 NetU4_IC2_M2
+       M3 U4_GBTX_VDD_SERDES
+       M4 U4_XX_OUT_RCLK4_P
+       M5 U4_XX_OUT_RCLK4_N
+       M6 U4_XX_OUT_RCLK6_P
+       M7 U4_XX_OUT_RCLK6_N
+       M8 NetU4_IC2_M8
+       M9 U1_DC_CFG.RXLOCK_1MODE_1
+      M10 DC_RESETB_1
+      M11 GND
+      M12 GND
+      M13 1V5
+      M14 1V5
+      M15 U4_SLVS_ONE_N
+      M16 NetU4_IC2_M16
+      M17 U4_SLVS_ONE_P
+      M18 U4_SLVS_ONE_P
+      M19 NetU4_IC2_M19
+      M20 NetU4_IC2_M20
+       N1 U4_XX_OUT_RCLK5_P
+       N2 U4_XX_OUT_RCLK5_N
+       N3 GND
+       N4 U4_GBTX_VDDP_PS
+       N5 U1_DC_CFG.TXMODE_0SEL_1
+       N6 GND
+       N7 1V5
+       N8 NetU4_IC2_N8
+       N9 NetU4_IC2_N9
+      N10 NetU4_IC2_N10
+      N11 U4_DC_TST.TXDATAVALID_1
+      N12 1V5
+      N13 1V5
+      N14 1V5
+      N15 U4_SLVS_ONE_P
+      N16 NetU4_IC2_N16
+      N17 U4_SLVS_ONE_N
+      N18 U4_SLVS_ONE_N
+      N19 NetU4_IC2_N19
+      N20 NetU4_IC2_N20
+       P1 U4_XX_OUT_RCLK7_P
+       P2 U4_XX_OUT_RCLK7_N
+       P3 U4_SCA_PRI_DAT_OUT_N
+       P4 U4_SCA_PRI_DAT_OUT_P
+       P5 GND
+       P6 U4_SCA_PRI_CLK_P
+       P7 NetU4_IC2_P7
+       P8 NetU4_IC2_P8
+       P9 NetU4_IC2_P9
+      P10 U1_DC_CFG.TXMODE_3SEL_1
+      P11 U4_EFUSEPROGPLS_1
+      P12 U4_SCA_PRI_DAT_IN_P
+      P13 U4_SCA_PRI_DAT_IN_N
+      P14 DC_EFUSE_PWR
+      P15 NetU4_IC2_P15
+      P16 NetU4_IC2_P16
+      P17 DC3_ELKS.GBTX_ELK_CH10_1_P
+      P18 GND
+      P19 NetU4_IC2_P19
+      P20 NetU4_IC2_P20
+       R1 GND
+       R2 U4_GBTX_VDD_SERDES
+       R3 U4_GBTX_VDD_SERDES
+       R4 U4_SLVS_ONE_N
+       R5 U4_SLVS_ONE_P
+       R6 U4_SCA_PRI_CLK_N
+       R7 NetU4_IC2_R7
+       R8 NetU4_IC2_R8
+       R9 U4_SLVS_ONE_P
+      R10 U4_SLVS_ONE_N
+      R11 U4_SLVS_ONE_P
+      R12 U4_SLVS_ONE_N
+      R13 1V5
+      R14 GND
+      R15 U4_SLVS_ONE_P
+      R16 U4_SLVS_ONE_N
+      R17 DC3_ELKS.GBTX_ELK_CH10_1_N
+      R18 1V5
+      R19 U4_SCA_SEC_DAT_IN_N
+      R20 NetU4_IC2_R20
+       T1 SLVS_HIGH_1_N
+       T2 GND
+       T3 U4_GBTX_VDD_SERDES
+       T4 DC3_ELKS.GBTX_ELK_CH0_1_N
+       T5 U4_SLVS_ONE_P
+       T6 U4_SLVS_ONE_N
+       T7 NetU4_IC2_T7
+       T8 NetU4_IC2_T8
+       T9 NetU4_IC2_T9
+      T10 NetU4_IC2_T10
+      T11 DC3_ELKS.GBTX_ELK_CH5_1_P
+      T12 DC3_ELKS.GBTX_ELK_CH5_1_N
+      T13 U4_DC_TST.TEST_DAT_OUT_1_N
+      T14 U4_DC_TST.TEST_DAT_OUT_1_P
+      T15 U4_SLVS_ONE_N
+      T16 U4_SLVS_ONE_P
+      T17 U4_SLVS_ONE_N
+      T18 U4_SLVS_ONE_P
+      T19 U4_SCA_SEC_DAT_IN_P
+      T20 NetU4_IC2_T20
+       U1 SLVS_HIGH_1_P
+       U2 GND
+       U3 U4_GBTX_VDD_SERDES
+       U4 DC3_ELKS.GBTX_ELK_CH0_1_P
+       U5 DC3_ELKS.GBTX_ELK_CH4_1_N
+       U6 DC3_ELKS.GBTX_ELK_CH4_1_P
+       U7 U4_SLVS_ONE_P
+       U8 U4_SLVS_ONE_N
+       U9 NetU4_IC2_U9
+      U10 NetU4_IC2_U10
+      U11 U4_SLVS_ONE_N
+      U12 U4_SLVS_ONE_P
+      U13 U4_SLVS_ONE_P
+      U14 U4_SLVS_ONE_N
+      U15 U4_DC_TST.TEST_DAT_IN_1_P
+      U16 U4_DC_TST.TEST_DAT_IN_1_N
+      U17 U4_SLVS_ONE_N
+      U18 U4_SCA_SEC_DAT_OUT_N
+      U19 NetU4_IC2_U19
+      U20 NetU4_IC2_U20
+       V1 GND
+       V2 U4_GBTX_VDD_SERDES
+       V3 NetU4_IC2_V3
+       V4 NetU4_IC2_V4
+       V5 NetU4_IC2_V5
+       V6 NetU4_IC2_V6
+       V7 DC3_ELKS.GBTX_ELK_CH1_1_P
+       V8 NetU4_IC2_V8
+       V9 NetU4_IC2_V9
+      V10 NetU4_IC2_V10
+      V11 U4_DC_TST.TEST_DAT_CLK_1_N
+      V12 U4_DC_TST.TEST_DAT_CLK_1_P
+      V13 NetU4_IC2_V13
+      V14 NetU4_IC2_V14
+      V15 NetU4_IC2_V15
+      V16 NetU4_IC2_V16
+      V17 U4_SLVS_ONE_P
+      V18 U4_SCA_SEC_DAT_OUT_P
+      V19 NetU4_IC2_V19
+      V20 U4_SCA_SEC_CLK_P
+       W1 NetU4_IC2_W1
+       W2 NetU4_IC2_W2
+       W3 NetU4_IC2_W3
+       W4 GND
+       W5 1V5
+       W6 NetU4_IC2_W6
+       W7 DC3_ELKS.GBTX_ELK_CH1_1_N
+       W8 NetU4_IC2_W8
+       W9 GND
+      W10 1V5
+      W11 NetU4_IC2_W11
+      W12 NetU4_IC2_W12
+      W13 GND
+      W14 1V5
+      W15 NetU4_IC2_W15
+      W16 NetU4_IC2_W16
+      W17 GND
+      W18 1V5
+      W19 NetU4_IC2_W19
+      W20 U4_SCA_SEC_CLK_N
+       Y1 U4_MC_TFC0_N
+       Y2 U4_MC_TFC0_P
+       Y3 NetU4_IC2_Y3
+       Y4 NetU4_IC2_Y4
+       Y5 NetU4_IC2_Y5
+       Y6 NetU4_IC2_Y6
+       Y7 U4_MC_TFC1_N
+       Y8 U4_MC_TFC1_P
+       Y9 NetU4_IC2_Y9
+      Y10 NetU4_IC2_Y10
+      Y11 NetU4_IC2_Y11
+      Y12 NetU4_IC2_Y12
+      Y13 NetU4_IC2_Y13
+      Y14 NetU4_IC2_Y14
+      Y15 NetU4_IC2_Y15
+      Y16 NetU4_IC2_Y16
+      Y17 NetU4_IC2_Y17
+      Y18 NetU4_IC2_Y18
+      Y19 NetU4_IC2_Y19
+      Y20 NetU4_IC2_Y20
+        }
+      }
+      {I LQW31HN23NJ03L_Murata_coil.PRT U4_L2
+        {CN
+        1 1V5
+        2 U4_GBTX_VDD_SERDES
+        }
+      }
+      {I LQW31HN23NJ03L_Murata_coil.PRT U4_L3
+        {CN
+        1 1V5
+        2 U4_GBTX_VDDP_PS
+        }
+      }
+      {I RESC1005X40N.PRT U4_R29
+        {CN
+        1 U4_SLVS_ONE_P
+        2 1V5
+        }
+      }
+      {I RESC1005X40N.PRT U4_R30
+        {CN
+        1 U4_SLVS_ONE_N
+        2 U4_SLVS_ONE_P
+        }
+      }
+      {I RESC1005X40N.PRT U4_R31
+        {CN
+        1 GND
+        2 U4_SLVS_ONE_N
+        }
+      }
+      {I RESC1005X40N.PRT U4_R43
+        {CN
+        1 GND
+        2 U4_EFUSEPROGPLS_1
+        }
+      }
+      {I RESC1005X40N.PRT U4_R48
+        {CN
+        1 NetU4_IC2_K10
+        2 U4_DC_TST.TESTOUTPUT_1
+        }
+      }
+      {I RESC1005X40N.PRT U4_R50
+        {CN
+        1 U4_LDSCL_1
+        2 1V5
+        }
+      }
+      {I RESC1005X40N.PRT U4_R51
+        {CN
+        1 U4_LDSDA_1
+        2 1V5
+        }
+      }
+      {I RESC1005X40N.PRT U4_R52
+        {CN
+        1 NetU4_IC2_L13
+        2 U4_DC_TST.TX_RDY_1
+        }
+      }
+      {I RESC1005X40N.PRT U4_R53
+        {CN
+        1 U4_DC_TST.RX_RDY_1
+        2 NetU4_IC2_N10
+        }
+      }
+      {I RESC1005X40N.PRT U4_R54
+        {CN
+        1 U4_DC_TST.RX_DATVAL_1
+        2 NetU4_IC2_N9
+        }
+      }
+      {I RESC1005X40N.PRT U4_R59
+        {CN
+        1 U4_SLVS_ONE_P
+        2 NetU4_IC2_A3
+        }
+      }
+      {I RESC1005X40N.PRT U4_R60
+        {CN
+        1 U4_SLVS_ONE_N
+        2 NetU4_IC2_A4
+        }
+      }
+      {I RESC1005X40N.PRT U4_R61
+        {CN
+        1 U4_SLVS_ONE_P
+        2 NetU4_IC2_A6
+        }
+      }
+      {I RESC1005X40N.PRT U4_R62
+        {CN
+        1 U4_SLVS_ONE_N
+        2 NetU4_IC2_A5
+        }
+      }
+      {I RESC1005X40N.PRT U4_R63
+        {CN
+        1 U4_SLVS_ONE_P
+        2 NetU4_IC2_A12
+        }
+      }
+      {I RESC1005X40N.PRT U4_R64
+        {CN
+        1 U4_SLVS_ONE_N
+        2 NetU4_IC2_A11
+        }
+      }
+      {I RESC1005X40N.PRT U4_R65
+        {CN
+        1 U4_SLVS_ONE_P
+        2 NetU4_IC2_A14
+        }
+      }
+      {I RESC1005X40N.PRT U4_R66
+        {CN
+        1 U4_SLVS_ONE_N
+        2 NetU4_IC2_A13
+        }
+      }
+      {I RESC1005X40N.PRT U4_R67
+        {CN
+        1 U4_SLVS_ONE_P
+        2 NetU4_IC2_V19
+        }
+      }
+      {I RESC1005X40N.PRT U4_R68
+        {CN
+        1 U4_SLVS_ONE_N
+        2 NetU4_IC2_W19
+        }
+      }
+      {I RESC1005X40N.PRT U4_R69
+        {CN
+        1 U4_SLVS_ONE_P
+        2 NetU4_IC2_Y9
+        }
+      }
+      {I RESC1005X40N.PRT U4_R70
+        {CN
+        1 U4_SLVS_ONE_N
+        2 NetU4_IC2_Y10
+        }
+      }
+      {I RESC1005X40N.PRT U4_R71
+        {CN
+        1 U4_SLVS_ONE_P
+        2 NetU4_IC2_W3
+        }
+      }
+      {I RESC1005X40N.PRT U4_R72
+        {CN
+        1 U4_SLVS_ONE_N
+        2 NetU4_IC2_V3
+        }
+      }
+      {I RESC1005X40N.PRT U4_R73
+        {CN
+        1 U4_SLVS_ONE_P
+        2 NetU4_IC2_Y3
+        }
+      }
+      {I RESC1005X40N.PRT U4_R74
+        {CN
+        1 U4_SLVS_ONE_N
+        2 NetU4_IC2_Y4
+        }
+      }
+      {I RESC1005X40N.PRT U4_R75
+        {CN
+        1 1V5
+        2 U4_DC_TST.DF_AUTORESET_TESTINJ_1
+        }
+      }
+      {I RESC5226X80N.PRT U4_R87
+        {CN
+        1 1V5
+        2 U4_GBTX_VDD_SERDES
+        }
+      }
+      {I RESC5226X80N.PRT U4_R88
+        {CN
+        1 1V5
+        2 U4_GBTX_VDDP_PS
+        }
+      }
+      {I TPS127.PRT U4_TP1
+        {CN
+        1 U4_SLVS_ONE_P
+        }
+      }
+      {I TPS127.PRT U4_TP2
+        {CN
+        1 U4_SLVS_ONE_N
+        }
+      }
+      {I TPS127.PRT U4_TP5
+        {CN
+        1 GND
+        }
+      }
+      {I CAPC2012X135N.PRT U5_C21
+        {CN
+        1 1V5
+        2 GND
+        }
+      }
+      {I CAPC2012X135N.PRT U5_C22
+        {CN
+        1 1V5
+        2 GND
+        }
+      }
+      {I CAPC1005X55N.PRT U5_C23
+        {CN
+        1 GND
+        2 1V5
+        }
+      }
+      {I CAPC1005X55N.PRT U5_C24
+        {CN
+        1 GND
+        2 1V5
+        }
+      }
+      {I CAPC1005X55N.PRT U5_C25
+        {CN
+        1 GND
+        2 1V5
+        }
+      }
+      {I CAPC1005X55N.PRT U5_C26
+        {CN
+        1 GND
+        2 1V5
+        }
+      }
+      {I CAPC1005X55N.PRT U5_C27
+        {CN
+        1 GND
+        2 1V5
+        }
+      }
+      {I CAPC1005X55N.PRT U5_C28
+        {CN
+        1 GND
+        2 1V5
+        }
+      }
+      {I CAPC1005X55N.PRT U5_C29
+        {CN
+        1 GND
+        2 1V5
+        }
+      }
+      {I CAPC1005X55N.PRT U5_C30
+        {CN
+        1 GND
+        2 1V5
+        }
+      }
+      {I CAPC0603X33N.PRT U5_C31
+        {CN
+        1 GND
+        2 1V5
+        }
+      }
+      {I CAPC0603X33N.PRT U5_C32
+        {CN
+        1 GND
+        2 1V5
+        }
+      }
+      {I CAPC0603X33N.PRT U5_C33
+        {CN
+        1 GND
+        2 1V5
+        }
+      }
+      {I CAPC0603X33N.PRT U5_C34
+        {CN
+        1 GND
+        2 1V5
+        }
+      }
+      {I CAPC0603X33N.PRT U5_C35
+        {CN
+        1 GND
+        2 1V5
+        }
+      }
+      {I CAPC0603X33N.PRT U5_C36
+        {CN
+        1 GND
+        2 1V5
+        }
+      }
+      {I CAPC2012X135N.PRT U5_C37
+        {CN
+        1 U5_GBTX_VDD_SERDES
+        2 GND
+        }
+      }
+      {I CAPC2012X135N.PRT U5_C38
+        {CN
+        1 U5_GBTX_VDD_SERDES
+        2 GND
+        }
+      }
+      {I CAPC1005X55N.PRT U5_C39
+        {CN
+        1 GND
+        2 U5_GBTX_VDD_SERDES
+        }
+      }
+      {I CAPC1005X55N.PRT U5_C40
+        {CN
+        1 GND
+        2 U5_GBTX_VDD_SERDES
+        }
+      }
+      {I CAPC1005X55N.PRT U5_C41
+        {CN
+        1 GND
+        2 U5_GBTX_VDD_SERDES
+        }
+      }
+      {I CAPC1005X55N.PRT U5_C42
+        {CN
+        1 GND
+        2 U5_GBTX_VDD_SERDES
+        }
+      }
+      {I CAPC1005X55N.PRT U5_C43
+        {CN
+        1 GND
+        2 U5_GBTX_VDD_SERDES
+        }
+      }
+      {I CAPC1005X55N.PRT U5_C44
+        {CN
+        1 GND
+        2 U5_GBTX_VDD_SERDES
+        }
+      }
+      {I CAPC1005X55N.PRT U5_C45
+        {CN
+        1 GND
+        2 U5_GBTX_VDD_SERDES
+        }
+      }
+      {I CAPC1005X55N.PRT U5_C46
+        {CN
+        1 GND
+        2 U5_GBTX_VDD_SERDES
+        }
+      }
+      {I CAPC0603X33N.PRT U5_C47
+        {CN
+        1 GND
+        2 U5_GBTX_VDD_SERDES
+        }
+      }
+      {I CAPC0603X33N.PRT U5_C48
+        {CN
+        1 GND
+        2 U5_GBTX_VDD_SERDES
+        }
+      }
+      {I CAPC0603X33N.PRT U5_C49
+        {CN
+        1 GND
+        2 U5_GBTX_VDD_SERDES
+        }
+      }
+      {I CAPC0603X33N.PRT U5_C50
+        {CN
+        1 GND
+        2 U5_GBTX_VDD_SERDES
+        }
+      }
+      {I CAPC0603X33N.PRT U5_C51
+        {CN
+        1 GND
+        2 U5_GBTX_VDD_SERDES
+        }
+      }
+      {I CAPC0603X33N.PRT U5_C52
+        {CN
+        1 GND
+        2 U5_GBTX_VDD_SERDES
+        }
+      }
+      {I CAPC2012X135N.PRT U5_C53
+        {CN
+        1 U5_GBTX_VDDP_PS
+        2 GND
+        }
+      }
+      {I CAPC2012X135N.PRT U5_C54
+        {CN
+        1 U5_GBTX_VDDP_PS
+        2 GND
+        }
+      }
+      {I CAPC1005X55N.PRT U5_C55
+        {CN
+        1 GND
+        2 U5_GBTX_VDDP_PS
+        }
+      }
+      {I CAPC1005X55N.PRT U5_C56
+        {CN
+        1 GND
+        2 U5_GBTX_VDDP_PS
+        }
+      }
+      {I CAPC1005X55N.PRT U5_C57
+        {CN
+        1 GND
+        2 U5_GBTX_VDDP_PS
+        }
+      }
+      {I CAPC0603X33N.PRT U5_C58
+        {CN
+        1 GND
+        2 U5_GBTX_VDDP_PS
+        }
+      }
+      {I CAPC0603X33N.PRT U5_C59
+        {CN
+        1 GND
+        2 U5_GBTX_VDDP_PS
+        }
+      }
+      {I CAPC0603X33N.PRT U5_C60
+        {CN
+        1 GND
+        2 U5_GBTX_VDDP_PS
+        }
+      }
+      {I CAPC0603X33N.PRT U5_C93
+        {CN
+        1 GND
+        2 1V5
+        }
+      }
+      {I CAPC1005X55N.PRT U5_C94
+        {CN
+        1 GND
+        2 1V5
+        }
+      }
+      {I CAPC2012X135N.PRT U5_C129
+        {CN
+        1 DC_EFUSE_PWR
+        2 GND
+        }
+      }
+      {I CAPC1005X55N.PRT U5_C130
+        {CN
+        1 GND
+        2 DC_EFUSE_PWR
+        }
+      }
+      {I CERN_GBTX ASIC_V0.1.PRT U5_IC2
+        {CN
+       A1 NetU5_IC2_A1
+       A2 NetU5_IC2_A2
+       A3 NetU5_IC2_A3
+       A4 NetU5_IC2_A4
+       A5 NetU5_IC2_A5
+       A6 NetU5_IC2_A6
+       A7 DC4_ELKS.GBTX_ELK_CH3_1_P
+       A8 DC4_ELKS.GBTX_ELK_CH3_1_N
+       A9 U5_MC_TFC3_P
+      A10 U5_MC_TFC3_N
+      A11 NetU5_IC2_A11
+      A12 NetU5_IC2_A12
+      A13 NetU5_IC2_A13
+      A14 NetU5_IC2_A14
+      A15 DC4_ELKS.GBTX_ELK_CH2_1_P
+      A16 DC4_ELKS.GBTX_ELK_CH2_1_N
+      A17 U5_MC_TFC2_P
+      A18 U5_MC_TFC2_N
+      A19 GND
+      A20 U5_MC_TFC5_P
+       B1 U5_SLVS_ONE_P
+       B2 U5_SLVS_ONE_N
+       B3 U5_SLVS_ONE_N
+       B4 U5_SLVS_ONE_P
+       B5 NetU5_IC2_B5
+       B6 NetU5_IC2_B6
+       B7 NetU5_IC2_B7
+       B8 NetU5_IC2_B8
+       B9 GND
+      B10 1V5
+      B11 NetU5_IC2_B11
+      B12 NetU5_IC2_B12
+      B13 NetU5_IC2_B13
+      B14 NetU5_IC2_B14
+      B15 NetU5_IC2_B15
+      B16 NetU5_IC2_B16
+      B17 NetU5_IC2_B17
+      B18 NetU5_IC2_B18
+      B19 1V5
+      B20 U5_MC_TFC5_N
+       C1 GND
+       C2 GND
+       C3 U5_GBTX_VDD_SERDES
+       C4 U5_SLVS_ONE_P
+       C5 NetU5_IC2_C5
+       C6 NetU5_IC2_C6
+       C7 NetU5_IC2_C7
+       C8 NetU5_IC2_C8
+       C9 NetU5_IC2_C9
+      C10 NetU5_IC2_C10
+      C11 U5_SLVS_ONE_N
+      C12 NetU5_IC2_C12
+      C13 GND
+      C14 1V5
+      C15 NetU5_IC2_C15
+      C16 NetU5_IC2_C16
+      C17 NetU5_IC2_C17
+      C18 NetU5_IC2_C18
+      C19 NetU5_IC2_C19
+      C20 NetU5_IC2_C20
+       D1 U5_GTX_1_N
+       D2 GND
+       D3 U5_GBTX_VDD_SERDES
+       D4 U5_SLVS_ONE_N
+       D5 U5_SLVS_ONE_N
+       D6 U5_SLVS_ONE_P
+       D7 U5_SLVS_ONE_N
+       D8 U5_SLVS_ONE_P
+       D9 DC4_ELKS.GBTX_ELK_CH6_1_P
+      D10 DC4_ELKS.GBTX_ELK_CH6_1_N
+      D11 U5_SLVS_ONE_P
+      D12 NetU5_IC2_D12
+      D13 U5_SLVS_ONE_P
+      D14 U5_SLVS_ONE_N
+      D15 U5_SLVS_ONE_P
+      D16 U5_SLVS_ONE_N
+      D17 NetU5_IC2_D17
+      D18 NetU5_IC2_D18
+      D19 NetU5_IC2_D19
+      D20 NetU5_IC2_D20
+       E1 U5_GTX_1_P
+       E2 GND
+       E3 U5_GBTX_VDD_SERDES
+       E4 U5_SLVS_ONE_N
+       E5 NetU5_IC2_E5
+       E6 NetU5_IC2_E6
+       E7 NetU5_IC2_E7
+       E8 NetU5_IC2_E8
+       E9 U5_SLVS_ONE_P
+      E10 U5_SLVS_ONE_N
+      E11 DC4_ELKS.GBTX_ELK_CH9_1_N
+      E12 DC4_ELKS.GBTX_ELK_CH9_1_P
+      E13 NetU5_IC2_E13
+      E14 NetU5_IC2_E14
+      E15 U5_SLVS_ONE_N
+      E16 U5_SLVS_ONE_P
+      E17 U5_SLVS_ONE_N
+      E18 NetU5_IC2_E18
+      E19 NetU5_IC2_E19
+      E20 NetU5_IC2_E20
+       F1 GND
+       F2 U5_GBTX_VDD_SERDES
+       F3 U5_GBTX_VDD_SERDES
+       F4 U5_SLVS_ONE_P
+       F5 NetU5_IC2_F5
+       F6 NetU5_IC2_F6
+       F7 DC4_ELKS.GBTX_ELK_CH7_1_P
+       F8 DC4_ELKS.GBTX_ELK_CH7_1_N
+       F9 1V5
+      F10 GND
+      F11 GND
+      F12 GND
+      F13 NetU5_IC2_F13
+      F14 NetU5_IC2_F14
+      F15 U5_SLVS_ONE_P
+      F16 U5_SLVS_ONE_P
+      F17 GND
+      F18 DC4_ELKS.GBTX_ELK_CH8_1_P
+      F19 1V5
+      F20 NetU5_IC2_F20
+       G1 U5_XX_OUT_RCLK0_P
+       G2 U5_GBTX_VDDP_PS
+       G3 NetU5_IC2_G3
+       G4 NetU5_IC2_G4
+       G5 DC_I2C_SCL_1
+       G6 U5_SLVS_ONE_N
+       G7 U5_SLVS_ONE_P
+       G8 NetU5_IC2_G8
+       G9 NetU5_IC2_G9
+      G10 GND
+      G11 GND
+      G12 GND
+      G13 GND
+      G14 1V5
+      G15 1V5
+      G16 U5_SLVS_ONE_N
+      G17 NetU5_IC2_G17
+      G18 DC4_ELKS.GBTX_ELK_CH8_1_N
+      G19 NetU5_IC2_G19
+      G20 NetU5_IC2_G20
+       H1 U5_XX_OUT_RCLK0_N
+       H2 GND
+       H3 U5_GBTX_VDDP_PS
+       H4 U5_XX_OUT_RCLK1_P
+       H5 DC_I2C_SDA_1
+       H6 NetU5_IC2_H6
+       H7 1V5
+       H8 U5_LDSDA_1
+       H9 U1_DC_CFG.STATEOVERRIDE_1
+      H10 GND
+      H11 GND
+      H12 GND
+      H13 1V5
+      H14 1V5
+      H15 U4_DC_TST.DF_AUTORESET_TESTINJ_1
+      H16 U5_SLVS_ONE_N
+      H17 NetU5_IC2_H17
+      H18 U5_MC_TFC4_N
+      H19 NetU5_IC2_H19
+      H20 NetU5_IC2_H20
+       J1 GND
+       J2 NetU5_IC2_J2
+       J3 U5_GBTX_VDD_SERDES
+       J4 U5_XX_OUT_RCLK1_N
+       J5 GND
+       J6 U5_GBTX_VDDP_PS
+       J7 NetU5_IC2_J7
+       J8 U1_DC_CFG.RXLOCK_0MODE_1
+       J9 U1_DC_CFG.REFCLKSEL_1
+      J10 GND
+      J11 GND
+      J12 1V5
+      J13 1V5
+      J14 1V5
+      J15 GND
+      J16 U5_SLVS_ONE_P
+      J17 NetU5_IC2_J17
+      J18 U5_MC_TFC4_P
+      J19 NetU5_IC2_J19
+      J20 GND
+       K1 MC_OUT_RCLK4_1_N
+       K2 GND
+       K3 U5_GBTX_VDD_SERDES
+       K4 U5_XX_OUT_RCLK2_P
+       K5 U5_XX_OUT_RCLK2_N
+       K6 U5_GBTX_VDDP_PS
+       K7 U1_DC_CFG.CONFIGSELECT_1
+       K8 U5_LDSCL_1
+       K9 U5_GBTX_VDDP_PS
+      K10 NetU5_IC2_K10
+      K11 GND
+      K12 GND
+      K13 1V5
+      K14 1V5
+      K15 DC4_ELKS.GBTX_ELK_CH11_1_N
+      K16 U5_SLVS_ONE_N
+      K17 NetU5_IC2_K17
+      K18 NetU5_IC2_K18
+      K19 NetU5_IC2_K19
+      K20 1V5
+       L1 MC_OUT_RCLK4_1_P
+       L2 GND
+       L3 U5_GBTX_VDD_SERDES
+       L4 U5_XX_OUT_RCLK3_P
+       L5 U5_XX_OUT_RCLK3_N
+       L6 GND
+       L7 U1_DC_CFG.TXMODE_1SEL_1
+       L8 1V5
+       L9 GND
+      L10 U1_DC_CFG.TXMODE_2SEL_1
+      L11 GND
+      L12 GND
+      L13 NetU5_IC2_L13
+      L14 1V5
+      L15 DC4_ELKS.GBTX_ELK_CH11_1_P
+      L16 U5_SLVS_ONE_P
+      L17 NetU5_IC2_L17
+      L18 NetU5_IC2_L18
+      L19 NetU5_IC2_L19
+      L20 NetU5_IC2_L20
+       M1 GND
+       M2 NetU5_IC2_M2
+       M3 U5_GBTX_VDD_SERDES
+       M4 U5_XX_OUT_RCLK4_P
+       M5 U5_XX_OUT_RCLK4_N
+       M6 U5_XX_OUT_RCLK6_P
+       M7 U5_XX_OUT_RCLK6_N
+       M8 NetU5_IC2_M8
+       M9 U1_DC_CFG.RXLOCK_1MODE_1
+      M10 DC_RESETB_1
+      M11 GND
+      M12 GND
+      M13 1V5
+      M14 1V5
+      M15 U5_SLVS_ONE_N
+      M16 NetU5_IC2_M16
+      M17 U5_SLVS_ONE_P
+      M18 U5_SLVS_ONE_P
+      M19 NetU5_IC2_M19
+      M20 NetU5_IC2_M20
+       N1 U5_XX_OUT_RCLK5_P
+       N2 U5_XX_OUT_RCLK5_N
+       N3 GND
+       N4 U5_GBTX_VDDP_PS
+       N5 U1_DC_CFG.TXMODE_0SEL_1
+       N6 GND
+       N7 1V5
+       N8 NetU5_IC2_N8
+       N9 NetU5_IC2_N9
+      N10 NetU5_IC2_N10
+      N11 U4_DC_TST.TXDATAVALID_1
+      N12 1V5
+      N13 1V5
+      N14 1V5
+      N15 U5_SLVS_ONE_P
+      N16 NetU5_IC2_N16
+      N17 U5_SLVS_ONE_N
+      N18 U5_SLVS_ONE_N
+      N19 NetU5_IC2_N19
+      N20 NetU5_IC2_N20
+       P1 U5_XX_OUT_RCLK7_P
+       P2 U5_XX_OUT_RCLK7_N
+       P3 U5_SCA_PRI_DAT_OUT_N
+       P4 U5_SCA_PRI_DAT_OUT_P
+       P5 GND
+       P6 U5_SCA_PRI_CLK_P
+       P7 NetU5_IC2_P7
+       P8 NetU5_IC2_P8
+       P9 NetU5_IC2_P9
+      P10 U1_DC_CFG.TXMODE_3SEL_1
+      P11 U5_EFUSEPROGPLS_1
+      P12 U5_SCA_PRI_DAT_IN_P
+      P13 U5_SCA_PRI_DAT_IN_N
+      P14 DC_EFUSE_PWR
+      P15 NetU5_IC2_P15
+      P16 NetU5_IC2_P16
+      P17 DC4_ELKS.GBTX_ELK_CH10_1_P
+      P18 GND
+      P19 NetU5_IC2_P19
+      P20 NetU5_IC2_P20
+       R1 GND
+       R2 U5_GBTX_VDD_SERDES
+       R3 U5_GBTX_VDD_SERDES
+       R4 U5_SLVS_ONE_N
+       R5 U5_SLVS_ONE_P
+       R6 U5_SCA_PRI_CLK_N
+       R7 NetU5_IC2_R7
+       R8 NetU5_IC2_R8
+       R9 U5_SLVS_ONE_P
+      R10 U5_SLVS_ONE_N
+      R11 U5_SLVS_ONE_P
+      R12 U5_SLVS_ONE_N
+      R13 1V5
+      R14 GND
+      R15 U5_SLVS_ONE_P
+      R16 U5_SLVS_ONE_N
+      R17 DC4_ELKS.GBTX_ELK_CH10_1_N
+      R18 1V5
+      R19 U5_SCA_SEC_DAT_IN_N
+      R20 NetU5_IC2_R20
+       T1 SLVS_HIGH_1_N
+       T2 GND
+       T3 U5_GBTX_VDD_SERDES
+       T4 DC4_ELKS.GBTX_ELK_CH0_1_N
+       T5 U5_SLVS_ONE_P
+       T6 U5_SLVS_ONE_N
+       T7 NetU5_IC2_T7
+       T8 NetU5_IC2_T8
+       T9 NetU5_IC2_T9
+      T10 NetU5_IC2_T10
+      T11 DC4_ELKS.GBTX_ELK_CH5_1_P
+      T12 DC4_ELKS.GBTX_ELK_CH5_1_N
+      T13 U5_DC_TST.TEST_DAT_OUT_1_N
+      T14 U5_DC_TST.TEST_DAT_OUT_1_P
+      T15 U5_SLVS_ONE_N
+      T16 U5_SLVS_ONE_P
+      T17 U5_SLVS_ONE_N
+      T18 U5_SLVS_ONE_P
+      T19 U5_SCA_SEC_DAT_IN_P
+      T20 NetU5_IC2_T20
+       U1 SLVS_HIGH_1_P
+       U2 GND
+       U3 U5_GBTX_VDD_SERDES
+       U4 DC4_ELKS.GBTX_ELK_CH0_1_P
+       U5 DC4_ELKS.GBTX_ELK_CH4_1_N
+       U6 DC4_ELKS.GBTX_ELK_CH4_1_P
+       U7 U5_SLVS_ONE_P
+       U8 U5_SLVS_ONE_N
+       U9 NetU5_IC2_U9
+      U10 NetU5_IC2_U10
+      U11 U5_SLVS_ONE_N
+      U12 U5_SLVS_ONE_P
+      U13 U5_SLVS_ONE_P
+      U14 U5_SLVS_ONE_N
+      U15 U5_DC_TST.TEST_DAT_IN_1_P
+      U16 U5_DC_TST.TEST_DAT_IN_1_N
+      U17 U5_SLVS_ONE_N
+      U18 U5_SCA_SEC_DAT_OUT_N
+      U19 NetU5_IC2_U19
+      U20 NetU5_IC2_U20
+       V1 GND
+       V2 U5_GBTX_VDD_SERDES
+       V3 NetU5_IC2_V3
+       V4 NetU5_IC2_V4
+       V5 NetU5_IC2_V5
+       V6 NetU5_IC2_V6
+       V7 DC4_ELKS.GBTX_ELK_CH1_1_P
+       V8 NetU5_IC2_V8
+       V9 NetU5_IC2_V9
+      V10 NetU5_IC2_V10
+      V11 U5_DC_TST.TEST_DAT_CLK_1_N
+      V12 U5_DC_TST.TEST_DAT_CLK_1_P
+      V13 NetU5_IC2_V13
+      V14 NetU5_IC2_V14
+      V15 NetU5_IC2_V15
+      V16 NetU5_IC2_V16
+      V17 U5_SLVS_ONE_P
+      V18 U5_SCA_SEC_DAT_OUT_P
+      V19 NetU5_IC2_V19
+      V20 U5_SCA_SEC_CLK_P
+       W1 NetU5_IC2_W1
+       W2 NetU5_IC2_W2
+       W3 NetU5_IC2_W3
+       W4 GND
+       W5 1V5
+       W6 NetU5_IC2_W6
+       W7 DC4_ELKS.GBTX_ELK_CH1_1_N
+       W8 NetU5_IC2_W8
+       W9 GND
+      W10 1V5
+      W11 NetU5_IC2_W11
+      W12 NetU5_IC2_W12
+      W13 GND
+      W14 1V5
+      W15 NetU5_IC2_W15
+      W16 NetU5_IC2_W16
+      W17 GND
+      W18 1V5
+      W19 NetU5_IC2_W19
+      W20 U5_SCA_SEC_CLK_N
+       Y1 U5_MC_TFC0_N
+       Y2 U5_MC_TFC0_P
+       Y3 NetU5_IC2_Y3
+       Y4 NetU5_IC2_Y4
+       Y5 NetU5_IC2_Y5
+       Y6 NetU5_IC2_Y6
+       Y7 U5_MC_TFC1_N
+       Y8 U5_MC_TFC1_P
+       Y9 NetU5_IC2_Y9
+      Y10 NetU5_IC2_Y10
+      Y11 NetU5_IC2_Y11
+      Y12 NetU5_IC2_Y12
+      Y13 NetU5_IC2_Y13
+      Y14 NetU5_IC2_Y14
+      Y15 NetU5_IC2_Y15
+      Y16 NetU5_IC2_Y16
+      Y17 NetU5_IC2_Y17
+      Y18 NetU5_IC2_Y18
+      Y19 NetU5_IC2_Y19
+      Y20 NetU5_IC2_Y20
+        }
+      }
+      {I LQW31HN23NJ03L_Murata_coil.PRT U5_L2
+        {CN
+        1 1V5
+        2 U5_GBTX_VDD_SERDES
+        }
+      }
+      {I LQW31HN23NJ03L_Murata_coil.PRT U5_L3
+        {CN
+        1 1V5
+        2 U5_GBTX_VDDP_PS
+        }
+      }
+      {I RESC1005X40N.PRT U5_R29
+        {CN
+        1 U5_SLVS_ONE_P
+        2 1V5
+        }
+      }
+      {I RESC1005X40N.PRT U5_R30
+        {CN
+        1 U5_SLVS_ONE_N
+        2 U5_SLVS_ONE_P
+        }
+      }
+      {I RESC1005X40N.PRT U5_R31
+        {CN
+        1 GND
+        2 U5_SLVS_ONE_N
+        }
+      }
+      {I RESC1005X40N.PRT U5_R43
+        {CN
+        1 GND
+        2 U5_EFUSEPROGPLS_1
+        }
+      }
+      {I RESC1005X40N.PRT U5_R48
+        {CN
+        1 NetU5_IC2_K10
+        2 U5_DC_TST.TESTOUTPUT_1
+        }
+      }
+      {I RESC1005X40N.PRT U5_R50
+        {CN
+        1 U5_LDSCL_1
+        2 1V5
+        }
+      }
+      {I RESC1005X40N.PRT U5_R51
+        {CN
+        1 U5_LDSDA_1
+        2 1V5
+        }
+      }
+      {I RESC1005X40N.PRT U5_R52
+        {CN
+        1 NetU5_IC2_L13
+        2 U5_DC_TST.TX_RDY_1
+        }
+      }
+      {I RESC1005X40N.PRT U5_R53
+        {CN
+        1 U5_DC_TST.RX_RDY_1
+        2 NetU5_IC2_N10
+        }
+      }
+      {I RESC1005X40N.PRT U5_R54
+        {CN
+        1 U5_DC_TST.RX_DATVAL_1
+        2 NetU5_IC2_N9
+        }
+      }
+      {I RESC1005X40N.PRT U5_R59
+        {CN
+        1 U5_SLVS_ONE_P
+        2 NetU5_IC2_A3
+        }
+      }
+      {I RESC1005X40N.PRT U5_R60
+        {CN
+        1 U5_SLVS_ONE_N
+        2 NetU5_IC2_A4
+        }
+      }
+      {I RESC1005X40N.PRT U5_R61
+        {CN
+        1 U5_SLVS_ONE_P
+        2 NetU5_IC2_A6
+        }
+      }
+      {I RESC1005X40N.PRT U5_R62
+        {CN
+        1 U5_SLVS_ONE_N
+        2 NetU5_IC2_A5
+        }
+      }
+      {I RESC1005X40N.PRT U5_R63
+        {CN
+        1 U5_SLVS_ONE_P
+        2 NetU5_IC2_A12
+        }
+      }
+      {I RESC1005X40N.PRT U5_R64
+        {CN
+        1 U5_SLVS_ONE_N
+        2 NetU5_IC2_A11
+        }
+      }
+      {I RESC1005X40N.PRT U5_R65
+        {CN
+        1 U5_SLVS_ONE_P
+        2 NetU5_IC2_A14
+        }
+      }
+      {I RESC1005X40N.PRT U5_R66
+        {CN
+        1 U5_SLVS_ONE_N
+        2 NetU5_IC2_A13
+        }
+      }
+      {I RESC1005X40N.PRT U5_R67
+        {CN
+        1 U5_SLVS_ONE_P
+        2 NetU5_IC2_V19
+        }
+      }
+      {I RESC1005X40N.PRT U5_R68
+        {CN
+        1 U5_SLVS_ONE_N
+        2 NetU5_IC2_W19
+        }
+      }
+      {I RESC1005X40N.PRT U5_R69
+        {CN
+        1 U5_SLVS_ONE_P
+        2 NetU5_IC2_Y9
+        }
+      }
+      {I RESC1005X40N.PRT U5_R70
+        {CN
+        1 U5_SLVS_ONE_N
+        2 NetU5_IC2_Y10
+        }
+      }
+      {I RESC1005X40N.PRT U5_R71
+        {CN
+        1 U5_SLVS_ONE_P
+        2 NetU5_IC2_W3
+        }
+      }
+      {I RESC1005X40N.PRT U5_R72
+        {CN
+        1 U5_SLVS_ONE_N
+        2 NetU5_IC2_V3
+        }
+      }
+      {I RESC1005X40N.PRT U5_R73
+        {CN
+        1 U5_SLVS_ONE_P
+        2 NetU5_IC2_Y3
+        }
+      }
+      {I RESC1005X40N.PRT U5_R74
+        {CN
+        1 U5_SLVS_ONE_N
+        2 NetU5_IC2_Y4
+        }
+      }
+      {I RESC1005X40N.PRT U5_R75
+        {CN
+        1 1V5
+        2 U4_DC_TST.DF_AUTORESET_TESTINJ_1
+        }
+      }
+      {I RESC5226X80N.PRT U5_R87
+        {CN
+        1 1V5
+        2 U5_GBTX_VDD_SERDES
+        }
+      }
+      {I RESC5226X80N.PRT U5_R88
+        {CN
+        1 1V5
+        2 U5_GBTX_VDDP_PS
+        }
+      }
+      {I TPS127.PRT U5_TP1
+        {CN
+        1 U5_SLVS_ONE_P
+        }
+      }
+      {I TPS127.PRT U5_TP2
+        {CN
+        1 U5_SLVS_ONE_N
+        }
+      }
+      {I TPS127.PRT U5_TP5
+        {CN
+        1 GND
+        }
+      }
+      {I CAPC2012X135N.PRT U6_C21
+        {CN
+        1 1V5
+        2 GND
+        }
+      }
+      {I CAPC2012X135N.PRT U6_C22
+        {CN
+        1 1V5
+        2 GND
+        }
+      }
+      {I CAPC1005X55N.PRT U6_C23
+        {CN
+        1 GND
+        2 1V5
+        }
+      }
+      {I CAPC1005X55N.PRT U6_C24
+        {CN
+        1 GND
+        2 1V5
+        }
+      }
+      {I CAPC1005X55N.PRT U6_C25
+        {CN
+        1 GND
+        2 1V5
+        }
+      }
+      {I CAPC1005X55N.PRT U6_C26
+        {CN
+        1 GND
+        2 1V5
+        }
+      }
+      {I CAPC1005X55N.PRT U6_C27
+        {CN
+        1 GND
+        2 1V5
+        }
+      }
+      {I CAPC1005X55N.PRT U6_C28
+        {CN
+        1 GND
+        2 1V5
+        }
+      }
+      {I CAPC1005X55N.PRT U6_C29
+        {CN
+        1 GND
+        2 1V5
+        }
+      }
+      {I CAPC1005X55N.PRT U6_C30
+        {CN
+        1 GND
+        2 1V5
+        }
+      }
+      {I CAPC0603X33N.PRT U6_C31
+        {CN
+        1 GND
+        2 1V5
+        }
+      }
+      {I CAPC0603X33N.PRT U6_C32
+        {CN
+        1 GND
+        2 1V5
+        }
+      }
+      {I CAPC0603X33N.PRT U6_C33
+        {CN
+        1 GND
+        2 1V5
+        }
+      }
+      {I CAPC0603X33N.PRT U6_C34
+        {CN
+        1 GND
+        2 1V5
+        }
+      }
+      {I CAPC0603X33N.PRT U6_C35
+        {CN
+        1 GND
+        2 1V5
+        }
+      }
+      {I CAPC0603X33N.PRT U6_C36
+        {CN
+        1 GND
+        2 1V5
+        }
+      }
+      {I CAPC2012X135N.PRT U6_C37
+        {CN
+        1 U6_GBTX_VDD_SERDES
+        2 GND
+        }
+      }
+      {I CAPC2012X135N.PRT U6_C38
+        {CN
+        1 U6_GBTX_VDD_SERDES
+        2 GND
+        }
+      }
+      {I CAPC1005X55N.PRT U6_C39
+        {CN
+        1 GND
+        2 U6_GBTX_VDD_SERDES
+        }
+      }
+      {I CAPC1005X55N.PRT U6_C40
+        {CN
+        1 GND
+        2 U6_GBTX_VDD_SERDES
+        }
+      }
+      {I CAPC1005X55N.PRT U6_C41
+        {CN
+        1 GND
+        2 U6_GBTX_VDD_SERDES
+        }
+      }
+      {I CAPC1005X55N.PRT U6_C42
+        {CN
+        1 GND
+        2 U6_GBTX_VDD_SERDES
+        }
+      }
+      {I CAPC1005X55N.PRT U6_C43
+        {CN
+        1 GND
+        2 U6_GBTX_VDD_SERDES
+        }
+      }
+      {I CAPC1005X55N.PRT U6_C44
+        {CN
+        1 GND
+        2 U6_GBTX_VDD_SERDES
+        }
+      }
+      {I CAPC1005X55N.PRT U6_C45
+        {CN
+        1 GND
+        2 U6_GBTX_VDD_SERDES
+        }
+      }
+      {I CAPC1005X55N.PRT U6_C46
+        {CN
+        1 GND
+        2 U6_GBTX_VDD_SERDES
+        }
+      }
+      {I CAPC0603X33N.PRT U6_C47
+        {CN
+        1 GND
+        2 U6_GBTX_VDD_SERDES
+        }
+      }
+      {I CAPC0603X33N.PRT U6_C48
+        {CN
+        1 GND
+        2 U6_GBTX_VDD_SERDES
+        }
+      }
+      {I CAPC0603X33N.PRT U6_C49
+        {CN
+        1 GND
+        2 U6_GBTX_VDD_SERDES
+        }
+      }
+      {I CAPC0603X33N.PRT U6_C50
+        {CN
+        1 GND
+        2 U6_GBTX_VDD_SERDES
+        }
+      }
+      {I CAPC0603X33N.PRT U6_C51
+        {CN
+        1 GND
+        2 U6_GBTX_VDD_SERDES
+        }
+      }
+      {I CAPC0603X33N.PRT U6_C52
+        {CN
+        1 GND
+        2 U6_GBTX_VDD_SERDES
+        }
+      }
+      {I CAPC2012X135N.PRT U6_C53
+        {CN
+        1 U6_GBTX_VDDP_PS
+        2 GND
+        }
+      }
+      {I CAPC2012X135N.PRT U6_C54
+        {CN
+        1 U6_GBTX_VDDP_PS
+        2 GND
+        }
+      }
+      {I CAPC1005X55N.PRT U6_C55
+        {CN
+        1 GND
+        2 U6_GBTX_VDDP_PS
+        }
+      }
+      {I CAPC1005X55N.PRT U6_C56
+        {CN
+        1 GND
+        2 U6_GBTX_VDDP_PS
+        }
+      }
+      {I CAPC1005X55N.PRT U6_C57
+        {CN
+        1 GND
+        2 U6_GBTX_VDDP_PS
+        }
+      }
+      {I CAPC0603X33N.PRT U6_C58
+        {CN
+        1 GND
+        2 U6_GBTX_VDDP_PS
+        }
+      }
+      {I CAPC0603X33N.PRT U6_C59
+        {CN
+        1 GND
+        2 U6_GBTX_VDDP_PS
+        }
+      }
+      {I CAPC0603X33N.PRT U6_C60
+        {CN
+        1 GND
+        2 U6_GBTX_VDDP_PS
+        }
+      }
+      {I CAPC0603X33N.PRT U6_C93
+        {CN
+        1 GND
+        2 1V5
+        }
+      }
+      {I CAPC1005X55N.PRT U6_C94
+        {CN
+        1 GND
+        2 1V5
+        }
+      }
+      {I CAPC2012X135N.PRT U6_C129
+        {CN
+        1 DC_EFUSE_PWR
+        2 GND
+        }
+      }
+      {I CAPC1005X55N.PRT U6_C130
+        {CN
+        1 GND
+        2 DC_EFUSE_PWR
+        }
+      }
+      {I CERN_GBTX ASIC_V0.1.PRT U6_IC2
+        {CN
+       A1 NetU6_IC2_A1
+       A2 NetU6_IC2_A2
+       A3 NetU6_IC2_A3
+       A4 NetU6_IC2_A4
+       A5 NetU6_IC2_A5
+       A6 NetU6_IC2_A6
+       A7 DC5_ELKS.GBTX_ELK_CH3_1_P
+       A8 DC5_ELKS.GBTX_ELK_CH3_1_N
+       A9 U6_MC_TFC3_P
+      A10 U6_MC_TFC3_N
+      A11 NetU6_IC2_A11
+      A12 NetU6_IC2_A12
+      A13 NetU6_IC2_A13
+      A14 NetU6_IC2_A14
+      A15 DC5_ELKS.GBTX_ELK_CH2_1_P
+      A16 DC5_ELKS.GBTX_ELK_CH2_1_N
+      A17 U6_MC_TFC2_P
+      A18 U6_MC_TFC2_N
+      A19 GND
+      A20 U6_MC_TFC5_P
+       B1 U6_SLVS_ONE_P
+       B2 U6_SLVS_ONE_N
+       B3 U6_SLVS_ONE_N
+       B4 U6_SLVS_ONE_P
+       B5 NetU6_IC2_B5
+       B6 NetU6_IC2_B6
+       B7 NetU6_IC2_B7
+       B8 NetU6_IC2_B8
+       B9 GND
+      B10 1V5
+      B11 NetU6_IC2_B11
+      B12 NetU6_IC2_B12
+      B13 NetU6_IC2_B13
+      B14 NetU6_IC2_B14
+      B15 NetU6_IC2_B15
+      B16 NetU6_IC2_B16
+      B17 NetU6_IC2_B17
+      B18 NetU6_IC2_B18
+      B19 1V5
+      B20 U6_MC_TFC5_N
+       C1 GND
+       C2 GND
+       C3 U6_GBTX_VDD_SERDES
+       C4 U6_SLVS_ONE_P
+       C5 NetU6_IC2_C5
+       C6 NetU6_IC2_C6
+       C7 NetU6_IC2_C7
+       C8 NetU6_IC2_C8
+       C9 NetU6_IC2_C9
+      C10 NetU6_IC2_C10
+      C11 U6_SLVS_ONE_N
+      C12 NetU6_IC2_C12
+      C13 GND
+      C14 1V5
+      C15 NetU6_IC2_C15
+      C16 NetU6_IC2_C16
+      C17 NetU6_IC2_C17
+      C18 NetU6_IC2_C18
+      C19 NetU6_IC2_C19
+      C20 NetU6_IC2_C20
+       D1 U6_GTX_1_N
+       D2 GND
+       D3 U6_GBTX_VDD_SERDES
+       D4 U6_SLVS_ONE_N
+       D5 U6_SLVS_ONE_N
+       D6 U6_SLVS_ONE_P
+       D7 U6_SLVS_ONE_N
+       D8 U6_SLVS_ONE_P
+       D9 DC5_ELKS.GBTX_ELK_CH6_1_P
+      D10 DC5_ELKS.GBTX_ELK_CH6_1_N
+      D11 U6_SLVS_ONE_P
+      D12 NetU6_IC2_D12
+      D13 U6_SLVS_ONE_P
+      D14 U6_SLVS_ONE_N
+      D15 U6_SLVS_ONE_P
+      D16 U6_SLVS_ONE_N
+      D17 NetU6_IC2_D17
+      D18 NetU6_IC2_D18
+      D19 NetU6_IC2_D19
+      D20 NetU6_IC2_D20
+       E1 U6_GTX_1_P
+       E2 GND
+       E3 U6_GBTX_VDD_SERDES
+       E4 U6_SLVS_ONE_N
+       E5 NetU6_IC2_E5
+       E6 NetU6_IC2_E6
+       E7 NetU6_IC2_E7
+       E8 NetU6_IC2_E8
+       E9 U6_SLVS_ONE_P
+      E10 U6_SLVS_ONE_N
+      E11 DC5_ELKS.GBTX_ELK_CH9_1_N
+      E12 DC5_ELKS.GBTX_ELK_CH9_1_P
+      E13 NetU6_IC2_E13
+      E14 NetU6_IC2_E14
+      E15 U6_SLVS_ONE_N
+      E16 U6_SLVS_ONE_P
+      E17 U6_SLVS_ONE_N
+      E18 NetU6_IC2_E18
+      E19 NetU6_IC2_E19
+      E20 NetU6_IC2_E20
+       F1 GND
+       F2 U6_GBTX_VDD_SERDES
+       F3 U6_GBTX_VDD_SERDES
+       F4 U6_SLVS_ONE_P
+       F5 NetU6_IC2_F5
+       F6 NetU6_IC2_F6
+       F7 DC5_ELKS.GBTX_ELK_CH7_1_P
+       F8 DC5_ELKS.GBTX_ELK_CH7_1_N
+       F9 1V5
+      F10 GND
+      F11 GND
+      F12 GND
+      F13 NetU6_IC2_F13
+      F14 NetU6_IC2_F14
+      F15 U6_SLVS_ONE_P
+      F16 U6_SLVS_ONE_P
+      F17 GND
+      F18 DC5_ELKS.GBTX_ELK_CH8_1_P
+      F19 1V5
+      F20 NetU6_IC2_F20
+       G1 U6_XX_OUT_RCLK0_P
+       G2 U6_GBTX_VDDP_PS
+       G3 NetU6_IC2_G3
+       G4 NetU6_IC2_G4
+       G5 DC_I2C_SCL_1
+       G6 U6_SLVS_ONE_N
+       G7 U6_SLVS_ONE_P
+       G8 NetU6_IC2_G8
+       G9 NetU6_IC2_G9
+      G10 GND
+      G11 GND
+      G12 GND
+      G13 GND
+      G14 1V5
+      G15 1V5
+      G16 U6_SLVS_ONE_N
+      G17 NetU6_IC2_G17
+      G18 DC5_ELKS.GBTX_ELK_CH8_1_N
+      G19 NetU6_IC2_G19
+      G20 NetU6_IC2_G20
+       H1 U6_XX_OUT_RCLK0_N
+       H2 GND
+       H3 U6_GBTX_VDDP_PS
+       H4 U6_XX_OUT_RCLK1_P
+       H5 DC_I2C_SDA_1
+       H6 NetU6_IC2_H6
+       H7 1V5
+       H8 U6_LDSDA_1
+       H9 U1_DC_CFG.STATEOVERRIDE_1
+      H10 GND
+      H11 GND
+      H12 GND
+      H13 1V5
+      H14 1V5
+      H15 U1_DC_TST.DF_AUTORESET_TESTINJ_1
+      H16 U6_SLVS_ONE_N
+      H17 NetU6_IC2_H17
+      H18 U6_MC_TFC4_N
+      H19 NetU6_IC2_H19
+      H20 NetU6_IC2_H20
+       J1 GND
+       J2 NetU6_IC2_J2
+       J3 U6_GBTX_VDD_SERDES
+       J4 U6_XX_OUT_RCLK1_N
+       J5 GND
+       J6 U6_GBTX_VDDP_PS
+       J7 NetU6_IC2_J7
+       J8 U1_DC_CFG.RXLOCK_0MODE_1
+       J9 U1_DC_CFG.REFCLKSEL_1
+      J10 GND
+      J11 GND
+      J12 1V5
+      J13 1V5
+      J14 1V5
+      J15 GND
+      J16 U6_SLVS_ONE_P
+      J17 NetU6_IC2_J17
+      J18 U6_MC_TFC4_P
+      J19 NetU6_IC2_J19
+      J20 GND
+       K1 MC_OUT_RCLK5_1_N
+       K2 GND
+       K3 U6_GBTX_VDD_SERDES
+       K4 U6_XX_OUT_RCLK2_P
+       K5 U6_XX_OUT_RCLK2_N
+       K6 U6_GBTX_VDDP_PS
+       K7 U1_DC_CFG.CONFIGSELECT_1
+       K8 U6_LDSCL_1
+       K9 U6_GBTX_VDDP_PS
+      K10 NetU6_IC2_K10
+      K11 GND
+      K12 GND
+      K13 1V5
+      K14 1V5
+      K15 DC5_ELKS.GBTX_ELK_CH11_1_N
+      K16 U6_SLVS_ONE_N
+      K17 NetU6_IC2_K17
+      K18 NetU6_IC2_K18
+      K19 NetU6_IC2_K19
+      K20 1V5
+       L1 MC_OUT_RCLK5_1_P
+       L2 GND
+       L3 U6_GBTX_VDD_SERDES
+       L4 U6_XX_OUT_RCLK3_P
+       L5 U6_XX_OUT_RCLK3_N
+       L6 GND
+       L7 U1_DC_CFG.TXMODE_1SEL_1
+       L8 GND
+       L9 GND
+      L10 U1_DC_CFG.TXMODE_2SEL_1
+      L11 GND
+      L12 GND
+      L13 NetU6_IC2_L13
+      L14 1V5
+      L15 DC5_ELKS.GBTX_ELK_CH11_1_P
+      L16 U6_SLVS_ONE_P
+      L17 NetU6_IC2_L17
+      L18 NetU6_IC2_L18
+      L19 NetU6_IC2_L19
+      L20 NetU6_IC2_L20
+       M1 GND
+       M2 NetU6_IC2_M2
+       M3 U6_GBTX_VDD_SERDES
+       M4 U6_XX_OUT_RCLK4_P
+       M5 U6_XX_OUT_RCLK4_N
+       M6 U6_XX_OUT_RCLK6_P
+       M7 U6_XX_OUT_RCLK6_N
+       M8 NetU6_IC2_M8
+       M9 U1_DC_CFG.RXLOCK_1MODE_1
+      M10 DC_RESETB_1
+      M11 GND
+      M12 GND
+      M13 1V5
+      M14 1V5
+      M15 U6_SLVS_ONE_N
+      M16 NetU6_IC2_M16
+      M17 U6_SLVS_ONE_P
+      M18 U6_SLVS_ONE_P
+      M19 NetU6_IC2_M19
+      M20 NetU6_IC2_M20
+       N1 U6_XX_OUT_RCLK5_P
+       N2 U6_XX_OUT_RCLK5_N
+       N3 GND
+       N4 U6_GBTX_VDDP_PS
+       N5 U1_DC_CFG.TXMODE_0SEL_1
+       N6 1V5
+       N7 1V5
+       N8 NetU6_IC2_N8
+       N9 NetU6_IC2_N9
+      N10 NetU6_IC2_N10
+      N11 U1_DC_TST.TXDATAVALID_1
+      N12 1V5
+      N13 1V5
+      N14 1V5
+      N15 U6_SLVS_ONE_P
+      N16 NetU6_IC2_N16
+      N17 U6_SLVS_ONE_N
+      N18 U6_SLVS_ONE_N
+      N19 NetU6_IC2_N19
+      N20 NetU6_IC2_N20
+       P1 U6_XX_OUT_RCLK7_P
+       P2 U6_XX_OUT_RCLK7_N
+       P3 U6_SCA_PRI_DAT_OUT_N
+       P4 U6_SCA_PRI_DAT_OUT_P
+       P5 GND
+       P6 U6_SCA_PRI_CLK_P
+       P7 NetU6_IC2_P7
+       P8 NetU6_IC2_P8
+       P9 NetU6_IC2_P9
+      P10 U1_DC_CFG.TXMODE_3SEL_1
+      P11 U6_EFUSEPROGPLS_1
+      P12 U6_SCA_PRI_DAT_IN_P
+      P13 U6_SCA_PRI_DAT_IN_N
+      P14 DC_EFUSE_PWR
+      P15 NetU6_IC2_P15
+      P16 NetU6_IC2_P16
+      P17 DC5_ELKS.GBTX_ELK_CH10_1_P
+      P18 GND
+      P19 NetU6_IC2_P19
+      P20 NetU6_IC2_P20
+       R1 GND
+       R2 U6_GBTX_VDD_SERDES
+       R3 U6_GBTX_VDD_SERDES
+       R4 U6_SLVS_ONE_N
+       R5 U6_SLVS_ONE_P
+       R6 U6_SCA_PRI_CLK_N
+       R7 NetU6_IC2_R7
+       R8 NetU6_IC2_R8
+       R9 U6_SLVS_ONE_P
+      R10 U6_SLVS_ONE_N
+      R11 U6_SLVS_ONE_P
+      R12 U6_SLVS_ONE_N
+      R13 1V5
+      R14 GND
+      R15 U6_SLVS_ONE_P
+      R16 U6_SLVS_ONE_N
+      R17 DC5_ELKS.GBTX_ELK_CH10_1_N
+      R18 1V5
+      R19 U6_SCA_SEC_DAT_IN_N
+      R20 NetU6_IC2_R20
+       T1 SLVS_HIGH_1_N
+       T2 GND
+       T3 U6_GBTX_VDD_SERDES
+       T4 DC5_ELKS.GBTX_ELK_CH0_1_N
+       T5 U6_SLVS_ONE_P
+       T6 U6_SLVS_ONE_N
+       T7 NetU6_IC2_T7
+       T8 NetU6_IC2_T8
+       T9 NetU6_IC2_T9
+      T10 NetU6_IC2_T10
+      T11 DC5_ELKS.GBTX_ELK_CH5_1_P
+      T12 DC5_ELKS.GBTX_ELK_CH5_1_N
+      T13 U6_DC_TST.TEST_DAT_OUT_1_N
+      T14 U6_DC_TST.TEST_DAT_OUT_1_P
+      T15 U6_SLVS_ONE_N
+      T16 U6_SLVS_ONE_P
+      T17 U6_SLVS_ONE_N
+      T18 U6_SLVS_ONE_P
+      T19 U6_SCA_SEC_DAT_IN_P
+      T20 NetU6_IC2_T20
+       U1 SLVS_HIGH_1_P
+       U2 GND
+       U3 U6_GBTX_VDD_SERDES
+       U4 DC5_ELKS.GBTX_ELK_CH0_1_P
+       U5 DC5_ELKS.GBTX_ELK_CH4_1_N
+       U6 DC5_ELKS.GBTX_ELK_CH4_1_P
+       U7 U6_SLVS_ONE_P
+       U8 U6_SLVS_ONE_N
+       U9 NetU6_IC2_U9
+      U10 NetU6_IC2_U10
+      U11 U6_SLVS_ONE_N
+      U12 U6_SLVS_ONE_P
+      U13 U6_SLVS_ONE_P
+      U14 U6_SLVS_ONE_N
+      U15 U6_DC_TST.TEST_DAT_IN_1_P
+      U16 U6_DC_TST.TEST_DAT_IN_1_N
+      U17 U6_SLVS_ONE_N
+      U18 U6_SCA_SEC_DAT_OUT_N
+      U19 NetU6_IC2_U19
+      U20 NetU6_IC2_U20
+       V1 GND
+       V2 U6_GBTX_VDD_SERDES
+       V3 NetU6_IC2_V3
+       V4 NetU6_IC2_V4
+       V5 NetU6_IC2_V5
+       V6 NetU6_IC2_V6
+       V7 DC5_ELKS.GBTX_ELK_CH1_1_P
+       V8 NetU6_IC2_V8
+       V9 NetU6_IC2_V9
+      V10 NetU6_IC2_V10
+      V11 U6_DC_TST.TEST_DAT_CLK_1_N
+      V12 U6_DC_TST.TEST_DAT_CLK_1_P
+      V13 NetU6_IC2_V13
+      V14 NetU6_IC2_V14
+      V15 NetU6_IC2_V15
+      V16 NetU6_IC2_V16
+      V17 U6_SLVS_ONE_P
+      V18 U6_SCA_SEC_DAT_OUT_P
+      V19 NetU6_IC2_V19
+      V20 U6_SCA_SEC_CLK_P
+       W1 NetU6_IC2_W1
+       W2 NetU6_IC2_W2
+       W3 NetU6_IC2_W3
+       W4 GND
+       W5 1V5
+       W6 NetU6_IC2_W6
+       W7 DC5_ELKS.GBTX_ELK_CH1_1_N
+       W8 NetU6_IC2_W8
+       W9 GND
+      W10 1V5
+      W11 NetU6_IC2_W11
+      W12 NetU6_IC2_W12
+      W13 GND
+      W14 1V5
+      W15 NetU6_IC2_W15
+      W16 NetU6_IC2_W16
+      W17 GND
+      W18 1V5
+      W19 NetU6_IC2_W19
+      W20 U6_SCA_SEC_CLK_N
+       Y1 U6_MC_TFC0_N
+       Y2 U6_MC_TFC0_P
+       Y3 NetU6_IC2_Y3
+       Y4 NetU6_IC2_Y4
+       Y5 NetU6_IC2_Y5
+       Y6 NetU6_IC2_Y6
+       Y7 U6_MC_TFC1_N
+       Y8 U6_MC_TFC1_P
+       Y9 NetU6_IC2_Y9
+      Y10 NetU6_IC2_Y10
+      Y11 NetU6_IC2_Y11
+      Y12 NetU6_IC2_Y12
+      Y13 NetU6_IC2_Y13
+      Y14 NetU6_IC2_Y14
+      Y15 NetU6_IC2_Y15
+      Y16 NetU6_IC2_Y16
+      Y17 NetU6_IC2_Y17
+      Y18 NetU6_IC2_Y18
+      Y19 NetU6_IC2_Y19
+      Y20 NetU6_IC2_Y20
+        }
+      }
+      {I LQW31HN23NJ03L_Murata_coil.PRT U6_L2
+        {CN
+        1 1V5
+        2 U6_GBTX_VDD_SERDES
+        }
+      }
+      {I LQW31HN23NJ03L_Murata_coil.PRT U6_L3
+        {CN
+        1 1V5
+        2 U6_GBTX_VDDP_PS
+        }
+      }
+      {I RESC1005X40N.PRT U6_R29
+        {CN
+        1 U6_SLVS_ONE_P
+        2 1V5
+        }
+      }
+      {I RESC1005X40N.PRT U6_R30
+        {CN
+        1 U6_SLVS_ONE_N
+        2 U6_SLVS_ONE_P
+        }
+      }
+      {I RESC1005X40N.PRT U6_R31
+        {CN
+        1 GND
+        2 U6_SLVS_ONE_N
+        }
+      }
+      {I RESC1005X40N.PRT U6_R43
+        {CN
+        1 GND
+        2 U6_EFUSEPROGPLS_1
+        }
+      }
+      {I RESC1005X40N.PRT U6_R48
+        {CN
+        1 NetU6_IC2_K10
+        2 U6_DC_TST.TESTOUTPUT_1
+        }
+      }
+      {I RESC1005X40N.PRT U6_R50
+        {CN
+        1 U6_LDSCL_1
+        2 1V5
+        }
+      }
+      {I RESC1005X40N.PRT U6_R51
+        {CN
+        1 U6_LDSDA_1
+        2 1V5
+        }
+      }
+      {I RESC1005X40N.PRT U6_R52
+        {CN
+        1 NetU6_IC2_L13
+        2 U6_DC_TST.TX_RDY_1
+        }
+      }
+      {I RESC1005X40N.PRT U6_R53
+        {CN
+        1 U6_DC_TST.RX_RDY_1
+        2 NetU6_IC2_N10
+        }
+      }
+      {I RESC1005X40N.PRT U6_R54
+        {CN
+        1 U6_DC_TST.RX_DATVAL_1
+        2 NetU6_IC2_N9
+        }
+      }
+      {I RESC1005X40N.PRT U6_R59
+        {CN
+        1 U6_SLVS_ONE_P
+        2 NetU6_IC2_A3
+        }
+      }
+      {I RESC1005X40N.PRT U6_R60
+        {CN
+        1 U6_SLVS_ONE_N
+        2 NetU6_IC2_A4
+        }
+      }
+      {I RESC1005X40N.PRT U6_R61
+        {CN
+        1 U6_SLVS_ONE_P
+        2 NetU6_IC2_A6
+        }
+      }
+      {I RESC1005X40N.PRT U6_R62
+        {CN
+        1 U6_SLVS_ONE_N
+        2 NetU6_IC2_A5
+        }
+      }
+      {I RESC1005X40N.PRT U6_R63
+        {CN
+        1 U6_SLVS_ONE_P
+        2 NetU6_IC2_A12
+        }
+      }
+      {I RESC1005X40N.PRT U6_R64
+        {CN
+        1 U6_SLVS_ONE_N
+        2 NetU6_IC2_A11
+        }
+      }
+      {I RESC1005X40N.PRT U6_R65
+        {CN
+        1 U6_SLVS_ONE_P
+        2 NetU6_IC2_A14
+        }
+      }
+      {I RESC1005X40N.PRT U6_R66
+        {CN
+        1 U6_SLVS_ONE_N
+        2 NetU6_IC2_A13
+        }
+      }
+      {I RESC1005X40N.PRT U6_R67
+        {CN
+        1 U6_SLVS_ONE_P
+        2 NetU6_IC2_V19
+        }
+      }
+      {I RESC1005X40N.PRT U6_R68
+        {CN
+        1 U6_SLVS_ONE_N
+        2 NetU6_IC2_W19
+        }
+      }
+      {I RESC1005X40N.PRT U6_R69
+        {CN
+        1 U6_SLVS_ONE_P
+        2 NetU6_IC2_Y9
+        }
+      }
+      {I RESC1005X40N.PRT U6_R70
+        {CN
+        1 U6_SLVS_ONE_N
+        2 NetU6_IC2_Y10
+        }
+      }
+      {I RESC1005X40N.PRT U6_R71
+        {CN
+        1 U6_SLVS_ONE_P
+        2 NetU6_IC2_W3
+        }
+      }
+      {I RESC1005X40N.PRT U6_R72
+        {CN
+        1 U6_SLVS_ONE_N
+        2 NetU6_IC2_V3
+        }
+      }
+      {I RESC1005X40N.PRT U6_R73
+        {CN
+        1 U6_SLVS_ONE_P
+        2 NetU6_IC2_Y3
+        }
+      }
+      {I RESC1005X40N.PRT U6_R74
+        {CN
+        1 U6_SLVS_ONE_N
+        2 NetU6_IC2_Y4
+        }
+      }
+      {I RESC1005X40N.PRT U6_R75
+        {CN
+        1 1V5
+        2 U1_DC_TST.DF_AUTORESET_TESTINJ_1
+        }
+      }
+      {I RESC5226X80N.PRT U6_R87
+        {CN
+        1 1V5
+        2 U6_GBTX_VDD_SERDES
+        }
+      }
+      {I RESC5226X80N.PRT U6_R88
+        {CN
+        1 1V5
+        2 U6_GBTX_VDDP_PS
+        }
+      }
+      {I TPS127.PRT U6_TP1
+        {CN
+        1 U6_SLVS_ONE_P
+        }
+      }
+      {I TPS127.PRT U6_TP2
+        {CN
+        1 U6_SLVS_ONE_N
+        }
+      }
+      {I TPS127.PRT U6_TP5
+        {CN
+        1 GND
+        }
+      }
+      {I CAPC2012X135N.PRT U_MC_C21
+        {CN
+        1 1V5
+        2 GND
+        }
+      }
+      {I CAPC2012X135N.PRT U_MC_C22
+        {CN
+        1 1V5
+        2 GND
+        }
+      }
+      {I CAPC1005X55N.PRT U_MC_C23
+        {CN
+        1 GND
+        2 1V5
+        }
+      }
+      {I CAPC1005X55N.PRT U_MC_C24
+        {CN
+        1 GND
+        2 1V5
+        }
+      }
+      {I CAPC1005X55N.PRT U_MC_C25
+        {CN
+        1 GND
+        2 1V5
+        }
+      }
+      {I CAPC1005X55N.PRT U_MC_C26
+        {CN
+        1 GND
+        2 1V5
+        }
+      }
+      {I CAPC1005X55N.PRT U_MC_C27
+        {CN
+        1 GND
+        2 1V5
+        }
+      }
+      {I CAPC1005X55N.PRT U_MC_C28
+        {CN
+        1 GND
+        2 1V5
+        }
+      }
+      {I CAPC1005X55N.PRT U_MC_C29
+        {CN
+        1 GND
+        2 1V5
+        }
+      }
+      {I CAPC1005X55N.PRT U_MC_C30
+        {CN
+        1 GND
+        2 1V5
+        }
+      }
+      {I CAPC0603X33N.PRT U_MC_C31
+        {CN
+        1 GND
+        2 1V5
+        }
+      }
+      {I CAPC0603X33N.PRT U_MC_C32
+        {CN
+        1 GND
+        2 1V5
+        }
+      }
+      {I CAPC0603X33N.PRT U_MC_C33
+        {CN
+        1 GND
+        2 1V5
+        }
+      }
+      {I CAPC0603X33N.PRT U_MC_C34
+        {CN
+        1 GND
+        2 1V5
+        }
+      }
+      {I CAPC0603X33N.PRT U_MC_C35
+        {CN
+        1 GND
+        2 1V5
+        }
+      }
+      {I CAPC0603X33N.PRT U_MC_C36
+        {CN
+        1 GND
+        2 1V5
+        }
+      }
+      {I CAPC2012X135N.PRT U_MC_C37
+        {CN
+        1 U_MC_GBTX_VDD_SERDES
+        2 GND
+        }
+      }
+      {I CAPC2012X135N.PRT U_MC_C38
+        {CN
+        1 U_MC_GBTX_VDD_SERDES
+        2 GND
+        }
+      }
+      {I CAPC1005X55N.PRT U_MC_C39
+        {CN
+        1 GND
+        2 U_MC_GBTX_VDD_SERDES
+        }
+      }
+      {I CAPC1005X55N.PRT U_MC_C40
+        {CN
+        1 GND
+        2 U_MC_GBTX_VDD_SERDES
+        }
+      }
+      {I CAPC1005X55N.PRT U_MC_C41
+        {CN
+        1 GND
+        2 U_MC_GBTX_VDD_SERDES
+        }
+      }
+      {I CAPC1005X55N.PRT U_MC_C42
+        {CN
+        1 GND
+        2 U_MC_GBTX_VDD_SERDES
+        }
+      }
+      {I CAPC1005X55N.PRT U_MC_C43
+        {CN
+        1 GND
+        2 U_MC_GBTX_VDD_SERDES
+        }
+      }
+      {I CAPC1005X55N.PRT U_MC_C44
+        {CN
+        1 GND
+        2 U_MC_GBTX_VDD_SERDES
+        }
+      }
+      {I CAPC1005X55N.PRT U_MC_C45
+        {CN
+        1 GND
+        2 U_MC_GBTX_VDD_SERDES
+        }
+      }
+      {I CAPC1005X55N.PRT U_MC_C46
+        {CN
+        1 GND
+        2 U_MC_GBTX_VDD_SERDES
+        }
+      }
+      {I CAPC0603X33N.PRT U_MC_C47
+        {CN
+        1 GND
+        2 U_MC_GBTX_VDD_SERDES
+        }
+      }
+      {I CAPC0603X33N.PRT U_MC_C48
+        {CN
+        1 GND
+        2 U_MC_GBTX_VDD_SERDES
+        }
+      }
+      {I CAPC0603X33N.PRT U_MC_C49
+        {CN
+        1 GND
+        2 U_MC_GBTX_VDD_SERDES
+        }
+      }
+      {I CAPC0603X33N.PRT U_MC_C50
+        {CN
+        1 GND
+        2 U_MC_GBTX_VDD_SERDES
+        }
+      }
+      {I CAPC0603X33N.PRT U_MC_C51
+        {CN
+        1 GND
+        2 U_MC_GBTX_VDD_SERDES
+        }
+      }
+      {I CAPC0603X33N.PRT U_MC_C52
+        {CN
+        1 GND
+        2 U_MC_GBTX_VDD_SERDES
+        }
+      }
+      {I CAPC2012X135N.PRT U_MC_C53
+        {CN
+        1 U_MC_GBTX_VDDP_PS
+        2 GND
+        }
+      }
+      {I CAPC2012X135N.PRT U_MC_C54
+        {CN
+        1 U_MC_GBTX_VDDP_PS
+        2 GND
+        }
+      }
+      {I CAPC1005X55N.PRT U_MC_C55
+        {CN
+        1 GND
+        2 U_MC_GBTX_VDDP_PS
+        }
+      }
+      {I CAPC1005X55N.PRT U_MC_C56
+        {CN
+        1 GND
+        2 U_MC_GBTX_VDDP_PS
+        }
+      }
+      {I CAPC1005X55N.PRT U_MC_C57
+        {CN
+        1 GND
+        2 U_MC_GBTX_VDDP_PS
+        }
+      }
+      {I CAPC0603X33N.PRT U_MC_C58
+        {CN
+        1 GND
+        2 U_MC_GBTX_VDDP_PS
+        }
+      }
+      {I CAPC0603X33N.PRT U_MC_C59
+        {CN
+        1 GND
+        2 U_MC_GBTX_VDDP_PS
+        }
+      }
+      {I CAPC0603X33N.PRT U_MC_C60
+        {CN
+        1 GND
+        2 U_MC_GBTX_VDDP_PS
+        }
+      }
+      {I CAPC0603X33N.PRT U_MC_C93
+        {CN
+        1 GND
+        2 1V5
+        }
+      }
+      {I CAPC1005X55N.PRT U_MC_C94
+        {CN
+        1 GND
+        2 1V5
+        }
+      }
+      {I CAPC2012X135N.PRT U_MC_C129
+        {CN
+        1 MC_EFUSE_PWR_1
+        2 GND
+        }
+      }
+      {I CAPC1005X55N.PRT U_MC_C130
+        {CN
+        1 GND
+        2 MC_EFUSE_PWR_1
+        }
+      }
+      {I CERN_GBTX ASIC_V0.1.PRT U_MC_IC2
+        {CN
+       A1 NetU_MC_IC2_A1
+       A2 NetU_MC_IC2_A2
+       A3 NetU_MC_IC2_A3
+       A4 NetU_MC_IC2_A4
+       A5 NetU_MC_IC2_A5
+       A6 NetU_MC_IC2_A6
+       A7 SLVS_ONE_3_P
+       A8 SLVS_ONE_3_N
+       A9 MC_TFC3_P
+      A10 MC_TFC3_N
+      A11 NetU_MC_IC2_A11
+      A12 NetU_MC_IC2_A12
+      A13 NetU_MC_IC2_A13
+      A14 NetU_MC_IC2_A14
+      A15 SLVS_ONE_3_P
+      A16 SLVS_ONE_3_N
+      A17 MC_TFC2_P
+      A18 MC_TFC2_N
+      A19 GND
+      A20 MC_TFC5_P
+       B1 U_MC_SLVS_ONE_P
+       B2 U_MC_SLVS_ONE_N
+       B3 U_MC_SLVS_ONE_N
+       B4 U_MC_SLVS_ONE_P
+       B5 NetU_MC_IC2_B5
+       B6 NetU_MC_IC2_B6
+       B7 NetU_MC_IC2_B7
+       B8 NetU_MC_IC2_B8
+       B9 GND
+      B10 1V5
+      B11 NetU_MC_IC2_B11
+      B12 NetU_MC_IC2_B12
+      B13 NetU_MC_IC2_B13
+      B14 NetU_MC_IC2_B14
+      B15 NetU_MC_IC2_B15
+      B16 NetU_MC_IC2_B16
+      B17 NetU_MC_IC2_B17
+      B18 NetU_MC_IC2_B18
+      B19 1V5
+      B20 MC_TFC5_N
+       C1 GND
+       C2 GND
+       C3 U_MC_GBTX_VDD_SERDES
+       C4 U_MC_SLVS_ONE_P
+       C5 NetU_MC_IC2_C5
+       C6 NetU_MC_IC2_C6
+       C7 NetU_MC_IC2_C7
+       C8 NetU_MC_IC2_C8
+       C9 NetU_MC_IC2_C9
+      C10 NetU_MC_IC2_C10
+      C11 U_MC_SLVS_ONE_N
+      C12 NetU_MC_IC2_C12
+      C13 GND
+      C14 1V5
+      C15 NetU_MC_IC2_C15
+      C16 NetU_MC_IC2_C16
+      C17 NetU_MC_IC2_C17
+      C18 NetU_MC_IC2_C18
+      C19 NetU_MC_IC2_C19
+      C20 NetU_MC_IC2_C20
+       D1 MC_GTX_1_N
+       D2 GND
+       D3 U_MC_GBTX_VDD_SERDES
+       D4 U_MC_SLVS_ONE_N
+       D5 U_MC_SLVS_ONE_N
+       D6 U_MC_SLVS_ONE_P
+       D7 U_MC_SLVS_ONE_N
+       D8 U_MC_SLVS_ONE_P
+       D9 SLVS_ONE_3_P
+      D10 SLVS_ONE_3_N
+      D11 U_MC_SLVS_ONE_P
+      D12 NetU_MC_IC2_D12
+      D13 U_MC_SLVS_ONE_P
+      D14 U_MC_SLVS_ONE_N
+      D15 U_MC_SLVS_ONE_P
+      D16 U_MC_SLVS_ONE_N
+      D17 NetU_MC_IC2_D17
+      D18 NetU_MC_IC2_D18
+      D19 NetU_MC_IC2_D19
+      D20 NetU_MC_IC2_D20
+       E1 MC_GTX_1_P
+       E2 GND
+       E3 U_MC_GBTX_VDD_SERDES
+       E4 U_MC_SLVS_ONE_N
+       E5 NetU_MC_IC2_E5
+       E6 NetU_MC_IC2_E6
+       E7 NetU_MC_IC2_E7
+       E8 NetU_MC_IC2_E8
+       E9 U_MC_SLVS_ONE_P
+      E10 U_MC_SLVS_ONE_N
+      E11 SLVS_ONE_3_N
+      E12 SLVS_ONE_3_P
+      E13 NetU_MC_IC2_E13
+      E14 NetU_MC_IC2_E14
+      E15 U_MC_SLVS_ONE_N
+      E16 U_MC_SLVS_ONE_P
+      E17 U_MC_SLVS_ONE_N
+      E18 NetU_MC_IC2_E18
+      E19 NetU_MC_IC2_E19
+      E20 NetU_MC_IC2_E20
+       F1 GND
+       F2 U_MC_GBTX_VDD_SERDES
+       F3 U_MC_GBTX_VDD_SERDES
+       F4 U_MC_SLVS_ONE_P
+       F5 NetU_MC_IC2_F5
+       F6 NetU_MC_IC2_F6
+       F7 SLVS_ONE_3_P
+       F8 SLVS_ONE_3_N
+       F9 1V5
+      F10 GND
+      F11 GND
+      F12 GND
+      F13 NetU_MC_IC2_F13
+      F14 NetU_MC_IC2_F14
+      F15 U_MC_SLVS_ONE_P
+      F16 U_MC_SLVS_ONE_P
+      F17 GND
+      F18 SLVS_ONE_3_P
+      F19 1V5
+      F20 NetU_MC_IC2_F20
+       G1 MC_OUT_RCLK0_1_P
+       G2 U_MC_GBTX_VDDP_PS
+       G3 NetU_MC_IC2_G3
+       G4 NetU_MC_IC2_G4
+       G5 MC_I2C_SCL_1
+       G6 U_MC_SLVS_ONE_N
+       G7 U_MC_SLVS_ONE_P
+       G8 NetU_MC_IC2_G8
+       G9 NetU_MC_IC2_G9
+      G10 GND
+      G11 GND
+      G12 GND
+      G13 GND
+      G14 1V5
+      G15 1V5
+      G16 U_MC_SLVS_ONE_N
+      G17 NetU_MC_IC2_G17
+      G18 SLVS_ONE_3_N
+      G19 NetU_MC_IC2_G19
+      G20 NetU_MC_IC2_G20
+       H1 MC_OUT_RCLK0_1_N
+       H2 GND
+       H3 U_MC_GBTX_VDDP_PS
+       H4 MC_OUT_RCLK1_1_P
+       H5 MC_I2C_SDA_1
+       H6 NetU_MC_IC2_H6
+       H7 1V5
+       H8 MC_LDSDA_1
+       H9 U_MC_CFG.STATEOVERRIDE_1
+      H10 GND
+      H11 GND
+      H12 GND
+      H13 1V5
+      H14 1V5
+      H15 U_MC_TST.DF_AUTORESET_TESTINJ_1
+      H16 U_MC_SLVS_ONE_N
+      H17 NetU_MC_IC2_H17
+      H18 MC_TFC4_N
+      H19 NetU_MC_IC2_H19
+      H20 NetU_MC_IC2_H20
+       J1 GND
+       J2 NetU_MC_IC2_J2
+       J3 U_MC_GBTX_VDD_SERDES
+       J4 MC_OUT_RCLK1_1_N
+       J5 GND
+       J6 U_MC_GBTX_VDDP_PS
+       J7 NetU_MC_IC2_J7
+       J8 U_MC_CFG.RXLOCK_0MODE_1
+       J9 U_MC_CFG.REFCLKSEL_1
+      J10 GND
+      J11 GND
+      J12 1V5
+      J13 1V5
+      J14 1V5
+      J15 GND
+      J16 U_MC_SLVS_ONE_P
+      J17 NetU_MC_IC2_J17
+      J18 MC_TFC4_P
+      J19 NetU_MC_IC2_J19
+      J20 GND
+       K1 RCLK_IN_1_N
+       K2 GND
+       K3 U_MC_GBTX_VDD_SERDES
+       K4 MC_OUT_RCLK2_1_P
+       K5 MC_OUT_RCLK2_1_N
+       K6 U_MC_GBTX_VDDP_PS
+       K7 U_MC_CFG.CONFIGSELECT_1
+       K8 MC_LDSCL_1
+       K9 U_MC_GBTX_VDDP_PS
+      K10 NetU_MC_IC2_K10
+      K11 GND
+      K12 GND
+      K13 1V5
+      K14 1V5
+      K15 SLVS_ONE_3_N
+      K16 U_MC_SLVS_ONE_N
+      K17 NetU_MC_IC2_K17
+      K18 NetU_MC_IC2_K18
+      K19 NetU_MC_IC2_K19
+      K20 1V5
+       L1 RCLK_IN_1_P
+       L2 GND
+       L3 U_MC_GBTX_VDD_SERDES
+       L4 MC_OUT_RCLK3_1_P
+       L5 MC_OUT_RCLK3_1_N
+       L6 GND
+       L7 U_MC_CFG.TXMODE_1SEL_1
+       L8 1V5
+       L9 GND
+      L10 U_MC_CFG.TXMODE_2SEL_1
+      L11 GND
+      L12 GND
+      L13 NetU_MC_IC2_L13
+      L14 1V5
+      L15 SLVS_ONE_3_P
+      L16 U_MC_SLVS_ONE_P
+      L17 NetU_MC_IC2_L17
+      L18 NetU_MC_IC2_L18
+      L19 NetU_MC_IC2_L19
+      L20 NetU_MC_IC2_L20
+       M1 GND
+       M2 NetU_MC_IC2_M2
+       M3 U_MC_GBTX_VDD_SERDES
+       M4 MC_OUT_RCLK4_1_P
+       M5 MC_OUT_RCLK4_1_N
+       M6 U_MC_XX_OUT_RCLK6_P
+       M7 U_MC_XX_OUT_RCLK6_N
+       M8 NetU_MC_IC2_M8
+       M9 U_MC_CFG.RXLOCK_1MODE_1
+      M10 NetC72_2
+      M11 GND
+      M12 GND
+      M13 1V5
+      M14 1V5
+      M15 U_MC_SLVS_ONE_N
+      M16 NetU_MC_IC2_M16
+      M17 U_MC_SLVS_ONE_P
+      M18 U_MC_SLVS_ONE_P
+      M19 NetU_MC_IC2_M19
+      M20 NetU_MC_IC2_M20
+       N1 MC_OUT_RCLK5_1_P
+       N2 MC_OUT_RCLK5_1_N
+       N3 GND
+       N4 U_MC_GBTX_VDDP_PS
+       N5 U_MC_CFG.TXMODE_0SEL_1
+       N6 1V5
+       N7 1V5
+       N8 NetU_MC_IC2_N8
+       N9 NetU_MC_IC2_N9
+      N10 NetU_MC_IC2_N10
+      N11 U_MC_TST.TXDATAVALID_1
+      N12 1V5
+      N13 1V5
+      N14 1V5
+      N15 U_MC_SLVS_ONE_P
+      N16 NetU_MC_IC2_N16
+      N17 U_MC_SLVS_ONE_N
+      N18 U_MC_SLVS_ONE_N
+      N19 NetU_MC_IC2_N19
+      N20 NetU_MC_IC2_N20
+       P1 U_MC_XX_OUT_RCLK7_P
+       P2 U_MC_XX_OUT_RCLK7_N
+       P3 SCA_PRI_DAT_OUT_3_N
+       P4 SCA_PRI_DAT_OUT_3_P
+       P5 GND
+       P6 SCA_PRI_CLK_3_P
+       P7 NetU_MC_IC2_P7
+       P8 NetU_MC_IC2_P8
+       P9 NetU_MC_IC2_P9
+      P10 U_MC_CFG.TXMODE_3SEL_1
+      P11 U_MC_EFUSEPROGPLS_1
+      P12 SCA_PRI_DAT_IN_3_P
+      P13 SCA_PRI_DAT_IN_3_N
+      P14 MC_EFUSE_PWR_1
+      P15 NetU_MC_IC2_P15
+      P16 NetU_MC_IC2_P16
+      P17 SLVS_ONE_3_P
+      P18 GND
+      P19 NetU_MC_IC2_P19
+      P20 NetU_MC_IC2_P20
+       R1 GND
+       R2 U_MC_GBTX_VDD_SERDES
+       R3 U_MC_GBTX_VDD_SERDES
+       R4 U_MC_SLVS_ONE_N
+       R5 U_MC_SLVS_ONE_P
+       R6 SCA_PRI_CLK_3_N
+       R7 NetU_MC_IC2_R7
+       R8 NetU_MC_IC2_R8
+       R9 U_MC_SLVS_ONE_P
+      R10 U_MC_SLVS_ONE_N
+      R11 U_MC_SLVS_ONE_P
+      R12 U_MC_SLVS_ONE_N
+      R13 1V5
+      R14 GND
+      R15 U_MC_SLVS_ONE_P
+      R16 U_MC_SLVS_ONE_N
+      R17 SLVS_ONE_3_N
+      R18 1V5
+      R19 MC_SCA_SEC_ELKS.SCA_SEC_DAT_IN_1_N
+      R20 NetU_MC_IC2_R20
+       T1 MC_GRX_1_N
+       T2 GND
+       T3 U_MC_GBTX_VDD_SERDES
+       T4 SLVS_ONE_3_N
+       T5 U_MC_SLVS_ONE_P
+       T6 U_MC_SLVS_ONE_N
+       T7 NetU_MC_IC2_T7
+       T8 NetU_MC_IC2_T8
+       T9 NetU_MC_IC2_T9
+      T10 NetU_MC_IC2_T10
+      T11 SLVS_ONE_3_P
+      T12 SLVS_ONE_3_N
+      T13 U_MC_TST.TEST_DAT_OUT_1_N
+      T14 U_MC_TST.TEST_DAT_OUT_1_P
+      T15 U_MC_SLVS_ONE_N
+      T16 U_MC_SLVS_ONE_P
+      T17 U_MC_SLVS_ONE_N
+      T18 U_MC_SLVS_ONE_P
+      T19 MC_SCA_SEC_ELKS.SCA_SEC_DAT_IN_1_P
+      T20 NetU_MC_IC2_T20
+       U1 MC_GRX_1_P
+       U2 GND
+       U3 U_MC_GBTX_VDD_SERDES
+       U4 SLVS_ONE_3_P
+       U5 SLVS_ONE_3_N
+       U6 SLVS_ONE_3_P
+       U7 U_MC_SLVS_ONE_P
+       U8 U_MC_SLVS_ONE_N
+       U9 NetU_MC_IC2_U9
+      U10 NetU_MC_IC2_U10
+      U11 U_MC_SLVS_ONE_N
+      U12 U_MC_SLVS_ONE_P
+      U13 U_MC_SLVS_ONE_P
+      U14 U_MC_SLVS_ONE_N
+      U15 U_MC_TST.TEST_DAT_IN_1_P
+      U16 U_MC_TST.TEST_DAT_IN_1_N
+      U17 U_MC_SLVS_ONE_N
+      U18 MC_SCA_SEC_ELKS.SCA_SEC_DAT_OUT_1_N
+      U19 NetU_MC_IC2_U19
+      U20 NetU_MC_IC2_U20
+       V1 GND
+       V2 U_MC_GBTX_VDD_SERDES
+       V3 NetU_MC_IC2_V3
+       V4 NetU_MC_IC2_V4
+       V5 NetU_MC_IC2_V5
+       V6 NetU_MC_IC2_V6
+       V7 SLVS_ONE_3_P
+       V8 NetU_MC_IC2_V8
+       V9 NetU_MC_IC2_V9
+      V10 NetU_MC_IC2_V10
+      V11 U_MC_TST.TEST_DAT_CLK_1_N
+      V12 U_MC_TST.TEST_DAT_CLK_1_P
+      V13 NetU_MC_IC2_V13
+      V14 NetU_MC_IC2_V14
+      V15 NetU_MC_IC2_V15
+      V16 NetU_MC_IC2_V16
+      V17 U_MC_SLVS_ONE_P
+      V18 MC_SCA_SEC_ELKS.SCA_SEC_DAT_OUT_1_P
+      V19 NetU_MC_IC2_V19
+      V20 MC_SCA_SEC_ELKS.SCA_SEC_CLK_1_P
+       W1 NetU_MC_IC2_W1
+       W2 NetU_MC_IC2_W2
+       W3 NetU_MC_IC2_W3
+       W4 GND
+       W5 1V5
+       W6 NetU_MC_IC2_W6
+       W7 SLVS_ONE_3_N
+       W8 NetU_MC_IC2_W8
+       W9 GND
+      W10 1V5
+      W11 NetU_MC_IC2_W11
+      W12 NetU_MC_IC2_W12
+      W13 GND
+      W14 1V5
+      W15 NetU_MC_IC2_W15
+      W16 NetU_MC_IC2_W16
+      W17 GND
+      W18 1V5
+      W19 NetU_MC_IC2_W19
+      W20 MC_SCA_SEC_ELKS.SCA_SEC_CLK_1_N
+       Y1 MC_TFC0_N
+       Y2 MC_TFC0_P
+       Y3 NetU_MC_IC2_Y3
+       Y4 NetU_MC_IC2_Y4
+       Y5 NetU_MC_IC2_Y5
+       Y6 NetU_MC_IC2_Y6
+       Y7 MC_TFC1_N
+       Y8 MC_TFC1_P
+       Y9 NetU_MC_IC2_Y9
+      Y10 NetU_MC_IC2_Y10
+      Y11 NetU_MC_IC2_Y11
+      Y12 NetU_MC_IC2_Y12
+      Y13 NetU_MC_IC2_Y13
+      Y14 NetU_MC_IC2_Y14
+      Y15 NetU_MC_IC2_Y15
+      Y16 NetU_MC_IC2_Y16
+      Y17 NetU_MC_IC2_Y17
+      Y18 NetU_MC_IC2_Y18
+      Y19 NetU_MC_IC2_Y19
+      Y20 NetU_MC_IC2_Y20
+        }
+      }
+      {I LQW31HN23NJ03L_Murata_coil.PRT U_MC_L2
+        {CN
+        1 1V5
+        2 U_MC_GBTX_VDD_SERDES
+        }
+      }
+      {I LQW31HN23NJ03L_Murata_coil.PRT U_MC_L3
+        {CN
+        1 1V5
+        2 U_MC_GBTX_VDDP_PS
+        }
+      }
+      {I RESC1005X40N.PRT U_MC_R29
+        {CN
+        1 U_MC_SLVS_ONE_P
+        2 1V5
+        }
+      }
+      {I RESC1005X40N.PRT U_MC_R30
+        {CN
+        1 U_MC_SLVS_ONE_N
+        2 U_MC_SLVS_ONE_P
+        }
+      }
+      {I RESC1005X40N.PRT U_MC_R31
+        {CN
+        1 GND
+        2 U_MC_SLVS_ONE_N
+        }
+      }
+      {I RESC1005X40N.PRT U_MC_R43
+        {CN
+        1 GND
+        2 U_MC_EFUSEPROGPLS_1
+        }
+      }
+      {I RESC1005X40N.PRT U_MC_R48
+        {CN
+        1 NetU_MC_IC2_K10
+        2 U_MC_TST.TESTOUTPUT_1
+        }
+      }
+      {I RESC1005X40N.PRT U_MC_R50
+        {CN
+        1 MC_LDSCL_1
+        2 1V5
+        }
+      }
+      {I RESC1005X40N.PRT U_MC_R51
+        {CN
+        1 MC_LDSDA_1
+        2 1V5
+        }
+      }
+      {I RESC1005X40N.PRT U_MC_R52
+        {CN
+        1 NetU_MC_IC2_L13
+        2 U_MC_TST.TX_RDY_1
+        }
+      }
+      {I RESC1005X40N.PRT U_MC_R53
+        {CN
+        1 U_MC_TST.RX_RDY_1
+        2 NetU_MC_IC2_N10
+        }
+      }
+      {I RESC1005X40N.PRT U_MC_R54
+        {CN
+        1 U_MC_TST.RX_DATVAL_1
+        2 NetU_MC_IC2_N9
+        }
+      }
+      {I RESC1005X40N.PRT U_MC_R59
+        {CN
+        1 U_MC_SLVS_ONE_P
+        2 NetU_MC_IC2_A3
+        }
+      }
+      {I RESC1005X40N.PRT U_MC_R60
+        {CN
+        1 U_MC_SLVS_ONE_N
+        2 NetU_MC_IC2_A4
+        }
+      }
+      {I RESC1005X40N.PRT U_MC_R61
+        {CN
+        1 U_MC_SLVS_ONE_P
+        2 NetU_MC_IC2_A6
+        }
+      }
+      {I RESC1005X40N.PRT U_MC_R62
+        {CN
+        1 U_MC_SLVS_ONE_N
+        2 NetU_MC_IC2_A5
+        }
+      }
+      {I RESC1005X40N.PRT U_MC_R63
+        {CN
+        1 U_MC_SLVS_ONE_P
+        2 NetU_MC_IC2_A12
+        }
+      }
+      {I RESC1005X40N.PRT U_MC_R64
+        {CN
+        1 U_MC_SLVS_ONE_N
+        2 NetU_MC_IC2_A11
+        }
+      }
+      {I RESC1005X40N.PRT U_MC_R65
+        {CN
+        1 U_MC_SLVS_ONE_P
+        2 NetU_MC_IC2_A14
+        }
+      }
+      {I RESC1005X40N.PRT U_MC_R66
+        {CN
+        1 U_MC_SLVS_ONE_N
+        2 NetU_MC_IC2_A13
+        }
+      }
+      {I RESC1005X40N.PRT U_MC_R67
+        {CN
+        1 U_MC_SLVS_ONE_P
+        2 NetU_MC_IC2_V19
+        }
+      }
+      {I RESC1005X40N.PRT U_MC_R68
+        {CN
+        1 U_MC_SLVS_ONE_N
+        2 NetU_MC_IC2_W19
+        }
+      }
+      {I RESC1005X40N.PRT U_MC_R69
+        {CN
+        1 U_MC_SLVS_ONE_P
+        2 NetU_MC_IC2_Y9
+        }
+      }
+      {I RESC1005X40N.PRT U_MC_R70
+        {CN
+        1 U_MC_SLVS_ONE_N
+        2 NetU_MC_IC2_Y10
+        }
+      }
+      {I RESC1005X40N.PRT U_MC_R71
+        {CN
+        1 U_MC_SLVS_ONE_P
+        2 NetU_MC_IC2_W3
+        }
+      }
+      {I RESC1005X40N.PRT U_MC_R72
+        {CN
+        1 U_MC_SLVS_ONE_N
+        2 NetU_MC_IC2_V3
+        }
+      }
+      {I RESC1005X40N.PRT U_MC_R73
+        {CN
+        1 U_MC_SLVS_ONE_P
+        2 NetU_MC_IC2_Y3
+        }
+      }
+      {I RESC1005X40N.PRT U_MC_R74
+        {CN
+        1 U_MC_SLVS_ONE_N
+        2 NetU_MC_IC2_Y4
+        }
+      }
+      {I RESC1005X40N.PRT U_MC_R75
+        {CN
+        1 1V5
+        2 U_MC_TST.DF_AUTORESET_TESTINJ_1
+        }
+      }
+      {I RESC5226X80N.PRT U_MC_R87
+        {CN
+        1 1V5
+        2 U_MC_GBTX_VDD_SERDES
+        }
+      }
+      {I RESC5226X80N.PRT U_MC_R88
+        {CN
+        1 1V5
+        2 U_MC_GBTX_VDDP_PS
+        }
+      }
+      {I TPS127.PRT U_MC_TP1
+        {CN
+        1 U_MC_SLVS_ONE_P
+        }
+      }
+      {I TPS127.PRT U_MC_TP2
+        {CN
+        1 U_MC_SLVS_ONE_N
+        }
+      }
+      {I TPS127.PRT U_MC_TP5
+        {CN
+        1 GND
+        }
+      }
+    }
+  }
+}
