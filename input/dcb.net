@@ -1,561 +1,561 @@
-{COMPONENT PROTEL.PCB
-  {ENVIRONMENT PROTEL.SCH}
-  {DETAIL
-    {SUBCOMP
-      {I DCB_OptModule_PCB_Holes.PRT OMDB23
-        {CN
-        }
-      }
-      {I DCB_OptModule_PCB_Holes.PRT OMDB45
-        {CN
-        }
-      }
-      {I DCB_OptModule_PCB_Holes.PRT OMDB61
-        {CN
-        }
-      }
-      {I DCB_OptModule_PCB_Holes.PRT OMDBMC
-        {CN
-        }
-      }
-      {I c130h80.PRT B1
-        {CN
+(COMPONENT PROTEL.PCB
+  (ENVIRONMENT PROTEL.SCH)
+  (DETAIL
+    (SUBCOMP
+      (I DCB_OptModule_PCB_Holes.PRT OMDB23
+        (CN
+        )
+      )
+      (I DCB_OptModule_PCB_Holes.PRT OMDB45
+        (CN
+        )
+      )
+      (I DCB_OptModule_PCB_Holes.PRT OMDB61
+        (CN
+        )
+      )
+      (I DCB_OptModule_PCB_Holes.PRT OMDBMC
+        (CN
+        )
+      )
+      (I c130h80.PRT B1
+        (CN
         1 NetB1_1
-        }
-      }
-      {I c130h80.PRT B2
-        {CN
+        )
+      )
+      (I c130h80.PRT B2
+        (CN
         1 GND
-        }
-      }
-      {I c130h80.PRT B3
-        {CN
+        )
+      )
+      (I c130h80.PRT B3
+        (CN
         1 NetB3_1
-        }
-      }
-      {I c130h80.PRT B4
-        {CN
+        )
+      )
+      (I c130h80.PRT B4
+        (CN
         1 GND
-        }
-      }
-      {I CAPC2012X135N.PRT C1
-        {CN
+        )
+      )
+      (I CAPC2012X135N.PRT C1
+        (CN
         1 1V5
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C2
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C2
+        (CN
         1 GND
         2 1V5
-        }
-      }
-      {I CAPC1005X55N.PRT C3
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C3
+        (CN
         1 GND
         2 1V5
-        }
-      }
-      {I CAPC1005X55N.PRT C4
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C4
+        (CN
         1 GND
         2 1V5
-        }
-      }
-      {I CAPC1005X55N.PRT C5
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C5
+        (CN
         1 GND
         2 1V5
-        }
-      }
-      {I CAPC1005X55N.PRT C6
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C6
+        (CN
         1 GND
         2 1V5
-        }
-      }
-      {I CAPC0603X33N.PRT C7
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT C7
+        (CN
         1 GND
         2 1V5
-        }
-      }
-      {I CAPC0603X33N.PRT C8
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT C8
+        (CN
         1 GND
         2 1V5
-        }
-      }
-      {I CAPC0603X33N.PRT C9
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT C9
+        (CN
         1 GND
         2 1V5
-        }
-      }
-      {I CAPC0603X33N.PRT C10
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT C10
+        (CN
         1 GND
         2 1V5
-        }
-      }
-      {I CAPC0603X33N.PRT C11
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT C11
+        (CN
         1 GND
         2 1V5
-        }
-      }
-      {I CAPC0603X33N.PRT C12
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT C12
+        (CN
         1 GND
         2 1V5
-        }
-      }
-      {I CAPC2012X135N.PRT C13
-        {CN
+        )
+      )
+      (I CAPC2012X135N.PRT C13
+        (CN
         1 GBT_AVDD_PS
         2 DC_PLAT_RTD_B
-        }
-      }
-      {I CAPC2012X135N.PRT C14
-        {CN
+        )
+      )
+      (I CAPC2012X135N.PRT C14
+        (CN
         1 GBT_AVDD_PS
         2 DC_PLAT_RTD_B
-        }
-      }
-      {I CAPC1005X55N.PRT C15
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C15
+        (CN
         1 DC_PLAT_RTD_B
         2 GBT_AVDD_PS
-        }
-      }
-      {I CAPC1005X55N.PRT C16
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C16
+        (CN
         1 DC_PLAT_RTD_B
         2 GBT_AVDD_PS
-        }
-      }
-      {I CAPC1005X55N.PRT C17
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C17
+        (CN
         1 DC_PLAT_RTD_B
         2 GBT_AVDD_PS
-        }
-      }
-      {I CAPC0603X33N.PRT C18
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT C18
+        (CN
         1 DC_PLAT_RTD_B
         2 GBT_AVDD_PS
-        }
-      }
-      {I CAPC0603X33N.PRT C19
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT C19
+        (CN
         1 DC_PLAT_RTD_B
         2 GBT_AVDD_PS
-        }
-      }
-      {I CAPC0603X33N.PRT C20
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT C20
+        (CN
         1 DC_PLAT_RTD_B
         2 GBT_AVDD_PS
-        }
-      }
-      {I CAPC0603X33N.PRT C61
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT C61
+        (CN
         1 DC_PLAT_RTD_A_1
         2 DC_PLAT_RTD_B
-        }
-      }
-      {I CAPC0603X33N.PRT C62
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT C62
+        (CN
         1 OM45_THERMISTOR_A_1
         2 DC_PLAT_RTD_B
-        }
-      }
-      {I CAPC0603X33N.PRT C63
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT C63
+        (CN
         1 EC_ADC_2
         2 DC_PLAT_RTD_B
-        }
-      }
-      {I CAPC0603X33N.PRT C64
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT C64
+        (CN
         1 EC_ADC_3
         2 DC_PLAT_RTD_B
-        }
-      }
-      {I CAPC0603X33N.PRT C65
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT C65
+        (CN
         1 EC_ADC_4
         2 DC_PLAT_RTD_B
-        }
-      }
-      {I CAPC0603X33N.PRT C66
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT C66
+        (CN
         1 EC_ADC_5
         2 DC_PLAT_RTD_B
-        }
-      }
-      {I CAPC0603X33N.PRT C67
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT C67
+        (CN
         1 EC_ADC_6
         2 DC_PLAT_RTD_B
-        }
-      }
-      {I CAPC0603X33N.PRT C68
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT C68
+        (CN
         1 EC_ADC_7
         2 DC_PLAT_RTD_B
-        }
-      }
-      {I CAPC0603X33N.PRT C69
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT C69
+        (CN
         1 DC_PLAT_RTD_B
         2 ADC_CH8_5
-        }
-      }
-      {I CAPC0603X33N.PRT C70
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT C70
+        (CN
         1 DC_PLAT_RTD_B
         2 ADC_CH9_5
-        }
-      }
-      {I CAPC0603X33N.PRT C71
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT C71
+        (CN
         1 DC_PLAT_RTD_B
         2 ADC_CH10_5
-        }
-      }
-      {I CAPC2012X135N.PRT C72
-        {CN
+        )
+      )
+      (I CAPC2012X135N.PRT C72
+        (CN
         1 GND
         2 NetC72_2
-        }
-      }
-      {I CAPC0603X33N.PRT C73
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT C73
+        (CN
         1 DC_PLAT_RTD_B
         2 ADC_CH11_5
-        }
-      }
-      {I CAPC0603X33N.PRT C74
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT C74
+        (CN
         1 DC_PLAT_RTD_B
         2 ADC_CH12_5
-        }
-      }
-      {I CAPC0603X33N.PRT C75
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT C75
+        (CN
         1 DC_PLAT_RTD_B
         2 ADC_CH13_5
-        }
-      }
-      {I CAPC0603X33N.PRT C76
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT C76
+        (CN
         1 DC_PLAT_RTD_B
         2 ADC_CH14_5
-        }
-      }
-      {I CAPC0603X33N.PRT C77
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT C77
+        (CN
         1 DC_PLAT_RTD_B
         2 ADC_CH15_5
-        }
-      }
-      {I CAPC0603X33N.PRT C78
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT C78
+        (CN
         1 OM23_THERMISTOR_A_1
         2 DC_PLAT_RTD_B
-        }
-      }
-      {I CAPC0603X33N.PRT C79
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT C79
+        (CN
         1 OM61_THERMISTOR_A_1
         2 DC_PLAT_RTD_B
-        }
-      }
-      {I CAPC0603X33N.PRT C80
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT C80
+        (CN
         1 OMMC_THERMISTOR_A_1
         2 DC_PLAT_RTD_B
-        }
-      }
-      {I CAPC0603X33N.PRT C81
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT C81
+        (CN
         1 ADC_CH19_5
         2 DC_PLAT_RTD_B
-        }
-      }
-      {I CAPC0603X33N.PRT C82
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT C82
+        (CN
         1 ADC_CH20_5
         2 DC_PLAT_RTD_B
-        }
-      }
-      {I CAPC0603X33N.PRT C83
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT C83
+        (CN
         1 ADC_CH21_5
         2 DC_PLAT_RTD_B
-        }
-      }
-      {I CAPC0603X33N.PRT C84
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT C84
+        (CN
         1 ADC_CH22_5
         2 DC_PLAT_RTD_B
-        }
-      }
-      {I CAPC0603X33N.PRT C85
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT C85
+        (CN
         1 ADC_CH23_5
         2 DC_PLAT_RTD_B
-        }
-      }
-      {I CAPC0603X33N.PRT C86
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT C86
+        (CN
         1 DC_PLAT_RTD_B
         2 ADC_CH24_5
-        }
-      }
-      {I CAPC0603X33N.PRT C87
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT C87
+        (CN
         1 DC_PLAT_RTD_B
         2 ADC_CH25_5
-        }
-      }
-      {I CAPC0603X33N.PRT C88
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT C88
+        (CN
         1 DC_PLAT_RTD_B
         2 ADC_CH26_5
-        }
-      }
-      {I CAPC0603X33N.PRT C89
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT C89
+        (CN
         1 DC_PLAT_RTD_B
         2 ADC_CH27_5
-        }
-      }
-      {I CAPC0603X33N.PRT C90
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT C90
+        (CN
         1 DC_PLAT_RTD_B
         2 ADC_CH28_5
-        }
-      }
-      {I CAPC0603X33N.PRT C91
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT C91
+        (CN
         1 DC_PLAT_RTD_B
         2 ADC_CH29_5
-        }
-      }
-      {I CAPC0603X33N.PRT C92
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT C92
+        (CN
         1 DC_PLAT_RTD_B
         2 ADC_CH30_5
-        }
-      }
-      {I CAPC1005X55N.PRT C95
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C95
+        (CN
         1 GND
         2 1V5
-        }
-      }
-      {I CAPC1005X55N.PRT C96
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C96
+        (CN
         1 GND
         2 1V5
-        }
-      }
-      {I CAPC1005X55N.PRT C97
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C97
+        (CN
         1 GND
         2 1V5
-        }
-      }
-      {I CAPC1005X55N.PRT C98
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C98
+        (CN
         1 GND
         2 1V5
-        }
-      }
-      {I CAPC1005X55N.PRT C99
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C99
+        (CN
         1 GND
         2 1V5
-        }
-      }
-      {I CAPC1005X55N.PRT C100
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C100
+        (CN
         1 GND
         2 1V5
-        }
-      }
-      {I CAPC0603X33N.PRT C101
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT C101
+        (CN
         1 GND
         2 1V5
-        }
-      }
-      {I CAPC0603X33N.PRT C102
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT C102
+        (CN
         1 GND
         2 1V5
-        }
-      }
-      {I CAPC0603X33N.PRT C103
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT C103
+        (CN
         1 GND
         2 1V5
-        }
-      }
-      {I CAPC0603X33N.PRT C104
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT C104
+        (CN
         1 GND
         2 1V5
-        }
-      }
-      {I CAPC0603X33N.PRT C105
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT C105
+        (CN
         1 GND
         2 1V5
-        }
-      }
-      {I CAPC0603X33N.PRT C106
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT C106
+        (CN
         1 GND
         2 1V5
-        }
-      }
-      {I CAPC1005X55N.PRT C107
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C107
+        (CN
         1 GND
         2 2V5
-        }
-      }
-      {I CAPC1005X55N.PRT C108
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C108
+        (CN
         1 GND
         2 2V5
-        }
-      }
-      {I CAPC1005X55N.PRT C109
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C109
+        (CN
         1 GND
         2 2V5
-        }
-      }
-      {I CAPC1005X55N.PRT C110
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C110
+        (CN
         1 GND
         2 2V5
-        }
-      }
-      {I CAPC1005X55N.PRT C111
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C111
+        (CN
         1 GND
         2 2V5
-        }
-      }
-      {I CAPC1005X55N.PRT C112
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C112
+        (CN
         1 GND
         2 2V5
-        }
-      }
-      {I CAPC0603X33N.PRT C113
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT C113
+        (CN
         1 GND
         2 2V5
-        }
-      }
-      {I CAPC0603X33N.PRT C114
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT C114
+        (CN
         1 GND
         2 2V5
-        }
-      }
-      {I CAPC0603X33N.PRT C115
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT C115
+        (CN
         1 GND
         2 2V5
-        }
-      }
-      {I CAPC0603X33N.PRT C116
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT C116
+        (CN
         1 GND
         2 2V5
-        }
-      }
-      {I CAPC0603X33N.PRT C117
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT C117
+        (CN
         1 GND
         2 2V5
-        }
-      }
-      {I CAPC0603X33N.PRT C118
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT C118
+        (CN
         1 GND
         2 2V5
-        }
-      }
-      {I CAPMP3528X210N.PRT C119
-        {CN
+        )
+      )
+      (I CAPMP3528X210N.PRT C119
+        (CN
         1 NetC119_1
         2 GND
-        }
-      }
-      {I CAPMP3528X210N.PRT C120
-        {CN
+        )
+      )
+      (I CAPMP3528X210N.PRT C120
+        (CN
         1 NetC120_1
         2 GND
-        }
-      }
-      {I CAPMP3528X210N.PRT C121
-        {CN
+        )
+      )
+      (I CAPMP3528X210N.PRT C121
+        (CN
         1 NetC121_1
         2 GND
-        }
-      }
-      {I CAPC0603X33N.PRT C122
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT C122
+        (CN
         1 DC_PLAT_RTD_B
         2 ADC_CH13_5
-        }
-      }
-      {I CAPC0603X33N.PRT C123
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT C123
+        (CN
         1 GND
         2 NetC123_2
-        }
-      }
-      {I CAPC0603X33N.PRT C124
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT C124
+        (CN
         1 GND
         2 NetC124_2
-        }
-      }
-      {I CAPC0603X33N.PRT C125
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT C125
+        (CN
         1 DC_PLAT_RTD_B
         2 ADC_CH14_5
-        }
-      }
-      {I CAPC0603X33N.PRT C126
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT C126
+        (CN
         1 DC_PLAT_RTD_B
         2 ADC_CH15_5
-        }
-      }
-      {I CAPC2012X135N.PRT C127
-        {CN
+        )
+      )
+      (I CAPC2012X135N.PRT C127
+        (CN
         1 SCA_EFUSE_PWR_1
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C128
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C128
+        (CN
         1 GND
         2 SCA_EFUSE_PWR_1
-        }
-      }
-      {I BGA196C80P14X14_1200X1200X170.PRT IC1
-        {CN
+        )
+      )
+      (I BGA196C80P14X14_1200X1200X170.PRT IC1
+        (CN
        A1 NetIC1_A1
        A2 NetIC1_A2
        A3 NetIC1_A3
@@ -752,10 +752,10 @@
       P12 EC_ADC_6
       P13 EC_ADC_3
       P14 OM45_THERMISTOR_A_1
-        }
-      }
-      {I FTSH-125-XX-XXX-DV-ES-A.PRT J1
-        {CN
+        )
+      )
+      (I FTSH-125-XX-XXX-DV-ES-A.PRT J1
+        (CN
         1 1V5
         2 GND
         3 1V5
@@ -806,20 +806,20 @@
        48 1V5
        49 GND
        50 1V5
-        }
-      }
-      {I SAMTEC_TMM-103-01-L-D-SM-P-TR.PRT J2
-        {CN
+        )
+      )
+      (I SAMTEC_TMM-103-01-L-D-SM-P-TR.PRT J2
+        (CN
         1 1V5
         2 1V5
         3 SCA_EFUSE_PWR_1
         4 MC_EFUSE_PWR_1
         5 EFUSE_3V3_PWR
         6 EFUSE_3V3_PWR
-        }
-      }
-      {I SEAF-50-01-X-08-X-RA-GP.PRT J3
-        {CN
+        )
+      )
+      (I SEAF-50-01-X-08-X-RA-GP.PRT J3
+        (CN
        A1 1V5
        A2 1V5
        A3 DC5_ELKS.GBTX_ELK_CH0_1_N
@@ -1224,10 +1224,10 @@
        W2 GND
        W3 GND
        W4 GND
-        }
-      }
-      {I SAMTEC_TMM-110-01-L-D-SM-A.PRT J4
-        {CN
+        )
+      )
+      (I SAMTEC_TMM-110-01-L-D-SM-A.PRT J4
+        (CN
         1 U_MC_CFG.CONFIGSELECT_1
         2 GND
         3 U_MC_CFG.REFCLKSEL_1
@@ -1248,10 +1248,10 @@
        18 GND
        19 U_MC_CFG.TXMODE_3SEL_1
        20 GND
-        }
-      }
-      {I SAMTEC_TMM-112-01-L-D-SM-A.PRT J5
-        {CN
+        )
+      )
+      (I SAMTEC_TMM-112-01-L-D-SM-A.PRT J5
+        (CN
         1 SCA_TCK_5
         2 SCA_TDI_5
         3 SCA_TDO_5
@@ -1276,10 +1276,10 @@
        22 GND
        23 DAC_3_5
        24 GND
-        }
-      }
-      {I LSHM-130-XX.X-XX-DV-A-S.PRT J6
-        {CN
+        )
+      )
+      (I LSHM-130-XX.X-XX-DV-A-S.PRT J6
+        (CN
         1 2V5
         2 U1_EFUSEPROGPLS_1
         3 U1_GTX_1_N
@@ -1342,10 +1342,10 @@
        60 2V5
        G1 GND
        G2 GND
-        }
-      }
-      {I LSHM-130-XX.X-XX-DV-A-S.PRT J7
-        {CN
+        )
+      )
+      (I LSHM-130-XX.X-XX-DV-A-S.PRT J7
+        (CN
         1 2V5
         2 U_SCA_EFUSEPROGPLS_1
         3 MC_GTX_1_N
@@ -1408,10 +1408,10 @@
        60 2V5
        G1 GND
        G2 GND
-        }
-      }
-      {I SAMTEC_TMM-112-01-L-D-SM-A.PRT J8
-        {CN
+        )
+      )
+      (I SAMTEC_TMM-112-01-L-D-SM-A.PRT J8
+        (CN
         1 DC_PLAT_RTD_A_1
         2 OM45_THERMISTOR_A_1
         3 EC_ADC_2
@@ -1436,10 +1436,10 @@
        22 ADC_CH14_5
        23 DC_PLAT_RTD_B
        24 ADC_CH15_5
-        }
-      }
-      {I SAMTEC_TMM-112-01-L-D-SM-A.PRT J9
-        {CN
+        )
+      )
+      (I SAMTEC_TMM-112-01-L-D-SM-A.PRT J9
+        (CN
         1 OM23_THERMISTOR_A_1
         2 OM61_THERMISTOR_A_1
         3 OMMC_THERMISTOR_A_1
@@ -1464,20 +1464,20 @@
        22 ADC_CH30_5
        23 DC_PLAT_RTD_B
        24 DC_PLAT_RTD_B
-        }
-      }
-      {I SAMTEC_TMM-103-01-L-D-SM-P-TR.PRT J10
-        {CN
+        )
+      )
+      (I SAMTEC_TMM-103-01-L-D-SM-P-TR.PRT J10
+        (CN
         1 NetJ10_1
         2 NetJ10_2
         3 GND
         4 NetJ10_4
         5 GND
         6 NetJ10_6
-        }
-      }
-      {I SAMTEC_TMM-110-01-L-D-SM-A.PRT J11
-        {CN
+        )
+      )
+      (I SAMTEC_TMM-110-01-L-D-SM-A.PRT J11
+        (CN
         1 U1_DC_CFG.CONFIGSELECT_1
         2 GND
         3 U1_DC_CFG.REFCLKSEL_1
@@ -1498,46 +1498,46 @@
        18 GND
        19 U1_DC_CFG.TXMODE_3SEL_1
        20 GND
-        }
-      }
-      {I SAMTEC_TMM-103-01-L-D-SM-P-TR.PRT J12
-        {CN
+        )
+      )
+      (I SAMTEC_TMM-103-01-L-D-SM-P-TR.PRT J12
+        (CN
         1 EC_RESET_GPIO_6_1
         2 DC_RESETB_1
         3 EC_HYB_i2C_SCL_6_1
         4 DC_I2C_SCL_1
         5 EC_HYB_i2C_SDA_6_1
         6 DC_I2C_SDA_1
-        }
-      }
-      {I SAMTEC_TMM-103-01-L-D-SM-P-TR.PRT J13
-        {CN
+        )
+      )
+      (I SAMTEC_TMM-103-01-L-D-SM-P-TR.PRT J13
+        (CN
         1 1V5
         2 1V5
         3 DC_EFUSE_PWR
         4 DC_EFUSE_PWR
         5 EFUSE_3V3_PWR
         6 EFUSE_3V3_PWR
-        }
-      }
-      {I HIROSE_U.FL-R-SMT-1(10).PRT J14
-        {CN
+        )
+      )
+      (I HIROSE_U.FL-R-SMT-1(10).PRT J14
+        (CN
         1 DelayLine_2_P
         2 GND
-        }
-      }
-      {I SAMTEC_TMM-103-01-L-D-SM-P-TR.PRT J15
-        {CN
+        )
+      )
+      (I SAMTEC_TMM-103-01-L-D-SM-P-TR.PRT J15
+        (CN
         1 U1_DC_TST.DF_AUTORESET_TESTINJ_1
         2 GND
         3 NetJ15_3
         4 NetJ15_4
         5 GND
         6 U4_DC_TST.DF_AUTORESET_TESTINJ_1
-        }
-      }
-      {I LSHM-130-XX.X-XX-DV-A-S.PRT J16
-        {CN
+        )
+      )
+      (I LSHM-130-XX.X-XX-DV-A-S.PRT J16
+        (CN
         1 2V5
         2 U3_EFUSEPROGPLS_1
         3 U3_GTX_1_N
@@ -1600,10 +1600,10 @@
        60 2V5
        G1 GND
        G2 GND
-        }
-      }
-      {I LSHM-130-XX.X-XX-DV-A-S.PRT J17
-        {CN
+        )
+      )
+      (I LSHM-130-XX.X-XX-DV-A-S.PRT J17
+        (CN
         1 2V5
         2 U5_EFUSEPROGPLS_1
         3 U4_GTX_1_N
@@ -1666,1106 +1666,1106 @@
        60 2V5
        G1 GND
        G2 GND
-        }
-      }
-      {I SAMTEC_TMM-103-01-L-D-SM-P-TR.PRT J18
-        {CN
+        )
+      )
+      (I SAMTEC_TMM-103-01-L-D-SM-P-TR.PRT J18
+        (CN
         1 U_MC_TST.DF_AUTORESET_TESTINJ_1
         2 GND
         3 NetJ18_3
         4 NetJ18_4
         5 GND
         6 U2_DC_TST.DF_AUTORESET_TESTINJ_1
-        }
-      }
-      {I HIROSE_U.FL-R-SMT-1(10).PRT J19
-        {CN
+        )
+      )
+      (I HIROSE_U.FL-R-SMT-1(10).PRT J19
+        (CN
         1 RCLK_IN_1_N
         2 GND
-        }
-      }
-      {I HIROSE_U.FL-R-SMT-1(10).PRT J20
-        {CN
+        )
+      )
+      (I HIROSE_U.FL-R-SMT-1(10).PRT J20
+        (CN
         1 RCLK_IN_1_P
         2 GND
-        }
-      }
-      {I HIROSE_U.FL-R-SMT-1(10).PRT J21
-        {CN
+        )
+      )
+      (I HIROSE_U.FL-R-SMT-1(10).PRT J21
+        (CN
         1 DelayLine_2_P
         2 GND
-        }
-      }
-      {I HIROSE_U.FL-R-SMT-1(10).PRT J22
-        {CN
+        )
+      )
+      (I HIROSE_U.FL-R-SMT-1(10).PRT J22
+        (CN
         1 DelayLine_2_N
         2 GND
-        }
-      }
-      {I HIROSE_U.FL-R-SMT-1(10).PRT J23
-        {CN
+        )
+      )
+      (I HIROSE_U.FL-R-SMT-1(10).PRT J23
+        (CN
         1 DelayLine_2_N
         2 GND
-        }
-      }
-      {I LQW31HN23NJ03L_Murata_coil.PRT L1
-        {CN
+        )
+      )
+      (I LQW31HN23NJ03L_Murata_coil.PRT L1
+        (CN
         1 1V5
         2 GBT_AVDD_PS
-        }
-      }
-      {I LED_DIALIGHT_597-2111-407F.PRT LD1
-        {CN
+        )
+      )
+      (I LED_DIALIGHT_597-2111-407F.PRT LD1
+        (CN
         1 NetLD1_1
         2 NetLD1_2
-        }
-      }
-      {I MTG320.PRT NonPlated1
-        {CN
+        )
+      )
+      (I MTG320.PRT NonPlated1
+        (CN
         1 NetNonPlated1_1
-        }
-      }
-      {I MTG320.PRT NonPlated2
-        {CN
+        )
+      )
+      (I MTG320.PRT NonPlated2
+        (CN
         1 NetNonPlated2_1
-        }
-      }
-      {I MTG320.PRT NonPlated3
-        {CN
+        )
+      )
+      (I MTG320.PRT NonPlated3
+        (CN
         1 NetNonPlated3_1
-        }
-      }
-      {I MTG320.PRT NonPlated4
-        {CN
+        )
+      )
+      (I MTG320.PRT NonPlated4
+        (CN
         1 NetNonPlated4_1
-        }
-      }
-      {I MTG320.PRT NonPlated5
-        {CN
+        )
+      )
+      (I MTG320.PRT NonPlated5
+        (CN
         1 NetNonPlated5_1
-        }
-      }
-      {I MTG320.PRT NonPlated6
-        {CN
+        )
+      )
+      (I MTG320.PRT NonPlated6
+        (CN
         1 NetNonPlated6_1
-        }
-      }
-      {I MTG320.PRT NonPlated7
-        {CN
+        )
+      )
+      (I MTG320.PRT NonPlated7
+        (CN
         1 NetNonPlated7_1
-        }
-      }
-      {I MTG320.PRT NonPlated8
-        {CN
+        )
+      )
+      (I MTG320.PRT NonPlated8
+        (CN
         1 NetNonPlated8_1
-        }
-      }
-      {I MTG320.PRT NonPlated9
-        {CN
+        )
+      )
+      (I MTG320.PRT NonPlated9
+        (CN
         1 NetNonPlated9_1
-        }
-      }
-      {I MTG320.PRT NonPlated10
-        {CN
+        )
+      )
+      (I MTG320.PRT NonPlated10
+        (CN
         1 NetNonPlated10_1
-        }
-      }
-      {I RESC1005X40N.PRT R1
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R1
+        (CN
         1 NetJ10_1
         2 1V5
-        }
-      }
-      {I RESC1005X40N.PRT R2
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R2
+        (CN
         1 NetJ10_2
         2 1V5
-        }
-      }
-      {I RESC1005X40N.PRT R3
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R3
+        (CN
         1 NetJ10_6
         2 1V5
-        }
-      }
-      {I RESC1005X40N.PRT R4
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R4
+        (CN
         1 SLVS_ONE_3_N
         2 SLVS_ONE_3_P
-        }
-      }
-      {I RESC1005X40N.PRT R5
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R5
+        (CN
         1 NetJ10_4
         2 1V5
-        }
-      }
-      {I RESC1005X40N.PRT R6
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R6
+        (CN
         1 SCA_PRI_CLK_3_P
         2 SCA_PRI_CLK_3_N
-        }
-      }
-      {I RESC1005X40N.PRT R7
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R7
+        (CN
         1 SCA_PRI_DAT_OUT_3_P
         2 SCA_PRI_DAT_OUT_3_N
-        }
-      }
-      {I RESC1005X40N.PRT R8
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R8
+        (CN
         1 EC_SEC_CLK_ELK_1_P
         2 EC_SEC_CLK_ELK_1_N
-        }
-      }
-      {I RESC1005X40N.PRT R9
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R9
+        (CN
         1 EC_SEC_DIN_ELK_1_P
         2 EC_SEC_DIN_ELK_1_N
-        }
-      }
-      {I RESC1005X40N.PRT R10
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R10
+        (CN
         1 U1_DC_CFG.CONFIGSELECT_1
         2 1V5
-        }
-      }
-      {I RESC1005X40N.PRT R11
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R11
+        (CN
         1 EC_RESET_GPIO_0_1
         2 NetIC1_B13
-        }
-      }
-      {I RESC1005X40N.PRT R12
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R12
+        (CN
         1 EC_RESET_GPIO_1_1
         2 NetIC1_A13
-        }
-      }
-      {I RESC1005X40N.PRT R13
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R13
+        (CN
         1 EC_RESET_GPIO_2_1
         2 NetIC1_B12
-        }
-      }
-      {I RESC1005X40N.PRT R14
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R14
+        (CN
         1 EC_RESET_GPIO_3_1
         2 NetIC1_A12
-        }
-      }
-      {I RESC1005X40N.PRT R15
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R15
+        (CN
         1 EC_RESET_GPIO_4_1
         2 NetIC1_C11
-        }
-      }
-      {I RESC1005X40N.PRT R16
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R16
+        (CN
         1 EC_RESET_GPIO_5_1
         2 NetIC1_B11
-        }
-      }
-      {I RESC1005X40N.PRT R17
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R17
+        (CN
         1 EC_RESET_GPIO_6_1
         2 NetIC1_A11
-        }
-      }
-      {I RESC1005X40N.PRT R18
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R18
+        (CN
         1 1V5
         2 ADC_CH13_5
-        }
-      }
-      {I RESC1005X40N.PRT R19
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R19
+        (CN
         1 EC_ADC_REF13
         2 ADC_CH13_5
-        }
-      }
-      {I RESC1005X40N.PRT R20
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R20
+        (CN
         1 DC_PLAT_RTD_B
         2 ADC_CH13_5
-        }
-      }
-      {I RESC1005X40N.PRT R21
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R21
+        (CN
         1 EC_ADC_REF14
         2 ADC_CH14_5
-        }
-      }
-      {I RESC1005X40N.PRT R22
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R22
+        (CN
         1 DC_PLAT_RTD_B
         2 ADC_CH14_5
-        }
-      }
-      {I RESC1005X40N.PRT R23
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R23
+        (CN
         1 1V5
         2 1V5_SENSE_POS_2
-        }
-      }
-      {I RESC1005X40N.PRT R24
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R24
+        (CN
         1 1V5_SENSE_NEG_2
         2 GND
-        }
-      }
-      {I RESC1005X40N.PRT R25
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R25
+        (CN
         1 EC_ADC_REF15
         2 ADC_CH15_5
-        }
-      }
-      {I RESC1005X40N.PRT R26
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R26
+        (CN
         1 DC_PLAT_RTD_B
         2 ADC_CH15_5
-        }
-      }
-      {I RESC1005X40N.PRT R27
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R27
+        (CN
         1 SLVS_ONE_3_P
         2 1V5
-        }
-      }
-      {I RESC1005X40N.PRT R28
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R28
+        (CN
         1 GND
         2 SLVS_ONE_3_N
-        }
-      }
-      {I RESC1005X40N.PRT R32
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R32
+        (CN
         1 GND
         2 U_SCA_EFUSEPROGPLS_1
-        }
-      }
-      {I RESC1005X40N.PRT R33
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R33
+        (CN
         1 U_MC_CFG.REFCLKSEL_1
         2 1V5
-        }
-      }
-      {I RESC1005X40N.PRT R34
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R34
+        (CN
         1 U_MC_CFG.RXLOCK_0MODE_1
         2 1V5
-        }
-      }
-      {I RESC1005X40N.PRT R35
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R35
+        (CN
         1 U_MC_CFG.RXLOCK_1MODE_1
         2 1V5
-        }
-      }
-      {I RESC1005X40N.PRT R36
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R36
+        (CN
         1 U_MC_CFG.STATEOVERRIDE_1
         2 1V5
-        }
-      }
-      {I RESC1005X40N.PRT R37
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R37
+        (CN
         1 U_MC_CFG.TXMODE_0SEL_1
         2 1V5
-        }
-      }
-      {I RESC1005X40N.PRT R38
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R38
+        (CN
         1 U_MC_CFG.TXMODE_1SEL_1
         2 1V5
-        }
-      }
-      {I RESC1005X40N.PRT R39
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R39
+        (CN
         1 U_MC_CFG.TXMODE_2SEL_1
         2 1V5
-        }
-      }
-      {I RESC1005X40N.PRT R40
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R40
+        (CN
         1 U_MC_CFG.TXMODE_3SEL_1
         2 1V5
-        }
-      }
-      {I RESC1005X40N.PRT R41
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R41
+        (CN
         1 U_MC_CFG.CONFIGSELECT_1
         2 1V5
-        }
-      }
-      {I RESC1005X40N.PRT R42
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R42
+        (CN
         1 U1_DC_CFG.REFCLKSEL_1
         2 1V5
-        }
-      }
-      {I RESC1005X40N.PRT R44
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R44
+        (CN
         1 U1_DC_CFG.RXLOCK_0MODE_1
         2 1V5
-        }
-      }
-      {I RESC1005X40N.PRT R45
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R45
+        (CN
         1 DC_I2C_SDA_1
         2 1V5
-        }
-      }
-      {I RESC1005X40N.PRT R46
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R46
+        (CN
         1 DC_I2C_SCL_1
         2 1V5
-        }
-      }
-      {I RESC1005X40N.PRT R47
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R47
+        (CN
         1 DC_RESETB_1
         2 1V5
-        }
-      }
-      {I RESC1005X40N.PRT R49
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R49
+        (CN
         1 MC_RESETB_1
         2 NetC72_2
-        }
-      }
-      {I RESC1005X40N.PRT R55
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R55
+        (CN
         1 U1_DC_CFG.RXLOCK_1MODE_1
         2 1V5
-        }
-      }
-      {I RESC1005X40N.PRT R56
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R56
+        (CN
         1 U1_DC_CFG.STATEOVERRIDE_1
         2 1V5
-        }
-      }
-      {I RESC1005X40N.PRT R57
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R57
+        (CN
         1 U1_DC_CFG.TXMODE_0SEL_1
         2 1V5
-        }
-      }
-      {I RESC1005X40N.PRT R58
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R58
+        (CN
         1 U1_DC_CFG.TXMODE_1SEL_1
         2 1V5
-        }
-      }
-      {I RESC1005X40N.PRT R76
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R76
+        (CN
         1 NetC72_2
         2 1V5
-        }
-      }
-      {I RESC1005X40N.PRT R77
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R77
+        (CN
         1 U1_DC_CFG.TXMODE_2SEL_1
         2 1V5
-        }
-      }
-      {I RESC1005X40N.PRT R78
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R78
+        (CN
         1 U1_DC_CFG.TXMODE_3SEL_1
         2 1V5
-        }
-      }
-      {I RESC5226X80N.PRT R79
-        {CN
+        )
+      )
+      (I RESC5226X80N.PRT R79
+        (CN
         1 1V5
         2 GBT_AVDD_PS
-        }
-      }
-      {I RESC1005X40N.PRT R80
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R80
+        (CN
         1 1V5
         2 ADC_CH14_5
-        }
-      }
-      {I RESC1005X40N.PRT R81
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R81
+        (CN
         1 1V5
         2 ADC_CH15_5
-        }
-      }
-      {I RESC1005X40N.PRT R82
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R82
+        (CN
         1 DC_PLAT_RTD_A_1
         2 1V5
-        }
-      }
-      {I RESC1005X40N.PRT R83
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R83
+        (CN
         1 EC_ADC_2
         2 1V5
-        }
-      }
-      {I RESC2012X60N.PRT R84
-        {CN
+        )
+      )
+      (I RESC2012X60N.PRT R84
+        (CN
         1 DC_PLAT_RTD_B
         2 GND
-        }
-      }
-      {I RESC1005X40N.PRT R85
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R85
+        (CN
         1 DC_PLAT_RTD_B
         2 OM23_THERMISTOR_A_1
-        }
-      }
-      {I RESC1005X40N.PRT R86
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R86
+        (CN
         1 DC_PLAT_RTD_B
         2 OM61_THERMISTOR_A_1
-        }
-      }
-      {I RESC5226X80N.PRT R89
-        {CN
+        )
+      )
+      (I RESC5226X80N.PRT R89
+        (CN
         1 NetC119_1
         2 1V5
-        }
-      }
-      {I RESC5226X80N.PRT R90
-        {CN
+        )
+      )
+      (I RESC5226X80N.PRT R90
+        (CN
         1 NetC120_1
         2 1V5
-        }
-      }
-      {I RESC5226X80N.PRT R91
-        {CN
+        )
+      )
+      (I RESC5226X80N.PRT R91
+        (CN
         1 NetC121_1
         2 2V5
-        }
-      }
-      {I RESC1005X40N.PRT R92
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R92
+        (CN
         1 SLVS_HIGH_1_P
         2 1V5
-        }
-      }
-      {I RESC1005X40N.PRT R93
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R93
+        (CN
         1 SLVS_HIGH_1_N
         2 SLVS_HIGH_1_P
-        }
-      }
-      {I RESC1005X40N.PRT R94
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R94
+        (CN
         1 GND
         2 SLVS_HIGH_1_N
-        }
-      }
-      {I RESC1005X40N.PRT R95
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R95
+        (CN
         1 EC_ADC_3
         2 1V5
-        }
-      }
-      {I RESC1005X40N.PRT R96
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R96
+        (CN
         1 DC_PLAT_RTD_B
         2 ADC_CH11_5
-        }
-      }
-      {I RESC1005X40N.PRT R97
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R97
+        (CN
         1 DC_PLAT_RTD_B
         2 ADC_CH12_5
-        }
-      }
-      {I RESC1005X40N.PRT R98
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R98
+        (CN
         1 NetC123_2
         2 SCA_TDI_5
-        }
-      }
-      {I RESC1005X40N.PRT R99
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R99
+        (CN
         1 GND
         2 SCA_TDI_5
-        }
-      }
-      {I RESC1005X40N.PRT R100
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R100
+        (CN
         1 NetC124_2
         2 SPI_MISI_5
-        }
-      }
-      {I RESC1005X40N.PRT R101
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R101
+        (CN
         1 GND
         2 SPI_MISI_5
-        }
-      }
-      {I RESC1005X40N.PRT R102
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R102
+        (CN
         1 2V5
         2 ADC_CH24_5
-        }
-      }
-      {I RESC1005X40N.PRT R103
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R103
+        (CN
         1 1V5
         2 ADC_CH25_5
-        }
-      }
-      {I RESC1005X40N.PRT R104
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R104
+        (CN
         1 DC_PLAT_RTD_B
         2 ADC_CH24_5
-        }
-      }
-      {I RESC1005X40N.PRT R105
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R105
+        (CN
         1 DC_PLAT_RTD_B
         2 ADC_CH25_5
-        }
-      }
-      {I RESC1005X40N.PRT R106
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R106
+        (CN
         1 EC_ADC_4
         2 1V5
-        }
-      }
-      {I RESC1005X40N.PRT R107
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R107
+        (CN
         1 DC_PLAT_RTD_B
         2 OM45_THERMISTOR_A_1
-        }
-      }
-      {I RESC1005X40N.PRT R108
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R108
+        (CN
         1 EC_ADC_5
         2 1V5
-        }
-      }
-      {I RESC1005X40N.PRT R109
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R109
+        (CN
         1 EC_ADC_6
         2 1V5
-        }
-      }
-      {I RESC1005X40N.PRT R110
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R110
+        (CN
         1 EC_ADC_7
         2 1V5
-        }
-      }
-      {I RESC1005X40N.PRT R111
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R111
+        (CN
         1 ADC_CH8_5
         2 1V5
-        }
-      }
-      {I RESC1005X40N.PRT R112
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R112
+        (CN
         1 ADC_CH9_5
         2 1V5
-        }
-      }
-      {I RESC1005X40N.PRT R113
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R113
+        (CN
         1 ADC_CH10_5
         2 1V5
-        }
-      }
-      {I RESC1005X40N.PRT R114
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R114
+        (CN
         1 ADC_CH12_PLATINUM_PU_5
         2 1V5
-        }
-      }
-      {I RESC1005X40N.PRT R115
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R115
+        (CN
         1 ADC_CH11_PLATINUM_PU_5
         2 1V5
-        }
-      }
-      {I RESC1005X40N.PRT R116
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R116
+        (CN
         1 DC_PLAT_RTD_B
         2 DC_PLAT_RTD_A_1
-        }
-      }
-      {I RESC1005X40N.PRT R117
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R117
+        (CN
         1 DC_PLAT_RTD_B
         2 EC_ADC_2
-        }
-      }
-      {I RESC1005X40N.PRT R118
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R118
+        (CN
         1 DC_PLAT_RTD_B
         2 EC_ADC_3
-        }
-      }
-      {I RESC1005X40N.PRT R119
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R119
+        (CN
         1 DC_PLAT_RTD_B
         2 EC_ADC_4
-        }
-      }
-      {I RESC1005X40N.PRT R120
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R120
+        (CN
         1 DC_PLAT_RTD_B
         2 EC_ADC_5
-        }
-      }
-      {I RESC1005X40N.PRT R121
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R121
+        (CN
         1 DC_PLAT_RTD_B
         2 EC_ADC_6
-        }
-      }
-      {I RESC1005X40N.PRT R122
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R122
+        (CN
         1 DC_PLAT_RTD_B
         2 EC_ADC_7
-        }
-      }
-      {I RESC1005X40N.PRT R123
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R123
+        (CN
         1 DC_PLAT_RTD_B
         2 ADC_CH8_5
-        }
-      }
-      {I RESC1005X40N.PRT R124
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R124
+        (CN
         1 DC_PLAT_RTD_B
         2 ADC_CH9_5
-        }
-      }
-      {I RESC1005X40N.PRT R125
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R125
+        (CN
         1 DC_PLAT_RTD_B
         2 ADC_CH10_5
-        }
-      }
-      {I RESC1005X40N.PRT R126
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R126
+        (CN
         1 DC_PLAT_RTD_B
         2 ADC_CH12_PLATINUM_PU_5
-        }
-      }
-      {I RESC1005X40N.PRT R127
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R127
+        (CN
         1 DC_PLAT_RTD_B
         2 ADC_CH11_PLATINUM_PU_5
-        }
-      }
-      {I RESC1005X40N.PRT R128
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R128
+        (CN
         1 DC_PLAT_RTD_B
         2 OMMC_THERMISTOR_A_1
-        }
-      }
-      {I RESC1005X40N.PRT R129
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R129
+        (CN
         1 NetLD1_2
         2 2V5
-        }
-      }
-      {I RESC1005X40N.PRT R130
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R130
+        (CN
         1 1v5_senseN_1
         2 GND
-        }
-      }
-      {I RESC1005X40N.PRT R131
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R131
+        (CN
         1 NetLD1_1
         2 2V5
-        }
-      }
-      {I RESC1005X40N.PRT R132
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R132
+        (CN
         1 DC_PLAT_RTD_B
         2 ADC_CH19_5
-        }
-      }
-      {I RESC1005X40N.PRT R133
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R133
+        (CN
         1 DC_PLAT_RTD_B
         2 ADC_CH20_5
-        }
-      }
-      {I RESC1005X40N.PRT R134
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R134
+        (CN
         1 DC_PLAT_RTD_B
         2 ADC_CH21_5
-        }
-      }
-      {I RESC1005X40N.PRT R135
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R135
+        (CN
         1 DC_PLAT_RTD_B
         2 ADC_CH22_5
-        }
-      }
-      {I RESC1005X40N.PRT R136
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R136
+        (CN
         1 DC_PLAT_RTD_B
         2 ADC_CH23_5
-        }
-      }
-      {I RESC1005X40N.PRT R137
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R137
+        (CN
         1 DC_PLAT_RTD_B
         2 ADC_CH26_5
-        }
-      }
-      {I RESC1005X40N.PRT R138
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R138
+        (CN
         1 DC_PLAT_RTD_B
         2 ADC_CH27_5
-        }
-      }
-      {I RESC1005X40N.PRT R139
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R139
+        (CN
         1 DC_PLAT_RTD_B
         2 ADC_CH28_5
-        }
-      }
-      {I RESC1005X40N.PRT R140
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R140
+        (CN
         1 DC_PLAT_RTD_B
         2 ADC_CH29_5
-        }
-      }
-      {I RESC1005X40N.PRT R141
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R141
+        (CN
         1 DC_PLAT_RTD_B
         2 ADC_CH30_5
-        }
-      }
-      {I RESC1005X40N.PRT R142
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R142
+        (CN
         1 GND
         2 2v5_senseN_1
-        }
-      }
-      {I RESC1005X40N.PRT R143
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R143
+        (CN
         1 GND
         2 NetR143_2
-        }
-      }
-      {I RESC1005X40N.PRT R144
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R144
+        (CN
         1 2V5
         2 2v5_senseP_1
-        }
-      }
-      {I RESC1005X40N.PRT R145
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R145
+        (CN
         1 NetR143_2
         2 1V5
-        }
-      }
-      {I RESC1005X40N.PRT R146
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R146
+        (CN
         1 1V5
         2 1v5_senseP_1
-        }
-      }
-      {I THERMC3216X130N.PRT RT1
-        {CN
+        )
+      )
+      (I THERMC3216X130N.PRT RT1
+        (CN
         1 DC_PLAT_RTD_A_1
         2 DC_PLAT_RTD_B
-        }
-      }
-      {I SOT95P230X110-3N.PRT T1
-        {CN
+        )
+      )
+      (I SOT95P230X110-3N.PRT T1
+        (CN
         1 NetR143_2
         2 GND
         3 NetLD1_1
-        }
-      }
-      {I TPS127.PRT TP3
-        {CN
+        )
+      )
+      (I TPS127.PRT TP3
+        (CN
         1 SLVS_HIGH_1_P
-        }
-      }
-      {I TPS127.PRT TP4
-        {CN
+        )
+      )
+      (I TPS127.PRT TP4
+        (CN
         1 SLVS_HIGH_1_N
-        }
-      }
-      {I TPS127.PRT TP6
-        {CN
+        )
+      )
+      (I TPS127.PRT TP6
+        (CN
         1 GND
-        }
-      }
-      {I CAPC2012X135N.PRT U1_C21
-        {CN
+        )
+      )
+      (I CAPC2012X135N.PRT U1_C21
+        (CN
         1 1V5
         2 GND
-        }
-      }
-      {I CAPC2012X135N.PRT U1_C22
-        {CN
+        )
+      )
+      (I CAPC2012X135N.PRT U1_C22
+        (CN
         1 1V5
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT U1_C23
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U1_C23
+        (CN
         1 GND
         2 1V5
-        }
-      }
-      {I CAPC1005X55N.PRT U1_C24
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U1_C24
+        (CN
         1 GND
         2 1V5
-        }
-      }
-      {I CAPC1005X55N.PRT U1_C25
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U1_C25
+        (CN
         1 GND
         2 1V5
-        }
-      }
-      {I CAPC1005X55N.PRT U1_C26
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U1_C26
+        (CN
         1 GND
         2 1V5
-        }
-      }
-      {I CAPC1005X55N.PRT U1_C27
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U1_C27
+        (CN
         1 GND
         2 1V5
-        }
-      }
-      {I CAPC1005X55N.PRT U1_C28
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U1_C28
+        (CN
         1 GND
         2 1V5
-        }
-      }
-      {I CAPC1005X55N.PRT U1_C29
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U1_C29
+        (CN
         1 GND
         2 1V5
-        }
-      }
-      {I CAPC1005X55N.PRT U1_C30
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U1_C30
+        (CN
         1 GND
         2 1V5
-        }
-      }
-      {I CAPC0603X33N.PRT U1_C31
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT U1_C31
+        (CN
         1 GND
         2 1V5
-        }
-      }
-      {I CAPC0603X33N.PRT U1_C32
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT U1_C32
+        (CN
         1 GND
         2 1V5
-        }
-      }
-      {I CAPC0603X33N.PRT U1_C33
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT U1_C33
+        (CN
         1 GND
         2 1V5
-        }
-      }
-      {I CAPC0603X33N.PRT U1_C34
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT U1_C34
+        (CN
         1 GND
         2 1V5
-        }
-      }
-      {I CAPC0603X33N.PRT U1_C35
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT U1_C35
+        (CN
         1 GND
         2 1V5
-        }
-      }
-      {I CAPC0603X33N.PRT U1_C36
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT U1_C36
+        (CN
         1 GND
         2 1V5
-        }
-      }
-      {I CAPC2012X135N.PRT U1_C37
-        {CN
+        )
+      )
+      (I CAPC2012X135N.PRT U1_C37
+        (CN
         1 U1_GBTX_VDD_SERDES
         2 GND
-        }
-      }
-      {I CAPC2012X135N.PRT U1_C38
-        {CN
+        )
+      )
+      (I CAPC2012X135N.PRT U1_C38
+        (CN
         1 U1_GBTX_VDD_SERDES
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT U1_C39
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U1_C39
+        (CN
         1 GND
         2 U1_GBTX_VDD_SERDES
-        }
-      }
-      {I CAPC1005X55N.PRT U1_C40
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U1_C40
+        (CN
         1 GND
         2 U1_GBTX_VDD_SERDES
-        }
-      }
-      {I CAPC1005X55N.PRT U1_C41
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U1_C41
+        (CN
         1 GND
         2 U1_GBTX_VDD_SERDES
-        }
-      }
-      {I CAPC1005X55N.PRT U1_C42
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U1_C42
+        (CN
         1 GND
         2 U1_GBTX_VDD_SERDES
-        }
-      }
-      {I CAPC1005X55N.PRT U1_C43
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U1_C43
+        (CN
         1 GND
         2 U1_GBTX_VDD_SERDES
-        }
-      }
-      {I CAPC1005X55N.PRT U1_C44
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U1_C44
+        (CN
         1 GND
         2 U1_GBTX_VDD_SERDES
-        }
-      }
-      {I CAPC1005X55N.PRT U1_C45
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U1_C45
+        (CN
         1 GND
         2 U1_GBTX_VDD_SERDES
-        }
-      }
-      {I CAPC1005X55N.PRT U1_C46
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U1_C46
+        (CN
         1 GND
         2 U1_GBTX_VDD_SERDES
-        }
-      }
-      {I CAPC0603X33N.PRT U1_C47
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT U1_C47
+        (CN
         1 GND
         2 U1_GBTX_VDD_SERDES
-        }
-      }
-      {I CAPC0603X33N.PRT U1_C48
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT U1_C48
+        (CN
         1 GND
         2 U1_GBTX_VDD_SERDES
-        }
-      }
-      {I CAPC0603X33N.PRT U1_C49
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT U1_C49
+        (CN
         1 GND
         2 U1_GBTX_VDD_SERDES
-        }
-      }
-      {I CAPC0603X33N.PRT U1_C50
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT U1_C50
+        (CN
         1 GND
         2 U1_GBTX_VDD_SERDES
-        }
-      }
-      {I CAPC0603X33N.PRT U1_C51
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT U1_C51
+        (CN
         1 GND
         2 U1_GBTX_VDD_SERDES
-        }
-      }
-      {I CAPC0603X33N.PRT U1_C52
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT U1_C52
+        (CN
         1 GND
         2 U1_GBTX_VDD_SERDES
-        }
-      }
-      {I CAPC2012X135N.PRT U1_C53
-        {CN
+        )
+      )
+      (I CAPC2012X135N.PRT U1_C53
+        (CN
         1 U1_GBTX_VDDP_PS
         2 GND
-        }
-      }
-      {I CAPC2012X135N.PRT U1_C54
-        {CN
+        )
+      )
+      (I CAPC2012X135N.PRT U1_C54
+        (CN
         1 U1_GBTX_VDDP_PS
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT U1_C55
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U1_C55
+        (CN
         1 GND
         2 U1_GBTX_VDDP_PS
-        }
-      }
-      {I CAPC1005X55N.PRT U1_C56
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U1_C56
+        (CN
         1 GND
         2 U1_GBTX_VDDP_PS
-        }
-      }
-      {I CAPC1005X55N.PRT U1_C57
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U1_C57
+        (CN
         1 GND
         2 U1_GBTX_VDDP_PS
-        }
-      }
-      {I CAPC0603X33N.PRT U1_C58
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT U1_C58
+        (CN
         1 GND
         2 U1_GBTX_VDDP_PS
-        }
-      }
-      {I CAPC0603X33N.PRT U1_C59
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT U1_C59
+        (CN
         1 GND
         2 U1_GBTX_VDDP_PS
-        }
-      }
-      {I CAPC0603X33N.PRT U1_C60
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT U1_C60
+        (CN
         1 GND
         2 U1_GBTX_VDDP_PS
-        }
-      }
-      {I CAPC0603X33N.PRT U1_C93
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT U1_C93
+        (CN
         1 GND
         2 1V5
-        }
-      }
-      {I CAPC1005X55N.PRT U1_C94
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U1_C94
+        (CN
         1 GND
         2 1V5
-        }
-      }
-      {I CAPC2012X135N.PRT U1_C129
-        {CN
+        )
+      )
+      (I CAPC2012X135N.PRT U1_C129
+        (CN
         1 DC_EFUSE_PWR
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT U1_C130
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U1_C130
+        (CN
         1 GND
         2 DC_EFUSE_PWR
-        }
-      }
-      {I CERN_GBTX ASIC_V0.1.PRT U1_IC2
-        {CN
+        )
+      )
+      (I CERN_GBTX ASIC_V0.1.PRT U1_IC2
+        (CN
        A1 NetU1_IC2_A1
        A2 NetU1_IC2_A2
        A3 NetU1_IC2_A3
@@ -3166,475 +3166,475 @@
       Y18 NetU1_IC2_Y18
       Y19 NetU1_IC2_Y19
       Y20 NetU1_IC2_Y20
-        }
-      }
-      {I LQW31HN23NJ03L_Murata_coil.PRT U1_L2
-        {CN
+        )
+      )
+      (I LQW31HN23NJ03L_Murata_coil.PRT U1_L2
+        (CN
         1 1V5
         2 U1_GBTX_VDD_SERDES
-        }
-      }
-      {I LQW31HN23NJ03L_Murata_coil.PRT U1_L3
-        {CN
+        )
+      )
+      (I LQW31HN23NJ03L_Murata_coil.PRT U1_L3
+        (CN
         1 1V5
         2 U1_GBTX_VDDP_PS
-        }
-      }
-      {I RESC1005X40N.PRT U1_R29
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U1_R29
+        (CN
         1 U1_SLVS_ONE_P
         2 1V5
-        }
-      }
-      {I RESC1005X40N.PRT U1_R30
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U1_R30
+        (CN
         1 U1_SLVS_ONE_N
         2 U1_SLVS_ONE_P
-        }
-      }
-      {I RESC1005X40N.PRT U1_R31
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U1_R31
+        (CN
         1 GND
         2 U1_SLVS_ONE_N
-        }
-      }
-      {I RESC1005X40N.PRT U1_R43
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U1_R43
+        (CN
         1 GND
         2 U1_EFUSEPROGPLS_1
-        }
-      }
-      {I RESC1005X40N.PRT U1_R48
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U1_R48
+        (CN
         1 NetU1_IC2_K10
         2 U1_DC_TST.TESTOUTPUT_1
-        }
-      }
-      {I RESC1005X40N.PRT U1_R50
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U1_R50
+        (CN
         1 U1_LDSCL_1
         2 1V5
-        }
-      }
-      {I RESC1005X40N.PRT U1_R51
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U1_R51
+        (CN
         1 U1_LDSDA_1
         2 1V5
-        }
-      }
-      {I RESC1005X40N.PRT U1_R52
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U1_R52
+        (CN
         1 NetU1_IC2_L13
         2 U1_DC_TST.TX_RDY_1
-        }
-      }
-      {I RESC1005X40N.PRT U1_R53
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U1_R53
+        (CN
         1 U1_DC_TST.RX_RDY_1
         2 NetU1_IC2_N10
-        }
-      }
-      {I RESC1005X40N.PRT U1_R54
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U1_R54
+        (CN
         1 U1_DC_TST.RX_DATVAL_1
         2 NetU1_IC2_N9
-        }
-      }
-      {I RESC1005X40N.PRT U1_R59
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U1_R59
+        (CN
         1 U1_SLVS_ONE_P
         2 NetU1_IC2_A3
-        }
-      }
-      {I RESC1005X40N.PRT U1_R60
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U1_R60
+        (CN
         1 U1_SLVS_ONE_N
         2 NetU1_IC2_A4
-        }
-      }
-      {I RESC1005X40N.PRT U1_R61
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U1_R61
+        (CN
         1 U1_SLVS_ONE_P
         2 NetU1_IC2_A6
-        }
-      }
-      {I RESC1005X40N.PRT U1_R62
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U1_R62
+        (CN
         1 U1_SLVS_ONE_N
         2 NetU1_IC2_A5
-        }
-      }
-      {I RESC1005X40N.PRT U1_R63
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U1_R63
+        (CN
         1 U1_SLVS_ONE_P
         2 NetU1_IC2_A12
-        }
-      }
-      {I RESC1005X40N.PRT U1_R64
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U1_R64
+        (CN
         1 U1_SLVS_ONE_N
         2 NetU1_IC2_A11
-        }
-      }
-      {I RESC1005X40N.PRT U1_R65
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U1_R65
+        (CN
         1 U1_SLVS_ONE_P
         2 NetU1_IC2_A14
-        }
-      }
-      {I RESC1005X40N.PRT U1_R66
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U1_R66
+        (CN
         1 U1_SLVS_ONE_N
         2 NetU1_IC2_A13
-        }
-      }
-      {I RESC1005X40N.PRT U1_R67
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U1_R67
+        (CN
         1 U1_SLVS_ONE_P
         2 NetU1_IC2_V19
-        }
-      }
-      {I RESC1005X40N.PRT U1_R68
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U1_R68
+        (CN
         1 U1_SLVS_ONE_N
         2 NetU1_IC2_W19
-        }
-      }
-      {I RESC1005X40N.PRT U1_R69
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U1_R69
+        (CN
         1 U1_SLVS_ONE_P
         2 NetU1_IC2_Y9
-        }
-      }
-      {I RESC1005X40N.PRT U1_R70
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U1_R70
+        (CN
         1 U1_SLVS_ONE_N
         2 NetU1_IC2_Y10
-        }
-      }
-      {I RESC1005X40N.PRT U1_R71
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U1_R71
+        (CN
         1 U1_SLVS_ONE_P
         2 NetU1_IC2_W3
-        }
-      }
-      {I RESC1005X40N.PRT U1_R72
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U1_R72
+        (CN
         1 U1_SLVS_ONE_N
         2 NetU1_IC2_V3
-        }
-      }
-      {I RESC1005X40N.PRT U1_R73
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U1_R73
+        (CN
         1 U1_SLVS_ONE_P
         2 NetU1_IC2_Y3
-        }
-      }
-      {I RESC1005X40N.PRT U1_R74
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U1_R74
+        (CN
         1 U1_SLVS_ONE_N
         2 NetU1_IC2_Y4
-        }
-      }
-      {I RESC1005X40N.PRT U1_R75
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U1_R75
+        (CN
         1 1V5
         2 U1_DC_TST.DF_AUTORESET_TESTINJ_1
-        }
-      }
-      {I RESC5226X80N.PRT U1_R87
-        {CN
+        )
+      )
+      (I RESC5226X80N.PRT U1_R87
+        (CN
         1 1V5
         2 U1_GBTX_VDD_SERDES
-        }
-      }
-      {I RESC5226X80N.PRT U1_R88
-        {CN
+        )
+      )
+      (I RESC5226X80N.PRT U1_R88
+        (CN
         1 1V5
         2 U1_GBTX_VDDP_PS
-        }
-      }
-      {I TPS127.PRT U1_TP1
-        {CN
+        )
+      )
+      (I TPS127.PRT U1_TP1
+        (CN
         1 U1_SLVS_ONE_P
-        }
-      }
-      {I TPS127.PRT U1_TP2
-        {CN
+        )
+      )
+      (I TPS127.PRT U1_TP2
+        (CN
         1 U1_SLVS_ONE_N
-        }
-      }
-      {I TPS127.PRT U1_TP5
-        {CN
+        )
+      )
+      (I TPS127.PRT U1_TP5
+        (CN
         1 GND
-        }
-      }
-      {I CAPC2012X135N.PRT U2_C21
-        {CN
+        )
+      )
+      (I CAPC2012X135N.PRT U2_C21
+        (CN
         1 1V5
         2 GND
-        }
-      }
-      {I CAPC2012X135N.PRT U2_C22
-        {CN
+        )
+      )
+      (I CAPC2012X135N.PRT U2_C22
+        (CN
         1 1V5
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT U2_C23
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U2_C23
+        (CN
         1 GND
         2 1V5
-        }
-      }
-      {I CAPC1005X55N.PRT U2_C24
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U2_C24
+        (CN
         1 GND
         2 1V5
-        }
-      }
-      {I CAPC1005X55N.PRT U2_C25
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U2_C25
+        (CN
         1 GND
         2 1V5
-        }
-      }
-      {I CAPC1005X55N.PRT U2_C26
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U2_C26
+        (CN
         1 GND
         2 1V5
-        }
-      }
-      {I CAPC1005X55N.PRT U2_C27
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U2_C27
+        (CN
         1 GND
         2 1V5
-        }
-      }
-      {I CAPC1005X55N.PRT U2_C28
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U2_C28
+        (CN
         1 GND
         2 1V5
-        }
-      }
-      {I CAPC1005X55N.PRT U2_C29
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U2_C29
+        (CN
         1 GND
         2 1V5
-        }
-      }
-      {I CAPC1005X55N.PRT U2_C30
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U2_C30
+        (CN
         1 GND
         2 1V5
-        }
-      }
-      {I CAPC0603X33N.PRT U2_C31
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT U2_C31
+        (CN
         1 GND
         2 1V5
-        }
-      }
-      {I CAPC0603X33N.PRT U2_C32
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT U2_C32
+        (CN
         1 GND
         2 1V5
-        }
-      }
-      {I CAPC0603X33N.PRT U2_C33
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT U2_C33
+        (CN
         1 GND
         2 1V5
-        }
-      }
-      {I CAPC0603X33N.PRT U2_C34
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT U2_C34
+        (CN
         1 GND
         2 1V5
-        }
-      }
-      {I CAPC0603X33N.PRT U2_C35
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT U2_C35
+        (CN
         1 GND
         2 1V5
-        }
-      }
-      {I CAPC0603X33N.PRT U2_C36
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT U2_C36
+        (CN
         1 GND
         2 1V5
-        }
-      }
-      {I CAPC2012X135N.PRT U2_C37
-        {CN
+        )
+      )
+      (I CAPC2012X135N.PRT U2_C37
+        (CN
         1 U2_GBTX_VDD_SERDES
         2 GND
-        }
-      }
-      {I CAPC2012X135N.PRT U2_C38
-        {CN
+        )
+      )
+      (I CAPC2012X135N.PRT U2_C38
+        (CN
         1 U2_GBTX_VDD_SERDES
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT U2_C39
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U2_C39
+        (CN
         1 GND
         2 U2_GBTX_VDD_SERDES
-        }
-      }
-      {I CAPC1005X55N.PRT U2_C40
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U2_C40
+        (CN
         1 GND
         2 U2_GBTX_VDD_SERDES
-        }
-      }
-      {I CAPC1005X55N.PRT U2_C41
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U2_C41
+        (CN
         1 GND
         2 U2_GBTX_VDD_SERDES
-        }
-      }
-      {I CAPC1005X55N.PRT U2_C42
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U2_C42
+        (CN
         1 GND
         2 U2_GBTX_VDD_SERDES
-        }
-      }
-      {I CAPC1005X55N.PRT U2_C43
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U2_C43
+        (CN
         1 GND
         2 U2_GBTX_VDD_SERDES
-        }
-      }
-      {I CAPC1005X55N.PRT U2_C44
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U2_C44
+        (CN
         1 GND
         2 U2_GBTX_VDD_SERDES
-        }
-      }
-      {I CAPC1005X55N.PRT U2_C45
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U2_C45
+        (CN
         1 GND
         2 U2_GBTX_VDD_SERDES
-        }
-      }
-      {I CAPC1005X55N.PRT U2_C46
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U2_C46
+        (CN
         1 GND
         2 U2_GBTX_VDD_SERDES
-        }
-      }
-      {I CAPC0603X33N.PRT U2_C47
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT U2_C47
+        (CN
         1 GND
         2 U2_GBTX_VDD_SERDES
-        }
-      }
-      {I CAPC0603X33N.PRT U2_C48
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT U2_C48
+        (CN
         1 GND
         2 U2_GBTX_VDD_SERDES
-        }
-      }
-      {I CAPC0603X33N.PRT U2_C49
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT U2_C49
+        (CN
         1 GND
         2 U2_GBTX_VDD_SERDES
-        }
-      }
-      {I CAPC0603X33N.PRT U2_C50
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT U2_C50
+        (CN
         1 GND
         2 U2_GBTX_VDD_SERDES
-        }
-      }
-      {I CAPC0603X33N.PRT U2_C51
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT U2_C51
+        (CN
         1 GND
         2 U2_GBTX_VDD_SERDES
-        }
-      }
-      {I CAPC0603X33N.PRT U2_C52
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT U2_C52
+        (CN
         1 GND
         2 U2_GBTX_VDD_SERDES
-        }
-      }
-      {I CAPC2012X135N.PRT U2_C53
-        {CN
+        )
+      )
+      (I CAPC2012X135N.PRT U2_C53
+        (CN
         1 U2_GBTX_VDDP_PS
         2 GND
-        }
-      }
-      {I CAPC2012X135N.PRT U2_C54
-        {CN
+        )
+      )
+      (I CAPC2012X135N.PRT U2_C54
+        (CN
         1 U2_GBTX_VDDP_PS
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT U2_C55
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U2_C55
+        (CN
         1 GND
         2 U2_GBTX_VDDP_PS
-        }
-      }
-      {I CAPC1005X55N.PRT U2_C56
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U2_C56
+        (CN
         1 GND
         2 U2_GBTX_VDDP_PS
-        }
-      }
-      {I CAPC1005X55N.PRT U2_C57
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U2_C57
+        (CN
         1 GND
         2 U2_GBTX_VDDP_PS
-        }
-      }
-      {I CAPC0603X33N.PRT U2_C58
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT U2_C58
+        (CN
         1 GND
         2 U2_GBTX_VDDP_PS
-        }
-      }
-      {I CAPC0603X33N.PRT U2_C59
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT U2_C59
+        (CN
         1 GND
         2 U2_GBTX_VDDP_PS
-        }
-      }
-      {I CAPC0603X33N.PRT U2_C60
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT U2_C60
+        (CN
         1 GND
         2 U2_GBTX_VDDP_PS
-        }
-      }
-      {I CAPC0603X33N.PRT U2_C93
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT U2_C93
+        (CN
         1 GND
         2 1V5
-        }
-      }
-      {I CAPC1005X55N.PRT U2_C94
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U2_C94
+        (CN
         1 GND
         2 1V5
-        }
-      }
-      {I CAPC2012X135N.PRT U2_C129
-        {CN
+        )
+      )
+      (I CAPC2012X135N.PRT U2_C129
+        (CN
         1 DC_EFUSE_PWR
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT U2_C130
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U2_C130
+        (CN
         1 GND
         2 DC_EFUSE_PWR
-        }
-      }
-      {I CERN_GBTX ASIC_V0.1.PRT U2_IC2
-        {CN
+        )
+      )
+      (I CERN_GBTX ASIC_V0.1.PRT U2_IC2
+        (CN
        A1 NetU2_IC2_A1
        A2 NetU2_IC2_A2
        A3 NetU2_IC2_A3
@@ -4035,475 +4035,475 @@
       Y18 NetU2_IC2_Y18
       Y19 NetU2_IC2_Y19
       Y20 NetU2_IC2_Y20
-        }
-      }
-      {I LQW31HN23NJ03L_Murata_coil.PRT U2_L2
-        {CN
+        )
+      )
+      (I LQW31HN23NJ03L_Murata_coil.PRT U2_L2
+        (CN
         1 1V5
         2 U2_GBTX_VDD_SERDES
-        }
-      }
-      {I LQW31HN23NJ03L_Murata_coil.PRT U2_L3
-        {CN
+        )
+      )
+      (I LQW31HN23NJ03L_Murata_coil.PRT U2_L3
+        (CN
         1 1V5
         2 U2_GBTX_VDDP_PS
-        }
-      }
-      {I RESC1005X40N.PRT U2_R29
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U2_R29
+        (CN
         1 U2_SLVS_ONE_P
         2 1V5
-        }
-      }
-      {I RESC1005X40N.PRT U2_R30
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U2_R30
+        (CN
         1 U2_SLVS_ONE_N
         2 U2_SLVS_ONE_P
-        }
-      }
-      {I RESC1005X40N.PRT U2_R31
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U2_R31
+        (CN
         1 GND
         2 U2_SLVS_ONE_N
-        }
-      }
-      {I RESC1005X40N.PRT U2_R43
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U2_R43
+        (CN
         1 GND
         2 U2_EFUSEPROGPLS_1
-        }
-      }
-      {I RESC1005X40N.PRT U2_R48
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U2_R48
+        (CN
         1 NetU2_IC2_K10
         2 U2_DC_TST.TESTOUTPUT_1
-        }
-      }
-      {I RESC1005X40N.PRT U2_R50
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U2_R50
+        (CN
         1 U2_LDSCL_1
         2 1V5
-        }
-      }
-      {I RESC1005X40N.PRT U2_R51
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U2_R51
+        (CN
         1 U2_LDSDA_1
         2 1V5
-        }
-      }
-      {I RESC1005X40N.PRT U2_R52
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U2_R52
+        (CN
         1 NetU2_IC2_L13
         2 U2_DC_TST.TX_RDY_1
-        }
-      }
-      {I RESC1005X40N.PRT U2_R53
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U2_R53
+        (CN
         1 U2_DC_TST.RX_RDY_1
         2 NetU2_IC2_N10
-        }
-      }
-      {I RESC1005X40N.PRT U2_R54
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U2_R54
+        (CN
         1 U2_DC_TST.RX_DATVAL_1
         2 NetU2_IC2_N9
-        }
-      }
-      {I RESC1005X40N.PRT U2_R59
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U2_R59
+        (CN
         1 U2_SLVS_ONE_P
         2 NetU2_IC2_A3
-        }
-      }
-      {I RESC1005X40N.PRT U2_R60
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U2_R60
+        (CN
         1 U2_SLVS_ONE_N
         2 NetU2_IC2_A4
-        }
-      }
-      {I RESC1005X40N.PRT U2_R61
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U2_R61
+        (CN
         1 U2_SLVS_ONE_P
         2 NetU2_IC2_A6
-        }
-      }
-      {I RESC1005X40N.PRT U2_R62
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U2_R62
+        (CN
         1 U2_SLVS_ONE_N
         2 NetU2_IC2_A5
-        }
-      }
-      {I RESC1005X40N.PRT U2_R63
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U2_R63
+        (CN
         1 U2_SLVS_ONE_P
         2 NetU2_IC2_A12
-        }
-      }
-      {I RESC1005X40N.PRT U2_R64
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U2_R64
+        (CN
         1 U2_SLVS_ONE_N
         2 NetU2_IC2_A11
-        }
-      }
-      {I RESC1005X40N.PRT U2_R65
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U2_R65
+        (CN
         1 U2_SLVS_ONE_P
         2 NetU2_IC2_A14
-        }
-      }
-      {I RESC1005X40N.PRT U2_R66
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U2_R66
+        (CN
         1 U2_SLVS_ONE_N
         2 NetU2_IC2_A13
-        }
-      }
-      {I RESC1005X40N.PRT U2_R67
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U2_R67
+        (CN
         1 U2_SLVS_ONE_P
         2 NetU2_IC2_V19
-        }
-      }
-      {I RESC1005X40N.PRT U2_R68
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U2_R68
+        (CN
         1 U2_SLVS_ONE_N
         2 NetU2_IC2_W19
-        }
-      }
-      {I RESC1005X40N.PRT U2_R69
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U2_R69
+        (CN
         1 U2_SLVS_ONE_P
         2 NetU2_IC2_Y9
-        }
-      }
-      {I RESC1005X40N.PRT U2_R70
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U2_R70
+        (CN
         1 U2_SLVS_ONE_N
         2 NetU2_IC2_Y10
-        }
-      }
-      {I RESC1005X40N.PRT U2_R71
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U2_R71
+        (CN
         1 U2_SLVS_ONE_P
         2 NetU2_IC2_W3
-        }
-      }
-      {I RESC1005X40N.PRT U2_R72
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U2_R72
+        (CN
         1 U2_SLVS_ONE_N
         2 NetU2_IC2_V3
-        }
-      }
-      {I RESC1005X40N.PRT U2_R73
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U2_R73
+        (CN
         1 U2_SLVS_ONE_P
         2 NetU2_IC2_Y3
-        }
-      }
-      {I RESC1005X40N.PRT U2_R74
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U2_R74
+        (CN
         1 U2_SLVS_ONE_N
         2 NetU2_IC2_Y4
-        }
-      }
-      {I RESC1005X40N.PRT U2_R75
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U2_R75
+        (CN
         1 1V5
         2 U2_DC_TST.DF_AUTORESET_TESTINJ_1
-        }
-      }
-      {I RESC5226X80N.PRT U2_R87
-        {CN
+        )
+      )
+      (I RESC5226X80N.PRT U2_R87
+        (CN
         1 1V5
         2 U2_GBTX_VDD_SERDES
-        }
-      }
-      {I RESC5226X80N.PRT U2_R88
-        {CN
+        )
+      )
+      (I RESC5226X80N.PRT U2_R88
+        (CN
         1 1V5
         2 U2_GBTX_VDDP_PS
-        }
-      }
-      {I TPS127.PRT U2_TP1
-        {CN
+        )
+      )
+      (I TPS127.PRT U2_TP1
+        (CN
         1 U2_SLVS_ONE_P
-        }
-      }
-      {I TPS127.PRT U2_TP2
-        {CN
+        )
+      )
+      (I TPS127.PRT U2_TP2
+        (CN
         1 U2_SLVS_ONE_N
-        }
-      }
-      {I TPS127.PRT U2_TP5
-        {CN
+        )
+      )
+      (I TPS127.PRT U2_TP5
+        (CN
         1 GND
-        }
-      }
-      {I CAPC2012X135N.PRT U3_C21
-        {CN
+        )
+      )
+      (I CAPC2012X135N.PRT U3_C21
+        (CN
         1 1V5
         2 GND
-        }
-      }
-      {I CAPC2012X135N.PRT U3_C22
-        {CN
+        )
+      )
+      (I CAPC2012X135N.PRT U3_C22
+        (CN
         1 1V5
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT U3_C23
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U3_C23
+        (CN
         1 GND
         2 1V5
-        }
-      }
-      {I CAPC1005X55N.PRT U3_C24
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U3_C24
+        (CN
         1 GND
         2 1V5
-        }
-      }
-      {I CAPC1005X55N.PRT U3_C25
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U3_C25
+        (CN
         1 GND
         2 1V5
-        }
-      }
-      {I CAPC1005X55N.PRT U3_C26
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U3_C26
+        (CN
         1 GND
         2 1V5
-        }
-      }
-      {I CAPC1005X55N.PRT U3_C27
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U3_C27
+        (CN
         1 GND
         2 1V5
-        }
-      }
-      {I CAPC1005X55N.PRT U3_C28
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U3_C28
+        (CN
         1 GND
         2 1V5
-        }
-      }
-      {I CAPC1005X55N.PRT U3_C29
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U3_C29
+        (CN
         1 GND
         2 1V5
-        }
-      }
-      {I CAPC1005X55N.PRT U3_C30
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U3_C30
+        (CN
         1 GND
         2 1V5
-        }
-      }
-      {I CAPC0603X33N.PRT U3_C31
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT U3_C31
+        (CN
         1 GND
         2 1V5
-        }
-      }
-      {I CAPC0603X33N.PRT U3_C32
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT U3_C32
+        (CN
         1 GND
         2 1V5
-        }
-      }
-      {I CAPC0603X33N.PRT U3_C33
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT U3_C33
+        (CN
         1 GND
         2 1V5
-        }
-      }
-      {I CAPC0603X33N.PRT U3_C34
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT U3_C34
+        (CN
         1 GND
         2 1V5
-        }
-      }
-      {I CAPC0603X33N.PRT U3_C35
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT U3_C35
+        (CN
         1 GND
         2 1V5
-        }
-      }
-      {I CAPC0603X33N.PRT U3_C36
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT U3_C36
+        (CN
         1 GND
         2 1V5
-        }
-      }
-      {I CAPC2012X135N.PRT U3_C37
-        {CN
+        )
+      )
+      (I CAPC2012X135N.PRT U3_C37
+        (CN
         1 U3_GBTX_VDD_SERDES
         2 GND
-        }
-      }
-      {I CAPC2012X135N.PRT U3_C38
-        {CN
+        )
+      )
+      (I CAPC2012X135N.PRT U3_C38
+        (CN
         1 U3_GBTX_VDD_SERDES
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT U3_C39
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U3_C39
+        (CN
         1 GND
         2 U3_GBTX_VDD_SERDES
-        }
-      }
-      {I CAPC1005X55N.PRT U3_C40
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U3_C40
+        (CN
         1 GND
         2 U3_GBTX_VDD_SERDES
-        }
-      }
-      {I CAPC1005X55N.PRT U3_C41
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U3_C41
+        (CN
         1 GND
         2 U3_GBTX_VDD_SERDES
-        }
-      }
-      {I CAPC1005X55N.PRT U3_C42
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U3_C42
+        (CN
         1 GND
         2 U3_GBTX_VDD_SERDES
-        }
-      }
-      {I CAPC1005X55N.PRT U3_C43
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U3_C43
+        (CN
         1 GND
         2 U3_GBTX_VDD_SERDES
-        }
-      }
-      {I CAPC1005X55N.PRT U3_C44
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U3_C44
+        (CN
         1 GND
         2 U3_GBTX_VDD_SERDES
-        }
-      }
-      {I CAPC1005X55N.PRT U3_C45
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U3_C45
+        (CN
         1 GND
         2 U3_GBTX_VDD_SERDES
-        }
-      }
-      {I CAPC1005X55N.PRT U3_C46
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U3_C46
+        (CN
         1 GND
         2 U3_GBTX_VDD_SERDES
-        }
-      }
-      {I CAPC0603X33N.PRT U3_C47
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT U3_C47
+        (CN
         1 GND
         2 U3_GBTX_VDD_SERDES
-        }
-      }
-      {I CAPC0603X33N.PRT U3_C48
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT U3_C48
+        (CN
         1 GND
         2 U3_GBTX_VDD_SERDES
-        }
-      }
-      {I CAPC0603X33N.PRT U3_C49
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT U3_C49
+        (CN
         1 GND
         2 U3_GBTX_VDD_SERDES
-        }
-      }
-      {I CAPC0603X33N.PRT U3_C50
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT U3_C50
+        (CN
         1 GND
         2 U3_GBTX_VDD_SERDES
-        }
-      }
-      {I CAPC0603X33N.PRT U3_C51
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT U3_C51
+        (CN
         1 GND
         2 U3_GBTX_VDD_SERDES
-        }
-      }
-      {I CAPC0603X33N.PRT U3_C52
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT U3_C52
+        (CN
         1 GND
         2 U3_GBTX_VDD_SERDES
-        }
-      }
-      {I CAPC2012X135N.PRT U3_C53
-        {CN
+        )
+      )
+      (I CAPC2012X135N.PRT U3_C53
+        (CN
         1 U3_GBTX_VDDP_PS
         2 GND
-        }
-      }
-      {I CAPC2012X135N.PRT U3_C54
-        {CN
+        )
+      )
+      (I CAPC2012X135N.PRT U3_C54
+        (CN
         1 U3_GBTX_VDDP_PS
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT U3_C55
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U3_C55
+        (CN
         1 GND
         2 U3_GBTX_VDDP_PS
-        }
-      }
-      {I CAPC1005X55N.PRT U3_C56
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U3_C56
+        (CN
         1 GND
         2 U3_GBTX_VDDP_PS
-        }
-      }
-      {I CAPC1005X55N.PRT U3_C57
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U3_C57
+        (CN
         1 GND
         2 U3_GBTX_VDDP_PS
-        }
-      }
-      {I CAPC0603X33N.PRT U3_C58
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT U3_C58
+        (CN
         1 GND
         2 U3_GBTX_VDDP_PS
-        }
-      }
-      {I CAPC0603X33N.PRT U3_C59
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT U3_C59
+        (CN
         1 GND
         2 U3_GBTX_VDDP_PS
-        }
-      }
-      {I CAPC0603X33N.PRT U3_C60
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT U3_C60
+        (CN
         1 GND
         2 U3_GBTX_VDDP_PS
-        }
-      }
-      {I CAPC0603X33N.PRT U3_C93
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT U3_C93
+        (CN
         1 GND
         2 1V5
-        }
-      }
-      {I CAPC1005X55N.PRT U3_C94
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U3_C94
+        (CN
         1 GND
         2 1V5
-        }
-      }
-      {I CAPC2012X135N.PRT U3_C129
-        {CN
+        )
+      )
+      (I CAPC2012X135N.PRT U3_C129
+        (CN
         1 DC_EFUSE_PWR
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT U3_C130
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U3_C130
+        (CN
         1 GND
         2 DC_EFUSE_PWR
-        }
-      }
-      {I CERN_GBTX ASIC_V0.1.PRT U3_IC2
-        {CN
+        )
+      )
+      (I CERN_GBTX ASIC_V0.1.PRT U3_IC2
+        (CN
        A1 NetU3_IC2_A1
        A2 NetU3_IC2_A2
        A3 NetU3_IC2_A3
@@ -4904,475 +4904,475 @@
       Y18 NetU3_IC2_Y18
       Y19 NetU3_IC2_Y19
       Y20 NetU3_IC2_Y20
-        }
-      }
-      {I LQW31HN23NJ03L_Murata_coil.PRT U3_L2
-        {CN
+        )
+      )
+      (I LQW31HN23NJ03L_Murata_coil.PRT U3_L2
+        (CN
         1 1V5
         2 U3_GBTX_VDD_SERDES
-        }
-      }
-      {I LQW31HN23NJ03L_Murata_coil.PRT U3_L3
-        {CN
+        )
+      )
+      (I LQW31HN23NJ03L_Murata_coil.PRT U3_L3
+        (CN
         1 1V5
         2 U3_GBTX_VDDP_PS
-        }
-      }
-      {I RESC1005X40N.PRT U3_R29
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U3_R29
+        (CN
         1 U3_SLVS_ONE_P
         2 1V5
-        }
-      }
-      {I RESC1005X40N.PRT U3_R30
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U3_R30
+        (CN
         1 U3_SLVS_ONE_N
         2 U3_SLVS_ONE_P
-        }
-      }
-      {I RESC1005X40N.PRT U3_R31
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U3_R31
+        (CN
         1 GND
         2 U3_SLVS_ONE_N
-        }
-      }
-      {I RESC1005X40N.PRT U3_R43
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U3_R43
+        (CN
         1 GND
         2 U3_EFUSEPROGPLS_1
-        }
-      }
-      {I RESC1005X40N.PRT U3_R48
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U3_R48
+        (CN
         1 NetU3_IC2_K10
         2 U3_DC_TST.TESTOUTPUT_1
-        }
-      }
-      {I RESC1005X40N.PRT U3_R50
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U3_R50
+        (CN
         1 U3_LDSCL_1
         2 1V5
-        }
-      }
-      {I RESC1005X40N.PRT U3_R51
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U3_R51
+        (CN
         1 U3_LDSDA_1
         2 1V5
-        }
-      }
-      {I RESC1005X40N.PRT U3_R52
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U3_R52
+        (CN
         1 NetU3_IC2_L13
         2 U3_DC_TST.TX_RDY_1
-        }
-      }
-      {I RESC1005X40N.PRT U3_R53
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U3_R53
+        (CN
         1 U3_DC_TST.RX_RDY_1
         2 NetU3_IC2_N10
-        }
-      }
-      {I RESC1005X40N.PRT U3_R54
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U3_R54
+        (CN
         1 U3_DC_TST.RX_DATVAL_1
         2 NetU3_IC2_N9
-        }
-      }
-      {I RESC1005X40N.PRT U3_R59
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U3_R59
+        (CN
         1 U3_SLVS_ONE_P
         2 NetU3_IC2_A3
-        }
-      }
-      {I RESC1005X40N.PRT U3_R60
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U3_R60
+        (CN
         1 U3_SLVS_ONE_N
         2 NetU3_IC2_A4
-        }
-      }
-      {I RESC1005X40N.PRT U3_R61
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U3_R61
+        (CN
         1 U3_SLVS_ONE_P
         2 NetU3_IC2_A6
-        }
-      }
-      {I RESC1005X40N.PRT U3_R62
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U3_R62
+        (CN
         1 U3_SLVS_ONE_N
         2 NetU3_IC2_A5
-        }
-      }
-      {I RESC1005X40N.PRT U3_R63
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U3_R63
+        (CN
         1 U3_SLVS_ONE_P
         2 NetU3_IC2_A12
-        }
-      }
-      {I RESC1005X40N.PRT U3_R64
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U3_R64
+        (CN
         1 U3_SLVS_ONE_N
         2 NetU3_IC2_A11
-        }
-      }
-      {I RESC1005X40N.PRT U3_R65
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U3_R65
+        (CN
         1 U3_SLVS_ONE_P
         2 NetU3_IC2_A14
-        }
-      }
-      {I RESC1005X40N.PRT U3_R66
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U3_R66
+        (CN
         1 U3_SLVS_ONE_N
         2 NetU3_IC2_A13
-        }
-      }
-      {I RESC1005X40N.PRT U3_R67
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U3_R67
+        (CN
         1 U3_SLVS_ONE_P
         2 NetU3_IC2_V19
-        }
-      }
-      {I RESC1005X40N.PRT U3_R68
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U3_R68
+        (CN
         1 U3_SLVS_ONE_N
         2 NetU3_IC2_W19
-        }
-      }
-      {I RESC1005X40N.PRT U3_R69
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U3_R69
+        (CN
         1 U3_SLVS_ONE_P
         2 NetU3_IC2_Y9
-        }
-      }
-      {I RESC1005X40N.PRT U3_R70
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U3_R70
+        (CN
         1 U3_SLVS_ONE_N
         2 NetU3_IC2_Y10
-        }
-      }
-      {I RESC1005X40N.PRT U3_R71
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U3_R71
+        (CN
         1 U3_SLVS_ONE_P
         2 NetU3_IC2_W3
-        }
-      }
-      {I RESC1005X40N.PRT U3_R72
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U3_R72
+        (CN
         1 U3_SLVS_ONE_N
         2 NetU3_IC2_V3
-        }
-      }
-      {I RESC1005X40N.PRT U3_R73
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U3_R73
+        (CN
         1 U3_SLVS_ONE_P
         2 NetU3_IC2_Y3
-        }
-      }
-      {I RESC1005X40N.PRT U3_R74
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U3_R74
+        (CN
         1 U3_SLVS_ONE_N
         2 NetU3_IC2_Y4
-        }
-      }
-      {I RESC1005X40N.PRT U3_R75
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U3_R75
+        (CN
         1 1V5
         2 U2_DC_TST.DF_AUTORESET_TESTINJ_1
-        }
-      }
-      {I RESC5226X80N.PRT U3_R87
-        {CN
+        )
+      )
+      (I RESC5226X80N.PRT U3_R87
+        (CN
         1 1V5
         2 U3_GBTX_VDD_SERDES
-        }
-      }
-      {I RESC5226X80N.PRT U3_R88
-        {CN
+        )
+      )
+      (I RESC5226X80N.PRT U3_R88
+        (CN
         1 1V5
         2 U3_GBTX_VDDP_PS
-        }
-      }
-      {I TPS127.PRT U3_TP1
-        {CN
+        )
+      )
+      (I TPS127.PRT U3_TP1
+        (CN
         1 U3_SLVS_ONE_P
-        }
-      }
-      {I TPS127.PRT U3_TP2
-        {CN
+        )
+      )
+      (I TPS127.PRT U3_TP2
+        (CN
         1 U3_SLVS_ONE_N
-        }
-      }
-      {I TPS127.PRT U3_TP5
-        {CN
+        )
+      )
+      (I TPS127.PRT U3_TP5
+        (CN
         1 GND
-        }
-      }
-      {I CAPC2012X135N.PRT U4_C21
-        {CN
+        )
+      )
+      (I CAPC2012X135N.PRT U4_C21
+        (CN
         1 1V5
         2 GND
-        }
-      }
-      {I CAPC2012X135N.PRT U4_C22
-        {CN
+        )
+      )
+      (I CAPC2012X135N.PRT U4_C22
+        (CN
         1 1V5
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT U4_C23
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U4_C23
+        (CN
         1 GND
         2 1V5
-        }
-      }
-      {I CAPC1005X55N.PRT U4_C24
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U4_C24
+        (CN
         1 GND
         2 1V5
-        }
-      }
-      {I CAPC1005X55N.PRT U4_C25
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U4_C25
+        (CN
         1 GND
         2 1V5
-        }
-      }
-      {I CAPC1005X55N.PRT U4_C26
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U4_C26
+        (CN
         1 GND
         2 1V5
-        }
-      }
-      {I CAPC1005X55N.PRT U4_C27
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U4_C27
+        (CN
         1 GND
         2 1V5
-        }
-      }
-      {I CAPC1005X55N.PRT U4_C28
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U4_C28
+        (CN
         1 GND
         2 1V5
-        }
-      }
-      {I CAPC1005X55N.PRT U4_C29
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U4_C29
+        (CN
         1 GND
         2 1V5
-        }
-      }
-      {I CAPC1005X55N.PRT U4_C30
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U4_C30
+        (CN
         1 GND
         2 1V5
-        }
-      }
-      {I CAPC0603X33N.PRT U4_C31
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT U4_C31
+        (CN
         1 GND
         2 1V5
-        }
-      }
-      {I CAPC0603X33N.PRT U4_C32
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT U4_C32
+        (CN
         1 GND
         2 1V5
-        }
-      }
-      {I CAPC0603X33N.PRT U4_C33
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT U4_C33
+        (CN
         1 GND
         2 1V5
-        }
-      }
-      {I CAPC0603X33N.PRT U4_C34
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT U4_C34
+        (CN
         1 GND
         2 1V5
-        }
-      }
-      {I CAPC0603X33N.PRT U4_C35
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT U4_C35
+        (CN
         1 GND
         2 1V5
-        }
-      }
-      {I CAPC0603X33N.PRT U4_C36
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT U4_C36
+        (CN
         1 GND
         2 1V5
-        }
-      }
-      {I CAPC2012X135N.PRT U4_C37
-        {CN
+        )
+      )
+      (I CAPC2012X135N.PRT U4_C37
+        (CN
         1 U4_GBTX_VDD_SERDES
         2 GND
-        }
-      }
-      {I CAPC2012X135N.PRT U4_C38
-        {CN
+        )
+      )
+      (I CAPC2012X135N.PRT U4_C38
+        (CN
         1 U4_GBTX_VDD_SERDES
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT U4_C39
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U4_C39
+        (CN
         1 GND
         2 U4_GBTX_VDD_SERDES
-        }
-      }
-      {I CAPC1005X55N.PRT U4_C40
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U4_C40
+        (CN
         1 GND
         2 U4_GBTX_VDD_SERDES
-        }
-      }
-      {I CAPC1005X55N.PRT U4_C41
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U4_C41
+        (CN
         1 GND
         2 U4_GBTX_VDD_SERDES
-        }
-      }
-      {I CAPC1005X55N.PRT U4_C42
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U4_C42
+        (CN
         1 GND
         2 U4_GBTX_VDD_SERDES
-        }
-      }
-      {I CAPC1005X55N.PRT U4_C43
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U4_C43
+        (CN
         1 GND
         2 U4_GBTX_VDD_SERDES
-        }
-      }
-      {I CAPC1005X55N.PRT U4_C44
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U4_C44
+        (CN
         1 GND
         2 U4_GBTX_VDD_SERDES
-        }
-      }
-      {I CAPC1005X55N.PRT U4_C45
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U4_C45
+        (CN
         1 GND
         2 U4_GBTX_VDD_SERDES
-        }
-      }
-      {I CAPC1005X55N.PRT U4_C46
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U4_C46
+        (CN
         1 GND
         2 U4_GBTX_VDD_SERDES
-        }
-      }
-      {I CAPC0603X33N.PRT U4_C47
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT U4_C47
+        (CN
         1 GND
         2 U4_GBTX_VDD_SERDES
-        }
-      }
-      {I CAPC0603X33N.PRT U4_C48
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT U4_C48
+        (CN
         1 GND
         2 U4_GBTX_VDD_SERDES
-        }
-      }
-      {I CAPC0603X33N.PRT U4_C49
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT U4_C49
+        (CN
         1 GND
         2 U4_GBTX_VDD_SERDES
-        }
-      }
-      {I CAPC0603X33N.PRT U4_C50
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT U4_C50
+        (CN
         1 GND
         2 U4_GBTX_VDD_SERDES
-        }
-      }
-      {I CAPC0603X33N.PRT U4_C51
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT U4_C51
+        (CN
         1 GND
         2 U4_GBTX_VDD_SERDES
-        }
-      }
-      {I CAPC0603X33N.PRT U4_C52
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT U4_C52
+        (CN
         1 GND
         2 U4_GBTX_VDD_SERDES
-        }
-      }
-      {I CAPC2012X135N.PRT U4_C53
-        {CN
+        )
+      )
+      (I CAPC2012X135N.PRT U4_C53
+        (CN
         1 U4_GBTX_VDDP_PS
         2 GND
-        }
-      }
-      {I CAPC2012X135N.PRT U4_C54
-        {CN
+        )
+      )
+      (I CAPC2012X135N.PRT U4_C54
+        (CN
         1 U4_GBTX_VDDP_PS
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT U4_C55
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U4_C55
+        (CN
         1 GND
         2 U4_GBTX_VDDP_PS
-        }
-      }
-      {I CAPC1005X55N.PRT U4_C56
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U4_C56
+        (CN
         1 GND
         2 U4_GBTX_VDDP_PS
-        }
-      }
-      {I CAPC1005X55N.PRT U4_C57
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U4_C57
+        (CN
         1 GND
         2 U4_GBTX_VDDP_PS
-        }
-      }
-      {I CAPC0603X33N.PRT U4_C58
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT U4_C58
+        (CN
         1 GND
         2 U4_GBTX_VDDP_PS
-        }
-      }
-      {I CAPC0603X33N.PRT U4_C59
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT U4_C59
+        (CN
         1 GND
         2 U4_GBTX_VDDP_PS
-        }
-      }
-      {I CAPC0603X33N.PRT U4_C60
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT U4_C60
+        (CN
         1 GND
         2 U4_GBTX_VDDP_PS
-        }
-      }
-      {I CAPC0603X33N.PRT U4_C93
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT U4_C93
+        (CN
         1 GND
         2 1V5
-        }
-      }
-      {I CAPC1005X55N.PRT U4_C94
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U4_C94
+        (CN
         1 GND
         2 1V5
-        }
-      }
-      {I CAPC2012X135N.PRT U4_C129
-        {CN
+        )
+      )
+      (I CAPC2012X135N.PRT U4_C129
+        (CN
         1 DC_EFUSE_PWR
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT U4_C130
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U4_C130
+        (CN
         1 GND
         2 DC_EFUSE_PWR
-        }
-      }
-      {I CERN_GBTX ASIC_V0.1.PRT U4_IC2
-        {CN
+        )
+      )
+      (I CERN_GBTX ASIC_V0.1.PRT U4_IC2
+        (CN
        A1 NetU4_IC2_A1
        A2 NetU4_IC2_A2
        A3 NetU4_IC2_A3
@@ -5773,475 +5773,475 @@
       Y18 NetU4_IC2_Y18
       Y19 NetU4_IC2_Y19
       Y20 NetU4_IC2_Y20
-        }
-      }
-      {I LQW31HN23NJ03L_Murata_coil.PRT U4_L2
-        {CN
+        )
+      )
+      (I LQW31HN23NJ03L_Murata_coil.PRT U4_L2
+        (CN
         1 1V5
         2 U4_GBTX_VDD_SERDES
-        }
-      }
-      {I LQW31HN23NJ03L_Murata_coil.PRT U4_L3
-        {CN
+        )
+      )
+      (I LQW31HN23NJ03L_Murata_coil.PRT U4_L3
+        (CN
         1 1V5
         2 U4_GBTX_VDDP_PS
-        }
-      }
-      {I RESC1005X40N.PRT U4_R29
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U4_R29
+        (CN
         1 U4_SLVS_ONE_P
         2 1V5
-        }
-      }
-      {I RESC1005X40N.PRT U4_R30
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U4_R30
+        (CN
         1 U4_SLVS_ONE_N
         2 U4_SLVS_ONE_P
-        }
-      }
-      {I RESC1005X40N.PRT U4_R31
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U4_R31
+        (CN
         1 GND
         2 U4_SLVS_ONE_N
-        }
-      }
-      {I RESC1005X40N.PRT U4_R43
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U4_R43
+        (CN
         1 GND
         2 U4_EFUSEPROGPLS_1
-        }
-      }
-      {I RESC1005X40N.PRT U4_R48
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U4_R48
+        (CN
         1 NetU4_IC2_K10
         2 U4_DC_TST.TESTOUTPUT_1
-        }
-      }
-      {I RESC1005X40N.PRT U4_R50
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U4_R50
+        (CN
         1 U4_LDSCL_1
         2 1V5
-        }
-      }
-      {I RESC1005X40N.PRT U4_R51
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U4_R51
+        (CN
         1 U4_LDSDA_1
         2 1V5
-        }
-      }
-      {I RESC1005X40N.PRT U4_R52
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U4_R52
+        (CN
         1 NetU4_IC2_L13
         2 U4_DC_TST.TX_RDY_1
-        }
-      }
-      {I RESC1005X40N.PRT U4_R53
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U4_R53
+        (CN
         1 U4_DC_TST.RX_RDY_1
         2 NetU4_IC2_N10
-        }
-      }
-      {I RESC1005X40N.PRT U4_R54
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U4_R54
+        (CN
         1 U4_DC_TST.RX_DATVAL_1
         2 NetU4_IC2_N9
-        }
-      }
-      {I RESC1005X40N.PRT U4_R59
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U4_R59
+        (CN
         1 U4_SLVS_ONE_P
         2 NetU4_IC2_A3
-        }
-      }
-      {I RESC1005X40N.PRT U4_R60
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U4_R60
+        (CN
         1 U4_SLVS_ONE_N
         2 NetU4_IC2_A4
-        }
-      }
-      {I RESC1005X40N.PRT U4_R61
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U4_R61
+        (CN
         1 U4_SLVS_ONE_P
         2 NetU4_IC2_A6
-        }
-      }
-      {I RESC1005X40N.PRT U4_R62
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U4_R62
+        (CN
         1 U4_SLVS_ONE_N
         2 NetU4_IC2_A5
-        }
-      }
-      {I RESC1005X40N.PRT U4_R63
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U4_R63
+        (CN
         1 U4_SLVS_ONE_P
         2 NetU4_IC2_A12
-        }
-      }
-      {I RESC1005X40N.PRT U4_R64
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U4_R64
+        (CN
         1 U4_SLVS_ONE_N
         2 NetU4_IC2_A11
-        }
-      }
-      {I RESC1005X40N.PRT U4_R65
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U4_R65
+        (CN
         1 U4_SLVS_ONE_P
         2 NetU4_IC2_A14
-        }
-      }
-      {I RESC1005X40N.PRT U4_R66
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U4_R66
+        (CN
         1 U4_SLVS_ONE_N
         2 NetU4_IC2_A13
-        }
-      }
-      {I RESC1005X40N.PRT U4_R67
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U4_R67
+        (CN
         1 U4_SLVS_ONE_P
         2 NetU4_IC2_V19
-        }
-      }
-      {I RESC1005X40N.PRT U4_R68
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U4_R68
+        (CN
         1 U4_SLVS_ONE_N
         2 NetU4_IC2_W19
-        }
-      }
-      {I RESC1005X40N.PRT U4_R69
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U4_R69
+        (CN
         1 U4_SLVS_ONE_P
         2 NetU4_IC2_Y9
-        }
-      }
-      {I RESC1005X40N.PRT U4_R70
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U4_R70
+        (CN
         1 U4_SLVS_ONE_N
         2 NetU4_IC2_Y10
-        }
-      }
-      {I RESC1005X40N.PRT U4_R71
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U4_R71
+        (CN
         1 U4_SLVS_ONE_P
         2 NetU4_IC2_W3
-        }
-      }
-      {I RESC1005X40N.PRT U4_R72
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U4_R72
+        (CN
         1 U4_SLVS_ONE_N
         2 NetU4_IC2_V3
-        }
-      }
-      {I RESC1005X40N.PRT U4_R73
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U4_R73
+        (CN
         1 U4_SLVS_ONE_P
         2 NetU4_IC2_Y3
-        }
-      }
-      {I RESC1005X40N.PRT U4_R74
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U4_R74
+        (CN
         1 U4_SLVS_ONE_N
         2 NetU4_IC2_Y4
-        }
-      }
-      {I RESC1005X40N.PRT U4_R75
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U4_R75
+        (CN
         1 1V5
         2 U4_DC_TST.DF_AUTORESET_TESTINJ_1
-        }
-      }
-      {I RESC5226X80N.PRT U4_R87
-        {CN
+        )
+      )
+      (I RESC5226X80N.PRT U4_R87
+        (CN
         1 1V5
         2 U4_GBTX_VDD_SERDES
-        }
-      }
-      {I RESC5226X80N.PRT U4_R88
-        {CN
+        )
+      )
+      (I RESC5226X80N.PRT U4_R88
+        (CN
         1 1V5
         2 U4_GBTX_VDDP_PS
-        }
-      }
-      {I TPS127.PRT U4_TP1
-        {CN
+        )
+      )
+      (I TPS127.PRT U4_TP1
+        (CN
         1 U4_SLVS_ONE_P
-        }
-      }
-      {I TPS127.PRT U4_TP2
-        {CN
+        )
+      )
+      (I TPS127.PRT U4_TP2
+        (CN
         1 U4_SLVS_ONE_N
-        }
-      }
-      {I TPS127.PRT U4_TP5
-        {CN
+        )
+      )
+      (I TPS127.PRT U4_TP5
+        (CN
         1 GND
-        }
-      }
-      {I CAPC2012X135N.PRT U5_C21
-        {CN
+        )
+      )
+      (I CAPC2012X135N.PRT U5_C21
+        (CN
         1 1V5
         2 GND
-        }
-      }
-      {I CAPC2012X135N.PRT U5_C22
-        {CN
+        )
+      )
+      (I CAPC2012X135N.PRT U5_C22
+        (CN
         1 1V5
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT U5_C23
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U5_C23
+        (CN
         1 GND
         2 1V5
-        }
-      }
-      {I CAPC1005X55N.PRT U5_C24
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U5_C24
+        (CN
         1 GND
         2 1V5
-        }
-      }
-      {I CAPC1005X55N.PRT U5_C25
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U5_C25
+        (CN
         1 GND
         2 1V5
-        }
-      }
-      {I CAPC1005X55N.PRT U5_C26
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U5_C26
+        (CN
         1 GND
         2 1V5
-        }
-      }
-      {I CAPC1005X55N.PRT U5_C27
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U5_C27
+        (CN
         1 GND
         2 1V5
-        }
-      }
-      {I CAPC1005X55N.PRT U5_C28
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U5_C28
+        (CN
         1 GND
         2 1V5
-        }
-      }
-      {I CAPC1005X55N.PRT U5_C29
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U5_C29
+        (CN
         1 GND
         2 1V5
-        }
-      }
-      {I CAPC1005X55N.PRT U5_C30
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U5_C30
+        (CN
         1 GND
         2 1V5
-        }
-      }
-      {I CAPC0603X33N.PRT U5_C31
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT U5_C31
+        (CN
         1 GND
         2 1V5
-        }
-      }
-      {I CAPC0603X33N.PRT U5_C32
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT U5_C32
+        (CN
         1 GND
         2 1V5
-        }
-      }
-      {I CAPC0603X33N.PRT U5_C33
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT U5_C33
+        (CN
         1 GND
         2 1V5
-        }
-      }
-      {I CAPC0603X33N.PRT U5_C34
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT U5_C34
+        (CN
         1 GND
         2 1V5
-        }
-      }
-      {I CAPC0603X33N.PRT U5_C35
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT U5_C35
+        (CN
         1 GND
         2 1V5
-        }
-      }
-      {I CAPC0603X33N.PRT U5_C36
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT U5_C36
+        (CN
         1 GND
         2 1V5
-        }
-      }
-      {I CAPC2012X135N.PRT U5_C37
-        {CN
+        )
+      )
+      (I CAPC2012X135N.PRT U5_C37
+        (CN
         1 U5_GBTX_VDD_SERDES
         2 GND
-        }
-      }
-      {I CAPC2012X135N.PRT U5_C38
-        {CN
+        )
+      )
+      (I CAPC2012X135N.PRT U5_C38
+        (CN
         1 U5_GBTX_VDD_SERDES
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT U5_C39
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U5_C39
+        (CN
         1 GND
         2 U5_GBTX_VDD_SERDES
-        }
-      }
-      {I CAPC1005X55N.PRT U5_C40
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U5_C40
+        (CN
         1 GND
         2 U5_GBTX_VDD_SERDES
-        }
-      }
-      {I CAPC1005X55N.PRT U5_C41
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U5_C41
+        (CN
         1 GND
         2 U5_GBTX_VDD_SERDES
-        }
-      }
-      {I CAPC1005X55N.PRT U5_C42
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U5_C42
+        (CN
         1 GND
         2 U5_GBTX_VDD_SERDES
-        }
-      }
-      {I CAPC1005X55N.PRT U5_C43
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U5_C43
+        (CN
         1 GND
         2 U5_GBTX_VDD_SERDES
-        }
-      }
-      {I CAPC1005X55N.PRT U5_C44
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U5_C44
+        (CN
         1 GND
         2 U5_GBTX_VDD_SERDES
-        }
-      }
-      {I CAPC1005X55N.PRT U5_C45
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U5_C45
+        (CN
         1 GND
         2 U5_GBTX_VDD_SERDES
-        }
-      }
-      {I CAPC1005X55N.PRT U5_C46
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U5_C46
+        (CN
         1 GND
         2 U5_GBTX_VDD_SERDES
-        }
-      }
-      {I CAPC0603X33N.PRT U5_C47
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT U5_C47
+        (CN
         1 GND
         2 U5_GBTX_VDD_SERDES
-        }
-      }
-      {I CAPC0603X33N.PRT U5_C48
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT U5_C48
+        (CN
         1 GND
         2 U5_GBTX_VDD_SERDES
-        }
-      }
-      {I CAPC0603X33N.PRT U5_C49
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT U5_C49
+        (CN
         1 GND
         2 U5_GBTX_VDD_SERDES
-        }
-      }
-      {I CAPC0603X33N.PRT U5_C50
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT U5_C50
+        (CN
         1 GND
         2 U5_GBTX_VDD_SERDES
-        }
-      }
-      {I CAPC0603X33N.PRT U5_C51
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT U5_C51
+        (CN
         1 GND
         2 U5_GBTX_VDD_SERDES
-        }
-      }
-      {I CAPC0603X33N.PRT U5_C52
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT U5_C52
+        (CN
         1 GND
         2 U5_GBTX_VDD_SERDES
-        }
-      }
-      {I CAPC2012X135N.PRT U5_C53
-        {CN
+        )
+      )
+      (I CAPC2012X135N.PRT U5_C53
+        (CN
         1 U5_GBTX_VDDP_PS
         2 GND
-        }
-      }
-      {I CAPC2012X135N.PRT U5_C54
-        {CN
+        )
+      )
+      (I CAPC2012X135N.PRT U5_C54
+        (CN
         1 U5_GBTX_VDDP_PS
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT U5_C55
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U5_C55
+        (CN
         1 GND
         2 U5_GBTX_VDDP_PS
-        }
-      }
-      {I CAPC1005X55N.PRT U5_C56
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U5_C56
+        (CN
         1 GND
         2 U5_GBTX_VDDP_PS
-        }
-      }
-      {I CAPC1005X55N.PRT U5_C57
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U5_C57
+        (CN
         1 GND
         2 U5_GBTX_VDDP_PS
-        }
-      }
-      {I CAPC0603X33N.PRT U5_C58
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT U5_C58
+        (CN
         1 GND
         2 U5_GBTX_VDDP_PS
-        }
-      }
-      {I CAPC0603X33N.PRT U5_C59
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT U5_C59
+        (CN
         1 GND
         2 U5_GBTX_VDDP_PS
-        }
-      }
-      {I CAPC0603X33N.PRT U5_C60
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT U5_C60
+        (CN
         1 GND
         2 U5_GBTX_VDDP_PS
-        }
-      }
-      {I CAPC0603X33N.PRT U5_C93
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT U5_C93
+        (CN
         1 GND
         2 1V5
-        }
-      }
-      {I CAPC1005X55N.PRT U5_C94
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U5_C94
+        (CN
         1 GND
         2 1V5
-        }
-      }
-      {I CAPC2012X135N.PRT U5_C129
-        {CN
+        )
+      )
+      (I CAPC2012X135N.PRT U5_C129
+        (CN
         1 DC_EFUSE_PWR
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT U5_C130
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U5_C130
+        (CN
         1 GND
         2 DC_EFUSE_PWR
-        }
-      }
-      {I CERN_GBTX ASIC_V0.1.PRT U5_IC2
-        {CN
+        )
+      )
+      (I CERN_GBTX ASIC_V0.1.PRT U5_IC2
+        (CN
        A1 NetU5_IC2_A1
        A2 NetU5_IC2_A2
        A3 NetU5_IC2_A3
@@ -6642,475 +6642,475 @@
       Y18 NetU5_IC2_Y18
       Y19 NetU5_IC2_Y19
       Y20 NetU5_IC2_Y20
-        }
-      }
-      {I LQW31HN23NJ03L_Murata_coil.PRT U5_L2
-        {CN
+        )
+      )
+      (I LQW31HN23NJ03L_Murata_coil.PRT U5_L2
+        (CN
         1 1V5
         2 U5_GBTX_VDD_SERDES
-        }
-      }
-      {I LQW31HN23NJ03L_Murata_coil.PRT U5_L3
-        {CN
+        )
+      )
+      (I LQW31HN23NJ03L_Murata_coil.PRT U5_L3
+        (CN
         1 1V5
         2 U5_GBTX_VDDP_PS
-        }
-      }
-      {I RESC1005X40N.PRT U5_R29
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U5_R29
+        (CN
         1 U5_SLVS_ONE_P
         2 1V5
-        }
-      }
-      {I RESC1005X40N.PRT U5_R30
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U5_R30
+        (CN
         1 U5_SLVS_ONE_N
         2 U5_SLVS_ONE_P
-        }
-      }
-      {I RESC1005X40N.PRT U5_R31
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U5_R31
+        (CN
         1 GND
         2 U5_SLVS_ONE_N
-        }
-      }
-      {I RESC1005X40N.PRT U5_R43
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U5_R43
+        (CN
         1 GND
         2 U5_EFUSEPROGPLS_1
-        }
-      }
-      {I RESC1005X40N.PRT U5_R48
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U5_R48
+        (CN
         1 NetU5_IC2_K10
         2 U5_DC_TST.TESTOUTPUT_1
-        }
-      }
-      {I RESC1005X40N.PRT U5_R50
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U5_R50
+        (CN
         1 U5_LDSCL_1
         2 1V5
-        }
-      }
-      {I RESC1005X40N.PRT U5_R51
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U5_R51
+        (CN
         1 U5_LDSDA_1
         2 1V5
-        }
-      }
-      {I RESC1005X40N.PRT U5_R52
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U5_R52
+        (CN
         1 NetU5_IC2_L13
         2 U5_DC_TST.TX_RDY_1
-        }
-      }
-      {I RESC1005X40N.PRT U5_R53
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U5_R53
+        (CN
         1 U5_DC_TST.RX_RDY_1
         2 NetU5_IC2_N10
-        }
-      }
-      {I RESC1005X40N.PRT U5_R54
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U5_R54
+        (CN
         1 U5_DC_TST.RX_DATVAL_1
         2 NetU5_IC2_N9
-        }
-      }
-      {I RESC1005X40N.PRT U5_R59
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U5_R59
+        (CN
         1 U5_SLVS_ONE_P
         2 NetU5_IC2_A3
-        }
-      }
-      {I RESC1005X40N.PRT U5_R60
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U5_R60
+        (CN
         1 U5_SLVS_ONE_N
         2 NetU5_IC2_A4
-        }
-      }
-      {I RESC1005X40N.PRT U5_R61
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U5_R61
+        (CN
         1 U5_SLVS_ONE_P
         2 NetU5_IC2_A6
-        }
-      }
-      {I RESC1005X40N.PRT U5_R62
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U5_R62
+        (CN
         1 U5_SLVS_ONE_N
         2 NetU5_IC2_A5
-        }
-      }
-      {I RESC1005X40N.PRT U5_R63
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U5_R63
+        (CN
         1 U5_SLVS_ONE_P
         2 NetU5_IC2_A12
-        }
-      }
-      {I RESC1005X40N.PRT U5_R64
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U5_R64
+        (CN
         1 U5_SLVS_ONE_N
         2 NetU5_IC2_A11
-        }
-      }
-      {I RESC1005X40N.PRT U5_R65
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U5_R65
+        (CN
         1 U5_SLVS_ONE_P
         2 NetU5_IC2_A14
-        }
-      }
-      {I RESC1005X40N.PRT U5_R66
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U5_R66
+        (CN
         1 U5_SLVS_ONE_N
         2 NetU5_IC2_A13
-        }
-      }
-      {I RESC1005X40N.PRT U5_R67
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U5_R67
+        (CN
         1 U5_SLVS_ONE_P
         2 NetU5_IC2_V19
-        }
-      }
-      {I RESC1005X40N.PRT U5_R68
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U5_R68
+        (CN
         1 U5_SLVS_ONE_N
         2 NetU5_IC2_W19
-        }
-      }
-      {I RESC1005X40N.PRT U5_R69
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U5_R69
+        (CN
         1 U5_SLVS_ONE_P
         2 NetU5_IC2_Y9
-        }
-      }
-      {I RESC1005X40N.PRT U5_R70
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U5_R70
+        (CN
         1 U5_SLVS_ONE_N
         2 NetU5_IC2_Y10
-        }
-      }
-      {I RESC1005X40N.PRT U5_R71
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U5_R71
+        (CN
         1 U5_SLVS_ONE_P
         2 NetU5_IC2_W3
-        }
-      }
-      {I RESC1005X40N.PRT U5_R72
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U5_R72
+        (CN
         1 U5_SLVS_ONE_N
         2 NetU5_IC2_V3
-        }
-      }
-      {I RESC1005X40N.PRT U5_R73
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U5_R73
+        (CN
         1 U5_SLVS_ONE_P
         2 NetU5_IC2_Y3
-        }
-      }
-      {I RESC1005X40N.PRT U5_R74
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U5_R74
+        (CN
         1 U5_SLVS_ONE_N
         2 NetU5_IC2_Y4
-        }
-      }
-      {I RESC1005X40N.PRT U5_R75
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U5_R75
+        (CN
         1 1V5
         2 U4_DC_TST.DF_AUTORESET_TESTINJ_1
-        }
-      }
-      {I RESC5226X80N.PRT U5_R87
-        {CN
+        )
+      )
+      (I RESC5226X80N.PRT U5_R87
+        (CN
         1 1V5
         2 U5_GBTX_VDD_SERDES
-        }
-      }
-      {I RESC5226X80N.PRT U5_R88
-        {CN
+        )
+      )
+      (I RESC5226X80N.PRT U5_R88
+        (CN
         1 1V5
         2 U5_GBTX_VDDP_PS
-        }
-      }
-      {I TPS127.PRT U5_TP1
-        {CN
+        )
+      )
+      (I TPS127.PRT U5_TP1
+        (CN
         1 U5_SLVS_ONE_P
-        }
-      }
-      {I TPS127.PRT U5_TP2
-        {CN
+        )
+      )
+      (I TPS127.PRT U5_TP2
+        (CN
         1 U5_SLVS_ONE_N
-        }
-      }
-      {I TPS127.PRT U5_TP5
-        {CN
+        )
+      )
+      (I TPS127.PRT U5_TP5
+        (CN
         1 GND
-        }
-      }
-      {I CAPC2012X135N.PRT U6_C21
-        {CN
+        )
+      )
+      (I CAPC2012X135N.PRT U6_C21
+        (CN
         1 1V5
         2 GND
-        }
-      }
-      {I CAPC2012X135N.PRT U6_C22
-        {CN
+        )
+      )
+      (I CAPC2012X135N.PRT U6_C22
+        (CN
         1 1V5
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT U6_C23
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U6_C23
+        (CN
         1 GND
         2 1V5
-        }
-      }
-      {I CAPC1005X55N.PRT U6_C24
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U6_C24
+        (CN
         1 GND
         2 1V5
-        }
-      }
-      {I CAPC1005X55N.PRT U6_C25
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U6_C25
+        (CN
         1 GND
         2 1V5
-        }
-      }
-      {I CAPC1005X55N.PRT U6_C26
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U6_C26
+        (CN
         1 GND
         2 1V5
-        }
-      }
-      {I CAPC1005X55N.PRT U6_C27
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U6_C27
+        (CN
         1 GND
         2 1V5
-        }
-      }
-      {I CAPC1005X55N.PRT U6_C28
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U6_C28
+        (CN
         1 GND
         2 1V5
-        }
-      }
-      {I CAPC1005X55N.PRT U6_C29
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U6_C29
+        (CN
         1 GND
         2 1V5
-        }
-      }
-      {I CAPC1005X55N.PRT U6_C30
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U6_C30
+        (CN
         1 GND
         2 1V5
-        }
-      }
-      {I CAPC0603X33N.PRT U6_C31
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT U6_C31
+        (CN
         1 GND
         2 1V5
-        }
-      }
-      {I CAPC0603X33N.PRT U6_C32
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT U6_C32
+        (CN
         1 GND
         2 1V5
-        }
-      }
-      {I CAPC0603X33N.PRT U6_C33
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT U6_C33
+        (CN
         1 GND
         2 1V5
-        }
-      }
-      {I CAPC0603X33N.PRT U6_C34
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT U6_C34
+        (CN
         1 GND
         2 1V5
-        }
-      }
-      {I CAPC0603X33N.PRT U6_C35
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT U6_C35
+        (CN
         1 GND
         2 1V5
-        }
-      }
-      {I CAPC0603X33N.PRT U6_C36
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT U6_C36
+        (CN
         1 GND
         2 1V5
-        }
-      }
-      {I CAPC2012X135N.PRT U6_C37
-        {CN
+        )
+      )
+      (I CAPC2012X135N.PRT U6_C37
+        (CN
         1 U6_GBTX_VDD_SERDES
         2 GND
-        }
-      }
-      {I CAPC2012X135N.PRT U6_C38
-        {CN
+        )
+      )
+      (I CAPC2012X135N.PRT U6_C38
+        (CN
         1 U6_GBTX_VDD_SERDES
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT U6_C39
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U6_C39
+        (CN
         1 GND
         2 U6_GBTX_VDD_SERDES
-        }
-      }
-      {I CAPC1005X55N.PRT U6_C40
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U6_C40
+        (CN
         1 GND
         2 U6_GBTX_VDD_SERDES
-        }
-      }
-      {I CAPC1005X55N.PRT U6_C41
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U6_C41
+        (CN
         1 GND
         2 U6_GBTX_VDD_SERDES
-        }
-      }
-      {I CAPC1005X55N.PRT U6_C42
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U6_C42
+        (CN
         1 GND
         2 U6_GBTX_VDD_SERDES
-        }
-      }
-      {I CAPC1005X55N.PRT U6_C43
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U6_C43
+        (CN
         1 GND
         2 U6_GBTX_VDD_SERDES
-        }
-      }
-      {I CAPC1005X55N.PRT U6_C44
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U6_C44
+        (CN
         1 GND
         2 U6_GBTX_VDD_SERDES
-        }
-      }
-      {I CAPC1005X55N.PRT U6_C45
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U6_C45
+        (CN
         1 GND
         2 U6_GBTX_VDD_SERDES
-        }
-      }
-      {I CAPC1005X55N.PRT U6_C46
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U6_C46
+        (CN
         1 GND
         2 U6_GBTX_VDD_SERDES
-        }
-      }
-      {I CAPC0603X33N.PRT U6_C47
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT U6_C47
+        (CN
         1 GND
         2 U6_GBTX_VDD_SERDES
-        }
-      }
-      {I CAPC0603X33N.PRT U6_C48
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT U6_C48
+        (CN
         1 GND
         2 U6_GBTX_VDD_SERDES
-        }
-      }
-      {I CAPC0603X33N.PRT U6_C49
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT U6_C49
+        (CN
         1 GND
         2 U6_GBTX_VDD_SERDES
-        }
-      }
-      {I CAPC0603X33N.PRT U6_C50
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT U6_C50
+        (CN
         1 GND
         2 U6_GBTX_VDD_SERDES
-        }
-      }
-      {I CAPC0603X33N.PRT U6_C51
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT U6_C51
+        (CN
         1 GND
         2 U6_GBTX_VDD_SERDES
-        }
-      }
-      {I CAPC0603X33N.PRT U6_C52
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT U6_C52
+        (CN
         1 GND
         2 U6_GBTX_VDD_SERDES
-        }
-      }
-      {I CAPC2012X135N.PRT U6_C53
-        {CN
+        )
+      )
+      (I CAPC2012X135N.PRT U6_C53
+        (CN
         1 U6_GBTX_VDDP_PS
         2 GND
-        }
-      }
-      {I CAPC2012X135N.PRT U6_C54
-        {CN
+        )
+      )
+      (I CAPC2012X135N.PRT U6_C54
+        (CN
         1 U6_GBTX_VDDP_PS
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT U6_C55
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U6_C55
+        (CN
         1 GND
         2 U6_GBTX_VDDP_PS
-        }
-      }
-      {I CAPC1005X55N.PRT U6_C56
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U6_C56
+        (CN
         1 GND
         2 U6_GBTX_VDDP_PS
-        }
-      }
-      {I CAPC1005X55N.PRT U6_C57
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U6_C57
+        (CN
         1 GND
         2 U6_GBTX_VDDP_PS
-        }
-      }
-      {I CAPC0603X33N.PRT U6_C58
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT U6_C58
+        (CN
         1 GND
         2 U6_GBTX_VDDP_PS
-        }
-      }
-      {I CAPC0603X33N.PRT U6_C59
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT U6_C59
+        (CN
         1 GND
         2 U6_GBTX_VDDP_PS
-        }
-      }
-      {I CAPC0603X33N.PRT U6_C60
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT U6_C60
+        (CN
         1 GND
         2 U6_GBTX_VDDP_PS
-        }
-      }
-      {I CAPC0603X33N.PRT U6_C93
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT U6_C93
+        (CN
         1 GND
         2 1V5
-        }
-      }
-      {I CAPC1005X55N.PRT U6_C94
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U6_C94
+        (CN
         1 GND
         2 1V5
-        }
-      }
-      {I CAPC2012X135N.PRT U6_C129
-        {CN
+        )
+      )
+      (I CAPC2012X135N.PRT U6_C129
+        (CN
         1 DC_EFUSE_PWR
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT U6_C130
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U6_C130
+        (CN
         1 GND
         2 DC_EFUSE_PWR
-        }
-      }
-      {I CERN_GBTX ASIC_V0.1.PRT U6_IC2
-        {CN
+        )
+      )
+      (I CERN_GBTX ASIC_V0.1.PRT U6_IC2
+        (CN
        A1 NetU6_IC2_A1
        A2 NetU6_IC2_A2
        A3 NetU6_IC2_A3
@@ -7511,475 +7511,475 @@
       Y18 NetU6_IC2_Y18
       Y19 NetU6_IC2_Y19
       Y20 NetU6_IC2_Y20
-        }
-      }
-      {I LQW31HN23NJ03L_Murata_coil.PRT U6_L2
-        {CN
+        )
+      )
+      (I LQW31HN23NJ03L_Murata_coil.PRT U6_L2
+        (CN
         1 1V5
         2 U6_GBTX_VDD_SERDES
-        }
-      }
-      {I LQW31HN23NJ03L_Murata_coil.PRT U6_L3
-        {CN
+        )
+      )
+      (I LQW31HN23NJ03L_Murata_coil.PRT U6_L3
+        (CN
         1 1V5
         2 U6_GBTX_VDDP_PS
-        }
-      }
-      {I RESC1005X40N.PRT U6_R29
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U6_R29
+        (CN
         1 U6_SLVS_ONE_P
         2 1V5
-        }
-      }
-      {I RESC1005X40N.PRT U6_R30
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U6_R30
+        (CN
         1 U6_SLVS_ONE_N
         2 U6_SLVS_ONE_P
-        }
-      }
-      {I RESC1005X40N.PRT U6_R31
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U6_R31
+        (CN
         1 GND
         2 U6_SLVS_ONE_N
-        }
-      }
-      {I RESC1005X40N.PRT U6_R43
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U6_R43
+        (CN
         1 GND
         2 U6_EFUSEPROGPLS_1
-        }
-      }
-      {I RESC1005X40N.PRT U6_R48
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U6_R48
+        (CN
         1 NetU6_IC2_K10
         2 U6_DC_TST.TESTOUTPUT_1
-        }
-      }
-      {I RESC1005X40N.PRT U6_R50
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U6_R50
+        (CN
         1 U6_LDSCL_1
         2 1V5
-        }
-      }
-      {I RESC1005X40N.PRT U6_R51
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U6_R51
+        (CN
         1 U6_LDSDA_1
         2 1V5
-        }
-      }
-      {I RESC1005X40N.PRT U6_R52
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U6_R52
+        (CN
         1 NetU6_IC2_L13
         2 U6_DC_TST.TX_RDY_1
-        }
-      }
-      {I RESC1005X40N.PRT U6_R53
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U6_R53
+        (CN
         1 U6_DC_TST.RX_RDY_1
         2 NetU6_IC2_N10
-        }
-      }
-      {I RESC1005X40N.PRT U6_R54
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U6_R54
+        (CN
         1 U6_DC_TST.RX_DATVAL_1
         2 NetU6_IC2_N9
-        }
-      }
-      {I RESC1005X40N.PRT U6_R59
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U6_R59
+        (CN
         1 U6_SLVS_ONE_P
         2 NetU6_IC2_A3
-        }
-      }
-      {I RESC1005X40N.PRT U6_R60
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U6_R60
+        (CN
         1 U6_SLVS_ONE_N
         2 NetU6_IC2_A4
-        }
-      }
-      {I RESC1005X40N.PRT U6_R61
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U6_R61
+        (CN
         1 U6_SLVS_ONE_P
         2 NetU6_IC2_A6
-        }
-      }
-      {I RESC1005X40N.PRT U6_R62
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U6_R62
+        (CN
         1 U6_SLVS_ONE_N
         2 NetU6_IC2_A5
-        }
-      }
-      {I RESC1005X40N.PRT U6_R63
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U6_R63
+        (CN
         1 U6_SLVS_ONE_P
         2 NetU6_IC2_A12
-        }
-      }
-      {I RESC1005X40N.PRT U6_R64
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U6_R64
+        (CN
         1 U6_SLVS_ONE_N
         2 NetU6_IC2_A11
-        }
-      }
-      {I RESC1005X40N.PRT U6_R65
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U6_R65
+        (CN
         1 U6_SLVS_ONE_P
         2 NetU6_IC2_A14
-        }
-      }
-      {I RESC1005X40N.PRT U6_R66
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U6_R66
+        (CN
         1 U6_SLVS_ONE_N
         2 NetU6_IC2_A13
-        }
-      }
-      {I RESC1005X40N.PRT U6_R67
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U6_R67
+        (CN
         1 U6_SLVS_ONE_P
         2 NetU6_IC2_V19
-        }
-      }
-      {I RESC1005X40N.PRT U6_R68
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U6_R68
+        (CN
         1 U6_SLVS_ONE_N
         2 NetU6_IC2_W19
-        }
-      }
-      {I RESC1005X40N.PRT U6_R69
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U6_R69
+        (CN
         1 U6_SLVS_ONE_P
         2 NetU6_IC2_Y9
-        }
-      }
-      {I RESC1005X40N.PRT U6_R70
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U6_R70
+        (CN
         1 U6_SLVS_ONE_N
         2 NetU6_IC2_Y10
-        }
-      }
-      {I RESC1005X40N.PRT U6_R71
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U6_R71
+        (CN
         1 U6_SLVS_ONE_P
         2 NetU6_IC2_W3
-        }
-      }
-      {I RESC1005X40N.PRT U6_R72
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U6_R72
+        (CN
         1 U6_SLVS_ONE_N
         2 NetU6_IC2_V3
-        }
-      }
-      {I RESC1005X40N.PRT U6_R73
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U6_R73
+        (CN
         1 U6_SLVS_ONE_P
         2 NetU6_IC2_Y3
-        }
-      }
-      {I RESC1005X40N.PRT U6_R74
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U6_R74
+        (CN
         1 U6_SLVS_ONE_N
         2 NetU6_IC2_Y4
-        }
-      }
-      {I RESC1005X40N.PRT U6_R75
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U6_R75
+        (CN
         1 1V5
         2 U1_DC_TST.DF_AUTORESET_TESTINJ_1
-        }
-      }
-      {I RESC5226X80N.PRT U6_R87
-        {CN
+        )
+      )
+      (I RESC5226X80N.PRT U6_R87
+        (CN
         1 1V5
         2 U6_GBTX_VDD_SERDES
-        }
-      }
-      {I RESC5226X80N.PRT U6_R88
-        {CN
+        )
+      )
+      (I RESC5226X80N.PRT U6_R88
+        (CN
         1 1V5
         2 U6_GBTX_VDDP_PS
-        }
-      }
-      {I TPS127.PRT U6_TP1
-        {CN
+        )
+      )
+      (I TPS127.PRT U6_TP1
+        (CN
         1 U6_SLVS_ONE_P
-        }
-      }
-      {I TPS127.PRT U6_TP2
-        {CN
+        )
+      )
+      (I TPS127.PRT U6_TP2
+        (CN
         1 U6_SLVS_ONE_N
-        }
-      }
-      {I TPS127.PRT U6_TP5
-        {CN
+        )
+      )
+      (I TPS127.PRT U6_TP5
+        (CN
         1 GND
-        }
-      }
-      {I CAPC2012X135N.PRT U_MC_C21
-        {CN
+        )
+      )
+      (I CAPC2012X135N.PRT U_MC_C21
+        (CN
         1 1V5
         2 GND
-        }
-      }
-      {I CAPC2012X135N.PRT U_MC_C22
-        {CN
+        )
+      )
+      (I CAPC2012X135N.PRT U_MC_C22
+        (CN
         1 1V5
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT U_MC_C23
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U_MC_C23
+        (CN
         1 GND
         2 1V5
-        }
-      }
-      {I CAPC1005X55N.PRT U_MC_C24
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U_MC_C24
+        (CN
         1 GND
         2 1V5
-        }
-      }
-      {I CAPC1005X55N.PRT U_MC_C25
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U_MC_C25
+        (CN
         1 GND
         2 1V5
-        }
-      }
-      {I CAPC1005X55N.PRT U_MC_C26
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U_MC_C26
+        (CN
         1 GND
         2 1V5
-        }
-      }
-      {I CAPC1005X55N.PRT U_MC_C27
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U_MC_C27
+        (CN
         1 GND
         2 1V5
-        }
-      }
-      {I CAPC1005X55N.PRT U_MC_C28
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U_MC_C28
+        (CN
         1 GND
         2 1V5
-        }
-      }
-      {I CAPC1005X55N.PRT U_MC_C29
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U_MC_C29
+        (CN
         1 GND
         2 1V5
-        }
-      }
-      {I CAPC1005X55N.PRT U_MC_C30
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U_MC_C30
+        (CN
         1 GND
         2 1V5
-        }
-      }
-      {I CAPC0603X33N.PRT U_MC_C31
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT U_MC_C31
+        (CN
         1 GND
         2 1V5
-        }
-      }
-      {I CAPC0603X33N.PRT U_MC_C32
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT U_MC_C32
+        (CN
         1 GND
         2 1V5
-        }
-      }
-      {I CAPC0603X33N.PRT U_MC_C33
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT U_MC_C33
+        (CN
         1 GND
         2 1V5
-        }
-      }
-      {I CAPC0603X33N.PRT U_MC_C34
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT U_MC_C34
+        (CN
         1 GND
         2 1V5
-        }
-      }
-      {I CAPC0603X33N.PRT U_MC_C35
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT U_MC_C35
+        (CN
         1 GND
         2 1V5
-        }
-      }
-      {I CAPC0603X33N.PRT U_MC_C36
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT U_MC_C36
+        (CN
         1 GND
         2 1V5
-        }
-      }
-      {I CAPC2012X135N.PRT U_MC_C37
-        {CN
+        )
+      )
+      (I CAPC2012X135N.PRT U_MC_C37
+        (CN
         1 U_MC_GBTX_VDD_SERDES
         2 GND
-        }
-      }
-      {I CAPC2012X135N.PRT U_MC_C38
-        {CN
+        )
+      )
+      (I CAPC2012X135N.PRT U_MC_C38
+        (CN
         1 U_MC_GBTX_VDD_SERDES
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT U_MC_C39
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U_MC_C39
+        (CN
         1 GND
         2 U_MC_GBTX_VDD_SERDES
-        }
-      }
-      {I CAPC1005X55N.PRT U_MC_C40
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U_MC_C40
+        (CN
         1 GND
         2 U_MC_GBTX_VDD_SERDES
-        }
-      }
-      {I CAPC1005X55N.PRT U_MC_C41
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U_MC_C41
+        (CN
         1 GND
         2 U_MC_GBTX_VDD_SERDES
-        }
-      }
-      {I CAPC1005X55N.PRT U_MC_C42
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U_MC_C42
+        (CN
         1 GND
         2 U_MC_GBTX_VDD_SERDES
-        }
-      }
-      {I CAPC1005X55N.PRT U_MC_C43
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U_MC_C43
+        (CN
         1 GND
         2 U_MC_GBTX_VDD_SERDES
-        }
-      }
-      {I CAPC1005X55N.PRT U_MC_C44
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U_MC_C44
+        (CN
         1 GND
         2 U_MC_GBTX_VDD_SERDES
-        }
-      }
-      {I CAPC1005X55N.PRT U_MC_C45
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U_MC_C45
+        (CN
         1 GND
         2 U_MC_GBTX_VDD_SERDES
-        }
-      }
-      {I CAPC1005X55N.PRT U_MC_C46
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U_MC_C46
+        (CN
         1 GND
         2 U_MC_GBTX_VDD_SERDES
-        }
-      }
-      {I CAPC0603X33N.PRT U_MC_C47
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT U_MC_C47
+        (CN
         1 GND
         2 U_MC_GBTX_VDD_SERDES
-        }
-      }
-      {I CAPC0603X33N.PRT U_MC_C48
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT U_MC_C48
+        (CN
         1 GND
         2 U_MC_GBTX_VDD_SERDES
-        }
-      }
-      {I CAPC0603X33N.PRT U_MC_C49
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT U_MC_C49
+        (CN
         1 GND
         2 U_MC_GBTX_VDD_SERDES
-        }
-      }
-      {I CAPC0603X33N.PRT U_MC_C50
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT U_MC_C50
+        (CN
         1 GND
         2 U_MC_GBTX_VDD_SERDES
-        }
-      }
-      {I CAPC0603X33N.PRT U_MC_C51
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT U_MC_C51
+        (CN
         1 GND
         2 U_MC_GBTX_VDD_SERDES
-        }
-      }
-      {I CAPC0603X33N.PRT U_MC_C52
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT U_MC_C52
+        (CN
         1 GND
         2 U_MC_GBTX_VDD_SERDES
-        }
-      }
-      {I CAPC2012X135N.PRT U_MC_C53
-        {CN
+        )
+      )
+      (I CAPC2012X135N.PRT U_MC_C53
+        (CN
         1 U_MC_GBTX_VDDP_PS
         2 GND
-        }
-      }
-      {I CAPC2012X135N.PRT U_MC_C54
-        {CN
+        )
+      )
+      (I CAPC2012X135N.PRT U_MC_C54
+        (CN
         1 U_MC_GBTX_VDDP_PS
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT U_MC_C55
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U_MC_C55
+        (CN
         1 GND
         2 U_MC_GBTX_VDDP_PS
-        }
-      }
-      {I CAPC1005X55N.PRT U_MC_C56
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U_MC_C56
+        (CN
         1 GND
         2 U_MC_GBTX_VDDP_PS
-        }
-      }
-      {I CAPC1005X55N.PRT U_MC_C57
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U_MC_C57
+        (CN
         1 GND
         2 U_MC_GBTX_VDDP_PS
-        }
-      }
-      {I CAPC0603X33N.PRT U_MC_C58
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT U_MC_C58
+        (CN
         1 GND
         2 U_MC_GBTX_VDDP_PS
-        }
-      }
-      {I CAPC0603X33N.PRT U_MC_C59
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT U_MC_C59
+        (CN
         1 GND
         2 U_MC_GBTX_VDDP_PS
-        }
-      }
-      {I CAPC0603X33N.PRT U_MC_C60
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT U_MC_C60
+        (CN
         1 GND
         2 U_MC_GBTX_VDDP_PS
-        }
-      }
-      {I CAPC0603X33N.PRT U_MC_C93
-        {CN
+        )
+      )
+      (I CAPC0603X33N.PRT U_MC_C93
+        (CN
         1 GND
         2 1V5
-        }
-      }
-      {I CAPC1005X55N.PRT U_MC_C94
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U_MC_C94
+        (CN
         1 GND
         2 1V5
-        }
-      }
-      {I CAPC2012X135N.PRT U_MC_C129
-        {CN
+        )
+      )
+      (I CAPC2012X135N.PRT U_MC_C129
+        (CN
         1 MC_EFUSE_PWR_1
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT U_MC_C130
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT U_MC_C130
+        (CN
         1 GND
         2 MC_EFUSE_PWR_1
-        }
-      }
-      {I CERN_GBTX ASIC_V0.1.PRT U_MC_IC2
-        {CN
+        )
+      )
+      (I CERN_GBTX ASIC_V0.1.PRT U_MC_IC2
+        (CN
        A1 NetU_MC_IC2_A1
        A2 NetU_MC_IC2_A2
        A3 NetU_MC_IC2_A3
@@ -8380,209 +8380,209 @@
       Y18 NetU_MC_IC2_Y18
       Y19 NetU_MC_IC2_Y19
       Y20 NetU_MC_IC2_Y20
-        }
-      }
-      {I LQW31HN23NJ03L_Murata_coil.PRT U_MC_L2
-        {CN
+        )
+      )
+      (I LQW31HN23NJ03L_Murata_coil.PRT U_MC_L2
+        (CN
         1 1V5
         2 U_MC_GBTX_VDD_SERDES
-        }
-      }
-      {I LQW31HN23NJ03L_Murata_coil.PRT U_MC_L3
-        {CN
+        )
+      )
+      (I LQW31HN23NJ03L_Murata_coil.PRT U_MC_L3
+        (CN
         1 1V5
         2 U_MC_GBTX_VDDP_PS
-        }
-      }
-      {I RESC1005X40N.PRT U_MC_R29
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U_MC_R29
+        (CN
         1 U_MC_SLVS_ONE_P
         2 1V5
-        }
-      }
-      {I RESC1005X40N.PRT U_MC_R30
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U_MC_R30
+        (CN
         1 U_MC_SLVS_ONE_N
         2 U_MC_SLVS_ONE_P
-        }
-      }
-      {I RESC1005X40N.PRT U_MC_R31
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U_MC_R31
+        (CN
         1 GND
         2 U_MC_SLVS_ONE_N
-        }
-      }
-      {I RESC1005X40N.PRT U_MC_R43
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U_MC_R43
+        (CN
         1 GND
         2 U_MC_EFUSEPROGPLS_1
-        }
-      }
-      {I RESC1005X40N.PRT U_MC_R48
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U_MC_R48
+        (CN
         1 NetU_MC_IC2_K10
         2 U_MC_TST.TESTOUTPUT_1
-        }
-      }
-      {I RESC1005X40N.PRT U_MC_R50
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U_MC_R50
+        (CN
         1 MC_LDSCL_1
         2 1V5
-        }
-      }
-      {I RESC1005X40N.PRT U_MC_R51
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U_MC_R51
+        (CN
         1 MC_LDSDA_1
         2 1V5
-        }
-      }
-      {I RESC1005X40N.PRT U_MC_R52
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U_MC_R52
+        (CN
         1 NetU_MC_IC2_L13
         2 U_MC_TST.TX_RDY_1
-        }
-      }
-      {I RESC1005X40N.PRT U_MC_R53
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U_MC_R53
+        (CN
         1 U_MC_TST.RX_RDY_1
         2 NetU_MC_IC2_N10
-        }
-      }
-      {I RESC1005X40N.PRT U_MC_R54
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U_MC_R54
+        (CN
         1 U_MC_TST.RX_DATVAL_1
         2 NetU_MC_IC2_N9
-        }
-      }
-      {I RESC1005X40N.PRT U_MC_R59
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U_MC_R59
+        (CN
         1 U_MC_SLVS_ONE_P
         2 NetU_MC_IC2_A3
-        }
-      }
-      {I RESC1005X40N.PRT U_MC_R60
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U_MC_R60
+        (CN
         1 U_MC_SLVS_ONE_N
         2 NetU_MC_IC2_A4
-        }
-      }
-      {I RESC1005X40N.PRT U_MC_R61
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U_MC_R61
+        (CN
         1 U_MC_SLVS_ONE_P
         2 NetU_MC_IC2_A6
-        }
-      }
-      {I RESC1005X40N.PRT U_MC_R62
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U_MC_R62
+        (CN
         1 U_MC_SLVS_ONE_N
         2 NetU_MC_IC2_A5
-        }
-      }
-      {I RESC1005X40N.PRT U_MC_R63
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U_MC_R63
+        (CN
         1 U_MC_SLVS_ONE_P
         2 NetU_MC_IC2_A12
-        }
-      }
-      {I RESC1005X40N.PRT U_MC_R64
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U_MC_R64
+        (CN
         1 U_MC_SLVS_ONE_N
         2 NetU_MC_IC2_A11
-        }
-      }
-      {I RESC1005X40N.PRT U_MC_R65
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U_MC_R65
+        (CN
         1 U_MC_SLVS_ONE_P
         2 NetU_MC_IC2_A14
-        }
-      }
-      {I RESC1005X40N.PRT U_MC_R66
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U_MC_R66
+        (CN
         1 U_MC_SLVS_ONE_N
         2 NetU_MC_IC2_A13
-        }
-      }
-      {I RESC1005X40N.PRT U_MC_R67
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U_MC_R67
+        (CN
         1 U_MC_SLVS_ONE_P
         2 NetU_MC_IC2_V19
-        }
-      }
-      {I RESC1005X40N.PRT U_MC_R68
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U_MC_R68
+        (CN
         1 U_MC_SLVS_ONE_N
         2 NetU_MC_IC2_W19
-        }
-      }
-      {I RESC1005X40N.PRT U_MC_R69
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U_MC_R69
+        (CN
         1 U_MC_SLVS_ONE_P
         2 NetU_MC_IC2_Y9
-        }
-      }
-      {I RESC1005X40N.PRT U_MC_R70
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U_MC_R70
+        (CN
         1 U_MC_SLVS_ONE_N
         2 NetU_MC_IC2_Y10
-        }
-      }
-      {I RESC1005X40N.PRT U_MC_R71
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U_MC_R71
+        (CN
         1 U_MC_SLVS_ONE_P
         2 NetU_MC_IC2_W3
-        }
-      }
-      {I RESC1005X40N.PRT U_MC_R72
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U_MC_R72
+        (CN
         1 U_MC_SLVS_ONE_N
         2 NetU_MC_IC2_V3
-        }
-      }
-      {I RESC1005X40N.PRT U_MC_R73
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U_MC_R73
+        (CN
         1 U_MC_SLVS_ONE_P
         2 NetU_MC_IC2_Y3
-        }
-      }
-      {I RESC1005X40N.PRT U_MC_R74
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U_MC_R74
+        (CN
         1 U_MC_SLVS_ONE_N
         2 NetU_MC_IC2_Y4
-        }
-      }
-      {I RESC1005X40N.PRT U_MC_R75
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT U_MC_R75
+        (CN
         1 1V5
         2 U_MC_TST.DF_AUTORESET_TESTINJ_1
-        }
-      }
-      {I RESC5226X80N.PRT U_MC_R87
-        {CN
+        )
+      )
+      (I RESC5226X80N.PRT U_MC_R87
+        (CN
         1 1V5
         2 U_MC_GBTX_VDD_SERDES
-        }
-      }
-      {I RESC5226X80N.PRT U_MC_R88
-        {CN
+        )
+      )
+      (I RESC5226X80N.PRT U_MC_R88
+        (CN
         1 1V5
         2 U_MC_GBTX_VDDP_PS
-        }
-      }
-      {I TPS127.PRT U_MC_TP1
-        {CN
+        )
+      )
+      (I TPS127.PRT U_MC_TP1
+        (CN
         1 U_MC_SLVS_ONE_P
-        }
-      }
-      {I TPS127.PRT U_MC_TP2
-        {CN
+        )
+      )
+      (I TPS127.PRT U_MC_TP2
+        (CN
         1 U_MC_SLVS_ONE_N
-        }
-      }
-      {I TPS127.PRT U_MC_TP5
-        {CN
+        )
+      )
+      (I TPS127.PRT U_MC_TP5
+        (CN
         1 GND
-        }
-      }
-    }
-  }
-}
+        )
+      )
+    )
+  )
+)

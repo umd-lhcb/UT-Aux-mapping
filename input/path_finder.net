@@ -1,1707 +1,1707 @@
-{COMPONENT PROTEL.PCB
-  {ENVIRONMENT PROTEL.SCH}
-  {DETAIL
-    {SUBCOMP
-      {I c130h80.PRT B1
-        {CN
+(COMPONENT PROTEL.PCB
+  (ENVIRONMENT PROTEL.SCH)
+  (DETAIL
+    (SUBCOMP
+      (I c130h80.PRT B1
+        (CN
         1 NetB1_1
-        }
-      }
-      {I c130h80.PRT B2
-        {CN
+        )
+      )
+      (I c130h80.PRT B2
+        (CN
         1 GND
-        }
-      }
-      {I c130h80.PRT B3
-        {CN
+        )
+      )
+      (I c130h80.PRT B3
+        (CN
         1 GND
-        }
-      }
-      {I c130h80.PRT B4
-        {CN
+        )
+      )
+      (I c130h80.PRT B4
+        (CN
         1 NetB4_1
-        }
-      }
-      {I c130h80.PRT B5
-        {CN
+        )
+      )
+      (I c130h80.PRT B5
+        (CN
         1 NetB5_1
-        }
-      }
-      {I c130h80.PRT B6
-        {CN
+        )
+      )
+      (I c130h80.PRT B6
+        (CN
         1 GND
-        }
-      }
-      {I c130h80.PRT B7
-        {CN
+        )
+      )
+      (I c130h80.PRT B7
+        (CN
         1 GND
-        }
-      }
-      {I c130h80.PRT B8
-        {CN
+        )
+      )
+      (I c130h80.PRT B8
+        (CN
         1 NetB8_1
-        }
-      }
-      {I c130h80.PRT B9
-        {CN
+        )
+      )
+      (I c130h80.PRT B9
+        (CN
         1 NetB9_1
-        }
-      }
-      {I c130h80.PRT B10
-        {CN
+        )
+      )
+      (I c130h80.PRT B10
+        (CN
         1 GND
-        }
-      }
-      {I c130h80.PRT B11
-        {CN
+        )
+      )
+      (I c130h80.PRT B11
+        (CN
         1 NetB11_1
-        }
-      }
-      {I c130h80.PRT B12
-        {CN
+        )
+      )
+      (I c130h80.PRT B12
+        (CN
         1 GND
-        }
-      }
-      {I c130h80.PRT B13
-        {CN
+        )
+      )
+      (I c130h80.PRT B13
+        (CN
         1 NetB13_1
-        }
-      }
-      {I c130h80.PRT B14
-        {CN
+        )
+      )
+      (I c130h80.PRT B14
+        (CN
         1 GND
-        }
-      }
-      {I c130h80.PRT B15
-        {CN
+        )
+      )
+      (I c130h80.PRT B15
+        (CN
         1 GND
-        }
-      }
-      {I c130h80.PRT B16
-        {CN
+        )
+      )
+      (I c130h80.PRT B16
+        (CN
         1 NetB16_1
-        }
-      }
-      {I c130h80.PRT B17
-        {CN
+        )
+      )
+      (I c130h80.PRT B17
+        (CN
         1 NetB17_1
-        }
-      }
-      {I c130h80.PRT B18
-        {CN
+        )
+      )
+      (I c130h80.PRT B18
+        (CN
         1 GND
-        }
-      }
-      {I c130h80.PRT B19
-        {CN
+        )
+      )
+      (I c130h80.PRT B19
+        (CN
         1 NetB19_1
-        }
-      }
-      {I c130h80.PRT B20
-        {CN
+        )
+      )
+      (I c130h80.PRT B20
+        (CN
         1 GND
-        }
-      }
-      {I c130h80.PRT B21
-        {CN
+        )
+      )
+      (I c130h80.PRT B21
+        (CN
         1 NetB21_1
-        }
-      }
-      {I c130h80.PRT B22
-        {CN
+        )
+      )
+      (I c130h80.PRT B22
+        (CN
         1 GND
-        }
-      }
-      {I c130h80.PRT B23
-        {CN
+        )
+      )
+      (I c130h80.PRT B23
+        (CN
         1 GND
-        }
-      }
-      {I c130h80.PRT B24
-        {CN
+        )
+      )
+      (I c130h80.PRT B24
+        (CN
         1 NetB24_1
-        }
-      }
-      {I c130h80.PRT B25
-        {CN
+        )
+      )
+      (I c130h80.PRT B25
+        (CN
         1 NetB25_1
-        }
-      }
-      {I c130h80.PRT B26
-        {CN
+        )
+      )
+      (I c130h80.PRT B26
+        (CN
         1 GND
-        }
-      }
-      {I c130h80.PRT B27
-        {CN
+        )
+      )
+      (I c130h80.PRT B27
+        (CN
         1 NetB27_1
-        }
-      }
-      {I c130h80.PRT B28
-        {CN
+        )
+      )
+      (I c130h80.PRT B28
+        (CN
         1 GND
-        }
-      }
-      {I c130h80.PRT B29
-        {CN
+        )
+      )
+      (I c130h80.PRT B29
+        (CN
         1 NetB29_1
-        }
-      }
-      {I c130h80.PRT B30
-        {CN
+        )
+      )
+      (I c130h80.PRT B30
+        (CN
         1 GND
-        }
-      }
-      {I c130h80.PRT B31
-        {CN
+        )
+      )
+      (I c130h80.PRT B31
+        (CN
         1 GND
-        }
-      }
-      {I c130h80.PRT B32
-        {CN
+        )
+      )
+      (I c130h80.PRT B32
+        (CN
         1 NetB32_1
-        }
-      }
-      {I c130h80.PRT B33
-        {CN
+        )
+      )
+      (I c130h80.PRT B33
+        (CN
         1 NetB33_1
-        }
-      }
-      {I c130h80.PRT B34
-        {CN
+        )
+      )
+      (I c130h80.PRT B34
+        (CN
         1 GND
-        }
-      }
-      {I c130h80.PRT B35
-        {CN
+        )
+      )
+      (I c130h80.PRT B35
+        (CN
         1 GND
-        }
-      }
-      {I c130h80.PRT B36
-        {CN
+        )
+      )
+      (I c130h80.PRT B36
+        (CN
         1 NetB36_1
-        }
-      }
-      {I c130h80.PRT B37
-        {CN
+        )
+      )
+      (I c130h80.PRT B37
+        (CN
         1 NetB37_1
-        }
-      }
-      {I c130h80.PRT B38
-        {CN
+        )
+      )
+      (I c130h80.PRT B38
+        (CN
         1 GND
-        }
-      }
-      {I c130h80.PRT B39
-        {CN
+        )
+      )
+      (I c130h80.PRT B39
+        (CN
         1 GND
-        }
-      }
-      {I c130h80.PRT B40
-        {CN
+        )
+      )
+      (I c130h80.PRT B40
+        (CN
         1 NetB40_1
-        }
-      }
-      {I c130h80.PRT B41
-        {CN
+        )
+      )
+      (I c130h80.PRT B41
+        (CN
         1 NetB41_1
-        }
-      }
-      {I c130h80.PRT B42
-        {CN
+        )
+      )
+      (I c130h80.PRT B42
+        (CN
         1 GND
-        }
-      }
-      {I c130h80.PRT B43
-        {CN
+        )
+      )
+      (I c130h80.PRT B43
+        (CN
         1 GND
-        }
-      }
-      {I c130h80.PRT B44
-        {CN
+        )
+      )
+      (I c130h80.PRT B44
+        (CN
         1 NetB44_1
-        }
-      }
-      {I c130h80.PRT B45
-        {CN
+        )
+      )
+      (I c130h80.PRT B45
+        (CN
         1 NetB45_1
-        }
-      }
-      {I c130h80.PRT B46
-        {CN
+        )
+      )
+      (I c130h80.PRT B46
+        (CN
         1 GND
-        }
-      }
-      {I c130h80.PRT B47
-        {CN
+        )
+      )
+      (I c130h80.PRT B47
+        (CN
         1 GND
-        }
-      }
-      {I c130h80.PRT B48
-        {CN
+        )
+      )
+      (I c130h80.PRT B48
+        (CN
         1 NetB48_1
-        }
-      }
-      {I CAPC1005X55N.PRT C1
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C1
+        (CN
         1 JD0_JPL0_1V5
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C2
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C2
+        (CN
         1 JD1_0_JPL0_2V5
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C3
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C3
+        (CN
         1 JD0_JPL0_1V5
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C4
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C4
+        (CN
         1 JD1_0_JPL0_2V5
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C5
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C5
+        (CN
         1 JD1_JPL0_1V5
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C6
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C6
+        (CN
         1 JD1_0_JPL0_2V5
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C7
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C7
+        (CN
         1 JD1_JPL0_1V5
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C8
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C8
+        (CN
         1 JD1_0_JPL0_2V5
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C9
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C9
+        (CN
         1 JD2_JPL0_1V5
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C10
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C10
+        (CN
         1 JD3_2_JPL0_2V5
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C11
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C11
+        (CN
         1 JD2_JPL0_1V5
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C12
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C12
+        (CN
         1 JD3_2_JPL0_2V5
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C13
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C13
+        (CN
         1 JD3_JPL0_1V5
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C14
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C14
+        (CN
         1 JD3_2_JPL0_2V5
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C15
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C15
+        (CN
         1 JD3_JPL0_1V5
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C16
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C16
+        (CN
         1 JD3_2_JPL0_2V5
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C17
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C17
+        (CN
         1 JD4_JPL1_1V5
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C18
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C18
+        (CN
         1 JD5_4_JPL1_2V5
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C19
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C19
+        (CN
         1 JD4_JPL1_1V5
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C20
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C20
+        (CN
         1 JD5_4_JPL1_2V5
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C21
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C21
+        (CN
         1 JD5_JPL1_1V5
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C22
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C22
+        (CN
         1 JD5_4_JPL1_2V5
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C23
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C23
+        (CN
         1 JD5_JPL1_1V5
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C24
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C24
+        (CN
         1 JD5_4_JPL1_2V5
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C25
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C25
+        (CN
         1 JD6_JPL1_1V5
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C26
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C26
+        (CN
         1 JD7_6_JPL1_2V5
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C27
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C27
+        (CN
         1 JD6_JPL1_1V5
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C28
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C28
+        (CN
         1 JD7_6_JPL1_2V5
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C29
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C29
+        (CN
         1 JD7_JPL1_1V5
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C30
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C30
+        (CN
         1 JD7_6_JPL1_2V5
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C31
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C31
+        (CN
         1 JD7_JPL1_1V5
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C32
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C32
+        (CN
         1 JD7_6_JPL1_2V5
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C33
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C33
+        (CN
         1 JD8_JPL2_1V5
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C34
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C34
+        (CN
         1 JD9_8_JPL2_2V5
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C35
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C35
+        (CN
         1 JD8_JPL2_1V5
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C36
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C36
+        (CN
         1 JD9_8_JPL2_2V5
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C37
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C37
+        (CN
         1 JD9_JPL2_1V5
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C38
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C38
+        (CN
         1 JD9_8_JPL2_2V5
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C39
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C39
+        (CN
         1 JD9_JPL2_1V5
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C40
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C40
+        (CN
         1 JD9_8_JPL2_2V5
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C41
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C41
+        (CN
         1 JD10_JPL2_1V5
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C42
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C42
+        (CN
         1 JD11_10_JPL2_2V5
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C43
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C43
+        (CN
         1 JD10_JPL2_1V5
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C44
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C44
+        (CN
         1 JD11_10_JPL2_2V5
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C45
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C45
+        (CN
         1 JD11_JPL2_1V5
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C46
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C46
+        (CN
         1 JD11_10_JPL2_2V5
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C47
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C47
+        (CN
         1 JD11_JPL2_1V5
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C48
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C48
+        (CN
         1 JD11_10_JPL2_2V5
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C49
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C49
+        (CN
         1 GND
         2 JD0_JP0_EC_RESET_GPIO_5_N
-        }
-      }
-      {I CAPC1005X55N.PRT C50
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C50
+        (CN
         1 GND
         2 JD0_JP0_EC_HYB_i2C_SDA_5_N
-        }
-      }
-      {I CAPC1005X55N.PRT C51
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C51
+        (CN
         1 GND
         2 JD0_JP0_EC_HYB_i2C_SCL_5_N
-        }
-      }
-      {I CAPC1005X55N.PRT C52
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C52
+        (CN
         1 GND
         2 JD2_JP0_EC_RESET_GPIO_5_N
-        }
-      }
-      {I CAPC1005X55N.PRT C53
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C53
+        (CN
         1 GND
         2 JD2_JP0_EC_HYB_i2C_SDA_5_N
-        }
-      }
-      {I CAPC1005X55N.PRT C54
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C54
+        (CN
         1 GND
         2 JD2_JP0_EC_HYB_i2C_SCL_5_N
-        }
-      }
-      {I CAPC1005X55N.PRT C55
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C55
+        (CN
         1 GND
         2 JD4_JP0_EC_RESET_GPIO_5_N
-        }
-      }
-      {I CAPC1005X55N.PRT C56
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C56
+        (CN
         1 GND
         2 JD4_JP0_EC_HYB_i2C_SDA_5_N
-        }
-      }
-      {I CAPC1005X55N.PRT C57
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C57
+        (CN
         1 GND
         2 JD4_JP0_EC_HYB_i2C_SCL_5_N
-        }
-      }
-      {I CAPC1005X55N.PRT C58
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C58
+        (CN
         1 GND
         2 JD4_JP0_EC_RESET_GPIO_4_N
-        }
-      }
-      {I CAPC1005X55N.PRT C59
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C59
+        (CN
         1 GND
         2 JD4_JP0_EC_HYB_i2C_SDA_4_N
-        }
-      }
-      {I CAPC1005X55N.PRT C60
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C60
+        (CN
         1 GND
         2 JD4_JP0_EC_HYB_i2C_SCL_4_N
-        }
-      }
-      {I CAPC1005X55N.PRT C61
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C61
+        (CN
         1 GND
         2 JD4_JP0_EC_RESET_GPIO_3_N
-        }
-      }
-      {I CAPC1005X55N.PRT C62
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C62
+        (CN
         1 GND
         2 JD4_JP0_EC_HYB_i2C_SDA_3_N
-        }
-      }
-      {I CAPC1005X55N.PRT C63
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C63
+        (CN
         1 GND
         2 JD4_JP0_EC_HYB_i2C_SCL_3_N
-        }
-      }
-      {I CAPC1005X55N.PRT C64
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C64
+        (CN
         1 GND
         2 JP2A16_P3_LV_SENSE_GND
-        }
-      }
-      {I CAPC1005X55N.PRT C65
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C65
+        (CN
         1 GND
         2 JP2A27_P4_LV_SENSE_GND
-        }
-      }
-      {I CAPC1005X55N.PRT C66
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C66
+        (CN
         1 GND
         2 JP0A27_P4_LV_SENSE_GND
-        }
-      }
-      {I CAPC1005X55N.PRT C67
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C67
+        (CN
         1 GND
         2 JP2F05_P2_EAST_LV_SENSE_GND
-        }
-      }
-      {I CAPC1005X55N.PRT C68
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C68
+        (CN
         1 GND
         2 JP0A16_P3_LV_SENSE_GND
-        }
-      }
-      {I CAPC1005X55N.PRT C69
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C69
+        (CN
         1 GND
         2 JP2F36_P2_WEST_LV_SENSE_GND
-        }
-      }
-      {I CAPC1005X55N.PRT C70
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C70
+        (CN
         1 GND
         2 JP0F05_P2_EAST_LV_SENSE_GND
-        }
-      }
-      {I CAPC1005X55N.PRT C71
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C71
+        (CN
         1 GND
         2 JP2J07_P1_EAST_LV_SENSE_GND
-        }
-      }
-      {I CAPC1005X55N.PRT C72
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C72
+        (CN
         1 GND
         2 JP0J07_P1_EAST_LV_SENSE_GND
-        }
-      }
-      {I CAPC1005X55N.PRT C73
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C73
+        (CN
         1 GND
         2 JP0J24_P1_WEST_LV_SENSE_GND
-        }
-      }
-      {I CAPC1005X55N.PRT C74
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C74
+        (CN
         1 GND
         2 JD0_JP1_EC_RESET_GPIO_3_N
-        }
-      }
-      {I CAPC1005X55N.PRT C75
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C75
+        (CN
         1 GND
         2 JD0_JP1_EC_HYB_i2C_SDA_3_N
-        }
-      }
-      {I CAPC1005X55N.PRT C76
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C76
+        (CN
         1 GND
         2 JD0_JP1_EC_HYB_i2C_SCL_3_N
-        }
-      }
-      {I CAPC1005X55N.PRT C77
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C77
+        (CN
         1 GND
         2 JD2_JP1_EC_RESET_GPIO_3_N
-        }
-      }
-      {I CAPC1005X55N.PRT C78
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C78
+        (CN
         1 GND
         2 JD2_JP1_EC_HYB_i2C_SDA_3_N
-        }
-      }
-      {I CAPC1005X55N.PRT C79
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C79
+        (CN
         1 GND
         2 JD2_JP1_EC_HYB_i2C_SCL_3_N
-        }
-      }
-      {I CAPC1005X55N.PRT C80
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C80
+        (CN
         1 GND
         2 JD0_JP1_EC_RESET_GPIO_1_N
-        }
-      }
-      {I CAPC1005X55N.PRT C81
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C81
+        (CN
         1 GND
         2 JD0_JP1_EC_HYB_i2C_SDA_1_N
-        }
-      }
-      {I CAPC1005X55N.PRT C82
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C82
+        (CN
         1 GND
         2 JD0_JP1_EC_HYB_i2C_SCL_1_N
-        }
-      }
-      {I CAPC1005X55N.PRT C83
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C83
+        (CN
         1 GND
         2 JD4_JP1_EC_RESET_GPIO_2_N
-        }
-      }
-      {I CAPC1005X55N.PRT C84
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C84
+        (CN
         1 GND
         2 JD4_JP1_EC_HYB_i2C_SDA_2_N
-        }
-      }
-      {I CAPC1005X55N.PRT C85
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C85
+        (CN
         1 GND
         2 JD4_JP1_EC_HYB_i2C_SCL_2_N
-        }
-      }
-      {I CAPC1005X55N.PRT C86
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C86
+        (CN
         1 GND
         2 JD4_JP1_EC_RESET_GPIO_1_N
-        }
-      }
-      {I CAPC1005X55N.PRT C87
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C87
+        (CN
         1 GND
         2 JD4_JP1_EC_HYB_i2C_SDA_1_N
-        }
-      }
-      {I CAPC1005X55N.PRT C88
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C88
+        (CN
         1 GND
         2 JD4_JP1_EC_HYB_i2C_SCL_1_N
-        }
-      }
-      {I CAPC1005X55N.PRT C89
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C89
+        (CN
         1 GND
         2 JD2_JP1_EC_RESET_GPIO_1_N
-        }
-      }
-      {I CAPC1005X55N.PRT C90
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C90
+        (CN
         1 GND
         2 JD2_JP1_EC_HYB_i2C_SDA_1_N
-        }
-      }
-      {I CAPC1005X55N.PRT C91
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C91
+        (CN
         1 GND
         2 JD2_JP1_EC_HYB_i2C_SCL_1_N
-        }
-      }
-      {I CAPC1005X55N.PRT C92
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C92
+        (CN
         1 GND
         2 JP2J24_P1_WEST_LV_SENSE_GND
-        }
-      }
-      {I CAPC1005X55N.PRT C93
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C93
+        (CN
         1 GND
         2 JP3A16_P3_LV_SENSE_GND
-        }
-      }
-      {I CAPC1005X55N.PRT C94
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C94
+        (CN
         1 GND
         2 JP1A27_P4_LV_SENSE_GND
-        }
-      }
-      {I CAPC1005X55N.PRT C95
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C95
+        (CN
         1 GND
         2 JP3A27_P4_LV_SENSE_GND
-        }
-      }
-      {I CAPC1005X55N.PRT C96
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C96
+        (CN
         1 GND
         2 JP1A16_P3_LV_SENSE_GND
-        }
-      }
-      {I CAPC1005X55N.PRT C97
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C97
+        (CN
         1 GND
         2 JP3F05_P2_EAST_LV_SENSE_GND
-        }
-      }
-      {I CAPC1005X55N.PRT C98
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C98
+        (CN
         1 GND
         2 JP1F05_P2_EAST_LV_SENSE_GND
-        }
-      }
-      {I CAPC1005X55N.PRT C99
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C99
+        (CN
         1 GND
         2 JP3J07_P1_EAST_LV_SENSE_GND
-        }
-      }
-      {I CAPC1005X55N.PRT C100
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C100
+        (CN
         1 GND
         2 JP1J07_P1_EAST_LV_SENSE_GND
-        }
-      }
-      {I CAPC1005X55N.PRT C101
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C101
+        (CN
         1 GND
         2 JP3J24_P1_WEST_LV_SENSE_GND
-        }
-      }
-      {I CAPC1005X55N.PRT C102
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C102
+        (CN
         1 GND
         2 JP1J24_P1_WEST_LV_SENSE_GND
-        }
-      }
-      {I CAPC1005X55N.PRT C103
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C103
+        (CN
         1 GND
         2 JP1F36_P2_WEST_LV_SENSE_GND
-        }
-      }
-      {I CAPC1005X55N.PRT C104
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C104
+        (CN
         1 JP3_JPU0_P1_WEST_LV_SOURCE
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C105
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C105
+        (CN
         1 JP3_JPU0_P1_EAST_LV_SOURCE
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C106
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C106
+        (CN
         1 JP2_JPU0_P1_WEST_LV_SOURCE
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C107
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C107
+        (CN
         1 JP2_JPU0_P1_EAST_LV_SOURCE
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C108
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C108
+        (CN
         1 JP2_JPU0_P2_WEST_LV_SOURCE
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C109
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C109
+        (CN
         1 JP2_JPU0_P2_EAST_LV_SOURCE
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C110
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C110
+        (CN
         1 JP1_JPU0_P1_WEST_LV_SOURCE
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C111
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C111
+        (CN
         1 JP1_JPU0_P1_EAST_LV_SOURCE
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C112
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C112
+        (CN
         1 JP1_JPU0_P2_WEST_LV_SOURCE
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C113
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C113
+        (CN
         1 JP1_JPU0_P2_EAST_LV_SOURCE
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C114
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C114
+        (CN
         1 JP1_JPU0_P3_LV_SOURCE
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C115
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C115
+        (CN
         1 JP0_JPU0_P1_WEST_LV_SOURCE
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C116
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C116
+        (CN
         1 JP0_JPU0_P1_EAST_LV_SOURCE
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C117
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C117
+        (CN
         1 JP0_JPU0_P2_EAST_LV_SOURCE
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C118
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C118
+        (CN
         1 JP0_JPU0_P3_LV_SOURCE
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C119
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C119
+        (CN
         1 JP3_JPU0_P1_WEST_LV_RETURN
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C120
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C120
+        (CN
         1 JP3_JPU0_P1_EAST_LV_RETURN
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C121
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C121
+        (CN
         1 JP2_JPU0_P1_WEST_LV_RETURN
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C122
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C122
+        (CN
         1 JP2_JPU0_P1_EAST_LV_RETURN
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C123
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C123
+        (CN
         1 JP2_JPU0_P2_WEST_LV_RETURN
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C124
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C124
+        (CN
         1 JP2_JPU0_P2_EAST_LV_RETURN
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C125
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C125
+        (CN
         1 JP1_JPU0_P1_WEST_LV_RETURN
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C126
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C126
+        (CN
         1 JP1_JPU0_P1_EAST_LV_RETURN
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C127
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C127
+        (CN
         1 JP1_JPU0_P2_WEST_LV_RETURN
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C128
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C128
+        (CN
         1 JP1_JPU0_P2_EAST_LV_RETURN
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C129
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C129
+        (CN
         1 JP1_JPU0_P3_LV_RETURN
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C130
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C130
+        (CN
         1 JP0_JPU0_P1_WEST_LV_RETURN
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C131
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C131
+        (CN
         1 JP0_JPU0_P1_EAST_LV_RETURN
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C132
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C132
+        (CN
         1 JP0_JPU0_P2_EAST_LV_RETURN
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C133
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C133
+        (CN
         1 JP0_JPU0_P3_LV_RETURN
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C134
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C134
+        (CN
         1 JP0_JPL0_P4_LV_SOURCE
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C135
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C135
+        (CN
         1 JP0_JPL0_P4_LV_RETURN
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C136
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C136
+        (CN
         1 JP1_JPL0_P4_LV_SOURCE
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C137
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C137
+        (CN
         1 JP1_JPL0_P4_LV_RETURN
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C138
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C138
+        (CN
         1 JP2_JPL0_P4_LV_SOURCE
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C139
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C139
+        (CN
         1 JP2_JPL0_P4_LV_RETURN
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C140
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C140
+        (CN
         1 JP11_JPU2_P1_WEST_LV_SOURCE
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C141
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C141
+        (CN
         1 JP6_JPU1_P1_WEST_LV_SOURCE
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C142
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C142
+        (CN
         1 JP11_JPU2_P2_EAST_LV_SOURCE
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C143
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C143
+        (CN
         1 JP6_JPU1_P1_EAST_LV_SOURCE
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C144
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C144
+        (CN
         1 JP10_JPU2_P1_WEST_LV_SOURCE
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C145
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C145
+        (CN
         1 JP6_JPU1_P2_EAST_LV_SOURCE
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C146
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C146
+        (CN
         1 JP10_JPU2_P2_EAST_LV_SOURCE
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C147
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C147
+        (CN
         1 JP6_JPU1_P3_LV_SOURCE
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C148
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C148
+        (CN
         1 JP10_JPU2_P3_LV_SOURCE
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C149
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C149
+        (CN
         1 JP5_JPU1_P1_WEST_LV_SOURCE
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C150
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C150
+        (CN
         1 JP9_JPU2_P1_WEST_LV_SOURCE
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C151
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C151
+        (CN
         1 JP5_JPU1_P1_EAST_LV_SOURCE
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C152
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C152
+        (CN
         1 JP9_JPU2_P2_EAST_LV_SOURCE
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C153
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C153
+        (CN
         1 JP5_JPU1_P2_EAST_LV_SOURCE
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C154
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C154
+        (CN
         1 JP9_JPU2_P3_LV_SOURCE
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C155
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C155
+        (CN
         1 JP5_JPU1_P3_LV_SOURCE
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C156
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C156
+        (CN
         1 JP8_JPU2_P1_WEST_LV_SOURCE
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C157
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C157
+        (CN
         1 JP4_JPU1_P1_WEST_LV_SOURCE
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C158
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C158
+        (CN
         1 JP8_JPU2_P2_EAST_LV_SOURCE
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C159
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C159
+        (CN
         1 JP4_JPU1_P1_EAST_LV_SOURCE
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C160
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C160
+        (CN
         1 JP8_JPU2_P3_LV_SOURCE
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C161
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C161
+        (CN
         1 JP4_JPU1_P2_EAST_LV_SOURCE
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C162
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C162
+        (CN
         1 JP7_JPU2_P1_WEST_LV_SOURCE
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C163
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C163
+        (CN
         1 JP4_JPU1_P3_LV_SOURCE
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C164
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C164
+        (CN
         1 JP7_JPU2_P1_EAST_LV_SOURCE
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C165
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C165
+        (CN
         1 JP3_JPU1_P2_EAST_LV_SOURCE
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C166
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C166
+        (CN
         1 JP7_JPU2_P2_EAST_LV_SOURCE
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C167
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C167
+        (CN
         1 JP3_JPU1_P3_LV_SOURCE
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C168
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C168
+        (CN
         1 JP7_JPU2_P3_LV_SOURCE
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C169
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C169
+        (CN
         1 JP2_JPU1_P3_LV_SOURCE
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C170
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C170
+        (CN
         1 JP11_JPU2_P1_WEST_LV_RETURN
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C171
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C171
+        (CN
         1 JP6_JPU1_P1_WEST_LV_RETURN
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C172
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C172
+        (CN
         1 JP11_JPU2_P2_EAST_LV_RETURN
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C173
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C173
+        (CN
         1 JP6_JPU1_P1_EAST_LV_RETURN
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C174
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C174
+        (CN
         1 JP10_JPU2_P1_WEST_LV_RETURN
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C175
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C175
+        (CN
         1 JP6_JPU1_P2_EAST_LV_RETURN
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C176
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C176
+        (CN
         1 JP10_JPU2_P2_EAST_LV_RETURN
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C177
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C177
+        (CN
         1 JP6_JPU1_P3_LV_RETURN
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C178
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C178
+        (CN
         1 JP10_JPU2_P3_LV_RETURN
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C179
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C179
+        (CN
         1 JP5_JPU1_P1_WEST_LV_RETURN
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C180
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C180
+        (CN
         1 JP9_JPU2_P1_WEST_LV_RETURN
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C181
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C181
+        (CN
         1 JP5_JPU1_P1_EAST_LV_RETURN
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C182
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C182
+        (CN
         1 JP9_JPU2_P2_EAST_LV_RETURN
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C183
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C183
+        (CN
         1 JP5_JPU1_P2_EAST_LV_RETURN
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C184
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C184
+        (CN
         1 JP9_JPU2_P3_LV_RETURN
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C185
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C185
+        (CN
         1 JP5_JPU1_P3_LV_RETURN
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C186
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C186
+        (CN
         1 JP8_JPU2_P1_WEST_LV_RETURN
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C187
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C187
+        (CN
         1 JP4_JPU1_P1_WEST_LV_RETURN
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C188
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C188
+        (CN
         1 JP8_JPU2_P2_EAST_LV_RETURN
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C189
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C189
+        (CN
         1 JP4_JPU1_P1_EAST_LV_RETURN
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C190
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C190
+        (CN
         1 JP8_JPU2_P3_LV_RETURN
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C191
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C191
+        (CN
         1 JP4_JPU1_P2_EAST_LV_RETURN
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C192
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C192
+        (CN
         1 JP7_JPU2_P1_WEST_LV_RETURN
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C193
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C193
+        (CN
         1 JP4_JPU1_P3_LV_RETURN
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C194
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C194
+        (CN
         1 JP7_JPU2_P1_EAST_LV_RETURN
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C195
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C195
+        (CN
         1 JP3_JPU1_P2_EAST_LV_RETURN
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C196
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C196
+        (CN
         1 JP7_JPU2_P2_EAST_LV_RETURN
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C197
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C197
+        (CN
         1 JP3_JPU1_P3_LV_RETURN
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C198
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C198
+        (CN
         1 JP7_JPU2_P3_LV_RETURN
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C199
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C199
+        (CN
         1 JP2_JPU1_P3_LV_RETURN
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C200
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C200
+        (CN
         1 JP8_JPL2_P4_LV_SOURCE
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C201
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C201
+        (CN
         1 JP3_JPL1_P4_LV_SOURCE
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C202
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C202
+        (CN
         1 JP8_JPL2_P4_LV_RETURN
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C203
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C203
+        (CN
         1 JP3_JPL1_P4_LV_RETURN
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C204
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C204
+        (CN
         1 JP11_JPL2_P3_LV_SOURCE
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C205
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C205
+        (CN
         1 JP4_JPL1_P4_LV_SOURCE
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C206
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C206
+        (CN
         1 JP11_JPL2_P3_LV_RETURN
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C207
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C207
+        (CN
         1 JP4_JPL1_P4_LV_RETURN
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C208
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C208
+        (CN
         1 JP11_JPL2_P4_LV_SOURCE
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C209
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C209
+        (CN
         1 JP7_JPL1_P4_LV_SOURCE
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C210
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C210
+        (CN
         1 JP11_JPL2_P4_LV_RETURN
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C211
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C211
+        (CN
         1 JP7_JPL1_P4_LV_RETURN
         2 GND
-        }
-      }
-      {I CAPC1005X55N.PRT C212
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C212
+        (CN
         1 GND
         2 JP4A16_P3_LV_SENSE_GND
-        }
-      }
-      {I CAPC1005X55N.PRT C213
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C213
+        (CN
         1 GND
         2 JP4A27_P4_LV_SENSE_GND
-        }
-      }
-      {I CAPC1005X55N.PRT C214
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C214
+        (CN
         1 GND
         2 JP4F05_P2_EAST_LV_SENSE_GND
-        }
-      }
-      {I CAPC1005X55N.PRT C215
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C215
+        (CN
         1 GND
         2 JP4J07_P1_EAST_LV_SENSE_GND
-        }
-      }
-      {I CAPC1005X55N.PRT C216
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C216
+        (CN
         1 GND
         2 JP4J24_P1_WEST_LV_SENSE_GND
-        }
-      }
-      {I CAPC1005X55N.PRT C217
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C217
+        (CN
         1 GND
         2 JP5A16_P3_LV_SENSE_GND
-        }
-      }
-      {I CAPC1005X55N.PRT C218
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C218
+        (CN
         1 GND
         2 JP5F05_P2_EAST_LV_SENSE_GND
-        }
-      }
-      {I CAPC1005X55N.PRT C219
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C219
+        (CN
         1 GND
         2 JP5J07_P1_EAST_LV_SENSE_GND
-        }
-      }
-      {I CAPC1005X55N.PRT C220
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C220
+        (CN
         1 GND
         2 JP5J24_P1_WEST_LV_SENSE_GND
-        }
-      }
-      {I CAPC1005X55N.PRT C221
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C221
+        (CN
         1 GND
         2 JP6A16_P3_LV_SENSE_GND
-        }
-      }
-      {I CAPC1005X55N.PRT C222
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C222
+        (CN
         1 GND
         2 JP6F05_P2_EAST_LV_SENSE_GND
-        }
-      }
-      {I CAPC1005X55N.PRT C223
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C223
+        (CN
         1 GND
         2 JP6J07_P1_EAST_LV_SENSE_GND
-        }
-      }
-      {I CAPC1005X55N.PRT C224
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C224
+        (CN
         1 GND
         2 JP6J24_P1_WEST_LV_SENSE_GND
-        }
-      }
-      {I CAPC1005X55N.PRT C225
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C225
+        (CN
         1 GND
         2 JP7A16_P3_LV_SENSE_GND
-        }
-      }
-      {I CAPC1005X55N.PRT C226
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C226
+        (CN
         1 GND
         2 JP7A27_P4_LV_SENSE_GND
-        }
-      }
-      {I CAPC1005X55N.PRT C227
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C227
+        (CN
         1 GND
         2 JP7F05_P2_EAST_LV_SENSE_GND
-        }
-      }
-      {I CAPC1005X55N.PRT C228
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C228
+        (CN
         1 GND
         2 JP7J07_P1_EAST_LV_SENSE_GND
-        }
-      }
-      {I CAPC1005X55N.PRT C229
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C229
+        (CN
         1 GND
         2 JP7J24_P1_WEST_LV_SENSE_GND
-        }
-      }
-      {I CAPC1005X55N.PRT C230
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C230
+        (CN
         1 GND
         2 JP8A16_P3_LV_SENSE_GND
-        }
-      }
-      {I CAPC1005X55N.PRT C231
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C231
+        (CN
         1 GND
         2 JP8A27_P4_LV_SENSE_GND
-        }
-      }
-      {I CAPC1005X55N.PRT C232
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C232
+        (CN
         1 GND
         2 JP8F05_P2_EAST_LV_SENSE_GND
-        }
-      }
-      {I CAPC1005X55N.PRT C233
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C233
+        (CN
         1 GND
         2 JP8J24_P1_WEST_LV_SENSE_GND
-        }
-      }
-      {I CAPC1005X55N.PRT C234
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C234
+        (CN
         1 GND
         2 JP9A16_P3_LV_SENSE_GND
-        }
-      }
-      {I CAPC1005X55N.PRT C235
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C235
+        (CN
         1 GND
         2 JP9F05_P2_EAST_LV_SENSE_GND
-        }
-      }
-      {I CAPC1005X55N.PRT C236
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C236
+        (CN
         1 GND
         2 JP9J24_P1_WEST_LV_SENSE_GND
-        }
-      }
-      {I CAPC1005X55N.PRT C237
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C237
+        (CN
         1 GND
         2 JP10A16_P3_LV_SENSE_GND
-        }
-      }
-      {I CAPC1005X55N.PRT C238
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C238
+        (CN
         1 GND
         2 JP10F05_P2_EAST_LV_SENSE_GND
-        }
-      }
-      {I CAPC1005X55N.PRT C239
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C239
+        (CN
         1 GND
         2 JP10J24_P1_WEST_LV_SENSE_GND
-        }
-      }
-      {I CAPC1005X55N.PRT C240
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C240
+        (CN
         1 GND
         2 JP11A16_P3_LV_SENSE_GND
-        }
-      }
-      {I CAPC1005X55N.PRT C241
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C241
+        (CN
         1 GND
         2 JP11A27_P4_LV_SENSE_GND
-        }
-      }
-      {I CAPC1005X55N.PRT C242
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C242
+        (CN
         1 GND
         2 JP11F05_P2_EAST_LV_SENSE_GND
-        }
-      }
-      {I CAPC1005X55N.PRT C243
-        {CN
+        )
+      )
+      (I CAPC1005X55N.PRT C243
+        (CN
         1 GND
         2 JP11J24_P1_WEST_LV_SENSE_GND
-        }
-      }
-      {I SAMTEC_ERF8-050-05.0-S-DV-K-TR.PRT COMET_A_J1
-        {CN
+        )
+      )
+      (I SAMTEC_ERF8-050-05.0-S-DV-K-TR.PRT COMET_A_J1
+        (CN
         1 GND
         2 GND
         3 GND
@@ -1802,10 +1802,10 @@
        98 COMET_A_CEP20_P
        99 GND
       100 GND
-        }
-      }
-      {I SAMTEC_ERF8-050-05.0-S-DV-K-TR.PRT COMET_A_J2
-        {CN
+        )
+      )
+      (I SAMTEC_ERF8-050-05.0-S-DV-K-TR.PRT COMET_A_J2
+        (CN
         1 GND
         2 GND
         3 COMET_A_CWP4_P
@@ -1906,10 +1906,10 @@
        98 GND
        99 GND
       100 GND
-        }
-      }
-      {I SAMTEC_ERF8-050-05.0-S-DV-K-TR.PRT COMET_B_J1
-        {CN
+        )
+      )
+      (I SAMTEC_ERF8-050-05.0-S-DV-K-TR.PRT COMET_B_J1
+        (CN
         1 GND
         2 GND
         3 GND
@@ -2010,10 +2010,10 @@
        98 COMET_B_CEP20_P
        99 GND
       100 GND
-        }
-      }
-      {I SAMTEC_ERF8-050-05.0-S-DV-K-TR.PRT COMET_B_J2
-        {CN
+        )
+      )
+      (I SAMTEC_ERF8-050-05.0-S-DV-K-TR.PRT COMET_B_J2
+        (CN
         1 GND
         2 GND
         3 COMET_B_CWP4_P
@@ -2114,232 +2114,232 @@
        98 GND
        99 GND
       100 GND
-        }
-      }
-      {I HIROSE_U.FL-R-SMT-1(10).PRT J1
-        {CN
+        )
+      )
+      (I HIROSE_U.FL-R-SMT-1(10).PRT J1
+        (CN
         1 COMET_B_CEP1_N
         2 GND
-        }
-      }
-      {I HIROSE_U.FL-R-SMT-1(10).PRT J2
-        {CN
+        )
+      )
+      (I HIROSE_U.FL-R-SMT-1(10).PRT J2
+        (CN
         1 COMET_B_CEP1_P
         2 GND
-        }
-      }
-      {I HIROSE_U.FL-R-SMT-1(10).PRT J3
-        {CN
+        )
+      )
+      (I HIROSE_U.FL-R-SMT-1(10).PRT J3
+        (CN
         1 COMET_A_CEP20_N
         2 GND
-        }
-      }
-      {I HIROSE_U.FL-R-SMT-1(10).PRT J4
-        {CN
+        )
+      )
+      (I HIROSE_U.FL-R-SMT-1(10).PRT J4
+        (CN
         1 COMET_B_CWP1_N
         2 GND
-        }
-      }
-      {I HIROSE_U.FL-R-SMT-1(10).PRT J5
-        {CN
+        )
+      )
+      (I HIROSE_U.FL-R-SMT-1(10).PRT J5
+        (CN
         1 COMET_B_CWP1_P
         2 GND
-        }
-      }
-      {I HIROSE_U.FL-R-SMT-1(10).PRT J6
-        {CN
+        )
+      )
+      (I HIROSE_U.FL-R-SMT-1(10).PRT J6
+        (CN
         1 MC_TFC5_N
         2 GND
-        }
-      }
-      {I HIROSE_U.FL-R-SMT-1(10).PRT J7
-        {CN
+        )
+      )
+      (I HIROSE_U.FL-R-SMT-1(10).PRT J7
+        (CN
         1 COMET_A_CEP7_N
         2 GND
-        }
-      }
-      {I HIROSE_U.FL-R-SMT-1(10).PRT J8
-        {CN
+        )
+      )
+      (I HIROSE_U.FL-R-SMT-1(10).PRT J8
+        (CN
         1 MC_TFC5_P
         2 GND
-        }
-      }
-      {I HIROSE_U.FL-R-SMT-1(10).PRT J9
-        {CN
+        )
+      )
+      (I HIROSE_U.FL-R-SMT-1(10).PRT J9
+        (CN
         1 COMET_A_CEP7_P
         2 GND
-        }
-      }
-      {I HIROSE_U.FL-R-SMT-1(10).PRT J10
-        {CN
+        )
+      )
+      (I HIROSE_U.FL-R-SMT-1(10).PRT J10
+        (CN
         1 MC_TFC4_N
         2 GND
-        }
-      }
-      {I HIROSE_U.FL-R-SMT-1(10).PRT J11
-        {CN
+        )
+      )
+      (I HIROSE_U.FL-R-SMT-1(10).PRT J11
+        (CN
         1 COMET_A_CWP7_N
         2 GND
-        }
-      }
-      {I HIROSE_U.FL-R-SMT-1(10).PRT J12
-        {CN
+        )
+      )
+      (I HIROSE_U.FL-R-SMT-1(10).PRT J12
+        (CN
         1 MC_TFC4_P
         2 GND
-        }
-      }
-      {I HIROSE_U.FL-R-SMT-1(10).PRT J13
-        {CN
+        )
+      )
+      (I HIROSE_U.FL-R-SMT-1(10).PRT J13
+        (CN
         1 COMET_A_CWP7_P
         2 GND
-        }
-      }
-      {I HIROSE_U.FL-R-SMT-1(10).PRT J14
-        {CN
+        )
+      )
+      (I HIROSE_U.FL-R-SMT-1(10).PRT J14
+        (CN
         1 MC_TFC3_N
         2 GND
-        }
-      }
-      {I HIROSE_U.FL-R-SMT-1(10).PRT J15
-        {CN
+        )
+      )
+      (I HIROSE_U.FL-R-SMT-1(10).PRT J15
+        (CN
         1 COMET_B_CEP7_N
         2 GND
-        }
-      }
-      {I HIROSE_U.FL-R-SMT-1(10).PRT J16
-        {CN
+        )
+      )
+      (I HIROSE_U.FL-R-SMT-1(10).PRT J16
+        (CN
         1 MC_TFC3_P
         2 GND
-        }
-      }
-      {I HIROSE_U.FL-R-SMT-1(10).PRT J17
-        {CN
+        )
+      )
+      (I HIROSE_U.FL-R-SMT-1(10).PRT J17
+        (CN
         1 COMET_B_CEP7_P
         2 GND
-        }
-      }
-      {I HIROSE_U.FL-R-SMT-1(10).PRT J18
-        {CN
+        )
+      )
+      (I HIROSE_U.FL-R-SMT-1(10).PRT J18
+        (CN
         1 MC_TFC0_N
         2 GND
-        }
-      }
-      {I HIROSE_U.FL-R-SMT-1(10).PRT J19
-        {CN
+        )
+      )
+      (I HIROSE_U.FL-R-SMT-1(10).PRT J19
+        (CN
         1 MC_TFC1_N
         2 GND
-        }
-      }
-      {I HIROSE_U.FL-R-SMT-1(10).PRT J20
-        {CN
+        )
+      )
+      (I HIROSE_U.FL-R-SMT-1(10).PRT J20
+        (CN
         1 MC_TFC2_N
         2 GND
-        }
-      }
-      {I HIROSE_U.FL-R-SMT-1(10).PRT J21
-        {CN
+        )
+      )
+      (I HIROSE_U.FL-R-SMT-1(10).PRT J21
+        (CN
         1 COMET_B_CWP7_N
         2 GND
-        }
-      }
-      {I HIROSE_U.FL-R-SMT-1(10).PRT J22
-        {CN
+        )
+      )
+      (I HIROSE_U.FL-R-SMT-1(10).PRT J22
+        (CN
         1 MC_TFC0_P
         2 GND
-        }
-      }
-      {I HIROSE_U.FL-R-SMT-1(10).PRT J23
-        {CN
+        )
+      )
+      (I HIROSE_U.FL-R-SMT-1(10).PRT J23
+        (CN
         1 MC_TFC1_P
         2 GND
-        }
-      }
-      {I HIROSE_U.FL-R-SMT-1(10).PRT J24
-        {CN
+        )
+      )
+      (I HIROSE_U.FL-R-SMT-1(10).PRT J24
+        (CN
         1 MC_TFC2_P
         2 GND
-        }
-      }
-      {I HIROSE_U.FL-R-SMT-1(10).PRT J25
-        {CN
+        )
+      )
+      (I HIROSE_U.FL-R-SMT-1(10).PRT J25
+        (CN
         1 COMET_B_CWP7_P
         2 GND
-        }
-      }
-      {I HIROSE_U.FL-R-SMT-1(10).PRT J26
-        {CN
+        )
+      )
+      (I HIROSE_U.FL-R-SMT-1(10).PRT J26
+        (CN
         1 COMET_A_CEP1_N
         2 GND
-        }
-      }
-      {I HIROSE_U.FL-R-SMT-1(10).PRT J27
-        {CN
+        )
+      )
+      (I HIROSE_U.FL-R-SMT-1(10).PRT J27
+        (CN
         1 COMET_A_CEP0_N
         2 GND
-        }
-      }
-      {I HIROSE_U.FL-R-SMT-1(10).PRT J28
-        {CN
+        )
+      )
+      (I HIROSE_U.FL-R-SMT-1(10).PRT J28
+        (CN
         1 COMET_A_CEP1_P
         2 GND
-        }
-      }
-      {I HIROSE_U.FL-R-SMT-1(10).PRT J29
-        {CN
+        )
+      )
+      (I HIROSE_U.FL-R-SMT-1(10).PRT J29
+        (CN
         1 COMET_A_CEP0_P
         2 GND
-        }
-      }
-      {I HIROSE_U.FL-R-SMT-1(10).PRT J30
-        {CN
+        )
+      )
+      (I HIROSE_U.FL-R-SMT-1(10).PRT J30
+        (CN
         1 COMET_A_CWP1_N
         2 GND
-        }
-      }
-      {I HIROSE_U.FL-R-SMT-1(10).PRT J31
-        {CN
+        )
+      )
+      (I HIROSE_U.FL-R-SMT-1(10).PRT J31
+        (CN
         1 COMET_A_CWP0_N
         2 GND
-        }
-      }
-      {I HIROSE_U.FL-R-SMT-1(10).PRT J32
-        {CN
+        )
+      )
+      (I HIROSE_U.FL-R-SMT-1(10).PRT J32
+        (CN
         1 COMET_A_CWP1_P
         2 GND
-        }
-      }
-      {I HIROSE_U.FL-R-SMT-1(10).PRT J33
-        {CN
+        )
+      )
+      (I HIROSE_U.FL-R-SMT-1(10).PRT J33
+        (CN
         1 COMET_A_CWP0_P
         2 GND
-        }
-      }
-      {I HIROSE_U.FL-R-SMT-1(10).PRT J34
-        {CN
+        )
+      )
+      (I HIROSE_U.FL-R-SMT-1(10).PRT J34
+        (CN
         1 COMET_B_CEP0_N
         2 GND
-        }
-      }
-      {I HIROSE_U.FL-R-SMT-1(10).PRT J35
-        {CN
+        )
+      )
+      (I HIROSE_U.FL-R-SMT-1(10).PRT J35
+        (CN
         1 COMET_B_CEP0_P
         2 GND
-        }
-      }
-      {I HIROSE_U.FL-R-SMT-1(10).PRT J36
-        {CN
+        )
+      )
+      (I HIROSE_U.FL-R-SMT-1(10).PRT J36
+        (CN
         1 COMET_B_CWP0_N
         2 GND
-        }
-      }
-      {I HIROSE_U.FL-R-SMT-1(10).PRT J37
-        {CN
+        )
+      )
+      (I HIROSE_U.FL-R-SMT-1(10).PRT J37
+        (CN
         1 COMET_B_CWP0_P
         2 GND
-        }
-      }
-      {I SAMTEC_TMM-110-01-L-D-SM-A.PRT J38
-        {CN
+        )
+      )
+      (I SAMTEC_TMM-110-01-L-D-SM-A.PRT J38
+        (CN
         1 SLOT10_AGND
         2 EC_ADC_2
         3 SLOT10_AGND
@@ -2360,10 +2360,10 @@
        18 EC_ADC_REF15
        19 SLOT10_AGND
        20 NetJ38_20
-        }
-      }
-      {I SAMTEC_TMM-112-01-L-D-SM-A.PRT J39
-        {CN
+        )
+      )
+      (I SAMTEC_TMM-112-01-L-D-SM-A.PRT J39
+        (CN
         1 EC_HYB_i2C_SCL_0
         2 EC_HYB_i2C_SDA_0
         3 EC_RESET_GPIO_2
@@ -2388,82 +2388,82 @@
        22 EC_HYB_i2C_SDA_5
        23 EC_RESET_GPIO_0
        24 GND
-        }
-      }
-      {I HIROSE_U.FL-R-SMT-1(10).PRT J40
-        {CN
+        )
+      )
+      (I HIROSE_U.FL-R-SMT-1(10).PRT J40
+        (CN
         1 DC_OUT_RCLK4_N
         2 GND
-        }
-      }
-      {I HIROSE_U.FL-R-SMT-1(10).PRT J41
-        {CN
+        )
+      )
+      (I HIROSE_U.FL-R-SMT-1(10).PRT J41
+        (CN
         1 DC_OUT_RCLK4_P
         2 GND
-        }
-      }
-      {I HIROSE_U.FL-R-SMT-1(10).PRT J42
-        {CN
+        )
+      )
+      (I HIROSE_U.FL-R-SMT-1(10).PRT J42
+        (CN
         1 DC_OUT_RCLK5_N
         2 GND
-        }
-      }
-      {I HIROSE_U.FL-R-SMT-1(10).PRT J43
-        {CN
+        )
+      )
+      (I HIROSE_U.FL-R-SMT-1(10).PRT J43
+        (CN
         1 DC_OUT_RCLK5_P
         2 GND
-        }
-      }
-      {I HIROSE_U.FL-R-SMT-1(10).PRT J44
-        {CN
+        )
+      )
+      (I HIROSE_U.FL-R-SMT-1(10).PRT J44
+        (CN
         1 DC_OUT_RCLK0_N
         2 GND
-        }
-      }
-      {I HIROSE_U.FL-R-SMT-1(10).PRT J45
-        {CN
+        )
+      )
+      (I HIROSE_U.FL-R-SMT-1(10).PRT J45
+        (CN
         1 DC_OUT_RCLK0_P
         2 GND
-        }
-      }
-      {I HIROSE_U.FL-R-SMT-1(10).PRT J46
-        {CN
+        )
+      )
+      (I HIROSE_U.FL-R-SMT-1(10).PRT J46
+        (CN
         1 DC_OUT_RCLK1_N
         2 GND
-        }
-      }
-      {I HIROSE_U.FL-R-SMT-1(10).PRT J47
-        {CN
+        )
+      )
+      (I HIROSE_U.FL-R-SMT-1(10).PRT J47
+        (CN
         1 DC_OUT_RCLK1_P
         2 GND
-        }
-      }
-      {I HIROSE_U.FL-R-SMT-1(10).PRT J48
-        {CN
+        )
+      )
+      (I HIROSE_U.FL-R-SMT-1(10).PRT J48
+        (CN
         1 DC_OUT_RCLK2_N
         2 GND
-        }
-      }
-      {I HIROSE_U.FL-R-SMT-1(10).PRT J49
-        {CN
+        )
+      )
+      (I HIROSE_U.FL-R-SMT-1(10).PRT J49
+        (CN
         1 DC_OUT_RCLK2_P
         2 GND
-        }
-      }
-      {I HIROSE_U.FL-R-SMT-1(10).PRT J50
-        {CN
+        )
+      )
+      (I HIROSE_U.FL-R-SMT-1(10).PRT J50
+        (CN
         1 DC_OUT_RCLK3_N
         2 GND
-        }
-      }
-      {I HIROSE_U.FL-R-SMT-1(10).PRT J51
-        {CN
+        )
+      )
+      (I HIROSE_U.FL-R-SMT-1(10).PRT J51
+        (CN
         1 DC_OUT_RCLK3_P
         2 GND
-        }
-      }
-      {I SAMTEC_TMM-110-01-L-D-SM-A.PRT J52
-        {CN
+        )
+      )
+      (I SAMTEC_TMM-110-01-L-D-SM-A.PRT J52
+        (CN
         1 SLOT8_AGND
         2 SLOT8_EC_ADC_2
         3 SLOT8_AGND
@@ -2484,10 +2484,10 @@
        18 SLOT8_EC_ADC_REF15
        19 SLOT8_AGND
        20 NetJ52_20
-        }
-      }
-      {I SAMTEC_TMM-112-01-L-D-SM-A.PRT J53
-        {CN
+        )
+      )
+      (I SAMTEC_TMM-112-01-L-D-SM-A.PRT J53
+        (CN
         1 SLOT8_EC_HYB_i2C_SCL_0
         2 SLOT8_EC_HYB_i2C_SDA_0
         3 SLOT8_EC_RESET_GPIO_2
@@ -2512,52 +2512,52 @@
        22 SLOT8_EC_HYB_i2C_SDA_5
        23 SLOT8_EC_RESET_GPIO_0
        24 GND
-        }
-      }
-      {I HIROSE_U.FL-R-SMT-1(10).PRT J54
-        {CN
+        )
+      )
+      (I HIROSE_U.FL-R-SMT-1(10).PRT J54
+        (CN
         1 COMET_A_CEP20_P
         2 GND
-        }
-      }
-      {I HIROSE_U.FL-R-SMT-1(10).PRT J55
-        {CN
+        )
+      )
+      (I HIROSE_U.FL-R-SMT-1(10).PRT J55
+        (CN
         1 COMET_A_CWP20_N
         2 GND
-        }
-      }
-      {I HIROSE_U.FL-R-SMT-1(10).PRT J56
-        {CN
+        )
+      )
+      (I HIROSE_U.FL-R-SMT-1(10).PRT J56
+        (CN
         1 COMET_A_CWP20_P
         2 GND
-        }
-      }
-      {I HIROSE_U.FL-R-SMT-1(10).PRT J57
-        {CN
+        )
+      )
+      (I HIROSE_U.FL-R-SMT-1(10).PRT J57
+        (CN
         1 COMET_B_CWP20_N
         2 GND
-        }
-      }
-      {I HIROSE_U.FL-R-SMT-1(10).PRT J58
-        {CN
+        )
+      )
+      (I HIROSE_U.FL-R-SMT-1(10).PRT J58
+        (CN
         1 COMET_B_CWP20_P
         2 GND
-        }
-      }
-      {I HIROSE_U.FL-R-SMT-1(10).PRT J59
-        {CN
+        )
+      )
+      (I HIROSE_U.FL-R-SMT-1(10).PRT J59
+        (CN
         1 COMET_B_CEP20_N
         2 GND
-        }
-      }
-      {I HIROSE_U.FL-R-SMT-1(10).PRT J60
-        {CN
+        )
+      )
+      (I HIROSE_U.FL-R-SMT-1(10).PRT J60
+        (CN
         1 COMET_B_CEP20_P
         2 GND
-        }
-      }
-      {I SEAM-50-02.0-08-2-A-GP-K-TR.PRT JD0
-        {CN
+        )
+      )
+      (I SEAM-50-02.0-08-2-A-GP-K-TR.PRT JD0
+        (CN
         5 GND
         6 GND
         7 GND
@@ -2966,10 +2966,10 @@
       H48 GND
       H49 JD0_JP0_EC_HYB_i2C_SDA_5_P
       H50 JD0_JP0_EC_HYB_i2C_SCL_5_P
-        }
-      }
-      {I SEAM-50-02.0-08-2-A-GP-K-TR.PRT JD1
-        {CN
+        )
+      )
+      (I SEAM-50-02.0-08-2-A-GP-K-TR.PRT JD1
+        (CN
         5 GND
         6 GND
         7 GND
@@ -3378,10 +3378,10 @@
       H48 GND
       H49 NetJD1_H49
       H50 NetJD1_H50
-        }
-      }
-      {I SEAM-50-02.0-08-2-A-GP-K-TR.PRT JD2
-        {CN
+        )
+      )
+      (I SEAM-50-02.0-08-2-A-GP-K-TR.PRT JD2
+        (CN
         5 GND
         6 GND
         7 GND
@@ -3790,10 +3790,10 @@
       H48 GND
       H49 JD2_JP0_EC_HYB_i2C_SDA_5_P
       H50 JD2_JP0_EC_HYB_i2C_SCL_5_P
-        }
-      }
-      {I SEAM-50-02.0-08-2-A-GP-K-TR.PRT JD3
-        {CN
+        )
+      )
+      (I SEAM-50-02.0-08-2-A-GP-K-TR.PRT JD3
+        (CN
         5 GND
         6 GND
         7 GND
@@ -4202,10 +4202,10 @@
       H48 GND
       H49 NetJD3_H49
       H50 NetJD3_H50
-        }
-      }
-      {I SEAM-50-02.0-08-2-A-GP-K-TR.PRT JD4
-        {CN
+        )
+      )
+      (I SEAM-50-02.0-08-2-A-GP-K-TR.PRT JD4
+        (CN
         5 GND
         6 GND
         7 GND
@@ -4614,10 +4614,10 @@
       H48 GND
       H49 JD4_JP0_EC_HYB_i2C_SDA_5_P
       H50 JD4_JP0_EC_HYB_i2C_SCL_5_P
-        }
-      }
-      {I SEAM-50-02.0-08-2-A-GP-K-TR.PRT JD5
-        {CN
+        )
+      )
+      (I SEAM-50-02.0-08-2-A-GP-K-TR.PRT JD5
+        (CN
         5 GND
         6 GND
         7 GND
@@ -5026,10 +5026,10 @@
       H48 GND
       H49 NetJD5_H49
       H50 NetJD5_H50
-        }
-      }
-      {I SEAM-50-02.0-08-2-A-GP-K-TR.PRT JD6
-        {CN
+        )
+      )
+      (I SEAM-50-02.0-08-2-A-GP-K-TR.PRT JD6
+        (CN
         5 GND
         6 GND
         7 GND
@@ -5438,10 +5438,10 @@
       H48 GND
       H49 NetJD6_H49
       H50 NetJD6_H50
-        }
-      }
-      {I SEAM-50-02.0-08-2-A-GP-K-TR.PRT JD7
-        {CN
+        )
+      )
+      (I SEAM-50-02.0-08-2-A-GP-K-TR.PRT JD7
+        (CN
         5 GND
         6 GND
         7 GND
@@ -5850,10 +5850,10 @@
       H48 GND
       H49 NetJD7_H49
       H50 NetJD7_H50
-        }
-      }
-      {I SEAM-50-02.0-08-2-A-GP-K-TR.PRT JD8
-        {CN
+        )
+      )
+      (I SEAM-50-02.0-08-2-A-GP-K-TR.PRT JD8
+        (CN
         5 GND
         6 GND
         7 GND
@@ -6262,10 +6262,10 @@
       H48 GND
       H49 SLOT8_EC_HYB_i2C_SDA_5
       H50 SLOT8_EC_HYB_i2C_SCL_5
-        }
-      }
-      {I SEAM-50-02.0-08-2-A-GP-K-TR.PRT JD9
-        {CN
+        )
+      )
+      (I SEAM-50-02.0-08-2-A-GP-K-TR.PRT JD9
+        (CN
         5 GND
         6 GND
         7 GND
@@ -6674,10 +6674,10 @@
       H48 GND
       H49 NetJD9_H49
       H50 NetJD9_H50
-        }
-      }
-      {I SEAM-50-02.0-08-2-A-GP-K-TR.PRT JD10
-        {CN
+        )
+      )
+      (I SEAM-50-02.0-08-2-A-GP-K-TR.PRT JD10
+        (CN
         5 GND
         6 GND
         7 GND
@@ -7086,10 +7086,10 @@
       H48 GND
       H49 EC_HYB_i2C_SDA_5
       H50 EC_HYB_i2C_SCL_5
-        }
-      }
-      {I SEAM-50-02.0-08-2-A-GP-K-TR.PRT JD11
-        {CN
+        )
+      )
+      (I SEAM-50-02.0-08-2-A-GP-K-TR.PRT JD11
+        (CN
         5 GND
         6 GND
         7 GND
@@ -7498,10 +7498,10 @@
       H48 GND
       H49 NetJD11_H49
       H50 NetJD11_H50
-        }
-      }
-      {I SEAM8-40-S02.0-S-10-2-GP.PRT JP0
-        {CN
+        )
+      )
+      (I SEAM8-40-S02.0-S-10-2-GP.PRT JP0
+        (CN
         3 GND
         4 GND
        A1 GND
@@ -7904,10 +7904,10 @@
       J38 GND
       J39 GND
       J40 GND
-        }
-      }
-      {I SEAM8-40-S02.0-S-10-2-GP.PRT JP1
-        {CN
+        )
+      )
+      (I SEAM8-40-S02.0-S-10-2-GP.PRT JP1
+        (CN
         3 GND
         4 GND
        A1 JD0_JP1_DC4_ELK_CH8_N
@@ -8310,10 +8310,10 @@
       J38 JD2_JP1_DC3_ELK_CH8_N
       J39 JD2_JP1_DC3_ELK_CH3_N
       J40 JD2_JP1_DC3_ELK_CH6_N
-        }
-      }
-      {I SEAM8-40-S02.0-S-10-2-GP.PRT JP2
-        {CN
+        )
+      )
+      (I SEAM8-40-S02.0-S-10-2-GP.PRT JP2
+        (CN
         3 GND
         4 GND
        A1 NetJP2_A1
@@ -8716,10 +8716,10 @@
       J38 NetJP2_J38
       J39 NetJP2_J39
       J40 NetJP2_J40
-        }
-      }
-      {I SEAM8-40-S02.0-S-10-2-GP.PRT JP3
-        {CN
+        )
+      )
+      (I SEAM8-40-S02.0-S-10-2-GP.PRT JP3
+        (CN
         3 GND
         4 GND
        A1 GND
@@ -9122,10 +9122,10 @@
       J38 GND
       J39 GND
       J40 GND
-        }
-      }
-      {I SEAM8-40-S02.0-S-10-2-GP.PRT JP4
-        {CN
+        )
+      )
+      (I SEAM8-40-S02.0-S-10-2-GP.PRT JP4
+        (CN
         3 GND
         4 GND
        A1 GND
@@ -9528,10 +9528,10 @@
       J38 GND
       J39 GND
       J40 GND
-        }
-      }
-      {I SEAM8-40-S02.0-S-10-2-GP.PRT JP5
-        {CN
+        )
+      )
+      (I SEAM8-40-S02.0-S-10-2-GP.PRT JP5
+        (CN
         3 GND
         4 GND
        A1 GND
@@ -9934,10 +9934,10 @@
       J38 GND
       J39 GND
       J40 GND
-        }
-      }
-      {I SEAM8-40-S02.0-S-10-2-GP.PRT JP6
-        {CN
+        )
+      )
+      (I SEAM8-40-S02.0-S-10-2-GP.PRT JP6
+        (CN
         3 GND
         4 GND
        A1 GND
@@ -10340,10 +10340,10 @@
       J38 GND
       J39 GND
       J40 GND
-        }
-      }
-      {I SEAM8-40-S02.0-S-10-2-GP.PRT JP7
-        {CN
+        )
+      )
+      (I SEAM8-40-S02.0-S-10-2-GP.PRT JP7
+        (CN
         3 GND
         4 GND
        A1 GND
@@ -10746,10 +10746,10 @@
       J38 GND
       J39 GND
       J40 GND
-        }
-      }
-      {I SEAM8-40-S02.0-S-10-2-GP.PRT JP8
-        {CN
+        )
+      )
+      (I SEAM8-40-S02.0-S-10-2-GP.PRT JP8
+        (CN
         3 GND
         4 GND
        A1 GND
@@ -11152,10 +11152,10 @@
       J38 GND
       J39 GND
       J40 GND
-        }
-      }
-      {I SEAM8-40-S02.0-S-10-2-GP.PRT JP9
-        {CN
+        )
+      )
+      (I SEAM8-40-S02.0-S-10-2-GP.PRT JP9
+        (CN
         3 GND
         4 GND
        A1 GND
@@ -11558,10 +11558,10 @@
       J38 GND
       J39 GND
       J40 GND
-        }
-      }
-      {I SEAM8-40-S02.0-S-10-2-GP.PRT JP10
-        {CN
+        )
+      )
+      (I SEAM8-40-S02.0-S-10-2-GP.PRT JP10
+        (CN
         3 GND
         4 GND
        A1 GND
@@ -11964,10 +11964,10 @@
       J38 GND
       J39 GND
       J40 GND
-        }
-      }
-      {I SEAM8-40-S02.0-S-10-2-GP.PRT JP11
-        {CN
+        )
+      )
+      (I SEAM8-40-S02.0-S-10-2-GP.PRT JP11
+        (CN
         3 GND
         4 GND
        A1 GND
@@ -12370,10 +12370,10 @@
       J38 GND
       J39 GND
       J40 GND
-        }
-      }
-      {I IPBS-115-01-T-D-GP.PRT JPL0
-        {CN
+        )
+      )
+      (I IPBS-115-01-T-D-GP.PRT JPL0
+        (CN
         1 JD3_JPL0_1V5
         2 JD3_JPL0_1V5
         3 JD3_2_JPL0_2V5
@@ -12404,10 +12404,10 @@
        28 GND
        29 GND
        30 GND
-        }
-      }
-      {I IPBS-115-01-T-D-GP.PRT JPL1
-        {CN
+        )
+      )
+      (I IPBS-115-01-T-D-GP.PRT JPL1
+        (CN
         1 JD7_JPL1_1V5
         2 JD7_JPL1_1V5
         3 JD7_6_JPL1_2V5
@@ -12438,10 +12438,10 @@
        28 GND
        29 GND
        30 GND
-        }
-      }
-      {I IPBS-115-01-T-D-GP.PRT JPL2
-        {CN
+        )
+      )
+      (I IPBS-115-01-T-D-GP.PRT JPL2
+        (CN
         1 JD11_JPL2_1V5
         2 JD11_JPL2_1V5
         3 JD11_10_JPL2_2V5
@@ -12472,640 +12472,640 @@
        28 GND
        29 GND
        30 GND
-        }
-      }
-      {I S9121-45R.PRT JS_JPL_ONE_1
-        {CN
+        )
+      )
+      (I S9121-45R.PRT JS_JPL_ONE_1
+        (CN
         0 NetJPL1_23
-        }
-      }
-      {I S9121-45R.PRT JS_JPL_ONE_2
-        {CN
+        )
+      )
+      (I S9121-45R.PRT JS_JPL_ONE_2
+        (CN
         0 NetJPL1_8
-        }
-      }
-      {I S9121-45R.PRT JS_JPL_ONE_3
-        {CN
+        )
+      )
+      (I S9121-45R.PRT JS_JPL_ONE_3
+        (CN
         0 NetJPL1_22
-        }
-      }
-      {I S9121-45R.PRT JS_JPL_ONE_4
-        {CN
+        )
+      )
+      (I S9121-45R.PRT JS_JPL_ONE_4
+        (CN
         0 NetJPL1_7
-        }
-      }
-      {I S9121-45R.PRT JS_JPL_ONE_5
-        {CN
+        )
+      )
+      (I S9121-45R.PRT JS_JPL_ONE_5
+        (CN
         0 NetJPL1_21
-        }
-      }
-      {I S9121-45R.PRT JS_JPL_ONE_6
-        {CN
+        )
+      )
+      (I S9121-45R.PRT JS_JPL_ONE_6
+        (CN
         0 NetJPL1_6
-        }
-      }
-      {I S9121-45R.PRT JS_JPL_TWO_1
-        {CN
+        )
+      )
+      (I S9121-45R.PRT JS_JPL_TWO_1
+        (CN
         0 NetJPL2_23
-        }
-      }
-      {I S9121-45R.PRT JS_JPL_TWO_2
-        {CN
+        )
+      )
+      (I S9121-45R.PRT JS_JPL_TWO_2
+        (CN
         0 NetJPL2_8
-        }
-      }
-      {I S9121-45R.PRT JS_JPL_TWO_3
-        {CN
+        )
+      )
+      (I S9121-45R.PRT JS_JPL_TWO_3
+        (CN
         0 NetJPL2_22
-        }
-      }
-      {I S9121-45R.PRT JS_JPL_TWO_4
-        {CN
+        )
+      )
+      (I S9121-45R.PRT JS_JPL_TWO_4
+        (CN
         0 NetJPL2_7
-        }
-      }
-      {I S9121-45R.PRT JS_JPL_TWO_5
-        {CN
+        )
+      )
+      (I S9121-45R.PRT JS_JPL_TWO_5
+        (CN
         0 NetJPL2_21
-        }
-      }
-      {I S9121-45R.PRT JS_JPL_TWO_6
-        {CN
+        )
+      )
+      (I S9121-45R.PRT JS_JPL_TWO_6
+        (CN
         0 NetJPL2_6
-        }
-      }
-      {I S9121-45R.PRT JS_JPL_ZERO_1
-        {CN
+        )
+      )
+      (I S9121-45R.PRT JS_JPL_ZERO_1
+        (CN
         0 NetJPL0_23
-        }
-      }
-      {I S9121-45R.PRT JS_JPL_ZERO_2
-        {CN
+        )
+      )
+      (I S9121-45R.PRT JS_JPL_ZERO_2
+        (CN
         0 NetJPL0_8
-        }
-      }
-      {I S9121-45R.PRT JS_JPL_ZERO_3
-        {CN
+        )
+      )
+      (I S9121-45R.PRT JS_JPL_ZERO_3
+        (CN
         0 NetJPL0_22
-        }
-      }
-      {I S9121-45R.PRT JS_JPL_ZERO_4
-        {CN
+        )
+      )
+      (I S9121-45R.PRT JS_JPL_ZERO_4
+        (CN
         0 NetJPL0_7
-        }
-      }
-      {I S9121-45R.PRT JS_JPL_ZERO_5
-        {CN
+        )
+      )
+      (I S9121-45R.PRT JS_JPL_ZERO_5
+        (CN
         0 NetJPL0_21
-        }
-      }
-      {I S9121-45R.PRT JS_JPL_ZERO_6
-        {CN
+        )
+      )
+      (I S9121-45R.PRT JS_JPL_ZERO_6
+        (CN
         0 NetJPL0_6
-        }
-      }
-      {I S9121-45R.PRT JS_JPU_ONE_1
-        {CN
+        )
+      )
+      (I S9121-45R.PRT JS_JPU_ONE_1
+        (CN
         0 JP6_JPU1_P1_WEST_LV_SOURCE
-        }
-      }
-      {I S9121-45R.PRT JS_JPU_ONE_2
-        {CN
+        )
+      )
+      (I S9121-45R.PRT JS_JPU_ONE_2
+        (CN
         0 JP6_JPU1_P1_EAST_LV_SOURCE
-        }
-      }
-      {I S9121-45R.PRT JS_JPU_ONE_3
-        {CN
+        )
+      )
+      (I S9121-45R.PRT JS_JPU_ONE_3
+        (CN
         0 JP6_JPU1_P2_EAST_LV_SOURCE
-        }
-      }
-      {I S9121-45R.PRT JS_JPU_ONE_4
-        {CN
+        )
+      )
+      (I S9121-45R.PRT JS_JPU_ONE_4
+        (CN
         0 JP6_JPU1_P3_LV_SOURCE
-        }
-      }
-      {I S9121-45R.PRT JS_JPU_ONE_5
-        {CN
+        )
+      )
+      (I S9121-45R.PRT JS_JPU_ONE_5
+        (CN
         0 JP5_JPU1_P1_WEST_LV_SOURCE
-        }
-      }
-      {I S9121-45R.PRT JS_JPU_ONE_6
-        {CN
+        )
+      )
+      (I S9121-45R.PRT JS_JPU_ONE_6
+        (CN
         0 JP5_JPU1_P1_EAST_LV_SOURCE
-        }
-      }
-      {I S9121-45R.PRT JS_JPU_ONE_7
-        {CN
+        )
+      )
+      (I S9121-45R.PRT JS_JPU_ONE_7
+        (CN
         0 JP5_JPU1_P2_EAST_LV_SOURCE
-        }
-      }
-      {I S9121-45R.PRT JS_JPU_ONE_8
-        {CN
+        )
+      )
+      (I S9121-45R.PRT JS_JPU_ONE_8
+        (CN
         0 JP5_JPU1_P3_LV_SOURCE
-        }
-      }
-      {I S9121-45R.PRT JS_JPU_ONE_9
-        {CN
+        )
+      )
+      (I S9121-45R.PRT JS_JPU_ONE_9
+        (CN
         0 JP4_JPU1_P1_WEST_LV_SOURCE
-        }
-      }
-      {I S9121-45R.PRT JS_JPU_ONE_10
-        {CN
+        )
+      )
+      (I S9121-45R.PRT JS_JPU_ONE_10
+        (CN
         0 JP4_JPU1_P1_EAST_LV_SOURCE
-        }
-      }
-      {I S9121-45R.PRT JS_JPU_ONE_11
-        {CN
+        )
+      )
+      (I S9121-45R.PRT JS_JPU_ONE_11
+        (CN
         0 JP4_JPU1_P2_EAST_LV_SOURCE
-        }
-      }
-      {I S9121-45R.PRT JS_JPU_ONE_12
-        {CN
+        )
+      )
+      (I S9121-45R.PRT JS_JPU_ONE_12
+        (CN
         0 JP4_JPU1_P3_LV_SOURCE
-        }
-      }
-      {I S9121-45R.PRT JS_JPU_ONE_13
-        {CN
+        )
+      )
+      (I S9121-45R.PRT JS_JPU_ONE_13
+        (CN
         0 JP3_JPU1_P2_EAST_LV_SOURCE
-        }
-      }
-      {I S9121-45R.PRT JS_JPU_ONE_14
-        {CN
+        )
+      )
+      (I S9121-45R.PRT JS_JPU_ONE_14
+        (CN
         0 JP3_JPU1_P3_LV_SOURCE
-        }
-      }
-      {I S9121-45R.PRT JS_JPU_ONE_15
-        {CN
+        )
+      )
+      (I S9121-45R.PRT JS_JPU_ONE_15
+        (CN
         0 JP2_JPU1_P3_LV_SOURCE
-        }
-      }
-      {I S9121-45R.PRT JS_JPU_ONE_16
-        {CN
+        )
+      )
+      (I S9121-45R.PRT JS_JPU_ONE_16
+        (CN
         0 JP6_JPU1_P1_WEST_LV_RETURN
-        }
-      }
-      {I S9121-45R.PRT JS_JPU_ONE_17
-        {CN
+        )
+      )
+      (I S9121-45R.PRT JS_JPU_ONE_17
+        (CN
         0 JP6_JPU1_P1_EAST_LV_RETURN
-        }
-      }
-      {I S9121-45R.PRT JS_JPU_ONE_18
-        {CN
+        )
+      )
+      (I S9121-45R.PRT JS_JPU_ONE_18
+        (CN
         0 JP6_JPU1_P2_EAST_LV_RETURN
-        }
-      }
-      {I S9121-45R.PRT JS_JPU_ONE_19
-        {CN
+        )
+      )
+      (I S9121-45R.PRT JS_JPU_ONE_19
+        (CN
         0 JP6_JPU1_P3_LV_RETURN
-        }
-      }
-      {I S9121-45R.PRT JS_JPU_ONE_20
-        {CN
+        )
+      )
+      (I S9121-45R.PRT JS_JPU_ONE_20
+        (CN
         0 JP5_JPU1_P1_WEST_LV_RETURN
-        }
-      }
-      {I S9121-45R.PRT JS_JPU_ONE_21
-        {CN
+        )
+      )
+      (I S9121-45R.PRT JS_JPU_ONE_21
+        (CN
         0 JP5_JPU1_P1_EAST_LV_RETURN
-        }
-      }
-      {I S9121-45R.PRT JS_JPU_ONE_22
-        {CN
+        )
+      )
+      (I S9121-45R.PRT JS_JPU_ONE_22
+        (CN
         0 JP5_JPU1_P2_EAST_LV_RETURN
-        }
-      }
-      {I S9121-45R.PRT JS_JPU_ONE_23
-        {CN
+        )
+      )
+      (I S9121-45R.PRT JS_JPU_ONE_23
+        (CN
         0 JP5_JPU1_P3_LV_RETURN
-        }
-      }
-      {I S9121-45R.PRT JS_JPU_ONE_24
-        {CN
+        )
+      )
+      (I S9121-45R.PRT JS_JPU_ONE_24
+        (CN
         0 JP4_JPU1_P1_WEST_LV_RETURN
-        }
-      }
-      {I S9121-45R.PRT JS_JPU_ONE_25
-        {CN
+        )
+      )
+      (I S9121-45R.PRT JS_JPU_ONE_25
+        (CN
         0 JP4_JPU1_P1_EAST_LV_RETURN
-        }
-      }
-      {I S9121-45R.PRT JS_JPU_ONE_26
-        {CN
+        )
+      )
+      (I S9121-45R.PRT JS_JPU_ONE_26
+        (CN
         0 JP4_JPU1_P2_EAST_LV_RETURN
-        }
-      }
-      {I S9121-45R.PRT JS_JPU_ONE_27
-        {CN
+        )
+      )
+      (I S9121-45R.PRT JS_JPU_ONE_27
+        (CN
         0 JP4_JPU1_P3_LV_RETURN
-        }
-      }
-      {I S9121-45R.PRT JS_JPU_ONE_28
-        {CN
+        )
+      )
+      (I S9121-45R.PRT JS_JPU_ONE_28
+        (CN
         0 JP3_JPU1_P2_EAST_LV_RETURN
-        }
-      }
-      {I S9121-45R.PRT JS_JPU_ONE_29
-        {CN
+        )
+      )
+      (I S9121-45R.PRT JS_JPU_ONE_29
+        (CN
         0 JP3_JPU1_P3_LV_RETURN
-        }
-      }
-      {I S9121-45R.PRT JS_JPU_ONE_30
-        {CN
+        )
+      )
+      (I S9121-45R.PRT JS_JPU_ONE_30
+        (CN
         0 JP2_JPU1_P3_LV_RETURN
-        }
-      }
-      {I S9121-45R.PRT JS_JPU_TWO_1
-        {CN
+        )
+      )
+      (I S9121-45R.PRT JS_JPU_TWO_1
+        (CN
         0 JP11_JPU2_P1_WEST_LV_SOURCE
-        }
-      }
-      {I S9121-45R.PRT JS_JPU_TWO_2
-        {CN
+        )
+      )
+      (I S9121-45R.PRT JS_JPU_TWO_2
+        (CN
         0 JP11_JPU2_P2_EAST_LV_SOURCE
-        }
-      }
-      {I S9121-45R.PRT JS_JPU_TWO_3
-        {CN
+        )
+      )
+      (I S9121-45R.PRT JS_JPU_TWO_3
+        (CN
         0 JP10_JPU2_P1_WEST_LV_SOURCE
-        }
-      }
-      {I S9121-45R.PRT JS_JPU_TWO_4
-        {CN
+        )
+      )
+      (I S9121-45R.PRT JS_JPU_TWO_4
+        (CN
         0 JP10_JPU2_P2_EAST_LV_SOURCE
-        }
-      }
-      {I S9121-45R.PRT JS_JPU_TWO_5
-        {CN
+        )
+      )
+      (I S9121-45R.PRT JS_JPU_TWO_5
+        (CN
         0 JP10_JPU2_P3_LV_SOURCE
-        }
-      }
-      {I S9121-45R.PRT JS_JPU_TWO_6
-        {CN
+        )
+      )
+      (I S9121-45R.PRT JS_JPU_TWO_6
+        (CN
         0 JP9_JPU2_P1_WEST_LV_SOURCE
-        }
-      }
-      {I S9121-45R.PRT JS_JPU_TWO_7
-        {CN
+        )
+      )
+      (I S9121-45R.PRT JS_JPU_TWO_7
+        (CN
         0 JP9_JPU2_P2_EAST_LV_SOURCE
-        }
-      }
-      {I S9121-45R.PRT JS_JPU_TWO_8
-        {CN
+        )
+      )
+      (I S9121-45R.PRT JS_JPU_TWO_8
+        (CN
         0 JP9_JPU2_P3_LV_SOURCE
-        }
-      }
-      {I S9121-45R.PRT JS_JPU_TWO_9
-        {CN
+        )
+      )
+      (I S9121-45R.PRT JS_JPU_TWO_9
+        (CN
         0 JP8_JPU2_P1_WEST_LV_SOURCE
-        }
-      }
-      {I S9121-45R.PRT JS_JPU_TWO_10
-        {CN
+        )
+      )
+      (I S9121-45R.PRT JS_JPU_TWO_10
+        (CN
         0 JP8_JPU2_P2_EAST_LV_SOURCE
-        }
-      }
-      {I S9121-45R.PRT JS_JPU_TWO_11
-        {CN
+        )
+      )
+      (I S9121-45R.PRT JS_JPU_TWO_11
+        (CN
         0 JP8_JPU2_P3_LV_SOURCE
-        }
-      }
-      {I S9121-45R.PRT JS_JPU_TWO_12
-        {CN
+        )
+      )
+      (I S9121-45R.PRT JS_JPU_TWO_12
+        (CN
         0 JP7_JPU2_P1_WEST_LV_SOURCE
-        }
-      }
-      {I S9121-45R.PRT JS_JPU_TWO_13
-        {CN
+        )
+      )
+      (I S9121-45R.PRT JS_JPU_TWO_13
+        (CN
         0 JP7_JPU2_P1_EAST_LV_SOURCE
-        }
-      }
-      {I S9121-45R.PRT JS_JPU_TWO_14
-        {CN
+        )
+      )
+      (I S9121-45R.PRT JS_JPU_TWO_14
+        (CN
         0 JP7_JPU2_P2_EAST_LV_SOURCE
-        }
-      }
-      {I S9121-45R.PRT JS_JPU_TWO_15
-        {CN
+        )
+      )
+      (I S9121-45R.PRT JS_JPU_TWO_15
+        (CN
         0 JP7_JPU2_P3_LV_SOURCE
-        }
-      }
-      {I S9121-45R.PRT JS_JPU_TWO_16
-        {CN
+        )
+      )
+      (I S9121-45R.PRT JS_JPU_TWO_16
+        (CN
         0 JP11_JPU2_P1_WEST_LV_RETURN
-        }
-      }
-      {I S9121-45R.PRT JS_JPU_TWO_17
-        {CN
+        )
+      )
+      (I S9121-45R.PRT JS_JPU_TWO_17
+        (CN
         0 JP11_JPU2_P2_EAST_LV_RETURN
-        }
-      }
-      {I S9121-45R.PRT JS_JPU_TWO_18
-        {CN
+        )
+      )
+      (I S9121-45R.PRT JS_JPU_TWO_18
+        (CN
         0 JP10_JPU2_P1_WEST_LV_RETURN
-        }
-      }
-      {I S9121-45R.PRT JS_JPU_TWO_19
-        {CN
+        )
+      )
+      (I S9121-45R.PRT JS_JPU_TWO_19
+        (CN
         0 JP10_JPU2_P2_EAST_LV_RETURN
-        }
-      }
-      {I S9121-45R.PRT JS_JPU_TWO_20
-        {CN
+        )
+      )
+      (I S9121-45R.PRT JS_JPU_TWO_20
+        (CN
         0 JP10_JPU2_P3_LV_RETURN
-        }
-      }
-      {I S9121-45R.PRT JS_JPU_TWO_21
-        {CN
+        )
+      )
+      (I S9121-45R.PRT JS_JPU_TWO_21
+        (CN
         0 JP9_JPU2_P1_WEST_LV_RETURN
-        }
-      }
-      {I S9121-45R.PRT JS_JPU_TWO_22
-        {CN
+        )
+      )
+      (I S9121-45R.PRT JS_JPU_TWO_22
+        (CN
         0 JP9_JPU2_P2_EAST_LV_RETURN
-        }
-      }
-      {I S9121-45R.PRT JS_JPU_TWO_23
-        {CN
+        )
+      )
+      (I S9121-45R.PRT JS_JPU_TWO_23
+        (CN
         0 JP9_JPU2_P3_LV_RETURN
-        }
-      }
-      {I S9121-45R.PRT JS_JPU_TWO_24
-        {CN
+        )
+      )
+      (I S9121-45R.PRT JS_JPU_TWO_24
+        (CN
         0 JP8_JPU2_P1_WEST_LV_RETURN
-        }
-      }
-      {I S9121-45R.PRT JS_JPU_TWO_25
-        {CN
+        )
+      )
+      (I S9121-45R.PRT JS_JPU_TWO_25
+        (CN
         0 JP8_JPU2_P2_EAST_LV_RETURN
-        }
-      }
-      {I S9121-45R.PRT JS_JPU_TWO_26
-        {CN
+        )
+      )
+      (I S9121-45R.PRT JS_JPU_TWO_26
+        (CN
         0 JP8_JPU2_P3_LV_RETURN
-        }
-      }
-      {I S9121-45R.PRT JS_JPU_TWO_27
-        {CN
+        )
+      )
+      (I S9121-45R.PRT JS_JPU_TWO_27
+        (CN
         0 JP7_JPU2_P1_WEST_LV_RETURN
-        }
-      }
-      {I S9121-45R.PRT JS_JPU_TWO_28
-        {CN
+        )
+      )
+      (I S9121-45R.PRT JS_JPU_TWO_28
+        (CN
         0 JP7_JPU2_P1_EAST_LV_RETURN
-        }
-      }
-      {I S9121-45R.PRT JS_JPU_TWO_29
-        {CN
+        )
+      )
+      (I S9121-45R.PRT JS_JPU_TWO_29
+        (CN
         0 JP7_JPU2_P2_EAST_LV_RETURN
-        }
-      }
-      {I S9121-45R.PRT JS_JPU_TWO_30
-        {CN
+        )
+      )
+      (I S9121-45R.PRT JS_JPU_TWO_30
+        (CN
         0 JP7_JPU2_P3_LV_RETURN
-        }
-      }
-      {I S9121-45R.PRT JS_JPU_ZERO_1
-        {CN
+        )
+      )
+      (I S9121-45R.PRT JS_JPU_ZERO_1
+        (CN
         0 JP3_JPU0_P1_WEST_LV_SOURCE
-        }
-      }
-      {I S9121-45R.PRT JS_JPU_ZERO_2
-        {CN
+        )
+      )
+      (I S9121-45R.PRT JS_JPU_ZERO_2
+        (CN
         0 JP3_JPU0_P1_EAST_LV_SOURCE
-        }
-      }
-      {I S9121-45R.PRT JS_JPU_ZERO_3
-        {CN
+        )
+      )
+      (I S9121-45R.PRT JS_JPU_ZERO_3
+        (CN
         0 JP2_JPU0_P1_WEST_LV_SOURCE
-        }
-      }
-      {I S9121-45R.PRT JS_JPU_ZERO_4
-        {CN
+        )
+      )
+      (I S9121-45R.PRT JS_JPU_ZERO_4
+        (CN
         0 JP2_JPU0_P1_EAST_LV_SOURCE
-        }
-      }
-      {I S9121-45R.PRT JS_JPU_ZERO_5
-        {CN
+        )
+      )
+      (I S9121-45R.PRT JS_JPU_ZERO_5
+        (CN
         0 JP2_JPU0_P2_WEST_LV_SOURCE
-        }
-      }
-      {I S9121-45R.PRT JS_JPU_ZERO_6
-        {CN
+        )
+      )
+      (I S9121-45R.PRT JS_JPU_ZERO_6
+        (CN
         0 JP2_JPU0_P2_EAST_LV_SOURCE
-        }
-      }
-      {I S9121-45R.PRT JS_JPU_ZERO_7
-        {CN
+        )
+      )
+      (I S9121-45R.PRT JS_JPU_ZERO_7
+        (CN
         0 JP1_JPU0_P1_WEST_LV_SOURCE
-        }
-      }
-      {I S9121-45R.PRT JS_JPU_ZERO_8
-        {CN
+        )
+      )
+      (I S9121-45R.PRT JS_JPU_ZERO_8
+        (CN
         0 JP1_JPU0_P1_EAST_LV_SOURCE
-        }
-      }
-      {I S9121-45R.PRT JS_JPU_ZERO_9
-        {CN
+        )
+      )
+      (I S9121-45R.PRT JS_JPU_ZERO_9
+        (CN
         0 JP1_JPU0_P2_WEST_LV_SOURCE
-        }
-      }
-      {I S9121-45R.PRT JS_JPU_ZERO_10
-        {CN
+        )
+      )
+      (I S9121-45R.PRT JS_JPU_ZERO_10
+        (CN
         0 JP1_JPU0_P2_EAST_LV_SOURCE
-        }
-      }
-      {I S9121-45R.PRT JS_JPU_ZERO_11
-        {CN
+        )
+      )
+      (I S9121-45R.PRT JS_JPU_ZERO_11
+        (CN
         0 JP1_JPU0_P3_LV_SOURCE
-        }
-      }
-      {I S9121-45R.PRT JS_JPU_ZERO_12
-        {CN
+        )
+      )
+      (I S9121-45R.PRT JS_JPU_ZERO_12
+        (CN
         0 JP0_JPU0_P1_WEST_LV_SOURCE
-        }
-      }
-      {I S9121-45R.PRT JS_JPU_ZERO_13
-        {CN
+        )
+      )
+      (I S9121-45R.PRT JS_JPU_ZERO_13
+        (CN
         0 JP0_JPU0_P1_EAST_LV_SOURCE
-        }
-      }
-      {I S9121-45R.PRT JS_JPU_ZERO_14
-        {CN
+        )
+      )
+      (I S9121-45R.PRT JS_JPU_ZERO_14
+        (CN
         0 JP0_JPU0_P2_EAST_LV_SOURCE
-        }
-      }
-      {I S9121-45R.PRT JS_JPU_ZERO_15
-        {CN
+        )
+      )
+      (I S9121-45R.PRT JS_JPU_ZERO_15
+        (CN
         0 JP0_JPU0_P3_LV_SOURCE
-        }
-      }
-      {I S9121-45R.PRT JS_JPU_ZERO_16
-        {CN
+        )
+      )
+      (I S9121-45R.PRT JS_JPU_ZERO_16
+        (CN
         0 JP3_JPU0_P1_WEST_LV_RETURN
-        }
-      }
-      {I S9121-45R.PRT JS_JPU_ZERO_17
-        {CN
+        )
+      )
+      (I S9121-45R.PRT JS_JPU_ZERO_17
+        (CN
         0 JP3_JPU0_P1_EAST_LV_RETURN
-        }
-      }
-      {I S9121-45R.PRT JS_JPU_ZERO_18
-        {CN
+        )
+      )
+      (I S9121-45R.PRT JS_JPU_ZERO_18
+        (CN
         0 JP2_JPU0_P1_WEST_LV_RETURN
-        }
-      }
-      {I S9121-45R.PRT JS_JPU_ZERO_19
-        {CN
+        )
+      )
+      (I S9121-45R.PRT JS_JPU_ZERO_19
+        (CN
         0 JP2_JPU0_P1_EAST_LV_RETURN
-        }
-      }
-      {I S9121-45R.PRT JS_JPU_ZERO_20
-        {CN
+        )
+      )
+      (I S9121-45R.PRT JS_JPU_ZERO_20
+        (CN
         0 JP2_JPU0_P2_WEST_LV_RETURN
-        }
-      }
-      {I S9121-45R.PRT JS_JPU_ZERO_21
-        {CN
+        )
+      )
+      (I S9121-45R.PRT JS_JPU_ZERO_21
+        (CN
         0 JP2_JPU0_P2_EAST_LV_RETURN
-        }
-      }
-      {I S9121-45R.PRT JS_JPU_ZERO_22
-        {CN
+        )
+      )
+      (I S9121-45R.PRT JS_JPU_ZERO_22
+        (CN
         0 JP1_JPU0_P1_WEST_LV_RETURN
-        }
-      }
-      {I S9121-45R.PRT JS_JPU_ZERO_23
-        {CN
+        )
+      )
+      (I S9121-45R.PRT JS_JPU_ZERO_23
+        (CN
         0 JP1_JPU0_P1_EAST_LV_RETURN
-        }
-      }
-      {I S9121-45R.PRT JS_JPU_ZERO_24
-        {CN
+        )
+      )
+      (I S9121-45R.PRT JS_JPU_ZERO_24
+        (CN
         0 JP1_JPU0_P2_WEST_LV_RETURN
-        }
-      }
-      {I S9121-45R.PRT JS_JPU_ZERO_25
-        {CN
+        )
+      )
+      (I S9121-45R.PRT JS_JPU_ZERO_25
+        (CN
         0 JP1_JPU0_P2_EAST_LV_RETURN
-        }
-      }
-      {I S9121-45R.PRT JS_JPU_ZERO_26
-        {CN
+        )
+      )
+      (I S9121-45R.PRT JS_JPU_ZERO_26
+        (CN
         0 JP1_JPU0_P3_LV_RETURN
-        }
-      }
-      {I S9121-45R.PRT JS_JPU_ZERO_27
-        {CN
+        )
+      )
+      (I S9121-45R.PRT JS_JPU_ZERO_27
+        (CN
         0 JP0_JPU0_P1_WEST_LV_RETURN
-        }
-      }
-      {I S9121-45R.PRT JS_JPU_ZERO_28
-        {CN
+        )
+      )
+      (I S9121-45R.PRT JS_JPU_ZERO_28
+        (CN
         0 JP0_JPU0_P1_EAST_LV_RETURN
-        }
-      }
-      {I S9121-45R.PRT JS_JPU_ZERO_29
-        {CN
+        )
+      )
+      (I S9121-45R.PRT JS_JPU_ZERO_29
+        (CN
         0 JP0_JPU0_P2_EAST_LV_RETURN
-        }
-      }
-      {I S9121-45R.PRT JS_JPU_ZERO_30
-        {CN
+        )
+      )
+      (I S9121-45R.PRT JS_JPU_ZERO_30
+        (CN
         0 JP0_JPU0_P3_LV_RETURN
-        }
-      }
-      {I S9121-45R.PRT JS_PT_EIGHT_NINE_1
-        {CN
+        )
+      )
+      (I S9121-45R.PRT JS_PT_EIGHT_NINE_1
+        (CN
         0 JP8_JPL2_P4_LV_SOURCE
-        }
-      }
-      {I S9121-45R.PRT JS_PT_EIGHT_NINE_2
-        {CN
+        )
+      )
+      (I S9121-45R.PRT JS_PT_EIGHT_NINE_2
+        (CN
         0 JP8_JPL2_P4_LV_RETURN
-        }
-      }
-      {I S9121-45R.PRT JS_PT_FIVE_SIX_1
-        {CN
+        )
+      )
+      (I S9121-45R.PRT JS_PT_FIVE_SIX_1
+        (CN
         0 JP4_JPL1_P4_LV_SOURCE
-        }
-      }
-      {I S9121-45R.PRT JS_PT_FIVE_SIX_2
-        {CN
+        )
+      )
+      (I S9121-45R.PRT JS_PT_FIVE_SIX_2
+        (CN
         0 JP4_JPL1_P4_LV_RETURN
-        }
-      }
-      {I S9121-45R.PRT JS_PT_FOUR_FIVE_1
-        {CN
+        )
+      )
+      (I S9121-45R.PRT JS_PT_FOUR_FIVE_1
+        (CN
         0 JP3_JPL1_P4_LV_SOURCE
-        }
-      }
-      {I S9121-45R.PRT JS_PT_FOUR_FIVE_2
-        {CN
+        )
+      )
+      (I S9121-45R.PRT JS_PT_FOUR_FIVE_2
+        (CN
         0 JP3_JPL1_P4_LV_RETURN
-        }
-      }
-      {I S9121-45R.PRT JS_PT_NINE_TEN_1
-        {CN
+        )
+      )
+      (I S9121-45R.PRT JS_PT_NINE_TEN_1
+        (CN
         0 JP11_JPL2_P3_LV_SOURCE
-        }
-      }
-      {I S9121-45R.PRT JS_PT_NINE_TEN_2
-        {CN
+        )
+      )
+      (I S9121-45R.PRT JS_PT_NINE_TEN_2
+        (CN
         0 JP11_JPL2_P3_LV_RETURN
-        }
-      }
-      {I S9121-45R.PRT JS_PT_ONE_TWO_1
-        {CN
+        )
+      )
+      (I S9121-45R.PRT JS_PT_ONE_TWO_1
+        (CN
         0 JP1_JPL0_P4_LV_SOURCE
-        }
-      }
-      {I S9121-45R.PRT JS_PT_ONE_TWO_2
-        {CN
+        )
+      )
+      (I S9121-45R.PRT JS_PT_ONE_TWO_2
+        (CN
         0 JP1_JPL0_P4_LV_RETURN
-        }
-      }
-      {I S9121-45R.PRT JS_PT_SIX_SEVEN_1
-        {CN
+        )
+      )
+      (I S9121-45R.PRT JS_PT_SIX_SEVEN_1
+        (CN
         0 JP7_JPL1_P4_LV_SOURCE
-        }
-      }
-      {I S9121-45R.PRT JS_PT_SIX_SEVEN_2
-        {CN
+        )
+      )
+      (I S9121-45R.PRT JS_PT_SIX_SEVEN_2
+        (CN
         0 JP7_JPL1_P4_LV_RETURN
-        }
-      }
-      {I S9121-45R.PRT JS_PT_TEN_ELEVEN_1
-        {CN
+        )
+      )
+      (I S9121-45R.PRT JS_PT_TEN_ELEVEN_1
+        (CN
         0 JP11_JPL2_P4_LV_SOURCE
-        }
-      }
-      {I S9121-45R.PRT JS_PT_TEN_ELEVEN_2
-        {CN
+        )
+      )
+      (I S9121-45R.PRT JS_PT_TEN_ELEVEN_2
+        (CN
         0 JP11_JPL2_P4_LV_RETURN
-        }
-      }
-      {I S9121-45R.PRT JS_PT_TWO_THREE_1
-        {CN
+        )
+      )
+      (I S9121-45R.PRT JS_PT_TWO_THREE_1
+        (CN
         0 JP2_JPL0_P4_LV_SOURCE
-        }
-      }
-      {I S9121-45R.PRT JS_PT_TWO_THREE_2
-        {CN
+        )
+      )
+      (I S9121-45R.PRT JS_PT_TWO_THREE_2
+        (CN
         0 JP2_JPL0_P4_LV_RETURN
-        }
-      }
-      {I S9121-45R.PRT JS_PT_ZERO_ONE_1
-        {CN
+        )
+      )
+      (I S9121-45R.PRT JS_PT_ZERO_ONE_1
+        (CN
         0 JP0_JPL0_P4_LV_SOURCE
-        }
-      }
-      {I S9121-45R.PRT JS_PT_ZERO_ONE_2
-        {CN
+        )
+      )
+      (I S9121-45R.PRT JS_PT_ZERO_ONE_2
+        (CN
         0 JP0_JPL0_P4_LV_RETURN
-        }
-      }
-      {I SMS-150-02-L-D.PRT JT0
-        {CN
+        )
+      )
+      (I SMS-150-02-L-D.PRT JT0
+        (CN
         1 JP3_JT0_P4_THERM_P
         2 JD3_JT0_1V5_SENSE_P
         3 JP3_JT0_P4_THERM_N
@@ -13206,10 +13206,10 @@
        98 JD0_JT0_1V5_SENSE_P
        99 JP0_JT0_P4_LV_SENSE_N
       100 JD0_JT0_1V5_SENSE_N
-        }
-      }
-      {I SMS-150-02-L-D.PRT JT1
-        {CN
+        )
+      )
+      (I SMS-150-02-L-D.PRT JT1
+        (CN
         1 JP7_JT1_P4_THERM_P
         2 JD7_JT1_1V5_SENSE_P
         3 JP7_JT1_P4_THERM_N
@@ -13310,10 +13310,10 @@
        98 JD4_JT1_1V5_SENSE_P
        99 JP2_JT1_P4_LV_SENSE_N
       100 JD4_JT1_1V5_SENSE_N
-        }
-      }
-      {I SMS-150-02-L-D.PRT JT2
-        {CN
+        )
+      )
+      (I SMS-150-02-L-D.PRT JT2
+        (CN
         1 JP11_JT2_P4_THERM_P
         2 JD11_JT2_1V5_SENSE_P
         3 JP11_JT2_P4_THERM_N
@@ -13414,1754 +13414,1754 @@
        98 JD8_JT2_1V5_SENSE_P
        99 JP8_JT2_P4_THERM_N
       100 JD8_JT2_1V5_SENSE_N
-        }
-      }
-      {I Net Tie.PRT NT7
-        {CN
+        )
+      )
+      (I Net Tie.PRT NT7
+        (CN
         1 JD1_0_JPL0_2V5
         2 JD1_0_JT0_2V5_SENSE_P
-        }
-      }
-      {I Net Tie.PRT NT8
-        {CN
+        )
+      )
+      (I Net Tie.PRT NT8
+        (CN
         1 GND
         2 JD1_0_JT0_2V5_SENSE_N
-        }
-      }
-      {I Net Tie.PRT NT27
-        {CN
+        )
+      )
+      (I Net Tie.PRT NT27
+        (CN
         1 JD0AGND
         2 JD0_JP0_THERM_EC_ADC_7_N
-        }
-      }
-      {I Net Tie.PRT NT28
-        {CN
+        )
+      )
+      (I Net Tie.PRT NT28
+        (CN
         1 JD4AGND
         2 JD4_JP0_THERM_EC_ADC_6_N
-        }
-      }
-      {I Net Tie.PRT NT29
-        {CN
+        )
+      )
+      (I Net Tie.PRT NT29
+        (CN
         1 JD4AGND
         2 JD4_JP0_THERM_EC_ADC_7_N
-        }
-      }
-      {I Net Tie.PRT NT30
-        {CN
+        )
+      )
+      (I Net Tie.PRT NT30
+        (CN
         1 JD0AGND
         2 JD0_JP1_THERM_EC_ADC_5_N
-        }
-      }
-      {I Net Tie.PRT NT31
-        {CN
+        )
+      )
+      (I Net Tie.PRT NT31
+        (CN
         1 JD4AGND
         2 JD4_JP1_THERM_EC_ADC_4_N
-        }
-      }
-      {I Net Tie.PRT NT32
-        {CN
+        )
+      )
+      (I Net Tie.PRT NT32
+        (CN
         1 JD4AGND
         2 JD4_JP1_THERM_EC_ADC_3_N
-        }
-      }
-      {I Net Tie.PRT NT33
-        {CN
+        )
+      )
+      (I Net Tie.PRT NT33
+        (CN
         1 JD2AGND
         2 JD2_JP1_THERM_EC_ADC_3_N
-        }
-      }
-      {I Net Tie.PRT NT34
-        {CN
+        )
+      )
+      (I Net Tie.PRT NT34
+        (CN
         1 JD3_2_JPL0_2V5
         2 JD3_2_JT0_2V5_SENSE_P
-        }
-      }
-      {I Net Tie.PRT NT35
-        {CN
+        )
+      )
+      (I Net Tie.PRT NT35
+        (CN
         1 GND
         2 JD3_2_JT0_2V5_SENSE_N
-        }
-      }
-      {I Net Tie.PRT NT36
-        {CN
+        )
+      )
+      (I Net Tie.PRT NT36
+        (CN
         1 JD5_4_JPL1_2V5
         2 JD5_4_JT1_2V5_SENSE_P
-        }
-      }
-      {I Net Tie.PRT NT37
-        {CN
+        )
+      )
+      (I Net Tie.PRT NT37
+        (CN
         1 GND
         2 JD5_4_JT1_2V5_SENSE_N
-        }
-      }
-      {I Net Tie.PRT NT38
-        {CN
+        )
+      )
+      (I Net Tie.PRT NT38
+        (CN
         1 JD7_6_JPL1_2V5
         2 JD7_6_JT1_2V5_SENSE_P
-        }
-      }
-      {I Net Tie.PRT NT39
-        {CN
+        )
+      )
+      (I Net Tie.PRT NT39
+        (CN
         1 GND
         2 JD7_6_JT1_2V5_SENSE_N
-        }
-      }
-      {I Net Tie.PRT NT40
-        {CN
+        )
+      )
+      (I Net Tie.PRT NT40
+        (CN
         1 JD9_8_JPL2_2V5
         2 JD9_8_JT2_2V5_SENSE_P
-        }
-      }
-      {I Net Tie.PRT NT41
-        {CN
+        )
+      )
+      (I Net Tie.PRT NT41
+        (CN
         1 GND
         2 JD9_8_JT2_2V5_SENSE_N
-        }
-      }
-      {I Net Tie.PRT NT42
-        {CN
+        )
+      )
+      (I Net Tie.PRT NT42
+        (CN
         1 JD11_10_JPL2_2V5
         2 JD11_10_JT2_2V5_SENSE_P
-        }
-      }
-      {I Net Tie.PRT NT43
-        {CN
+        )
+      )
+      (I Net Tie.PRT NT43
+        (CN
         1 GND
         2 JD11_10_JT2_2V5_SENSE_N
-        }
-      }
-      {I Net Tie.PRT NT44
-        {CN
+        )
+      )
+      (I Net Tie.PRT NT44
+        (CN
         1 EC_SEC_DIN_ELK_N
         2 SLOT8_MC_SEC_DOUT_ELK_N
-        }
-      }
-      {I Net Tie.PRT NT45
-        {CN
+        )
+      )
+      (I Net Tie.PRT NT45
+        (CN
         1 EC_SEC_DIN_ELK_P
         2 SLOT8_MC_SEC_DOUT_ELK_P
-        }
-      }
-      {I Net Tie.PRT NT46
-        {CN
+        )
+      )
+      (I Net Tie.PRT NT46
+        (CN
         1 MC_SEC_DIN_ELK_N
         2 SLOT8_EC_SEC_DOUT_ELK_N
-        }
-      }
-      {I Net Tie.PRT NT47
-        {CN
+        )
+      )
+      (I Net Tie.PRT NT47
+        (CN
         1 MC_SEC_DIN_ELK_P
         2 SLOT8_EC_SEC_DOUT_ELK_P
-        }
-      }
-      {I Net Tie.PRT NT48
-        {CN
+        )
+      )
+      (I Net Tie.PRT NT48
+        (CN
         1 EC_SEC_DOUT_ELK_N
         2 SLOT8_MC_SEC_DIN_ELK_N
-        }
-      }
-      {I Net Tie.PRT NT49
-        {CN
+        )
+      )
+      (I Net Tie.PRT NT49
+        (CN
         1 EC_SEC_DOUT_ELK_P
         2 SLOT8_MC_SEC_DIN_ELK_P
-        }
-      }
-      {I Net Tie.PRT NT50
-        {CN
+        )
+      )
+      (I Net Tie.PRT NT50
+        (CN
         1 MC_SEC_DOUT_ELK_N
         2 SLOT8_EC_SEC_DIN_ELK_N
-        }
-      }
-      {I Net Tie.PRT NT51
-        {CN
+        )
+      )
+      (I Net Tie.PRT NT51
+        (CN
         1 MC_SEC_DOUT_ELK_P
         2 SLOT8_EC_SEC_DIN_ELK_P
-        }
-      }
-      {I Net Tie.PRT NT52
-        {CN
+        )
+      )
+      (I Net Tie.PRT NT52
+        (CN
         1 EC_SEC_CLK_ELK_N
         2 SLOT8_MC_SEC_CLK_ELK_N
-        }
-      }
-      {I Net Tie.PRT NT53
-        {CN
+        )
+      )
+      (I Net Tie.PRT NT53
+        (CN
         1 EC_SEC_CLK_ELK_P
         2 SLOT8_MC_SEC_CLK_ELK_P
-        }
-      }
-      {I Net Tie.PRT NT54
-        {CN
+        )
+      )
+      (I Net Tie.PRT NT54
+        (CN
         1 MC_SEC_CLK_ELK_N
         2 SLOT8_EC_SEC_CLK_ELK_N
-        }
-      }
-      {I Net Tie.PRT NT55
-        {CN
+        )
+      )
+      (I Net Tie.PRT NT55
+        (CN
         1 MC_SEC_CLK_ELK_P
         2 SLOT8_EC_SEC_CLK_ELK_P
-        }
-      }
-      {I RESC2012X60N.PRT R1
-        {CN
+        )
+      )
+      (I RESC2012X60N.PRT R1
+        (CN
         1 GND
         2 JP0A27_P4_LV_SENSE_GND
-        }
-      }
-      {I RESC2012X60N.PRT R2
-        {CN
+        )
+      )
+      (I RESC2012X60N.PRT R2
+        (CN
         1 GND
         2 JP0A16_P3_LV_SENSE_GND
-        }
-      }
-      {I RESC2012X60N.PRT R3
-        {CN
+        )
+      )
+      (I RESC2012X60N.PRT R3
+        (CN
         1 GND
         2 JP0F05_P2_EAST_LV_SENSE_GND
-        }
-      }
-      {I RESC2012X60N.PRT R4
-        {CN
+        )
+      )
+      (I RESC2012X60N.PRT R4
+        (CN
         1 GND
         2 JP0J07_P1_EAST_LV_SENSE_GND
-        }
-      }
-      {I RESC2012X60N.PRT R5
-        {CN
+        )
+      )
+      (I RESC2012X60N.PRT R5
+        (CN
         1 GND
         2 JP0J24_P1_WEST_LV_SENSE_GND
-        }
-      }
-      {I RESC2012X60N.PRT R6
-        {CN
+        )
+      )
+      (I RESC2012X60N.PRT R6
+        (CN
         1 GND
         2 JP1A27_P4_LV_SENSE_GND
-        }
-      }
-      {I RESC2012X60N.PRT R7
-        {CN
+        )
+      )
+      (I RESC2012X60N.PRT R7
+        (CN
         1 GND
         2 JP1A16_P3_LV_SENSE_GND
-        }
-      }
-      {I RESC2012X60N.PRT R8
-        {CN
+        )
+      )
+      (I RESC2012X60N.PRT R8
+        (CN
         1 GND
         2 JP1F05_P2_EAST_LV_SENSE_GND
-        }
-      }
-      {I RESC2012X60N.PRT R9
-        {CN
+        )
+      )
+      (I RESC2012X60N.PRT R9
+        (CN
         1 GND
         2 JP1J07_P1_EAST_LV_SENSE_GND
-        }
-      }
-      {I RESC2012X60N.PRT R10
-        {CN
+        )
+      )
+      (I RESC2012X60N.PRT R10
+        (CN
         1 GND
         2 JP1J24_P1_WEST_LV_SENSE_GND
-        }
-      }
-      {I RESC2012X60N.PRT R11
-        {CN
+        )
+      )
+      (I RESC2012X60N.PRT R11
+        (CN
         1 GND
         2 JP1F36_P2_WEST_LV_SENSE_GND
-        }
-      }
-      {I RESC2012X60N.PRT R12
-        {CN
+        )
+      )
+      (I RESC2012X60N.PRT R12
+        (CN
         1 GND
         2 JP2A16_P3_LV_SENSE_GND
-        }
-      }
-      {I RESC2012X60N.PRT R13
-        {CN
+        )
+      )
+      (I RESC2012X60N.PRT R13
+        (CN
         1 GND
         2 JP2A27_P4_LV_SENSE_GND
-        }
-      }
-      {I RESC2012X60N.PRT R14
-        {CN
+        )
+      )
+      (I RESC2012X60N.PRT R14
+        (CN
         1 GND
         2 JP2F05_P2_EAST_LV_SENSE_GND
-        }
-      }
-      {I RESC1005X40N.PRT R15
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R15
+        (CN
         1 JD2_JP0_EC_RESET_GPIO_5_N
         2 GND
-        }
-      }
-      {I RESC1005X40N.PRT R16
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R16
+        (CN
         1 JD2_JP0_DC0_ELK_CH6_P
         2 JD2_JPL0_1V5
-        }
-      }
-      {I RESC1005X40N.PRT R17
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R17
+        (CN
         1 JD2_JP0_EC_HYB_i2C_SCL_5_P
         2 JD2_JPL0_1V5
-        }
-      }
-      {I RESC1005X40N.PRT R18
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R18
+        (CN
         1 JD2_JP0_EC_HYB_i2C_SDA_5_N
         2 GND
-        }
-      }
-      {I RESC1005X40N.PRT R19
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R19
+        (CN
         1 JD2_JP0_DC0_ELK_CH6_N
         2 GND
-        }
-      }
-      {I RESC1005X40N.PRT R20
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R20
+        (CN
         1 JD2_JP0_EC_HYB_i2C_SCL_5_N
         2 GND
-        }
-      }
-      {I RESC1005X40N.PRT R21
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R21
+        (CN
         1 JD2_JP0_EC_RESET_GPIO_5_P
         2 JD2_JPL0_1V5
-        }
-      }
-      {I RESC1005X40N.PRT R22
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R22
+        (CN
         1 JD2_JP0_DC5_ELK_CH6_P
         2 JD2_JPL0_1V5
-        }
-      }
-      {I RESC1005X40N.PRT R23
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R23
+        (CN
         1 JD2_JP0_DC5_ELK_CH6_N
         2 GND
-        }
-      }
-      {I RESC1005X40N.PRT R24
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R24
+        (CN
         1 JD2_JP0_MC_TFC5_P
         2 JD2_JPL0_1V5
-        }
-      }
-      {I RESC1005X40N.PRT R25
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R25
+        (CN
         1 JD0_JP0_DC0_ELK_CH3_P
         2 JD0_JPL0_1V5
-        }
-      }
-      {I RESC1005X40N.PRT R26
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R26
+        (CN
         1 JD2_JP0_MC_TFC5_N
         2 GND
-        }
-      }
-      {I RESC1005X40N.PRT R27
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R27
+        (CN
         1 JD0_JP0_DC0_ELK_CH3_N
         2 GND
-        }
-      }
-      {I RESC1005X40N.PRT R28
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R28
+        (CN
         1 JD2_JP0_DC0_ELK_CH9_P
         2 JD2_JPL0_1V5
-        }
-      }
-      {I RESC1005X40N.PRT R29
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R29
+        (CN
         1 JD2_JP0_DC0_ELK_CH9_N
         2 GND
-        }
-      }
-      {I RESC1005X40N.PRT R30
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R30
+        (CN
         1 JD2_JP0_EC_HYB_i2C_SDA_5_P
         2 JD2_JPL0_1V5
-        }
-      }
-      {I RESC1005X40N.PRT R31
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R31
+        (CN
         1 JD0_JP0_DC5_ELK_CH3_P
         2 JD0_JPL0_1V5
-        }
-      }
-      {I RESC1005X40N.PRT R32
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R32
+        (CN
         1 JD0_JP0_DC5_ELK_CH3_N
         2 GND
-        }
-      }
-      {I RESC1005X40N.PRT R33
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R33
+        (CN
         1 JD2_JP0_DC5_ELK_CH8_P
         2 JD2_JPL0_1V5
-        }
-      }
-      {I RESC1005X40N.PRT R34
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R34
+        (CN
         1 JD2_JP0_DC5_ELK_CH8_N
         2 GND
-        }
-      }
-      {I RESC1005X40N.PRT R35
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R35
+        (CN
         1 JD0_JP0_DC5_ELK_CH8_P
         2 JD0_JPL0_1V5
-        }
-      }
-      {I RESC1005X40N.PRT R36
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R36
+        (CN
         1 JD0_JP0_DC5_ELK_CH8_N
         2 GND
-        }
-      }
-      {I RESC1005X40N.PRT R37
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R37
+        (CN
         1 JD2_JP0_DC5_ELK_CH9_P
         2 JD2_JPL0_1V5
-        }
-      }
-      {I RESC1005X40N.PRT R38
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R38
+        (CN
         1 JD2_JP0_DC5_ELK_CH9_N
         2 GND
-        }
-      }
-      {I RESC1005X40N.PRT R39
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R39
+        (CN
         1 JD0_JP0_DC0_ELK_CH8_P
         2 JD0_JPL0_1V5
-        }
-      }
-      {I RESC1005X40N.PRT R40
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R40
+        (CN
         1 JD0_JP0_DC0_ELK_CH8_N
         2 GND
-        }
-      }
-      {I RESC1005X40N.PRT R41
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R41
+        (CN
         1 JD2_JP0_DC0_ELK_CH8_P
         2 JD2_JPL0_1V5
-        }
-      }
-      {I RESC1005X40N.PRT R42
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R42
+        (CN
         1 JD2_JP0_DC0_ELK_CH8_N
         2 GND
-        }
-      }
-      {I RESC1005X40N.PRT R43
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R43
+        (CN
         1 JD2_JP0_DC5_ELK_CH3_N
         2 JD2_JPL0_1V5
-        }
-      }
-      {I RESC1005X40N.PRT R44
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R44
+        (CN
         1 JD2_JP0_DC5_ELK_CH10_N
         2 JD2_JPL0_1V5
-        }
-      }
-      {I RESC1005X40N.PRT R45
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R45
+        (CN
         1 JD2_JP0_DC5_ELK_CH3_P
         2 GND
-        }
-      }
-      {I RESC1005X40N.PRT R46
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R46
+        (CN
         1 JD2_JP0_DC5_ELK_CH10_P
         2 GND
-        }
-      }
-      {I RESC1005X40N.PRT R47
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R47
+        (CN
         1 JD2_JP0_DC0_ELK_CH5_P
         2 JD2_JPL0_1V5
-        }
-      }
-      {I RESC1005X40N.PRT R48
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R48
+        (CN
         1 JD2_JP0_DC5_ELK_CH11_P
         2 JD2_JPL0_1V5
-        }
-      }
-      {I RESC1005X40N.PRT R49
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R49
+        (CN
         1 JD2_JP0_DC0_ELK_CH5_N
         2 GND
-        }
-      }
-      {I RESC1005X40N.PRT R50
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R50
+        (CN
         1 JD2_JP0_DC5_ELK_CH11_N
         2 GND
-        }
-      }
-      {I RESC1005X40N.PRT R51
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R51
+        (CN
         1 JD2_JP0_DC5_ELK_CH5_P
         2 JD2_JPL0_1V5
-        }
-      }
-      {I RESC1005X40N.PRT R52
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R52
+        (CN
         1 JD2_JP0_DC0_ELK_CH11_P
         2 JD2_JPL0_1V5
-        }
-      }
-      {I RESC1005X40N.PRT R53
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R53
+        (CN
         1 JD2_JP0_DC5_ELK_CH5_N
         2 GND
-        }
-      }
-      {I RESC1005X40N.PRT R54
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R54
+        (CN
         1 JD2_JP0_DC0_ELK_CH11_N
         2 GND
-        }
-      }
-      {I RESC1005X40N.PRT R55
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R55
+        (CN
         1 JD2_JP0_DC0_ELK_CH4_P
         2 JD2_JPL0_1V5
-        }
-      }
-      {I RESC1005X40N.PRT R56
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R56
+        (CN
         1 JD2_JP0_DC0_ELK_CH10_P
         2 JD2_JPL0_1V5
-        }
-      }
-      {I RESC1005X40N.PRT R57
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R57
+        (CN
         1 JD2_JP0_DC0_ELK_CH4_N
         2 GND
-        }
-      }
-      {I RESC1005X40N.PRT R58
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R58
+        (CN
         1 JD2_JP0_DC0_ELK_CH10_N
         2 GND
-        }
-      }
-      {I RESC1005X40N.PRT R59
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R59
+        (CN
         1 JD2_JP0_DC5_ELK_CH4_P
         2 JD2_JPL0_1V5
-        }
-      }
-      {I RESC1005X40N.PRT R60
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R60
+        (CN
         1 JD2_JP0_DC_OUT_RCLK5_P
         2 JD2_JPL0_1V5
-        }
-      }
-      {I RESC1005X40N.PRT R61
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R61
+        (CN
         1 JD2_JP0_DC5_ELK_CH4_N
         2 GND
-        }
-      }
-      {I RESC1005X40N.PRT R62
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R62
+        (CN
         1 JD2_JP0_DC_OUT_RCLK5_N
         2 GND
-        }
-      }
-      {I RESC1005X40N.PRT R63
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R63
+        (CN
         1 JD2_JP0_DC0_ELK_CH3_P
         2 JD2_JPL0_1V5
-        }
-      }
-      {I RESC1005X40N.PRT R64
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R64
+        (CN
         1 JD2_JP0_DC0_ELK_CH3_N
         2 GND
-        }
-      }
-      {I RESC1005X40N.PRT R65
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R65
+        (CN
         1 NetJT1_51
         2 GND
-        }
-      }
-      {I RESC1005X40N.PRT R66
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R66
+        (CN
         1 NetJT0_51
         2 GND
-        }
-      }
-      {I RESC1005X40N.PRT R67
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R67
+        (CN
         1 NetJT2_53
         2 GND
-        }
-      }
-      {I RESC1005X40N.PRT R68
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R68
+        (CN
         1 JD2_JP1_EC_HYB_i2C_SDA_3_P
         2 GND
-        }
-      }
-      {I RESC1005X40N.PRT R69
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R69
+        (CN
         1 JD2_JP1_EC_HYB_i2C_SDA_3_N
         2 GND
-        }
-      }
-      {I RESC1005X40N.PRT R70
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R70
+        (CN
         1 JD2_JP1_EC_HYB_i2C_SCL_3_P
         2 GND
-        }
-      }
-      {I RESC1005X40N.PRT R71
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R71
+        (CN
         1 JD2_JP1_EC_HYB_i2C_SCL_3_N
         2 GND
-        }
-      }
-      {I RESC1005X40N.PRT R72
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R72
+        (CN
         1 JD2_JP1_EC_HYB_i2C_SCL_1_P
         2 GND
-        }
-      }
-      {I RESC1005X40N.PRT R73
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R73
+        (CN
         1 JD2_JP1_EC_HYB_i2C_SCL_1_N
         2 GND
-        }
-      }
-      {I RESC1005X40N.PRT R74
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R74
+        (CN
         1 JD2_JP1_EC_RESET_GPIO_1_P
         2 GND
-        }
-      }
-      {I RESC1005X40N.PRT R75
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R75
+        (CN
         1 JD2_JP1_EC_RESET_GPIO_1_N
         2 GND
-        }
-      }
-      {I RESC1005X40N.PRT R76
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R76
+        (CN
         1 JD2_JP1_EC_HYB_i2C_SDA_1_P
         2 GND
-        }
-      }
-      {I RESC1005X40N.PRT R77
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R77
+        (CN
         1 JD2_JP1_EC_HYB_i2C_SDA_1_N
         2 GND
-        }
-      }
-      {I RESC1005X40N.PRT R78
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R78
+        (CN
         1 JD4_JP1_EC_HYB_i2C_SCL_1_P
         2 GND
-        }
-      }
-      {I RESC1005X40N.PRT R79
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R79
+        (CN
         1 JD4_JP1_EC_HYB_i2C_SCL_1_N
         2 GND
-        }
-      }
-      {I RESC1005X40N.PRT R80
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R80
+        (CN
         1 JD4_JP1_THERM_EC_ADC_3_P
         2 GND
-        }
-      }
-      {I RESC2012X60N.PRT R81
-        {CN
+        )
+      )
+      (I RESC2012X60N.PRT R81
+        (CN
         1 GND
         2 JP2F36_P2_WEST_LV_SENSE_GND
-        }
-      }
-      {I RESC1005X40N.PRT R82
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R82
+        (CN
         1 JD4_JP1_EC_HYB_i2C_SDA_1_P
         2 GND
-        }
-      }
-      {I RESC1005X40N.PRT R83
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R83
+        (CN
         1 JD4_JP1_EC_HYB_i2C_SDA_1_N
         2 GND
-        }
-      }
-      {I RESC1005X40N.PRT R84
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R84
+        (CN
         1 JD4_JP1_EC_RESET_GPIO_1_P
         2 GND
-        }
-      }
-      {I RESC1005X40N.PRT R85
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R85
+        (CN
         1 JD4_JP1_EC_RESET_GPIO_1_N
         2 GND
-        }
-      }
-      {I RESC1005X40N.PRT R86
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R86
+        (CN
         1 JD2_JP1_THERM_EC_ADC_3_P
         2 GND
-        }
-      }
-      {I RESC2012X60N.PRT R87
-        {CN
+        )
+      )
+      (I RESC2012X60N.PRT R87
+        (CN
         1 GND
         2 JP2J07_P1_EAST_LV_SENSE_GND
-        }
-      }
-      {I RESC1005X40N.PRT R88
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R88
+        (CN
         1 JD2_JP1_EC_RESET_GPIO_3_P
         2 GND
-        }
-      }
-      {I RESC1005X40N.PRT R89
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R89
+        (CN
         1 JD2_JP1_EC_RESET_GPIO_3_N
         2 GND
-        }
-      }
-      {I RESC1005X40N.PRT R90
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R90
+        (CN
         1 JD4_JP1_DC3_ELK_CH0_P
         2 JD4_JPL0_1V5
-        }
-      }
-      {I RESC1005X40N.PRT R91
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R91
+        (CN
         1 JD4_JP1_DC3_ELK_CH0_N
         2 GND
-        }
-      }
-      {I RESC1005X40N.PRT R92
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R92
+        (CN
         1 JD4_JP1_DC3_ELK_CH1_P
         2 JD4_JPL0_1V5
-        }
-      }
-      {I RESC1005X40N.PRT R93
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R93
+        (CN
         1 JD4_JP1_DC3_ELK_CH1_N
         2 GND
-        }
-      }
-      {I RESC1005X40N.PRT R94
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R94
+        (CN
         1 JD2_JP1_DC4_ELK_CH3_P
         2 JD2_JPL0_1V5
-        }
-      }
-      {I RESC1005X40N.PRT R95
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R95
+        (CN
         1 JD2_JP1_DC1_ELK_CH2_P
         2 JD2_JPL0_1V5
-        }
-      }
-      {I RESC1005X40N.PRT R96
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R96
+        (CN
         1 JD2_JP1_MC_TFC3_P
         2 JD2_JPL0_1V5
-        }
-      }
-      {I RESC1005X40N.PRT R97
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R97
+        (CN
         1 JD0_JP1_DC3_ELK_CH8_P
         2 JD0_JPL0_1V5
-        }
-      }
-      {I RESC1005X40N.PRT R98
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R98
+        (CN
         1 JD4_JP1_DC3_ELK_CH2_P
         2 JD4_JPL0_1V5
-        }
-      }
-      {I RESC1005X40N.PRT R99
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R99
+        (CN
         1 JD2_JP1_DC4_ELK_CH3_N
         2 GND
-        }
-      }
-      {I RESC1005X40N.PRT R100
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R100
+        (CN
         1 JD2_JP1_DC1_ELK_CH2_N
         2 GND
-        }
-      }
-      {I RESC1005X40N.PRT R101
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R101
+        (CN
         1 JD2_JP1_MC_TFC3_N
         2 GND
-        }
-      }
-      {I RESC1005X40N.PRT R102
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R102
+        (CN
         1 JD0_JP1_DC3_ELK_CH8_N
         2 GND
-        }
-      }
-      {I RESC1005X40N.PRT R103
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R103
+        (CN
         1 JD4_JP1_DC3_ELK_CH2_N
         2 GND
-        }
-      }
-      {I RESC1005X40N.PRT R104
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R104
+        (CN
         1 JD2_JP1_DC4_ELK_CH6_P
         2 JD2_JPL0_1V5
-        }
-      }
-      {I RESC1005X40N.PRT R105
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R105
+        (CN
         1 JD2_JP1_DC1_ELK_CH3_P
         2 JD2_JPL0_1V5
-        }
-      }
-      {I RESC1005X40N.PRT R106
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R106
+        (CN
         1 JD2_JP1_DC1_ELK_CH9_P
         2 JD2_JPL0_1V5
-        }
-      }
-      {I RESC1005X40N.PRT R107
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R107
+        (CN
         1 JD0_JP1_DC4_ELK_CH3_P
         2 JD0_JPL0_1V5
-        }
-      }
-      {I RESC1005X40N.PRT R108
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R108
+        (CN
         1 JD4_JP1_DC3_ELK_CH3_P
         2 JD4_JPL0_1V5
-        }
-      }
-      {I RESC1005X40N.PRT R109
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R109
+        (CN
         1 JD2_JP1_DC4_ELK_CH6_N
         2 GND
-        }
-      }
-      {I RESC1005X40N.PRT R110
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R110
+        (CN
         1 JD2_JP1_DC1_ELK_CH3_N
         2 GND
-        }
-      }
-      {I RESC1005X40N.PRT R111
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R111
+        (CN
         1 JD2_JP1_DC1_ELK_CH9_N
         2 GND
-        }
-      }
-      {I RESC1005X40N.PRT R112
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R112
+        (CN
         1 JD0_JP1_DC4_ELK_CH3_N
         2 GND
-        }
-      }
-      {I RESC1005X40N.PRT R113
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R113
+        (CN
         1 JD4_JP1_DC3_ELK_CH3_N
         2 GND
-        }
-      }
-      {I RESC1005X40N.PRT R114
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R114
+        (CN
         1 JD2_JP1_DC4_ELK_CH9_P
         2 JD2_JPL0_1V5
-        }
-      }
-      {I RESC1005X40N.PRT R115
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R115
+        (CN
         1 JD2_JP1_DC3_ELK_CH4_P
         2 JD2_JPL0_1V5
-        }
-      }
-      {I RESC1005X40N.PRT R116
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R116
+        (CN
         1 JD2_JP1_DC1_ELK_CH11_P
         2 JD2_JPL0_1V5
-        }
-      }
-      {I RESC1005X40N.PRT R117
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R117
+        (CN
         1 JD0_JP1_DC3_ELK_CH3_P
         2 JD0_JPL0_1V5
-        }
-      }
-      {I RESC1005X40N.PRT R118
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R118
+        (CN
         1 JD4_JP1_DC3_ELK_CH4_P
         2 JD4_JPL0_1V5
-        }
-      }
-      {I RESC1005X40N.PRT R119
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R119
+        (CN
         1 JD2_JP1_DC4_ELK_CH9_N
         2 GND
-        }
-      }
-      {I RESC1005X40N.PRT R120
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R120
+        (CN
         1 JD2_JP1_DC3_ELK_CH4_N
         2 GND
-        }
-      }
-      {I RESC1005X40N.PRT R121
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R121
+        (CN
         1 JD2_JP1_DC1_ELK_CH11_N
         2 GND
-        }
-      }
-      {I RESC1005X40N.PRT R122
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R122
+        (CN
         1 JD0_JP1_DC3_ELK_CH3_N
         2 GND
-        }
-      }
-      {I RESC1005X40N.PRT R123
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R123
+        (CN
         1 JD4_JP1_DC3_ELK_CH4_N
         2 GND
-        }
-      }
-      {I RESC1005X40N.PRT R124
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R124
+        (CN
         1 JD2_JP1_DC4_ELK_CH10_P
         2 JD2_JPL0_1V5
-        }
-      }
-      {I RESC1005X40N.PRT R125
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R125
+        (CN
         1 JD2_JP1_DC4_ELK_CH4_P
         2 JD2_JPL0_1V5
-        }
-      }
-      {I RESC1005X40N.PRT R126
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R126
+        (CN
         1 JD2_JP1_DC2_ELK_CH8_P
         2 JD2_JPL0_1V5
-        }
-      }
-      {I RESC1005X40N.PRT R127
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R127
+        (CN
         1 JD0_JP1_DC4_ELK_CH8_P
         2 JD0_JPL0_1V5
-        }
-      }
-      {I RESC1005X40N.PRT R128
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R128
+        (CN
         1 JD4_JP1_DC3_ELK_CH5_P
         2 JD4_JPL0_1V5
-        }
-      }
-      {I RESC1005X40N.PRT R129
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R129
+        (CN
         1 JD2_JP1_DC4_ELK_CH10_N
         2 GND
-        }
-      }
-      {I RESC1005X40N.PRT R130
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R130
+        (CN
         1 JD2_JP1_DC4_ELK_CH4_N
         2 GND
-        }
-      }
-      {I RESC1005X40N.PRT R131
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R131
+        (CN
         1 JD2_JP1_DC2_ELK_CH8_N
         2 GND
-        }
-      }
-      {I RESC1005X40N.PRT R132
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R132
+        (CN
         1 JD0_JP1_DC4_ELK_CH8_N
         2 GND
-        }
-      }
-      {I RESC1005X40N.PRT R133
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R133
+        (CN
         1 JD4_JP1_DC3_ELK_CH5_N
         2 GND
-        }
-      }
-      {I RESC1005X40N.PRT R134
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R134
+        (CN
         1 JD2_JP1_DC4_ELK_CH11_P
         2 JD2_JPL0_1V5
-        }
-      }
-      {I RESC1005X40N.PRT R135
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R135
+        (CN
         1 JD2_JP1_DC4_ELK_CH5_P
         2 JD2_JPL0_1V5
-        }
-      }
-      {I RESC1005X40N.PRT R136
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R136
+        (CN
         1 JD2_JP1_DC2_ELK_CH7_P
         2 JD2_JPL0_1V5
-        }
-      }
-      {I RESC1005X40N.PRT R137
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R137
+        (CN
         1 JD0_JP1_DC1_ELK_CH8_P
         2 JD0_JPL0_1V5
-        }
-      }
-      {I RESC1005X40N.PRT R138
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R138
+        (CN
         1 JD4_JP1_DC3_ELK_CH6_P
         2 JD4_JPL0_1V5
-        }
-      }
-      {I RESC1005X40N.PRT R139
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R139
+        (CN
         1 JD2_JP1_DC4_ELK_CH11_N
         2 GND
-        }
-      }
-      {I RESC1005X40N.PRT R140
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R140
+        (CN
         1 JD2_JP1_DC4_ELK_CH5_N
         2 GND
-        }
-      }
-      {I RESC1005X40N.PRT R141
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R141
+        (CN
         1 JD2_JP1_DC2_ELK_CH7_N
         2 GND
-        }
-      }
-      {I RESC1005X40N.PRT R142
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R142
+        (CN
         1 JD0_JP1_DC1_ELK_CH8_N
         2 GND
-        }
-      }
-      {I RESC1005X40N.PRT R143
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R143
+        (CN
         1 JD4_JP1_DC3_ELK_CH6_N
         2 GND
-        }
-      }
-      {I RESC1005X40N.PRT R144
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R144
+        (CN
         1 JD2_JP1_DC_OUT_RCLK1_P
         2 JD2_JPL0_1V5
-        }
-      }
-      {I RESC1005X40N.PRT R145
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R145
+        (CN
         1 JD2_JP1_DC1_ELK_CH7_P
         2 JD2_JPL0_1V5
-        }
-      }
-      {I RESC1005X40N.PRT R146
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R146
+        (CN
         1 JD2_JP1_DC2_ELK_CH11_P
         2 JD2_JPL0_1V5
-        }
-      }
-      {I RESC1005X40N.PRT R147
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R147
+        (CN
         1 JD0_JP1_DC1_ELK_CH7_P
         2 JD0_JPL0_1V5
-        }
-      }
-      {I RESC1005X40N.PRT R148
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R148
+        (CN
         1 JD4_JP1_DC3_ELK_CH7_P
         2 JD4_JPL0_1V5
-        }
-      }
-      {I RESC1005X40N.PRT R149
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R149
+        (CN
         1 JD2_JP1_DC_OUT_RCLK1_N
         2 GND
-        }
-      }
-      {I RESC1005X40N.PRT R150
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R150
+        (CN
         1 JD2_JP1_DC1_ELK_CH7_N
         2 GND
-        }
-      }
-      {I RESC1005X40N.PRT R151
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R151
+        (CN
         1 JD2_JP1_DC2_ELK_CH11_N
         2 GND
-        }
-      }
-      {I RESC1005X40N.PRT R152
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R152
+        (CN
         1 JD0_JP1_DC1_ELK_CH7_N
         2 GND
-        }
-      }
-      {I RESC1005X40N.PRT R153
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R153
+        (CN
         1 JD4_JP1_DC3_ELK_CH7_N
         2 GND
-        }
-      }
-      {I RESC1005X40N.PRT R154
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R154
+        (CN
         1 JD2_JP1_DC1_ELK_CH5_P
         2 JD2_JPL0_1V5
-        }
-      }
-      {I RESC1005X40N.PRT R155
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R155
+        (CN
         1 JD2_JP1_DC1_ELK_CH6_P
         2 JD2_JPL0_1V5
-        }
-      }
-      {I RESC1005X40N.PRT R156
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R156
+        (CN
         1 JD2_JP1_DC2_ELK_CH10_P
         2 JD2_JPL0_1V5
-        }
-      }
-      {I RESC1005X40N.PRT R157
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R157
+        (CN
         1 JD0_JP1_DC2_ELK_CH2_P
         2 JD0_JPL0_1V5
-        }
-      }
-      {I RESC1005X40N.PRT R158
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R158
+        (CN
         1 JD4_JP1_DC3_ELK_CH8_P
         2 JD4_JPL0_1V5
-        }
-      }
-      {I RESC1005X40N.PRT R159
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R159
+        (CN
         1 JD2_JP1_DC1_ELK_CH5_N
         2 GND
-        }
-      }
-      {I RESC1005X40N.PRT R160
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R160
+        (CN
         1 JD2_JP1_DC1_ELK_CH6_N
         2 GND
-        }
-      }
-      {I RESC1005X40N.PRT R161
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R161
+        (CN
         1 JD2_JP1_DC2_ELK_CH10_N
         2 GND
-        }
-      }
-      {I RESC1005X40N.PRT R162
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R162
+        (CN
         1 JD0_JP1_DC2_ELK_CH2_N
         2 GND
-        }
-      }
-      {I RESC1005X40N.PRT R163
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R163
+        (CN
         1 JD4_JP1_DC3_ELK_CH8_N
         2 GND
-        }
-      }
-      {I RESC1005X40N.PRT R164
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R164
+        (CN
         1 JD2_JP1_DC1_ELK_CH10_P
         2 JD2_JPL0_1V5
-        }
-      }
-      {I RESC1005X40N.PRT R165
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R165
+        (CN
         1 JD2_JP1_DC4_ELK_CH8_P
         2 JD2_JPL0_1V5
-        }
-      }
-      {I RESC1005X40N.PRT R166
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R166
+        (CN
         1 JD2_JP1_DC2_ELK_CH3_P
         2 JD2_JPL0_1V5
-        }
-      }
-      {I RESC1005X40N.PRT R167
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R167
+        (CN
         1 JD0_JP1_DC2_ELK_CH3_P
         2 JD0_JPL0_1V5
-        }
-      }
-      {I RESC1005X40N.PRT R168
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R168
+        (CN
         1 JD4_JP1_DC3_ELK_CH9_P
         2 JD4_JPL0_1V5
-        }
-      }
-      {I RESC1005X40N.PRT R169
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R169
+        (CN
         1 JD2_JP1_DC1_ELK_CH10_N
         2 GND
-        }
-      }
-      {I RESC1005X40N.PRT R170
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R170
+        (CN
         1 JD2_JP1_DC4_ELK_CH8_N
         2 GND
-        }
-      }
-      {I RESC1005X40N.PRT R171
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R171
+        (CN
         1 JD2_JP1_DC2_ELK_CH3_N
         2 GND
-        }
-      }
-      {I RESC1005X40N.PRT R172
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R172
+        (CN
         1 JD0_JP1_DC2_ELK_CH3_N
         2 GND
-        }
-      }
-      {I RESC1005X40N.PRT R173
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R173
+        (CN
         1 JD4_JP1_DC3_ELK_CH9_N
         2 GND
-        }
-      }
-      {I RESC1005X40N.PRT R174
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R174
+        (CN
         1 JD2_JP1_DC2_ELK_CH6_P
         2 JD2_JPL0_1V5
-        }
-      }
-      {I RESC1005X40N.PRT R175
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R175
+        (CN
         1 JD2_JP1_DC3_ELK_CH9_P
         2 JD2_JPL0_1V5
-        }
-      }
-      {I RESC1005X40N.PRT R176
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R176
+        (CN
         1 JD2_JP1_DC3_ELK_CH11_P
         2 JD2_JPL0_1V5
-        }
-      }
-      {I RESC1005X40N.PRT R177
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R177
+        (CN
         1 JD0_JP1_DC1_ELK_CH2_P
         2 JD0_JPL0_1V5
-        }
-      }
-      {I RESC1005X40N.PRT R178
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R178
+        (CN
         1 JD4_JP1_DC3_ELK_CH10_P
         2 JD4_JPL0_1V5
-        }
-      }
-      {I RESC1005X40N.PRT R179
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R179
+        (CN
         1 JD2_JP1_DC2_ELK_CH6_N
         2 GND
-        }
-      }
-      {I RESC1005X40N.PRT R180
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R180
+        (CN
         1 JD2_JP1_DC3_ELK_CH9_N
         2 GND
-        }
-      }
-      {I RESC1005X40N.PRT R181
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R181
+        (CN
         1 JD2_JP1_DC3_ELK_CH11_N
         2 GND
-        }
-      }
-      {I RESC1005X40N.PRT R182
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R182
+        (CN
         1 JD0_JP1_DC1_ELK_CH2_N
         2 GND
-        }
-      }
-      {I RESC1005X40N.PRT R183
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R183
+        (CN
         1 JD4_JP1_DC3_ELK_CH10_N
         2 GND
-        }
-      }
-      {I RESC1005X40N.PRT R184
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R184
+        (CN
         1 JD2_JP1_DC_OUT_RCLK3_P
         2 JD2_JPL0_1V5
-        }
-      }
-      {I RESC1005X40N.PRT R185
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R185
+        (CN
         1 JD2_JP1_DC3_ELK_CH10_P
         2 JD2_JPL0_1V5
-        }
-      }
-      {I RESC1005X40N.PRT R186
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R186
+        (CN
         1 JD2_JP1_DC3_ELK_CH8_P
         2 JD2_JPL0_1V5
-        }
-      }
-      {I RESC1005X40N.PRT R187
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R187
+        (CN
         1 JD0_JP1_DC1_ELK_CH3_P
         2 JD0_JPL0_1V5
-        }
-      }
-      {I RESC1005X40N.PRT R188
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R188
+        (CN
         1 JD4_JP1_DC3_ELK_CH11_P
         2 JD4_JPL0_1V5
-        }
-      }
-      {I RESC1005X40N.PRT R189
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R189
+        (CN
         1 JD2_JP1_DC_OUT_RCLK3_N
         2 GND
-        }
-      }
-      {I RESC1005X40N.PRT R190
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R190
+        (CN
         1 JD2_JP1_DC3_ELK_CH10_N
         2 GND
-        }
-      }
-      {I RESC1005X40N.PRT R191
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R191
+        (CN
         1 JD2_JP1_DC3_ELK_CH8_N
         2 GND
-        }
-      }
-      {I RESC1005X40N.PRT R192
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R192
+        (CN
         1 JD0_JP1_DC1_ELK_CH3_N
         2 GND
-        }
-      }
-      {I RESC1005X40N.PRT R193
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R193
+        (CN
         1 JD4_JP1_DC3_ELK_CH11_N
         2 GND
-        }
-      }
-      {I RESC1005X40N.PRT R194
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R194
+        (CN
         1 JD2_JP1_DC2_ELK_CH9_P
         2 JD2_JPL0_1V5
-        }
-      }
-      {I RESC1005X40N.PRT R195
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R195
+        (CN
         1 JD2_JP1_MC_TFC1_P
         2 JD2_JPL0_1V5
-        }
-      }
-      {I RESC1005X40N.PRT R196
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R196
+        (CN
         1 JD2_JP1_DC3_ELK_CH3_P
         2 JD2_JPL0_1V5
-        }
-      }
-      {I RESC1005X40N.PRT R197
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R197
+        (CN
         1 JD0_JP1_DC2_ELK_CH8_P
         2 JD0_JPL0_1V5
-        }
-      }
-      {I RESC1005X40N.PRT R198
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R198
+        (CN
         1 JD4_JP1_DC_OUT_RCLK1_P
         2 JD4_JPL0_1V5
-        }
-      }
-      {I RESC1005X40N.PRT R199
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R199
+        (CN
         1 JD2_JP1_DC2_ELK_CH9_N
         2 GND
-        }
-      }
-      {I RESC1005X40N.PRT R200
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R200
+        (CN
         1 JD2_JP1_MC_TFC1_N
         2 GND
-        }
-      }
-      {I RESC1005X40N.PRT R201
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R201
+        (CN
         1 JD2_JP1_DC3_ELK_CH3_N
         2 GND
-        }
-      }
-      {I RESC1005X40N.PRT R202
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R202
+        (CN
         1 JD0_JP1_DC2_ELK_CH8_N
         2 GND
-        }
-      }
-      {I RESC1005X40N.PRT R203
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R203
+        (CN
         1 JD4_JP1_DC_OUT_RCLK1_N
         2 GND
-        }
-      }
-      {I RESC1005X40N.PRT R204
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R204
+        (CN
         1 JD2_JP1_DC2_ELK_CH5_P
         2 JD2_JPL0_1V5
-        }
-      }
-      {I RESC1005X40N.PRT R205
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R205
+        (CN
         1 JD2_JP1_DC3_ELK_CH5_P
         2 JD2_JPL0_1V5
-        }
-      }
-      {I RESC1005X40N.PRT R206
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R206
+        (CN
         1 JD2_JP1_DC3_ELK_CH6_P
         2 JD2_JPL0_1V5
-        }
-      }
-      {I RESC1005X40N.PRT R207
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R207
+        (CN
         1 JD0_JP1_DC2_ELK_CH7_P
         2 JD0_JPL0_1V5
-        }
-      }
-      {I RESC1005X40N.PRT R208
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R208
+        (CN
         1 JD4_JP1_MC_TFC1_P
         2 JD4_JPL0_1V5
-        }
-      }
-      {I RESC1005X40N.PRT R209
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R209
+        (CN
         1 JD2_JP1_DC2_ELK_CH5_N
         2 GND
-        }
-      }
-      {I RESC1005X40N.PRT R210
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R210
+        (CN
         1 JD2_JP1_DC3_ELK_CH5_N
         2 GND
-        }
-      }
-      {I RESC1005X40N.PRT R211
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R211
+        (CN
         1 JD2_JP1_DC3_ELK_CH6_N
         2 GND
-        }
-      }
-      {I RESC1005X40N.PRT R212
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R212
+        (CN
         1 JD0_JP1_DC2_ELK_CH7_N
         2 GND
-        }
-      }
-      {I RESC1005X40N.PRT R213
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R213
+        (CN
         1 JD4_JP1_MC_TFC1_N
         2 GND
-        }
-      }
-      {I RESC1005X40N.PRT R214
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R214
+        (CN
         1 JD2_JP1_DC2_ELK_CH2_P
         2 JD2_JPL0_1V5
-        }
-      }
-      {I RESC1005X40N.PRT R215
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R215
+        (CN
         1 JD2_JP1_DC1_ELK_CH4_P
         2 JD2_JPL0_1V5
-        }
-      }
-      {I RESC1005X40N.PRT R216
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R216
+        (CN
         1 JD2_JP1_DC2_ELK_CH2_N
         2 GND
-        }
-      }
-      {I RESC1005X40N.PRT R217
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R217
+        (CN
         1 JD2_JP1_DC1_ELK_CH4_N
         2 GND
-        }
-      }
-      {I RESC1005X40N.PRT R218
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R218
+        (CN
         1 JD2_JP1_DC2_ELK_CH4_P
         2 JD2_JPL0_1V5
-        }
-      }
-      {I RESC1005X40N.PRT R219
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R219
+        (CN
         1 JD2_JP1_DC1_ELK_CH8_P
         2 JD2_JPL0_1V5
-        }
-      }
-      {I RESC1005X40N.PRT R220
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R220
+        (CN
         1 JD2_JP1_DC2_ELK_CH4_N
         2 GND
-        }
-      }
-      {I RESC1005X40N.PRT R221
-        {CN
+        )
+      )
+      (I RESC1005X40N.PRT R221
+        (CN
         1 JD2_JP1_DC1_ELK_CH8_N
         2 GND
-        }
-      }
-      {I RESC2012X60N.PRT R222
-        {CN
+        )
+      )
+      (I RESC2012X60N.PRT R222
+        (CN
         1 GND
         2 JP2J24_P1_WEST_LV_SENSE_GND
-        }
-      }
-      {I RESC2012X60N.PRT R223
-        {CN
+        )
+      )
+      (I RESC2012X60N.PRT R223
+        (CN
         1 GND
         2 JP3A16_P3_LV_SENSE_GND
-        }
-      }
-      {I RESC2012X60N.PRT R224
-        {CN
+        )
+      )
+      (I RESC2012X60N.PRT R224
+        (CN
         1 GND
         2 JP3A27_P4_LV_SENSE_GND
-        }
-      }
-      {I RESC2012X60N.PRT R225
-        {CN
+        )
+      )
+      (I RESC2012X60N.PRT R225
+        (CN
         1 GND
         2 JP3F05_P2_EAST_LV_SENSE_GND
-        }
-      }
-      {I RESC2012X60N.PRT R226
-        {CN
+        )
+      )
+      (I RESC2012X60N.PRT R226
+        (CN
         1 GND
         2 JP3J07_P1_EAST_LV_SENSE_GND
-        }
-      }
-      {I RESC2012X60N.PRT R227
-        {CN
+        )
+      )
+      (I RESC2012X60N.PRT R227
+        (CN
         1 GND
         2 JP3J24_P1_WEST_LV_SENSE_GND
-        }
-      }
-      {I RESC2012X60N.PRT R228
-        {CN
+        )
+      )
+      (I RESC2012X60N.PRT R228
+        (CN
         1 GND
         2 JP4A16_P3_LV_SENSE_GND
-        }
-      }
-      {I RESC2012X60N.PRT R229
-        {CN
+        )
+      )
+      (I RESC2012X60N.PRT R229
+        (CN
         1 GND
         2 JP4A27_P4_LV_SENSE_GND
-        }
-      }
-      {I RESC2012X60N.PRT R230
-        {CN
+        )
+      )
+      (I RESC2012X60N.PRT R230
+        (CN
         1 GND
         2 JP4F05_P2_EAST_LV_SENSE_GND
-        }
-      }
-      {I RESC2012X60N.PRT R231
-        {CN
+        )
+      )
+      (I RESC2012X60N.PRT R231
+        (CN
         1 GND
         2 JP4J07_P1_EAST_LV_SENSE_GND
-        }
-      }
-      {I RESC2012X60N.PRT R232
-        {CN
+        )
+      )
+      (I RESC2012X60N.PRT R232
+        (CN
         1 GND
         2 JP4J24_P1_WEST_LV_SENSE_GND
-        }
-      }
-      {I RESC2012X60N.PRT R233
-        {CN
+        )
+      )
+      (I RESC2012X60N.PRT R233
+        (CN
         1 GND
         2 JP5A16_P3_LV_SENSE_GND
-        }
-      }
-      {I RESC2012X60N.PRT R234
-        {CN
+        )
+      )
+      (I RESC2012X60N.PRT R234
+        (CN
         1 GND
         2 JP5F05_P2_EAST_LV_SENSE_GND
-        }
-      }
-      {I RESC2012X60N.PRT R235
-        {CN
+        )
+      )
+      (I RESC2012X60N.PRT R235
+        (CN
         1 GND
         2 JP5J07_P1_EAST_LV_SENSE_GND
-        }
-      }
-      {I RESC2012X60N.PRT R236
-        {CN
+        )
+      )
+      (I RESC2012X60N.PRT R236
+        (CN
         1 GND
         2 JP5J24_P1_WEST_LV_SENSE_GND
-        }
-      }
-      {I RESC2012X60N.PRT R237
-        {CN
+        )
+      )
+      (I RESC2012X60N.PRT R237
+        (CN
         1 GND
         2 JP6A16_P3_LV_SENSE_GND
-        }
-      }
-      {I RESC2012X60N.PRT R238
-        {CN
+        )
+      )
+      (I RESC2012X60N.PRT R238
+        (CN
         1 GND
         2 JP6F05_P2_EAST_LV_SENSE_GND
-        }
-      }
-      {I RESC2012X60N.PRT R239
-        {CN
+        )
+      )
+      (I RESC2012X60N.PRT R239
+        (CN
         1 GND
         2 JP6J07_P1_EAST_LV_SENSE_GND
-        }
-      }
-      {I RESC2012X60N.PRT R240
-        {CN
+        )
+      )
+      (I RESC2012X60N.PRT R240
+        (CN
         1 GND
         2 JP6J24_P1_WEST_LV_SENSE_GND
-        }
-      }
-      {I RESC2012X60N.PRT R241
-        {CN
+        )
+      )
+      (I RESC2012X60N.PRT R241
+        (CN
         1 GND
         2 JP7A16_P3_LV_SENSE_GND
-        }
-      }
-      {I RESC2012X60N.PRT R242
-        {CN
+        )
+      )
+      (I RESC2012X60N.PRT R242
+        (CN
         1 GND
         2 JP7A27_P4_LV_SENSE_GND
-        }
-      }
-      {I RESC2012X60N.PRT R243
-        {CN
+        )
+      )
+      (I RESC2012X60N.PRT R243
+        (CN
         1 GND
         2 JP7F05_P2_EAST_LV_SENSE_GND
-        }
-      }
-      {I RESC2012X60N.PRT R244
-        {CN
+        )
+      )
+      (I RESC2012X60N.PRT R244
+        (CN
         1 GND
         2 JP7J07_P1_EAST_LV_SENSE_GND
-        }
-      }
-      {I RESC2012X60N.PRT R245
-        {CN
+        )
+      )
+      (I RESC2012X60N.PRT R245
+        (CN
         1 GND
         2 JP7J24_P1_WEST_LV_SENSE_GND
-        }
-      }
-      {I RESC2012X60N.PRT R246
-        {CN
+        )
+      )
+      (I RESC2012X60N.PRT R246
+        (CN
         1 GND
         2 JP8A16_P3_LV_SENSE_GND
-        }
-      }
-      {I RESC2012X60N.PRT R247
-        {CN
+        )
+      )
+      (I RESC2012X60N.PRT R247
+        (CN
         1 GND
         2 JP8A27_P4_LV_SENSE_GND
-        }
-      }
-      {I RESC2012X60N.PRT R248
-        {CN
+        )
+      )
+      (I RESC2012X60N.PRT R248
+        (CN
         1 GND
         2 JP8F05_P2_EAST_LV_SENSE_GND
-        }
-      }
-      {I RESC2012X60N.PRT R249
-        {CN
+        )
+      )
+      (I RESC2012X60N.PRT R249
+        (CN
         1 GND
         2 JP8J24_P1_WEST_LV_SENSE_GND
-        }
-      }
-      {I RESC2012X60N.PRT R250
-        {CN
+        )
+      )
+      (I RESC2012X60N.PRT R250
+        (CN
         1 GND
         2 JP9A16_P3_LV_SENSE_GND
-        }
-      }
-      {I RESC2012X60N.PRT R251
-        {CN
+        )
+      )
+      (I RESC2012X60N.PRT R251
+        (CN
         1 GND
         2 JP9F05_P2_EAST_LV_SENSE_GND
-        }
-      }
-      {I RESC2012X60N.PRT R252
-        {CN
+        )
+      )
+      (I RESC2012X60N.PRT R252
+        (CN
         1 GND
         2 JP9J24_P1_WEST_LV_SENSE_GND
-        }
-      }
-      {I RESC2012X60N.PRT R253
-        {CN
+        )
+      )
+      (I RESC2012X60N.PRT R253
+        (CN
         1 GND
         2 JP10A16_P3_LV_SENSE_GND
-        }
-      }
-      {I RESC2012X60N.PRT R254
-        {CN
+        )
+      )
+      (I RESC2012X60N.PRT R254
+        (CN
         1 GND
         2 JP10F05_P2_EAST_LV_SENSE_GND
-        }
-      }
-      {I RESC2012X60N.PRT R255
-        {CN
+        )
+      )
+      (I RESC2012X60N.PRT R255
+        (CN
         1 GND
         2 JP10J24_P1_WEST_LV_SENSE_GND
-        }
-      }
-      {I RESC2012X60N.PRT R256
-        {CN
+        )
+      )
+      (I RESC2012X60N.PRT R256
+        (CN
         1 GND
         2 JP11A16_P3_LV_SENSE_GND
-        }
-      }
-      {I RESC2012X60N.PRT R257
-        {CN
+        )
+      )
+      (I RESC2012X60N.PRT R257
+        (CN
         1 GND
         2 JP11A27_P4_LV_SENSE_GND
-        }
-      }
-      {I RESC2012X60N.PRT R258
-        {CN
+        )
+      )
+      (I RESC2012X60N.PRT R258
+        (CN
         1 GND
         2 JP11F05_P2_EAST_LV_SENSE_GND
-        }
-      }
-      {I RESC2012X60N.PRT R259
-        {CN
+        )
+      )
+      (I RESC2012X60N.PRT R259
+        (CN
         1 GND
         2 JP11J24_P1_WEST_LV_SENSE_GND
-        }
-      }
-      {I THERMC3216X130N.PRT RT1
-        {CN
+        )
+      )
+      (I THERMC3216X130N.PRT RT1
+        (CN
         1 JT2_BP_Thermistor_N
         2 JT2_BP_Thermistor_P
-        }
-      }
-    }
-  }
-}
+        )
+      )
+    )
+  )
+)
