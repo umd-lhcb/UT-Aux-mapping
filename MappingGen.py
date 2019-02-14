@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 #
 # License: BSD 2-clause
-# Last Change: Wed Feb 13, 2019 at 11:18 PM -0500
+# Last Change: Wed Feb 13, 2019 at 11:26 PM -0500
 
 import re
 
@@ -45,10 +45,7 @@ def filter_comp(descr, regexp=r'^J\d+_1|^IC3_1+'):
 
 def post_filter(functor):
     def filter_functor(l):
-        if True in map(functor, l):
-            return True
-        else:
-            return False
+        return True if True in map(functor, l) else False
 
     return filter_functor
 
