@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 #
 # License: BSD 2-clause
-# Last Change: Wed Feb 13, 2019 at 11:26 PM -0500
+# Last Change: Thu Feb 14, 2019 at 12:52 PM -0500
 
 import re
 
@@ -25,7 +25,7 @@ dcb_netlist = input_dir / Path('dcb.net')
 # Helpers #
 ###########
 
-def filter_comp(descr, regexp=r'^J\d+_1|^IC3_1+'):
+def filter_comp(descr, regexp=r'^J\d+|^IC3_1+'):
     filtered = []
 
     for net, comps in descr.items():
@@ -72,14 +72,14 @@ dcb_descr = DcbReader.read(nethopper)
 #############################################
 
 comet_result = filter_comp(comet_descr)
-comet_daughter_result = filter_comp(comet_daughter_descr, r'^J\d+')
-path_finder_result = filter_comp(path_finder_descr, r'^J\d+')
-dcb_result = filter_comp(dcb_descr, r'^J\d+')
+comet_daughter_result = filter_comp(comet_daughter_descr)
+path_finder_result = filter_comp(path_finder_descr)
+dcb_result = filter_comp(dcb_descr)
 
 
 ##################
 # Post filtering #
 ##################
 
-comet_filter = post_filter(lambda x: 'IC3_1' in x[0])
-comet_result = list(filter(comet_filter, comet_result))
+comet_filter_connectors = post_filter(lambda x: x[0] in ['J4_1', 'J6_1', 'J1'])
+comet_result = list(filter(comet_filter_connectors, comet_result))
