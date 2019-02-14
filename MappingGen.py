@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 #
 # License: BSD 2-clause
-# Last Change: Wed Feb 13, 2019 at 09:50 PM -0500
+# Last Change: Wed Feb 13, 2019 at 09:57 PM -0500
 
 import re
 
@@ -25,16 +25,16 @@ path_finder_netlist = input_dir / Path('path_finder.net')
 # Helpers #
 ###########
 
-def filter_comp(descr, regexp=r'^J\d+|^RN\d+'):
-    filtered = {}
+def filter_comp(descr, regexp=r'^J\d+_1|^RN\d+'):
+    filtered = []
 
     for net, comps in descr.items():
         processed_comps = [x for x in comps if bool(re.match(regexp, x[0]))]
 
         # Can't figure out any relationship if a list contains only a single
         # item.
-        if len(processed_comps) > 1:
-            filtered[net] = processed_comps
+        if len(processed_comps) > 1 and processed_comps not in filtered:
+            filtered.append(processed_comps)
 
     return filtered
 
