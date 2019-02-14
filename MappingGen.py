@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 #
 # License: BSD 2-clause
-# Last Change: Wed Feb 13, 2019 at 09:26 PM -0500
+# Last Change: Wed Feb 13, 2019 at 09:28 PM -0500
 
 import re
 
@@ -42,9 +42,9 @@ path_finder_descr = PathFinderReader.read(nethopper)
 # Find FPGA pins and inter-board connectors #
 #############################################
 
-comet_result = [x for x in comet_descr if bool(re.match(r'^J\d+|^RN\d+', x))]
+comet_result = [x for x in comet_descr if bool(re.match(r'^J\d+|^RN\d+', x[0]))]
 comet_daughte_result = [x for x in comet_daughter_descr
-                        if bool(re.match(r'^J\d+|^RN\d+', x))]
-dcb_result = [x for x in dcb_descr if bool(re.match(r'^J\d+', x))]
+                        if bool(re.match(r'^J\d+|^RN\d+', x[0]))]
+dcb_result = [x for x in dcb_descr if bool(re.match(r'^J\d+', x[0]))]
 path_finder_result = [x for x in path_finder_descr
-                      if bool(re.match(r'^J\d+', x))]
+                      if bool(re.match(r'^J\d+', x[0]))]
