@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 #
 # License: BSD 2-clause
-# Last Change: Wed Feb 13, 2019 at 09:46 PM -0500
+# Last Change: Wed Feb 13, 2019 at 09:50 PM -0500
 
 import re
 
@@ -29,12 +29,12 @@ def filter_comp(descr, regexp=r'^J\d+|^RN\d+'):
     filtered = {}
 
     for net, comps in descr.items():
-        filtered_comps = [x for x in comps if bool(re.match(regexp, x[0]))]
+        processed_comps = [x for x in comps if bool(re.match(regexp, x[0]))]
 
         # Can't figure out any relationship if a list contains only a single
         # item.
-        if len(filtered_comps) > 1:
-            filtered[net] = filter_comp
+        if len(processed_comps) > 1:
+            filtered[net] = processed_comps
 
     return filtered
 
