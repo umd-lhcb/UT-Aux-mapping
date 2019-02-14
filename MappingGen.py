@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 #
 # License: BSD 2-clause
-# Last Change: Wed Feb 13, 2019 at 10:49 PM -0500
+# Last Change: Wed Feb 13, 2019 at 11:18 PM -0500
 
 import re
 
@@ -43,6 +43,16 @@ def filter_comp(descr, regexp=r'^J\d+_1|^IC3_1+'):
     return filtered
 
 
+def post_filter(functor):
+    def filter_functor(l):
+        if True in map(functor, l):
+            return True
+        else:
+            return False
+
+    return filter_functor
+
+
 #####################
 # Read all netlists #
 #####################
@@ -68,3 +78,11 @@ comet_result = filter_comp(comet_descr)
 comet_daughter_result = filter_comp(comet_daughter_descr, r'^J\d+')
 path_finder_result = filter_comp(path_finder_descr, r'^J\d+')
 dcb_result = filter_comp(dcb_descr, r'^J\d+')
+
+
+##################
+# Post filtering #
+##################
+
+comet_filter = post_filter(lambda x: 'IC3_1' in x[0])
+comet_result = list(filter(comet_filter, comet_result))
