@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 #
 # License: BSD 2-clause
-# Last Change: Wed Feb 13, 2019 at 09:28 PM -0500
+# Last Change: Wed Feb 13, 2019 at 09:39 PM -0500
 
 import re
 
@@ -19,6 +19,19 @@ comet_netlist = input_dir / Path('comet.net')
 comet_daughter_netlist = input_dir / Path('comet_daughter.net')
 dcb_netlist = input_dir / Path('dcb.net')
 path_finder_netlist = input_dir / Path('path_finder.net')
+
+
+###########
+# Helpers #
+###########
+
+def filter_comp(descr, regexp=r'^J\d+|^RN\d+'):
+    filtered = {}
+
+    for net, comps in descr.items():
+        filtered[net] = [x for x in comps if bool(re.match(regexp, x[0]))]
+
+    return filtered
 
 
 #####################
@@ -42,9 +55,7 @@ path_finder_descr = PathFinderReader.read(nethopper)
 # Find FPGA pins and inter-board connectors #
 #############################################
 
-comet_result = [x for x in comet_descr if bool(re.match(r'^J\d+|^RN\d+', x[0]))]
-comet_daughte_result = [x for x in comet_daughter_descr
-                        if bool(re.match(r'^J\d+|^RN\d+', x[0]))]
-dcb_result = [x for x in dcb_descr if bool(re.match(r'^J\d+', x[0]))]
-path_finder_result = [x for x in path_finder_descr
-                      if bool(re.match(r'^J\d+', x[0]))]
+comet_result = filter_comp(comet_descr)
+comet_daughte_result = filter_comp(comet_daughter_descr)
+dcb_result = filter_comp(dcb_descr)
+path_finder_result = filter_comp(path_finder_descr)
