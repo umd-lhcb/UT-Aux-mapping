@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 #
 # License: BSD 2-clause
-# Last Change: Wed Feb 13, 2019 at 09:57 PM -0500
+# Last Change: Wed Feb 13, 2019 at 10:05 PM -0500
 
 import re
 
@@ -33,7 +33,11 @@ def filter_comp(descr, regexp=r'^J\d+_1|^RN\d+'):
 
         # Can't figure out any relationship if a list contains only a single
         # item.
-        if len(processed_comps) > 1 and processed_comps not in filtered:
+        # We also do deduplication here.
+        # Also make sure there's at least a connector component.
+        if len(processed_comps) > 1 and processed_comps not in filtered \
+                and True in map(lambda x: x[0].startswith('J'),
+                                processed_comps):
             filtered.append(processed_comps)
 
     return filtered
