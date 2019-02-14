@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 #
 # License: BSD 2-clause
-# Last Change: Wed Feb 13, 2019 at 10:05 PM -0500
+# Last Change: Wed Feb 13, 2019 at 10:49 PM -0500
 
 import re
 
@@ -17,15 +17,15 @@ input_dir = Path('input')
 
 comet_netlist = input_dir / Path('comet.net')
 comet_daughter_netlist = input_dir / Path('comet_daughter.net')
-dcb_netlist = input_dir / Path('dcb.net')
 path_finder_netlist = input_dir / Path('path_finder.net')
+dcb_netlist = input_dir / Path('dcb.net')
 
 
 ###########
 # Helpers #
 ###########
 
-def filter_comp(descr, regexp=r'^J\d+_1|^RN\d+'):
+def filter_comp(descr, regexp=r'^J\d+_1|^IC3_1+'):
     filtered = []
 
     for net, comps in descr.items():
@@ -51,13 +51,13 @@ nethopper = CurrentFlow()
 
 CometReader = PcadReader(comet_netlist)
 CometDaughterReader = PcadReader(comet_daughter_netlist)
-DcbReader = PcadReader(dcb_netlist)
 PathFinderReader = PcadReader(path_finder_netlist)
+DcbReader = PcadReader(dcb_netlist)
 
 comet_descr = CometReader.read(nethopper)
 comet_daughter_descr = CometDaughterReader.read(nethopper)
-dcb_descr = DcbReader.read(nethopper)
 path_finder_descr = PathFinderReader.read(nethopper)
+dcb_descr = DcbReader.read(nethopper)
 
 
 #############################################
@@ -65,6 +65,6 @@ path_finder_descr = PathFinderReader.read(nethopper)
 #############################################
 
 comet_result = filter_comp(comet_descr)
-comet_daughte_result = filter_comp(comet_daughter_descr)
-dcb_result = filter_comp(dcb_descr)
-path_finder_result = filter_comp(path_finder_descr)
+comet_daughter_result = filter_comp(comet_daughter_descr, r'^J\d+')
+path_finder_result = filter_comp(path_finder_descr, r'^J\d+')
+dcb_result = filter_comp(dcb_descr, r'^J\d+')
