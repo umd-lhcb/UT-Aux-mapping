@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 #
 # License: BSD 2-clause
-# Last Change: Thu Feb 14, 2019 at 12:52 PM -0500
+# Last Change: Thu Feb 14, 2019 at 05:09 PM -0500
 
 import re
 
@@ -43,9 +43,16 @@ def filter_comp(descr, regexp=r'^J\d+|^IC3_1+'):
     return filtered
 
 
-def post_filter(functor):
+def post_filter_exist(functor):
     def filter_functor(l):
         return True if True in map(functor, l) else False
+
+    return filter_functor
+
+
+def post_filter_any(functor):
+    def filter_functor(l):
+        return False if False in map(functor, l) else True
 
     return filter_functor
 
@@ -71,15 +78,16 @@ dcb_descr = DcbReader.read(nethopper)
 # Find FPGA pins and inter-board connectors #
 #############################################
 
-comet_result = filter_comp(comet_descr)
+comet_result = filter_comp(comet_descr, '^J4_1$|^J6_1$|^J1$|^IC3_1$')
 comet_daughter_result = filter_comp(comet_daughter_descr)
 path_finder_result = filter_comp(path_finder_descr)
 dcb_result = filter_comp(dcb_descr)
 
+# GND is not useful
+comet_throw_gnd = post_filter_any(lambda x: x[1] not in ['SHIELD1', 'SHIELD2'])
+comet_result = list(filter(comet_throw_gnd, comet_result))
 
-##################
-# Post filtering #
-##################
 
-comet_filter_connectors = post_filter(lambda x: x[0] in ['J4_1', 'J6_1', 'J1'])
-comet_result = list(filter(comet_filter_connectors, comet_result))
+################################
+# Find COMET J1 to COMET DB J4 #
+################################
