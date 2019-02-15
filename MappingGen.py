@@ -1,11 +1,12 @@
 #!/usr/bin/env python
 #
 # License: BSD 2-clause
-# Last Change: Fri Feb 15, 2019 at 03:37 PM -0500
+# Last Change: Fri Feb 15, 2019 at 03:56 PM -0500
 
 import re
 
 from pathlib import Path
+from collections import defaultdict
 
 import sys
 sys.path.insert(0, './pyUTM')
@@ -28,7 +29,29 @@ dcb_netlist = input_dir / Path('dcb.net')
 # Regularize input #############################################################
 
 def split_rn(descr, regexp=r'^RN\d+$'):
-    pass
+    rn_split_dict = {
+        '1': 'A',
+        '8': 'A',
+        '2': 'B',
+        '7': 'B',
+        '3': 'C',
+        '6': 'C',
+        '4': 'D',
+        '5': 'D'
+    }
+    result = defaultdict(list)
+
+    for net, comps in descr:
+        for c in comps:
+            if bool(re.search(regexp), c[0]):
+                new_c = list(c)
+                new_c[0] += rn_split_dict[c[1]]
+                result[net].append(tuple(new_c))
+
+            else:
+                result[net].append(c)
+
+    return dict(result)
 
 
 # Filtering ####################################################################
@@ -101,16 +124,22 @@ def make_comp_comp_dict(nested, key_comp, value_comp):
 #####################
 
 # NOTE: Net hopping won't work for COMET, nor COMET DB, because of the special
-# resistors RNXX that have 4+ legs, instead of 2.
+# resistors RNXX that have 8 legs, instead of 2.
 comethopper = CurrentFlow([r'^R\d+', r'^C\d+', r'^NT\d+', r'^RN\d+[ABCD]'])
 
 CometReader = PcadNaiveReader(comet_netlist)
 CometDaughterReader = PcadNaiveReader(comet_daughter_netlist)
 
-comet_descr = CometReader.read()
-comet_daughter_descr = CometDaughterReader.read()
+comet_descr = split_rn(CometReader.read())
+comet_daughter_descr = split_rn(CometDaughterReader.read())
 
-# Default net hopping should work for Pathfinder and DCB
+# Manually do net hopping for COMET and COMET DB.
+comet_descr = PcadReader.make_equivalent_nets_identical(
+    comet_descr, comethopper.do(comet_descr))
+comet_daughter_descr = PcadReader.make_equivalent_nets_identical(
+    comet_daughter_descr, comethopper.do(comet_daughter_descr))
+
+# Default net hopping should work for Pathfinder and DCB.
 nethopper = CurrentFlow()
 
 PathFinderReader = PcadReader(path_finder_netlist)
