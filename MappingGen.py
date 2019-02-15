@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 #
 # License: BSD 2-clause
-# Last Change: Fri Feb 15, 2019 at 03:58 PM -0500
+# Last Change: Fri Feb 15, 2019 at 04:00 PM -0500
 
 import re
 
@@ -43,7 +43,7 @@ def split_rn(descr, regexp=r'^RN\d+$'):
 
     for net, comps in descr.items():
         for c in comps:
-            if bool(re.search(regexp), c[0]):
+            if bool(re.search(regexp, c[0])):
                 new_c = list(c)
                 new_c[0] += rn_split_dict[c[1]]
                 result[net].append(tuple(new_c))
