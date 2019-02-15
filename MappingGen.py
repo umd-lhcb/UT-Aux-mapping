@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 #
 # License: BSD 2-clause
-# Last Change: Thu Feb 14, 2019 at 05:09 PM -0500
+# Last Change: Fri Feb 15, 2019 at 02:06 AM -0500
 
 import re
 
@@ -10,7 +10,7 @@ from pathlib import Path
 import sys
 sys.path.insert(0, './pyUTM')
 
-from pyUTM.io import PcadReader
+from pyUTM.io import PcadReader, PcadNaiveReader
 from pyUTM.sim import CurrentFlow
 
 input_dir = Path('input')
@@ -24,6 +24,16 @@ dcb_netlist = input_dir / Path('dcb.net')
 ###########
 # Helpers #
 ###########
+
+# Regularize input #############################################################
+
+def make_comp_dict(descr):
+    result = {}
+
+    return result
+
+
+# Filtering ####################################################################
 
 def filter_comp(descr, regexp=r'^J\d+|^IC3_1+'):
     filtered = []
@@ -63,23 +73,27 @@ def post_filter_any(functor):
 
 nethopper = CurrentFlow()
 
+
 CometReader = PcadReader(comet_netlist)
-CometDaughterReader = PcadReader(comet_daughter_netlist)
+
+# NOTE: Net hopping won't work for COMET DB, because of the special resistors
+# RNXX that have 4 legs, instead of 2.
+CometDaughterReader = PcadNaiveReader(comet_daughter_netlist)
+
 PathFinderReader = PcadReader(path_finder_netlist)
 DcbReader = PcadReader(dcb_netlist)
 
 comet_descr = CometReader.read(nethopper)
-comet_daughter_descr = CometDaughterReader.read(nethopper)
+comet_daughter_descr = CometDaughterReader.read()
 path_finder_descr = PathFinderReader.read(nethopper)
 dcb_descr = DcbReader.read(nethopper)
 
 
-#############################################
-# Find FPGA pins and inter-board connectors #
-#############################################
+#############
+# Filtering #
+#############
 
 comet_result = filter_comp(comet_descr, '^J4_1$|^J6_1$|^J1$|^IC3_1$')
-comet_daughter_result = filter_comp(comet_daughter_descr)
 path_finder_result = filter_comp(path_finder_descr)
 dcb_result = filter_comp(dcb_descr)
 
@@ -88,6 +102,6 @@ comet_throw_gnd = post_filter_any(lambda x: x[1] not in ['SHIELD1', 'SHIELD2'])
 comet_result = list(filter(comet_throw_gnd, comet_result))
 
 
-################################
-# Find COMET J1 to COMET DB J4 #
-################################
+####################################
+# Find COMET J1 to COMET J4 and J6 #
+####################################
