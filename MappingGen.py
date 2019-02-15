@@ -1,11 +1,12 @@
 #!/usr/bin/env python
 #
 # License: BSD 2-clause
-# Last Change: Fri Feb 15, 2019 at 12:15 PM -0500
+# Last Change: Fri Feb 15, 2019 at 01:46 PM -0500
 
 import re
 
 from pathlib import Path
+from itertools import product
 
 import sys
 sys.path.insert(0, './pyUTM')
@@ -24,18 +25,6 @@ dcb_netlist = input_dir / Path('dcb.net')
 ###########
 # Helpers #
 ###########
-
-# Regularize input #############################################################
-
-def make_comp_dict(descr):
-    result = {}
-
-    for net, comps in descr.items():
-        for c in comps:
-            result[c] = net
-
-    return result
-
 
 # Filtering ####################################################################
 
@@ -71,6 +60,33 @@ def post_filter_any(functor):
     return filter_functor
 
 
+# Make dictionaries to find connectivity between components  ###################
+
+def make_comp_netname_dict(descr):
+    result = {}
+
+    for net, comps in descr.items():
+        for c in comps:
+            result[c] = net
+
+    return result
+
+
+def make_comp_comp_dict(nested, key_comp, value_comp):
+    result = {}
+    key_in_list = post_filter_exist(lambda x: x[0] == key_comp)
+    value_in_list = post_filter_exist(lambda x: x[0] == value_comp)
+
+    for comps in nested:
+        key_candidates = filter(key_in_list, comps)
+        value_candidates = filter(value_in_list, comps)
+
+        for key, value in product(key_candidates, value_candidates):
+            result[key] = value
+
+    return result
+
+
 #####################
 # Read all netlists #
 #####################
@@ -102,18 +118,22 @@ path_finder_result = filter_comp(path_finder_descr)
 dcb_result = filter_comp(dcb_descr)
 
 # GND is not useful
-comet_throw_gnd = post_filter_any(lambda x: x[1] not in ['SHIELD1', 'SHIELD2'])
-comet_result = list(filter(comet_throw_gnd, comet_result))
+filter_comet_throw_gnd = post_filter_any(
+    lambda x: x[1] not in ['SHIELD1', 'SHIELD2'])
+comet_result = list(filter(filter_comet_throw_gnd, comet_result))
 
 
 ####################################
 # Find COMET J1 to COMET J4 and J6 #
 ####################################
 
+comet_j1_j4 = make_comp_comp_dict(comet_result, 'J1', 'J4_1')
+comet_j1_j6 = make_comp_comp_dict(comet_result, 'J1', 'J6_1')
+
 
 ##############################################
 # Find connection between COMET and COMET DB #
 ##############################################
 
-comet_ref = make_comp_dict(comet_descr)
-comet_daughter_ref = make_comp_dict(comet_daughter_descr)
+comet_ref = make_comp_netname_dict(comet_descr)
+comet_daughter_ref = make_comp_netname_dict(comet_daughter_descr)
