@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 #
 # License: BSD 2-clause
-# Last Change: Fri Feb 15, 2019 at 02:11 AM -0500
+# Last Change: Fri Feb 15, 2019 at 12:15 PM -0500
 
 import re
 
@@ -29,6 +29,10 @@ dcb_netlist = input_dir / Path('dcb.net')
 
 def make_comp_dict(descr):
     result = {}
+
+    for net, comps in descr.items():
+        for c in comps:
+            result[c] = net
 
     return result
 
@@ -105,3 +109,11 @@ comet_result = list(filter(comet_throw_gnd, comet_result))
 ####################################
 # Find COMET J1 to COMET J4 and J6 #
 ####################################
+
+
+##############################################
+# Find connection between COMET and COMET DB #
+##############################################
+
+comet_ref = make_comp_dict(comet_descr)
+comet_daughter_ref = make_comp_dict(comet_daughter_descr)
