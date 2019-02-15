@@ -1,12 +1,11 @@
 #!/usr/bin/env python
 #
 # License: BSD 2-clause
-# Last Change: Fri Feb 15, 2019 at 01:46 PM -0500
+# Last Change: Fri Feb 15, 2019 at 03:37 PM -0500
 
 import re
 
 from pathlib import Path
-from itertools import product
 
 import sys
 sys.path.insert(0, './pyUTM')
@@ -25,6 +24,12 @@ dcb_netlist = input_dir / Path('dcb.net')
 ###########
 # Helpers #
 ###########
+
+# Regularize input #############################################################
+
+def split_rn(descr, regexp=r'^RN\d+$'):
+    pass
+
 
 # Filtering ####################################################################
 
@@ -74,15 +79,19 @@ def make_comp_netname_dict(descr):
 
 def make_comp_comp_dict(nested, key_comp, value_comp):
     result = {}
-    key_in_list = post_filter_exist(lambda x: x[0] == key_comp)
-    value_in_list = post_filter_exist(lambda x: x[0] == value_comp)
 
     for comps in nested:
-        key_candidates = filter(key_in_list, comps)
-        value_candidates = filter(value_in_list, comps)
+        key_candidates = list(filter(lambda x: x[0] == key_comp, comps))
+        value_candidates = list(filter(lambda x: x[0] == value_comp, comps))
 
-        for key, value in product(key_candidates, value_candidates):
-            result[key] = value
+        if key_candidates and value_candidates:
+            if len(key_candidates) > 1 or len(value_candidates) > 1:
+                raise ValueError(
+                    'Unable to construct a bijection for key: {}, value: {}'.format(
+                        key_candidates, value_candidates
+                    ))
+            else:
+                result[key_candidates[0]] = value_candidates[0]
 
     return result
 
@@ -91,20 +100,22 @@ def make_comp_comp_dict(nested, key_comp, value_comp):
 # Read all netlists #
 #####################
 
-nethopper = CurrentFlow()
+# NOTE: Net hopping won't work for COMET, nor COMET DB, because of the special
+# resistors RNXX that have 4+ legs, instead of 2.
+comethopper = CurrentFlow([r'^R\d+', r'^C\d+', r'^NT\d+', r'^RN\d+[ABCD]'])
 
-
-CometReader = PcadReader(comet_netlist)
-
-# NOTE: Net hopping won't work for COMET DB, because of the special resistors
-# RNXX that have 4+ legs, instead of 2.
+CometReader = PcadNaiveReader(comet_netlist)
 CometDaughterReader = PcadNaiveReader(comet_daughter_netlist)
+
+comet_descr = CometReader.read()
+comet_daughter_descr = CometDaughterReader.read()
+
+# Default net hopping should work for Pathfinder and DCB
+nethopper = CurrentFlow()
 
 PathFinderReader = PcadReader(path_finder_netlist)
 DcbReader = PcadReader(dcb_netlist)
 
-comet_descr = CometReader.read(nethopper)
-comet_daughter_descr = CometDaughterReader.read()
 path_finder_descr = PathFinderReader.read(nethopper)
 dcb_descr = DcbReader.read(nethopper)
 
@@ -129,6 +140,8 @@ comet_result = list(filter(filter_comet_throw_gnd, comet_result))
 
 comet_j1_j4 = make_comp_comp_dict(comet_result, 'J1', 'J4_1')
 comet_j1_j6 = make_comp_comp_dict(comet_result, 'J1', 'J6_1')
+comet_fpga_j4 = make_comp_comp_dict(comet_result, 'J4_1', 'IC3_1')
+comet_fpga_j6 = make_comp_comp_dict(comet_result, 'J6_1', 'IC3_1')
 
 
 ##############################################
