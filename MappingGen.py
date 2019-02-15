@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 #
 # License: BSD 2-clause
-# Last Change: Fri Feb 15, 2019 at 04:00 PM -0500
+# Last Change: Fri Feb 15, 2019 at 04:04 PM -0500
 
 import re
 
@@ -134,9 +134,9 @@ comet_descr = split_rn(CometReader.read())
 comet_daughter_descr = split_rn(CometDaughterReader.read())
 
 # Manually do net hopping for COMET and COMET DB.
-comet_descr = PcadReader.make_equivalent_nets_identical(
+PcadReader.make_equivalent_nets_identical(
     comet_descr, comethopper.do(comet_descr))
-comet_daughter_descr = PcadReader.make_equivalent_nets_identical(
+PcadReader.make_equivalent_nets_identical(
     comet_daughter_descr, comethopper.do(comet_daughter_descr))
 
 # Default net hopping should work for Pathfinder and DCB.
