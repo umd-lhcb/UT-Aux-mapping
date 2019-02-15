@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 #
 # License: BSD 2-clause
-# Last Change: Fri Feb 15, 2019 at 02:06 AM -0500
+# Last Change: Fri Feb 15, 2019 at 02:11 AM -0500
 
 import re
 
@@ -77,7 +77,7 @@ nethopper = CurrentFlow()
 CometReader = PcadReader(comet_netlist)
 
 # NOTE: Net hopping won't work for COMET DB, because of the special resistors
-# RNXX that have 4 legs, instead of 2.
+# RNXX that have 4+ legs, instead of 2.
 CometDaughterReader = PcadNaiveReader(comet_daughter_netlist)
 
 PathFinderReader = PcadReader(path_finder_netlist)
