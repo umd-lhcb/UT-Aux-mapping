@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 #
 # License: BSD 2-clause
-# Last Change: Fri Feb 15, 2019 at 04:04 PM -0500
+# Last Change: Fri Feb 15, 2019 at 04:20 PM -0500
 
 import re
 
@@ -28,7 +28,7 @@ dcb_netlist = input_dir / Path('dcb.net')
 
 # Regularize input #############################################################
 
-def split_rn(descr, regexp=r'^RN\d+$'):
+def split_rn(descr, regexp=r'^RN\d+_\d$'):
     rn_split_dict = {
         '1': 'A',
         '8': 'A',
@@ -125,7 +125,8 @@ def make_comp_comp_dict(nested, key_comp, value_comp):
 
 # NOTE: Net hopping won't work for COMET, nor COMET DB, because of the special
 # resistors RNXX that have 8 legs, instead of 2.
-comethopper = CurrentFlow([r'^R\d+', r'^C\d+', r'^NT\d+', r'^RN\d+[ABCD]'])
+comethopper = CurrentFlow([r'^R\d+', r'^C\d+', r'^NT\d+',
+                           r'^RN\d+_\d[ABCD]'])
 
 CometReader = PcadNaiveReader(comet_netlist)
 CometDaughterReader = PcadNaiveReader(comet_daughter_netlist)
