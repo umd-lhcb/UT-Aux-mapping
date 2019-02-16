@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 #
 # License: BSD 2-clause
-# Last Change: Fri Feb 15, 2019 at 04:20 PM -0500
+# Last Change: Sat Feb 16, 2019 at 01:36 PM -0500
 
 import re
 
@@ -125,8 +125,7 @@ def make_comp_comp_dict(nested, key_comp, value_comp):
 
 # NOTE: Net hopping won't work for COMET, nor COMET DB, because of the special
 # resistors RNXX that have 8 legs, instead of 2.
-comethopper = CurrentFlow([r'^R\d+', r'^C\d+', r'^NT\d+',
-                           r'^RN\d+_\d[ABCD]'])
+comethopper = CurrentFlow([r'^R\d+', r'^NT\d+', r'^RN\d+_\d[ABCD]'])
 
 CometReader = PcadNaiveReader(comet_netlist)
 CometDaughterReader = PcadNaiveReader(comet_daughter_netlist)
