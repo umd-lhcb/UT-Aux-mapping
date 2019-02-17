@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 #
 # License: BSD 2-clause
-# Last Change: Sat Feb 16, 2019 at 07:59 PM -0500
+# Last Change: Sat Feb 16, 2019 at 10:37 PM -0500
 
 import re
 
@@ -160,7 +160,12 @@ dcb_result = filter_comp(dcb_descr)
 # GND is not useful
 filter_comet_throw_gnd = post_filter_any(
     lambda x: x[1] not in ['SHIELD1', 'SHIELD2'])
-comet_result = list(filter(filter_comet_throw_gnd, comet_result))
+comet_result = filter(filter_comet_throw_gnd, comet_result)
+
+# Since we are hopping through capacitors, manually remove 2.5 V rail
+filter_comet_throw_2v5 = post_filter_any(
+    lambda x: x[0] != 'IC3_1' and x[1] != '18')
+comet_result = list(filter(filter_comet_throw_2v5, comet_result))
 
 
 ####################################
