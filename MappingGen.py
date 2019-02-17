@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 #
 # License: BSD 2-clause
-# Last Change: Sat Feb 16, 2019 at 01:36 PM -0500
+# Last Change: Sat Feb 16, 2019 at 07:59 PM -0500
 
 import re
 
@@ -125,7 +125,7 @@ def make_comp_comp_dict(nested, key_comp, value_comp):
 
 # NOTE: Net hopping won't work for COMET, nor COMET DB, because of the special
 # resistors RNXX that have 8 legs, instead of 2.
-comethopper = CurrentFlow([r'^R\d+', r'^NT\d+', r'^RN\d+_\d[ABCD]'])
+CometHopper = CurrentFlow([r'^R\d+', r'^NT\d+', r'^RN\d+_\d[ABCD]'])
 
 CometReader = PcadNaiveReader(comet_netlist)
 CometDaughterReader = PcadNaiveReader(comet_daughter_netlist)
@@ -135,18 +135,18 @@ comet_daughter_descr = split_rn(CometDaughterReader.read())
 
 # Manually do net hopping for COMET and COMET DB.
 PcadReader.make_equivalent_nets_identical(
-    comet_descr, comethopper.do(comet_descr))
+    comet_descr, CometHopper.do(comet_descr))
 PcadReader.make_equivalent_nets_identical(
-    comet_daughter_descr, comethopper.do(comet_daughter_descr))
+    comet_daughter_descr, CometHopper.do(comet_daughter_descr))
 
 # Default net hopping should work for Pathfinder and DCB.
-nethopper = CurrentFlow()
+NetHopper = CurrentFlow()
 
 PathFinderReader = PcadReader(path_finder_netlist)
 DcbReader = PcadReader(dcb_netlist)
 
-path_finder_descr = PathFinderReader.read(nethopper)
-dcb_descr = DcbReader.read(nethopper)
+path_finder_descr = PathFinderReader.read(NetHopper)
+dcb_descr = DcbReader.read(NetHopper)
 
 
 #############
