@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 #
 # License: BSD 2-clause
-# Last Change: Sun Feb 17, 2019 at 09:05 PM -0500
+# Last Change: Sun Feb 17, 2019 at 11:29 PM -0500
 
 import re
 
@@ -133,7 +133,7 @@ def make_comp_comp_dict(nested, key_comp, value_comp, strip_kw='_1'):
 # NOTE: Net hopping won't work for COMET, nor COMET DB, because of the special
 # resistors RNXX that have 8 legs, instead of 2.
 CometHopper = CurrentFlow([r'^R\d+', r'^NT\d+', r'^RN\d+_\d[ABCD]', r'^C\d+'])
-CometDBHopper = CurrentFlow([r'^R\d+', r'^NT\d+', r'^RN\d+[ABCD]', r'^C\d+'])
+CometDBHopper = CurrentFlow([r'^R\d+', r'^NT\d+', r'^RN\d+[ABCD]'])
 
 CometReader = PcadNaiveReader(comet_netlist)
 CometDBReader = PcadNaiveReader(comet_db_netlist)
@@ -167,11 +167,11 @@ path_finder_result = filter_comp(path_finder_descr)
 dcb_result = filter_comp(dcb_descr)
 
 # GND is not useful
-filter_throw_gnd = post_filter_any(
+filter_comet_throw_gnd = post_filter_any(
     lambda x: x[1] not in ['SHIELD1', 'SHIELD2'])
 
-comet_result = filter(filter_throw_gnd, comet_result)
-comet_db_result = list(filter(filter_throw_gnd, comet_db_result))
+comet_result = filter(filter_comet_throw_gnd, comet_result)
+# comet_db_result = list(filter(filter_throw_gnd, comet_db_result))
 
 # Remove the 6 pairs of special differential lines. We'll add them back later.
 filter_comet_throw_special_diff = post_filter_any(
@@ -183,6 +183,9 @@ filter_comet_throw_special_diff = post_filter_any(
 )
 
 comet_result = list(filter(filter_comet_throw_special_diff, comet_result))
+
+# Remove GND for COMET DB as well
+comet_db_result = list(filter(filter_comet_throw_gnd, comet_db_result))
 
 
 ####################################
