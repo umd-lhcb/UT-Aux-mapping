@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 #
 # License: BSD 2-clause
-# Last Change: Mon Feb 18, 2019 at 03:46 PM -0500
+# Last Change: Mon Feb 18, 2019 at 04:52 PM -0500
 
 import re
 
@@ -169,12 +169,12 @@ comet_db_result = filter_comp(comet_db_descr, '^J4|^J6')
 path_finder_result = filter_comp(path_finder_descr)
 dcb_result = filter_comp(dcb_descr)
 
+# COMET ########################################################################
+
 # GND is not useful
 filter_comet_throw_gnd = post_filter_any(
     lambda x: x[1] not in ['SHIELD1', 'SHIELD2'])
-
 comet_result = filter(filter_comet_throw_gnd, comet_result)
-# comet_db_result = list(filter(filter_throw_gnd, comet_db_result))
 
 # Remove the 6 pairs of special differential lines. We'll add them back later.
 filter_comet_throw_special_diff = post_filter_any(
@@ -184,11 +184,22 @@ filter_comet_throw_special_diff = post_filter_any(
                  '163', '164', '165']
     )
 )
-
 comet_result = list(filter(filter_comet_throw_special_diff, comet_result))
 
+
+# COMET DB #####################################################################
+
 # Remove GND for COMET DB as well
-comet_db_result = list(filter(filter_comet_throw_gnd, comet_db_result))
+comet_db_result = filter(filter_comet_throw_gnd, comet_db_result)
+
+# DIFF_TERM_STV is not useful
+filter_comet_db_throw_diff_term = post_filter_any(lambda x: x != ('J4', '5'))
+comet_db_result = filter(filter_comet_db_throw_diff_term, comet_db_result)
+
+# Remove RJ45-related connections
+filter_comet_db_throw_rj45 = post_filter_any(
+    lambda x: x != ('J6', '26') and x != ('J6', '31'))
+comet_db_result = list(filter(filter_comet_db_throw_rj45, comet_db_result))
 
 
 ####################################
