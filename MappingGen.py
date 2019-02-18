@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 #
 # License: BSD 2-clause
-# Last Change: Mon Feb 18, 2019 at 04:52 PM -0500
+# Last Change: Mon Feb 18, 2019 at 05:18 PM -0500
 
 import re
 
@@ -126,6 +126,17 @@ def make_comp_comp_dict(nested, key_comp, value_comp, strip_kw='_1'):
     return result
 
 
+def make_comp_comp_dict_bidirectional(nested):
+    # NOTE: Here 'nested' should be a nx2 tensor
+    result = {}
+
+    for key1, key2 in nested:
+        result[key1] = key2
+        result[key2] = key1
+
+    return result
+
+
 #####################
 # Read all netlists #
 #####################
@@ -230,5 +241,4 @@ comet_j6_fpga[('IC3', '165')] = ('J6', '82')
 # Find COMET DB connections between J4 and J6 #
 ###############################################
 
-comet_db_j4_j6 = make_comp_comp_dict(comet_db_result, 'J4', 'J6')
-comet_db_j6_j4 = make_comp_comp_dict(comet_db_result, 'J6', 'J4')
+comet_db_j4_j6 = make_comp_comp_dict_bidirectional(comet_db_result)
