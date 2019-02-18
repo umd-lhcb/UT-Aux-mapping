@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 #
 # License: BSD 2-clause
-# Last Change: Sat Feb 16, 2019 at 10:37 PM -0500
+# Last Change: Sun Feb 17, 2019 at 06:56 PM -0500
 
 import re
 
@@ -125,7 +125,7 @@ def make_comp_comp_dict(nested, key_comp, value_comp):
 
 # NOTE: Net hopping won't work for COMET, nor COMET DB, because of the special
 # resistors RNXX that have 8 legs, instead of 2.
-CometHopper = CurrentFlow([r'^R\d+', r'^NT\d+', r'^RN\d+_\d[ABCD]'])
+CometHopper = CurrentFlow([r'^R\d+', r'^NT\d+', r'^RN\d+_\d[ABCD]', r'^C\d+'])
 
 CometReader = PcadNaiveReader(comet_netlist)
 CometDaughterReader = PcadNaiveReader(comet_daughter_netlist)
@@ -162,10 +162,15 @@ filter_comet_throw_gnd = post_filter_any(
     lambda x: x[1] not in ['SHIELD1', 'SHIELD2'])
 comet_result = filter(filter_comet_throw_gnd, comet_result)
 
-# Since we are hopping through capacitors, manually remove 2.5 V rail
-filter_comet_throw_2v5 = post_filter_any(
-    lambda x: x[0] != 'IC3_1' and x[1] != '18')
-comet_result = list(filter(filter_comet_throw_2v5, comet_result))
+# Remove the 6 pairs of special differential lines. We'll add them back later.
+filter_comet_throw_special_diff = post_filter_any(
+    lambda x: not (
+        x[0] == 'IC3_1' and
+        x[1] in ['112', '113', '114', '115', '116', '117', '159', '160', '161',
+                 '163', '164', '165']
+    )
+)
+comet_result = list(filter(filter_comet_throw_special_diff, comet_result))
 
 
 ####################################
