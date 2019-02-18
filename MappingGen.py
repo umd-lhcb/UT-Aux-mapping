@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 #
 # License: BSD 2-clause
-# Last Change: Sun Feb 17, 2019 at 08:27 PM -0500
+# Last Change: Sun Feb 17, 2019 at 08:47 PM -0500
 
 import re
 
@@ -17,7 +17,7 @@ from pyUTM.sim import CurrentFlow
 input_dir = Path('input')
 
 comet_netlist = input_dir / Path('comet.net')
-comet_daughter_netlist = input_dir / Path('comet_daughter.net')
+comet_db_netlist = input_dir / Path('comet_daughter.net')
 path_finder_netlist = input_dir / Path('path_finder.net')
 dcb_netlist = input_dir / Path('dcb.net')
 
@@ -133,18 +133,19 @@ def make_comp_comp_dict(nested, key_comp, value_comp, strip_kw='_1'):
 # NOTE: Net hopping won't work for COMET, nor COMET DB, because of the special
 # resistors RNXX that have 8 legs, instead of 2.
 CometHopper = CurrentFlow([r'^R\d+', r'^NT\d+', r'^RN\d+_\d[ABCD]', r'^C\d+'])
+CometDBHopper = CurrentFlow([r'^R\d+', r'^NT\d+', r'^RN\d+[ABCD]', r'^C\d+'])
 
 CometReader = PcadNaiveReader(comet_netlist)
-CometDaughterReader = PcadNaiveReader(comet_daughter_netlist)
+CometDBReader = PcadNaiveReader(comet_db_netlist)
 
 comet_descr = split_rn(CometReader.read())
-comet_daughter_descr = split_rn(CometDaughterReader.read())
+comet_db_descr = split_rn(CometDBReader.read(), regexp=r'^RN\d+$')
 
 # Manually do net hopping for COMET and COMET DB.
 PcadReader.make_equivalent_nets_identical(
     comet_descr, CometHopper.do(comet_descr))
 PcadReader.make_equivalent_nets_identical(
-    comet_daughter_descr, CometHopper.do(comet_daughter_descr))
+    comet_db_descr, CometDBHopper.do(comet_db_descr))
 
 # Default net hopping should work for Pathfinder and DCB.
 NetHopper = CurrentFlow()
@@ -161,13 +162,16 @@ dcb_descr = DcbReader.read(NetHopper)
 #############
 
 comet_result = filter_comp(comet_descr, '^J4_1$|^J6_1$|^J1$|^IC3_1$')
+comet_db_result = filter_comp(comet_db_descr, '^J4|^J6')
 path_finder_result = filter_comp(path_finder_descr)
 dcb_result = filter_comp(dcb_descr)
 
 # GND is not useful
-filter_comet_throw_gnd = post_filter_any(
+filter_throw_gnd = post_filter_any(
     lambda x: x[1] not in ['SHIELD1', 'SHIELD2'])
-comet_result = filter(filter_comet_throw_gnd, comet_result)
+
+comet_result = filter(filter_throw_gnd, comet_result)
+comet_db_result = list(filter(filter_throw_gnd, comet_db_result))
 
 # Remove the 6 pairs of special differential lines. We'll add them back later.
 filter_comet_throw_special_diff = post_filter_any(
@@ -177,6 +181,7 @@ filter_comet_throw_special_diff = post_filter_any(
                  '163', '164', '165']
     )
 )
+
 comet_result = list(filter(filter_comet_throw_special_diff, comet_result))
 
 
@@ -204,9 +209,9 @@ comet_fpga_j6[('IC3_1', '164')] = ('J6_1', '80')
 comet_fpga_j6[('IC3_1', '165')] = ('J6_1', '82')
 
 
-##############################################
-# Find connection between COMET and COMET DB #
-##############################################
+###############################################
+# Find COMET DB connections between J4 and J6 #
+###############################################
 
-comet_ref = make_comp_netname_dict(comet_descr)
-comet_daughter_ref = make_comp_netname_dict(comet_daughter_descr)
+comet_db_j4_j6 = make_comp_comp_dict(comet_db_result, 'J4', 'J6')
+comet_db_j6_j4 = make_comp_comp_dict(comet_db_result, 'J6', 'J4')
