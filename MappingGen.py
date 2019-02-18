@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 #
 # License: BSD 2-clause
-# Last Change: Sun Feb 17, 2019 at 08:57 PM -0500
+# Last Change: Sun Feb 17, 2019 at 09:05 PM -0500
 
 import re
 
@@ -17,7 +17,7 @@ from pyUTM.sim import CurrentFlow
 input_dir = Path('input')
 
 comet_netlist = input_dir / Path('comet.net')
-comet_db_netlist = input_dir / Path('comet_daughter.net')
+comet_db_netlist = input_dir / Path('comet_db.net')
 path_finder_netlist = input_dir / Path('path_finder.net')
 dcb_netlist = input_dir / Path('dcb.net')
 
