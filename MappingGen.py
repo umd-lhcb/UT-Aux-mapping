@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 #
 # License: BSD 2-clause
-# Last Change: Sun Feb 17, 2019 at 11:29 PM -0500
+# Last Change: Mon Feb 18, 2019 at 03:46 PM -0500
 
 import re
 
@@ -139,7 +139,10 @@ CometReader = PcadNaiveReader(comet_netlist)
 CometDBReader = PcadNaiveReader(comet_db_netlist)
 
 comet_descr = split_rn(CometReader.read())
-comet_db_descr = split_rn(CometDBReader.read(), regexp=r'^RN\d+$')
+comet_db_descr = split_rn(
+    CometDBReader.read(),
+    regexp=r'^RN((?!5$|6$|9$|12$|15$|18$|21$|24$|27$|39$|30$|33$|36$)\d+)$'
+)
 
 # Manually do net hopping for COMET and COMET DB.
 PcadReader.make_equivalent_nets_identical(
