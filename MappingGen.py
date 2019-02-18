@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 #
 # License: BSD 2-clause
-# Last Change: Sun Feb 17, 2019 at 08:47 PM -0500
+# Last Change: Sun Feb 17, 2019 at 08:51 PM -0500
 
 import re
 
@@ -195,18 +195,18 @@ comet_fpga_j4 = make_comp_comp_dict(comet_result, 'J4_1', 'IC3_1')
 comet_fpga_j6 = make_comp_comp_dict(comet_result, 'J6_1', 'IC3_1')
 
 # Add 6 pairs of special differential connections back
-comet_fpga_j6[('IC3_1', '112')] = ('J6_1', '11')
-comet_fpga_j6[('IC3_1', '113')] = ('J6_1', '17')
-comet_fpga_j6[('IC3_1', '114')] = ('J6_1', '13')
-comet_fpga_j6[('IC3_1', '115')] = ('J6_1', '19')
-comet_fpga_j6[('IC3_1', '116')] = ('J6_1', '25')
-comet_fpga_j6[('IC3_1', '117')] = ('J6_1', '27')
-comet_fpga_j6[('IC3_1', '159')] = ('J6_1', '68')
-comet_fpga_j6[('IC3_1', '160')] = ('J6_1', '70')
-comet_fpga_j6[('IC3_1', '161')] = ('J6_1', '74')
-comet_fpga_j6[('IC3_1', '163')] = ('J6_1', '76')
-comet_fpga_j6[('IC3_1', '164')] = ('J6_1', '80')
-comet_fpga_j6[('IC3_1', '165')] = ('J6_1', '82')
+comet_fpga_j6[('IC3', '112')] = ('J6', '11')
+comet_fpga_j6[('IC3', '113')] = ('J6', '17')
+comet_fpga_j6[('IC3', '114')] = ('J6', '13')
+comet_fpga_j6[('IC3', '115')] = ('J6', '19')
+comet_fpga_j6[('IC3', '116')] = ('J6', '25')
+comet_fpga_j6[('IC3', '117')] = ('J6', '27')
+comet_fpga_j6[('IC3', '159')] = ('J6', '68')
+comet_fpga_j6[('IC3', '160')] = ('J6', '70')
+comet_fpga_j6[('IC3', '161')] = ('J6', '74')
+comet_fpga_j6[('IC3', '163')] = ('J6', '76')
+comet_fpga_j6[('IC3', '164')] = ('J6', '80')
+comet_fpga_j6[('IC3', '165')] = ('J6', '82')
 
 
 ###############################################
