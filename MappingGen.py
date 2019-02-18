@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 #
 # License: BSD 2-clause
-# Last Change: Sun Feb 17, 2019 at 08:00 PM -0500
+# Last Change: Sun Feb 17, 2019 at 08:27 PM -0500
 
 import re
 
@@ -100,7 +100,7 @@ def make_comp_netname_dict(descr):
     return result
 
 
-def make_comp_comp_dict(nested, key_comp, value_comp):
+def make_comp_comp_dict(nested, key_comp, value_comp, strip_kw='_1'):
     result = {}
 
     for comps in nested:
@@ -114,7 +114,14 @@ def make_comp_comp_dict(nested, key_comp, value_comp):
                         key_candidates, value_candidates
                     ))
             else:
-                result[key_candidates[0]] = value_candidates[0]
+                # We want to strip out the '_1' part
+                key = list(key_candidates[0])
+                value = list(value_candidates[0])
+
+                key[0] = key[0].strip(strip_kw)
+                value[0] = value[0].strip(strip_kw)
+
+                result[tuple(key)] = tuple(value)
 
     return result
 
