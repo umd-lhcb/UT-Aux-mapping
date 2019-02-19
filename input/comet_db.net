@@ -4166,14 +4166,14 @@
     (attr "DifferentialPair" "True" (textStyleRef "(Default)"))
   )
   (net "Cx_PAIR_21_P"
-    (node "J6" "92")
+    (node "J6" "76")
     (node "RN38" "7")
     (node "RN39" "2")
     (attr "ClassName" "DIFF_Pairs" (textStyleRef "(Default)"))
     (attr "DifferentialPair" "True" (textStyleRef "(Default)"))
   )
   (net "Cx_PAIR_21_N"
-    (node "J6" "94")
+    (node "J6" "74")
     (node "RN38" "8")
     (node "RN39" "1")
     (attr "ClassName" "DIFF_Pairs" (textStyleRef "(Default)"))
@@ -4194,14 +4194,14 @@
     (attr "DifferentialPair" "True" (textStyleRef "(Default)"))
   )
   (net "Cx_PAIR_19_P"
-    (node "J6" "76")
+    (node "J6" "92")
     (node "RN29" "6")
     (node "RN30" "3")
     (attr "ClassName" "DIFF_Pairs" (textStyleRef "(Default)"))
     (attr "DifferentialPair" "True" (textStyleRef "(Default)"))
   )
   (net "Cx_PAIR_19_N"
-    (node "J6" "74")
+    (node "J6" "94")
     (node "RN29" "5")
     (node "RN30" "4")
     (attr "ClassName" "DIFF_Pairs" (textStyleRef "(Default)"))
