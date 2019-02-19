@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 #
 # License: BSD 2-clause
-# Last Change: Tue Feb 19, 2019 at 02:21 AM -0500
+# Last Change: Tue Feb 19, 2019 at 03:05 AM -0500
 
 import re
 
@@ -260,11 +260,12 @@ connections = defaultdict(list)
 comet_j1 = {}
 
 for j1_pin, comet_pin in comet_j1_j4.items():
-    # NOTE: For J4 pin x on COMET, the corresponding J4 pin on COMET DB is x-1.
-    comet_db_pin = list(comet_pin)
-    comet_db_pin[1] = str(int(comet_db_pin[1]) - 1)
-    comet_db_pin = tuple(comet_db_pin)
+    # NOTE: It seems that no pin conversion required for J4 COMET and COMET DB,
+    # but for J6, x on COMET is x+1 on COMET DB.
+    if comet_pin[0] == 'J4':
+        comet_db_pin = comet_db_j4_j6[comet_pin]
+    else:
+        comet_db_pin = comet_db_j4_j6[('J6', str(int(comet_pin[1])+1))]
+        comet_db_pin = ('J6', str(int(comet_db_pin[1])+1))
 
-    comet_db_to_fpga_pin = comet_db_j4_j6[comet_db_pin]
-
-    comet_j1[j1_pin] = comet_j4_fpga[comet_db_to_fpga_pin]
+    comet_j1[j1_pin] = comet_j4_fpga[comet_db_pin]
