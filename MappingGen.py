@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 #
 # License: BSD 2-clause
-# Last Change: Tue Feb 19, 2019 at 01:04 PM -0500
+# Last Change: Tue Feb 19, 2019 at 05:26 PM -0500
 
 import re
 
@@ -15,11 +15,14 @@ from pyUTM.io import PcadReader, PcadNaiveReader
 from pyUTM.sim import CurrentFlow
 
 input_dir = Path('input')
+output_dir = Path('output')
 
 comet_netlist = input_dir / Path('comet.net')
 comet_db_netlist = input_dir / Path('comet_db.net')
 path_finder_netlist = input_dir / Path('path_finder.net')
 dcb_netlist = input_dir / Path('dcb.net')
+
+debug_mapping_filename = output_dir / Path('DebugCometMapping.csv')
 
 
 ###########
@@ -135,6 +138,17 @@ def make_comp_comp_dict_bidirectional(nested):
         result[key2] = key1
 
     return result
+
+
+# Output #######################################################################
+
+def write_mapping_to_csv(filename, data,
+                         header=['COMET connector', 'COMET FPGA'],
+                         mode='w', eol='\n'):
+    with open(filename, mode) as f:
+        f.write(','.join(header) + eol)
+        for row in data:
+            f.write(','.join(row) + eol)
 
 
 #####################
@@ -268,3 +282,15 @@ for j1_pin, comet_pin in comet_j1_to_j4_j6.items():
         comet_db_pin = ('J6', str(int(comet_db_pin[1])+1))
 
     comet_j1_to_fpga[j1_pin] = comet_j4_j6_to_fpga[comet_db_pin]
+
+
+#################
+# Output to csv #
+#################
+
+# Debug ########################################################################
+
+comet_j1_fpga_data = [('-'.join(key), '-'.join(value))
+                      for key, value in comet_j1_to_fpga.items()]
+
+write_mapping_to_csv(debug_mapping_filename, comet_j1_fpga_data)
