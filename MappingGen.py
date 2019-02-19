@@ -1,12 +1,13 @@
 #!/usr/bin/env python
 #
 # License: BSD 2-clause
-# Last Change: Mon Feb 18, 2019 at 05:18 PM -0500
+# Last Change: Tue Feb 19, 2019 at 02:21 AM -0500
 
 import re
 
 from pathlib import Path
 from collections import defaultdict
+from copy import deepcopy
 
 import sys
 sys.path.insert(0, './pyUTM')
@@ -118,8 +119,8 @@ def make_comp_comp_dict(nested, key_comp, value_comp, strip_kw='_1'):
                 key = list(key_candidates[0])
                 value = list(value_candidates[0])
 
-                key[0] = key[0].strip(strip_kw)
-                value[0] = value[0].strip(strip_kw)
+                key[0] = key[0].replace(strip_kw, '')
+                value[0] = value[0].replace(strip_kw, '')
 
                 result[tuple(key)] = tuple(value)
 
@@ -236,9 +237,34 @@ comet_j6_fpga[('IC3', '163')] = ('J6', '76')
 comet_j6_fpga[('IC3', '164')] = ('J6', '80')
 comet_j6_fpga[('IC3', '165')] = ('J6', '82')
 
+# Combine dictionaries to make queries easier
+comet_j1_j4.update(comet_j1_j6)
+comet_j4_fpga.update(comet_j6_fpga)
+
 
 ###############################################
 # Find COMET DB connections between J4 and J6 #
 ###############################################
 
 comet_db_j4_j6 = make_comp_comp_dict_bidirectional(comet_db_result)
+
+
+####################
+# Make connections #
+####################
+
+connections = defaultdict(list)
+
+# COMET -> COMET DB -> COMET ###################################################
+
+comet_j1 = {}
+
+for j1_pin, comet_pin in comet_j1_j4.items():
+    # NOTE: For J4 pin x on COMET, the corresponding J4 pin on COMET DB is x-1.
+    comet_db_pin = list(comet_pin)
+    comet_db_pin[1] = str(int(comet_db_pin[1]) - 1)
+    comet_db_pin = tuple(comet_db_pin)
+
+    comet_db_to_fpga_pin = comet_db_j4_j6[comet_db_pin]
+
+    comet_j1[j1_pin] = comet_j4_fpga[comet_db_to_fpga_pin]
