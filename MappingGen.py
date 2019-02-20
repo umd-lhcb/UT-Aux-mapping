@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 #
 # License: BSD 2-clause
-# Last Change: Wed Feb 20, 2019 at 06:21 PM -0500
+# Last Change: Wed Feb 20, 2019 at 06:51 PM -0500
 
 import re
 
@@ -287,34 +287,28 @@ comet_db_j4_bto_j6 = make_comp_comp_dict_bidirectional(comet_db_result)
 # Find Pathfinder connections between COMET connectors and JD10 #
 #################################################################
 
-path_finder_comet_a_j1_to_jd10 = make_comp_comp_dict(path_finder_result,
-                                                     'COMET_A_J1', 'JD10')
-path_finder_comet_a_j2_to_jd10 = make_comp_comp_dict(path_finder_result,
-                                                     'COMET_A_J2', 'JD10')
-path_finder_comet_b_j1_to_jd10 = make_comp_comp_dict(path_finder_result,
-                                                     'COMET_B_J1', 'JD10')
-path_finder_comet_b_j2_to_jd10 = make_comp_comp_dict(path_finder_result,
-                                                     'COMET_B_J2', 'JD10')
+path_finder_connections_raw = [
+    make_comp_comp_dict(path_finder_result, 'JD10', c)
+    for c in ['COMET_A_J1', 'COMET_A_J2', 'COMET_B_J1', 'COMET_B_J2']
+]
 
 # Again, combine into a single dictionary.
-path_finder_comet_to_jd10 = {
-    **path_finder_comet_a_j1_to_jd10, **path_finder_comet_a_j2_to_jd10,
-    **path_finder_comet_b_j1_to_jd10, **path_finder_comet_b_j2_to_jd10
-}
+path_finder_jd10_to_comet = {k: v for d in path_finder_connections_raw
+                             for k, v in d.items()}
 
 
 #################################################
 # Find Pathfinder JD10 to DCB GBTxs connections #
 #################################################
 
-dcb_j3_to_u_data_raw = [
-    make_comp_comp_dict(dcb_result, 'J3', 'U{}_IC2'.format(str(i)))
+dcb_connections_raw = [
+    make_comp_comp_dict(dcb_result, 'U{}_IC2'.format(str(i)), 'J3')
     for i in range(1, 7)]
 
 # Combine into a single dictionary.
-dcb_j3_to_u_data = {k: v for d in dcb_j3_to_u_data_raw for k, v in d.items()}
+dcb_u_data_to_j3 = {k: v for d in dcb_connections_raw for k, v in d.items()}
 
-# Generate a component-netname dict to figure out elink info #
+# Generate a component-netname dict to figure out elink info.
 dcb_ref = make_comp_netname_dict(dcb_descr)
 
 
@@ -338,7 +332,15 @@ for j1_pin, comet_pin in comet_j1_to_j4_j6.items():
     comet_j1_to_fpga[j1_pin] = comet_j4_j6_to_fpga[comet_db_pin]
 
 
-# Pathfinder -> DCB ############################################################
+# DCB -> Pathfinder ############################################################
+
+dcb_gbtxs_to_path_finder_comet = {}
+
+for gbtx_pin, j3_pin in dcb_u_data_to_j3.items():
+    path_finder_jd10 = ('JD10', j3_pin[1])
+    path_finder_comet_pin = path_finder_jd10_to_comet[path_finder_jd10]
+
+    dcb_gbtxs_to_path_finder_comet[gbtx_pin] = path_finder_comet_pin
 
 
 #################
