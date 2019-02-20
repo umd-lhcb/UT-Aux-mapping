@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 #
 # License: BSD 2-clause
-# Last Change: Wed Feb 20, 2019 at 04:15 PM -0500
+# Last Change: Wed Feb 20, 2019 at 04:38 PM -0500
 
 import re
 
@@ -22,6 +22,8 @@ comet_db_netlist = input_dir / Path('comet_db.net')
 path_finder_netlist = input_dir / Path('path_finder.net')
 
 debug_comet_mapping_filename = output_dir / Path('DebugCometMapping.csv')
+debug_path_finder_mapping_filename = output_dir / Path(
+    'DebugPathFinderMapping.csv')
 
 
 ###########
@@ -319,8 +321,19 @@ for j1_pin, comet_pin in comet_j1_to_j4_j6.items():
 
 # Debug: COMET #################################################################
 
-comet_j1_fpga_data = [('-'.join(key), '-'.join(value))
+comet_j1_fpga_data = [['-'.join(key), '-'.join(value)]
                       for key, value in comet_j1_to_fpga.items()]
 comet_j1_fpga_data.sort(key=lambda x: int(x[0].split('-')[1]))
 
 write_mapping_to_csv(debug_comet_mapping_filename, comet_j1_fpga_data)
+
+
+# Debug: Pathfinder ############################################################
+
+path_finder_comet_j10_data = [
+    ['-'.join(key), '-'.join(value)]
+    for key, value in path_finder_comet_to_jd10.items()]
+path_finder_comet_j10_data.sort(key=lambda x: int(x[0].split('-')[1]))
+
+write_mapping_to_csv(debug_path_finder_mapping_filename,
+                     path_finder_comet_j10_data)
