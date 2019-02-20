@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 #
 # License: BSD 2-clause
-# Last Change: Wed Feb 20, 2019 at 03:46 AM -0500
+# Last Change: Wed Feb 20, 2019 at 03:48 AM -0500
 
 import re
 
@@ -276,8 +276,8 @@ comet_db_j4_bto_j6 = make_comp_comp_dict_bidirectional(comet_db_result)
 # Find COMET to Pathfinder connections #
 ########################################
 
-pathfinder_comet_a_j1_to_jd10 = make_comp_comp_dict(path_finder_result,
-                                                    'COMET_A_J1', 'JD10')
+path_finder_comet_a_j1_to_jd10 = make_comp_comp_dict(path_finder_result,
+                                                     'COMET_A_J1', 'JD10')
 
 
 ####################
