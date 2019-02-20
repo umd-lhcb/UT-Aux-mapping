@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 #
 # License: BSD 2-clause
-# Last Change: Wed Feb 20, 2019 at 06:13 PM -0500
+# Last Change: Wed Feb 20, 2019 at 06:21 PM -0500
 
 import re
 
@@ -308,7 +308,7 @@ path_finder_comet_to_jd10 = {
 #################################################
 
 dcb_j3_to_u_data_raw = [
-    make_comp_comp_dict(dcb_result, 'U{}_IC2'.format(str(i)), 'J3')
+    make_comp_comp_dict(dcb_result, 'J3', 'U{}_IC2'.format(str(i)))
     for i in range(1, 7)]
 
 # Combine into a single dictionary.
@@ -336,6 +336,9 @@ for j1_pin, comet_pin in comet_j1_to_j4_j6.items():
         comet_db_pin = ('J6', str(int(comet_db_pin[1])+1))
 
     comet_j1_to_fpga[j1_pin] = comet_j4_j6_to_fpga[comet_db_pin]
+
+
+# Pathfinder -> DCB ############################################################
 
 
 #################
