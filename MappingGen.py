@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 #
 # License: BSD 2-clause
-# Last Change: Wed Feb 20, 2019 at 03:36 AM -0500
+# Last Change: Wed Feb 20, 2019 at 03:46 AM -0500
 
 import re
 
@@ -225,6 +225,16 @@ comet_db_result = filter(filter_comet_db_throw_diff_term, comet_db_result)
 filter_comet_db_throw_rj45 = post_filter_any(
     lambda x: x != ('J6', '26') and x != ('J6', '31'))
 comet_db_result = list(filter(filter_comet_db_throw_rj45, comet_db_result))
+
+
+# Pathfinder ###################################################################
+
+# Remove GND
+filter_path_finder_throw_gnd = post_filter_any(
+    lambda x: x != ('COMET_A_J1', '1')
+)
+path_finder_result = list(
+    filter(filter_path_finder_throw_gnd, path_finder_result))
 
 
 ####################################
