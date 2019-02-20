@@ -7,3 +7,11 @@ Install the dependencies:
 ```
 pip install -r pyUTM/requirements.txt
 ```
+
+
+## Usage
+```
+python ./MappingGen.py
+```
+
+All generated mapping `.csv` files are located under `output/`
