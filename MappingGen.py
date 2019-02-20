@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 #
 # License: BSD 2-clause
-# Last Change: Wed Feb 20, 2019 at 04:38 PM -0500
+# Last Change: Wed Feb 20, 2019 at 05:09 PM -0500
 
 import re
 
@@ -20,6 +20,7 @@ output_dir = Path('output')
 comet_netlist = input_dir / Path('comet.net')
 comet_db_netlist = input_dir / Path('comet_db.net')
 path_finder_netlist = input_dir / Path('path_finder.net')
+dcb_netlist = input_dir / Path('dcb.net')
 
 debug_comet_mapping_filename = output_dir / Path('DebugCometMapping.csv')
 debug_path_finder_mapping_filename = output_dir / Path(
@@ -176,10 +177,14 @@ PcadReader.make_equivalent_nets_identical(
 PcadReader.make_equivalent_nets_identical(
     comet_db_descr, CometDBHopper.do(comet_db_descr))
 
-# Default net hopping should work for Pathfinder.
+# Default net hopping should work for Pathfinder and DCB.
 NetHopper = CurrentFlow()
+
 PathFinderReader = PcadReader(path_finder_netlist)
+DcbReader = PcadReader(dcb_netlist)
+
 path_finder_descr = PathFinderReader.read(NetHopper)
+dcb_descr = DcbReader.read(NetHopper)
 
 
 #############
@@ -189,6 +194,7 @@ path_finder_descr = PathFinderReader.read(NetHopper)
 comet_result = filter_comp(comet_descr, '^J4_1$|^J6_1$|^J1$|^IC3_1$')
 comet_db_result = filter_comp(comet_db_descr, '^J4|^J6')
 path_finder_result = filter_comp(path_finder_descr, '^JD10$|^COMET')
+dcb_result = filter_comp(dcb_descr)
 
 # COMET ########################################################################
 
@@ -288,6 +294,11 @@ path_finder_comet_to_jd10 = {
 }
 
 
+#################################################
+# Find Pathfinder JD10 to DCB GBTxs connections #
+#################################################
+
+
 ##############################################################
 # Generate a component-netname dict to figure out elink info #
 ##############################################################
@@ -330,10 +341,6 @@ write_mapping_to_csv(debug_comet_mapping_filename, comet_j1_fpga_data)
 
 # Debug: Pathfinder ############################################################
 
-path_finder_comet_j10_data = [
-    ['-'.join(key), '-'.join(value)]
-    for key, value in path_finder_comet_to_jd10.items()]
-path_finder_comet_j10_data.sort(key=lambda x: int(x[0].split('-')[1]))
-
-write_mapping_to_csv(debug_path_finder_mapping_filename,
-                     path_finder_comet_j10_data)
+# path_finder_comet_j10_data = [
+    # ['-'.join(key), '-'.join(value), path_finder_elink_info[value]]
+    # for key, value in path_finder_comet_to_jd10.items()]
