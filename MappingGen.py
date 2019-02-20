@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 #
 # License: BSD 2-clause
-# Last Change: Wed Feb 20, 2019 at 05:09 PM -0500
+# Last Change: Wed Feb 20, 2019 at 05:19 PM -0500
 
 import re
 
@@ -194,7 +194,7 @@ dcb_descr = DcbReader.read(NetHopper)
 comet_result = filter_comp(comet_descr, '^J4_1$|^J6_1$|^J1$|^IC3_1$')
 comet_db_result = filter_comp(comet_db_descr, '^J4|^J6')
 path_finder_result = filter_comp(path_finder_descr, '^JD10$|^COMET')
-dcb_result = filter_comp(dcb_descr)
+dcb_result = filter_comp(dcb_descr, '^J3$|^U*IC2$')
 
 # COMET ########################################################################
 
@@ -302,8 +302,6 @@ path_finder_comet_to_jd10 = {
 ##############################################################
 # Generate a component-netname dict to figure out elink info #
 ##############################################################
-
-path_finder_elink_info = make_comp_netname_dict(path_finder_descr)
 
 
 ####################
