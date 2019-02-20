@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 #
 # License: BSD 2-clause
-# Last Change: Wed Feb 20, 2019 at 03:48 AM -0500
+# Last Change: Wed Feb 20, 2019 at 03:37 PM -0500
 
 import re
 
@@ -272,12 +272,28 @@ comet_j4_j6_to_fpga = {**comet_j4_to_fpga, **comet_j6_to_fpga}
 comet_db_j4_bto_j6 = make_comp_comp_dict_bidirectional(comet_db_result)
 
 
-########################################
-# Find COMET to Pathfinder connections #
-########################################
+#################################################################
+# Find Pathfinder connections between COMET connectors and JD10 #
+#################################################################
 
 path_finder_comet_a_j1_to_jd10 = make_comp_comp_dict(path_finder_result,
                                                      'COMET_A_J1', 'JD10')
+path_finder_comet_a_j2_to_jd10 = make_comp_comp_dict(path_finder_result,
+                                                     'COMET_A_J2', 'JD10')
+path_finder_comet_b_j1_to_jd10 = make_comp_comp_dict(path_finder_result,
+                                                     'COMET_B_J1', 'JD10')
+path_finder_comet_b_j2_to_jd10 = make_comp_comp_dict(path_finder_result,
+                                                     'COMET_B_J2', 'JD10')
+
+path_finder_comet_to_jd10 = {
+    **path_finder_comet_a_j1_to_jd10, **path_finder_comet_a_j2_to_jd10,
+    **path_finder_comet_b_j1_to_jd10, **path_finder_comet_b_j2_to_jd10
+}
+
+
+############################################
+# Find Pathfinder to DCB GBTxs connections #
+############################################
 
 
 ####################
