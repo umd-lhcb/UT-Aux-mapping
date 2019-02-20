@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 #
 # License: BSD 2-clause
-# Last Change: Wed Feb 20, 2019 at 03:37 PM -0500
+# Last Change: Wed Feb 20, 2019 at 03:49 PM -0500
 
 import re
 
@@ -20,7 +20,6 @@ output_dir = Path('output')
 comet_netlist = input_dir / Path('comet.net')
 comet_db_netlist = input_dir / Path('comet_db.net')
 path_finder_netlist = input_dir / Path('path_finder.net')
-dcb_netlist = input_dir / Path('dcb.net')
 
 debug_comet_mapping_filename = output_dir / Path('DebugCometMapping.csv')
 
@@ -175,14 +174,10 @@ PcadReader.make_equivalent_nets_identical(
 PcadReader.make_equivalent_nets_identical(
     comet_db_descr, CometDBHopper.do(comet_db_descr))
 
-# Default net hopping should work for Pathfinder and DCB.
+# Default net hopping should work for Pathfinder.
 NetHopper = CurrentFlow()
-
 PathFinderReader = PcadReader(path_finder_netlist)
-DcbReader = PcadReader(dcb_netlist)
-
 path_finder_descr = PathFinderReader.read(NetHopper)
-dcb_descr = DcbReader.read(NetHopper)
 
 
 #############
@@ -192,7 +187,6 @@ dcb_descr = DcbReader.read(NetHopper)
 comet_result = filter_comp(comet_descr, '^J4_1$|^J6_1$|^J1$|^IC3_1$')
 comet_db_result = filter_comp(comet_db_descr, '^J4|^J6')
 path_finder_result = filter_comp(path_finder_descr, '^JD10$|^COMET')
-dcb_result = filter_comp(dcb_descr)
 
 # COMET ########################################################################
 
