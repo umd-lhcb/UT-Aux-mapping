@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 #
 # License: BSD 2-clause
-# Last Change: Wed Feb 20, 2019 at 03:49 PM -0500
+# Last Change: Wed Feb 20, 2019 at 04:15 PM -0500
 
 import re
 
@@ -240,7 +240,7 @@ comet_j1_to_j6 = make_comp_comp_dict(comet_result, 'J1', 'J6_1')
 comet_j4_to_fpga = make_comp_comp_dict(comet_result, 'J4_1', 'IC3_1')
 comet_j6_to_fpga = make_comp_comp_dict(comet_result, 'J6_1', 'IC3_1')
 
-# Add 6 pairs of special differential connections back
+# Add 6 pairs of special differential connections back.
 comet_j6_to_fpga[('J6', '11')] = ('IC3', '112')
 comet_j6_to_fpga[('J6', '17')] = ('IC3', '113')
 comet_j6_to_fpga[('J6', '13')] = ('IC3', '114')
@@ -254,7 +254,7 @@ comet_j6_to_fpga[('J6', '76')] = ('IC3', '163')
 comet_j6_to_fpga[('J6', '80')] = ('IC3', '164')
 comet_j6_to_fpga[('J6', '82')] = ('IC3', '165')
 
-# Combine dictionaries to make queries easier
+# Combine dictionaries to make queries easier.
 comet_j1_to_j4_j6 = {**comet_j1_to_j4, **comet_j1_to_j6}
 comet_j4_j6_to_fpga = {**comet_j4_to_fpga, **comet_j6_to_fpga}
 
@@ -279,22 +279,23 @@ path_finder_comet_b_j1_to_jd10 = make_comp_comp_dict(path_finder_result,
 path_finder_comet_b_j2_to_jd10 = make_comp_comp_dict(path_finder_result,
                                                      'COMET_B_J2', 'JD10')
 
+# Again, combine into a single dictionary.
 path_finder_comet_to_jd10 = {
     **path_finder_comet_a_j1_to_jd10, **path_finder_comet_a_j2_to_jd10,
     **path_finder_comet_b_j1_to_jd10, **path_finder_comet_b_j2_to_jd10
 }
 
 
-############################################
-# Find Pathfinder to DCB GBTxs connections #
-############################################
+##############################################################
+# Generate a component-netname dict to figure out elink info #
+##############################################################
+
+path_finder_elink_info = make_comp_netname_dict(path_finder_descr)
 
 
 ####################
 # Make connections #
 ####################
-
-connections = defaultdict(list)
 
 # COMET -> COMET DB -> COMET ###################################################
 
@@ -316,7 +317,7 @@ for j1_pin, comet_pin in comet_j1_to_j4_j6.items():
 # Output to csv #
 #################
 
-# Debug ########################################################################
+# Debug: COMET #################################################################
 
 comet_j1_fpga_data = [('-'.join(key), '-'.join(value))
                       for key, value in comet_j1_to_fpga.items()]
