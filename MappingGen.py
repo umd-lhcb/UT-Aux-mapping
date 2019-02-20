@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 #
 # License: BSD 2-clause
-# Last Change: Wed Feb 20, 2019 at 05:30 PM -0500
+# Last Change: Wed Feb 20, 2019 at 06:13 PM -0500
 
 import re
 
@@ -307,10 +307,15 @@ path_finder_comet_to_jd10 = {
 # Find Pathfinder JD10 to DCB GBTxs connections #
 #################################################
 
+dcb_j3_to_u_data_raw = [
+    make_comp_comp_dict(dcb_result, 'U{}_IC2'.format(str(i)), 'J3')
+    for i in range(1, 7)]
 
-##############################################################
+# Combine into a single dictionary.
+dcb_j3_to_u_data = {k: v for d in dcb_j3_to_u_data_raw for k, v in d.items()}
+
 # Generate a component-netname dict to figure out elink info #
-##############################################################
+dcb_ref = make_comp_netname_dict(dcb_descr)
 
 
 ####################
