@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 #
 # License: BSD 2-clause
-# Last Change: Wed Feb 20, 2019 at 05:19 PM -0500
+# Last Change: Wed Feb 20, 2019 at 05:21 PM -0500
 
 import re
 
@@ -194,7 +194,7 @@ dcb_descr = DcbReader.read(NetHopper)
 comet_result = filter_comp(comet_descr, '^J4_1$|^J6_1$|^J1$|^IC3_1$')
 comet_db_result = filter_comp(comet_db_descr, '^J4|^J6')
 path_finder_result = filter_comp(path_finder_descr, '^JD10$|^COMET')
-dcb_result = filter_comp(dcb_descr, '^J3$|^U*IC2$')
+dcb_result = filter_comp(dcb_descr, '^J3$|^U[123456]_IC2$')
 
 # COMET ########################################################################
 
