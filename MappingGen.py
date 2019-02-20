@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 #
 # License: BSD 2-clause
-# Last Change: Tue Feb 19, 2019 at 11:55 PM -0500
+# Last Change: Wed Feb 20, 2019 at 03:36 AM -0500
 
 import re
 
@@ -191,7 +191,7 @@ dcb_descr = DcbReader.read(NetHopper)
 
 comet_result = filter_comp(comet_descr, '^J4_1$|^J6_1$|^J1$|^IC3_1$')
 comet_db_result = filter_comp(comet_db_descr, '^J4|^J6')
-path_finder_result = filter_comp(path_finder_descr)
+path_finder_result = filter_comp(path_finder_descr, '^JD10$|^COMET')
 dcb_result = filter_comp(dcb_descr)
 
 # COMET ########################################################################
@@ -260,6 +260,14 @@ comet_j4_j6_to_fpga = {**comet_j4_to_fpga, **comet_j6_to_fpga}
 ###############################################
 
 comet_db_j4_bto_j6 = make_comp_comp_dict_bidirectional(comet_db_result)
+
+
+########################################
+# Find COMET to Pathfinder connections #
+########################################
+
+pathfinder_comet_a_j1_to_jd10 = make_comp_comp_dict(path_finder_result,
+                                                    'COMET_A_J1', 'JD10')
 
 
 ####################
