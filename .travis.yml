@@ -16,8 +16,8 @@ deploy:
     provider: releases
     api_key:
         secure: uAXOfy67S+0UpXvaEFvSyJl07Ms+tJQBlmZDb4JTr6HFIk9Oo028iT16llZ0SXBXcv2de/RkIjNjlcRW8yY8FGeXiE5CeQhXl6yqZ5rmehuKUoe7YKhmN/QZ3ZBmp/YEhflJKf+s3Sj5jEW/P11epVw0V+9yOOIhJAA7e0ldCbgoRFC9+XM98trOzH2PpvnvpyJVf76Iud1wne5ze1KViUae/Ja6r1clg/8kGIf2OSDYMatP6Wl6glGv4Gmepy1PqhmvuhAfMahZ5j1O3I1CdrGuRP6pyu/TOGLrlgtAXijMLeGjJjPyb2+kXQRKSz3LGpxiAorpBItPK7Qjbt/quiBupma3AXSP4YMJZt7S4vfpf8sCVb9buQbl3Uqo0xgmaa46DyAJWXn16YOFzY8exnSVeR/nvdubmjxXqn6qA+XXrrFOvhv1CbwtfLg9tHWRg3OBGpf12jUKZ8D66awZpXJmMCaIy9t3eCe3ECIAWdz+EAE9jQKLEHPqttECVnLWGcyHG2kaqyEI9oe07dcm20KiZpAUXEhGC3x4kzZLTUpauIsyviuHHs3rKEBU9jRYSyrZoZG0qMhRLsiQNK/qdZTQXkiHTnUh7XAlot4IQ1nb30GG7ne5GBcAOiLsYdMbpbSzUu+pJPWx1D/ce4ubQ43hOnn/T/rG6ZDwO4rATmU=
-        file:
-            - ./output/DebugCometMapping.csv
-        skip_cleanup: true
-        on:
-            tags: true
+    file:
+        - ./output/DebugCometMapping.csv
+    skip_cleanup: true
+    on:
+        tags: true
