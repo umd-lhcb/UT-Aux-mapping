@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 #
 # License: BSD 2-clause
-# Last Change: Tue Feb 19, 2019 at 11:53 PM -0500
+# Last Change: Tue Feb 19, 2019 at 11:55 PM -0500
 
 import re
 
@@ -292,5 +292,6 @@ for j1_pin, comet_pin in comet_j1_to_j4_j6.items():
 
 comet_j1_fpga_data = [('-'.join(key), '-'.join(value))
                       for key, value in comet_j1_to_fpga.items()]
+comet_j1_fpga_data.sort(key=lambda x: int(x[0].split('-')[1]))
 
 write_mapping_to_csv(debug_comet_mapping_filename, comet_j1_fpga_data)
