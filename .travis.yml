@@ -19,6 +19,8 @@ deploy:
     file:
         - ./output/DebugCometMapping.csv
         - ./output/DebugDcbPathFinderMapping.csv
+        - ./output/CometDcbFullMapping.csv
+        - ./output/CometDcbShortMapping.csv
     skip_cleanup: true
     on:
         tags: true
