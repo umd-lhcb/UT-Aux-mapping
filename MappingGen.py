@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 #
 # License: BSD 2-clause
-# Last Change: Wed Feb 20, 2019 at 08:19 PM -0500
+# Last Change: Wed Feb 20, 2019 at 09:01 PM -0500
 
 import re
 
@@ -197,8 +197,6 @@ dcb_descr = DcbReader.read(NetHopper)
 #############
 
 comet_j1_result = filter_comp(comet_descr, r'^J4_1$|^J6_1$|^J1$|^IC3_1$')
-comet_j2_result = filter_comp(comet_descr, r'^J4_2$|^J6_2$|^J2$|^IC3_2$')
-
 comet_db_result = filter_comp(comet_db_descr, r'^J4|^J6')
 
 path_finder_result = filter_comp(path_finder_descr, r'^JD10$|^COMET')
@@ -261,10 +259,10 @@ dcb_result = list(filter(filter_dcb_throw_gnd, dcb_result))
 # Find COMET J1 to COMET J4 and J6 #
 ####################################
 
-comet_j1_to_j4 = make_comp_comp_dict(comet_result, 'J1', 'J4_1')
-comet_j1_to_j6 = make_comp_comp_dict(comet_result, 'J1', 'J6_1')
-comet_j4_to_fpga = make_comp_comp_dict(comet_result, 'J4_1', 'IC3_1')
-comet_j6_to_fpga = make_comp_comp_dict(comet_result, 'J6_1', 'IC3_1')
+comet_j1_to_j4 = make_comp_comp_dict(comet_j1_result, 'J1', 'J4_1')
+comet_j1_to_j6 = make_comp_comp_dict(comet_j1_result, 'J1', 'J6_1')
+comet_j4_to_fpga = make_comp_comp_dict(comet_j1_result, 'J4_1', 'IC3_1')
+comet_j6_to_fpga = make_comp_comp_dict(comet_j1_result, 'J6_1', 'IC3_1')
 
 # Add 6 pairs of special differential connections back.
 comet_j6_to_fpga[('J6', '11')] = ('IC3', '112')
@@ -283,6 +281,15 @@ comet_j6_to_fpga[('J6', '82')] = ('IC3', '165')
 # Combine dictionaries to make queries easier.
 comet_j1_to_j4_j6 = {**comet_j1_to_j4, **comet_j1_to_j6}
 comet_j4_j6_to_fpga = {**comet_j4_to_fpga, **comet_j6_to_fpga}
+
+####################################
+# Find COMET J2 to COMET J4 and J6 #
+####################################
+
+# Since COMET J2 and J1 pins have the following relation:
+#   (J2, pin x) <-> (J1, pin x+2), we can derive mapping directly from J1.
+comet_j2_to_j4_j6 = {('J2', str(int(k[1]) - 2)): v
+                     for k, v in comet_j1_to_j4_j6}
 
 
 ###############################################
@@ -325,7 +332,7 @@ dcb_ref = make_comp_netname_dict(dcb_descr)
 # Make connections #
 ####################
 
-# COMET -> COMET DB -> COMET ###################################################
+# COMET J1 -> COMET DB -> COMET ################################################
 
 comet_j1_to_fpga = {}
 
