@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 #
 # License: BSD 2-clause
-# Last Change: Wed Feb 20, 2019 at 06:51 PM -0500
+# Last Change: Wed Feb 20, 2019 at 07:08 PM -0500
 
 import re
 
@@ -23,8 +23,8 @@ path_finder_netlist = input_dir / Path('path_finder.net')
 dcb_netlist = input_dir / Path('dcb.net')
 
 debug_comet_mapping_filename = output_dir / Path('DebugCometMapping.csv')
-debug_path_finder_mapping_filename = output_dir / Path(
-    'DebugPathFinderMapping.csv')
+debug_dcb_path_finder_mapping_filename = output_dir / Path(
+    'DebugDcbPathFinderMapping.csv')
 
 
 ###########
@@ -61,20 +61,25 @@ def split_rn(descr, regexp=r'^RN\d+_\d$'):
 
 # Filtering ####################################################################
 
-def filter_comp(descr, regexp=r'^J\d+|^IC3_1+'):
+def filter_comp(descr, regexp=r'^J\d+|^IC3_1+', netname=None):
     filtered = []
 
     for net, comps in descr.items():
-        processed_comps = [x for x in comps if bool(re.match(regexp, x[0]))]
+        if netname is not None and netname not in net:
+            # We also optionally filter by netname.
+            pass
 
-        # Can't figure out any relationship if a list contains only a single
-        # item.
-        # We also do deduplication here.
-        # Also make sure there's at least a connector component.
-        if len(processed_comps) > 1 and processed_comps not in filtered \
-                and True in map(lambda x: x[0].startswith('J'),
-                                processed_comps):
-            filtered.append(processed_comps)
+        else:
+            processed_comps = [x for x in comps if bool(re.match(regexp, x[0]))]
+
+            # Can't figure out any relationship if a list contains only a single
+            # item.
+            # We also do deduplication here.
+            # Also make sure there's at least a connector component.
+            if len(processed_comps) > 1 and processed_comps not in filtered \
+                    and True in map(lambda x: x[0].startswith('J'),
+                                    processed_comps):
+                filtered.append(processed_comps)
 
     return filtered
 
@@ -194,7 +199,7 @@ dcb_descr = DcbReader.read(NetHopper)
 comet_result = filter_comp(comet_descr, r'^J4_1$|^J6_1$|^J1$|^IC3_1$')
 comet_db_result = filter_comp(comet_db_descr, r'^J4|^J6')
 path_finder_result = filter_comp(path_finder_descr, r'^JD10$|^COMET')
-dcb_result = filter_comp(dcb_descr, r'^J3$|^U[123456]_IC2$')
+dcb_result = filter_comp(dcb_descr, r'^J3$|^U[123456]_IC2$', '_ELK_')
 
 # COMET ########################################################################
 
@@ -347,17 +352,23 @@ for gbtx_pin, j3_pin in dcb_u_data_to_j3.items():
 # Output to csv #
 #################
 
-# Debug: COMET #################################################################
+# Debug: COMET -> COMET DB -> COMET ############################################
 
-comet_j1_fpga_data = [['-'.join(key), '-'.join(value)]
-                      for key, value in comet_j1_to_fpga.items()]
+comet_j1_fpga_data = [('-'.join(k), '-'.join(v))
+                      for k, v in comet_j1_to_fpga.items()]
 comet_j1_fpga_data.sort(key=lambda x: int(x[0].split('-')[1]))
 
 write_mapping_to_csv(debug_comet_mapping_filename, comet_j1_fpga_data)
 
 
-# Debug: Pathfinder ############################################################
+# Debug: DCB -> Pathfinder #####################################################
 
-# path_finder_comet_j10_data = [
-    # ['-'.join(key), '-'.join(value), path_finder_elink_info[value]]
-    # for key, value in path_finder_comet_to_jd10.items()]
+dcb_gbtxs_path_finder_comet_data = [
+    (dcb_ref[k], '-'.join(k), '-'.join(v))
+    for k, v in dcb_gbtxs_to_path_finder_comet.items()]
+dcb_gbtxs_path_finder_comet_data.sort(key=lambda x: x[0])
+
+write_mapping_to_csv(
+    debug_dcb_path_finder_mapping_filename, dcb_gbtxs_path_finder_comet_data,
+    header=['Signal ID', 'DCB data GBTx pin', 'Pathfinder COMET connector']
+)
