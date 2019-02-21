@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 #
 # License: BSD 2-clause
-# Last Change: Wed Feb 20, 2019 at 09:08 PM -0500
+# Last Change: Wed Feb 20, 2019 at 09:20 PM -0500
 
 import re
 
@@ -336,11 +336,11 @@ dcb_ref = make_comp_netname_dict(dcb_descr)
 # Make connections #
 ####################
 
-# COMET J1 -> COMET DB -> COMET ################################################
+# COMET -> COMET DB -> COMET ################################################
 
-comet_j1_to_fpga = {}
+comet_j1_j2_to_fpga = {}
 
-for j1_pin, comet_pin in comet_j1_to_j4_j6.items():
+for j1_pin, comet_pin in comet_j1_j2_to_j4_j6.items():
     # NOTE: It seems that no pin conversion required for J4 COMET and COMET DB,
     # but for J6, x on COMET is x+1 on COMET DB.
     if comet_pin[0] == 'J4':
@@ -349,7 +349,7 @@ for j1_pin, comet_pin in comet_j1_to_j4_j6.items():
         comet_db_pin = comet_db_j4_bto_j6[('J6', str(int(comet_pin[1])+1))]
         comet_db_pin = ('J6', str(int(comet_db_pin[1])+1))
 
-    comet_j1_to_fpga[j1_pin] = comet_j4_j6_to_fpga[comet_db_pin]
+    comet_j1_j2_to_fpga[j1_pin] = comet_j4_j6_to_fpga[comet_db_pin]
 
 
 # DCB -> Pathfinder ############################################################
@@ -393,11 +393,12 @@ for gbtx_pin, j3_pin in dcb_u_data_to_j3.items():
 
 # Debug: COMET -> COMET DB -> COMET ############################################
 
-comet_j1_fpga_data = [('-'.join(k), '-'.join(v))
-                      for k, v in comet_j1_to_fpga.items()]
-comet_j1_fpga_data.sort(key=lambda x: int(x[0].split('-')[1]))
+comet_j1_j2_fpga_data = [('-'.join(k), '-'.join(v))
+                         for k, v in comet_j1_j2_to_fpga.items()]
+comet_j1_j2_fpga_data.sort(
+    key=lambda x: re.sub(r'-(\d)$', r'-0\g<1>', x[0]))
 
-write_mapping_to_csv(debug_comet_mapping_filename, comet_j1_fpga_data)
+write_mapping_to_csv(debug_comet_mapping_filename, comet_j1_j2_fpga_data)
 
 
 # Debug: DCB -> Pathfinder #####################################################
