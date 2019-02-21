@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 #
 # License: BSD 2-clause
-# Last Change: Wed Feb 20, 2019 at 09:01 PM -0500
+# Last Change: Wed Feb 20, 2019 at 09:08 PM -0500
 
 import re
 
@@ -203,7 +203,7 @@ path_finder_result = filter_comp(path_finder_descr, r'^JD10$|^COMET')
 
 dcb_result = filter_comp(dcb_descr, r'^J3$|^U[123456]_IC2$', '_ELK_')
 
-# COMET ########################################################################
+# COMET J1 #####################################################################
 
 # GND is not useful
 filter_comet_throw_gnd = post_filter_any(
@@ -287,9 +287,13 @@ comet_j4_j6_to_fpga = {**comet_j4_to_fpga, **comet_j6_to_fpga}
 ####################################
 
 # Since COMET J2 and J1 pins have the following relation:
-#   (J2, pin x) <-> (J1, pin x+2), we can derive mapping directly from J1.
+#   (J2, pin x) <-> (J1, pin x+2)
+# we can derive mapping directly from J1.
 comet_j2_to_j4_j6 = {('J2', str(int(k[1]) - 2)): v
-                     for k, v in comet_j1_to_j4_j6}
+                     for k, v in comet_j1_to_j4_j6.items()}
+
+# Now we combine COMET J1 and J2 dicts.
+comet_j1_j2_to_j4_j6 = {**comet_j1_to_j4_j6, **comet_j2_to_j4_j6}
 
 
 ###############################################
