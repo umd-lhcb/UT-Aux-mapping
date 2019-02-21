@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 #
 # License: BSD 2-clause
-# Last Change: Thu Feb 21, 2019 at 12:33 AM -0500
+# Last Change: Thu Feb 21, 2019 at 12:40 AM -0500
 
 import re
 
@@ -344,16 +344,16 @@ dcb_ref = make_comp_netname_dict(dcb_descr)
 comet_j1_j2_to_fpga = {}
 
 for j1_pin, comet_pin in comet_j1_j2_to_j4_j6.items():
-    # NOTE: It seems that no pin conversion required for J4 COMET and COMET DB,
-    # but for J6, x on COMET is x+1 on COMET DB.
     if comet_pin[0] == 'J4':
-        comet_db_pin = comet_db_j4_bto_j6[comet_pin]
+        # NOTE: No pin conversion needed for J4.
+        another_comet_pin = comet_db_j4_bto_j6[comet_pin]
     else:
+        # NOTE: For J6, x on COMET is x+1 on COMET DB.
         comet_db_pin = comet_db_j4_bto_j6[('J6', str(int(comet_pin[1])+1))]
         # FIXME: This seems to work, but I don't know why.
-        comet_db_pin = ('J6', str(int(comet_db_pin[1])+1))
+        another_comet_pin = ('J6', str(int(comet_db_pin[1])+1))
 
-    comet_j1_j2_to_fpga[j1_pin] = comet_j4_j6_to_fpga[comet_db_pin]
+    comet_j1_j2_to_fpga[j1_pin] = comet_j4_j6_to_fpga[another_comet_pin]
 
 
 # DCB -> Pathfinder ############################################################
