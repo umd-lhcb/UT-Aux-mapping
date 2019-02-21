@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 #
 # License: BSD 2-clause
-# Last Change: Wed Feb 20, 2019 at 09:51 PM -0500
+# Last Change: Thu Feb 21, 2019 at 12:33 AM -0500
 
 import re
 
@@ -350,6 +350,7 @@ for j1_pin, comet_pin in comet_j1_j2_to_j4_j6.items():
         comet_db_pin = comet_db_j4_bto_j6[comet_pin]
     else:
         comet_db_pin = comet_db_j4_bto_j6[('J6', str(int(comet_pin[1])+1))]
+        # FIXME: This seems to work, but I don't know why.
         comet_db_pin = ('J6', str(int(comet_db_pin[1])+1))
 
     comet_j1_j2_to_fpga[j1_pin] = comet_j4_j6_to_fpga[comet_db_pin]
