@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 #
 # License: BSD 2-clause
-# Last Change: Wed Feb 20, 2019 at 07:08 PM -0500
+# Last Change: Wed Feb 20, 2019 at 07:23 PM -0500
 
 import re
 
@@ -366,7 +366,9 @@ write_mapping_to_csv(debug_comet_mapping_filename, comet_j1_fpga_data)
 dcb_gbtxs_path_finder_comet_data = [
     (dcb_ref[k], '-'.join(k), '-'.join(v))
     for k, v in dcb_gbtxs_to_path_finder_comet.items()]
-dcb_gbtxs_path_finder_comet_data.sort(key=lambda x: x[0])
+# Make sure '1' appears before '10' and '11'
+dcb_gbtxs_path_finder_comet_data.sort(
+    key=lambda x: re.sub(r'CH(\d)_', r'CH0\g<1>_', x[0]))
 
 write_mapping_to_csv(
     debug_dcb_path_finder_mapping_filename, dcb_gbtxs_path_finder_comet_data,
