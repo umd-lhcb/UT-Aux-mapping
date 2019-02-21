@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 #
 # License: BSD 2-clause
-# Last Change: Wed Feb 20, 2019 at 09:20 PM -0500
+# Last Change: Wed Feb 20, 2019 at 09:36 PM -0500
 
 import re
 
@@ -365,26 +365,27 @@ for gbtx_pin, j3_pin in dcb_u_data_to_j3.items():
 
 # DCB -> Pathfinder -> COMET -> COMET DB -> COMET ##############################
 
-# Expand COMET J1 to cover COMET_{A,B}_J{1,2}. The resulting dict will be
-# quadruply degenerate.
-# comet_j1_quad_to_fpga = {(i, k[1]): v
-#                          for k, v in comet_j1_to_fpga.items()
-#                          for i in ['COMET_A_J1', 'COMET_A_J2',
-#                                    'COMET_B_J1', 'COMET_B_J2']}
-#
-# comet_dcb_data = []
-#
-# for gbtx_pin, path_finder_comet_pin in dcb_gbtxs_to_path_finder_comet.items():
-#     row = []
-#
-#     row.append(dcb_ref[gbtx_pin])
-#     row.append(path_finder_comet_pin[0]+'-'+'-'.join(gbtx_pin))
-#     row.append('-'.join(path_finder_comet_pin))
-#
-#     fpga_pin = comet_j1_quad_to_fpga[path_finder_comet_pin]
-#     row.append('-'.join(fpga_pin))
-#
-#     comet_dcb_data.append(row.reverse())
+# Expand COMET J1 J2 to cover COMET_{A,B}_J{1,2}. The resulting dict will be
+# doubly degenerate.
+comet_j1_duo_to_fpga = {(i+k[0], k[1]): v
+                        for k, v in comet_j1_j2_to_fpga.items()
+                        for i in ['COMET_A_', 'COMET_B_']}
+
+comet_dcb_data = []
+
+for gbtx_pin, path_finder_comet_pin in dcb_gbtxs_to_path_finder_comet.items():
+    row = []
+
+    row.append(dcb_ref[gbtx_pin])
+    row.append(path_finder_comet_pin[0]+'-'+'-'.join(gbtx_pin))
+    row.append('-'.join(path_finder_comet_pin))
+
+    fpga_pin = comet_j1_duo_to_fpga[path_finder_comet_pin]
+    row.append('-'.join(fpga_pin))
+
+    row.reverse()
+
+    comet_dcb_data.append(row)
 
 
 #################
