@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 #
 # License: BSD 2-clause
-# Last Change: Wed Feb 20, 2019 at 09:36 PM -0500
+# Last Change: Wed Feb 20, 2019 at 09:46 PM -0500
 
 import re
 
@@ -25,6 +25,9 @@ dcb_netlist = input_dir / Path('dcb.net')
 debug_comet_mapping_filename = output_dir / Path('DebugCometMapping.csv')
 debug_dcb_path_finder_mapping_filename = output_dir / Path(
     'DebugDcbPathFinderMapping.csv')
+
+comet_dcb_full_mapping_filename = output_dir / Path('CometDcbFullMapping.csv')
+comet_dcb_short_mapping_filename = output_dir / Path('CometDcbShortMapping.csv')
 
 
 ###########
@@ -367,9 +370,9 @@ for gbtx_pin, j3_pin in dcb_u_data_to_j3.items():
 
 # Expand COMET J1 J2 to cover COMET_{A,B}_J{1,2}. The resulting dict will be
 # doubly degenerate.
-comet_j1_duo_to_fpga = {(i+k[0], k[1]): v
-                        for k, v in comet_j1_j2_to_fpga.items()
-                        for i in ['COMET_A_', 'COMET_B_']}
+comet_j1_j2_duo_to_fpga = {(i+k[0], k[1]): v
+                           for k, v in comet_j1_j2_to_fpga.items()
+                           for i in ['COMET_A_', 'COMET_B_']}
 
 comet_dcb_data = []
 
@@ -377,11 +380,11 @@ for gbtx_pin, path_finder_comet_pin in dcb_gbtxs_to_path_finder_comet.items():
     row = []
 
     row.append(dcb_ref[gbtx_pin])
-    row.append(path_finder_comet_pin[0]+'-'+'-'.join(gbtx_pin))
+    row.append('-'.join(gbtx_pin))
     row.append('-'.join(path_finder_comet_pin))
 
-    fpga_pin = comet_j1_duo_to_fpga[path_finder_comet_pin]
-    row.append('-'.join(fpga_pin))
+    fpga_pin = comet_j1_j2_duo_to_fpga[path_finder_comet_pin]
+    row.append(path_finder_comet_pin[0]+'-'+'-'.join(fpga_pin))
 
     row.reverse()
 
@@ -414,4 +417,13 @@ dcb_gbtxs_path_finder_comet_data.sort(
 write_mapping_to_csv(
     debug_dcb_path_finder_mapping_filename, dcb_gbtxs_path_finder_comet_data,
     header=['Signal ID', 'DCB data GBTx pin', 'Pathfinder COMET connector']
+)
+
+
+# COMET FPGA -> DCB data GBTxs, full ###########################################
+
+write_mapping_to_csv(
+    comet_dcb_full_mapping_filename, comet_dcb_data,
+    header=['COMET FPGA pin', 'Pathfinder COMET connector', 'DCB data GBTx pin',
+            'Signal ID']
 )
