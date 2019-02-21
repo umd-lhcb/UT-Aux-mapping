@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 #
 # License: BSD 2-clause
-# Last Change: Wed Feb 20, 2019 at 07:23 PM -0500
+# Last Change: Wed Feb 20, 2019 at 08:19 PM -0500
 
 import re
 
@@ -196,9 +196,13 @@ dcb_descr = DcbReader.read(NetHopper)
 # Filtering #
 #############
 
-comet_result = filter_comp(comet_descr, r'^J4_1$|^J6_1$|^J1$|^IC3_1$')
+comet_j1_result = filter_comp(comet_descr, r'^J4_1$|^J6_1$|^J1$|^IC3_1$')
+comet_j2_result = filter_comp(comet_descr, r'^J4_2$|^J6_2$|^J2$|^IC3_2$')
+
 comet_db_result = filter_comp(comet_db_descr, r'^J4|^J6')
+
 path_finder_result = filter_comp(path_finder_descr, r'^JD10$|^COMET')
+
 dcb_result = filter_comp(dcb_descr, r'^J3$|^U[123456]_IC2$', '_ELK_')
 
 # COMET ########################################################################
@@ -206,7 +210,7 @@ dcb_result = filter_comp(dcb_descr, r'^J3$|^U[123456]_IC2$', '_ELK_')
 # GND is not useful
 filter_comet_throw_gnd = post_filter_any(
     lambda x: x[1] not in ['SHIELD1', 'SHIELD2'])
-comet_result = filter(filter_comet_throw_gnd, comet_result)
+comet_ji_result = filter(filter_comet_throw_gnd, comet_j1_result)
 
 # Remove the 6 pairs of special differential lines. We'll add them back later.
 filter_comet_throw_special_diff = post_filter_any(
@@ -216,7 +220,7 @@ filter_comet_throw_special_diff = post_filter_any(
                  '163', '164', '165']
     )
 )
-comet_result = list(filter(filter_comet_throw_special_diff, comet_result))
+comet_j1_result = list(filter(filter_comet_throw_special_diff, comet_ji_result))
 
 
 # COMET DB #####################################################################
@@ -346,6 +350,30 @@ for gbtx_pin, j3_pin in dcb_u_data_to_j3.items():
     path_finder_comet_pin = path_finder_jd10_to_comet[path_finder_jd10]
 
     dcb_gbtxs_to_path_finder_comet[gbtx_pin] = path_finder_comet_pin
+
+
+# DCB -> Pathfinder -> COMET -> COMET DB -> COMET ##############################
+
+# Expand COMET J1 to cover COMET_{A,B}_J{1,2}. The resulting dict will be
+# quadruply degenerate.
+# comet_j1_quad_to_fpga = {(i, k[1]): v
+#                          for k, v in comet_j1_to_fpga.items()
+#                          for i in ['COMET_A_J1', 'COMET_A_J2',
+#                                    'COMET_B_J1', 'COMET_B_J2']}
+#
+# comet_dcb_data = []
+#
+# for gbtx_pin, path_finder_comet_pin in dcb_gbtxs_to_path_finder_comet.items():
+#     row = []
+#
+#     row.append(dcb_ref[gbtx_pin])
+#     row.append(path_finder_comet_pin[0]+'-'+'-'.join(gbtx_pin))
+#     row.append('-'.join(path_finder_comet_pin))
+#
+#     fpga_pin = comet_j1_quad_to_fpga[path_finder_comet_pin]
+#     row.append('-'.join(fpga_pin))
+#
+#     comet_dcb_data.append(row.reverse())
 
 
 #################
