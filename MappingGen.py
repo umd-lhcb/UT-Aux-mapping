@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 #
 # License: BSD 2-clause
-# Last Change: Thu Feb 21, 2019 at 12:40 AM -0500
+# Last Change: Thu Feb 21, 2019 at 01:09 AM -0500
 
 import re
 
@@ -423,6 +423,9 @@ write_mapping_to_csv(
 
 # COMET FPGA -> DCB data GBTxs, full ###########################################
 
+comet_dcb_data.sort(
+    key=lambda x: re.sub(r'CH(\d)_', r'CH0\g<1>_', x[-1]))
+
 write_mapping_to_csv(
     comet_dcb_full_mapping_filename, comet_dcb_data,
     header=['COMET FPGA pin', 'Pathfinder COMET connector', 'DCB data GBTx pin',
@@ -433,8 +436,6 @@ write_mapping_to_csv(
 # COMET FPGA -> DCB data GBTxs, short ##########################################
 
 comet_dcb_data_short = list(map(lambda x: (x[0], x[-1]), comet_dcb_data))
-comet_dcb_data_short.sort(
-    key=lambda x: re.sub(r'CH(\d)_', r'CH0\g<1>_', x[1]))
 
 write_mapping_to_csv(
     comet_dcb_short_mapping_filename, comet_dcb_data_short,
