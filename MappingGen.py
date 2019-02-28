@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 #
 # License: BSD 2-clause
-# Last Change: Thu Feb 21, 2019 at 01:31 AM -0500
+# Last Change: Thu Feb 28, 2019 at 04:12 PM -0500
 
 import re
 
@@ -348,9 +348,9 @@ for j1_pin, comet_pin in comet_j1_j2_to_j4_j6.items():
         # NOTE: No pin conversion needed for J4.
         another_comet_pin = comet_db_j4_bto_j6[comet_pin]
     else:
-        # NOTE: Right COMET JD6, pin x <-> Right COMET DB JD6, pin x+1
+        # NOTE: Odd COMET J6, pin x <-> COMET DB J6, pin x+1
         comet_db_pin = comet_db_j4_bto_j6[('J6', str(int(comet_pin[1])+1))]
-        # NOTE: Left COMET JD6, pin x+1 <-> Left COMET DB JD6, pin x
+        # NOTE: Even COMET J6, pin x+1 <-> COMET DB J6, pin x
         another_comet_pin = ('J6', str(int(comet_db_pin[1])+1))
 
     comet_j1_j2_to_fpga[j1_pin] = comet_j4_j6_to_fpga[another_comet_pin]
