@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 #
 # License: BSD 2-clause
-# Last Change: Thu Feb 28, 2019 at 04:12 PM -0500
+# Last Change: Fri Mar 01, 2019 at 02:37 PM -0500
 
 import re
 
@@ -12,6 +12,7 @@ import sys
 sys.path.insert(0, './pyUTM')
 
 from pyUTM.io import PcadReader, PcadNaiveReader
+from pyUTM.io import write_to_csv
 from pyUTM.sim import CurrentFlow
 
 input_dir = Path('input')
@@ -148,17 +149,6 @@ def make_comp_comp_dict_bidirectional(nested):
         result[key2] = key1
 
     return result
-
-
-# Output #######################################################################
-
-def write_mapping_to_csv(filename, data,
-                         header=['COMET connector', 'COMET FPGA'],
-                         mode='w', eol='\n'):
-    with open(filename, mode) as f:
-        f.write(','.join(header) + eol)
-        for row in data:
-            f.write(','.join(row) + eol)
 
 
 #####################
@@ -403,7 +393,8 @@ comet_j1_j2_fpga_data = [('-'.join(k), '-'.join(v))
 comet_j1_j2_fpga_data.sort(
     key=lambda x: re.sub(r'-(\d)$', r'-0\g<1>', x[0]))
 
-write_mapping_to_csv(debug_comet_mapping_filename, comet_j1_j2_fpga_data)
+write_to_csv(debug_comet_mapping_filename, comet_j1_j2_fpga_data,
+             ['COMET connector', 'COMET FPGA'])
 
 
 # Debug: DCB -> Pathfinder #####################################################
@@ -415,9 +406,9 @@ dcb_gbtxs_path_finder_comet_data = [
 dcb_gbtxs_path_finder_comet_data.sort(
     key=lambda x: re.sub(r'CH(\d)_', r'CH0\g<1>_', x[0]))
 
-write_mapping_to_csv(
+write_to_csv(
     debug_dcb_path_finder_mapping_filename, dcb_gbtxs_path_finder_comet_data,
-    header=['Signal ID', 'DCB data GBTx pin', 'Pathfinder COMET connector']
+    ['Signal ID', 'DCB data GBTx pin', 'Pathfinder COMET connector']
 )
 
 
@@ -426,10 +417,10 @@ write_mapping_to_csv(
 comet_dcb_data.sort(
     key=lambda x: re.sub(r'CH(\d)_', r'CH0\g<1>_', x[-1]))
 
-write_mapping_to_csv(
+write_to_csv(
     comet_dcb_full_mapping_filename, comet_dcb_data,
-    header=['COMET FPGA pin', 'Pathfinder COMET connector', 'DCB data GBTx pin',
-            'Signal ID']
+    ['COMET FPGA pin', 'Pathfinder COMET connector', 'DCB data GBTx pin',
+     'Signal ID']
 )
 
 
@@ -437,7 +428,7 @@ write_mapping_to_csv(
 
 comet_dcb_data_short = list(map(lambda x: (x[0], x[-1]), comet_dcb_data))
 
-write_mapping_to_csv(
+write_to_csv(
     comet_dcb_short_mapping_filename, comet_dcb_data_short,
-    header=['COMET FPGA pin', 'Signal ID']
+    ['COMET FPGA pin', 'Signal ID']
 )
