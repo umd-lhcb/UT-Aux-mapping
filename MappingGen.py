@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 #
 # License: BSD 2-clause
-# Last Change: Fri Mar 01, 2019 at 02:37 PM -0500
+# Last Change: Mon Mar 04, 2019 at 02:51 PM -0500
 
 import re
 
@@ -334,14 +334,14 @@ dcb_ref = make_comp_netname_dict(dcb_descr)
 comet_j1_j2_to_fpga = {}
 
 for j1_pin, comet_pin in comet_j1_j2_to_j4_j6.items():
-    if comet_pin[0] == 'J4':
-        # NOTE: No pin conversion needed for J4.
-        another_comet_pin = comet_db_j4_bto_j6[comet_pin]
-    else:
-        # NOTE: Odd COMET J6, pin x <-> COMET DB J6, pin x+1
-        comet_db_pin = comet_db_j4_bto_j6[('J6', str(int(comet_pin[1])+1))]
-        # NOTE: Even COMET J6, pin x+1 <-> COMET DB J6, pin x
-        another_comet_pin = ('J6', str(int(comet_db_pin[1])+1))
+    orig_comet_connector = comet_pin[0]
+
+    # NOTE: Odd COMET pin x <-> COMET DB pin x+1
+    comet_db_pin = comet_db_j4_bto_j6[
+        (orig_comet_connector, str(int(comet_pin[1])+1))]
+    # NOTE: Even COMET pin x+1 <-> COMET DB pin x
+    another_comet_pin = (
+        orig_comet_connector, str(int(comet_db_pin[1])+1))
 
     comet_j1_j2_to_fpga[j1_pin] = comet_j4_j6_to_fpga[another_comet_pin]
 
