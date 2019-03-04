@@ -3,7 +3,12 @@ Python script to generate COMET FPGA to DCB pin-by-pin mapping.
 
 
 ## Prerequisite
-Install the dependencies:
+Update the submodule:
+```
+git submodule update --init
+```
+
+Then install the dependencies:
 ```
 pip install -r pyUTM/requirements.txt
 ```
