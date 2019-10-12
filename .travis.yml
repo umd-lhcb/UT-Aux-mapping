@@ -7,7 +7,7 @@ install:
     - pip install -r ./pyUTM/requirements.txt
 
 script:
-    - ./MappingGen.py
+    - ./CometDcbMapping.py
 
 
 deploy:
