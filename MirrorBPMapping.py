@@ -156,85 +156,120 @@ def make_comp_comp_dict_bidirectional(nested):
 # Read all netlists #
 #####################
 
-# NOTE: Net hopping won't work for COMET, nor COMET DB, because of the special
-# resistors RNXX that have 8 legs, instead of 2.
-#CometHopper = CurrentFlow([r'^R\d+', r'^NT\d+', r'^RN\d+_\d[ABCD]', r'^C\d+'])
-#CometDBHopper = CurrentFlow([r'^R\d+', r'^NT\d+', r'^RN\d+[ABCD]'])
-
-#CometReader = PcadNaiveReader(comet_netlist)
-#CometDBReader = PcadNaiveReader(comet_db_netlist)
-
-#comet_descr = split_rn(CometReader.read())
-#comet_db_descr = split_rn(
-#  CometDBReader.read(),
-#  regexp=r'^RN((?!5$|6$|9$|12$|15$|18$|21$|24$|27$|39$|30$|33$|36$)\d+)$'
-#)
-
-# Manually do net hopping for COMET and COMET DB.
-#PcadReader.make_equivalent_nets_identical(
-#  comet_descr, CometHopper.do(comet_descr))
-#PcadReader.make_equivalent_nets_identical(
-#  comet_db_descr, CometDBHopper.do(comet_db_descr))
-
-# Default net hopping should work for Pathfinder and DCB.
+# Default net hopping should work for Custom BB.
 NetHopper = CurrentFlow()
 
-#PathFinderReader = PcadReader(path_finder_netlist)
-#DcbReader = PcadReader(dcb_netlist)
-
-#path_finder_descr = PathFinderReader.read(NetHopper)
-#dcb_descr = DcbReader.read(NetHopper)
-
-
-MirrorBPReader = PcadNaiveReader(mirror_bp_netlist)
-MirrorCustomBBReader = PcadNaiveReader(mirror_custom_bb_netlist)
-
-mirror_bp_descr = MirrorBPReader.read(NetHopper)
+MirrorCustomBBReader = PcadReader(mirror_custom_bb_netlist)
 mirror_custom_bb_descr = MirrorCustomBBReader.read(NetHopper)
 
 
+MirrorBPReader = PcadNaiveReader(mirror_bp_netlist)
+mirror_bp_descr = MirrorBPReader.read()
+
+
 # Will have to do this because using NetHopper errors
+
 #MirrorBPHopper = CurrentFlow([PLACE COMPONENTS TO TREAT AS COPPER HERE])
-#MirrorCustomBBHopper = CurrentFlow([PLACE COMPONENTS TO TREAT AS COPPER HERE])
+#MirrorBPHopper = CurrentFlow(
+#  [r'^R\d+', r'^RB_\d+', r'^RBSP_\d+', r'^RSP_\d+', r'^RT\d+',
+#   r'^C\d+', r'^CxRB_\d+', r'^NT\d+'])
+
+MirrorBPHopper = CurrentFlow(
+  [r'^R\d', r'^RB_\d', r'^RBSP_\d', r'^RSP_\d', r'^RT\d',
+   r'^C\d', r'^CxRB_\d', r'^NT\d'])
 
 
-#PcadReader.make_equivalent_nets_identical(
-#    mirror_bp_descr, MirrorBPHopper.do(mirror_bp_descr))
-#PcadReader.make_equivalent_nets_identical(
-#    mirror_custom_bb_descr, MirrorCustomBBHopper.do(mirror_custom_bb_descr))
+PcadReader.make_equivalent_nets_identical(
+    mirror_bp_descr, MirrorBPHopper.do(mirror_bp_descr))
 
-
-
-#mirror_bp_result = filter_comp(mirror_bp_descr, r'$^JDU[0123456789]|^JP')
-#mirror_bp_result = filter_comp(mirror_bp_descr, r'$^JD\d|^JP\d')
-#mirror_custom_bb_result = filter_comp(mirror_custom_bb_descr, r'$^JD\d|^JP\d')
 
 
 #############
 # Filtering #
 #############
 
-
-####################
-# Make connections #
-####################
+mirror_custom_bb_result = filter_comp(
+  mirror_custom_bb_descr, r'^J_PT_\d+|^J_1V5_\d+|^J_2V5_\d+|^JT0$|^JT1$|^JT2$')
 
 
-#comet_dcb_data = []
+#mirror_bp_result = filter_comp(
+#  mirror_bp_descr, r'^JP\d|^JS_PT_NINE_TEN_\d|^JS_PT_TEN_ELEVEN_\d|^JS_PT_EIGHT_NINE_\d'
+#                   r'|^JS_PT_SIX_SEVEN_\d|^JS_PT_FIVE_SIX_\d|^JS_PT_FOUR_FIVE\d'
+#                   r'|^JS_PT_TWO_THREE_\d|^JS_PT_ONE_TWO_\d|^JS_PT_ZERO_ONE_\d'
+#                   r'|^JS_JPU_ZERO_\d|^JS_JPU_ONE_\d|^JS_JPU_TWO_\d')
 
-#for gbtx_pin, path_finder_comet_pin in dcb_gbtxs_to_path_finder_comet.items():
-#  row = []
 
-#  row.append(dcb_ref[gbtx_pin])
-#  row.append('-'.join(gbtx_pin))
-#  row.append('-'.join(path_finder_comet_pin))
+mirror_bp_result = filter_comp(
+  mirror_bp_descr, r'^JP\d|^JD\d|^JT0$|^JT1$|^JT2$')
 
-#  fpga_pin = comet_j1_j2_duo_to_fpga[path_finder_comet_pin]
-#  row.append(path_finder_comet_pin[0]+'-'+'-'.join(fpga_pin))
 
-#  row.reverse()
 
-#  comet_dcb_data.append(row)
+# Mirror Custom BB ##########################################
+# NOT USED IN FINDING CONNECTIONS (throw out GND later as GND is the current problem)
+
+filter_bb_throw_out = post_filter_any(
+    lambda x: x[1] not in ['S1', 'S2', '29'])
+mirror_custom_bb_result_filt = filter(filter_bb_throw_out, mirror_custom_bb_result)
+
+mirror_custom_bb_result_list = list(mirror_custom_bb_result_filt)
+
+
+
+# Mirror Backplane ##########################################
+# NOT USED IN FINDING CONNECTIONS (throw out GND later as GND is the current problem)
+
+filter_bp_throw_gnd = post_filter_any(
+    lambda x: x[1] not in ['29'])
+mirror_bp_result_filt = filter(filter_bp_throw_gnd, mirror_bp_result)
+
+mirror_bp_result_list = list(mirror_bp_result_filt)
+
+
+##################################################
+# Find Mirror BB to Mirror Backplane Connections #
+##################################################
+# Mirror Custom Telemetry BB -> Mirror Backplane ######################
+
+
+mirror_bb_ref = make_comp_netname_dict(mirror_custom_bb_descr)
+mirror_bp_ref = make_comp_netname_dict(mirror_bp_descr)
+
+compnames_mirror_bb = mirror_bb_ref.keys()
+netnames_mirror_bb = mirror_bb_ref.values()
+list_comp_bb = list(compnames_mirror_bb)
+list_nets_bb = list(netnames_mirror_bb)
+
+compnames_mirror_bp = mirror_bp_ref.keys()
+netnames_mirror_bp = mirror_bp_ref.values()
+list_comp_bp = list(compnames_mirror_bp)
+list_nets_bp = list(netnames_mirror_bp)
+
+mirror_bb_to_mirror_bp_map = []
+
+for i in range(len(list_nets_bb)):
+  row = []
+  for j in range(len(list_nets_bp)):
+    if (list_comp_bb[i][0] == list_comp_bp[j][0] and list_comp_bb[i][1] == list_comp_bp[j][1]):
+      
+      row.append(list_nets_bb[i])
+      row.append('-'.join(list_comp_bb[i]))
+      row.append(list_nets_bp[j])
+
+      mirror_bb_to_mirror_bp_map.append(row)
+
+# THE ABOVE WORKS ALTHOUGH IT SAYS THAT SOME NETS GO TO GROUND WHEN THEY SHOULDN'T
+# As of now, I know that the "..._2V5_SENSE_..." lines all go to GND when they actually don't
+# These all go to "GND" because they have ""ClassName" "NetTie"" listed underneath their net names
+
+
+
+
+#mirror_bb_to_mirror_bp = [make_comp_comp_dict(
+#  mirror_custom_bb_result_list, r'^J_PT_\d+', 'JT{0}'.format(str(i)))
+#  for i in range(1, 4)]
+
+
+
 
 
 #################
