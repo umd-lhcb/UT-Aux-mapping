@@ -170,13 +170,14 @@ mirror_bp_descr = MirrorBPReader.read()
 # Will have to do this because using NetHopper errors
 
 #MirrorBPHopper = CurrentFlow([PLACE COMPONENTS TO TREAT AS COPPER HERE])
+
 #MirrorBPHopper = CurrentFlow(
-#  [r'^R\d+', r'^RB_\d+', r'^RBSP_\d+', r'^RSP_\d+', r'^RT\d+',
-#   r'^C\d+', r'^CxRB_\d+', r'^NT\d+'])
+#  [r'^R\d', r'^RB_\d', r'^RBSP_\d', r'^RSP_\d', r'^RT\d',
+#   r'^C\d', r'^CxRB_\d', r'^NT\d'])
 
 MirrorBPHopper = CurrentFlow(
-  [r'^R\d', r'^RB_\d', r'^RBSP_\d', r'^RSP_\d', r'^RT\d',
-   r'^C\d', r'^CxRB_\d', r'^NT\d'])
+  [r'^R\d', r'^RSP_\d', r'^RT\d',
+   r'^C\d', r'^CxRB_\d'])
 
 
 PcadReader.make_equivalent_nets_identical(
