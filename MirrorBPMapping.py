@@ -21,12 +21,8 @@ output_dir = Path('output')
 
 mirror_bp_netlist = input_dir / Path('mirror_backplane.net')
 mirror_custom_bb_netlist = input_dir / Path('mirror_custom_telemetry_bb.net')
-#path_finder_netlist = input_dir / Path('path_finder.net')
-#dcb_netlist = input_dir / Path('dcb.net')
 
-#debug_comet_mapping_filename = output_dir / Path('DebugCometMapping.csv')
-#debug_dcb_path_finder_mapping_filename = output_dir / Path(
-#  'DebugDcbPathFinderMapping.csv')
+mirror_bb_to_bp_mapping_filename = output_dir / Path('MirrorBBBackplaneMapping.csv')
 
 #comet_dcb_full_mapping_filename = output_dir / Path('CometDcbFullMapping.csv')
 #comet_dcb_short_mapping_filename = output_dir / Path('CometDcbShortMapping.csv')
@@ -277,49 +273,10 @@ for i in range(len(list_nets_bb)):
 # Output to csv #
 #################
 
-# Debug: COMET -> COMET DB -> COMET ############################################
+# Mirror Custom Telemetry BB -> Mirror Backplane (short?) ######################
 
-#comet_j1_j2_fpga_data = [('-'.join(k), '-'.join(v))
-#                         for k, v in comet_j1_j2_to_fpga.items()]
-#comet_j1_j2_fpga_data.sort(
-#  key=lambda x: re.sub(r'-(\d)$', r'-0\g<1>', x[0]))
+write_to_csv(
+  mirror_bb_to_bp_mapping_filename, mirror_bb_to_mirror_bp_map,
+  ['Mirror Telemetry BB net', 'Telemetry BB connector', 'Mirror Backplane net']
+)
 
-#write_to_csv(debug_comet_mapping_filename, comet_j1_j2_fpga_data,
-#             ['COMET connector', 'COMET FPGA'])
-
-
-# Debug: DCB -> Pathfinder #####################################################
-
-#dcb_gbtxs_path_finder_comet_data = [
-#  (dcb_ref[k], '-'.join(k), '-'.join(v))
-#  for k, v in dcb_gbtxs_to_path_finder_comet.items()]
-# Make sure '1' appears before '10' and '11'
-#dcb_gbtxs_path_finder_comet_data.sort(
-#  key=lambda x: re.sub(r'CH(\d)_', r'CH0\g<1>_', x[0]))
-
-#write_to_csv(
-#  debug_dcb_path_finder_mapping_filename, dcb_gbtxs_path_finder_comet_data,
-#  ['Signal ID', 'DCB data GBTx pin', 'Pathfinder COMET connector']
-#)
-
-
-# COMET FPGA -> DCB data GBTxs, full ###########################################
-
-#comet_dcb_data.sort(
-#  key=lambda x: re.sub(r'CH(\d)_', r'CH0\g<1>_', x[-1]))
-
-#write_to_csv(
-#  comet_dcb_full_mapping_filename, comet_dcb_data,
-#  ['COMET FPGA pin', 'Pathfinder COMET connector', 'DCB data GBTx pin',
-#   'Signal ID']
-#)
-
-
-# COMET FPGA -> DCB data GBTxs, short ##########################################
-
-#comet_dcb_data_short = list(map(lambda x: (x[0], x[-1]), comet_dcb_data))
-
-#write_to_csv(
-#  comet_dcb_short_mapping_filename, comet_dcb_data_short,
-#  ['COMET FPGA pin', 'Signal ID']
-#)
