@@ -2,7 +2,7 @@
 #
 # Author: Ben Flaggs
 # License: BSD 2-clause
-# Last Change: Mon Nov 25, 2019 at 12:56 AM -0500
+# Last Change: Mon Nov 25, 2019 at 01:29 AM -0500
 
 from pathlib import Path
 
@@ -37,7 +37,7 @@ MirrorBPReader = PcadNaiveReader(mirror_bp_netlist)
 mirror_bp_descr = MirrorBPReader.read()
 
 # MirrorBPHopper = CurrentFlow([PLACE COMPONENTS TO TREAT AS COPPER HERE])
-MirrorBPHopper = CurrentFlow([r"^R\d", r"^RSP_\d", r"^RT\d", r"^C\d", r"^CxRB_\d"])
+MirrorBPHopper = CurrentFlow([r"^R\d", r"^RT\d", r"^C\d"])
 
 PcadReader.make_equivalent_nets_identical(
     mirror_bp_descr, MirrorBPHopper.do(mirror_bp_descr)
@@ -60,19 +60,15 @@ mirror_bp_result = filter_comp(mirror_bp_descr,
 # problem)
 
 filter_bb_throw_out = post_filter_any(lambda x: x[1] not in ["S1", "S2", "29"])
-mirror_custom_bb_result_filt = filter(filter_bb_throw_out,
-                                      mirror_custom_bb_result)
-
-mirror_custom_bb_result_list = list(mirror_custom_bb_result_filt)
+mirror_custom_bb_result_list = list(filter(filter_bb_throw_out,
+                                           mirror_custom_bb_result))
 
 # Mirror Backplane #############################################################
 # NOT USED IN FINDING CONNECTIONS (throw out GND later as GND is the current
 # problem)
 
 filter_bp_throw_gnd = post_filter_any(lambda x: x[1] not in ["29"])
-mirror_bp_result_filt = filter(filter_bp_throw_gnd, mirror_bp_result)
-
-mirror_bp_result_list = list(mirror_bp_result_filt)
+mirror_bp_result_list = list(filter(filter_bp_throw_gnd, mirror_bp_result))
 
 
 ##################################################
