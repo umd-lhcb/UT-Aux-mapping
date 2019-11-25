@@ -19,6 +19,7 @@ deploy:
         - ./output/DebugDcbPathFinderMapping.csv
         - ./output/CometDcbFullMapping.csv
         - ./output/CometDcbShortMapping.csv
+        - ./output/MirrorBBBackplaneMapping.csv
     skip_cleanup: true
     on:
         tags: true
