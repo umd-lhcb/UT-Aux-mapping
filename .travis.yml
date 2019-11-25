@@ -8,7 +8,7 @@ install:
 
 script:
     - ./CometDcbMapping.py
-
+    - ./MirrorBPMapping.py
 
 deploy:
     provider: releases
