@@ -1,4 +1,4 @@
-# COMET-DCB-Mapping [![Build status](https://travis-ci.com/umd-lhcb/COMET-DCB-mapping.svg?master)](https://travis-ci.com/umd-lhcb/COMET-DCB-mapping)
+# UT-Aux-mapping [![Build status](https://travis-ci.com/umd-lhcb/UT-Aux-mapping.svg?master)](https://travis-ci.com/umd-lhcb/UT-Aux-mapping)
 Python script to generate COMET FPGA to DCB pin-by-pin mapping.
 
 
