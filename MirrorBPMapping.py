@@ -1,151 +1,26 @@
 #!/usr/bin/env python
 #
+# Author: Ben Flaggs
 # License: BSD 2-clause
-# Created: Mon Oct 28, 2019 at 1:27 PM
-# Last Change: Mon Oct 28, 2019 at 01:40 PM  -bflaggs
-
-import re
+# Last Change: Mon Nov 25, 2019 at 12:56 AM -0500
 
 from pathlib import Path
-from collections import defaultdict
 
 import sys
-sys.path.insert(0, './pyUTM')
+sys.path.insert(0, "./pyUTM")
 
 from pyUTM.io import PcadReader, PcadNaiveReader
 from pyUTM.io import write_to_csv
 from pyUTM.sim import CurrentFlow
 
-input_dir = Path('input')
-output_dir = Path('output')
+from CometDcbMapping import input_dir, output_dir
+from CometDcbMapping import filter_comp
+from CometDcbMapping import post_filter_any
+from CometDcbMapping import make_comp_netname_dict
 
-mirror_bp_netlist = input_dir / Path('mirror_backplane.net')
-mirror_custom_bb_netlist = input_dir / Path('mirror_custom_telemetry_bb.net')
-
-mirror_bb_to_bp_mapping_filename = output_dir / Path('MirrorBBBackplaneMapping.csv')
-
-#comet_dcb_full_mapping_filename = output_dir / Path('CometDcbFullMapping.csv')
-#comet_dcb_short_mapping_filename = output_dir / Path('CometDcbShortMapping.csv')
-
-
-###########
-# Helpers #
-###########
-
-# Regularize input #############################################################
-
-def split_rn(descr, regexp=r'^RN\d+_\d$'):
-  rn_split_dict = {
-    '1': 'A',
-    '8': 'A',
-    '2': 'B',
-    '7': 'B',
-    '3': 'C',
-    '6': 'C',
-    '4': 'D',
-    '5': 'D'
-    }
-  result = defaultdict(list)
-
-  for net, comps in descr.items():
-    for c in comps:
-      if bool(re.search(regexp, c[0])):
-        new_c = list(c)
-        new_c[0] += rn_split_dict[c[1]]
-        result[net].append(tuple(new_c))
-
-      else:
-        result[net].append(c)
-
-  return dict(result)
-
-
-# Filtering ####################################################################
-
-def filter_comp(descr, regexp=r'^JD\d+|^JP\d+', netname=None):
-  filtered = []
-
-  for net, comps in descr.items():
-    if netname is not None and netname not in net:
-      # We also optionally filter by netname.
-      pass
-
-    else:
-      processed_comps = [x for x in comps if bool(re.match(regexp, x[0]))]
-
-      # Can't figure out any relationship if a list contains only a single
-      # item.
-      # We also do deduplication here.
-      # Also make sure there's at least a connector component.
-      if len(processed_comps) > 1 and processed_comps not in filtered \
-            and True in map(lambda x: x[0].startswith('J'),
-                            processed_comps):
-        filtered.append(processed_comps)
-
-  return filtered
-
-
-def post_filter_exist(functor):
-  def filter_functor(l):
-    return True if True in map(functor, l) else False
-
-  return filter_functor
-
-
-def post_filter_any(functor):
-  def filter_functor(l):
-    return False if False in map(functor, l) else True
-
-  return filter_functor
-
-
-# Make dictionaries to find connectivity between components  ###################
-
-def make_comp_netname_dict(descr):
-  result = {}
-
-  for net, comps in descr.items():
-    for c in comps:
-      result[c] = net
-
-  return result
-
-
-def make_comp_comp_dict(nested, key_comp, value_comp, strip_kw='_1'):
-  result = {}
-
-  for comps in nested:
-    key_candidates = list(filter(lambda x: x[0] == key_comp, comps))
-    value_candidates = list(filter(lambda x: x[0] == value_comp, comps))
-
-    if key_candidates and value_candidates:
-      if len(key_candidates) > 1 or len(value_candidates) > 1:
-        raise ValueError(
-          'Unable to construct a bijection for key: {}, value: {}'.format(
-            key_candidates, value_candidates
-          ))
-      else:
-        # We want to strip out the '_1' part
-        key = list(key_candidates[0])
-        value = list(value_candidates[0])
-
-        key[0] = key[0].replace(strip_kw, '')
-        value[0] = value[0].replace(strip_kw, '')
-
-        result[tuple(key)] = tuple(value)
-
-  return result
-
-
-def make_comp_comp_dict_bidirectional(nested):
-  # NOTE: Here 'nested' should be a nx2 tensor
-  result = {}
-
-  for key1, key2 in nested:
-    result[key1] = key2
-    result[key2] = key1
-
-  return result
+mirror_bp_netlist = input_dir / Path("mirror_backplane.net")
+mirror_custom_bb_netlist = input_dir / Path("mirror_custom_telemetry_bb.net")
+mirror_bb_to_bp_mapping_filename = output_dir / Path("MirrorBBBackplaneMapping.csv")
 
 
 #####################
@@ -158,27 +33,15 @@ NetHopper = CurrentFlow()
 MirrorCustomBBReader = PcadReader(mirror_custom_bb_netlist)
 mirror_custom_bb_descr = MirrorCustomBBReader.read(NetHopper)
 
-
 MirrorBPReader = PcadNaiveReader(mirror_bp_netlist)
 mirror_bp_descr = MirrorBPReader.read()
 
-
-# Will have to do this because using NetHopper errors
-
-#MirrorBPHopper = CurrentFlow([PLACE COMPONENTS TO TREAT AS COPPER HERE])
-
-#MirrorBPHopper = CurrentFlow(
-#  [r'^R\d', r'^RB_\d', r'^RBSP_\d', r'^RSP_\d', r'^RT\d',
-#   r'^C\d', r'^CxRB_\d', r'^NT\d'])
-
-MirrorBPHopper = CurrentFlow(
-  [r'^R\d', r'^RSP_\d', r'^RT\d',
-   r'^C\d', r'^CxRB_\d'])
-
+# MirrorBPHopper = CurrentFlow([PLACE COMPONENTS TO TREAT AS COPPER HERE])
+MirrorBPHopper = CurrentFlow([r"^R\d", r"^RSP_\d", r"^RT\d", r"^C\d", r"^CxRB_\d"])
 
 PcadReader.make_equivalent_nets_identical(
-    mirror_bp_descr, MirrorBPHopper.do(mirror_bp_descr))
-
+    mirror_bp_descr, MirrorBPHopper.do(mirror_bp_descr)
+)
 
 
 #############
@@ -186,37 +49,27 @@ PcadReader.make_equivalent_nets_identical(
 #############
 
 mirror_custom_bb_result = filter_comp(
-  mirror_custom_bb_descr, r'^J_PT_\d+|^J_1V5_\d+|^J_2V5_\d+|^JT0$|^JT1$|^JT2$')
+    mirror_custom_bb_descr, r"^J_PT_\d+|^J_1V5_\d+|^J_2V5_\d+|^JT0$|^JT1$|^JT2$"
+)
 
+mirror_bp_result = filter_comp(mirror_bp_descr,
+                               r"^JP\d|^JD\d|^JT0$|^JT1$|^JT2$")
 
-#mirror_bp_result = filter_comp(
-#  mirror_bp_descr, r'^JP\d|^JS_PT_NINE_TEN_\d|^JS_PT_TEN_ELEVEN_\d|^JS_PT_EIGHT_NINE_\d'
-#                   r'|^JS_PT_SIX_SEVEN_\d|^JS_PT_FIVE_SIX_\d|^JS_PT_FOUR_FIVE\d'
-#                   r'|^JS_PT_TWO_THREE_\d|^JS_PT_ONE_TWO_\d|^JS_PT_ZERO_ONE_\d'
-#                   r'|^JS_JPU_ZERO_\d|^JS_JPU_ONE_\d|^JS_JPU_TWO_\d')
+# Mirror Custom BB #############################################################
+# NOT USED IN FINDING CONNECTIONS (throw out GND later as GND is the current
+# problem)
 
-
-mirror_bp_result = filter_comp(
-  mirror_bp_descr, r'^JP\d|^JD\d|^JT0$|^JT1$|^JT2$')
-
-
-
-# Mirror Custom BB ##########################################
-# NOT USED IN FINDING CONNECTIONS (throw out GND later as GND is the current problem)
-
-filter_bb_throw_out = post_filter_any(
-    lambda x: x[1] not in ['S1', 'S2', '29'])
-mirror_custom_bb_result_filt = filter(filter_bb_throw_out, mirror_custom_bb_result)
+filter_bb_throw_out = post_filter_any(lambda x: x[1] not in ["S1", "S2", "29"])
+mirror_custom_bb_result_filt = filter(filter_bb_throw_out,
+                                      mirror_custom_bb_result)
 
 mirror_custom_bb_result_list = list(mirror_custom_bb_result_filt)
 
+# Mirror Backplane #############################################################
+# NOT USED IN FINDING CONNECTIONS (throw out GND later as GND is the current
+# problem)
 
-
-# Mirror Backplane ##########################################
-# NOT USED IN FINDING CONNECTIONS (throw out GND later as GND is the current problem)
-
-filter_bp_throw_gnd = post_filter_any(
-    lambda x: x[1] not in ['29'])
+filter_bp_throw_gnd = post_filter_any(lambda x: x[1] not in ["29"])
 mirror_bp_result_filt = filter(filter_bp_throw_gnd, mirror_bp_result)
 
 mirror_bp_result_list = list(mirror_bp_result_filt)
@@ -225,8 +78,8 @@ mirror_bp_result_list = list(mirror_bp_result_filt)
 ##################################################
 # Find Mirror BB to Mirror Backplane Connections #
 ##################################################
-# Mirror Custom Telemetry BB -> Mirror Backplane ######################
 
+# Mirror Custom Telemetry BB -> Mirror Backplane ###############################
 
 mirror_bb_ref = make_comp_netname_dict(mirror_custom_bb_descr)
 mirror_bp_ref = make_comp_netname_dict(mirror_bp_descr)
@@ -244,29 +97,23 @@ list_nets_bp = list(netnames_mirror_bp)
 mirror_bb_to_mirror_bp_map = []
 
 for i in range(len(list_nets_bb)):
-  row = []
-  for j in range(len(list_nets_bp)):
-    if (list_comp_bb[i][0] == list_comp_bp[j][0] and list_comp_bb[i][1] == list_comp_bp[j][1]):
-      
-      row.append(list_nets_bb[i])
-      row.append('-'.join(list_comp_bb[i]))
-      row.append(list_nets_bp[j])
+    row = []
+    for j in range(len(list_nets_bp)):
+        if (
+            list_comp_bb[i][0] == list_comp_bp[j][0] and
+            list_comp_bb[i][1] == list_comp_bp[j][1]
+        ):
 
-      mirror_bb_to_mirror_bp_map.append(row)
+            row.append(list_nets_bb[i])
+            row.append("-".join(list_comp_bb[i]))
+            row.append(list_nets_bp[j])
 
-# THE ABOVE WORKS ALTHOUGH IT SAYS THAT SOME NETS GO TO GROUND WHEN THEY SHOULDN'T
-# As of now, I know that the "..._2V5_SENSE_..." lines all go to GND when they actually don't
-# These all go to "GND" because they have ""ClassName" "NetTie"" listed underneath their net names
+            mirror_bb_to_mirror_bp_map.append(row)
 
-
-
-
-#mirror_bb_to_mirror_bp = [make_comp_comp_dict(
-#  mirror_custom_bb_result_list, r'^J_PT_\d+', 'JT{0}'.format(str(i)))
-#  for i in range(1, 4)]
-
-
-
+# THE ABOVE WORKS ALTHOUGH IT SAYS THAT SOME NETS GO TO GROUND WHEN THEY
+# SHOULDN'T As of now, I know that the "..._2V5_SENSE_..." lines all go to GND
+# when they actually don't These all go to "GND" because they have ""ClassName"
+# "NetTie"" listed underneath their net names
 
 
 #################
@@ -276,7 +123,8 @@ for i in range(len(list_nets_bb)):
 # Mirror Custom Telemetry BB -> Mirror Backplane (short?) ######################
 
 write_to_csv(
-  mirror_bb_to_bp_mapping_filename, mirror_bb_to_mirror_bp_map,
-  ['Mirror Telemetry BB net', 'Telemetry BB connector', 'Mirror Backplane net']
+    mirror_bb_to_bp_mapping_filename,
+    mirror_bb_to_mirror_bp_map,
+    ["Mirror Telemetry BB net", "Telemetry BB connector",
+     "Mirror Backplane net"],
 )
-
