@@ -16,7 +16,8 @@ pip install -r pyUTM/requirements.txt
 
 ## Usage
 ```
-python ./MappingGen.py
+python ./CometDcbMapping.py.py
+python ./MirrorBPMapping.py
 ```
 
 All generated mapping `.csv` files are located under `output/`
