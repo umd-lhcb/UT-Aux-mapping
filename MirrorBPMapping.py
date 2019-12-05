@@ -37,9 +37,17 @@ MirrorBPReader = PcadNaiveReader(mirror_bp_netlist)
 mirror_bp_descr = MirrorBPReader.read()
 
 # MirrorBPHopper = CurrentFlow([PLACE COMPONENTS TO TREAT AS COPPER HERE])
-# MirrorBPHopper = CurrentFlow([r"^R\d", r"^RT\d", r"^C\d"])
-#MirrorBPHopper = CurrentFlow([r"^R\d", r"^RT\d"])
-MirrorBPHopper = CurrentFlow([r"^RT\d", r"^RBSP_\d", r"^R\d", r"^NT\d+"])
+
+# This CurrentFlow maps the nets accurately and outputs exactly what we want
+# to the final .csv file in the "output" directory.
+MirrorBPHopper = CurrentFlow([r"^RT\d"])
+
+# This CurrentFlow maps the nets accurately but it lists out the incorrect final
+# net name for the Mirror Backplane. This is because of the resistors (RXXX)
+# being treated as copper. Treating these components as copper means that the 
+# signal will continue to be traced further in the board resulting in a CORRECT
+# net name but this is NOT the FINAL net name that we want when tracing.
+#MirrorBPHopper = CurrentFlow([r"^RT\d", r"^RBSP_\d", r"^R\d", r"^NT\d+"])
 
 PcadReader.make_equivalent_nets_identical(
     mirror_bp_descr, MirrorBPHopper.do(mirror_bp_descr)
@@ -50,22 +58,16 @@ PcadReader.make_equivalent_nets_identical(
 # Filtering #
 #############
 
-#mirror_custom_bb_result = filter_comp(
-#    mirror_custom_bb_descr, r"^J_PT_\d+|^J_1V5_\d+|^J_2V5_\d+|^JT0$|^JT1$|^JT2$"
-#)
-
 inner_bb_result = filter_comp(
     inner_bb_descr, r"^JP\d+|^JD\d+|^JPL0$|^JPL1$|^JPL2$"
 )
 
-#mirror_bp_result = filter_comp(mirror_bp_descr,
-#                               r"^JP\d|^JD\d|^JT0$|^JT1$|^JT2$")
 mirror_bp_result = filter_comp(mirror_bp_descr,
                                r"^JP\d+|^JD\d+|^JPL0$|^JPL1$|^JPL2$")
 
 # Inner BB #####################################################################
-# NOT USED IN FINDING CONNECTIONS (throw out GND later as GND is the current
-# problem)
+# NOT USED IN FINDING CONNECTIONS (throw out GND later, for now we want to trace
+# the GNDs to make sure they stay as GNDs)
 
 filter_inner_bb_throw_out = post_filter_any(
     lambda x: x[1] not in ["9", "10", "16", "17", "18", "19", "20", "24", "25",
@@ -75,8 +77,8 @@ inner_bb_result_list = list(filter(filter_inner_bb_throw_out,
                                    inner_bb_result))
 
 # Mirror Backplane #############################################################
-# NOT USED IN FINDING CONNECTIONS (throw out GND later as GND is the current
-# problem)
+# NOT USED IN FINDING CONNECTIONS (throw out GND later, for now we want to trace
+# the GNDs to make sure they stay as GNDs)
 
 filter_bp_throw_gnd = post_filter_any(lambda x: x[1] not in ["29"])
 mirror_bp_result_list = list(filter(filter_bp_throw_gnd, mirror_bp_result))
@@ -117,11 +119,6 @@ for i in range(len(list_nets_inner_bb)):
             row.append(list_nets_bp[j])
 
             inner_bb_to_mirror_bp_map.append(row)
-
-# THE ABOVE WORKS ALTHOUGH IT SAYS THAT SOME NETS GO TO GROUND WHEN THEY
-# SHOULDN'T As of now, I know that the "..._2V5_SENSE_..." lines all go to GND
-# when they actually don't These all go to "GND" because they have ""ClassName"
-# "NetTie"" listed underneath their net names
 
 
 #################
