@@ -39,7 +39,7 @@ mirror_bp_descr = MirrorBPReader.read()
 # MirrorBPHopper = CurrentFlow([PLACE COMPONENTS TO TREAT AS COPPER HERE])
 # MirrorBPHopper = CurrentFlow([r"^R\d", r"^RT\d", r"^C\d"])
 #MirrorBPHopper = CurrentFlow([r"^R\d", r"^RT\d"])
-MirrorBPHopper = CurrentFlow([r"^RT\d"])
+MirrorBPHopper = CurrentFlow([r"^RT\d", r"^RBSP_\d", r"^R\d", r"^NT\d+"])
 
 PcadReader.make_equivalent_nets_identical(
     mirror_bp_descr, MirrorBPHopper.do(mirror_bp_descr)
