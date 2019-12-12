@@ -18,9 +18,9 @@ from CometDcbMapping import filter_comp
 from CometDcbMapping import post_filter_any
 from CometDcbMapping import make_comp_netname_dict
 
-mirror_bp_netlist = input_dir / Path("mirror_backplane.net")
+true_bp_netlist = input_dir / Path("true_backplane.net")
 inner_bb_netlist = input_dir / Path("inner_bb.net")
-inner_bb_to_mirror_bp_mapping_filename = output_dir / Path("InnerBBMirrorBPMapping.csv")
+inner_bb_to_true_bp_mapping_filename = output_dir / Path("InnerBBTrueBPMapping.csv")
 
 
 #####################
@@ -33,24 +33,24 @@ NetHopper = CurrentFlow()
 InnerBBReader = PcadReader(inner_bb_netlist)
 inner_bb_descr = InnerBBReader.read(NetHopper)
 
-MirrorBPReader = PcadNaiveReader(mirror_bp_netlist)
-mirror_bp_descr = MirrorBPReader.read()
+TrueBPReader = PcadNaiveReader(true_bp_netlist)
+true_bp_descr = TrueBPReader.read()
 
-# MirrorBPHopper = CurrentFlow([PLACE COMPONENTS TO TREAT AS COPPER HERE])
+# TrueBPHopper = CurrentFlow([PLACE COMPONENTS TO TREAT AS COPPER HERE])
 
 # This CurrentFlow maps the nets accurately and outputs exactly what we want
 # to the final .csv file in the "output" directory.
-MirrorBPHopper = CurrentFlow([r"^RT\d"])
+TrueBPHopper = CurrentFlow([r"^RT\d"])
 
 # This CurrentFlow maps the nets accurately but it lists out the incorrect final
-# net name for the Mirror Backplane. This is because of the resistors (RXXX)
+# net name for the True Backplane. This is because of the resistors (RXXX)
 # being treated as copper. Treating these components as copper means that the 
 # signal will continue to be traced further in the board resulting in a CORRECT
 # net name but this is NOT the FINAL net name that we want when tracing.
-#MirrorBPHopper = CurrentFlow([r"^RT\d", r"^RBSP_\d", r"^R\d", r"^NT\d+"])
+#TrueBPHopper = CurrentFlow([r"^RT\d", r"^RBSP_\d", r"^R\d", r"^NT\d+"])
 
 PcadReader.make_equivalent_nets_identical(
-    mirror_bp_descr, MirrorBPHopper.do(mirror_bp_descr)
+    true_bp_descr, TrueBPHopper.do(true_bp_descr)
 )
 
 
@@ -62,7 +62,7 @@ inner_bb_result = filter_comp(
     inner_bb_descr, r"^JP\d+|^JD\d+|^JPL0$|^JPL1$|^JPL2$"
 )
 
-mirror_bp_result = filter_comp(mirror_bp_descr,
+true_bp_result = filter_comp(true_bp_descr,
                                r"^JP\d+|^JD\d+|^JPL0$|^JPL1$|^JPL2$")
 
 # Inner BB #####################################################################
@@ -76,22 +76,22 @@ filter_inner_bb_throw_out = post_filter_any(
 inner_bb_result_list = list(filter(filter_inner_bb_throw_out,
                                    inner_bb_result))
 
-# Mirror Backplane #############################################################
+# True Backplane #############################################################
 # NOT USED IN FINDING CONNECTIONS (throw out GND later, for now we want to trace
 # the GNDs to make sure they stay as GNDs)
 
 filter_bp_throw_gnd = post_filter_any(lambda x: x[1] not in ["29"])
-mirror_bp_result_list = list(filter(filter_bp_throw_gnd, mirror_bp_result))
+true_bp_result_list = list(filter(filter_bp_throw_gnd, true_bp_result))
 
 
 ##################################################
-# Find Inner BB to Mirror Backplane Connections #
+# Find Inner BB to True Backplane Connections #
 ##################################################
 
-# Inner BB -> Mirror Backplane ################################################
+# Inner BB -> True Backplane ################################################
 
 inner_bb_ref = make_comp_netname_dict(inner_bb_descr)
-mirror_bp_ref = make_comp_netname_dict(mirror_bp_descr)
+true_bp_ref = make_comp_netname_dict(true_bp_descr)
 
 compnames_inner_bb = inner_bb_ref.keys()
 netnames_inner_bb = inner_bb_ref.values()
@@ -99,12 +99,12 @@ list_comp_inner_bb = list(compnames_inner_bb)
 list_nets_inner_bb = list(netnames_inner_bb)
 
 
-compnames_mirror_bp = mirror_bp_ref.keys()
-netnames_mirror_bp = mirror_bp_ref.values()
-list_comp_bp = list(compnames_mirror_bp)
-list_nets_bp = list(netnames_mirror_bp)
+compnames_true_bp = true_bp_ref.keys()
+netnames_true_bp = true_bp_ref.values()
+list_comp_bp = list(compnames_true_bp)
+list_nets_bp = list(netnames_true_bp)
 
-inner_bb_to_mirror_bp_map = []
+inner_bb_to_true_bp_map = []
 
 for i in range(len(list_nets_inner_bb)):
     row = []
@@ -118,18 +118,18 @@ for i in range(len(list_nets_inner_bb)):
             row.append("-".join(list_comp_inner_bb[i]))
             row.append(list_nets_bp[j])
 
-            inner_bb_to_mirror_bp_map.append(row)
+            inner_bb_to_true_bp_map.append(row)
 
 
 #################
 # Output to csv #
 #################
 
-# Inner BB -> Mirror Backplane (short?) ######################
+# Inner BB -> True Backplane (short?) ######################
 
 write_to_csv(
-    inner_bb_to_mirror_bp_mapping_filename,
-    inner_bb_to_mirror_bp_map,
+    inner_bb_to_true_bp_mapping_filename,
+    inner_bb_to_true_bp_map,
     ["Inner BB net", "Inner BB connector",
-     "Mirror Backplane net"],
+     "True Backplane net"],
 )
