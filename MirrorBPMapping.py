@@ -2,7 +2,7 @@
 #
 # Author: Ben Flaggs
 # License: BSD 2-clause
-# Last Change: Wed Dec 18, 2019 at 04:31 PM -0500
+# Last Change: Wed Dec 18, 2019 at 04:36 PM -0500
 
 from pathlib import Path
 
@@ -88,7 +88,7 @@ mirror_bp_result_list = list(filter(filter_bp_throw_gnd, mirror_bp_result))
 # Find Inner BB to Mirror Backplane Connections #
 ##################################################
 
-# Inner BB -> Mirror Backplane ################################################
+# Inner BB -> Mirror Backplane #################################################
 
 inner_bb_ref = make_comp_netname_dict(inner_bb_descr)
 mirror_bp_ref = make_comp_netname_dict(mirror_bp_descr)
@@ -113,7 +113,6 @@ for i in range(len(list_nets_inner_bb)):
             list_comp_inner_bb[i][0] == list_comp_bp[j][0] and
             list_comp_inner_bb[i][1] == list_comp_bp[j][1]
         ):
-
             row.append(list_nets_inner_bb[i])
             row.append("-".join(list_comp_inner_bb[i]))
             row.append(list_nets_bp[j])
@@ -125,7 +124,7 @@ for i in range(len(list_nets_inner_bb)):
 # Output to csv #
 #################
 
-# Inner BB -> Mirror Backplane (short?) ######################
+# Inner BB -> Mirror Backplane (short?) ########################################
 
 write_to_csv(
     inner_bb_to_mirror_bp_mapping_filename,

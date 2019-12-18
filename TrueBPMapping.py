@@ -2,7 +2,7 @@
 #
 # Author: Ben Flaggs
 # License: BSD 2-clause
-# Last Change: Wed Dec 18, 2019 at 04:32 PM -0500
+# Last Change: Wed Dec 18, 2019 at 04:37 PM -0500
 
 from pathlib import Path
 
@@ -76,7 +76,7 @@ filter_inner_bb_throw_out = post_filter_any(
 inner_bb_result_list = list(filter(filter_inner_bb_throw_out,
                                    inner_bb_result))
 
-# True Backplane #############################################################
+# True Backplane ###############################################################
 # NOT USED IN FINDING CONNECTIONS (throw out GND later, for now we want to trace
 # the GNDs to make sure they stay as GNDs)
 
@@ -88,7 +88,7 @@ true_bp_result_list = list(filter(filter_bp_throw_gnd, true_bp_result))
 # Find Inner BB to True Backplane Connections #
 ##################################################
 
-# Inner BB -> True Backplane ################################################
+# Inner BB -> True Backplane ###################################################
 
 inner_bb_ref = make_comp_netname_dict(inner_bb_descr)
 true_bp_ref = make_comp_netname_dict(true_bp_descr)
@@ -125,7 +125,7 @@ for i in range(len(list_nets_inner_bb)):
 # Output to csv #
 #################
 
-# Inner BB -> True Backplane (short?) ######################
+# Inner BB -> True Backplane (short?) ##########################################
 
 write_to_csv(
     inner_bb_to_true_bp_mapping_filename,

@@ -2,7 +2,7 @@
 #
 # Author: Ben Flaggs
 # License: BSD 2-clause
-# Last Change: Wed Dec 18, 2019 at 04:33 PM -0500
+# Last Change: Wed Dec 18, 2019 at 04:38 PM -0500
 
 from pathlib import Path
 
@@ -86,14 +86,14 @@ filter_inner_bb_throw_out = post_filter_any(
 inner_bb_result_list = list(filter(filter_inner_bb_throw_out,
                                    inner_bb_result))
 
-# True Backplane #############################################################
+# True Backplane ###############################################################
 # NOT USED IN FINDING CONNECTIONS (throw out GND later, for now we want to trace
 # the GNDs to make sure they stay as GNDs)
 
 filter_bp_throw_gnd = post_filter_any(lambda x: x[1] not in ["29"])
 true_bp_result_list = list(filter(filter_bp_throw_gnd, true_bp_result))
 
-# True P2B2 ##################################################################
+# True P2B2 ####################################################################
 # NOT USED IN FINDING CONNECTIONS (throw out DRAIN later)
 
 filter_p2b2_throw_drain = post_filter_any(lambda x: x[0] not in ["DW1", "DW2"])
@@ -104,7 +104,7 @@ true_p2b2_result_list = list(filter(filter_p2b2_throw_drain, true_p2b2_result))
 # Find Inner BB to True Backplane Connections #
 ##################################################
 
-# Inner BB -> True Backplane ################################################
+# Inner BB -> True Backplane ###################################################
 
 inner_bb_ref = make_comp_netname_dict(inner_bb_descr)
 true_bp_ref = make_comp_netname_dict(true_bp_descr)
@@ -133,12 +133,12 @@ inner_bb_to_true_p2b2_map = []
 for i in range(len(list_nets_inner_bb)):
     row = []
     row_larger = []
+
     for j in range(len(list_nets_bp)):
         if (
             list_comp_inner_bb[i][0] == list_comp_bp[j][0] and
             list_comp_inner_bb[i][1] == list_comp_bp[j][1]
         ):
-
             row.append(list_nets_inner_bb[i])
             row.append("-".join(list_comp_inner_bb[i]))
             row.append(list_nets_bp[j])
@@ -153,7 +153,6 @@ for i in range(len(list_nets_inner_bb)):
 
 
 for k in range(len(list_nets_bp)):
-
     int_bp_comp_name = list_comp_bp[k][0]
     test_int_bp_comp_name = list(int_bp_comp_name)
 
@@ -167,10 +166,8 @@ for k in range(len(list_nets_bp)):
             updated_int_bp_comp_name == list_comp_p2b2[m][0] and
             list_comp_bp[k][1] == list_comp_p2b2[m][1]
         ):
-
             for n in range(len(inner_bb_to_true_p2b2_map)):
                 if (inner_bb_to_true_p2b2_map[n][2] == list_nets_bp[k]):
-
                     inner_bb_to_true_p2b2_map[n].append(list_comp_p2b2[m][0])
                     inner_bb_to_true_p2b2_map[n].append(list_nets_p2b2[m])
 
@@ -184,7 +181,7 @@ for k in range(len(list_nets_bp)):
 # Output to csv #
 #################
 
-# Inner BB -> True Backplane (short?) ######################
+# Inner BB -> True Backplane (short?) ##########################################
 
 write_to_csv(
     inner_bb_to_true_bp_mapping_filename,
@@ -193,7 +190,7 @@ write_to_csv(
      "True Backplane net"],
 )
 
-# Inner BB -> True Backplane -> True P2B2 ##################
+# Inner BB -> True Backplane -> True P2B2 ######################################
 
 write_to_csv(
     inner_bb_to_true_p2b2_mapping_filename,
