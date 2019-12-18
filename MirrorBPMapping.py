@@ -2,7 +2,7 @@
 #
 # Author: Ben Flaggs
 # License: BSD 2-clause
-# Last Change: Mon Nov 25, 2019 at 01:29 AM -0500
+# Last Change: Wed Dec 18, 2019 at 04:31 PM -0500
 
 from pathlib import Path
 
@@ -44,10 +44,10 @@ MirrorBPHopper = CurrentFlow([r"^RT\d"])
 
 # This CurrentFlow maps the nets accurately but it lists out the incorrect final
 # net name for the Mirror Backplane. This is because of the resistors (RXXX)
-# being treated as copper. Treating these components as copper means that the 
+# being treated as copper. Treating these components as copper means that the
 # signal will continue to be traced further in the board resulting in a CORRECT
 # net name but this is NOT the FINAL net name that we want when tracing.
-#MirrorBPHopper = CurrentFlow([r"^RT\d", r"^RBSP_\d", r"^R\d", r"^NT\d+"])
+# MirrorBPHopper = CurrentFlow([r"^RT\d", r"^RBSP_\d", r"^R\d", r"^NT\d+"])
 
 PcadReader.make_equivalent_nets_identical(
     mirror_bp_descr, MirrorBPHopper.do(mirror_bp_descr)

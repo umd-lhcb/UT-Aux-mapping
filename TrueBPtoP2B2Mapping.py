@@ -2,7 +2,7 @@
 #
 # Author: Ben Flaggs
 # License: BSD 2-clause
-# Last Change: Mon Nov 25, 2019 at 01:29 AM -0500
+# Last Change: Wed Dec 18, 2019 at 04:33 PM -0500
 
 from pathlib import Path
 
@@ -46,10 +46,10 @@ TrueBPHopper = CurrentFlow([r"^RT\d"])
 
 # This CurrentFlow maps the nets accurately but it lists out the incorrect final
 # net name for the True Backplane. This is because of the resistors (RXXX)
-# being treated as copper. Treating these components as copper means that the 
+# being treated as copper. Treating these components as copper means that the
 # signal will continue to be traced further in the board resulting in a CORRECT
 # net name but this is NOT the FINAL net name that we want when tracing.
-#TrueBPHopper = CurrentFlow([r"^RT\d", r"^RBSP_\d", r"^R\d", r"^NT\d+"])
+# TrueBPHopper = CurrentFlow([r"^RT\d", r"^RBSP_\d", r"^R\d", r"^NT\d+"])
 
 PcadReader.make_equivalent_nets_identical(
     true_bp_descr, TrueBPHopper.do(true_bp_descr)
@@ -69,7 +69,7 @@ inner_bb_result = filter_comp(
 )
 
 true_bp_result = filter_comp(true_bp_descr,
-                               r"^JP\d+|^JD\d+|^JPL0$|^JPL1$|^JPL2$")
+                             r"^JP\d+|^JD\d+|^JPL0$|^JPL1$|^JPL2$")
 
 true_p2b2_result = filter_comp(
     true_p2b2_descr, r"^JP_JPL_+|^JP_JPU_+|^JP_PT_+|^JPU1$|^JPU2$|^JPU3$"
@@ -173,9 +173,6 @@ for k in range(len(list_nets_bp)):
 
                     inner_bb_to_true_p2b2_map[n].append(list_comp_p2b2[m][0])
                     inner_bb_to_true_p2b2_map[n].append(list_nets_p2b2[m])
-
-
-
 
 
 ############################################################
