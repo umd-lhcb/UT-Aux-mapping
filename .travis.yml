@@ -8,7 +8,8 @@ install:
 
 script:
     - ./CometDcbMapping.py
-    - ./MirrorBPMapping.py
+    - ./TrueBPInnerMapping.py
+    - ./MirrorBPInnerMapping.py
 
 deploy:
     provider: releases
@@ -19,7 +20,8 @@ deploy:
         - ./output/DebugDcbPathFinderMapping.csv
         - ./output/CometDcbFullMapping.csv
         - ./output/CometDcbShortMapping.csv
-        - ./output/MirrorBBBackplaneMapping.csv
+        - ./output/TrueBPInnerMapping.csv
+        - ./output/MirrorBPInnerMapping.csv
     skip_cleanup: true
     on:
         tags: true
