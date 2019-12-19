@@ -2,7 +2,7 @@
 #
 # Author: Ben Flaggs
 # License: BSD 2-clause
-# Last Change: Wed Dec 18, 2019 at 11:03 PM -0500
+# Last Change: Wed Dec 18, 2019 at 11:05 PM -0500
 
 from pathlib import Path
 
@@ -21,7 +21,7 @@ from UT_Aux_mapping.helpers import gen_filename
 
 mirror_bp_netlist = input_dir / Path("mirror_backplane.net")
 mirror_custom_bb_netlist = input_dir / Path("mirror_custom_telemetry_bb.net")
-mirror_bb_to_bp_mapping_filename = output_dir / Path(gen_filename())
+mirror_bb_to_bp_mapping_filename = output_dir / Path(gen_filename(__file__))
 
 
 #####################
