@@ -2,7 +2,7 @@
 #
 # Author: Ben Flaggs
 # License: BSD 2-clause
-# Last Change: Wed Dec 18, 2019 at 11:15 PM -0500
+# Last Change: Wed Dec 18, 2019 at 11:35 PM -0500
 
 from pathlib import Path
 
@@ -85,7 +85,7 @@ true_p2b2_result_list = list(filter(filter_p2b2_throw_drain, true_p2b2_result))
 # Find Inner BB to True Backplane to True P2B2 Connections #
 ############################################################
 
-inner_bb_to_true_p2b2_map = dict()
+inner_bb_to_true_p2b2_map = []
 
 
 #################
