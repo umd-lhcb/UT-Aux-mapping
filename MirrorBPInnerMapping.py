@@ -2,16 +2,15 @@
 #
 # Author: Ben Flaggs
 # License: BSD 2-clause
-# Last Change: Wed Dec 18, 2019 at 11:10 PM -0500
+# Last Change: Wed Dec 18, 2019 at 11:43 PM -0500
 
 from pathlib import Path
 
 import sys
 sys.path.insert(0, "./pyUTM")
 
-from pyUTM.io import PcadReader, PcadNaiveReader
+from pyUTM.io import PcadNaiveReader
 from pyUTM.io import write_to_csv
-from pyUTM.sim import CurrentFlow
 
 from UT_Aux_mapping.const import input_dir, output_dir
 from UT_Aux_mapping.helpers import gen_filename
@@ -29,31 +28,11 @@ inner_bb_to_mirror_bp_mapping_filename = output_dir / \
 # Read all netlists #
 #####################
 
-# Default net hopping should work for Custom BB.
-NetHopper = CurrentFlow()
-
-InnerBBReader = PcadReader(inner_bb_netlist)
-inner_bb_descr = InnerBBReader.read(NetHopper)
+InnerBBReader = PcadNaiveReader(inner_bb_netlist)
+inner_bb_descr = InnerBBReader.read()
 
 MirrorBPReader = PcadNaiveReader(mirror_bp_netlist)
 mirror_bp_descr = MirrorBPReader.read()
-
-# MirrorBPHopper = CurrentFlow([PLACE COMPONENTS TO TREAT AS COPPER HERE])
-
-# This CurrentFlow maps the nets accurately and outputs exactly what we want
-# to the final .csv file in the "output" directory.
-MirrorBPHopper = CurrentFlow([r"^RT\d"])
-
-# This CurrentFlow maps the nets accurately but it lists out the incorrect final
-# net name for the Mirror Backplane. This is because of the resistors (RXXX)
-# being treated as copper. Treating these components as copper means that the
-# signal will continue to be traced further in the board resulting in a CORRECT
-# net name but this is NOT the FINAL net name that we want when tracing.
-# MirrorBPHopper = CurrentFlow([r"^RT\d", r"^RBSP_\d", r"^R\d", r"^NT\d+"])
-
-PcadReader.make_equivalent_nets_identical(
-    mirror_bp_descr, MirrorBPHopper.do(mirror_bp_descr)
-)
 
 
 #############
@@ -75,8 +54,7 @@ filter_inner_bb_throw_out = post_filter_any(
     lambda x: x[1] not in ["9", "10", "16", "17", "18", "19", "20", "24", "25",
                            "26", "27", "28", "29", "30"]
 )
-inner_bb_result_list = list(filter(filter_inner_bb_throw_out,
-                                   inner_bb_result))
+inner_bb_result_list = list(filter(filter_inner_bb_throw_out, inner_bb_result))
 
 # Mirror Backplane #############################################################
 # NOT USED IN FINDING CONNECTIONS (throw out GND later, for now we want to trace
@@ -95,16 +73,12 @@ mirror_bp_result_list = list(filter(filter_bp_throw_gnd, mirror_bp_result))
 inner_bb_ref = make_comp_netname_dict(inner_bb_descr)
 mirror_bp_ref = make_comp_netname_dict(mirror_bp_descr)
 
-compnames_inner_bb = inner_bb_ref.keys()
-netnames_inner_bb = inner_bb_ref.values()
-list_comp_inner_bb = list(compnames_inner_bb)
-list_nets_inner_bb = list(netnames_inner_bb)
+list_comp_inner_bb = list(inner_bb_ref.keys())
+list_nets_inner_bb = list(map(lambda x: x.replace(' ', ''),
+                              inner_bb_ref.values()))
 
-
-compnames_mirror_bp = mirror_bp_ref.keys()
-netnames_mirror_bp = mirror_bp_ref.values()
-list_comp_bp = list(compnames_mirror_bp)
-list_nets_bp = list(netnames_mirror_bp)
+list_comp_bp = list(mirror_bp_ref.keys())
+list_nets_bp = list(mirror_bp_ref.values())
 
 inner_bb_to_mirror_bp_map = []
 

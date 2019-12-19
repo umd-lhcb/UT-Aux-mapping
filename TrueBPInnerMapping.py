@@ -2,7 +2,7 @@
 #
 # Author: Ben Flaggs
 # License: BSD 2-clause
-# Last Change: Wed Dec 18, 2019 at 11:39 PM -0500
+# Last Change: Wed Dec 18, 2019 at 11:43 PM -0500
 
 from pathlib import Path
 
@@ -27,7 +27,6 @@ inner_bb_to_true_bp_mapping_filename = output_dir / Path(gen_filename(__file__))
 # Read all netlists #
 #####################
 
-# Default net hopping should work for Custom BB.
 InnerBBReader = PcadNaiveReader(inner_bb_netlist)
 inner_bb_descr = InnerBBReader.read()
 
@@ -54,8 +53,7 @@ filter_inner_bb_throw_out = post_filter_any(
     lambda x: x[1] not in ["9", "10", "16", "17", "18", "19", "20", "24", "25",
                            "26", "27", "28", "29", "30"]
 )
-inner_bb_result_list = list(filter(filter_inner_bb_throw_out,
-                                   inner_bb_result))
+inner_bb_result_list = list(filter(filter_inner_bb_throw_out, inner_bb_result))
 
 # True Backplane ###############################################################
 # NOT USED IN FINDING CONNECTIONS (throw out GND later, for now we want to trace
@@ -90,7 +88,6 @@ for i in range(len(list_nets_inner_bb)):
             list_comp_inner_bb[i][0] == list_comp_bp[j][0] and
             list_comp_inner_bb[i][1] == list_comp_bp[j][1]
         ):
-
             row.append(list_nets_inner_bb[i])
             row.append("-".join(list_comp_inner_bb[i]))
             row.append(list_nets_bp[j])
