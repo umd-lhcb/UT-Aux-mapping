@@ -2,7 +2,7 @@
 #
 # Author: Yipeng Sun
 # License: BSD 2-clause
-# Last Change: Fri Dec 13, 2019 at 02:50 PM -0500
+# Last Change: Wed Dec 18, 2019 at 11:03 PM -0500
 
 import re
 
@@ -14,7 +14,7 @@ sys.path.insert(0, "./pyUTM")
 from pyUTM.io import PcadNaiveReader
 from pyUTM.sim import CurrentFlow
 
-from CometDcbMapping import input_dir
+from UT_Aux_mapping.const import input_dir
 
 true_bp_netlist = input_dir / Path("mirror_backplane.net")
 
