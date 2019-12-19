@@ -2,7 +2,7 @@
 #
 # Author: Ben Flaggs
 # License: BSD 2-clause
-# Last Change: Wed Dec 18, 2019 at 04:36 PM -0500
+# Last Change: Wed Dec 18, 2019 at 11:10 PM -0500
 
 from pathlib import Path
 
@@ -13,14 +13,16 @@ from pyUTM.io import PcadReader, PcadNaiveReader
 from pyUTM.io import write_to_csv
 from pyUTM.sim import CurrentFlow
 
-from CometDcbMapping import input_dir, output_dir
-from CometDcbMapping import filter_comp
-from CometDcbMapping import post_filter_any
-from CometDcbMapping import make_comp_netname_dict
+from UT_Aux_mapping.const import input_dir, output_dir
+from UT_Aux_mapping.helpers import gen_filename
+from UT_Aux_mapping.helpers import filter_comp
+from UT_Aux_mapping.helpers import post_filter_any
+from UT_Aux_mapping.helpers import make_comp_netname_dict
 
 mirror_bp_netlist = input_dir / Path("mirror_backplane.net")
 inner_bb_netlist = input_dir / Path("inner_bb.net")
-inner_bb_to_mirror_bp_mapping_filename = output_dir / Path("InnerBBMirrorBPMapping.csv")
+inner_bb_to_mirror_bp_mapping_filename = output_dir / \
+    Path(gen_filename(__file__))
 
 
 #####################

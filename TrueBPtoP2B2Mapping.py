@@ -2,7 +2,7 @@
 #
 # Author: Ben Flaggs
 # License: BSD 2-clause
-# Last Change: Wed Dec 18, 2019 at 10:28 PM -0500
+# Last Change: Wed Dec 18, 2019 at 11:15 PM -0500
 
 from pathlib import Path
 
@@ -13,15 +13,16 @@ from pyUTM.io import PcadReader, PcadNaiveReader
 from pyUTM.io import write_to_csv
 from pyUTM.sim import CurrentFlow
 
-from CometDcbMapping import input_dir, output_dir
-from CometDcbMapping import filter_comp
-from CometDcbMapping import post_filter_any
-from CometDcbMapping import make_comp_netname_dict
+from UT_Aux_mapping.const import input_dir, output_dir
+from UT_Aux_mapping.helpers import gen_filename
+from UT_Aux_mapping.helpers import filter_comp
+from UT_Aux_mapping.helpers import post_filter_any
 
 true_bp_netlist = input_dir / Path("true_backplane.net")
 true_p2b2_netlist = input_dir / Path("true_p2b2.net")
 
-inner_bb_to_true_p2b2_mapping_filename = output_dir / Path("TrueBPtoP2B2Mapping.csv")
+inner_bb_to_true_p2b2_mapping_filename = output_dir / \
+    Path(gen_filename(__file__))
 
 #####################
 # Read all netlists #
