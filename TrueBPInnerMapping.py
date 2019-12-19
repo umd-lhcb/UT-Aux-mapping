@@ -2,16 +2,15 @@
 #
 # Author: Ben Flaggs
 # License: BSD 2-clause
-# Last Change: Wed Dec 18, 2019 at 11:13 PM -0500
+# Last Change: Wed Dec 18, 2019 at 11:39 PM -0500
 
 from pathlib import Path
 
 import sys
 sys.path.insert(0, "./pyUTM")
 
-from pyUTM.io import PcadReader, PcadNaiveReader
+from pyUTM.io import PcadNaiveReader
 from pyUTM.io import write_to_csv
-from pyUTM.sim import CurrentFlow
 
 from UT_Aux_mapping.const import input_dir, output_dir
 from UT_Aux_mapping.helpers import gen_filename
@@ -29,30 +28,11 @@ inner_bb_to_true_bp_mapping_filename = output_dir / Path(gen_filename(__file__))
 #####################
 
 # Default net hopping should work for Custom BB.
-NetHopper = CurrentFlow()
-
-InnerBBReader = PcadReader(inner_bb_netlist)
-inner_bb_descr = InnerBBReader.read(NetHopper)
+InnerBBReader = PcadNaiveReader(inner_bb_netlist)
+inner_bb_descr = InnerBBReader.read()
 
 TrueBPReader = PcadNaiveReader(true_bp_netlist)
 true_bp_descr = TrueBPReader.read()
-
-# TrueBPHopper = CurrentFlow([PLACE COMPONENTS TO TREAT AS COPPER HERE])
-
-# This CurrentFlow maps the nets accurately and outputs exactly what we want
-# to the final .csv file in the "output" directory.
-TrueBPHopper = CurrentFlow([r"^RT\d"])
-
-# This CurrentFlow maps the nets accurately but it lists out the incorrect final
-# net name for the True Backplane. This is because of the resistors (RXXX)
-# being treated as copper. Treating these components as copper means that the
-# signal will continue to be traced further in the board resulting in a CORRECT
-# net name but this is NOT the FINAL net name that we want when tracing.
-# TrueBPHopper = CurrentFlow([r"^RT\d", r"^RBSP_\d", r"^R\d", r"^NT\d+"])
-
-PcadReader.make_equivalent_nets_identical(
-    true_bp_descr, TrueBPHopper.do(true_bp_descr)
-)
 
 
 #############
@@ -85,25 +65,21 @@ filter_bp_throw_gnd = post_filter_any(lambda x: x[1] not in ["29"])
 true_bp_result_list = list(filter(filter_bp_throw_gnd, true_bp_result))
 
 
-##################################################
+###############################################
 # Find Inner BB to True Backplane Connections #
-##################################################
+###############################################
 
 # Inner BB -> True Backplane ###################################################
 
 inner_bb_ref = make_comp_netname_dict(inner_bb_descr)
 true_bp_ref = make_comp_netname_dict(true_bp_descr)
 
-compnames_inner_bb = inner_bb_ref.keys()
-netnames_inner_bb = inner_bb_ref.values()
-list_comp_inner_bb = list(compnames_inner_bb)
-list_nets_inner_bb = list(netnames_inner_bb)
+list_comp_inner_bb = list(inner_bb_ref.keys())
+list_nets_inner_bb = list(map(lambda x: x.replace(' ', ''),
+                              inner_bb_ref.values()))
 
-
-compnames_true_bp = true_bp_ref.keys()
-netnames_true_bp = true_bp_ref.values()
-list_comp_bp = list(compnames_true_bp)
-list_nets_bp = list(netnames_true_bp)
+list_comp_bp = list(true_bp_ref.keys())
+list_nets_bp = list(true_bp_ref.values())
 
 inner_bb_to_true_bp_map = []
 
