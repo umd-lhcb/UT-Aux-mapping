@@ -2,7 +2,7 @@
 #
 # Author: Yipeng Sun
 # License: BSD 2-clause
-# Last Change: Thu Jan 09, 2020 at 05:41 AM -0500
+# Last Change: Thu Jan 09, 2020 at 05:45 AM -0500
 
 from pathlib import Path
 
@@ -63,6 +63,8 @@ for ufl_pin, comet_pin in path_finder_ufl_to_comet.items():
     row.append('-'.join(comet_pin))
 
     comet_ufl_data.append(row)
+
+comet_ufl_data.sort(key=lambda x: int(x[1].split('-')[0][1:]))
 
 
 #################
