@@ -7,7 +7,7 @@ install:
     - pip install -r ./pyUTM/requirements.txt
 
 script:
-    - ./CometDcbMapping.py
+    - ./CometPFMapping.py
     - ./TrueBPInnerMapping.py
     - ./MirrorBPInnerMapping.py
 
@@ -20,6 +20,7 @@ deploy:
         - ./output/DebugDcbPathFinderMapping.csv
         - ./output/CometDcbFullMapping.csv
         - ./output/CometDcbShortMapping.csv
+        - ./output/CometPFMapping.csv
         - ./output/TrueBPInnerMapping.csv
         - ./output/MirrorBPInnerMapping.csv
     skip_cleanup: true
