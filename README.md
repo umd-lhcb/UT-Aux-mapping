@@ -2,6 +2,8 @@
 Python script to generate various UT auxiliary mappings. So far, we have:
 
 * COMET FPGA to DCB pin-by-pin mapping
+* COMET FPGA to Path finder U.FL pin-by-pin mapping
+* True backplane power mapping
 * Mirror backplane power mapping
 
 
@@ -19,7 +21,8 @@ pip install -r pyUTM/requirements.txt
 
 ## Usage
 ```
-python ./CometDcbMapping.py.py
+python ./CometDcbMapping.py
+python ./CometPFMapping.py
 python ./TrueBPInnerMapping.py
 python ./MirrorBPInnerMapping.py
 ```
