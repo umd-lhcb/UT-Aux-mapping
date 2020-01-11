@@ -2,7 +2,7 @@
 #
 # Author: Yipeng Sun
 # License: BSD 2-clause
-# Last Change: Sat Jan 11, 2020 at 01:28 AM -0500
+# Last Change: Sat Jan 11, 2020 at 01:34 AM -0500
 
 from pathlib import Path
 
@@ -64,7 +64,7 @@ for ufl_pin, comet_pin in path_finder_ufl_to_comet.items():
 
     comet_ufl_data.append(row)
 
-comet_ufl_data.sort(key=lambda x: int(x[1].split('-')[0][1:]))
+comet_ufl_data.sort(key=lambda x: int(x[2].split('-')[0][1:]))
 
 
 #################
