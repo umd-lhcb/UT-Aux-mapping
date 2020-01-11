@@ -2,7 +2,7 @@
 #
 # Author: Yipeng Sun
 # License: BSD 2-clause
-# Last Change: Thu Jan 09, 2020 at 05:45 AM -0500
+# Last Change: Sat Jan 11, 2020 at 01:28 AM -0500
 
 from pathlib import Path
 
@@ -59,8 +59,8 @@ for ufl_pin, comet_pin in path_finder_ufl_to_comet.items():
     fpga_pin = comet_j1_j2_duo_to_fpga[comet_pin]
     row.append('-'.join(fpga_pin))
 
-    row.append('-'.join(ufl_pin))
     row.append('-'.join(comet_pin))
+    row.append('-'.join(ufl_pin))
 
     comet_ufl_data.append(row)
 
