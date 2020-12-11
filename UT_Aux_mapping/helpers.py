@@ -2,7 +2,7 @@
 #
 # Author: Yipeng Sun
 # License: BSD 2-clause
-# Last Change: Wed Dec 18, 2019 at 11:05 PM -0500
+# Last Change: Fri Dec 11, 2020 at 02:11 AM +0100
 
 import re
 
@@ -70,15 +70,15 @@ def filter_comp(descr, regexp=r'^J\d+|^IC3_1+', netname=None):
 
 
 def post_filter_exist(functor):
-    def filter_functor(l):
-        return True if True in map(functor, l) else False
+    def filter_functor(lst):
+        return True if True in map(functor, lst) else False
 
     return filter_functor
 
 
 def post_filter_any(functor):
-    def filter_functor(l):
-        return False if False in map(functor, l) else True
+    def filter_functor(lst):
+        return False if False in map(functor, lst) else True
 
     return filter_functor
 
