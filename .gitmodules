@@ -1,4 +1,0 @@
-[submodule "pyUTM"]
-	path = pyUTM
-	url = https://github.com/umd-lhcb/pyUTM.git
-    ignore = dirty
