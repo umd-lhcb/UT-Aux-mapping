@@ -21,6 +21,11 @@
             # NOTE: plain 'pyUTM' won't work here as it is interpreted as
             #       an argument, instead of a package.
             pkgs.pythonPackages.pyUTM
+
+            # Dev tools
+            jedi
+            flake8
+            pylint
           ]);
         };
 
