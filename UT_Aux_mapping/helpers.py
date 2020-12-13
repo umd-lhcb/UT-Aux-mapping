@@ -2,7 +2,7 @@
 #
 # Author: Yipeng Sun
 # License: BSD 2-clause
-# Last Change: Fri Dec 11, 2020 at 02:11 AM +0100
+# Last Change: Sun Dec 13, 2020 at 11:23 PM +0100
 
 import re
 
@@ -130,3 +130,35 @@ def make_comp_comp_dict_bidirectional(nested):
         result[key2] = key1
 
     return result
+
+
+# PPP netname regulator ########################################################
+
+def ppp_replacement_wrapper(rules):
+    def wrapper(name):
+        return rules[name] if name in rules else name
+    return wrapper
+
+
+def ppp_netname_regulator(
+    name,
+    replacement_rules=ppp_replacement_wrapper({
+        # Different conventions
+        'P1E': 'P1_EAST',
+        'P1W': 'P1_WEST',
+        'P2E': 'P2_EAST',
+        'P2W': 'P2_WEST',
+    }),
+    typo_rules=ppp_replacement_wrapper({
+        'JUP2': 'JPU2'
+    })
+):
+    # Some of the netnames has ' ', some don't
+    name = name.replace(' ', '_')
+
+    # Now fix various inconsistencies in PPP netnames
+    # So that new names agree with conventions in P2B2
+    fields = [typo_rules(replacement_rules(f)) for f in name.split('_')]
+
+    # Also need to upper case everything
+    return ('_'.join(fields)).upper()
