@@ -2,12 +2,9 @@
 #
 # Author: Yipeng Sun
 # License: BSD 2-clause
-# Last Change: Sat Jan 11, 2020 at 01:34 AM -0500
+# Last Change: Sun Dec 13, 2020 at 11:30 PM +0100
 
 from pathlib import Path
-
-import sys
-sys.path.insert(0, './pyUTM')
 
 from pyUTM.io import write_to_csv
 

@@ -2,12 +2,9 @@
 #
 # Author: Ben Flaggs
 # License: BSD 2-clause
-# Last Change: Wed Dec 18, 2019 at 11:43 PM -0500
+# Last Change: Sun Dec 13, 2020 at 11:30 PM +0100
 
 from pathlib import Path
-
-import sys
-sys.path.insert(0, "./pyUTM")
 
 from pyUTM.io import PcadNaiveReader
 from pyUTM.io import write_to_csv
