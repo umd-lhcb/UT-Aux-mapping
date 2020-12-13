@@ -1,8 +1,3 @@
-ACCEL_ASCII "C_TOP_MAG_TRUE.PrjPcb"
-(asciiHeader
-  (asciiVersion 3 0)
-  (fileUnits Mil)
-)
 (netlist "Netlist_1"
   (globalAttrs
     (attr "CurrentDate" "12/8/2020" (textStyleRef "(Default)"))
