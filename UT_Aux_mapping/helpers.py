@@ -2,12 +2,14 @@
 #
 # Author: Yipeng Sun
 # License: BSD 2-clause
-# Last Change: Sun Dec 13, 2020 at 11:27 PM +0100
+# Last Change: Mon Dec 14, 2020 at 12:10 AM +0100
 
 import re
 
 from collections import defaultdict
 from os.path import basename
+from dataclasses import dataclass
+from typing import Optional
 
 
 # Generate default output filename #############################################
@@ -130,6 +132,30 @@ def make_comp_comp_dict_bidirectional(nested):
         result[key2] = key1
 
     return result
+
+
+# General netname parser #######################################################
+
+@dataclass
+class NameJP:
+    jp: Optional[str] = None
+    pwr: Optional[str] = None
+    hyb: Optional[str] = None
+    descr: str = 'GND'
+
+
+def parse_net_jp(name):
+    if len(fields := name.split('_')) < 2:
+        return NameJP()
+
+    jp = fields.pop(0)
+    pwr = fields.pop(0)
+
+    sep = 2 if ('EAST' in fields[1] or 'WEST' in fields[1]) else 1
+    hyb = '_'.join(fields[:sep])
+    descr = '_'.join(fields[sep:])
+
+    return NameJP(jp, pwr, hyb, descr)
 
 
 # PPP netname regulator ########################################################
