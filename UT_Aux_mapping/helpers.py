@@ -2,7 +2,7 @@
 #
 # Author: Yipeng Sun
 # License: BSD 2-clause
-# Last Change: Sun Dec 13, 2020 at 11:23 PM +0100
+# Last Change: Sun Dec 13, 2020 at 11:27 PM +0100
 
 import re
 
@@ -12,8 +12,8 @@ from os.path import basename
 
 # Generate default output filename #############################################
 
-def gen_filename(raw):
-    return basename(raw).split('.')[0] + '.csv'
+def gen_filename(raw, ext='csv'):
+    return basename(raw).split('.')[0] + '.' + ext
 
 
 # Regularize input #############################################################
