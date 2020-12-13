@@ -1,6 +1,6 @@
 *.pyc
-.python-version
 *.log
 *.pdf
+
 cache
 output
