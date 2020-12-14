@@ -2,7 +2,7 @@
 #
 # Author: Yipeng Sun
 # License: BSD 2-clause
-# Last Change: Tue Dec 15, 2020 at 12:25 AM +0100
+# Last Change: Tue Dec 15, 2020 at 12:37 AM +0100
 
 import tabulate as tabl
 
@@ -121,7 +121,8 @@ def tcolorbox(left, right,
 # Special output ###############################################################
 
 def tabular_ppp(data, headers, color,
-                align=['left']*3+['right']+['center']*3):
+                align=['left']*3+['right']+['center']*3,
+                sort=lambda x: int(x[3:])):
     reformatted = defaultdict(list)
     # 'PPP', 'P2B2', 'netname', 'netname (PPP)', 'Depop?', 'Length (appx)'
     counter = defaultdict(lambda: 0)
@@ -144,7 +145,9 @@ def tabular_ppp(data, headers, color,
         reformatted[jpu].append(reformatted_row)
 
     left_output = ''
-    for jpu, data in reformatted.items():
+    for jpu in sorted(reformatted.keys(), key=sort):
+        data = reformatted[jpu]
+
         left_output += latex_env(monospace(jpu), 'subsection*')
         left_output += tabl.tabulate(
             data, headers=headers, tablefmt='latex_booktabs_raw',

@@ -2,7 +2,7 @@
 #
 # Author: Yipeng Sun
 # License: BSD 2-clause
-# Last Change: Mon Dec 14, 2020 at 04:13 PM +0100
+# Last Change: Tue Dec 15, 2020 at 12:31 AM +0100
 
 import re
 
@@ -110,7 +110,7 @@ for net, ppp_comp_list in ppp_descr.items():
 # Write to file #
 #################
 
-headers = ['PPP', 'P2B2', 'netname', 'netname (PPP)', 'Depop?', 'Length [cm]']
+headers = ['PPP', 'P2B2', 'Netname', 'Netname (PPP)', 'Depop?', 'Length [cm]']
 
 
 for var, data in true_p2b2_to_ppp.items():
@@ -119,6 +119,6 @@ for var, data in true_p2b2_to_ppp.items():
     write_to_latex_ppp(
         output_tex[var], 'C-TOP-MAG-TRUE-'+var.upper(),
         data,
-        headers[0:3]+headers[5:]+['Cut', 'Labeled', 'Soldered'],
+        headers[0:3]+headers[5:]+['Cut', 'Labeled', 'Crimped'],
         colors_dict[var]
     )
