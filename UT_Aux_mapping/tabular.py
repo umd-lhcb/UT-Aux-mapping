@@ -2,7 +2,7 @@
 #
 # Author: Yipeng Sun
 # License: BSD 2-clause
-# Last Change: Mon Dec 14, 2020 at 04:27 AM +0100
+# Last Change: Mon Dec 14, 2020 at 04:48 AM +0100
 
 import tabulate as tabl
 
@@ -67,6 +67,10 @@ def monospace(text):
     return latex_env(text, 'texttt', eol='')
 
 
+def bold(text):
+    return latex_env(text, 'textbf', eol='')
+
+
 def strikethrough(text):
     latex_dep['ulem'] += ['normalem']
     return latex_env(text, 'st', eol='')
@@ -102,9 +106,10 @@ def tabular_ppp(data, headers):
 
 # Output #######################################################################
 
-def write_to_latex_ppp(output_file, data, headers):
+def write_to_latex_ppp(output_file, title, data, headers):
     output = latex_preamble()
     content = latex_env('empty', 'pagestyle')
+    content += bold(title) + '\n'
     content += r'\small' + '\n'
     content += tabular_ppp(data, headers)
     output += latex_begin(content)
