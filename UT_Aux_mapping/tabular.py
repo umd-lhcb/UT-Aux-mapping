@@ -2,7 +2,7 @@
 #
 # Author: Yipeng Sun
 # License: BSD 2-clause
-# Last Change: Tue Dec 15, 2020 at 12:37 AM +0100
+# Last Change: Tue Dec 15, 2020 at 12:38 AM +0100
 
 import tabulate as tabl
 
@@ -124,7 +124,6 @@ def tabular_ppp(data, headers, color,
                 align=['left']*3+['right']+['center']*3,
                 sort=lambda x: int(x[3:])):
     reformatted = defaultdict(list)
-    # 'PPP', 'P2B2', 'netname', 'netname (PPP)', 'Depop?', 'Length (appx)'
     counter = defaultdict(lambda: 0)
 
     for row in data:
