@@ -2,7 +2,7 @@
 #
 # Author: Yipeng Sun
 # License: BSD 2-clause
-# Last Change: Mon Dec 14, 2020 at 04:48 AM +0100
+# Last Change: Mon Dec 14, 2020 at 04:53 AM +0100
 
 import tabulate as tabl
 
@@ -13,6 +13,7 @@ latex_dep = defaultdict(list)
 latex_dep['booktabs']
 latex_dep['geometry'] = ['a4paper',
                          'left=1cm', 'right=2cm', 'top=1cm', 'bottom=1cm']
+latex_dep['amssymb']
 
 
 # LaTeX general ################################################################
@@ -91,6 +92,7 @@ def tabular_ppp(data, headers):
 
         reformatted_row += [netname_formatter(c) for c in row[2:3]]
         reformatted_row.append(row[5])
+        reformatted_row += [r'$\square$'] * 3
 
         reformatted[jpu].append(reformatted_row)
 

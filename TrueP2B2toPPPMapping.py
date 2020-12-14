@@ -2,7 +2,7 @@
 #
 # Author: Yipeng Sun
 # License: BSD 2-clause
-# Last Change: Mon Dec 14, 2020 at 04:47 AM +0100
+# Last Change: Mon Dec 14, 2020 at 04:52 AM +0100
 
 import re
 
@@ -112,4 +112,5 @@ headers = ['PPP', 'P2B2', 'netname', 'netname (PPP)', 'Depop?', 'Length']
 for var, data in true_p2b2_to_ppp.items():
     write_to_csv(output_csv[var], data, headers)
     write_to_latex_ppp(output_tex[var], 'C-TOP-MAG-TRUE-'+var.upper(),
-                       data, headers[0:3]+headers[5:])
+                       data, headers[0:3]+headers[5:] +
+                       ['Cut', 'Labeled', 'Soldered'])
