@@ -2,7 +2,7 @@
 #
 # Author: Yipeng Sun
 # License: BSD 2-clause
-# Last Change: Mon Dec 14, 2020 at 05:22 AM +0100
+# Last Change: Mon Dec 14, 2020 at 05:42 AM +0100
 
 import tabulate as tabl
 
@@ -12,7 +12,7 @@ from collections import defaultdict
 latex_dep = defaultdict(list)
 latex_dep['booktabs']
 latex_dep['geometry'] = ['a4paper',
-                         'left=1cm', 'right=2cm', 'top=1cm', 'bottom=1cm']
+                         'left=1cm', 'right=1cm', 'top=1cm', 'bottom=1cm']
 latex_dep['amssymb']
 
 
@@ -31,12 +31,16 @@ tabl._table_formats["latex_booktabs_raw"] = tabl.TableFormat(
 )
 
 
-def latex_env(content, env, opts=None, required_opts=None, eol='\n'):
+def latex_env(content, env,
+              opts=None, tail_opts=None, required_opts=None, eol='\n'):
     if opts:
         output = '\\' + env + '[' + ','.join(opts) + ']' + \
             '{' + content + '}'
     else:
         output = '\\' + env + '{' + content + '}'
+
+    if tail_opts:
+        output += '[' + ','.join(tail_opts) + ']'
 
     if required_opts:
         output += '{' + ','.join(required_opts) + '}'
@@ -44,8 +48,8 @@ def latex_env(content, env, opts=None, required_opts=None, eol='\n'):
     return output + eol
 
 
-def latex_begin(content, env='document', opts=None, required_opts=None):
-    output = latex_env(env, 'begin', opts, required_opts)
+def latex_begin(content, env='document', **kwargs):
+    output = latex_env(env, 'begin', **kwargs)
     output += content
     output += latex_env(env, 'end')
     return output
@@ -135,9 +139,10 @@ def write_to_latex_ppp(output_file, title, data, headers, color):
     left_output, right_output, _ = tabular_ppp(data,  headers, color)
     left_table += left_output
     content += latex_begin(left_table, 'minipage',
-                           required_opts=[r'0.7\textwidth'])
+                           required_opts=[r'0.75\textwidth'])
+    content += latex_env('1em', 'hspace')
     content += latex_begin(right_output, 'minipage',
-                           required_opts=[r'0.3\textwidth'])
+                           required_opts=[r'0.2\textwidth'])
 
     output += latex_begin(content)
 
