@@ -1,6 +1,6 @@
 # Author: Yipeng Sun
 # License: BSD 2-clause
-# Last Change: Mon Dec 14, 2020 at 04:43 AM +0100
+# Last Change: Mon Dec 14, 2020 at 05:52 AM +0100
 
 export PATH	:= $(shell pwd):$(PATH)
 
@@ -12,7 +12,9 @@ VPATH := $(OUTPUT_PATH)
 #########
 
 .PHONY: all
-all: TrueP2B2toPPPMappingFull.pdf
+all: TrueP2B2toPPPMappingFull.pdf \
+	TrueP2B2toPPPMappingPartial.pdf \
+	TrueP2B2toPPPMappingDepopulated.pdf
 
 .PHONY: clean
 clean:
