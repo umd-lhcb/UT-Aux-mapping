@@ -2,7 +2,7 @@
 #
 # Author: Yipeng Sun
 # License: BSD 2-clause
-# Last Change: Mon Dec 14, 2020 at 03:49 AM +0100
+# Last Change: Mon Dec 14, 2020 at 04:20 AM +0100
 
 import re
 
@@ -107,8 +107,8 @@ for net, ppp_comp_list in ppp_descr.items():
 # Write to file #
 #################
 
-headers = ['PPP', 'P2B2', 'netname', 'netname (PPP)', 'Depop?', 'Length (appx)']
+headers = ['PPP', 'P2B2', 'netname', 'netname (PPP)', 'Depop?', 'Length']
 
 for var, data in true_p2b2_to_ppp.items():
     write_to_csv(output_csv[var], data, headers)
-    write_to_latex_ppp(output_tex[var], data, headers)
+    write_to_latex_ppp(output_tex[var], data, headers[0:3]+headers[5:])

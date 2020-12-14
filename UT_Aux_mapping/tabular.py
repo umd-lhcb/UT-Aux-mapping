@@ -2,7 +2,7 @@
 #
 # Author: Yipeng Sun
 # License: BSD 2-clause
-# Last Change: Mon Dec 14, 2020 at 04:09 AM +0100
+# Last Change: Mon Dec 14, 2020 at 04:27 AM +0100
 
 import tabulate as tabl
 
@@ -54,8 +54,8 @@ def latex_packages(packages=latex_dep):
     return output
 
 
-def latex_preamble(template='article'):
-    output = latex_env(template, 'documentclass')
+def latex_preamble(template='article', fontsize='10pt'):
+    output = latex_env(template, 'documentclass', [fontsize])
     output += latex_packages()
 
     return output
@@ -73,10 +73,11 @@ def strikethrough(text):
 
 
 def tabular_ppp(data, headers):
-    reformatted = []
+    reformatted = defaultdict(list)
     # 'PPP', 'P2B2', 'netname', 'netname (PPP)', 'Depop?', 'Length (appx)'
 
     for row in data:
+        jpu, _ = row[1].split(' - ')
         reformatted_row = [monospace(c) for c in row[0:2]]
 
         if row[4]:
@@ -84,20 +85,28 @@ def tabular_ppp(data, headers):
         else:
             netname_formatter = lambda x: monospace(x)
 
-        reformatted_row += [netname_formatter(c) for c in row[2:4]]
+        reformatted_row += [netname_formatter(c) for c in row[2:3]]
         reformatted_row.append(row[5])
 
-        reformatted.append(reformatted_row)
+        reformatted[jpu].append(reformatted_row)
 
-    return tabl.tabulate(
-        reformatted, headers=headers, tablefmt='latex_booktabs_raw')
+    output = ''
+    for jpu, data in reformatted.items():
+        output += latex_env(monospace(jpu), 'subsection*')
+        output += tabl.tabulate(
+            data, headers=headers, tablefmt='latex_booktabs_raw')
+        output += '\n'
+
+    return output
 
 
 # Output #######################################################################
 
 def write_to_latex_ppp(output_file, data, headers):
     output = latex_preamble()
-    content = tabular_ppp(data, headers)
+    content = latex_env('empty', 'pagestyle')
+    content += r'\small' + '\n'
+    content += tabular_ppp(data, headers)
     output += latex_begin(content)
 
     with open(output_file, 'w') as f:
