@@ -679,12 +679,12 @@
     (node "P9" "5")
     (node "P15" "5")
   )
-  (net "JP2 JPU0 P3 LV Return"
+  (net "JP2 JPU1 P3 LV Return"
     (node "P3" "14")
     (node "P9" "14")
     (node "P15" "14")
   )
-  (net "JP2 JPU0 P3 LV Source"
+  (net "JP2 JPU1 P3 LV Source"
     (node "P3" "6")
     (node "P9" "6")
     (node "P15" "6")
