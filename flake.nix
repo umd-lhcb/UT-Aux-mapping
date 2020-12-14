@@ -22,6 +22,9 @@
             #       an argument, instead of a package.
             pkgs.pythonPackages.pyUTM
 
+            # Other dependencies
+            tabulate
+
             # Dev tools
             jedi
             flake8
