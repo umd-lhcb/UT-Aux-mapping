@@ -2,14 +2,14 @@
 #
 # Author: Yipeng Sun
 # License: BSD 2-clause
-# Last Change: Mon Dec 14, 2020 at 05:51 AM +0100
+# Last Change: Mon Dec 14, 2020 at 04:13 PM +0100
 
 import re
 
 from pathlib import Path
 
 from pyUTM.common import jp_depop_true
-from pyUTM.io import PcadNaiveReader
+from pyUTM.io import PcadNaiveReader, WirelistNaiveReader
 from pyUTM.io import write_to_csv
 
 from UT_Aux_mapping.const import input_dir, output_dir
@@ -20,7 +20,7 @@ from UT_Aux_mapping.helpers import gen_filename
 from UT_Aux_mapping.tabular import write_to_latex_ppp
 
 true_p2b2_netlist = input_dir / Path('true_p2b2.net')
-ppp_netlist = input_dir / Path('ppp.net')
+true_ppp_netlist = input_dir / Path('true_ppp.wirelist')
 
 variants = ['Full', 'Partial', 'Depopulated']
 colors = ['Red', 'Green', 'White']
@@ -51,8 +51,8 @@ cable_length = {var: {jpu+' - '+str(pin): jpu_cable_length(var, jpu)
 TrueP2B2Reader = PcadNaiveReader(true_p2b2_netlist)
 true_p2b2_descr = TrueP2B2Reader.read()
 
-PPPReader = PcadNaiveReader(ppp_netlist)
-ppp_descr = PPPReader.read()
+TruePPPReader = WirelistNaiveReader(true_ppp_netlist)
+true_ppp_descr = TruePPPReader.read()
 
 
 ############################################################
@@ -60,9 +60,9 @@ ppp_descr = PPPReader.read()
 ############################################################
 
 # This stores name before and after the fix
-ppp_name_errata = {k: ppp_netname_regulator(k) for k in ppp_descr.keys()}
+ppp_name_errata = {k: ppp_netname_regulator(k) for k in true_ppp_descr.keys()}
 ppp_name_errata_inverse = dict(map(reversed, ppp_name_errata.items()))
-ppp_descr = {ppp_name_errata[k]: v for k, v in ppp_descr.items()}
+ppp_descr = {ppp_name_errata[k]: v for k, v in true_ppp_descr.items()}
 
 # For this part, only the JPU connectors are relevant
 ppp_descr = {k: v for k, v in ppp_descr.items() if 'JPU' in k}
