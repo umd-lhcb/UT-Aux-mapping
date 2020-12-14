@@ -2,7 +2,7 @@
 #
 # Author: Yipeng Sun
 # License: BSD 2-clause
-# Last Change: Mon Dec 14, 2020 at 05:22 AM +0100
+# Last Change: Mon Dec 14, 2020 at 05:51 AM +0100
 
 import re
 
@@ -15,6 +15,7 @@ from pyUTM.io import write_to_csv
 from UT_Aux_mapping.const import input_dir, output_dir
 from UT_Aux_mapping.const import jp_hybrid_name_inverse
 from UT_Aux_mapping.helpers import ppp_netname_regulator, parse_net_jp
+from UT_Aux_mapping.helpers import ppp_sort
 from UT_Aux_mapping.helpers import gen_filename
 from UT_Aux_mapping.tabular import write_to_latex_ppp
 
@@ -111,10 +112,13 @@ for net, ppp_comp_list in ppp_descr.items():
 
 headers = ['PPP', 'P2B2', 'netname', 'netname (PPP)', 'Depop?', 'Length [cm]']
 
+
 for var, data in true_p2b2_to_ppp.items():
+    data.sort(key=lambda x: ppp_sort(x[1]))
     write_to_csv(output_csv[var], data, headers)
     write_to_latex_ppp(
         output_tex[var], 'C-TOP-MAG-TRUE-'+var.upper(),
-        data, headers[0:3]+headers[5:]+['Cut', 'Labeled', 'Soldered'],
+        data,
+        headers[0:3]+headers[5:]+['Cut', 'Labeled', 'Soldered'],
         colors_dict[var]
     )

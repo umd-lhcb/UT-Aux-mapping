@@ -2,7 +2,7 @@
 #
 # Author: Yipeng Sun
 # License: BSD 2-clause
-# Last Change: Mon Dec 14, 2020 at 02:05 AM +0100
+# Last Change: Mon Dec 14, 2020 at 05:46 AM +0100
 
 import re
 
@@ -188,3 +188,12 @@ def ppp_netname_regulator(
 
     # Also need to upper case everything
     return ('_'.join(fields)).upper()
+
+
+# PPP list sorting #############################################################
+
+def ppp_sort(name):
+    connector, pin = name.split(' - ')
+    connector = int(connector[3:])
+    pin = int(pin)
+    return 1000 - connector*100 + pin
