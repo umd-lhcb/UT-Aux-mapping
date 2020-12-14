@@ -2,7 +2,7 @@
 #
 # Author: Yipeng Sun
 # License: BSD 2-clause
-# Last Change: Mon Dec 14, 2020 at 03:57 AM +0100
+# Last Change: Mon Dec 14, 2020 at 04:06 AM +0100
 
 import tabulate as tabl
 
@@ -30,15 +30,26 @@ tabl._table_formats["latex_booktabs_raw"] = tabl.TableFormat(
 )
 
 
+def latex_env(content, env, opts=None):
+    if opts:
+        return '\\' + env + '[' + ','.join(opts) + ']' + \
+            '{' + content + '}' + '\n'
+    else:
+        return '\\' + env + '{' + content + '}' + '\n'
+
+
+def latex_begin(content, env='document'):
+    output = latex_env(env, 'begin')
+    output += content
+    output += latex_env(env, 'end')
+    return output
+
+
 def latex_packages(packages=latex_dep):
     output = ''
 
     for pkg, opts in packages.items():
-        if opts:
-            output += r'\usepackage' + '[' + ','.join(opts) + ']' + \
-                '{' + pkg + '}' + '\n'
-        else:
-            output += r'\usepackage' + '{' + pkg + '}' + '\n'
+        output += latex_env(pkg, 'usepackage', opts)
 
     return output
 
@@ -47,13 +58,6 @@ def latex_preamble(template='article'):
     output = r'\documentclass{' + template + '}\n'
     output += latex_packages()
 
-    return output
-
-
-def latex_begin(content, env='document'):
-    output = r'\begin{' + env + '}\n'
-    output += content
-    output += r'\end{' + env + '}\n'
     return output
 
 
