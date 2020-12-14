@@ -2,7 +2,7 @@
 #
 # Author: Yipeng Sun
 # License: BSD 2-clause
-# Last Change: Mon Dec 14, 2020 at 02:49 AM +0100
+# Last Change: Mon Dec 14, 2020 at 03:14 AM +0100
 
 import re
 
@@ -37,7 +37,7 @@ def jpu_cable_length(var, jpu,
 
 cable_length = {var: {jpu+' - '+str(pin): jpu_cable_length(var, jpu)
                       for jpu in jpus for pin in range(1, 31)}
-                for var in variants }
+                for var in variants}
 
 
 #####################
@@ -90,8 +90,8 @@ for net, ppp_comp_list in ppp_descr.items():
             row.append(jpu_pin)
             row.append(net)
             row.append(ppp_name_errata_inverse[net])
-            row.append(str(depop))
-            row.append(str(cable_length[var][jpu_pin]))
+            row.append(depop)
+            row.append(cable_length[var][jpu_pin])
 
             true_p2b2_to_ppp[var].append(row)
 
