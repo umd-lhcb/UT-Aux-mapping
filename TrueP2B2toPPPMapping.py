@@ -2,7 +2,7 @@
 #
 # Author: Yipeng Sun
 # License: BSD 2-clause
-# Last Change: Mon Dec 14, 2020 at 01:24 AM +0100
+# Last Change: Mon Dec 14, 2020 at 02:05 AM +0100
 
 import re
 
@@ -20,8 +20,8 @@ ppp_netlist = input_dir / Path('ppp.net')
 
 variants = ['Full', 'Partial', 'Depopulated']
 
-output_csv = {var: output_dir / gen_filename(__file__+var) for var in variants}
-output_tex = {var: output_dir / gen_filename(__file__+var, 'tex')
+output_csv = {var: output_dir / gen_filename(__file__, var) for var in variants}
+output_tex = {var: output_dir / gen_filename(__file__, var, 'tex')
               for var in variants}
 
 
@@ -65,10 +65,8 @@ for net, ppp_comp_list in ppp_descr.items():
 
             jpu = [comp for comp in p2b2_comp
                    if bool(re.search(r'^JPU\d', comp[0]))][0]
-            row.append(ppp_comp[0])
-            row.append(ppp_comp[1])
-            row.append(jpu[0])
-            row.append(jpu[1])
+            row.append(ppp_comp[0]+' - '+ppp_comp[1])
+            row.append(jpu[0]+' - '+jpu[1])
             row.append(net)
             row.append(ppp_name_errata_inverse[net])
 
@@ -79,3 +77,12 @@ for net, ppp_comp_list in ppp_descr.items():
 
         except IndexError:
             print("Warning: net {} doesn't have a matching JPU".format(net))
+
+
+#################
+# Write to file #
+#################
+
+for var, data in true_p2b2_to_ppp.items():
+    write_to_csv(output_csv[var], data,
+                 ['PPP', 'P2B2', 'netname', 'netname (PPP)'])

@@ -2,7 +2,7 @@
 #
 # Author: Yipeng Sun
 # License: BSD 2-clause
-# Last Change: Mon Dec 14, 2020 at 12:10 AM +0100
+# Last Change: Mon Dec 14, 2020 at 02:05 AM +0100
 
 import re
 
@@ -14,8 +14,8 @@ from typing import Optional
 
 # Generate default output filename #############################################
 
-def gen_filename(raw, ext='csv'):
-    return basename(raw).split('.')[0] + '.' + ext
+def gen_filename(raw, addon='', ext='csv'):
+    return basename(raw).split('.')[0] + addon + '.' + ext
 
 
 # Regularize input #############################################################
