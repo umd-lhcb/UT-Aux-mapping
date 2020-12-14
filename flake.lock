@@ -66,11 +66,11 @@
         "nixpkgs": "nixpkgs_2"
       },
       "locked": {
-        "lastModified": 1607911672,
-        "narHash": "sha256-IZGb2vegZu/04CIck+XsMEnEuqvdDGRf+n8jKg//bGE=",
+        "lastModified": 1607958359,
+        "narHash": "sha256-0/GrGa37KifVDDO9vM+SNN9dlYp1hQpJz8zMsObvEH4=",
         "owner": "umd-lhcb",
         "repo": "pyUTM",
-        "rev": "31b29ed6b506a2c0d2c2e7cd5f45957306976ec1",
+        "rev": "4051df13b378f0adaf58ab08feefc6a62827f7e8",
         "type": "github"
       },
       "original": {
