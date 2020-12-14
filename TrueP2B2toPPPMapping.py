@@ -2,7 +2,7 @@
 #
 # Author: Yipeng Sun
 # License: BSD 2-clause
-# Last Change: Mon Dec 14, 2020 at 03:14 AM +0100
+# Last Change: Mon Dec 14, 2020 at 03:49 AM +0100
 
 import re
 
@@ -16,6 +16,7 @@ from UT_Aux_mapping.const import input_dir, output_dir
 from UT_Aux_mapping.const import jp_hybrid_name_inverse
 from UT_Aux_mapping.helpers import ppp_netname_regulator, parse_net_jp
 from UT_Aux_mapping.helpers import gen_filename
+from UT_Aux_mapping.tabular import write_to_latex_ppp
 
 true_p2b2_netlist = input_dir / Path('true_p2b2.net')
 ppp_netlist = input_dir / Path('ppp.net')
@@ -106,7 +107,8 @@ for net, ppp_comp_list in ppp_descr.items():
 # Write to file #
 #################
 
+headers = ['PPP', 'P2B2', 'netname', 'netname (PPP)', 'Depop?', 'Length (appx)']
+
 for var, data in true_p2b2_to_ppp.items():
-    write_to_csv(output_csv[var], data,
-                 ['PPP', 'P2B2', 'netname', 'netname (PPP)', 'Depop?',
-                  'Length (appx)'])
+    write_to_csv(output_csv[var], data, headers)
+    write_to_latex_ppp(output_tex[var], data, headers)

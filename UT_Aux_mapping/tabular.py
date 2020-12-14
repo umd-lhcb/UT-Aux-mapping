@@ -2,9 +2,11 @@
 #
 # Author: Yipeng Sun
 # License: BSD 2-clause
-# Last Change: Mon Dec 14, 2020 at 03:47 AM +0100
+# Last Change: Mon Dec 14, 2020 at 03:57 AM +0100
 
-from tabulate import tabulate
+import tabulate as tabl
+
+from functools import partial
 from collections import defaultdict
 
 latex_dep = defaultdict(list)
@@ -15,6 +17,19 @@ latex_dep['geometry'] = ['a4paper',
 
 # LaTeX general ################################################################
 
+# Don't escape '\'
+tabl._table_formats["latex_booktabs_raw"] = tabl.TableFormat(
+    lineabove=partial(tabl._latex_line_begin_tabular, booktabs=True),
+    linebelowheader=tabl.Line("\\midrule", "", "", ""),
+    linebetweenrows=None,
+    linebelow=tabl.Line("\\bottomrule\n\\end{tabular}", "", "", ""),
+    headerrow=partial(tabl._latex_row, escrules={r"_": r"\_"}),
+    datarow=partial(tabl._latex_row, escrules={r"_": r"\_"}),
+    padding=1,
+    with_header_hide=None,
+)
+
+
 def latex_packages(packages=latex_dep):
     output = ''
 
@@ -24,6 +39,8 @@ def latex_packages(packages=latex_dep):
                 '{' + pkg + '}' + '\n'
         else:
             output += r'\usepackage' + '{' + pkg + '}' + '\n'
+
+    return output
 
 
 def latex_preamble(template='article'):
@@ -51,11 +68,11 @@ def strikethrough(text):
     return r'\st{' + text + r'}'
 
 
-def tabular_ppp(data):
-    reformatted = [data[0][0:4]+data[0][5]]  # Keep headers
+def tabular_ppp(data, headers):
+    reformatted = []
     # 'PPP', 'P2B2', 'netname', 'netname (PPP)', 'Depop?', 'Length (appx)'
 
-    for row in data[1:]:
+    for row in data:
         reformatted_row = [monospace(c) for c in row[0:2]]
 
         if row[4]:
@@ -68,14 +85,15 @@ def tabular_ppp(data):
 
         reformatted.append(reformatted_row)
 
-    return tabulate(reformatted, headers='firstrow', tablefmt='latex_booktabs')
+    return tabl.tabulate(
+        reformatted, headers=headers, tablefmt='latex_booktabs_raw')
 
 
 # Output #######################################################################
 
-def write_to_latex_ppp(output_file, data, aux_data):
+def write_to_latex_ppp(output_file, data, headers):
     output = latex_preamble()
-    content = tabular_ppp(data)
+    content = tabular_ppp(data, headers)
     output += latex_begin(content)
 
     with open(output_file, 'w') as f:
