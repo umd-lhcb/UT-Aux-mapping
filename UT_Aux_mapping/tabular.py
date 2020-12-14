@@ -2,7 +2,7 @@
 #
 # Author: Yipeng Sun
 # License: BSD 2-clause
-# Last Change: Mon Dec 14, 2020 at 04:38 PM +0100
+# Last Change: Tue Dec 15, 2020 at 12:12 AM +0100
 
 import tabulate as tabl
 
@@ -43,7 +43,7 @@ def latex_env(content, env,
         output = '\\' + env + '{' + content + '}'
 
     if tail_opts:
-        tail_opts = dedupl(opts)
+        tail_opts = dedupl(tail_opts)
         output += '[' + ','.join(tail_opts) + ']'
 
     if required_opts:
@@ -55,7 +55,7 @@ def latex_env(content, env,
 
 def latex_begin(content, env='document', **kwargs):
     output = latex_env(env, 'begin', **kwargs)
-    output += content
+    output += content + '\n'
     output += latex_env(env, 'end')
     return output
 
@@ -93,23 +93,29 @@ def strikethrough(text):
 
 # Special LaTeX environment ####################################################
 
+def node(content,
+         opts=['inner sep=0pt', 'outer sep=0pt'],
+         width=r'0.3\textwidth',
+         align='none,below left', xshift=r'0.4\textwidth',
+         yshift='-10em', anchor='frame.north east'):
+    return r'\node[' + ','.join(opts +
+                                ['text width='+width, 'align='+align]) + ']' + \
+        ' at ' + \
+        '([' + ','.join(['xshift='+xshift, 'yshift='+yshift]) + ']' + \
+        anchor + ')' + '\n' + \
+        '{' + '\n' + content + '\n' + '}' + '\n'
+
+
 def tcolorbox(left, right,
-              left_width=0.7, right_width=0.3, width=r'\textwidth'):
-    left_width = str(left_width)
-    right_width = str(right_width)
+              left_width=r'0.7\textwidth',
+              right_width=r'0.3\textwidth', width=r'\textwidth'):
 
     latex_dep['tcolorbox'] += ['skins', 'breakable']
-    overlay = latex_env(
-        right, 'overlay unbroken and first=',
-        opts=[r'\node[inner sep=0pt,outer sep=0pt,text width=' +
-              str(right_width)+width+',' +
-              r'align=none,below left]' +
-              'at ([xshift='+right_width+width+']' +
-              'frame.north west)'])
+    overlay = latex_env(node(right)+';', 'overlay unbroken and first=')[1:]
     return latex_begin(
-        left,  env='tcolorbox',
-        opts=['blanker', 'width='+left_width+width,
-              'enlarge right by='+right_width+width, 'breakable', overlay])
+        left, 'tcolorbox',
+        tail_opts=['blanker', 'breakable', 'width='+left_width,
+                   'enlarge right by='+right_width, overlay])
 
 
 # Special output ###############################################################
@@ -123,10 +129,11 @@ def tabular_ppp(data, headers, color):
         jpu, _ = row[1].split(' - ')
         reformatted_row = [monospace(c) for c in row[0:2]]
 
-        if row[4]:
-            netname_formatter = lambda x: strikethrough(monospace(x))
-        else:
-            netname_formatter = lambda x: monospace(x)
+        # No need for strikethrough
+        # if row[4]:
+        #     netname_formatter = lambda x: strikethrough(monospace(x))
+        # else:
+        netname_formatter = lambda x: monospace(x)
 
         reformatted_row += [netname_formatter(c) for c in row[2:3]]
         reformatted_row.append(row[5])
@@ -162,10 +169,10 @@ def write_to_latex_ppp(output_file, title, data, headers, color):
     content += r'\noindent'
     content += '\n'
 
-    left_output = r'\small' + '\n'
+    left_output = right_output = r'\small' + '\n'
     left_table, right_table, _ = tabular_ppp(data,  headers, color)
     left_output += left_table
-    right_output = right_table
+    right_output += right_table
 
     content += tcolorbox(left_output, right_output)
 
