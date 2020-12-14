@@ -2,7 +2,7 @@
 #
 # Author: Yipeng Sun
 # License: BSD 2-clause
-# Last Change: Tue Dec 15, 2020 at 12:12 AM +0100
+# Last Change: Tue Dec 15, 2020 at 12:21 AM +0100
 
 import tabulate as tabl
 
@@ -95,8 +95,8 @@ def strikethrough(text):
 
 def node(content,
          opts=['inner sep=0pt', 'outer sep=0pt'],
-         width=r'0.3\textwidth',
-         align='none,below left', xshift=r'0.4\textwidth',
+         width=r'0.22\textwidth',
+         align='none,below left', xshift=r'0.3\textwidth',
          yshift='-10em', anchor='frame.north east'):
     return r'\node[' + ','.join(opts +
                                 ['text width='+width, 'align='+align]) + ']' + \
@@ -162,7 +162,8 @@ def tabular_ppp(data, headers, color):
 
 # Output #######################################################################
 
-def write_to_latex_ppp(output_file, title, data, headers, color):
+def write_to_latex_ppp(output_file, title, data, headers, color,
+                       msg='Double check wire lengths before proceed!'):
     content = latex_env('empty', 'pagestyle')
     content += bold(title) + '\n'
     content += latex_env('1em', 'vspace')
@@ -173,6 +174,7 @@ def write_to_latex_ppp(output_file, title, data, headers, color):
     left_table, right_table, _ = tabular_ppp(data,  headers, color)
     left_output += left_table
     right_output += right_table
+    right_output += '\n' + r'\vspace{1em}' + msg
 
     content += tcolorbox(left_output, right_output)
 
