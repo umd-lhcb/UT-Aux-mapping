@@ -2,7 +2,7 @@
 #
 # Author: Yipeng Sun
 # License: BSD 2-clause
-# Last Change: Mon Dec 14, 2020 at 02:26 AM +0100
+# Last Change: Mon Dec 14, 2020 at 02:49 AM +0100
 
 import re
 
@@ -21,10 +21,23 @@ true_p2b2_netlist = input_dir / Path('true_p2b2.net')
 ppp_netlist = input_dir / Path('ppp.net')
 
 variants = ['Full', 'Partial', 'Depopulated']
+jpus = ['JPU'+str(i) for i in range(1, 4)]
 
 output_csv = {var: output_dir / gen_filename(__file__, var) for var in variants}
 output_tex = {var: output_dir / gen_filename(__file__, var, 'tex')
               for var in variants}
+
+
+def jpu_cable_length(var, jpu,
+                     base_length={
+                         'Full': 130, 'Partial': 100, 'Depopulated': 70},
+                     adj_length={'JPU3': -20, 'JPU2': -10, 'JPU1': 0}):
+    return base_length[var]+adj_length[jpu]
+
+
+cable_length = {var: {jpu+' - '+str(pin): jpu_cable_length(var, jpu)
+                      for jpu in jpus for pin in range(1, 31)}
+                for var in variants }
 
 
 #####################
@@ -67,16 +80,18 @@ for net, ppp_comp_list in ppp_descr.items():
 
             jpu = [comp for comp in p2b2_comp
                    if bool(re.search(r'^JPU\d', comp[0]))][0]
+            jpu_pin = jpu[0] + ' - ' + jpu[1]
 
             parsed_net = parse_net_jp(net)
             depop = jp_depop_true[parsed_net.jp][
                 jp_hybrid_name_inverse[parsed_net.hyb]]
 
             row.append(ppp_comp[0]+' - '+ppp_comp[1])
-            row.append(jpu[0]+' - '+jpu[1])
+            row.append(jpu_pin)
             row.append(net)
             row.append(ppp_name_errata_inverse[net])
             row.append(str(depop))
+            row.append(str(cable_length[var][jpu_pin]))
 
             true_p2b2_to_ppp[var].append(row)
 
@@ -93,4 +108,5 @@ for net, ppp_comp_list in ppp_descr.items():
 
 for var, data in true_p2b2_to_ppp.items():
     write_to_csv(output_csv[var], data,
-                 ['PPP', 'P2B2', 'netname', 'netname (PPP)', 'Depop?'])
+                 ['PPP', 'P2B2', 'netname', 'netname (PPP)', 'Depop?',
+                  'Length (appx)'])
