@@ -2,7 +2,7 @@
 #
 # Author: Yipeng Sun
 # License: BSD 2-clause
-# Last Change: Mon Dec 14, 2020 at 04:53 AM +0100
+# Last Change: Mon Dec 14, 2020 at 05:09 AM +0100
 
 import tabulate as tabl
 
@@ -31,16 +31,21 @@ tabl._table_formats["latex_booktabs_raw"] = tabl.TableFormat(
 )
 
 
-def latex_env(content, env, opts=None, eol='\n'):
+def latex_env(content, env, opts=None, required_opts=None, eol='\n'):
     if opts:
-        return '\\' + env + '[' + ','.join(opts) + ']' + \
-            '{' + content + '}' + eol
+        output = '\\' + env + '[' + ','.join(opts) + ']' + \
+            '{' + content + '}'
     else:
-        return '\\' + env + '{' + content + '}' + eol
+        output = '\\' + env + '{' + content + '}'
+
+    if required_opts:
+        output += '{' + ','.join(required_opts) + '}'
+
+    return output + eol
 
 
-def latex_begin(content, env='document'):
-    output = latex_env(env, 'begin')
+def latex_begin(content, env='document', opts=None, required_opts=None):
+    output = latex_env(env, 'begin', opts, required_opts)
     output += content
     output += latex_env(env, 'end')
     return output
@@ -112,8 +117,15 @@ def write_to_latex_ppp(output_file, title, data, headers):
     output = latex_preamble()
     content = latex_env('empty', 'pagestyle')
     content += bold(title) + '\n'
-    content += r'\small' + '\n'
-    content += tabular_ppp(data, headers)
+    content += latex_env('1em', 'vspace')
+    content += '\n'
+    content += r'\noindent'
+
+    left_table = r'\small' + '\n'
+    left_table += tabular_ppp(data, headers)
+    content += latex_begin(left_table, 'minipage',
+                           required_opts=[r'0.7\textwidth'])
+
     output += latex_begin(content)
 
     with open(output_file, 'w') as f:
