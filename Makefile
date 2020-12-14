@@ -1,6 +1,6 @@
 # Author: Yipeng Sun
 # License: BSD 2-clause
-# Last Change: Mon Dec 14, 2020 at 02:05 PM +0100
+# Last Change: Mon Dec 14, 2020 at 02:16 PM +0100
 
 export PATH	:= $(shell pwd):$(PATH)
 
@@ -22,7 +22,8 @@ clean:
 
 TrueP2B2toPPPMappingFull.csv TrueP2B2toPPPMappingPartial.csv TrueP2B2toPPPMappingDepopulated.csv \
 TrueP2B2toPPPMappingFull.tex TrueP2B2toPPPMappingPartial.tex TrueP2B2toPPPMappingDepopulated.tex &: \
-	TrueP2B2toPPPMapping.py UT_Aux_mapping/helpers.py UT_Aux_mapping/tabular.py
+	TrueP2B2toPPPMapping.py UT_Aux_mapping/helpers.py UT_Aux_mapping/tabular.py \
+	input/true_p2b2.net input/ppp.net
 	$<
 
 
