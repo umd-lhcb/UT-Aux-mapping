@@ -2,7 +2,7 @@
 #
 # Author: Yipeng Sun
 # License: BSD 2-clause
-# Last Change: Mon Dec 14, 2020 at 05:46 AM +0100
+# Last Change: Tue Dec 15, 2020 at 12:54 AM +0100
 
 import re
 
@@ -192,8 +192,8 @@ def ppp_netname_regulator(
 
 # PPP list sorting #############################################################
 
-def ppp_sort(name):
+def ppp_sort(name, magic=100):
     connector, pin = name.split(' - ')
     connector = int(connector[3:])
     pin = int(pin)
-    return 1000 - connector*100 + pin
+    return 1000 + connector*magic + pin
