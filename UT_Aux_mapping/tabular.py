@@ -2,7 +2,7 @@
 #
 # Author: Yipeng Sun
 # License: BSD 2-clause
-# Last Change: Mon Dec 14, 2020 at 04:06 AM +0100
+# Last Change: Mon Dec 14, 2020 at 04:09 AM +0100
 
 import tabulate as tabl
 
@@ -30,12 +30,12 @@ tabl._table_formats["latex_booktabs_raw"] = tabl.TableFormat(
 )
 
 
-def latex_env(content, env, opts=None):
+def latex_env(content, env, opts=None, eol='\n'):
     if opts:
         return '\\' + env + '[' + ','.join(opts) + ']' + \
-            '{' + content + '}' + '\n'
+            '{' + content + '}' + eol
     else:
-        return '\\' + env + '{' + content + '}' + '\n'
+        return '\\' + env + '{' + content + '}' + eol
 
 
 def latex_begin(content, env='document'):
@@ -55,7 +55,7 @@ def latex_packages(packages=latex_dep):
 
 
 def latex_preamble(template='article'):
-    output = r'\documentclass{' + template + '}\n'
+    output = latex_env(template, 'documentclass')
     output += latex_packages()
 
     return output
@@ -64,12 +64,12 @@ def latex_preamble(template='article'):
 # Text styles ##################################################################
 
 def monospace(text):
-    return r'\texttt{' + (text) + r'}'
+    return latex_env(text, 'texttt', eol='')
 
 
 def strikethrough(text):
     latex_dep['ulem'] += ['normalem']
-    return r'\st{' + text + r'}'
+    return latex_env(text, 'st', eol='')
 
 
 def tabular_ppp(data, headers):
