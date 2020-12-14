@@ -1,6 +1,6 @@
 # Author: Yipeng Sun
 # License: BSD 2-clause
-# Last Change: Mon Dec 14, 2020 at 05:52 AM +0100
+# Last Change: Mon Dec 14, 2020 at 02:05 PM +0100
 
 export PATH	:= $(shell pwd):$(PATH)
 
@@ -31,5 +31,4 @@ TrueP2B2toPPPMappingFull.tex TrueP2B2toPPPMappingPartial.tex TrueP2B2toPPPMappin
 ####################
 
 %.pdf: %.tex
-	echo $<
 	@pdflatex -output-directory $(OUTPUT_PATH) $<
