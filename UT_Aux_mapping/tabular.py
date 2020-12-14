@@ -2,7 +2,7 @@
 #
 # Author: Yipeng Sun
 # License: BSD 2-clause
-# Last Change: Mon Dec 14, 2020 at 04:20 PM +0100
+# Last Change: Mon Dec 14, 2020 at 04:38 PM +0100
 
 import tabulate as tabl
 
@@ -91,6 +91,29 @@ def strikethrough(text):
     return latex_env(text, 'sout', eol='')
 
 
+# Special LaTeX environment ####################################################
+
+def tcolorbox(left, right,
+              left_width=0.7, right_width=0.3, width=r'\textwidth'):
+    left_width = str(left_width)
+    right_width = str(right_width)
+
+    latex_dep['tcolorbox'] += ['skins', 'breakable']
+    overlay = latex_env(
+        right, 'overlay unbroken and first=',
+        opts=[r'\node[inner sep=0pt,outer sep=0pt,text width=' +
+              str(right_width)+width+',' +
+              r'align=none,below left]' +
+              'at ([xshift='+right_width+width+']' +
+              'frame.north west)'])
+    return latex_begin(
+        left,  env='tcolorbox',
+        opts=['blanker', 'width='+left_width+width,
+              'enlarge right by='+right_width+width, 'breakable', overlay])
+
+
+# Special output ###############################################################
+
 def tabular_ppp(data, headers, color):
     reformatted = defaultdict(list)
     # 'PPP', 'P2B2', 'netname', 'netname (PPP)', 'Depop?', 'Length (appx)'
@@ -136,18 +159,15 @@ def write_to_latex_ppp(output_file, title, data, headers, color):
     content = latex_env('empty', 'pagestyle')
     content += bold(title) + '\n'
     content += latex_env('1em', 'vspace')
-    content += '\n'
     content += r'\noindent'
+    content += '\n'
 
-    left_table = r'\small' + '\n'
-    left_output, right_output, _ = tabular_ppp(data,  headers, color)
-    left_table += left_output
+    left_output = r'\small' + '\n'
+    left_table, right_table, _ = tabular_ppp(data,  headers, color)
+    left_output += left_table
+    right_output = right_table
 
-    content += latex_begin(left_table, 'minipage',
-                           required_opts=[r'0.75\textwidth'])
-    content += latex_env('1em', 'hspace')
-    content += latex_begin(right_output, 'minipage',
-                           required_opts=[r'0.2\textwidth'])
+    content += tcolorbox(left_output, right_output)
 
     output = latex_preamble()
     output += latex_begin(content)
