@@ -2,7 +2,9 @@
 #
 # Author: Yipeng Sun
 # License: BSD 2-clause
-# Last Change: Sun Dec 13, 2020 at 11:55 PM +0100
+# Last Change: Mon Dec 14, 2020 at 01:24 AM +0100
+
+import re
 
 from pathlib import Path
 
@@ -18,9 +20,9 @@ ppp_netlist = input_dir / Path('ppp.net')
 
 variants = ['Full', 'Partial', 'Depopulated']
 
-output_csv = [output_dir / gen_filename(__file__+var) for var in variants]
-output_tex = [output_dir / gen_filename(__file__+var, 'tex')
-              for var in variants]
+output_csv = {var: output_dir / gen_filename(__file__+var) for var in variants}
+output_tex = {var: output_dir / gen_filename(__file__+var, 'tex')
+              for var in variants}
 
 
 #####################
@@ -40,7 +42,40 @@ ppp_descr = PPPReader.read()
 
 # This stores name before and after the fix
 ppp_name_errata = {k: ppp_netname_regulator(k) for k in ppp_descr.keys()}
+ppp_name_errata_inverse = dict(map(reversed, ppp_name_errata.items()))
 ppp_descr = {ppp_name_errata[k]: v for k, v in ppp_descr.items()}
 
 # For this part, only the JPU connectors are relevant
 ppp_descr = {k: v for k, v in ppp_descr.items() if 'JPU' in k}
+
+
+################
+# Find matches #
+################
+
+true_p2b2_to_ppp = {var: [] for var in variants}
+
+for net, ppp_comp_list in ppp_descr.items():
+    for idx, var in enumerate(variants):
+        try:
+            row = []
+
+            p2b2_comp = true_p2b2_descr[net]
+            ppp_comp = ppp_comp_list[idx]
+
+            jpu = [comp for comp in p2b2_comp
+                   if bool(re.search(r'^JPU\d', comp[0]))][0]
+            row.append(ppp_comp[0])
+            row.append(ppp_comp[1])
+            row.append(jpu[0])
+            row.append(jpu[1])
+            row.append(net)
+            row.append(ppp_name_errata_inverse[net])
+
+            true_p2b2_to_ppp[var].append(row)
+
+        except KeyError:
+            print("Warning: net {} doesn't match any net in P2B2. This is like an error in PPP".format(net))
+
+        except IndexError:
+            print("Warning: net {} doesn't have a matching JPU".format(net))
