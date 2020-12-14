@@ -2,7 +2,7 @@
 #
 # Author: Yipeng Sun
 # License: BSD 2-clause
-# Last Change: Mon Dec 14, 2020 at 05:09 AM +0100
+# Last Change: Mon Dec 14, 2020 at 05:22 AM +0100
 
 import tabulate as tabl
 
@@ -82,9 +82,10 @@ def strikethrough(text):
     return latex_env(text, 'st', eol='')
 
 
-def tabular_ppp(data, headers):
+def tabular_ppp(data, headers, color):
     reformatted = defaultdict(list)
     # 'PPP', 'P2B2', 'netname', 'netname (PPP)', 'Depop?', 'Length (appx)'
+    counter = defaultdict(lambda: 0)
 
     for row in data:
         jpu, _ = row[1].split(' - ')
@@ -97,23 +98,32 @@ def tabular_ppp(data, headers):
 
         reformatted_row += [netname_formatter(c) for c in row[2:3]]
         reformatted_row.append(row[5])
+        counter[row[5]] += 1
         reformatted_row += [r'$\square$'] * 3
 
         reformatted[jpu].append(reformatted_row)
 
-    output = ''
+    left_output = ''
     for jpu, data in reformatted.items():
-        output += latex_env(monospace(jpu), 'subsection*')
-        output += tabl.tabulate(
+        left_output += latex_env(monospace(jpu), 'subsection*')
+        left_output += tabl.tabulate(
             data, headers=headers, tablefmt='latex_booktabs_raw')
-        output += '\n'
+        left_output += '\n'
 
-    return output
+    counter_data = []
+    for length, number in counter.items():
+        counter_data.append([length, number/2, number/2])
+    right_output = tabl.tabulate(
+        counter_data, headers=['Length', 'Black', color],
+        tablefmt='latex_booktabs_raw')
+    right_output += '\n'
+
+    return left_output, right_output, counter
 
 
 # Output #######################################################################
 
-def write_to_latex_ppp(output_file, title, data, headers):
+def write_to_latex_ppp(output_file, title, data, headers, color):
     output = latex_preamble()
     content = latex_env('empty', 'pagestyle')
     content += bold(title) + '\n'
@@ -122,9 +132,12 @@ def write_to_latex_ppp(output_file, title, data, headers):
     content += r'\noindent'
 
     left_table = r'\small' + '\n'
-    left_table += tabular_ppp(data, headers)
+    left_output, right_output, _ = tabular_ppp(data,  headers, color)
+    left_table += left_output
     content += latex_begin(left_table, 'minipage',
                            required_opts=[r'0.7\textwidth'])
+    content += latex_begin(right_output, 'minipage',
+                           required_opts=[r'0.3\textwidth'])
 
     output += latex_begin(content)
 

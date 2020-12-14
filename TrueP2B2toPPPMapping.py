@@ -2,7 +2,7 @@
 #
 # Author: Yipeng Sun
 # License: BSD 2-clause
-# Last Change: Mon Dec 14, 2020 at 04:59 AM +0100
+# Last Change: Mon Dec 14, 2020 at 05:22 AM +0100
 
 import re
 
@@ -22,8 +22,10 @@ true_p2b2_netlist = input_dir / Path('true_p2b2.net')
 ppp_netlist = input_dir / Path('ppp.net')
 
 variants = ['Full', 'Partial', 'Depopulated']
+colors = ['Red', 'Green', 'White']
 jpus = ['JPU'+str(i) for i in range(1, 4)]
 
+colors_dict = dict(zip(variants, colors))
 output_csv = {var: output_dir / gen_filename(__file__, var) for var in variants}
 output_tex = {var: output_dir / gen_filename(__file__, var, 'tex')
               for var in variants}
@@ -111,6 +113,8 @@ headers = ['PPP', 'P2B2', 'netname', 'netname (PPP)', 'Depop?', 'Length [cm]']
 
 for var, data in true_p2b2_to_ppp.items():
     write_to_csv(output_csv[var], data, headers)
-    write_to_latex_ppp(output_tex[var], 'C-TOP-MAG-TRUE-'+var.upper(),
-                       data, headers[0:3]+headers[5:] +
-                       ['Cut', 'Labeled', 'Soldered'])
+    write_to_latex_ppp(
+        output_tex[var], 'C-TOP-MAG-TRUE-'+var.upper(),
+        data, headers[0:3]+headers[5:]+['Cut', 'Labeled', 'Soldered'],
+        colors_dict[var]
+    )
