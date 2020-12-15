@@ -2,7 +2,7 @@
 #
 # Author: Yipeng Sun
 # License: BSD 2-clause
-# Last Change: Tue Dec 15, 2020 at 12:39 AM +0100
+# Last Change: Tue Dec 15, 2020 at 01:04 AM +0100
 
 import re
 
@@ -15,7 +15,7 @@ from pyUTM.io import write_to_csv
 from UT_Aux_mapping.const import input_dir, output_dir
 from UT_Aux_mapping.const import jp_hybrid_name_inverse
 from UT_Aux_mapping.helpers import ppp_netname_regulator, parse_net_jp
-from UT_Aux_mapping.helpers import ppp_sort
+from UT_Aux_mapping.helpers import ppp_sort, ppp_label
 from UT_Aux_mapping.helpers import gen_filename
 from UT_Aux_mapping.tabular import write_to_latex_ppp
 
@@ -92,6 +92,7 @@ for net, ppp_comp_list in ppp_descr.items():
 
             row.append(ppp_comp[0]+' - '+ppp_comp[1])
             row.append(jpu_pin)
+            row.append(ppp_label(net))
             row.append(net)
             row.append(ppp_name_errata_inverse[net])
             row.append(depop)
@@ -110,7 +111,7 @@ for net, ppp_comp_list in ppp_descr.items():
 # Write to file #
 #################
 
-headers = ['PPP', 'P2B2', 'Netname', 'Netname (PPP)', 'Depop?', 'Length [cm]']
+headers = ['PPP', 'P2B2', 'Label', 'Netname', 'Netname (PPP)', 'Depop?', 'Length [cm]']
 
 
 for var, data in true_p2b2_to_ppp.items():
@@ -119,6 +120,6 @@ for var, data in true_p2b2_to_ppp.items():
     write_to_latex_ppp(
         output_tex[var], 'C-TOP-MAG-TRUE-'+var.upper(),
         data,
-        headers[0:3]+headers[5:]+['Cut', 'Labeled', 'Crimped'],
+        headers[0:3]+headers[6:]+['Cut', 'Labeled', 'Crimped'],
         colors_dict[var]
     )

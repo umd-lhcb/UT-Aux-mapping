@@ -2,7 +2,7 @@
 #
 # Author: Yipeng Sun
 # License: BSD 2-clause
-# Last Change: Tue Dec 15, 2020 at 12:54 AM +0100
+# Last Change: Tue Dec 15, 2020 at 01:01 AM +0100
 
 import re
 
@@ -158,7 +158,7 @@ def parse_net_jp(name):
     return NameJP(jp, pwr, hyb, descr)
 
 
-# PPP netname regulator ########################################################
+# PPP netname stuff ############################################################
 
 def ppp_replacement_wrapper(rules):
     def wrapper(name):
@@ -188,6 +188,23 @@ def ppp_netname_regulator(
 
     # Also need to upper case everything
     return ('_'.join(fields)).upper()
+
+
+def ppp_label(
+    name,
+    hyb_rules=ppp_replacement_wrapper({
+        'P1_EAST': 'P1E',
+        'P1_WEST': 'P1W',
+        'P2_EAST': 'P2E',
+        'P2_WEST': 'P2W',
+    }),
+    lv_rules=ppp_replacement_wrapper({
+        'LV_SOURCE': 'LV_SRC',
+        'LV_RETURN': 'LV_RET'
+    })
+):
+    parsed = parse_net_jp(name)
+    return '_'.join([parsed.jp, hyb_rules(parsed.hyb), lv_rules(parsed.descr)])
 
 
 # PPP list sorting #############################################################

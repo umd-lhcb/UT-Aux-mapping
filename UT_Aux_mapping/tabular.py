@@ -2,7 +2,7 @@
 #
 # Author: Yipeng Sun
 # License: BSD 2-clause
-# Last Change: Tue Dec 15, 2020 at 12:56 AM +0100
+# Last Change: Tue Dec 15, 2020 at 01:04 AM +0100
 
 import tabulate as tabl
 
@@ -135,9 +135,9 @@ def tabular_ppp(data, headers, color,
         # else:
         netname_formatter = lambda x: monospace(x)
 
-        reformatted_row += [netname_formatter(c) for c in row[2:3]]
-        reformatted_row.append(row[5])
-        counter[row[5]] += 1
+        reformatted_row.append(netname_formatter(row[2]))
+        reformatted_row.append(row[6])
+        counter[row[6]] += 1
         reformatted_row += [r'$\square$'] * 3
 
         reformatted[jpu].append(reformatted_row)
