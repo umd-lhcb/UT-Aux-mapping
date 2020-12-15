@@ -2,7 +2,7 @@
 #
 # Author: Yipeng Sun
 # License: BSD 2-clause
-# Last Change: Tue Dec 15, 2020 at 03:39 AM +0100
+# Last Change: Tue Dec 15, 2020 at 03:45 AM +0100
 
 import re
 
@@ -35,7 +35,7 @@ output_tex = {var: output_dir / gen_filename(__file__, var, 'tex')
 def jpu_cable_length(var, jpu,
                      base_length={
                          'Full': 130, 'Partial': 100, 'Depopulated': 70},
-                     adj_length={'JPU1': -20, 'JPU2': -10, 'JPU3': 0}):
+                     adj_length={'JPU3': -20, 'JPU2': -10, 'JPU1': 0}):
     return base_length[var]+adj_length[jpu]
 
 
@@ -115,10 +115,10 @@ headers = ['PPP', 'P2B2', 'Label', 'Netname', 'Netname (PPP)', 'Depop?', 'Length
 
 
 for var, data in mirror_p2b2_to_ppp.items():
-    data.sort(key=lambda x: ppp_sort(x[1]))
+    data.sort(key=lambda x: ppp_sort(x[1], magic=-100))
     write_to_csv(output_csv[var], data, headers)
     write_to_latex_ppp(
-        output_tex[var], 'C-TOP-MAG-TRUE-'+var.upper(),
+        output_tex[var], 'C-BOT-MAG-MIRROR-'+var.upper(),
         data,
         headers[0:3]+headers[6:]+['Cut', 'Labeled', 'Crimped'],
         colors_dict[var]
