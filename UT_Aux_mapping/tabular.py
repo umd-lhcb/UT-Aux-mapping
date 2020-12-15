@@ -2,7 +2,7 @@
 #
 # Author: Yipeng Sun
 # License: BSD 2-clause
-# Last Change: Tue Dec 15, 2020 at 09:51 PM +0100
+# Last Change: Tue Dec 15, 2020 at 10:51 PM +0100
 
 import tabulate as tabl
 
@@ -174,7 +174,7 @@ def tabular_ppp(data, headers, color,
     # The 3 main tables
     for key, data in reformatted.items():
         data = reformatted[key]
-        output += latex_env(bold(monospace(key)), 'subsection*')
+        output += latex_env(key, 'subsection*')
         output += longtable(data, headers, align)
 
     return output, counter
