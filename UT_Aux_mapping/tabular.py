@@ -2,7 +2,7 @@
 #
 # Author: Yipeng Sun
 # License: BSD 2-clause
-# Last Change: Tue Dec 15, 2020 at 05:34 PM +0100
+# Last Change: Tue Dec 15, 2020 at 09:08 PM +0100
 
 import tabulate as tabl
 
@@ -14,7 +14,6 @@ latex_dep['booktabs']
 latex_dep['geometry'] = ['a4paper',
                          'left=1cm', 'right=1cm', 'top=1cm', 'bottom=1cm']
 latex_dep['amssymb']
-latex_dep['longtable']
 
 
 # LaTeX general ################################################################
@@ -99,29 +98,33 @@ def strikethrough(text):
 
 # Special LaTeX environment ####################################################
 
-def node(content,
-         opts=['inner sep=0pt', 'outer sep=0pt'],
-         width=r'0.3\textwidth',
-         align='none,below left', xshift=r'0.35\textwidth',
-         yshift='-10em', anchor='frame.north east'):
-    return r'\node[' + ','.join(opts +
-                                ['text width='+width, 'align='+align]) + ']' + \
-        ' at ' + \
-        '([' + ','.join(['xshift='+xshift, 'yshift='+yshift]) + ']' + \
-        anchor + ')' + '\n' + \
-        '{' + '\n' + content + '\n' + '}' + '\n'
+def makecell(*args):
+    return latex_env(r'\\\relax '.join(args), 'makecell')
 
 
-def tcolorbox(left, right,
-              left_width=r'0.65\textwidth',
-              right_width=r'0.35\textwidth', width=r'\textwidth'):
+def textblock(content, width, x, y):
+    return latex_begin('({}, {})'.format(x, y)+'\n'+content,
+                       'textblock*', required_opts=[width])
 
-    latex_dep['tcolorbox'] += ['skins', 'breakable']
-    overlay = latex_env(node(right)+';', 'overlay unbroken and first=')[1:]
-    return latex_begin(
-        left, 'tcolorbox',
-        tail_opts=['blanker', 'breakable', 'width='+left_width,
-                   'enlarge right by='+right_width, overlay])
+
+def longtable(data, headers, align,
+              num_of_head=3, left_margin='0pt', penalty='1'):
+    raw = tabl.tabulate(data, headers, colalign=align,
+                        tablefmt='latex_booktabs_raw').split('\n')
+    latex_dep['longtable']
+
+    begin = raw.pop(0)
+    end = raw.pop(-1)
+    begin = begin.replace('tabular', 'longtable')
+    end = end.replace('tabular', 'longtable')
+
+    for shift, cmd in zip(range(3), [r'\endhead', r'\bottomrule', r'\endfoot']):
+        raw.insert(num_of_head+shift, cmd)
+
+    return '\n'.join(
+        ['{' + r'\makeatletter', r'\mathchardef\LT@end@pen='+penalty,
+         r'\makeatother', r'\setlength{\LTleft}{'+left_margin+'}', begin] + raw +
+        [end, '}']) + '\n'
 
 
 # Special output ###############################################################
@@ -149,26 +152,22 @@ def tabular_ppp(data, headers, color,
         reformatted[key].append(reformatted_row)
         counter[count_by(row)] += 1
 
-    left_output = ''
+    output = ''
     for key, data in reformatted.items():
         data = reformatted[key]
+        output += latex_env(bold(monospace(key)), 'subsection*')
+        output += longtable(data, headers, align)
 
-        left_output += latex_env(monospace(key), 'subsection*')
-        left_output += tabl.tabulate(
-            data, headers=headers, tablefmt='latex_booktabs_raw',
-            colalign=align
-        ).replace('tabular', tabular_env)
-        left_output += '\n'
+    # counter_data = []
+    # for length, number in counter.items():
+        # counter_data.append([length, number/2, number/2])
+    # right_output = tabl.tabulate(
+        # counter_data, headers=['Length', 'Black', color],
+        # tablefmt='latex_booktabs_raw')
+    # right_output += '\n'
 
-    counter_data = []
-    for length, number in counter.items():
-        counter_data.append([length, number/2, number/2])
-    right_output = tabl.tabulate(
-        counter_data, headers=['Length', 'Black', color],
-        tablefmt='latex_booktabs_raw')
-    right_output += '\n'
-
-    return left_output, right_output, counter
+    # return left_output, right_output, counter
+    return output, '1', counter
 
 
 # Output #######################################################################
@@ -183,14 +182,11 @@ def write_to_latex_ppp(output_file, title, data, headers, color,
 
     left_output = right_output = r'\small' + '\n'
     left_table, right_table, _ = tabular_ppp(data,  headers, color)
-    left_output += r'\makeatletter'
-    # Reduce penalty for breaking table
-    left_output += r'\mathchardef\LT@end@pen=1'
     left_output += left_table
     right_output += latex_begin(right_table, 'center')
     right_output += '\n' + r'\vspace{1em}' + msg
 
-    content += tcolorbox(left_output, right_output)
+    content += left_output
 
     output = latex_preamble()
     output += latex_begin(content)
