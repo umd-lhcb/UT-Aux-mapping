@@ -20,7 +20,7 @@ jobs:
         extra_nix_config: |
           experimental-features = nix-command flakes
 
-    - run: nix develop -c "make"
+    - run: nix develop -c make all
 
     - run: ls output
 
