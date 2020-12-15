@@ -2,7 +2,7 @@
 #
 # Author: Yipeng Sun
 # License: BSD 2-clause
-# Last Change: Tue Dec 15, 2020 at 04:33 PM +0100
+# Last Change: Tue Dec 15, 2020 at 05:08 PM +0100
 
 import tabulate as tabl
 
@@ -126,32 +126,32 @@ def tcolorbox(left, right,
 # Special output ###############################################################
 
 def tabular_ppp(data, headers, color,
+                group_by=lambda x: x[0].split(' - ')[0],
+                count_by=lambda x: x[6],
+                col_to_keep=[0, 1, 2, 6],
+                col_formatters=[lambda x: monospace(x.split(' - ')[1])] +
+                [monospace]*2+[lambda x: x],
                 align=['left']*3+['right']+['center']*3):
     reformatted = defaultdict(list)
     counter = defaultdict(lambda: 0)
 
     for row in data:
-        jpu, _ = row[1].split(' - ')
-        reformatted_row = [monospace(c) for c in row[0:2]]
+        key = group_by(row)
+        reformatted_row = [
+            f(x) for f, x in zip(
+                col_formatters, [row[idx] for idx in col_to_keep])]
 
-        # No need for strikethrough
-        # if row[4]:
-        #     netname_formatter = lambda x: strikethrough(monospace(x))
-        # else:
-        netname_formatter = lambda x: monospace(x)
+        extra_boxes = len(headers) - len(col_to_keep)
+        reformatted_row += [r'$\square$'] * extra_boxes
 
-        reformatted_row.append(netname_formatter(row[2]))
-        reformatted_row.append(row[6])
-        counter[row[6]] += 1
-        reformatted_row += [r'$\square$'] * 3
-
-        reformatted[jpu].append(reformatted_row)
+        reformatted[key].append(reformatted_row)
+        counter[count_by(row)] += 1
 
     left_output = ''
-    for jpu, data in reformatted.items():
-        data = reformatted[jpu]
+    for key, data in reformatted.items():
+        data = reformatted[key]
 
-        left_output += latex_env(monospace(jpu), 'subsection*')
+        left_output += latex_env(monospace(key), 'subsection*')
         left_output += tabl.tabulate(
             data, headers=headers, tablefmt='latex_booktabs_raw',
             colalign=align

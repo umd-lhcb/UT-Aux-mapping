@@ -2,7 +2,7 @@
 #
 # Author: Yipeng Sun
 # License: BSD 2-clause
-# Last Change: Tue Dec 15, 2020 at 04:35 PM +0100
+# Last Change: Tue Dec 15, 2020 at 04:58 PM +0100
 
 import re
 
@@ -167,6 +167,8 @@ for title_pre, attrs in output_spec.items():
 #################
 # Write to file #
 #################
+
+headers_tex += ['Cut', 'Labeled', 'Crimped']
 
 for _, attrs in output_spec.items():
     for _, var_attrs in attrs.items():
