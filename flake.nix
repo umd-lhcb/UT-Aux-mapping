@@ -35,14 +35,14 @@
               UT_Aux_mapping_Env
               (pkgs.texlive.combine {
                 inherit (pkgs.texlive)
-                scheme-small
-                booktabs
-                amsmath
-                tcolorbox
-                # Implicit dependencies
-                environ
-                trimspaces
-                ;
+                  scheme-small
+                  booktabs
+                  amsmath
+                  tcolorbox
+                  # Implicit dependencies
+                  environ
+                  trimspaces
+                  ;
               })
             ];
           };
