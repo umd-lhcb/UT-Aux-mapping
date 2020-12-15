@@ -44,6 +44,7 @@
                   amsmath
                   makecell
                   textpos
+                  fancyhdr
                   # Implicit dependencies
                   pgf
                   ;
