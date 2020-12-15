@@ -2,7 +2,7 @@
 #
 # Author: Yipeng Sun
 # License: BSD 2-clause
-# Last Change: Tue Dec 15, 2020 at 01:04 AM +0100
+# Last Change: Tue Dec 15, 2020 at 01:13 AM +0100
 
 import tabulate as tabl
 
@@ -95,8 +95,8 @@ def strikethrough(text):
 
 def node(content,
          opts=['inner sep=0pt', 'outer sep=0pt'],
-         width=r'0.22\textwidth',
-         align='none,below left', xshift=r'0.3\textwidth',
+         width=r'0.3\textwidth',
+         align='none,below left', xshift=r'0.35\textwidth',
          yshift='-10em', anchor='frame.north east'):
     return r'\node[' + ','.join(opts +
                                 ['text width='+width, 'align='+align]) + ']' + \
@@ -107,8 +107,8 @@ def node(content,
 
 
 def tcolorbox(left, right,
-              left_width=r'0.7\textwidth',
-              right_width=r'0.3\textwidth', width=r'\textwidth'):
+              left_width=r'0.65\textwidth',
+              right_width=r'0.35\textwidth', width=r'\textwidth'):
 
     latex_dep['tcolorbox'] += ['skins', 'breakable']
     overlay = latex_env(node(right)+';', 'overlay unbroken and first=')[1:]
@@ -177,7 +177,7 @@ def write_to_latex_ppp(output_file, title, data, headers, color,
     left_output = right_output = r'\small' + '\n'
     left_table, right_table, _ = tabular_ppp(data,  headers, color)
     left_output += left_table
-    right_output += right_table
+    right_output += latex_begin(right_table, 'center')
     right_output += '\n' + r'\vspace{1em}' + msg
 
     content += tcolorbox(left_output, right_output)
