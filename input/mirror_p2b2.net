@@ -1,8 +1,3 @@
-ACCEL_ASCII "P2B2_Mirror.PrjPcb"
-(asciiHeader
-  (asciiVersion 3 0)
-  (fileUnits Mil)
-)
 (netlist "Netlist_1"
   (globalAttrs
     (attr "CurrentDate" "12/14/2020" (textStyleRef "(Default)"))
