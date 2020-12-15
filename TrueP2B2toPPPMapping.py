@@ -2,13 +2,13 @@
 #
 # Author: Yipeng Sun
 # License: BSD 2-clause
-# Last Change: Tue Dec 15, 2020 at 09:20 PM +0100
+# Last Change: Tue Dec 15, 2020 at 09:57 PM +0100
 
 import re
 
 from pathlib import Path
 
-from pyUTM.common import jp_depop_true
+from pyUTM.common import jp_depop_true as jp_depop
 from pyUTM.io import (
     PcadNaiveReader, WirelistNaiveReader,
     write_to_csv
@@ -150,7 +150,7 @@ for title_pre, attrs in output_spec.items():
                 headers_csv.append('Netname (PPP)')
 
             parsed_net = parse_net_jp(net)
-            depop = jp_depop_true[parsed_net.jp][
+            depop = jp_depop[parsed_net.jp][
                 jp_hybrid_name_inverse[parsed_net.hyb]]
             row.append(depop)
             if first_run:
