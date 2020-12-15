@@ -2,7 +2,7 @@
 #
 # Author: Yipeng Sun
 # License: BSD 2-clause
-# Last Change: Tue Dec 15, 2020 at 05:12 PM +0100
+# Last Change: Tue Dec 15, 2020 at 05:19 PM +0100
 
 import re
 
@@ -59,11 +59,11 @@ cable_length_adj = {'JPU1': -20, 'JPU2': -10, 'JPU3': 0}
 # Read all netlists #
 #####################
 
-TrueP2B2Reader = PcadNaiveReader(true_p2b2_netlist)
-true_p2b2_descr = TrueP2B2Reader.read()
+P2B2Reader = PcadNaiveReader(true_p2b2_netlist)
+p2b2_descr = P2B2Reader.read()
 
-TruePPPReader = WirelistNaiveReader(true_ppp_netlist)
-true_ppp_descr = TruePPPReader.read()
+PPPReader = WirelistNaiveReader(true_ppp_netlist)
+ppp_descr = PPPReader.read()
 
 
 ############################################################
@@ -71,9 +71,9 @@ true_ppp_descr = TruePPPReader.read()
 ############################################################
 
 # This stores name before and after the fix
-ppp_name_errata = {k: ppp_netname_regulator(k) for k in true_ppp_descr.keys()}
+ppp_name_errata = {k: ppp_netname_regulator(k) for k in ppp_descr.keys()}
 ppp_name_errata_inverse = dict(map(reversed, ppp_name_errata.items()))
-ppp_descr = {ppp_name_errata[k]: v for k, v in true_ppp_descr.items()}
+ppp_descr = {ppp_name_errata[k]: v for k, v in ppp_descr.items()}
 
 # For this part, only the JPU connectors are relevant
 ppp_descr = {k: v for k, v in ppp_descr.items() if 'JPU' in k}
@@ -103,7 +103,7 @@ for title_pre, attrs in output_spec.items():
 
         for net, ppp_comp_list in ppp_descr.items():
             try:
-                p2b2_comp = true_p2b2_descr[net]
+                p2b2_comp = p2b2_descr[net]
             except KeyError:
                 print("Warning: net {} doesn't match any net in P2B2. This is like an error in PPP".format(net))
                 continue
