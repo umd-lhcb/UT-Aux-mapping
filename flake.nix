@@ -42,14 +42,10 @@
                   scheme-basic
                   booktabs
                   amsmath
-                  tcolorbox
                   makecell
+                  textpos
                   # Implicit dependencies
-                  environ
-                  trimspaces
                   pgf
-                  xcolor
-                  etoolbox
                   ;
               })
             ];
