@@ -4,30 +4,21 @@
 
 Python script to generate various UT auxiliary mappings. So far, we have:
 
-* COMET FPGA to DCB pin-by-pin mapping
-* COMET FPGA to Path finder U.FL pin-by-pin mapping
-* True backplane power mapping
-* Mirror backplane power mapping
-
-
-## Prerequisite
-Update the submodule:
-```
-git submodule update --init
-```
-
-Then install the dependencies:
-```
-pip install -r pyUTM/requirements.txt
-```
+* `TrueP2B2toPPPMapping.py`: cable mapping for true P2B2 -> true PPP
+* `MirrorP2B2toPPPMapping.py`: cable mapping for mirror P2B2 -> mirror PPP
+* All other scripts are no longer actively maintained. Though some of their
+  outputs are available at [`0.4.3`](https://github.com/umd-lhcb/UT-Aux-mapping/releases/tag/0.4.3).
 
 
 ## Usage
-```
-python ./CometDcbMapping.py
-python ./CometPFMapping.py
-python ./TrueBPInnerMapping.py
-python ./MirrorBPInnerMapping.py
-```
+All dependencies of this project are specified and pinpointed by `nix`. To run
+these scripts, install `nix` on you computer (hard).
 
-All generated mapping `.csv` files are located under `output/`
+Once that is done, if your `nix` has `flake` support:
+```
+nix develop -c make all
+```
+else:
+```
+nix-shell --run "make all"
+```
