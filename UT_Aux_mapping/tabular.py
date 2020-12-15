@@ -2,7 +2,7 @@
 #
 # Author: Yipeng Sun
 # License: BSD 2-clause
-# Last Change: Tue Dec 15, 2020 at 09:08 PM +0100
+# Last Change: Tue Dec 15, 2020 at 09:17 PM +0100
 
 import tabulate as tabl
 
@@ -99,6 +99,7 @@ def strikethrough(text):
 # Special LaTeX environment ####################################################
 
 def makecell(*args):
+    latex_dep['makecell']
     return latex_env(r'\\\relax '.join(args), 'makecell')
 
 
@@ -108,7 +109,7 @@ def textblock(content, width, x, y):
 
 
 def longtable(data, headers, align,
-              num_of_head=3, left_margin='0pt', penalty='1'):
+              left_margin='0pt', penalty='1'):
     raw = tabl.tabulate(data, headers, colalign=align,
                         tablefmt='latex_booktabs_raw').split('\n')
     latex_dep['longtable']
@@ -118,8 +119,9 @@ def longtable(data, headers, align,
     begin = begin.replace('tabular', 'longtable')
     end = end.replace('tabular', 'longtable')
 
+    head_idx = raw.index(r'\midrule') + 1
     for shift, cmd in zip(range(3), [r'\endhead', r'\bottomrule', r'\endfoot']):
-        raw.insert(num_of_head+shift, cmd)
+        raw.insert(head_idx+shift, cmd)
 
     return '\n'.join(
         ['{' + r'\makeatletter', r'\mathchardef\LT@end@pen='+penalty,
