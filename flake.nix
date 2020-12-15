@@ -5,9 +5,13 @@
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-20.09";
     flake-utils.url = "github:numtide/flake-utils";
     pyUTM.url = "github:umd-lhcb/pyUTM";
+    flake-compat = {
+      url = "github:edolstra/flake-compat";
+      flake = false;
+    };
   };
 
-  outputs = { self, nixpkgs, flake-utils, pyUTM }:
+  outputs = { self, nixpkgs, flake-utils, pyUTM, flake-compat }:
     flake-utils.lib.eachDefaultSystem (system:
       let
         pkgs = import nixpkgs {
