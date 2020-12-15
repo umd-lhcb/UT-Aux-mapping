@@ -2,7 +2,7 @@
 #
 # Author: Yipeng Sun
 # License: BSD 2-clause
-# Last Change: Tue Dec 15, 2020 at 03:53 AM +0100
+# Last Change: Tue Dec 15, 2020 at 03:55 AM +0100
 
 import re
 
@@ -84,7 +84,7 @@ for net, ppp_comp_list in ppp_descr.items():
             try:
                 ppp_comp = ppp_comp_list[idx]
             except IndexError:
-                pass  # Doesn't exist due to depopulation! Nothing to see here.
+                break  # Doesn't exist due to depopulation! Nothing to see here.
 
             jpu = [comp for comp in p2b2_comp
                    if bool(re.search(r'^JPU\d', comp[0]))][0]
