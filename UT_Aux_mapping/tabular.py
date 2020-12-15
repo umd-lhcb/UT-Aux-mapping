@@ -2,7 +2,7 @@
 #
 # Author: Yipeng Sun
 # License: BSD 2-clause
-# Last Change: Tue Dec 15, 2020 at 01:13 AM +0100
+# Last Change: Tue Dec 15, 2020 at 04:33 PM +0100
 
 import tabulate as tabl
 
@@ -84,6 +84,11 @@ def monospace(text):
 
 def bold(text):
     return latex_env(text, 'textbf', eol='')
+
+
+def boldmath(symb):
+    latex_dep['bm']
+    return latex_env('$'+symb+'$', 'bm', eol='')
 
 
 def strikethrough(text):

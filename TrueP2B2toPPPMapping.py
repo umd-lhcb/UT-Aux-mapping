@@ -2,21 +2,30 @@
 #
 # Author: Yipeng Sun
 # License: BSD 2-clause
-# Last Change: Tue Dec 15, 2020 at 04:29 PM +0100
+# Last Change: Tue Dec 15, 2020 at 04:35 PM +0100
 
 import re
 
 from pathlib import Path
 
 from pyUTM.common import jp_depop_true
-from pyUTM.io import PcadNaiveReader, WirelistNaiveReader
-from pyUTM.io import write_to_csv
+from pyUTM.io import (
+    PcadNaiveReader, WirelistNaiveReader,
+    write_to_csv
+)
 
-from UT_Aux_mapping.const import input_dir, output_dir
-from UT_Aux_mapping.const import jp_hybrid_name_inverse
-from UT_Aux_mapping.helpers import ppp_netname_regulator, parse_net_jp
-from UT_Aux_mapping.helpers import ppp_sort, ppp_label
-from UT_Aux_mapping.tabular import write_to_latex_ppp
+from UT_Aux_mapping.const import (
+    input_dir, output_dir,
+    jp_hybrid_name_inverse
+)
+from UT_Aux_mapping.helpers import (
+    parse_net_jp,
+    ppp_sort, ppp_label, ppp_netname_regulator
+)
+from UT_Aux_mapping.tabular import (
+    write_to_latex_ppp,
+    boldmath
+)
 
 true_p2b2_netlist = input_dir / Path('true_p2b2.net')
 true_ppp_netlist = input_dir / Path('true_ppp.wirelist')
@@ -24,19 +33,19 @@ true_ppp_netlist = input_dir / Path('true_ppp.wirelist')
 output_spec = {
     'C-TOP-MAG-TRUE': {
         'Alpha': {
-            'title': r'$\alpha$',
+            'title': boldmath(r'\alpha'),
             'variant': 'Full',
             'color': 'Red',
             'cable_length': 160
         },
         'Beta':  {
-            'title': r'$\beta$',
+            'title': boldmath(r'\beta'),
             'variant': 'Partial',
             'color': 'Green',
             'cable_length': 130
         },
         'Gamma': {
-            'title': r'$\gamma$',
+            'title': boldmath(r'\gamma'),
             'variant': 'Partial',
             'color': 'White',
             'cable_length': 100
