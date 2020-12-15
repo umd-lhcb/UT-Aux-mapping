@@ -2,7 +2,7 @@
 #
 # Author: Yipeng Sun
 # License: BSD 2-clause
-# Last Change: Tue Dec 15, 2020 at 02:59 PM +0100
+# Last Change: Tue Dec 15, 2020 at 04:11 PM +0100
 
 import re
 
@@ -22,26 +22,29 @@ from UT_Aux_mapping.tabular import write_to_latex_ppp
 true_p2b2_netlist = input_dir / Path('true_p2b2.net')
 true_ppp_netlist = input_dir / Path('true_ppp.wirelist')
 
-variants = ['Full', 'Partial', 'Depopulated']
-colors = ['Red', 'Green', 'White']
-jpus = ['JPU'+str(i) for i in range(1, 4)]
-
-colors_dict = dict(zip(variants, colors))
-output_csv = {var: output_dir / gen_filename(__file__, var) for var in variants}
-output_tex = {var: output_dir / gen_filename(__file__, var, 'tex')
-              for var in variants}
-
-
-def jpu_cable_length(var, jpu,
-                     base_length={
-                         'Full': 160, 'Partial': 130, 'Depopulated': 100},
-                     adj_length={'JPU1': -20, 'JPU2': -10, 'JPU3': 0}):
-    return base_length[var]+adj_length[jpu]
-
-
-cable_length = {var: {jpu+' - '+str(pin): jpu_cable_length(var, jpu)
-                      for jpu in jpus for pin in range(1, 31)}
-                for var in variants}
+output_spec = {
+    'C-TOP-MAG-TRUE': {
+        'Alpha': {
+            'title': r'\alhpa',
+            'variant': 'Full',
+            'color': 'Red',
+            'cable_length': 160
+        },
+        'Beta':  {
+            'title': r'\beta',
+            'variant': 'Partial',
+            'color': 'Green',
+            'cable_length': 130
+        },
+        'Gamma': {
+            'title': r'\gamma',
+            'variant': 'Partial',
+            'color': 'White',
+            'cable_length': 100
+        }
+    }
+}
+cable_length_adj = {'JPU1': -20, 'JPU2': -10, 'JPU3': 0}
 
 
 #####################
@@ -68,62 +71,94 @@ ppp_descr = {ppp_name_errata[k]: v for k, v in true_ppp_descr.items()}
 ppp_descr = {k: v for k, v in ppp_descr.items() if 'JPU' in k}
 
 
-################
-# Find matches #
-################
+####################################################
+# Make PPP -> P2B2 connections and generate output #
+####################################################
 
-true_p2b2_to_ppp = {var: [] for var in variants}
+variants = ['Full', 'Partial', 'Depopulated']
+comp_idx = dict(zip(variants, range(0, 3)))
+headers_csv = []
+headers_tex = []
 
-for net, ppp_comp_list in ppp_descr.items():
-    for idx, var in enumerate(variants):
-        try:
-            row = []
 
-            p2b2_comp = true_p2b2_descr[net]
+def jpu_cable_length(jpu, base_length, adj_length=cable_length_adj):
+    return base_length+adj_length[jpu[0]]
+
+
+for title_pre, attrs in output_spec.items():
+    for geo_loc, var_attrs in attrs.items():
+        var_attrs['data'] = []
+        var_attrs['filename'] = '-'.join(['P2B2toPPP', title_pre, geo_loc])
+        var = var_attrs['variant']
+
+        for net, ppp_comp_list in ppp_descr.items():
 
             try:
-                ppp_comp = ppp_comp_list[idx]
-            except IndexError:
-                break  # Doesn't exist due to depopulation! Nothing to see here.
+                p2b2_comp = true_p2b2_descr[net]
+            except KeyError:
+                print("Warning: net {} doesn't match any net in P2B2. This is like an error in PPP".format(net))
+                continue
 
-            jpu = [comp for comp in p2b2_comp
-                   if bool(re.search(r'^JPU\d', comp[0]))][0]
-            jpu_pin = jpu[0] + ' - ' + jpu[1]
+            try:
+                ppp_comp = ppp_comp_list[comp_idx[var]]
+            except IndexError:
+                # Doesn't exist due to depopulation! Nothing to see here.
+                continue
+
+            try:
+                jpu = [comp for comp in p2b2_comp
+                       if bool(re.search(r'^JPU\d', comp[0]))][0]
+            except IndexError:
+                print("Warning: net {} doesn't have a matching JPU".format(net))
+                continue
+
+            row = []
+
+            jpu_pin = ' - '.join(jpu)
+            row.append(jpu)
+            headers_csv.append('JPU')
+            headers_tex.append('JPU')
+
+            ppp_pin = ' - '.join(ppp_comp)
+            row.append(ppp_pin)
+            headers_csv.append('PPP label')
+            headers_tex.append('PPP label')
+
+            row.append(ppp_label(net))
+            headers_csv.append('Note')
+            headers_tex.append('Note')
+
+            row.append(net)
+            headers_csv.append('Netname (P2B2)')
+
+            row.append(ppp_name_errata_inverse[net])
+            headers_csv.append('Netname (PPP)')
 
             parsed_net = parse_net_jp(net)
             depop = jp_depop_true[parsed_net.jp][
                 jp_hybrid_name_inverse[parsed_net.hyb]]
-
-            row.append(ppp_comp[0]+' - '+ppp_comp[1])
-            row.append(jpu_pin)
-            row.append(ppp_label(net))
-            row.append(net)
-            row.append(ppp_name_errata_inverse[net])
             row.append(depop)
-            row.append(cable_length[var][jpu_pin])
+            headers_csv.append('Depop?')
 
-            true_p2b2_to_ppp[var].append(row)
+            row.append(jpu_cable_length(jpu, var_attrs['cable_length']))
+            headers_csv.append('Length [cm]')
+            headers_tex.append('Length [cm]')
 
-        except KeyError:
-            print("Warning: net {} doesn't match any net in P2B2. This is like an error in PPP".format(net))
-
-        except IndexError:
-            print("Warning: net {} doesn't have a matching JPU".format(net))
+            var_attrs['title'] = '-'.join([title_pre, var_attrs['title']])
+            var_attrs['data'].append(row)
 
 
 #################
 # Write to file #
 #################
 
-headers = ['PPP', 'P2B2', 'Label', 'Netname', 'Netname (PPP)', 'Depop?', 'Length [cm]']
+for _, attrs in output_spec.items():
+    for _, var_attrs in attrs.items():
+        #data = var_attrs['data'].sort(key=lambda x: ppp_sort(x[1]))
+        data = var_attrs['data']
+        filename = var_attrs['filename']
+        title = var_attrs['title']
+        color = var_attrs['color']
 
-
-for var, data in true_p2b2_to_ppp.items():
-    data.sort(key=lambda x: ppp_sort(x[1]))
-    write_to_csv(output_csv[var], data, headers)
-    write_to_latex_ppp(
-        output_tex[var], 'C-TOP-MAG-TRUE-'+var.upper(),
-        data,
-        headers[0:3]+headers[6:]+['Cut', 'Labeled', 'Crimped'],
-        colors_dict[var]
-    )
+        write_to_csv(filename+'.csv', data, headers_csv)
+        write_to_latex_ppp(filename+'.tex', title, data, headers_tex, color)
