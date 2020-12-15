@@ -2,7 +2,7 @@
 
 [![built with nix](https://builtwithnix.org/badge.svg)](https://builtwithnix.org)
 
-Python script to generate various UT auxiliary mappings. So far, we have:
+Python scripts to generate various UT auxiliary mappings:
 
 * `TrueP2B2toPPPMapping.py`: cable mapping for true P2B2 -> true PPP
 * `MirrorP2B2toPPPMapping.py`: cable mapping for mirror P2B2 -> mirror PPP
