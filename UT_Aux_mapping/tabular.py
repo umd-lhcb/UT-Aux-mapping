@@ -2,7 +2,7 @@
 #
 # Author: Yipeng Sun
 # License: BSD 2-clause
-# Last Change: Tue Dec 15, 2020 at 09:17 PM +0100
+# Last Change: Tue Dec 15, 2020 at 09:47 PM +0100
 
 import tabulate as tabl
 
@@ -103,9 +103,13 @@ def makecell(*args):
     return latex_env(r'\\\relax '.join(args), 'makecell')
 
 
-def textblock(content, width, x, y):
-    return latex_begin('({}, {})'.format(x, y)+'\n'+content,
-                       'textblock*', required_opts=[width])
+def textblock(content, width, x, y,
+              origin=r'\textblockorigin{\paperwidth}{0pt}'):
+    latex_dep['textpos'] += ['absolute']
+    output = origin + '\n'
+    output += latex_begin('({}, {})'.format(x, y)+'\n'+content,
+                          'textblock*', required_opts=[width])
+    return output
 
 
 def longtable(data, headers, align,
@@ -125,8 +129,8 @@ def longtable(data, headers, align,
 
     return '\n'.join(
         ['{' + r'\makeatletter', r'\mathchardef\LT@end@pen='+penalty,
-         r'\makeatother', r'\setlength{\LTleft}{'+left_margin+'}', begin] + raw +
-        [end, '}']) + '\n'
+         r'\makeatother', r'\setlength{\LTleft}{'+left_margin+'}', begin] +
+        raw + [end, '}']) + '\n'
 
 
 # Special output ###############################################################
@@ -138,9 +142,11 @@ def tabular_ppp(data, headers, color,
                 col_to_keep=[0, 1, 2, 6],
                 col_formatters=[lambda x: monospace(x.split(' - ')[1])] +
                 [monospace]*2+[lambda x: x],
-                align=['left']*3+['right']+['center']*5):
+                align=['left']*3+['right']+['center']*5,
+                msg='Double check wire lengths before proceed!'):
     reformatted = defaultdict(list)
     counter = defaultdict(lambda: 0)
+    output = ''
 
     for row in data:
         key = group_by(row)
@@ -154,41 +160,37 @@ def tabular_ppp(data, headers, color,
         reformatted[key].append(reformatted_row)
         counter[count_by(row)] += 1
 
-    output = ''
+    # The auxiliary table that lists cable lengths
+    aux_data = [[length, number/2, number/2]
+                for length, number in counter.items()]
+
+    aux_table = tabl.tabulate(
+        aux_data, headers=['Length', 'Black', color],
+        tablefmt='latex_booktabs_raw') + '\n\n'
+    output += textblock(
+        aux_table+r'\vspace{1em} '+'\n'+r'\noindent '+msg,
+        r'0.25\textwidth', r'\dimexpr-0.25\textwidth-1cm', r'0.2\paperheight')
+
+    # The 3 main tables
     for key, data in reformatted.items():
         data = reformatted[key]
         output += latex_env(bold(monospace(key)), 'subsection*')
         output += longtable(data, headers, align)
 
-    # counter_data = []
-    # for length, number in counter.items():
-        # counter_data.append([length, number/2, number/2])
-    # right_output = tabl.tabulate(
-        # counter_data, headers=['Length', 'Black', color],
-        # tablefmt='latex_booktabs_raw')
-    # right_output += '\n'
-
-    # return left_output, right_output, counter
-    return output, '1', counter
+    return output, counter
 
 
 # Output #######################################################################
 
 def write_to_latex_ppp(output_file, title, data, headers, color,
-                       msg='Double check wire lengths before proceed!'):
+                       *args, **kwargs):
+
     content = latex_env('empty', 'pagestyle')
     content += bold(title) + '\n'
     content += latex_env('1em', 'vspace')
-    content += r'\noindent'
-    content += '\n'
 
-    left_output = right_output = r'\small' + '\n'
-    left_table, right_table, _ = tabular_ppp(data,  headers, color)
-    left_output += left_table
-    right_output += latex_begin(right_table, 'center')
-    right_output += '\n' + r'\vspace{1em}' + msg
-
-    content += left_output
+    tables, _ = tabular_ppp(data, headers, color, *args, **kwargs)
+    content += tables
 
     output = latex_preamble()
     output += latex_begin(content)
