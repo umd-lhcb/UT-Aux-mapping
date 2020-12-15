@@ -2,7 +2,7 @@
 #
 # Author: Yipeng Sun
 # License: BSD 2-clause
-# Last Change: Tue Dec 15, 2020 at 04:17 PM +0100
+# Last Change: Tue Dec 15, 2020 at 04:29 PM +0100
 
 import re
 
@@ -16,7 +16,6 @@ from UT_Aux_mapping.const import input_dir, output_dir
 from UT_Aux_mapping.const import jp_hybrid_name_inverse
 from UT_Aux_mapping.helpers import ppp_netname_regulator, parse_net_jp
 from UT_Aux_mapping.helpers import ppp_sort, ppp_label
-from UT_Aux_mapping.helpers import gen_filename
 from UT_Aux_mapping.tabular import write_to_latex_ppp
 
 true_p2b2_netlist = input_dir / Path('true_p2b2.net')
@@ -25,19 +24,19 @@ true_ppp_netlist = input_dir / Path('true_ppp.wirelist')
 output_spec = {
     'C-TOP-MAG-TRUE': {
         'Alpha': {
-            'title': r'\alhpa',
+            'title': r'$\alpha$',
             'variant': 'Full',
             'color': 'Red',
             'cable_length': 160
-        },''
+        },
         'Beta':  {
-            'title': r'\beta',
+            'title': r'$\beta$',
             'variant': 'Partial',
             'color': 'Green',
             'cable_length': 130
         },
         'Gamma': {
-            'title': r'\gamma',
+            'title': r'$\gamma$',
             'variant': 'Partial',
             'color': 'White',
             'cable_length': 100
@@ -89,10 +88,11 @@ for title_pre, attrs in output_spec.items():
     for geo_loc, var_attrs in attrs.items():
         var_attrs['data'] = []
         var_attrs['filename'] = '-'.join(['P2B2toPPP', title_pre, geo_loc])
+        var_attrs['title'] = '-'.join([title_pre, var_attrs['title']])
+
         var = var_attrs['variant']
 
         for net, ppp_comp_list in ppp_descr.items():
-
             try:
                 p2b2_comp = true_p2b2_descr[net]
             except KeyError:
@@ -113,38 +113,45 @@ for title_pre, attrs in output_spec.items():
                 continue
 
             row = []
+            first_run = True if (not headers_csv and not headers_tex) else False
 
             jpu_pin = ' - '.join(jpu)
             row.append(jpu_pin)
-            headers_csv.append('JPU')
-            headers_tex.append('JPU')
+            if first_run:
+                headers_csv.append('JPU')
+                headers_tex.append('JPU')
 
             ppp_pin = ' - '.join(ppp_comp)
             row.append(ppp_pin)
-            headers_csv.append('PPP label')
-            headers_tex.append('PPP label')
+            if first_run:
+                headers_csv.append('PPP label')
+                headers_tex.append('PPP label')
 
             row.append(ppp_label(net))
-            headers_csv.append('Note')
-            headers_tex.append('Note')
+            if first_run:
+                headers_csv.append('Note')
+                headers_tex.append('Note')
 
             row.append(net)
-            headers_csv.append('Netname (P2B2)')
+            if first_run:
+                headers_csv.append('Netname (P2B2)')
 
             row.append(ppp_name_errata_inverse[net])
-            headers_csv.append('Netname (PPP)')
+            if first_run:
+                headers_csv.append('Netname (PPP)')
 
             parsed_net = parse_net_jp(net)
             depop = jp_depop_true[parsed_net.jp][
                 jp_hybrid_name_inverse[parsed_net.hyb]]
             row.append(depop)
-            headers_csv.append('Depop?')
+            if first_run:
+                headers_csv.append('Depop?')
 
             row.append(jpu_cable_length(jpu, var_attrs['cable_length']))
-            headers_csv.append('Length [cm]')
-            headers_tex.append('Length [cm]')
+            if first_run:
+                headers_csv.append('Length [cm]')
+                headers_tex.append('Length [cm]')
 
-            var_attrs['title'] = '-'.join([title_pre, var_attrs['title']])
             var_attrs['data'].append(row)
 
 
@@ -159,5 +166,9 @@ for _, attrs in output_spec.items():
         title = var_attrs['title']
         color = var_attrs['color']
 
-        write_to_csv(filename+'.csv', data, headers_csv)
-        write_to_latex_ppp(filename+'.tex', title, data, headers_tex, color)
+        write_to_csv(
+            output_dir / Path(filename+'.csv'),
+            data, headers_csv)
+        write_to_latex_ppp(
+            output_dir / Path(filename+'.tex'),
+            title, data, headers_tex, color)
