@@ -1,6 +1,6 @@
 # Author: Yipeng Sun
 # License: BSD 2-clause
-# Last Change: Tue Dec 15, 2020 at 04:22 PM +0100
+# Last Change: Tue Dec 15, 2020 at 09:59 PM +0100
 
 export PATH	:= $(shell pwd):$(PATH)
 
@@ -16,9 +16,9 @@ all: \
 	P2B2toPPP-C-TOP-MAG-TRUE-Alpha.pdf \
 	P2B2toPPP-C-TOP-MAG-TRUE-Beta.pdf \
 	P2B2toPPP-C-TOP-MAG-TRUE-Gamma.pdf \
-	MirrorP2B2toPPPMappingFull.pdf \
-	MirrorP2B2toPPPMappingPartial.pdf \
-	MirrorP2B2toPPPMappingDepopulated.pdf
+	P2B2toPPP-C-BOT-MAG-MIRROR-Alpha.pdf \
+	P2B2toPPP-C-BOT-MAG-MIRROR-Beta.pdf \
+	P2B2toPPP-C-BOT-MAG-MIRROR-Gamma.pdf
 
 .PHONY: clean
 clean:
@@ -30,8 +30,8 @@ P2B2toPPP-C-TOP-MAG-TRUE-Alpha.tex P2B2toPPP-C-TOP-MAG-TRUE-Beta.tex P2B2toPPP-C
 	input/true_p2b2.net input/true_ppp.wirelist
 	$<
 
-MirrorP2B2toPPPMappingFull.csv MirrorP2B2toPPPMappingPartial.csv MirrorP2B2toPPPMappingDepopulated.csv \
-MirrorP2B2toPPPMappingFull.tex MirrorP2B2toPPPMappingPartial.tex MirrorP2B2toPPPMappingDepopulated.tex &: \
+P2B2toPPP-C-BOT-MAG-MIRROR-Alpha.csv P2B2toPPP-C-BOT-MAG-MIRROR-Beta.csv P2B2toPPP-C-BOT-MAG-MIRROR-Gamma.csv \
+P2B2toPPP-C-BOT-MAG-MIRROR-Alpha.tex P2B2toPPP-C-BOT-MAG-MIRROR-Beta.tex P2B2toPPP-C-BOT-MAG-MIRROR-Gamma.tex &: \
 	MirrorP2B2toPPPMapping.py UT_Aux_mapping/helpers.py UT_Aux_mapping/tabular.py \
 	input/true_p2b2.net input/true_ppp.wirelist
 	$<
@@ -42,4 +42,5 @@ MirrorP2B2toPPPMappingFull.tex MirrorP2B2toPPPMappingPartial.tex MirrorP2B2toPPP
 ####################
 
 %.pdf: %.tex
+	@pdflatex -output-directory $(OUTPUT_PATH) $<
 	@pdflatex -output-directory $(OUTPUT_PATH) $<
