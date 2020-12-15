@@ -16,7 +16,7 @@
         };
       in
       rec {
-        packages = {
+        packages = rec {
           UT_Aux_mapping_Env = pkgs.python3.withPackages (ps: with ps; [
             # NOTE: plain 'pyUTM' won't work here as it is interpreted as
             #       an argument, instead of a package.
@@ -30,9 +30,25 @@
             flake8
             pylint
           ]);
+          UT_Aux_mapping_Dev = pkgs.mkShell {
+            buildInputs = [
+              UT_Aux_mapping_Env
+              (pkgs.texlive.combine {
+                inherit (pkgs.texlive)
+                scheme-small
+                booktabs
+                amsmath
+                tcolorbox
+                # Implicit dependencies
+                environ
+                trimspaces
+                ;
+              })
+            ];
+          };
         };
 
         defaultPackage = packages.UT_Aux_mapping_Env;
-        devShell = packages.UT_Aux_mapping_Env.env;
+        devShell = packages.UT_Aux_mapping_Dev;
       });
 }
