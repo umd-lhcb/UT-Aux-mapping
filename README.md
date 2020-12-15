@@ -1,5 +1,6 @@
 # UT-Aux-mapping
-[![built with nix](https://builtwithnix.org/badge.svg)](https://builtwithnix.org) [![github CI](https://github.com/umd-lhcb/UT-Aux-mapping/main/badge.svg?branch=master)]
+[![built with nix](https://builtwithnix.org/badge.svg)](https://builtwithnix.org) [![github CI](https://github.com/umd-lhcb/UT-Aux-mapping/workflows/CI/badge.svg?branch=master)]
+
 Python script to generate various UT auxiliary mappings. So far, we have:
 
 * COMET FPGA to DCB pin-by-pin mapping
