@@ -2,7 +2,7 @@
 #
 # Author: Yipeng Sun
 # License: BSD 2-clause
-# Last Change: Tue Dec 15, 2020 at 09:11 PM +0100
+# Last Change: Tue Dec 15, 2020 at 09:20 PM +0100
 
 import re
 
@@ -134,7 +134,7 @@ for title_pre, attrs in output_spec.items():
             row.append(ppp_pin)
             if first_run:
                 headers_csv.append('PPP label')
-                headers_tex.append(makecell('PPP', 'label'))
+                headers_tex.append(makecell('PPP', '(label)'))
 
             row.append(ppp_label(net))
             if first_run:
