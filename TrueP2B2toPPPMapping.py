@@ -2,7 +2,7 @@
 #
 # Author: Yipeng Sun
 # License: BSD 2-clause
-# Last Change: Tue Dec 15, 2020 at 04:11 PM +0100
+# Last Change: Tue Dec 15, 2020 at 04:17 PM +0100
 
 import re
 
@@ -29,7 +29,7 @@ output_spec = {
             'variant': 'Full',
             'color': 'Red',
             'cable_length': 160
-        },
+        },''
         'Beta':  {
             'title': r'\beta',
             'variant': 'Partial',
@@ -115,7 +115,7 @@ for title_pre, attrs in output_spec.items():
             row = []
 
             jpu_pin = ' - '.join(jpu)
-            row.append(jpu)
+            row.append(jpu_pin)
             headers_csv.append('JPU')
             headers_tex.append('JPU')
 
@@ -154,8 +154,7 @@ for title_pre, attrs in output_spec.items():
 
 for _, attrs in output_spec.items():
     for _, var_attrs in attrs.items():
-        #data = var_attrs['data'].sort(key=lambda x: ppp_sort(x[1]))
-        data = var_attrs['data']
+        data = sorted(var_attrs['data'], key=lambda x: ppp_sort(x[0]))
         filename = var_attrs['filename']
         title = var_attrs['title']
         color = var_attrs['color']
