@@ -2,7 +2,7 @@
 #
 # Author: Yipeng Sun
 # License: BSD 2-clause
-# Last Change: Tue Dec 15, 2020 at 05:12 PM +0100
+# Last Change: Tue Dec 15, 2020 at 05:34 PM +0100
 
 import tabulate as tabl
 
@@ -14,6 +14,7 @@ latex_dep['booktabs']
 latex_dep['geometry'] = ['a4paper',
                          'left=1cm', 'right=1cm', 'top=1cm', 'bottom=1cm']
 latex_dep['amssymb']
+latex_dep['longtable']
 
 
 # LaTeX general ################################################################
@@ -126,6 +127,7 @@ def tcolorbox(left, right,
 # Special output ###############################################################
 
 def tabular_ppp(data, headers, color,
+                tabular_env='longtable',
                 group_by=lambda x: x[0].split(' - ')[0],
                 count_by=lambda x: x[6],
                 col_to_keep=[0, 1, 2, 6],
@@ -155,7 +157,7 @@ def tabular_ppp(data, headers, color,
         left_output += tabl.tabulate(
             data, headers=headers, tablefmt='latex_booktabs_raw',
             colalign=align
-        )
+        ).replace('tabular', tabular_env)
         left_output += '\n'
 
     counter_data = []
@@ -181,6 +183,9 @@ def write_to_latex_ppp(output_file, title, data, headers, color,
 
     left_output = right_output = r'\small' + '\n'
     left_table, right_table, _ = tabular_ppp(data,  headers, color)
+    left_output += r'\makeatletter'
+    # Reduce penalty for breaking table
+    left_output += r'\mathchardef\LT@end@pen=1'
     left_output += left_table
     right_output += latex_begin(right_table, 'center')
     right_output += '\n' + r'\vspace{1em}' + msg
