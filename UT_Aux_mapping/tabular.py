@@ -2,7 +2,7 @@
 #
 # Author: Yipeng Sun
 # License: BSD 2-clause
-# Last Change: Tue Dec 15, 2020 at 10:51 PM +0100
+# Last Change: Tue Dec 15, 2020 at 11:16 PM +0100
 
 import tabulate as tabl
 
@@ -12,8 +12,10 @@ from collections import defaultdict
 latex_dep = defaultdict(list)
 latex_dep['booktabs']
 latex_dep['geometry'] = ['a4paper',
-                         'left=1cm', 'right=1cm', 'top=1cm', 'bottom=1cm']
+                         'left=1cm', 'right=1cm', 'top=1cm', 'bottom=1cm',
+                         'includehead', 'includefoot', 'headsep=0.3cm']
 latex_dep['amssymb']
+latex_dep['fancyhdr']
 
 
 # LaTeX general ################################################################
@@ -133,6 +135,17 @@ def longtable(data, headers, align,
         raw + [end, '}']) + '\n'
 
 
+def fancystyle(title, rule_width='0pt'):
+    return '\n'.join([
+        r'\fancypagestyle{worksheet}{',
+        r'\fancyhf{}',
+        r'\renewcommand{\headrulewidth}{' + rule_width + '}',
+        r'\fancyhead[L]{\hspace{1em}\textbf{' + title + '}' + '}',
+        '}',
+        r'\pagestyle{worksheet}'
+    ])
+
+
 # Special output ###############################################################
 
 def tabular_ppp(data, headers, color,
@@ -184,16 +197,11 @@ def tabular_ppp(data, headers, color,
 
 def write_to_latex_ppp(output_file, title, data, headers, color,
                        *args, **kwargs):
-
-    content = latex_env('empty', 'pagestyle')
-    content += bold(title) + '\n'
-    content += latex_env('1em', 'vspace')
-    content += r'\setlength\extrarowheight{2pt}'
-
-    tables, _ = tabular_ppp(data, headers, color, *args, **kwargs)
-    content += tables
+    content, _ = tabular_ppp(data, headers, color, *args, **kwargs)
 
     output = latex_preamble()
+    output += fancystyle(title)
+    output += r'\setlength\extrarowheight{1.5pt}'
     output += latex_begin(content)
 
     with open(output_file, 'w') as f:
