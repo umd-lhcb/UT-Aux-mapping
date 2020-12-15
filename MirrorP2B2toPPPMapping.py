@@ -2,7 +2,7 @@
 #
 # Author: Yipeng Sun
 # License: BSD 2-clause
-# Last Change: Tue Dec 15, 2020 at 03:55 AM +0100
+# Last Change: Tue Dec 15, 2020 at 01:41 PM +0100
 
 import re
 
@@ -34,7 +34,7 @@ output_tex = {var: output_dir / gen_filename(__file__, var, 'tex')
 
 def jpu_cable_length(var, jpu,
                      base_length={
-                         'Full': 130, 'Partial': 100, 'Depopulated': 70},
+                         'Full': 150, 'Partial': 120, 'Depopulated': 90},
                      adj_length={'JPU3': -20, 'JPU2': -10, 'JPU1': 0}):
     return base_length[var]+adj_length[jpu]
 
