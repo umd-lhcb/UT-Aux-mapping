@@ -12,7 +12,7 @@ Python scripts to generate various UT auxiliary mappings:
 
 ## Usage
 All dependencies of this project are specified and pinpointed by `nix`. To run
-these scripts, install `nix` on you computer (hard).
+these scripts, install `nix` on you computer.
 
 Once that is done, if your `nix` has `flake` support:
 ```
