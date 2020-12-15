@@ -2,7 +2,7 @@
 #
 # Author: Yipeng Sun
 # License: BSD 2-clause
-# Last Change: Tue Dec 15, 2020 at 09:47 PM +0100
+# Last Change: Tue Dec 15, 2020 at 09:51 PM +0100
 
 import tabulate as tabl
 
@@ -188,6 +188,7 @@ def write_to_latex_ppp(output_file, title, data, headers, color,
     content = latex_env('empty', 'pagestyle')
     content += bold(title) + '\n'
     content += latex_env('1em', 'vspace')
+    content += r'\setlength\extrarowheight{2pt}'
 
     tables, _ = tabular_ppp(data, headers, color, *args, **kwargs)
     content += tables
