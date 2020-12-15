@@ -2,7 +2,7 @@
 #
 # Author: Yipeng Sun
 # License: BSD 2-clause
-# Last Change: Tue Dec 15, 2020 at 05:08 PM +0100
+# Last Change: Tue Dec 15, 2020 at 05:12 PM +0100
 
 import tabulate as tabl
 
@@ -131,7 +131,7 @@ def tabular_ppp(data, headers, color,
                 col_to_keep=[0, 1, 2, 6],
                 col_formatters=[lambda x: monospace(x.split(' - ')[1])] +
                 [monospace]*2+[lambda x: x],
-                align=['left']*3+['right']+['center']*3):
+                align=['left']*3+['right']+['center']*5):
     reformatted = defaultdict(list)
     counter = defaultdict(lambda: 0)
 

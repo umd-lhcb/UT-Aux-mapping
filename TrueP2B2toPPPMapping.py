@@ -2,7 +2,7 @@
 #
 # Author: Yipeng Sun
 # License: BSD 2-clause
-# Last Change: Tue Dec 15, 2020 at 04:58 PM +0100
+# Last Change: Tue Dec 15, 2020 at 05:12 PM +0100
 
 import re
 
@@ -128,7 +128,7 @@ for title_pre, attrs in output_spec.items():
             row.append(jpu_pin)
             if first_run:
                 headers_csv.append('JPU')
-                headers_tex.append('JPU')
+                headers_tex.append('Pin')
 
             ppp_pin = ' - '.join(ppp_comp)
             row.append(ppp_pin)
@@ -168,7 +168,7 @@ for title_pre, attrs in output_spec.items():
 # Write to file #
 #################
 
-headers_tex += ['Cut', 'Labeled', 'Crimped']
+headers_tex += ['Cut', 'Crimp P2B2', 'Label', 'Crimp PPP', 'Check']
 
 for _, attrs in output_spec.items():
     for _, var_attrs in attrs.items():
