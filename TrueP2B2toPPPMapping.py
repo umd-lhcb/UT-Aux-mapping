@@ -2,7 +2,7 @@
 #
 # Author: Yipeng Sun
 # License: BSD 2-clause
-# Last Change: Tue Dec 15, 2020 at 05:19 PM +0100
+# Last Change: Tue Dec 15, 2020 at 09:11 PM +0100
 
 import re
 
@@ -24,7 +24,7 @@ from UT_Aux_mapping.helpers import (
 )
 from UT_Aux_mapping.tabular import (
     write_to_latex_ppp,
-    boldmath
+    boldmath, makecell
 )
 
 true_p2b2_netlist = input_dir / Path('true_p2b2.net')
@@ -134,7 +134,7 @@ for title_pre, attrs in output_spec.items():
             row.append(ppp_pin)
             if first_run:
                 headers_csv.append('PPP label')
-                headers_tex.append('PPP label')
+                headers_tex.append(makecell('PPP', 'label'))
 
             row.append(ppp_label(net))
             if first_run:
@@ -159,7 +159,7 @@ for title_pre, attrs in output_spec.items():
             row.append(jpu_cable_length(jpu, var_attrs['cable_length']))
             if first_run:
                 headers_csv.append('Length [cm]')
-                headers_tex.append('Length [cm]')
+                headers_tex.append(makecell('Length', '[cm]'))
 
             var_attrs['data'].append(row)
 
@@ -168,7 +168,8 @@ for title_pre, attrs in output_spec.items():
 # Write to file #
 #################
 
-headers_tex += ['Cut', 'Crimp P2B2', 'Label', 'Crimp PPP', 'Check']
+headers_tex += ['Cut', makecell('Crimp', 'P2B2'), 'Label',
+                makecell('Crimp', 'PPP'), 'Check']
 
 for _, attrs in output_spec.items():
     for _, var_attrs in attrs.items():
