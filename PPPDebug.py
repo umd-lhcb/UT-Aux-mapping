@@ -2,12 +2,13 @@
 #
 # Author: Yipeng Sun
 # License: BSD 2-clause
-# Last Change: Wed Dec 16, 2020 at 01:59 AM +0100
+# Last Change: Wed Dec 16, 2020 at 02:24 AM +0100
 
 from pathlib import Path
+from itertools import permutations
+from collections.abc import Iterable
 
 from pyUTM.io import WirelistNaiveReader, PcadNaiveReader
-from itertools import permutations
 
 from UT_Aux_mapping.const import input_dir
 from UT_Aux_mapping.helpers import ppp_netname_regulator
@@ -40,6 +41,22 @@ netlists.update({k: read_net(input_dir, k, 'net', PcadNaiveReader)
 netnames = {}
 
 
+def flatten(iterable, depth=0, max_depth=-1):
+    output = []
+
+    for item in iterable:
+        if isinstance(item, Iterable) and not isinstance(item, str):
+            if depth == max_depth:
+                output.append(item)
+            else:
+                output += flatten(item, depth+1, max_depth)
+
+        else:
+            output.append(item)
+
+    return output
+
+
 def uniq_elems(l1, l2):
     return [i for i in l1 if i not in l2]
 
@@ -67,5 +84,6 @@ netnames.update({k: [n for n in netlists[k].keys()] for k in p2b2_vars})
 
 uniq_p2b2 = {'in {} not {}'.format(k1, k2):
              uniq_elems(netnames[k1], netnames[k2])
-             for k1, k2 in permutations(zip(ppp_vars, p2b2_vars))}
+             for k1, k2 in
+             flatten(map(permutations, zip(ppp_vars, p2b2_vars)), max_depth=1)}
 print_uniq(uniq_p2b2)
