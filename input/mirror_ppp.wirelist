@@ -510,10 +510,10 @@ PLB16F36                        P36            PLB16F8000
         P10        2       2              PASSIVE     PLB16F10
         P16        2       2              PASSIVE     PLB16F16
 
-[00103] JP3 JPU1 P2E LV Return
+[00103] JP3 JPU1 P2W LV Return
         P5         15      15             PASSIVE     PLB16F5
 
-[00104] JP3 JPU1 P2E LV Source
+[00104] JP3 JPU1 P2W LV Source
         P5         7       7              PASSIVE     PLB16F5
 
 [00105] JP3 JPU1 P3 LV Return
