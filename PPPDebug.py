@@ -2,11 +2,11 @@
 #
 # Author: Yipeng Sun
 # License: BSD 2-clause
-# Last Change: Wed Dec 16, 2020 at 01:20 AM +0100
+# Last Change: Wed Dec 16, 2020 at 01:59 AM +0100
 
 from pathlib import Path
 
-from pyUTM.io import WirelistNaiveReader
+from pyUTM.io import WirelistNaiveReader, PcadNaiveReader
 from itertools import permutations
 
 from UT_Aux_mapping.const import input_dir
@@ -27,6 +27,10 @@ def read_net(path, name, ext='wirelist', reader=WirelistNaiveReader):
 
 ppp_vars = ['true_ppp', 'mirror_ppp']
 netlists.update({k: read_net(input_dir, k) for k in ppp_vars})
+
+p2b2_vars = ['true_p2b2', 'mirror_p2b2']
+netlists.update({k: read_net(input_dir, k, 'net', PcadNaiveReader)
+                 for k in p2b2_vars})
 
 
 ##########
@@ -50,9 +54,18 @@ def print_uniq(uniq_d):
 
 # Check if there's nets that a unique to one variant
 netnames.update({k: [ppp_netname_regulator(n) for n in netlists[k].keys()]
-                 for k in netlists.keys()})
+                 for k in ppp_vars})
 
 uniq_ppp = {'in {} not {}'.format(k1, k2):
             uniq_elems(netnames[k1], netnames[k2])
             for k1, k2 in permutations(ppp_vars, 2)}
 print_uniq(uniq_ppp)
+
+
+# Check nets that are unique to P2B2
+netnames.update({k: [n for n in netlists[k].keys()] for k in p2b2_vars})
+
+uniq_p2b2 = {'in {} not {}'.format(k1, k2):
+             uniq_elems(netnames[k1], netnames[k2])
+             for k1, k2 in permutations(zip(ppp_vars, p2b2_vars))}
+print_uniq(uniq_p2b2)
