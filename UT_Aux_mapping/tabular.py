@@ -2,7 +2,7 @@
 #
 # Author: Yipeng Sun
 # License: BSD 2-clause
-# Last Change: Thu Dec 17, 2020 at 01:12 PM +0100
+# Last Change: Thu Dec 17, 2020 at 01:30 PM +0100
 
 import tabulate as tabl
 
@@ -154,13 +154,51 @@ Cut 14 AWG wires according to this table:
 '''
 p2b2_ppp_instruct['Crimp wires on the P2B2 side']['steps'] = [
     '''
-    Strip one end of the wire for about 3mm only!
+    Strip away one end of the wire for 3mm only!
     First use the blue stripper, then cut it to 3 mm with a plier cutter.
     ''',
-    '''
-    Put the wire in
+    r'''
+    Put the wire in \textbf{16 AWG Molex pin}, so that the
+    \textbf{outer arms} grab on the insulation,
+    and the \textbf{middle arms} on bare wire.
+    The cable should not be inserted to the square barrel of the pin!
+    ''',
+    r'''
+    Insert the pin with wire to the 16 AWG slot on the
+    \textbf{samtec crimping tool} then crimp.
+    Give it a tug to ensure wire doesn't fall out of the pin.
+    ''',
+    r'''
+    Insert the crimped wire to a \textbf{white P2B2 male connector}.
+    Pin 1 is marked with $\triangledown$.
+    Align tabs on the pin and connector before insertion.
+    Give it another tug to ensure cable stays in.
+    It is normal that the wire shakes a bit in the connector housing.
     '''
 ]
+p2b2_ppp_instruct['Label']['content'] = '''
+Label the wire with a heat-shrink label with label named listed in tables in the
+left.
+'''
+p2b2_ppp_instruct['Crimp wires on the PPP side']['content'] = r'''
+\textbf{Skip this part for now!}
+'''
+p2b2_ppp_instruct['Crime wires on the PPP side']['steps'] = [
+    '''
+    Strip away the other end of the wire for 7mm.
+    ''',
+    r'''
+    Make sure the crimping tool selector is set to \textbf{blue-16}, and the
+    knob is set to $\bm{14|7}$.
+    ''',
+    r'''
+    Place the stripped wire in a \textbf{female positronic socket}. Place wire +
+    socket in the crimping tool and crimp.
+    '''
+]
+p2b2_ppp_instruct['Check']['content'] = '''
+Use a multimeter to check connectivity between P2B2 and PPP connector pins.
+'''
 
 
 def instruction(instruct, size=r'\footnotesize'):
