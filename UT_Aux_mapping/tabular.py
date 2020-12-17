@@ -2,7 +2,7 @@
 #
 # Author: Yipeng Sun
 # License: BSD 2-clause
-# Last Change: Thu Dec 17, 2020 at 01:30 PM +0100
+# Last Change: Thu Dec 17, 2020 at 01:35 PM +0100
 
 import tabulate as tabl
 
@@ -149,8 +149,9 @@ def fancystyle(title, rule_width='0pt'):
 # Special output ###############################################################
 
 p2b2_ppp_instruct = defaultdict(lambda: {'content': '', 'steps': []})
-p2b2_ppp_instruct['Measure and cut wires']['content'] = '''
-Cut 14 AWG wires according to this table:
+p2b2_ppp_instruct['Measure and cut wires']['content'] = r'''
+Cut \textbf{14 AWG wires} according to this table
+(\textbf{Black} is always \texttt{RET}):
 '''
 p2b2_ppp_instruct['Crimp wires on the P2B2 side']['steps'] = [
     '''
