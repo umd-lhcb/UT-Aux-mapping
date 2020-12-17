@@ -1,10 +1,13 @@
 {
   description = "Python script to generate various UT auxiliary mappings.";
 
-  inputs = {
+  inputs = rec {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-20.09";
     flake-utils.url = "github:numtide/flake-utils";
-    pyUTM.url = "github:umd-lhcb/pyUTM";
+    pyUTM = {
+      url = "github:umd-lhcb/pyUTM";
+      inputs = { inherit nixpkgs flake-utils; };
+    };
     flake-compat = {
       url = "github:edolstra/flake-compat";
       flake = false;
