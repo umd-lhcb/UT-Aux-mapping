@@ -2,7 +2,7 @@
 #
 # Author: Yipeng Sun
 # License: BSD 2-clause
-# Last Change: Thu Dec 17, 2020 at 03:47 PM +0100
+# Last Change: Thu Dec 17, 2020 at 03:58 PM +0100
 
 import tabulate as tabl
 
@@ -18,6 +18,7 @@ latex_dep['geometry'] = ['a4paper',
                          'includehead', 'includefoot', 'headsep=0.3cm']
 latex_dep['amssymb']
 latex_dep['fancyhdr']
+latex_dep['microtype']
 
 
 # LaTeX general ################################################################
@@ -200,8 +201,8 @@ p2b2_ppp_instruct['Crime wires on the PPP side']['steps'] = [
     knob is set to $\bm{14|7}$.
     ''',
     r'''
-    Place the stripped wire in a \textbf{female positronic socket}. Place wire +
-    socket in the crimping tool and crimp.
+    Place the stripped wire in a \textbf{female positronic socket}. Place them
+    in the crimping tool and crimp.
     '''
 ]
 p2b2_ppp_instruct['Check']['content'] = '''

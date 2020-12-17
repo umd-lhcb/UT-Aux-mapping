@@ -49,6 +49,7 @@
                   textpos
                   fancyhdr
                   enumitem
+                  microtype
                   # Implicit dependencies
                   pgf
                   ;
