@@ -2,7 +2,7 @@
 #
 # Author: Yipeng Sun
 # License: BSD 2-clause
-# Last Change: Thu Dec 17, 2020 at 01:35 PM +0100
+# Last Change: Thu Dec 17, 2020 at 01:36 PM +0100
 
 import tabulate as tabl
 
@@ -178,7 +178,7 @@ p2b2_ppp_instruct['Crimp wires on the P2B2 side']['steps'] = [
     '''
 ]
 p2b2_ppp_instruct['Label']['content'] = '''
-Label the wire with a heat-shrink label with label named listed in tables in the
+Label the wire with a heat-shrink label with label name listed in tables in the
 left.
 '''
 p2b2_ppp_instruct['Crimp wires on the PPP side']['content'] = r'''
