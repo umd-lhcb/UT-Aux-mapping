@@ -2,7 +2,7 @@
 #
 # Author: Yipeng Sun
 # License: BSD 2-clause
-# Last Change: Tue Dec 15, 2020 at 10:10 PM +0100
+# Last Change: Thu Dec 17, 2020 at 03:42 PM +0100
 
 import re
 
@@ -173,7 +173,7 @@ headers_tex += ['Cut', makecell('Crimp', 'P2B2'), 'Label',
 
 for _, attrs in output_spec.items():
     for _, var_attrs in attrs.items():
-        data = sorted(var_attrs['data'], key=lambda x: ppp_sort(x[0], -100))
+        data = sorted(var_attrs['data'], key=lambda x: ppp_sort(x[0]))
         filename = var_attrs['filename']
         title = var_attrs['title']
         color = var_attrs['color']
