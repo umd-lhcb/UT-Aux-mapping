@@ -2,7 +2,7 @@
 #
 # Author: Yipeng Sun
 # License: BSD 2-clause
-# Last Change: Thu Dec 17, 2020 at 03:42 PM +0100
+# Last Change: Thu Dec 17, 2020 at 03:47 PM +0100
 
 import tabulate as tabl
 
@@ -155,6 +155,10 @@ p2b2_ppp_instruct['Measure and cut wires']['content'] = r'''
 Cut \textbf{14 AWG wires} according to this table
 (\textbf{Black} is always \texttt{RET}):
 '''
+p2b2_ppp_instruct['Crimp wires on the P2B2 side']['content'] = r'''
+From left to right: For \textbf{true} P2B2: JPU1, JPU2, JPU3;
+For \textbf{mirror} P2B2: JPU3, JPU2, JPU1.
+'''
 p2b2_ppp_instruct['Crimp wires on the P2B2 side']['steps'] = [
     '''
     Strip away one end of the wire for 3mm only!
@@ -173,7 +177,8 @@ p2b2_ppp_instruct['Crimp wires on the P2B2 side']['steps'] = [
     ''',
     r'''
     Insert the crimped wire to a \textbf{white P2B2 male connector}.
-    Pin 1 is marked with $\triangledown$.
+    Pin 1 is marked with $\triangledown$, and pin 1-15 are in the same
+    \textbf{row}.
     Align tabs on the pin and connector before insertion.
     Give it another tug to ensure cable stays in.
     It is normal that the wire shakes a bit in the connector housing.
