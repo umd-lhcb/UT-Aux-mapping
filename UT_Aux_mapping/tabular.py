@@ -2,7 +2,7 @@
 #
 # Author: Yipeng Sun
 # License: BSD 2-clause
-# Last Change: Thu Dec 17, 2020 at 01:51 PM +0100
+# Last Change: Thu Dec 17, 2020 at 03:42 PM +0100
 
 import tabulate as tabl
 
@@ -13,7 +13,8 @@ from copy import deepcopy
 latex_dep = defaultdict(list)
 latex_dep['booktabs']
 latex_dep['geometry'] = ['a4paper',
-                         'left=1cm', 'right=1cm', 'top=1cm', 'bottom=1cm',
+                         'left=0.8cm', 'right=0.8cm', 'top=0.8cm',
+                         'bottom=0.8cm',
                          'includehead', 'includefoot', 'headsep=0.3cm']
 latex_dep['amssymb']
 latex_dep['fancyhdr']
@@ -255,7 +256,7 @@ def tabular_ppp(data, headers, color,
     tmp_instruct['Measure and cut wires']['content'] += '\n' + aux_table
     output += textblock(
         instruction(tmp_instruct),
-        r'0.27\textwidth', r'\dimexpr-0.27\textwidth-1cm', r'0.7cm')
+        r'0.27\textwidth', r'\dimexpr-0.27\textwidth-0.8cm', r'0.5cm')
 
     # The 3 main tables
     for key, data in reformatted.items():
