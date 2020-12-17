@@ -2,7 +2,7 @@
 #
 # Author: Yipeng Sun
 # License: BSD 2-clause
-# Last Change: Thu Dec 17, 2020 at 03:42 PM +0100
+# Last Change: Thu Dec 17, 2020 at 04:10 PM +0100
 
 import re
 
@@ -36,19 +36,22 @@ output_spec = {
             'title': boldmath(r'\alpha'),
             'variant': 'Full',
             'color': 'Red',
-            'cable_length': 160
+            'cable_length': 160,
+            'index': 0
         },
         'Beta':  {
             'title': boldmath(r'\beta'),
             'variant': 'Partial',
             'color': 'Green',
-            'cable_length': 130
+            'cable_length': 130,
+            'index': 1
         },
         'Gamma': {
             'title': boldmath(r'\gamma'),
             'variant': 'Partial',
             'color': 'White',
-            'cable_length': 100
+            'cable_length': 100,
+            'index': 2
         }
     }
 }
@@ -83,8 +86,6 @@ ppp_descr = {k: v for k, v in ppp_descr.items() if 'JPU' in k}
 # Make PPP -> P2B2 connections and generate output #
 ####################################################
 
-variants = ['Full', 'Partial', 'Depopulated']
-comp_idx = dict(zip(variants, range(0, 3)))
 headers_csv = []
 headers_tex = []
 
@@ -109,7 +110,7 @@ for title_pre, attrs in output_spec.items():
                 continue
 
             try:
-                ppp_comp = ppp_comp_list[comp_idx[var]]
+                ppp_comp = ppp_comp_list[var_attrs['index']]
             except IndexError:
                 # Doesn't exist due to depopulation! Nothing to see here.
                 continue
