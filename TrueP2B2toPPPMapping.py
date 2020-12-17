@@ -2,7 +2,7 @@
 #
 # Author: Yipeng Sun
 # License: BSD 2-clause
-# Last Change: Thu Dec 17, 2020 at 04:08 PM +0100
+# Last Change: Thu Dec 17, 2020 at 10:35 PM +0100
 
 import re
 
@@ -36,21 +36,21 @@ output_spec = {
             'title': boldmath(r'\alpha'),
             'variant': 'Full',
             'color': 'Red',
-            'cable_length': 160,
+            'cable_length': 150,
             'index': 0
         },
         'Beta':  {
             'title': boldmath(r'\beta'),
             'variant': 'Partial',
             'color': 'Green',
-            'cable_length': 130,
+            'cable_length': 120,
             'index': 1
         },
         'Gamma': {
             'title': boldmath(r'\gamma'),
             'variant': 'Partial',
             'color': 'White',
-            'cable_length': 100,
+            'cable_length': 90,
             'index': 2
         }
     }
