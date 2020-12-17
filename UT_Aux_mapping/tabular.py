@@ -2,7 +2,7 @@
 #
 # Author: Yipeng Sun
 # License: BSD 2-clause
-# Last Change: Tue Dec 15, 2020 at 11:16 PM +0100
+# Last Change: Thu Dec 17, 2020 at 01:12 PM +0100
 
 import tabulate as tabl
 
@@ -148,6 +148,36 @@ def fancystyle(title, rule_width='0pt'):
 
 # Special output ###############################################################
 
+p2b2_ppp_instruct = defaultdict(lambda: {'content': '', 'steps': []})
+p2b2_ppp_instruct['Measure and cut wires']['content'] = '''
+Cut 14 AWG wires according to this table:
+'''
+p2b2_ppp_instruct['Crimp wires on the P2B2 side']['steps'] = [
+    '''
+    Strip one end of the wire for about 3mm only!
+    First use the blue stripper, then cut it to 3 mm with a plier cutter.
+    ''',
+    '''
+    Put the wire in
+    '''
+]
+
+
+def instruction(instruct, size=r'\footnotesize'):
+    output = size + '\n'
+    for sec, data in instruct.items():
+        output += latex_env(sec, 'subsubsection*')
+        output += data['content']
+
+        if data['steps']:
+            latex_dep['enumitem']
+            steps = '\n'.join(r'\item'+step for step in data['steps']) + '\n'
+            output += latex_begin(
+                steps, 'enumerate', tail_opts=['leftmargin=*'])
+
+    return output
+
+
 def tabular_ppp(data, headers, color,
                 tabular_env='longtable',
                 group_by=lambda x: x[0].split(' - ')[0],
@@ -155,8 +185,7 @@ def tabular_ppp(data, headers, color,
                 col_to_keep=[0, 1, 2, 6],
                 col_formatters=[lambda x: monospace(x.split(' - ')[1])] +
                 [monospace]*2+[lambda x: x],
-                align=['left']*3+['right']+['center']*5,
-                msg='Double check wire lengths before proceed!'):
+                align=['left']*3+['right']+['center']*5):
     reformatted = defaultdict(list)
     counter = defaultdict(lambda: 0)
     output = ''
@@ -179,10 +208,13 @@ def tabular_ppp(data, headers, color,
 
     aux_table = tabl.tabulate(
         aux_data, headers=['Length', 'Black', color],
-        tablefmt='latex_booktabs_raw') + '\n\n'
+        tablefmt='latex_booktabs_raw') + '\n'
+    aux_table = latex_begin(aux_table, 'center')
+
+    p2b2_ppp_instruct['Measure and cut wires']['content'] += '\n' + aux_table
     output += textblock(
-        aux_table+r'\vspace{1em} '+'\n'+r'\noindent '+msg,
-        r'0.25\textwidth', r'\dimexpr-0.25\textwidth-1cm', r'0.2\paperheight')
+        instruction(p2b2_ppp_instruct),
+        r'0.27\textwidth', r'\dimexpr-0.27\textwidth-1cm', r'0.7cm')
 
     # The 3 main tables
     for key, data in reformatted.items():
