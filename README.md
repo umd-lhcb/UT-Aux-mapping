@@ -1,4 +1,4 @@
-# UT-Aux-mapping ![github CI](https://github.com/umd-lhcb/UT-Aux-mapping/workflows/CI/badge.svg?branch=master)
+# UT-Aux-mapping [![github CI](https://github.com/umd-lhcb/UT-Aux-mapping/workflows/CI/badge.svg?branch=master)](https://github.com/umd-lhcb/UT-Aux-mapping/actions?query=workflow%3ACI)
 
 [![built with nix](https://builtwithnix.org/badge.svg)](https://builtwithnix.org)
 
