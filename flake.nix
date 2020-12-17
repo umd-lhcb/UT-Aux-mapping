@@ -48,6 +48,7 @@
                   makecell
                   textpos
                   fancyhdr
+                  enumitem
                   # Implicit dependencies
                   pgf
                   ;
