@@ -2,12 +2,13 @@
 #
 # Author: Yipeng Sun
 # License: BSD 2-clause
-# Last Change: Thu Dec 17, 2020 at 01:36 PM +0100
+# Last Change: Thu Dec 17, 2020 at 01:51 PM +0100
 
 import tabulate as tabl
 
 from functools import partial
 from collections import defaultdict
+from copy import deepcopy
 
 latex_dep = defaultdict(list)
 latex_dep['booktabs']
@@ -250,9 +251,10 @@ def tabular_ppp(data, headers, color,
         tablefmt='latex_booktabs_raw') + '\n'
     aux_table = latex_begin(aux_table, 'center')
 
-    p2b2_ppp_instruct['Measure and cut wires']['content'] += '\n' + aux_table
+    tmp_instruct = deepcopy(p2b2_ppp_instruct)
+    tmp_instruct['Measure and cut wires']['content'] += '\n' + aux_table
     output += textblock(
-        instruction(p2b2_ppp_instruct),
+        instruction(tmp_instruct),
         r'0.27\textwidth', r'\dimexpr-0.27\textwidth-1cm', r'0.7cm')
 
     # The 3 main tables
