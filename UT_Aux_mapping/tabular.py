@@ -2,7 +2,7 @@
 #
 # Author: Yipeng Sun
 # License: BSD 2-clause
-# Last Change: Thu Dec 17, 2020 at 03:58 PM +0100
+# Last Change: Thu Dec 17, 2020 at 04:05 PM +0100
 
 import tabulate as tabl
 
@@ -161,18 +161,18 @@ From left to right: For \textbf{true} P2B2: JPU1, JPU2, JPU3;
 For \textbf{mirror} P2B2: JPU3, JPU2, JPU1.
 '''
 p2b2_ppp_instruct['Crimp wires on the P2B2 side']['steps'] = [
-    '''
-    Strip away one end of the wire for 3mm only!
-    First use the blue stripper, then cut it to 3 mm with a plier cutter.
+    r'''
+    Strip away one end of the wire for \textbf{3 mm only}!
+    First use a stripper, then cut it to 3 mm with a plier cutter.
     ''',
     r'''
-    Put the wire in \textbf{16 AWG Molex pin}, so that the
+    Insert wire in \textbf{16 AWG Molex pin}, make sure the
     \textbf{outer arms} grab on the insulation,
     and the \textbf{middle arms} on bare wire.
     The cable should not be inserted to the square barrel of the pin!
     ''',
     r'''
-    Insert the pin with wire to the 16 AWG slot on the
+    Insert pin + wire to the 16 AWG slot on the
     \textbf{samtec crimping tool} then crimp.
     Give it a tug to ensure wire doesn't fall out of the pin.
     ''',
@@ -186,15 +186,15 @@ p2b2_ppp_instruct['Crimp wires on the P2B2 side']['steps'] = [
     '''
 ]
 p2b2_ppp_instruct['Label']['content'] = '''
-Label the wire with a heat-shrink label with label name listed in tables in the
+Label the wire with a heat-shrink label. Label names are listed in the tables in
 left.
 '''
 p2b2_ppp_instruct['Crimp wires on the PPP side']['content'] = r'''
 \textbf{Skip this part for now!}
 '''
 p2b2_ppp_instruct['Crime wires on the PPP side']['steps'] = [
-    '''
-    Strip away the other end of the wire for 7mm.
+    r'''
+    Strip away the other end of the wire for \textbf{7 mm}.
     ''',
     r'''
     Make sure the crimping tool selector is set to \textbf{blue-16}, and the
