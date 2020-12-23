@@ -2,7 +2,7 @@
 #
 # Author: Yipeng Sun
 # License: BSD 2-clause
-# Last Change: Thu Dec 17, 2020 at 04:05 PM +0100
+# Last Change: Wed Dec 23, 2020 at 01:01 AM +0100
 
 import tabulate as tabl
 
@@ -192,7 +192,7 @@ left.
 p2b2_ppp_instruct['Crimp wires on the PPP side']['content'] = r'''
 \textbf{Skip this part for now!}
 '''
-p2b2_ppp_instruct['Crime wires on the PPP side']['steps'] = [
+p2b2_ppp_instruct['Crimp wires on the PPP side']['steps'] = [
     r'''
     Strip away the other end of the wire for \textbf{7 mm}.
     ''',
