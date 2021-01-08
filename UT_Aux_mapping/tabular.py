@@ -2,7 +2,7 @@
 #
 # Author: Yipeng Sun
 # License: BSD 2-clause
-# Last Change: Wed Dec 23, 2020 at 01:01 AM +0100
+# Last Change: Fri Jan 08, 2021 at 04:49 PM +0100
 
 import tabulate as tabl
 
@@ -185,10 +185,21 @@ p2b2_ppp_instruct['Crimp wires on the P2B2 side']['steps'] = [
     It is normal that the wire shakes a bit in the connector housing.
     '''
 ]
-p2b2_ppp_instruct['Label']['content'] = '''
-Label the wire with a heat-shrink label. Label names are listed in the tables in
-left.
-'''
+p2b2_ppp_instruct['Label']['steps'] = [
+    r'''
+    Install cable combs near the connector to make sure nothing is crossed
+    and every thing is nice and flat, then slide it down about \textbf{15 cm} of
+    the other end (PPP end).
+    ''',
+    r'''
+    Label the wire with a heat-shrink label. Label names are listed in the
+    tables in left. Put the label at \textbf{10 cm} of the PPP end.
+    ''',
+    r'''
+    Affix a tape on the JPU connector, then handwritten a label of the
+    following form: \texttt{C-TOP-MAG-TRUE-$\gamma$-JPU1}.
+    '''
+]
 p2b2_ppp_instruct['Crimp wires on the PPP side']['content'] = r'''
 \textbf{Skip this part for now!}
 '''
