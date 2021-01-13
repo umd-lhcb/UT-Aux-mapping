@@ -2,7 +2,7 @@
 #
 # Author: Yipeng Sun
 # License: BSD 2-clause
-# Last Change: Fri Jan 08, 2021 at 04:49 PM +0100
+# Last Change: Wed Jan 13, 2021 at 10:42 PM +0100
 
 import tabulate as tabl
 
@@ -166,8 +166,11 @@ p2b2_ppp_instruct['Crimp wires on the P2B2 side']['steps'] = [
     First use a stripper, then cut it to 3 mm with a plier cutter.
     ''',
     r'''
+    Put some heat shrink on the stripped end.
+    ''',
+    r'''
     Insert wire in \textbf{16 AWG Molex pin}, make sure the
-    \textbf{outer arms} grab on the insulation,
+    \textbf{outer arms} grab on the heat shrink,
     and the \textbf{middle arms} on bare wire.
     The cable should not be inserted to the square barrel of the pin!
     ''',
