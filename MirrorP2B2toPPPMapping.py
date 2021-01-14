@@ -2,7 +2,7 @@
 #
 # Author: Yipeng Sun
 # License: BSD 2-clause
-# Last Change: Thu Dec 17, 2020 at 10:35 PM +0100
+# Last Change: Thu Jan 14, 2021 at 12:35 PM +0100
 
 import re
 
@@ -49,6 +49,29 @@ output_spec = {
         'Gamma': {
             'title': boldmath(r'\gamma'),
             'variant': 'Partial',
+            'color': 'White',
+            'cable_length': 90,
+            'index': 2
+        }
+    },
+    'C-TOP-IP-MIRROR': {
+        'Alpha': {
+            'title': boldmath(r'\alpha'),
+            'variant': 'Full',
+            'color': 'Red',
+            'cable_length': 150,
+            'index': 0
+        },
+        'Beta':  {
+            'title': boldmath(r'\beta'),
+            'variant': 'Partial',
+            'color': 'Green',
+            'cable_length': 120,
+            'index': 1
+        },
+        'Gamma': {
+            'title': boldmath(r'\gamma'),
+            'variant': 'Depopulated',
             'color': 'White',
             'cable_length': 90,
             'index': 2
