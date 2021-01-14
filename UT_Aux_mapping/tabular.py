@@ -2,7 +2,7 @@
 #
 # Author: Yipeng Sun
 # License: BSD 2-clause
-# Last Change: Wed Jan 13, 2021 at 10:42 PM +0100
+# Last Change: Thu Jan 14, 2021 at 11:56 AM +0100
 
 import tabulate as tabl
 
@@ -199,8 +199,8 @@ p2b2_ppp_instruct['Label']['steps'] = [
     tables in left. Put the label at \textbf{10 cm} of the PPP end.
     ''',
     r'''
-    Affix a tape on the JPU connector, then handwritten a label of the
-    following form: \texttt{C-TOP-MAG-TRUE-$\gamma$-JPU1}.
+    Handwrite labels on the \texttt{JPU} connector, one on each side, with the
+    following form: \texttt{C-T-M-T-$\gamma$-1}.
     '''
 ]
 p2b2_ppp_instruct['Crimp wires on the PPP side']['content'] = r'''
