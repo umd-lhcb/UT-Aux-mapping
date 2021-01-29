@@ -2,11 +2,12 @@
 #
 # Author: Yipeng Sun
 # License: BSD 2-clause
-# Last Change: Fri Jan 29, 2021 at 02:48 PM +0100
+# Last Change: Fri Jan 29, 2021 at 03:02 PM +0100
 
 import re
 
 from pathlib import Path
+from copy import deepcopy
 
 from pyUTM.common import jp_depop_true as jp_depop
 from pyUTM.io import (
@@ -33,15 +34,23 @@ from UT_Aux_mapping.tabular import (
 ######################################
 
 p2b2_netlist_spec = {
-    'C-TOP-MAG-TRUE': PcadNaiveReader(input_dir / Path('true_p2b2.net')).read()
+    'C-TOP-MAG-TRUE': PcadNaiveReader(
+        input_dir / Path('true_p2b2.net')).read(),
+    'C-BOT-MAG-MIRROR': PcadNaiveReader(
+        input_dir / Path('mirror_p2b2.net')).read()
 }
 p2b2_netlist_spec['C-BOT-IP-TRUE'] = p2b2_netlist_spec['C-TOP-MAG-TRUE']
+p2b2_netlist_spec['C-TOP-IP-MIRROR'] = p2b2_netlist_spec['C-BOT-MAG-MIRROR']
 
 ppp_netlist_spec = {
     'C-TOP-MAG-TRUE': WirelistNaiveReader(
         input_dir / Path('true_ppp_mag.wirelist')).read(),
     'C-BOT-IP-TRUE': WirelistNaiveReader(
         input_dir / Path('true_ppp_ip.wirelist')).read(),
+    'C-BOT-MAG-MIRROR': WirelistNaiveReader(
+        input_dir / Path('mirror_ppp_mag.wirelist')).read(),
+    'C-TOP-IP-MIRROR': WirelistNaiveReader(
+        input_dir / Path('mirror_ppp_ip.wirelist')).read(),
 }
 
 output_spec = {
@@ -68,30 +77,33 @@ output_spec = {
             'index': 2
         }
     },
-    'C-BOT-IP-TRUE': {
+    'C-BOT-MAG-MIRROR': {
         'Alpha': {
             'title': boldmath(r'\alpha'),
             'color': 'Red',
             'cable_length': 150,
-            'cable_length_adj': {'JPU1': -20, 'JPU2': -10, 'JPU3': 0},
+            'cable_length_adj': {'JPU1': 0, 'JPU2': -10, 'JPU3': -20},
             'index': 0
         },
         'Beta':  {
             'title': boldmath(r'\beta'),
             'color': 'Green',
             'cable_length': 120,
-            'cable_length_adj': {'JPU1': -20, 'JPU2': -10, 'JPU3': 0},
+            'cable_length_adj': {'JPU1': 0, 'JPU2': -10, 'JPU3': -20},
             'index': 1
         },
         'Gamma': {
             'title': boldmath(r'\gamma'),
             'color': 'White',
             'cable_length': 90,
-            'cable_length_adj': {'JPU1': -20, 'JPU2': -10, 'JPU3': 0},
+            'cable_length_adj': {'JPU1': 0, 'JPU2': -10, 'JPU3': -20},
             'index': 2
         }
-    }
+    },
 }
+
+output_spec['C-BOT-IP-TRUE'] = deepcopy(output_spec['C-TOP-MAG-TRUE'])
+output_spec['C-TOP-IP-MIRROR'] = deepcopy(output_spec['C-BOT-MAG-MIRROR'])
 
 
 ############################################################
