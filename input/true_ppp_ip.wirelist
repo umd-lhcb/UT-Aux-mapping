@@ -1,0 +1,1473 @@
+Wire List
+
+<<< Component List >>>
+D?                              D1             PCBComponent_1
+D?                              D2             PCBComponent_1
+D?                              D3             PCBComponent_1
+D?                              D4             PCBComponent_1
+DSub37                          DS1            DSub37_1
+DSub37                          DS2            DSub37_1
+DSub37                          DS3            DSub37_1
+DSub37                          DS4            DSub37_1
+DSub37                          DS5            DSub37_1
+DSub37                          DS6            DSub37_1
+DSub37                          DS7            DSub37_1
+PLB16F1                         P1             PLB16F8000
+PLB16F2                         P2             PLB16F8000
+PLB16F3                         P3             PLB16F8000
+PLB16F4                         P4             PLB16F8000
+PLB16F5                         P5             PLB16F8000
+PLB16F6                         P6             PLB16F8000
+PLB16F7                         P7             PLB16F8000
+PLB16F8                         P8             PLB16F8000
+PLB16F9                         P9             PLB16F8000
+PLB16F10                        P10            PLB16F8000
+PLB16F11                        P11            PLB16F8000
+PLB16F12                        P12            PLB16F8000
+PLB16F13                        P13            PLB16F8000
+PLB16F14                        P14            PLB16F8000
+PLB16F15                        P15            PLB16F8000
+PLB16F16                        P16            PLB16F8000
+PLB16F17                        P17            PLB16F8000
+PLB16F18                        P18            PLB16F8000
+PLB16F19                        P19            PLB16F8000
+PLB16F20                        P20            PLB16F8000
+PLB16F21                        P21            PLB16F8000
+PLB16F22                        P22            PLB16F8000
+PLB16F23                        P23            PLB16F8000
+PLB16F24                        P24            PLB16F8000
+PLB16F25                        P25            PLB16F8000
+PLB16F26                        P26            PLB16F8000
+PLB16F27                        P27            PLB16F8000
+PLB16F28                        P28            PLB16F8000
+PLB16F29                        P29            PLB16F8000
+PLB16F30                        P30            PLB16F8000
+PLB16F31                        P31            PLB16F8000
+PLB16F32                        P32            PLB16F8000
+PLB16F33                        P33            PLB16F8000
+PLB16F34                        P34            PLB16F8000
+PLB16F35                        P35            PLB16F8000
+PLB16F36                        P36            PLB16F8000
+
+<<< Wire List >>>
+
+  NODE  REFERENCE  PIN #   PIN NAME       PIN TYPE    PART VALUE
+
+[00001] UTaX_8C_B_MG_P4_HV_Return
+        DS4        8       8              PASSIVE     DSub37
+
+[00002] UTaX_8C_B_MG_P4_HV
+        DS4        7       7              PASSIVE     DSub37
+
+[00003] UTaX_8C_B_MG_P3_HV_Return
+        DS4        6       6              PASSIVE     DSub37
+
+[00004] UTaX_8C_B_MG_P3_HV
+        DS4        5       5              PASSIVE     DSub37
+
+[00005] UTaX_8C_B_MG_P2_HV_Return
+        DS4        4       4              PASSIVE     DSub37
+
+[00006] UTaX_8C_B_MG_P2_HV
+        DS4        3       3              PASSIVE     DSub37
+
+[00007] UTaX_8C_B_MG_P1_HV_Return
+        DS4        2       2              PASSIVE     DSub37
+
+[00008] UTaX_8C_B_MG_P1_HV
+        DS4        1       1              PASSIVE     DSub37
+
+[00009] UTaX_8C_B_IP_P3_HV_Return
+        DS4        25      25             PASSIVE     DSub37
+
+[00010] UTaX_8C_B_IP_P3_HV
+        DS4        24      24             PASSIVE     DSub37
+
+[00011] UTaX_8C_B_IP_P2_HV_Return
+        DS4        23      23             PASSIVE     DSub37
+
+[00012] UTaX_8C_B_IP_P2_HV
+        DS4        22      22             PASSIVE     DSub37
+
+[00013] UTaX_8C_B_IP_P1_HV_Return
+        DS4        21      21             PASSIVE     DSub37
+
+[00014] UTaX_8C_B_IP_P1_HV
+        DS4        20      20             PASSIVE     DSub37
+
+[00015] UTaX_7C_B_MG_P4_HV_Return
+        DS4        16      16             PASSIVE     DSub37
+
+[00016] UTaX_7C_B_MG_P4_HV
+        DS4        15      15             PASSIVE     DSub37
+
+[00017] UTaX_7C_B_MG_P3_HV_Return
+        DS4        14      14             PASSIVE     DSub37
+
+[00018] UTaX_7C_B_MG_P3_HV
+        DS4        13      13             PASSIVE     DSub37
+
+[00019] UTaX_7C_B_MG_P2_HV_Return
+        DS4        12      12             PASSIVE     DSub37
+
+[00020] UTaX_7C_B_MG_P2_HV
+        DS4        11      11             PASSIVE     DSub37
+
+[00021] UTaX_7C_B_MG_P1_HV_Return
+        DS4        10      10             PASSIVE     DSub37
+
+[00022] UTaX_7C_B_MG_P1_HV
+        DS4        9       9              PASSIVE     DSub37
+
+[00023] UTaX_7C_B_IP_P3_HV_Return
+        DS4        31      31             PASSIVE     DSub37
+
+[00024] UTaX_7C_B_IP_P3_HV
+        DS4        30      30             PASSIVE     DSub37
+
+[00025] UTaX_7C_B_IP_P2_HV_Return
+        DS4        29      29             PASSIVE     DSub37
+
+[00026] UTaX_7C_B_IP_P2_HV
+        DS4        28      28             PASSIVE     DSub37
+
+[00027] UTaX_7C_B_IP_P1_HV_Return
+        DS4        27      27             PASSIVE     DSub37
+
+[00028] UTaX_7C_B_IP_P1_HV
+        DS4        26      26             PASSIVE     DSub37
+
+[00029] UTaX_6C_B_MG_P4_HV_Return
+        DS5        6       6              PASSIVE     DSub37
+
+[00030] UTaX_6C_B_MG_P4_HV
+        DS5        5       5              PASSIVE     DSub37
+
+[00031] UTaX_6C_B_MG_P3_HV_Return
+        DS5        4       4              PASSIVE     DSub37
+
+[00032] UTaX_6C_B_MG_P3_HV
+        DS5        3       3              PASSIVE     DSub37
+
+[00033] UTaX_6C_B_MG_P2_HV_Return
+        DS5        2       2              PASSIVE     DSub37
+
+[00034] UTaX_6C_B_MG_P2_HV
+        DS5        1       1              PASSIVE     DSub37
+
+[00035] UTaX_6C_B_MG_P1_HV_Return
+        DS4        18      18             PASSIVE     DSub37
+
+[00036] UTaX_6C_B_MG_P1_HV
+        DS4        17      17             PASSIVE     DSub37
+
+[00037] UTaX_6C_B_IP_P3_HV_Return
+        DS4        37      37             PASSIVE     DSub37
+
+[00038] UTaX_6C_B_IP_P3_HV
+        DS4        36      36             PASSIVE     DSub37
+
+[00039] UTaX_6C_B_IP_P2_HV_Return
+        DS4        35      35             PASSIVE     DSub37
+
+[00040] UTaX_6C_B_IP_P2_HV
+        DS4        34      34             PASSIVE     DSub37
+
+[00041] UTaX_6C_B_IP_P1_HV_Return
+        DS4        33      33             PASSIVE     DSub37
+
+[00042] UTaX_6C_B_IP_P1_HV
+        DS4        32      32             PASSIVE     DSub37
+
+[00043] UTaX_5C_B_MG_P4_HV_Return
+        DS5        14      14             PASSIVE     DSub37
+
+[00044] UTaX_5C_B_MG_P4_HV
+        DS5        13      13             PASSIVE     DSub37
+
+[00045] UTaX_5C_B_MG_P3_HV_Return
+        DS5        12      12             PASSIVE     DSub37
+
+[00046] UTaX_5C_B_MG_P3_HV
+        DS5        11      11             PASSIVE     DSub37
+
+[00047] UTaX_5C_B_MG_P2_HV_Return
+        DS5        10      10             PASSIVE     DSub37
+
+[00048] UTaX_5C_B_MG_P2_HV
+        DS5        9       9              PASSIVE     DSub37
+
+[00049] UTaX_5C_B_MG_P1_HV_Return
+        DS5        8       8              PASSIVE     DSub37
+
+[00050] UTaX_5C_B_MG_P1_HV
+        DS5        7       7              PASSIVE     DSub37
+
+[00051] UTaX_5C_B_IP_P3_HV_Return
+        DS5        25      25             PASSIVE     DSub37
+
+[00052] UTaX_5C_B_IP_P3_HV
+        DS5        24      24             PASSIVE     DSub37
+
+[00053] UTaX_5C_B_IP_P2_HV_Return
+        DS5        23      23             PASSIVE     DSub37
+
+[00054] UTaX_5C_B_IP_P2_HV
+        DS5        22      22             PASSIVE     DSub37
+
+[00055] UTaX_5C_B_IP_P1_HV_Return
+        DS5        21      21             PASSIVE     DSub37
+
+[00056] UTaX_5C_B_IP_P1_HV
+        DS5        20      20             PASSIVE     DSub37
+
+[00057] UTaX_4C_B_MG_P4_HV_Return
+        DS6        4       4              PASSIVE     DSub37
+
+[00058] UTaX_4C_B_MG_P4_HV
+        DS6        3       3              PASSIVE     DSub37
+
+[00059] UTaX_4C_B_MG_P3_HV_Return
+        DS6        2       2              PASSIVE     DSub37
+
+[00060] UTaX_4C_B_MG_P3_HV
+        DS6        1       1              PASSIVE     DSub37
+
+[00061] UTaX_4C_B_MG_P2_HV_Return
+        DS5        18      18             PASSIVE     DSub37
+
+[00062] UTaX_4C_B_MG_P2_HV
+        DS5        17      17             PASSIVE     DSub37
+
+[00063] UTaX_4C_B_MG_P1_HV_Return
+        DS5        16      16             PASSIVE     DSub37
+
+[00064] UTaX_4C_B_MG_P1_HV
+        DS5        15      15             PASSIVE     DSub37
+
+[00065] UTaX_4C_B_IP_P3_HV_Return
+        DS5        31      31             PASSIVE     DSub37
+
+[00066] UTaX_4C_B_IP_P3_HV
+        DS5        30      30             PASSIVE     DSub37
+
+[00067] UTaX_4C_B_IP_P2_HV_Return
+        DS5        29      29             PASSIVE     DSub37
+
+[00068] UTaX_4C_B_IP_P2_HV
+        DS5        28      28             PASSIVE     DSub37
+
+[00069] UTaX_4C_B_IP_P1_HV_Return
+        DS5        27      27             PASSIVE     DSub37
+
+[00070] UTaX_4C_B_IP_P1_HV
+        DS5        26      26             PASSIVE     DSub37
+
+[00071] UTaX_3C_B_MG_P4_HV_Return
+        DS6        12      12             PASSIVE     DSub37
+
+[00072] UTaX_3C_B_MG_P4_HV
+        DS6        11      11             PASSIVE     DSub37
+
+[00073] UTaX_3C_B_MG_P3_HV_Return
+        DS6        10      10             PASSIVE     DSub37
+
+[00074] UTaX_3C_B_MG_P3_HV
+        DS6        9       9              PASSIVE     DSub37
+
+[00075] UTaX_3C_B_MG_P2_HV_Return
+        DS6        8       8              PASSIVE     DSub37
+
+[00076] UTaX_3C_B_MG_P2_HV
+        DS6        7       7              PASSIVE     DSub37
+
+[00077] UTaX_3C_B_MG_P1_HV_Return
+        DS6        6       6              PASSIVE     DSub37
+
+[00078] UTaX_3C_B_MG_P1_HV
+        DS6        5       5              PASSIVE     DSub37
+
+[00079] UTaX_3C_B_IP_P3_HV_Return
+        DS5        37      37             PASSIVE     DSub37
+
+[00080] UTaX_3C_B_IP_P3_HV
+        DS5        36      36             PASSIVE     DSub37
+
+[00081] UTaX_3C_B_IP_P2_HV_Return
+        DS5        35      35             PASSIVE     DSub37
+
+[00082] UTaX_3C_B_IP_P2_HV
+        DS5        34      34             PASSIVE     DSub37
+
+[00083] UTaX_3C_B_IP_P1_HV_Return
+        DS5        33      33             PASSIVE     DSub37
+
+[00084] UTaX_3C_B_IP_P1_HV
+        DS5        32      32             PASSIVE     DSub37
+
+[00085] UTaX_2C_B_MG_P4_HV_Return
+        DS7        2       2              PASSIVE     DSub37
+
+[00086] UTaX_2C_B_MG_P4_HV
+        DS7        1       1              PASSIVE     DSub37
+
+[00087] UTaX_2C_B_MG_P3_HV_Return
+        DS6        18      18             PASSIVE     DSub37
+
+[00088] UTaX_2C_B_MG_P3_HV
+        DS6        17      17             PASSIVE     DSub37
+
+[00089] UTaX_2C_B_MG_P2_HV_Return
+        DS6        16      16             PASSIVE     DSub37
+
+[00090] UTaX_2C_B_MG_P2_HV
+        DS6        15      15             PASSIVE     DSub37
+
+[00091] UTaX_2C_B_MG_P1_HV_Return
+        DS6        14      14             PASSIVE     DSub37
+
+[00092] UTaX_2C_B_MG_P1_HV
+        DS6        13      13             PASSIVE     DSub37
+
+[00093] UTaX_2C_B_IP_P3_HV_Return
+        DS6        25      25             PASSIVE     DSub37
+
+[00094] UTaX_2C_B_IP_P3_HV
+        DS6        24      24             PASSIVE     DSub37
+
+[00095] UTaX_2C_B_IP_P2_HV_Return
+        DS6        23      23             PASSIVE     DSub37
+
+[00096] UTaX_2C_B_IP_P2_HV
+        DS6        22      22             PASSIVE     DSub37
+
+[00097] UTaX_2C_B_IP_P1_HV_Return
+        DS6        21      21             PASSIVE     DSub37
+
+[00098] UTaX_2C_B_IP_P1_HV
+        DS6        20      20             PASSIVE     DSub37
+
+[00099] UTaX_1C_B_MG_P4_HV_Return
+        DS7        10      10             PASSIVE     DSub37
+
+[00100] UTaX_1C_B_MG_P4_HV
+        DS7        9       9              PASSIVE     DSub37
+
+[00101] UTaX_1C_B_MG_P3_HV_Return
+        DS7        8       8              PASSIVE     DSub37
+
+[00102] UTaX_1C_B_MG_P3_HV
+        DS7        7       7              PASSIVE     DSub37
+
+[00103] UTaX_1C_B_MG_P2_HV_Return
+        DS7        6       6              PASSIVE     DSub37
+
+[00104] UTaX_1C_B_MG_P2_HV
+        DS7        5       5              PASSIVE     DSub37
+
+[00105] UTaX_1C_B_MG_P1_HV_Return
+        DS7        4       4              PASSIVE     DSub37
+
+[00106] UTaX_1C_B_MG_P1_HV
+        DS7        3       3              PASSIVE     DSub37
+
+[00107] UTaX_1C_B_IP_P4_HV_Return
+        DS6        33      33             PASSIVE     DSub37
+
+[00108] UTaX_1C_B_IP_P4_HV
+        DS6        32      32             PASSIVE     DSub37
+
+[00109] UTaX_1C_B_IP_P3_HV_Return
+        DS6        31      31             PASSIVE     DSub37
+
+[00110] UTaX_1C_B_IP_P3_HV
+        DS6        30      30             PASSIVE     DSub37
+
+[00111] UTaX_1C_B_IP_P2_HV_Return
+        DS6        29      29             PASSIVE     DSub37
+
+[00112] UTaX_1C_B_IP_P2_HV
+        DS6        28      28             PASSIVE     DSub37
+
+[00113] UTaX_1C_B_IP_P1_HV_Return
+        DS6        27      27             PASSIVE     DSub37
+
+[00114] UTaX_1C_B_IP_P1_HV
+        DS6        26      26             PASSIVE     DSub37
+
+[00115] UTaU_8C_B_MG_P4_HV_Return
+        DS1        8       8              PASSIVE     DSub37
+
+[00116] UTaU_8C_B_MG_P4_HV
+        DS1        7       7              PASSIVE     DSub37
+
+[00117] UTaU_8C_B_MG_P3_HV_Return
+        DS1        6       6              PASSIVE     DSub37
+
+[00118] UTaU_8C_B_MG_P3_HV
+        DS1        5       5              PASSIVE     DSub37
+
+[00119] UTaU_8C_B_MG_P2_HV_Return
+        DS1        4       4              PASSIVE     DSub37
+
+[00120] UTaU_8C_B_MG_P2_HV
+        DS1        3       3              PASSIVE     DSub37
+
+[00121] UTaU_8C_B_MG_P1_HV_Return
+        DS1        2       2              PASSIVE     DSub37
+
+[00122] UTaU_8C_B_MG_P1_HV
+        DS1        1       1              PASSIVE     DSub37
+
+[00123] UTaU_8C_B_IP_P3_HV_Return
+        DS1        25      25             PASSIVE     DSub37
+
+[00124] UTaU_8C_B_IP_P3_HV
+        DS1        24      24             PASSIVE     DSub37
+
+[00125] UTaU_8C_B_IP_P2_HV_Return
+        DS1        23      23             PASSIVE     DSub37
+
+[00126] UTaU_8C_B_IP_P2_HV
+        DS1        22      22             PASSIVE     DSub37
+
+[00127] UTaU_8C_B_IP_P1_HV_Return
+        DS1        21      21             PASSIVE     DSub37
+
+[00128] UTaU_8C_B_IP_P1_HV
+        DS1        20      20             PASSIVE     DSub37
+
+[00129] UTaU_7C_B_MG_P4_HV_Return
+        DS1        16      16             PASSIVE     DSub37
+
+[00130] UTaU_7C_B_MG_P4_HV
+        DS1        15      15             PASSIVE     DSub37
+
+[00131] UTaU_7C_B_MG_P3_HV_Return
+        DS1        14      14             PASSIVE     DSub37
+
+[00132] UTaU_7C_B_MG_P3_HV
+        DS1        13      13             PASSIVE     DSub37
+
+[00133] UTaU_7C_B_MG_P2_HV_Return
+        DS1        12      12             PASSIVE     DSub37
+
+[00134] UTaU_7C_B_MG_P2_HV
+        DS1        11      11             PASSIVE     DSub37
+
+[00135] UTaU_7C_B_MG_P1_HV_Return
+        DS1        10      10             PASSIVE     DSub37
+
+[00136] UTaU_7C_B_MG_P1_HV
+        DS1        9       9              PASSIVE     DSub37
+
+[00137] UTaU_7C_B_IP_P3_HV_Return
+        DS1        31      31             PASSIVE     DSub37
+
+[00138] UTaU_7C_B_IP_P3_HV
+        DS1        30      30             PASSIVE     DSub37
+
+[00139] UTaU_7C_B_IP_P2_HV_Return
+        DS1        29      29             PASSIVE     DSub37
+
+[00140] UTaU_7C_B_IP_P2_HV
+        DS1        28      28             PASSIVE     DSub37
+
+[00141] UTaU_7C_B_IP_P1_HV_Return
+        DS1        27      27             PASSIVE     DSub37
+
+[00142] UTaU_7C_B_IP_P1_HV
+        DS1        26      26             PASSIVE     DSub37
+
+[00143] UTaU_6C_B_MG_P4_HV_Return
+        DS2        6       6              PASSIVE     DSub37
+
+[00144] UTaU_6C_B_MG_P4_HV
+        DS2        5       5              PASSIVE     DSub37
+
+[00145] UTaU_6C_B_MG_P3_HV_Return
+        DS2        4       4              PASSIVE     DSub37
+
+[00146] UTaU_6C_B_MG_P3_HV
+        DS2        3       3              PASSIVE     DSub37
+
+[00147] UTaU_6C_B_MG_P2_HV_Return
+        DS2        2       2              PASSIVE     DSub37
+
+[00148] UTaU_6C_B_MG_P2_HV
+        DS2        1       1              PASSIVE     DSub37
+
+[00149] UTaU_6C_B_MG_P1_HV_Return
+        DS1        18      18             PASSIVE     DSub37
+
+[00150] UTaU_6C_B_MG_P1_HV
+        DS1        17      17             PASSIVE     DSub37
+
+[00151] UTaU_6C_B_IP_P3_HV_Return
+        DS1        37      37             PASSIVE     DSub37
+
+[00152] UTaU_6C_B_IP_P3_HV
+        DS1        36      36             PASSIVE     DSub37
+
+[00153] UTaU_6C_B_IP_P2_HV_Return
+        DS1        35      35             PASSIVE     DSub37
+
+[00154] UTaU_6C_B_IP_P2_HV
+        DS1        34      34             PASSIVE     DSub37
+
+[00155] UTaU_6C_B_IP_P1_HV_Return
+        DS1        33      33             PASSIVE     DSub37
+
+[00156] UTaU_6C_B_IP_P1_HV
+        DS1        32      32             PASSIVE     DSub37
+
+[00157] UTaU_5C_B_MG_P4_HV_Return
+        DS2        14      14             PASSIVE     DSub37
+
+[00158] UTaU_5C_B_MG_P4_HV
+        DS2        13      13             PASSIVE     DSub37
+
+[00159] UTaU_5C_B_MG_P3_HV_Return
+        DS2        12      12             PASSIVE     DSub37
+
+[00160] UTaU_5C_B_MG_P3_HV
+        DS2        11      11             PASSIVE     DSub37
+
+[00161] UTaU_5C_B_MG_P2_HV_Return
+        DS2        10      10             PASSIVE     DSub37
+
+[00162] UTaU_5C_B_MG_P2_HV
+        DS2        9       9              PASSIVE     DSub37
+
+[00163] UTaU_5C_B_MG_P1_HV_Return
+        DS2        8       8              PASSIVE     DSub37
+
+[00164] UTaU_5C_B_MG_P1_HV
+        DS2        7       7              PASSIVE     DSub37
+
+[00165] UTaU_5C_B_IP_P3_HV_Return
+        DS2        25      25             PASSIVE     DSub37
+
+[00166] UTaU_5C_B_IP_P3_HV
+        DS2        24      24             PASSIVE     DSub37
+
+[00167] UTaU_5C_B_IP_P2_HV_Return
+        DS2        23      23             PASSIVE     DSub37
+
+[00168] UTaU_5C_B_IP_P2_HV
+        DS2        22      22             PASSIVE     DSub37
+
+[00169] UTaU_5C_B_IP_P1_HV_Return
+        DS2        21      21             PASSIVE     DSub37
+
+[00170] UTaU_5C_B_IP_P1_HV
+        DS2        20      20             PASSIVE     DSub37
+
+[00171] UTaU_4C_B_MG_P4_HV_Return
+        DS3        4       4              PASSIVE     DSub37
+
+[00172] UTaU_4C_B_MG_P4_HV
+        DS3        3       3              PASSIVE     DSub37
+
+[00173] UTaU_4C_B_MG_P3_HV_Return
+        DS3        2       2              PASSIVE     DSub37
+
+[00174] UTaU_4C_B_MG_P3_HV
+        DS3        1       1              PASSIVE     DSub37
+
+[00175] UTaU_4C_B_MG_P2_HV_Return
+        DS2        18      18             PASSIVE     DSub37
+
+[00176] UTaU_4C_B_MG_P2_HV
+        DS2        17      17             PASSIVE     DSub37
+
+[00177] UTaU_4C_B_MG_P1_HV_Return
+        DS2        16      16             PASSIVE     DSub37
+
+[00178] UTaU_4C_B_MG_P1_HV
+        DS2        15      15             PASSIVE     DSub37
+
+[00179] UTaU_4C_B_IP_P3_HV_Return
+        DS2        31      31             PASSIVE     DSub37
+
+[00180] UTaU_4C_B_IP_P3_HV
+        DS2        30      30             PASSIVE     DSub37
+
+[00181] UTaU_4C_B_IP_P2_HV_Return
+        DS2        29      29             PASSIVE     DSub37
+
+[00182] UTaU_4C_B_IP_P2_HV
+        DS2        28      28             PASSIVE     DSub37
+
+[00183] UTaU_4C_B_IP_P1_HV_Return
+        DS2        27      27             PASSIVE     DSub37
+
+[00184] UTaU_4C_B_IP_P1_HV
+        DS2        26      26             PASSIVE     DSub37
+
+[00185] UTaU_3C_B_MG_P4_HV_Return
+        DS3        12      12             PASSIVE     DSub37
+
+[00186] UTaU_3C_B_MG_P4_HV
+        DS3        11      11             PASSIVE     DSub37
+
+[00187] UTaU_3C_B_MG_P3_HV_Return
+        DS3        10      10             PASSIVE     DSub37
+
+[00188] UTaU_3C_B_MG_P3_HV
+        DS3        9       9              PASSIVE     DSub37
+
+[00189] UTaU_3C_B_MG_P2_HV_Return
+        DS3        8       8              PASSIVE     DSub37
+
+[00190] UTaU_3C_B_MG_P2_HV
+        DS3        7       7              PASSIVE     DSub37
+
+[00191] UTaU_3C_B_MG_P1_HV_Return
+        DS3        6       6              PASSIVE     DSub37
+
+[00192] UTaU_3C_B_MG_P1_HV
+        DS3        5       5              PASSIVE     DSub37
+
+[00193] UTaU_3C_B_IP_P3_HV_Return
+        DS2        37      37             PASSIVE     DSub37
+
+[00194] UTaU_3C_B_IP_P3_HV
+        DS2        36      36             PASSIVE     DSub37
+
+[00195] UTaU_3C_B_IP_P2_HV_Return
+        DS2        35      35             PASSIVE     DSub37
+
+[00196] UTaU_3C_B_IP_P2_HV
+        DS2        34      34             PASSIVE     DSub37
+
+[00197] UTaU_3C_B_IP_P1_HV_Return
+        DS2        33      33             PASSIVE     DSub37
+
+[00198] UTaU_3C_B_IP_P1_HV
+        DS2        32      32             PASSIVE     DSub37
+
+[00199] UTaU_2C_B_MG_P4_HV_Return
+        DS7        21      21             PASSIVE     DSub37
+
+[00200] UTaU_2C_B_MG_P4_HV
+        DS7        20      20             PASSIVE     DSub37
+
+[00201] UTaU_2C_B_MG_P3_HV_Return
+        DS3        18      18             PASSIVE     DSub37
+
+[00202] UTaU_2C_B_MG_P3_HV
+        DS3        17      17             PASSIVE     DSub37
+
+[00203] UTaU_2C_B_MG_P2_HV_Return
+        DS3        16      16             PASSIVE     DSub37
+
+[00204] UTaU_2C_B_MG_P2_HV
+        DS3        15      15             PASSIVE     DSub37
+
+[00205] UTaU_2C_B_MG_P1_HV_Return
+        DS3        14      14             PASSIVE     DSub37
+
+[00206] UTaU_2C_B_MG_P1_HV
+        DS3        13      13             PASSIVE     DSub37
+
+[00207] UTaU_2C_B_IP_P3_HV_Return
+        DS3        25      25             PASSIVE     DSub37
+
+[00208] UTaU_2C_B_IP_P3_HV
+        DS3        24      24             PASSIVE     DSub37
+
+[00209] UTaU_2C_B_IP_P2_HV_Return
+        DS3        23      23             PASSIVE     DSub37
+
+[00210] UTaU_2C_B_IP_P2_HV
+        DS3        22      22             PASSIVE     DSub37
+
+[00211] UTaU_2C_B_IP_P1_HV_Return
+        DS3        21      21             PASSIVE     DSub37
+
+[00212] UTaU_2C_B_IP_P1_HV
+        DS3        20      20             PASSIVE     DSub37
+
+[00213] UTaU_1C_B_MG_P4_HV_Return
+        DS7        29      29             PASSIVE     DSub37
+
+[00214] UTaU_1C_B_MG_P4_HV
+        DS7        28      28             PASSIVE     DSub37
+
+[00215] UTaU_1C_B_MG_P3_HV_Return
+        DS7        27      27             PASSIVE     DSub37
+
+[00216] UTaU_1C_B_MG_P3_HV
+        DS7        26      26             PASSIVE     DSub37
+
+[00217] UTaU_1C_B_MG_P2_HV_Return
+        DS7        25      25             PASSIVE     DSub37
+
+[00218] UTaU_1C_B_MG_P2_HV
+        DS7        24      24             PASSIVE     DSub37
+
+[00219] UTaU_1C_B_MG_P1_HV_Return
+        DS7        23      23             PASSIVE     DSub37
+
+[00220] UTaU_1C_B_MG_P1_HV
+        DS7        22      22             PASSIVE     DSub37
+
+[00221] UTaU_1C_B_IP_P4_HV_Return
+        DS3        33      33             PASSIVE     DSub37
+
+[00222] UTaU_1C_B_IP_P4_HV
+        DS3        32      32             PASSIVE     DSub37
+
+[00223] UTaU_1C_B_IP_P3_HV_Return
+        DS3        31      31             PASSIVE     DSub37
+
+[00224] UTaU_1C_B_IP_P3_HV
+        DS3        30      30             PASSIVE     DSub37
+
+[00225] UTaU_1C_B_IP_P2_HV_Return
+        DS3        29      29             PASSIVE     DSub37
+
+[00226] UTaU_1C_B_IP_P2_HV
+        DS3        28      28             PASSIVE     DSub37
+
+[00227] UTaU_1C_B_IP_P1_HV_Return
+        DS3        27      27             PASSIVE     DSub37
+
+[00228] UTaU_1C_B_IP_P1_HV
+        DS3        26      26             PASSIVE     DSub37
+
+[00574] JP11 JPU2 P2E LV Source
+        P1         2       2              PASSIVE     PLB16F1
+        P7         2       2              PASSIVE     PLB16F7
+
+[00575] JP11 JPU2 P2E LV Return
+        P1         10      10             PASSIVE     PLB16F1
+        P7         10      10             PASSIVE     PLB16F7
+
+[00576] JP11 JPU2 P1W LV Source
+        P1         1       1              PASSIVE     PLB16F1
+        P7         1       1              PASSIVE     PLB16F7
+
+[00577] JP11 JPU2 P1W LV Return
+        P1         9       9              PASSIVE     PLB16F1
+        P7         9       9              PASSIVE     PLB16F7
+
+[00578] JP11_JPL2_P4_LV_Source
+        P22        3       3              PASSIVE     PLB16F22
+        P28        3       3              PASSIVE     PLB16F28
+
+[00579] JP11_JPL2_P4_LV_Return
+        P22        11      11             PASSIVE     PLB16F22
+        P28        11      11             PASSIVE     PLB16F28
+
+[00580] JP11_JPL2_P3_LV_Source
+        P22        4       4              PASSIVE     PLB16F22
+        P28        4       4              PASSIVE     PLB16F28
+
+[00581] JP11_JPL2_P3_LV_Return
+        P22        12      12             PASSIVE     PLB16F22
+        P28        12      12             PASSIVE     PLB16F28
+
+[00582] JP10 JPU2 P3 LV Source
+        P1         6       6              PASSIVE     PLB16F1
+        P7         6       6              PASSIVE     PLB16F7
+
+[00583] JP10 JPU2 P3 LV Return
+        P1         14      14             PASSIVE     PLB16F1
+        P7         14      14             PASSIVE     PLB16F7
+
+[00584] JP10 JPU2 P2E LV Source
+        P1         5       5              PASSIVE     PLB16F1
+        P7         5       5              PASSIVE     PLB16F7
+
+[00585] JP10 JPU2 P2E LV Return
+        P1         13      13             PASSIVE     PLB16F1
+        P7         13      13             PASSIVE     PLB16F7
+
+[00586] JP10 JPU2 P1W LV Source
+        P1         4       4              PASSIVE     PLB16F1
+        P7         4       4              PASSIVE     PLB16F7
+
+[00587] JP10 JPU2 P1W LV Return
+        P1         12      12             PASSIVE     PLB16F1
+        P7         12      12             PASSIVE     PLB16F7
+
+[00588] JP9 JPU2 P3 LV Source
+        P4         6       6              PASSIVE     PLB16F4
+        P10        6       6              PASSIVE     PLB16F10
+
+[00589] JP9 JPU2 P3 LV Return
+        P4         14      14             PASSIVE     PLB16F4
+        P10        14      14             PASSIVE     PLB16F10
+
+[00590] JP9 JPU2 P2E LV Source
+        P4         5       5              PASSIVE     PLB16F4
+        P10        5       5              PASSIVE     PLB16F10
+
+[00591] JP9 JPU2 P2E LV Return
+        P4         13      13             PASSIVE     PLB16F4
+        P10        13      13             PASSIVE     PLB16F10
+
+[00592] JP9 JPU2 P1W LV Source
+        P4         4       4              PASSIVE     PLB16F4
+        P10        4       4              PASSIVE     PLB16F10
+
+[00593] JP9 JPU2 P1W LV Return
+        P4         12      12             PASSIVE     PLB16F4
+        P10        12      12             PASSIVE     PLB16F10
+
+[00594] JP8 JPU2 P3 LV Source
+        P4         3       3              PASSIVE     PLB16F4
+        P10        3       3              PASSIVE     PLB16F10
+
+[00595] JP8 JPU2 P3 LV Return
+        P4         11      11             PASSIVE     PLB16F4
+        P10        11      11             PASSIVE     PLB16F10
+
+[00596] JP8 JPU2 P2E LV Source
+        P4         2       2              PASSIVE     PLB16F4
+        P10        2       2              PASSIVE     PLB16F10
+
+[00597] JP8 JPU2 P2E LV Return
+        P4         10      10             PASSIVE     PLB16F4
+        P10        10      10             PASSIVE     PLB16F10
+
+[00598] JP8 JPU2 P1W LV Source
+        P4         1       1              PASSIVE     PLB16F4
+        P10        1       1              PASSIVE     PLB16F10
+
+[00599] JP8 JPU2 P1W LV Return
+        P4         9       9              PASSIVE     PLB16F4
+        P10        9       9              PASSIVE     PLB16F10
+
+[00600] JP8_JPL2_P4_LV_Source
+        P19        3       3              PASSIVE     PLB16F19
+        P25        3       3              PASSIVE     PLB16F25
+
+[00601] JP8_JPL2_P4_LV_Return
+        P19        11      11             PASSIVE     PLB16F19
+        P25        11      11             PASSIVE     PLB16F25
+
+[00602] JP7 JUP2 P3 LV Source
+        P2         3       3              PASSIVE     PLB16F2
+        P8         3       3              PASSIVE     PLB16F8
+        P14        3       3              PASSIVE     PLB16F14
+
+[00603] JP7 JUP2 P3 LV Return
+        P2         11      11             PASSIVE     PLB16F2
+        P8         11      11             PASSIVE     PLB16F8
+        P14        11      11             PASSIVE     PLB16F14
+
+[00604] JP7 JPU2 P2E LV Source
+        P2         2       2              PASSIVE     PLB16F2
+        P8         2       2              PASSIVE     PLB16F8
+        P14        2       2              PASSIVE     PLB16F14
+
+[00605] JP7 JPU2 P2E LV Return
+        P2         10      10             PASSIVE     PLB16F2
+        P8         10      10             PASSIVE     PLB16F8
+        P14        10      10             PASSIVE     PLB16F14
+
+[00606] JP7 JPU2 P1W LV Source
+        P2         1       1              PASSIVE     PLB16F2
+        P8         1       1              PASSIVE     PLB16F8
+        P14        1       1              PASSIVE     PLB16F14
+
+[00607] JP7 JPU2 P1W LV Return
+        P2         9       9              PASSIVE     PLB16F2
+        P8         9       9              PASSIVE     PLB16F8
+        P14        9       9              PASSIVE     PLB16F14
+
+[00608] JP7 JPU2 P1E LV Source
+        P1         7       7              PASSIVE     PLB16F1
+
+[00609] JP7 JPU2 P1E LV Return
+        P1         15      15             PASSIVE     PLB16F1
+
+[00610] JP7_JPL1_P4_LV_Source
+        P22        2       2              PASSIVE     PLB16F22
+        P28        2       2              PASSIVE     PLB16F28
+        P34        2       2              PASSIVE     PLB16F34
+
+[00611] JP7_JPL1_P4_LV_Return
+        P22        10      10             PASSIVE     PLB16F22
+        P28        10      10             PASSIVE     PLB16F28
+        P34        10      10             PASSIVE     PLB16F34
+
+[00612] JP6 JPU1 P3 LV Source
+        P2         6       6              PASSIVE     PLB16F2
+        P8         6       6              PASSIVE     PLB16F8
+        P14        6       6              PASSIVE     PLB16F14
+
+[00613] JP6 JPU1 P3 LV Return
+        P2         14      14             PASSIVE     PLB16F2
+        P8         14      14             PASSIVE     PLB16F8
+        P14        14      14             PASSIVE     PLB16F14
+
+[00614] JP6 JPU1 P2E LV Source
+        P2         5       5              PASSIVE     PLB16F2
+        P8         5       5              PASSIVE     PLB16F8
+        P14        5       5              PASSIVE     PLB16F14
+
+[00615] JP6 JPU1 P2E LV Return
+        P2         13      13             PASSIVE     PLB16F2
+        P8         13      13             PASSIVE     PLB16F8
+        P14        13      13             PASSIVE     PLB16F14
+
+[00616] JP6 JPU1 P1W LV Source
+        P2         4       4              PASSIVE     PLB16F2
+        P8         4       4              PASSIVE     PLB16F8
+        P14        4       4              PASSIVE     PLB16F14
+
+[00617] JP6 JPU1 P1W LV Return
+        P2         12      12             PASSIVE     PLB16F2
+        P8         12      12             PASSIVE     PLB16F8
+        P14        12      12             PASSIVE     PLB16F14
+
+[00618] JP6 JPU1 P1E LV Source
+        P2         8       8              PASSIVE     PLB16F2
+
+[00619] JP6 JPU1 P1E LV Return
+        P2         16      16             PASSIVE     PLB16F2
+
+[00620] JP5 JPU1 P3 LV Source
+        P5         6       6              PASSIVE     PLB16F5
+        P11        6       6              PASSIVE     PLB16F11
+        P17        6       6              PASSIVE     PLB16F17
+
+[00621] JP5 JPU1 P3 LV Return
+        P5         14      14             PASSIVE     PLB16F5
+        P11        14      14             PASSIVE     PLB16F11
+        P17        14      14             PASSIVE     PLB16F17
+
+[00622] JP5 JPU1 P2E LV Source
+        P5         5       5              PASSIVE     PLB16F5
+        P11        5       5              PASSIVE     PLB16F11
+        P17        5       5              PASSIVE     PLB16F17
+
+[00623] JP5 JPU1 P2E LV Return
+        P5         13      13             PASSIVE     PLB16F5
+        P11        13      13             PASSIVE     PLB16F11
+        P17        13      13             PASSIVE     PLB16F17
+
+[00624] JP5 JPU1 P1W LV Source
+        P5         4       4              PASSIVE     PLB16F5
+        P11        4       4              PASSIVE     PLB16F11
+        P17        4       4              PASSIVE     PLB16F17
+
+[00625] JP5 JPU1 P1W LV Return
+        P5         12      12             PASSIVE     PLB16F5
+        P11        12      12             PASSIVE     PLB16F11
+        P17        12      12             PASSIVE     PLB16F17
+
+[00626] JP5 JPU1 P1E LV Source
+        P5         8       8              PASSIVE     PLB16F5
+
+[00627] JP5 JPU1 P1E LV Return
+        P5         16      16             PASSIVE     PLB16F5
+
+[00628] JP4 JPU1 P3 LV Source
+        P5         3       3              PASSIVE     PLB16F5
+        P11        3       3              PASSIVE     PLB16F11
+        P17        3       3              PASSIVE     PLB16F17
+
+[00629] JP4 JPU1 P3 LV Return
+        P5         11      11             PASSIVE     PLB16F5
+        P11        11      11             PASSIVE     PLB16F11
+        P17        11      11             PASSIVE     PLB16F17
+
+[00630] JP4 JPU1 P2E LV Source
+        P5         2       2              PASSIVE     PLB16F5
+        P11        2       2              PASSIVE     PLB16F11
+        P17        2       2              PASSIVE     PLB16F17
+
+[00631] JP4 JPU1 P2E LV Return
+        P5         10      10             PASSIVE     PLB16F5
+        P11        10      10             PASSIVE     PLB16F11
+        P17        10      10             PASSIVE     PLB16F17
+
+[00632] JP4 JPU1 P1W LV Source
+        P5         1       1              PASSIVE     PLB16F5
+        P11        1       1              PASSIVE     PLB16F11
+        P17        1       1              PASSIVE     PLB16F17
+
+[00633] JP4 JPU1 P1W LV Return
+        P5         9       9              PASSIVE     PLB16F5
+        P11        9       9              PASSIVE     PLB16F11
+        P17        9       9              PASSIVE     PLB16F17
+
+[00634] JP4 JPU1 P1E LV Source
+        P4         7       7              PASSIVE     PLB16F4
+
+[00635] JP4 JPU1 P1E LV Return
+        P4         15      15             PASSIVE     PLB16F4
+
+[00636] JP4_JPL1_P4_LV_Source
+        P19        2       2              PASSIVE     PLB16F19
+        P25        2       2              PASSIVE     PLB16F25
+        P31        2       2              PASSIVE     PLB16F31
+
+[00637] JP4_JPL1_P4_LV_Return
+        P19        10      10             PASSIVE     PLB16F19
+        P25        10      10             PASSIVE     PLB16F25
+        P31        10      10             PASSIVE     PLB16F31
+
+[00638] JP3 JPU1 P3 LV Source
+        P3         3       3              PASSIVE     PLB16F3
+        P9         3       3              PASSIVE     PLB16F9
+        P15        3       3              PASSIVE     PLB16F15
+
+[00639] JP3 JPU1 P3 LV Return
+        P3         11      11             PASSIVE     PLB16F3
+        P9         11      11             PASSIVE     PLB16F9
+        P15        11      11             PASSIVE     PLB16F15
+
+[00640] JP3 JPU1 P2E LV Source
+        P3         2       2              PASSIVE     PLB16F3
+        P9         2       2              PASSIVE     PLB16F9
+        P15        2       2              PASSIVE     PLB16F15
+
+[00641] JP3 JPU1 P2E LV Return
+        P3         10      10             PASSIVE     PLB16F3
+        P9         10      10             PASSIVE     PLB16F9
+        P15        10      10             PASSIVE     PLB16F15
+
+[00642] JP3 JPU1 P1E LV Source
+        P3         7       7              PASSIVE     PLB16F3
+
+[00643] JP3 JPU1 P1E LV Return
+        P3         15      15             PASSIVE     PLB16F3
+
+[00644] JP3 JPU0 P1W LV Source
+        P3         1       1              PASSIVE     PLB16F3
+        P9         1       1              PASSIVE     PLB16F9
+        P15        1       1              PASSIVE     PLB16F15
+
+[00645] JP3 JPU0 P1W LV Return
+        P3         9       9              PASSIVE     PLB16F3
+        P9         9       9              PASSIVE     PLB16F9
+        P15        9       9              PASSIVE     PLB16F15
+
+[00646] JP3_JPL1_P4_LV_Source
+        P22        1       1              PASSIVE     PLB16F22
+        P28        1       1              PASSIVE     PLB16F28
+        P34        1       1              PASSIVE     PLB16F34
+
+[00647] JP3_JPL1_P4_LV_Return
+        P22        9       9              PASSIVE     PLB16F22
+        P28        9       9              PASSIVE     PLB16F28
+        P34        9       9              PASSIVE     PLB16F34
+
+[00648] JP2 JPU0 P3 LV Source
+        P3         6       6              PASSIVE     PLB16F3
+        P9         6       6              PASSIVE     PLB16F9
+        P15        6       6              PASSIVE     PLB16F15
+
+[00649] JP2 JPU0 P3 LV Return
+        P3         14      14             PASSIVE     PLB16F3
+        P9         14      14             PASSIVE     PLB16F9
+        P15        14      14             PASSIVE     PLB16F15
+
+[00650] JP2 JPU0 P2W LV Source
+        P2         7       7              PASSIVE     PLB16F2
+
+[00651] JP2 JPU0 P2W LV Return
+        P2         15      15             PASSIVE     PLB16F2
+
+[00652] JP2 JPU0 P2E LV Source
+        P3         5       5              PASSIVE     PLB16F3
+        P9         5       5              PASSIVE     PLB16F9
+        P15        5       5              PASSIVE     PLB16F15
+
+[00653] JP2 JPU0 P2E LV Return
+        P3         13      13             PASSIVE     PLB16F3
+        P9         13      13             PASSIVE     PLB16F9
+        P15        13      13             PASSIVE     PLB16F15
+
+[00654] JP2 JPU0 P1W LV Source
+        P3         4       4              PASSIVE     PLB16F3
+        P9         4       4              PASSIVE     PLB16F9
+        P15        4       4              PASSIVE     PLB16F15
+
+[00655] JP2 JPU0 P1W LV Return
+        P3         12      12             PASSIVE     PLB16F3
+        P9         12      12             PASSIVE     PLB16F9
+        P15        12      12             PASSIVE     PLB16F15
+
+[00656] JP2 JPU0 P1E LV Source
+        P3         8       8              PASSIVE     PLB16F3
+
+[00657] JP2 JPU0 P1E LV Return
+        P3         16      16             PASSIVE     PLB16F3
+
+[00658] JP2_JPL0_P4_LV_Source
+        P22        5       5              PASSIVE     PLB16F22
+
+[00659] JP2_JPL0_P4_LV_Return
+        P22        13      13             PASSIVE     PLB16F22
+
+[00660] JP1 JPU0 P3 LV Source
+        P6         6       6              PASSIVE     PLB16F6
+        P12        6       6              PASSIVE     PLB16F12
+        P18        6       6              PASSIVE     PLB16F18
+
+[00661] JP1 JPU0 P3 LV Return
+        P6         14      14             PASSIVE     PLB16F6
+        P12        14      14             PASSIVE     PLB16F12
+        P18        14      14             PASSIVE     PLB16F18
+
+[00662] JP1 JPU0 P2W LV Source
+        P5         7       7              PASSIVE     PLB16F5
+
+[00663] JP1 JPU0 P2W LV Return
+        P5         15      15             PASSIVE     PLB16F5
+
+[00664] JP1 JPU0 P2E LV Source
+        P6         5       5              PASSIVE     PLB16F6
+        P12        5       5              PASSIVE     PLB16F12
+        P18        5       5              PASSIVE     PLB16F18
+
+[00665] JP1 JPU0 P2E LV Return
+        P6         13      13             PASSIVE     PLB16F6
+        P12        13      13             PASSIVE     PLB16F12
+        P18        13      13             PASSIVE     PLB16F18
+
+[00666] JP1 JPU0 P1W LV Source
+        P6         4       4              PASSIVE     PLB16F6
+        P12        4       4              PASSIVE     PLB16F12
+        P18        4       4              PASSIVE     PLB16F18
+
+[00667] JP1 JPU0 P1W LV Return
+        P6         12      12             PASSIVE     PLB16F6
+        P12        12      12             PASSIVE     PLB16F12
+        P18        12      12             PASSIVE     PLB16F18
+
+[00668] JP1 JPU0 P1E LV Source
+        P6         8       8              PASSIVE     PLB16F6
+
+[00669] JP1 JPU0 P1E LV Return
+        P6         16      16             PASSIVE     PLB16F6
+
+[00670] JP1_JPL0_P4_LV_Source
+        P19        5       5              PASSIVE     PLB16F19
+
+[00671] JP1_JPL0_P4_LV_Return
+        P19        13      13             PASSIVE     PLB16F19
+
+[00672] JP0 JPU0 P3 LV Source
+        P6         3       3              PASSIVE     PLB16F6
+        P12        3       3              PASSIVE     PLB16F12
+        P18        3       3              PASSIVE     PLB16F18
+
+[00673] JP0 JPU0 P3 LV Return
+        P6         11      11             PASSIVE     PLB16F6
+        P12        11      11             PASSIVE     PLB16F12
+        P18        11      11             PASSIVE     PLB16F18
+
+[00674] JP0 JPU0 P2E LV Source
+        P6         2       2              PASSIVE     PLB16F6
+        P12        2       2              PASSIVE     PLB16F12
+        P18        2       2              PASSIVE     PLB16F18
+
+[00675] JP0 JPU0 P2E LV Return
+        P6         10      10             PASSIVE     PLB16F6
+        P12        10      10             PASSIVE     PLB16F12
+        P18        10      10             PASSIVE     PLB16F18
+
+[00676] JP0 JPU0 P1W LV Source
+        P6         1       1              PASSIVE     PLB16F6
+        P12        1       1              PASSIVE     PLB16F12
+        P18        1       1              PASSIVE     PLB16F18
+
+[00677] JP0 JPU0 P1W LV Return
+        P6         9       9              PASSIVE     PLB16F6
+        P12        9       9              PASSIVE     PLB16F12
+        P18        9       9              PASSIVE     PLB16F18
+
+[00678] JP0 JPU0 P1E LV Source
+        P6         7       7              PASSIVE     PLB16F6
+
+[00679] JP0 JPU0 P1E LV Return
+        P6         15      15             PASSIVE     PLB16F6
+
+[00680] JP0_JPL0_P4_LV_Source
+        P19        1       1              PASSIVE     PLB16F19
+        P25        1       1              PASSIVE     PLB16F25
+        P31        1       1              PASSIVE     PLB16F31
+
+[00681] JP0_JPL0_P4_LV_Return
+        P19        9       9              PASSIVE     PLB16F19
+        P25        9       9              PASSIVE     PLB16F25
+        P31        9       9              PASSIVE     PLB16F31
+
+[00682] JD11_JPL2_GND_Slave
+        P23        16      16             PASSIVE     PLB16F23
+        P29        16      16             PASSIVE     PLB16F29
+
+[00683] JD11_JPL2_GND_Master
+        P20        15      15             PASSIVE     PLB16F20
+        P26        15      15             PASSIVE     PLB16F26
+
+[00684] JD11_JPL2_1V5_Slave
+        P23        8       8              PASSIVE     PLB16F23
+        P29        8       8              PASSIVE     PLB16F29
+
+[00685] JD11_JPL2_1V5_Master
+        P20        7       7              PASSIVE     PLB16F20
+        P26        7       7              PASSIVE     PLB16F26
+
+[00686] JD11_10_JPL2_GND
+        P20        14      14             PASSIVE     PLB16F20
+        P26        14      14             PASSIVE     PLB16F26
+
+[00687] JD11_10_JPL2_2V5
+        P20        6       6              PASSIVE     PLB16F20
+        P26        6       6              PASSIVE     PLB16F26
+
+[00688] JD10_JPL2_GND_Slave
+        P23        14      14             PASSIVE     PLB16F23
+        P29        14      14             PASSIVE     PLB16F29
+
+[00689] JD10_JPL2_GND_Master
+        P23        15      15             PASSIVE     PLB16F23
+        P29        15      15             PASSIVE     PLB16F29
+
+[00690] JD10_JPL2_1V5_Slave
+        P23        6       6              PASSIVE     PLB16F23
+        P29        6       6              PASSIVE     PLB16F29
+
+[00691] JD10_JPL2_1V5_Master
+        P23        7       7              PASSIVE     PLB16F23
+        P29        7       7              PASSIVE     PLB16F29
+
+[00692] JD9_JPL2_GND_Slave
+        P23        11      11             PASSIVE     PLB16F23
+        P29        11      11             PASSIVE     PLB16F29
+        P35        11      11             PASSIVE     PLB16F35
+
+[00693] JD9_JPL2_GND_Master
+        P23        13      13             PASSIVE     PLB16F23
+        P29        13      13             PASSIVE     PLB16F29
+        P35        13      13             PASSIVE     PLB16F35
+
+[00694] JD9_JPL2_1V5_Slave
+        P23        3       3              PASSIVE     PLB16F23
+        P29        3       3              PASSIVE     PLB16F29
+        P35        3       3              PASSIVE     PLB16F35
+
+[00695] JD9_JPL2_1V5_Master
+        P23        5       5              PASSIVE     PLB16F23
+        P29        5       5              PASSIVE     PLB16F29
+        P35        5       5              PASSIVE     PLB16F35
+
+[00696] JD9_8_JPL2_GND
+        P23        12      12             PASSIVE     PLB16F23
+        P29        12      12             PASSIVE     PLB16F29
+        P35        12      12             PASSIVE     PLB16F35
+
+[00697] JD9_8_JPL2_2V5
+        P23        4       4              PASSIVE     PLB16F23
+        P29        4       4              PASSIVE     PLB16F29
+        P35        4       4              PASSIVE     PLB16F35
+
+[00698] JD8_JPL2_GND_Slave
+        P20        13      13             PASSIVE     PLB16F20
+        P26        13      13             PASSIVE     PLB16F26
+        P32        13      13             PASSIVE     PLB16F32
+
+[00699] JD8_JPL2_GND_Master
+        P20        12      12             PASSIVE     PLB16F20
+        P26        12      12             PASSIVE     PLB16F26
+        P32        12      12             PASSIVE     PLB16F32
+
+[00700] JD8_JPL2_1V5_Slave
+        P20        5       5              PASSIVE     PLB16F20
+        P26        5       5              PASSIVE     PLB16F26
+        P32        5       5              PASSIVE     PLB16F32
+
+[00701] JD8_JPL2_1V5_Master
+        P20        4       4              PASSIVE     PLB16F20
+        P26        4       4              PASSIVE     PLB16F26
+        P32        4       4              PASSIVE     PLB16F32
+
+[00702] JD7_JPL1_GND_Slave
+        P20        10      10             PASSIVE     PLB16F20
+        P26        10      10             PASSIVE     PLB16F26
+        P32        10      10             PASSIVE     PLB16F32
+
+[00703] JD7_JPL1_GND_Master
+        P20        9       9              PASSIVE     PLB16F20
+        P26        9       9              PASSIVE     PLB16F26
+        P32        9       9              PASSIVE     PLB16F32
+
+[00704] JD7_JPL1_1V5_Slave
+        P20        2       2              PASSIVE     PLB16F20
+        P26        2       2              PASSIVE     PLB16F26
+        P32        2       2              PASSIVE     PLB16F32
+
+[00705] JD7_JPL1_1V5_Master
+        P20        1       1              PASSIVE     PLB16F20
+        P26        1       1              PASSIVE     PLB16F26
+        P32        1       1              PASSIVE     PLB16F32
+
+[00706] JD7_6_JPL1_GND
+        P20        11      11             PASSIVE     PLB16F20
+        P26        11      11             PASSIVE     PLB16F26
+        P32        11      11             PASSIVE     PLB16F32
+
+[00707] JD7_6_JPL1_2V5
+        P20        3       3              PASSIVE     PLB16F20
+        P26        3       3              PASSIVE     PLB16F26
+        P32        3       3              PASSIVE     PLB16F32
+
+[00708] JD6_JPL1_GND_Slave
+        P23        9       9              PASSIVE     PLB16F23
+        P29        9       9              PASSIVE     PLB16F29
+        P35        9       9              PASSIVE     PLB16F35
+
+[00709] JD6_JPL1_GND_Master
+        P23        10      10             PASSIVE     PLB16F23
+        P29        10      10             PASSIVE     PLB16F29
+        P35        10      10             PASSIVE     PLB16F35
+
+[00710] JD6_JPL1_1V5_Slave
+        P23        1       1              PASSIVE     PLB16F23
+        P29        1       1              PASSIVE     PLB16F29
+        P35        1       1              PASSIVE     PLB16F35
+
+[00711] JD6_JPL1_1V5_Master
+        P23        2       2              PASSIVE     PLB16F23
+        P29        2       2              PASSIVE     PLB16F29
+        P35        2       2              PASSIVE     PLB16F35
+
+[00712] JD5_JPL1_GND_Slave
+        P24        11      11             PASSIVE     PLB16F24
+        P30        11      11             PASSIVE     PLB16F30
+        P36        11      11             PASSIVE     PLB16F36
+
+[00713] JD5_JPL1_GND_Master
+        P24        13      13             PASSIVE     PLB16F24
+        P30        13      13             PASSIVE     PLB16F30
+        P36        13      13             PASSIVE     PLB16F36
+
+[00714] JD5_JPL1_1V5_Slave
+        P24        3       3              PASSIVE     PLB16F24
+        P30        3       3              PASSIVE     PLB16F30
+        P36        3       3              PASSIVE     PLB16F36
+
+[00715] JD5_JPL1_1V5_Master
+        P24        5       5              PASSIVE     PLB16F24
+        P30        5       5              PASSIVE     PLB16F30
+        P36        5       5              PASSIVE     PLB16F36
+
+[00716] JD5_4_JPL1_GND
+        P24        12      12             PASSIVE     PLB16F24
+        P30        12      12             PASSIVE     PLB16F30
+        P36        12      12             PASSIVE     PLB16F36
+
+[00717] JD5_4_JPL1_2V5
+        P24        4       4              PASSIVE     PLB16F24
+        P30        4       4              PASSIVE     PLB16F30
+        P36        4       4              PASSIVE     PLB16F36
+
+[00718] JD4_JPL1_GND_Slave
+        P21        13      13             PASSIVE     PLB16F21
+        P27        13      13             PASSIVE     PLB16F27
+        P33        13      13             PASSIVE     PLB16F33
+
+[00719] JD4_JPL1_GND_Master
+        P21        12      12             PASSIVE     PLB16F21
+        P27        12      12             PASSIVE     PLB16F27
+        P33        12      12             PASSIVE     PLB16F33
+
+[00720] JD4_JPL1_1V5_Slave
+        P21        5       5              PASSIVE     PLB16F21
+        P27        5       5              PASSIVE     PLB16F27
+        P33        5       5              PASSIVE     PLB16F33
+
+[00721] JD4_JPL1_1V5_Master
+        P21        4       4              PASSIVE     PLB16F21
+        P27        4       4              PASSIVE     PLB16F27
+        P33        4       4              PASSIVE     PLB16F33
+
+[00722] JD3_JPL0_GND_Slave
+        P24        14      14             PASSIVE     PLB16F24
+
+[00723] JD3_JPL0_GND_Master
+        P24        10      10             PASSIVE     PLB16F24
+
+[00724] JD3_JPL0_1V5_Slave
+        P24        6       6              PASSIVE     PLB16F24
+
+[00725] JD3_JPL0_1V5_Master
+        P24        2       2              PASSIVE     PLB16F24
+
+[00726] JD3_2_JPL0_GND
+        P21        15      15             PASSIVE     PLB16F21
+
+[00727] JD3_2_JPL0_2V5
+        P21        7       7              PASSIVE     PLB16F21
+
+[00728] JD2_JPL0_GND_Slave
+        P24        16      16             PASSIVE     PLB16F24
+
+[00729] JD2_JPL0_GND_Master
+        P24        15      15             PASSIVE     PLB16F24
+
+[00730] JD2_JPL0_1V5_Slave
+        P24        8       8              PASSIVE     PLB16F24
+
+[00731] JD2_JPL0_1V5_Master
+        P24        7       7              PASSIVE     PLB16F24
+
+[00732] JD1_JPL0_GND_Slave
+        P21        10      10             PASSIVE     PLB16F21
+        P27        10      10             PASSIVE     PLB16F27
+        P33        10      10             PASSIVE     PLB16F33
+
+[00733] JD1_JPL0_GND_Master
+        P21        11      11             PASSIVE     PLB16F21
+        P27        11      11             PASSIVE     PLB16F27
+        P33        11      11             PASSIVE     PLB16F33
+
+[00734] JD1_JPL0_1V5_Slave
+        P21        2       2              PASSIVE     PLB16F21
+        P27        2       2              PASSIVE     PLB16F27
+        P33        2       2              PASSIVE     PLB16F33
+
+[00735] JD1_JPL0_1V5_Master
+        P21        3       3              PASSIVE     PLB16F21
+        P27        3       3              PASSIVE     PLB16F27
+        P33        3       3              PASSIVE     PLB16F33
+
+[00736] JD1_0_JPL0_GND
+        P24        9       9              PASSIVE     PLB16F24
+        P30        9       9              PASSIVE     PLB16F30
+        P36        9       9              PASSIVE     PLB16F36
+
+[00737] JD1_0_JPL0_2V5
+        P24        1       1              PASSIVE     PLB16F24
+        P30        1       1              PASSIVE     PLB16F30
+        P36        1       1              PASSIVE     PLB16F36
+
+[00738] JD0_JPL0_GND_Slave
+        P21        14      14             PASSIVE     PLB16F21
+        P27        14      14             PASSIVE     PLB16F27
+        P33        14      14             PASSIVE     PLB16F33
+
+[00739] JD0_JPL0_GND_Master
+        P21        9       9              PASSIVE     PLB16F21
+        P27        9       9              PASSIVE     PLB16F27
+        P33        9       9              PASSIVE     PLB16F33
+
+[00740] JD0_JPL0_1V5_Slave
+        P21        6       6              PASSIVE     PLB16F21
+        P27        6       6              PASSIVE     PLB16F27
+        P33        6       6              PASSIVE     PLB16F33
+
+[00741] JD0_JPL0_1V5_Master
+        P21        1       1              PASSIVE     PLB16F21
+        P27        1       1              PASSIVE     PLB16F27
+        P33        1       1              PASSIVE     PLB16F33
+
