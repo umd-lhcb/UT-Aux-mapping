@@ -2,7 +2,7 @@
 #
 # Author: Yipeng Sun
 # License: BSD 2-clause
-# Last Change: Thu Dec 17, 2020 at 10:35 PM +0100
+# Last Change: Fri Jan 29, 2021 at 02:48 PM +0100
 
 import re
 
@@ -27,59 +27,85 @@ from UT_Aux_mapping.tabular import (
     boldmath, makecell
 )
 
-true_p2b2_netlist = input_dir / Path('true_p2b2.net')
-true_ppp_netlist = input_dir / Path('true_ppp.wirelist')
+
+######################################
+# Define parameters for output files #
+######################################
+
+p2b2_netlist_spec = {
+    'C-TOP-MAG-TRUE': PcadNaiveReader(input_dir / Path('true_p2b2.net')).read()
+}
+p2b2_netlist_spec['C-BOT-IP-TRUE'] = p2b2_netlist_spec['C-TOP-MAG-TRUE']
+
+ppp_netlist_spec = {
+    'C-TOP-MAG-TRUE': WirelistNaiveReader(
+        input_dir / Path('true_ppp_mag.wirelist')).read(),
+    'C-BOT-IP-TRUE': WirelistNaiveReader(
+        input_dir / Path('true_ppp_ip.wirelist')).read(),
+}
 
 output_spec = {
     'C-TOP-MAG-TRUE': {
         'Alpha': {
             'title': boldmath(r'\alpha'),
-            'variant': 'Full',
             'color': 'Red',
             'cable_length': 150,
+            'cable_length_adj': {'JPU1': -20, 'JPU2': -10, 'JPU3': 0},
             'index': 0
         },
         'Beta':  {
             'title': boldmath(r'\beta'),
-            'variant': 'Partial',
             'color': 'Green',
             'cable_length': 120,
+            'cable_length_adj': {'JPU1': -20, 'JPU2': -10, 'JPU3': 0},
             'index': 1
         },
         'Gamma': {
             'title': boldmath(r'\gamma'),
-            'variant': 'Partial',
             'color': 'White',
             'cable_length': 90,
+            'cable_length_adj': {'JPU1': -20, 'JPU2': -10, 'JPU3': 0},
+            'index': 2
+        }
+    },
+    'C-BOT-IP-TRUE': {
+        'Alpha': {
+            'title': boldmath(r'\alpha'),
+            'color': 'Red',
+            'cable_length': 150,
+            'cable_length_adj': {'JPU1': -20, 'JPU2': -10, 'JPU3': 0},
+            'index': 0
+        },
+        'Beta':  {
+            'title': boldmath(r'\beta'),
+            'color': 'Green',
+            'cable_length': 120,
+            'cable_length_adj': {'JPU1': -20, 'JPU2': -10, 'JPU3': 0},
+            'index': 1
+        },
+        'Gamma': {
+            'title': boldmath(r'\gamma'),
+            'color': 'White',
+            'cable_length': 90,
+            'cable_length_adj': {'JPU1': -20, 'JPU2': -10, 'JPU3': 0},
             'index': 2
         }
     }
 }
-cable_length_adj = {'JPU1': -20, 'JPU2': -10, 'JPU3': 0}
-
-
-#####################
-# Read all netlists #
-#####################
-
-P2B2Reader = PcadNaiveReader(true_p2b2_netlist)
-p2b2_descr = P2B2Reader.read()
-
-PPPReader = WirelistNaiveReader(true_ppp_netlist)
-ppp_descr = PPPReader.read()
 
 
 ############################################################
 # Fix PPP netname irregularities and only keep JPU entries #
 ############################################################
 
-# This stores name before and after the fix
-ppp_name_errata = {k: ppp_netname_regulator(k) for k in ppp_descr.keys()}
-ppp_name_errata_inverse = dict(map(reversed, ppp_name_errata.items()))
-ppp_descr = {ppp_name_errata[k]: v for k, v in ppp_descr.items()}
+def regularize_ppp_descr(raw_ppp_descr):
+    # This stores name before and after the fix
+    ppp_name_errata = {k: ppp_netname_regulator(k)
+                       for k in raw_ppp_descr.keys()}
+    ppp_descr = {ppp_name_errata[k]: v for k, v in raw_ppp_descr.items()}
 
-# For this part, only the JPU connectors are relevant
-ppp_descr = {k: v for k, v in ppp_descr.items() if 'JPU' in k}
+    return {k: v for k, v in ppp_descr.items() if 'JPU' in k}, \
+        dict(map(reversed, ppp_name_errata.items()))  # <-- inverse of ppp_name_errata
 
 
 ####################################################
@@ -90,17 +116,25 @@ headers_csv = []
 headers_tex = []
 
 
-def jpu_cable_length(jpu, base_length, adj_length=cable_length_adj):
+def jpu_cable_length(jpu, base_length, adj_length):
     return base_length+adj_length[jpu[0]]
 
 
-for title_pre, attrs in output_spec.items():
+for loc_in_detector, attrs in output_spec.items():
+    print('====')
+    print('Working on: {}'.format(loc_in_detector))
+    print('====')
     for geo_loc, var_attrs in attrs.items():
+        print('----')
+        print('working on BP: {}'.format(geo_loc))
+        print('----')
         var_attrs['data'] = []
-        var_attrs['filename'] = '-'.join(['P2B2toPPP', title_pre, geo_loc])
-        var_attrs['title'] = '-'.join([title_pre, var_attrs['title']])
+        var_attrs['filename'] = '-'.join(['P2B2toPPP', loc_in_detector, geo_loc])
+        var_attrs['title'] = '-'.join([loc_in_detector, var_attrs['title']])
 
-        var = var_attrs['variant']
+        p2b2_descr = p2b2_netlist_spec[loc_in_detector]
+        ppp_descr, ppp_name_errata_inverse = regularize_ppp_descr(
+            ppp_netlist_spec[loc_in_detector])
 
         for net, ppp_comp_list in ppp_descr.items():
             try:
@@ -157,7 +191,8 @@ for title_pre, attrs in output_spec.items():
             if first_run:
                 headers_csv.append('Depop?')
 
-            row.append(jpu_cable_length(jpu, var_attrs['cable_length']))
+            row.append(jpu_cable_length(jpu, var_attrs['cable_length'],
+                                        var_attrs['cable_length_adj']))
             if first_run:
                 headers_csv.append('Length [cm]')
                 headers_tex.append(makecell('Length', '[cm]'))
