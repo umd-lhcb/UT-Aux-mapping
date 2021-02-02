@@ -2,7 +2,7 @@
 #
 # Author: Yipeng Sun
 # License: BSD 2-clause
-# Last Change: Fri Jan 29, 2021 at 03:02 PM +0100
+# Last Change: Tue Feb 02, 2021 at 08:00 PM +0100
 
 import re
 
@@ -53,27 +53,28 @@ ppp_netlist_spec = {
         input_dir / Path('mirror_ppp_ip.wirelist')).read(),
 }
 
+cable_length_adj = {'JPU1': -20, 'JPU2': -10, 'JPU3': 0}
 output_spec = {
     'C-TOP-MAG-TRUE': {
         'Alpha': {
             'title': boldmath(r'\alpha'),
             'color': 'Red',
             'cable_length': 150,
-            'cable_length_adj': {'JPU1': -20, 'JPU2': -10, 'JPU3': 0},
+            'cable_length_adj': cable_length_adj,
             'index': 0
         },
         'Beta':  {
             'title': boldmath(r'\beta'),
             'color': 'Green',
             'cable_length': 120,
-            'cable_length_adj': {'JPU1': -20, 'JPU2': -10, 'JPU3': 0},
+            'cable_length_adj': cable_length_adj,
             'index': 1
         },
         'Gamma': {
             'title': boldmath(r'\gamma'),
             'color': 'White',
             'cable_length': 90,
-            'cable_length_adj': {'JPU1': -20, 'JPU2': -10, 'JPU3': 0},
+            'cable_length_adj': cable_length_adj,
             'index': 2
         }
     },
@@ -82,21 +83,21 @@ output_spec = {
             'title': boldmath(r'\alpha'),
             'color': 'Red',
             'cable_length': 150,
-            'cable_length_adj': {'JPU1': 0, 'JPU2': -10, 'JPU3': -20},
+            'cable_length_adj': cable_length_adj,
             'index': 0
         },
         'Beta':  {
             'title': boldmath(r'\beta'),
             'color': 'Green',
             'cable_length': 120,
-            'cable_length_adj': {'JPU1': 0, 'JPU2': -10, 'JPU3': -20},
+            'cable_length_adj': cable_length_adj,
             'index': 1
         },
         'Gamma': {
             'title': boldmath(r'\gamma'),
             'color': 'White',
             'cable_length': 90,
-            'cable_length_adj': {'JPU1': 0, 'JPU2': -10, 'JPU3': -20},
+            'cable_length_adj': cable_length_adj,
             'index': 2
         }
     },
