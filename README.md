@@ -4,8 +4,7 @@
 
 Python scripts to generate various UT auxiliary mappings:
 
-* `TrueP2B2toPPPMapping.py`: cable mapping for true P2B2 -> true PPP
-* `MirrorP2B2toPPPMapping.py`: cable mapping for mirror P2B2 -> mirror PPP
+* `P2B2toPPPMapping.py`: cable mapping for true/mirror P2B2 -> true/mirror PPP
 * `PPPDebug.py`: Print out unique netnames between P2B2 and PPP
 * All other scripts are no longer actively maintained. Though some of their
   outputs are available at [`0.4.3`](https://github.com/umd-lhcb/UT-Aux-mapping/releases/tag/0.4.3).
