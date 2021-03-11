@@ -18,7 +18,3 @@ Once that is done, if your `nix` has `flake` support:
 ```
 nix develop -c make all
 ```
-else:
-```
-nix-shell --run "make all"
-```
