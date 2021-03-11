@@ -8,13 +8,9 @@
       url = "github:umd-lhcb/pyUTM";
       inputs = { inherit nixpkgs flake-utils; };
     };
-    flake-compat = {
-      url = "github:edolstra/flake-compat";
-      flake = false;
-    };
   };
 
-  outputs = { self, nixpkgs, flake-utils, pyUTM, flake-compat }:
+  outputs = { self, nixpkgs, flake-utils, pyUTM }:
     flake-utils.lib.eachDefaultSystem (system:
       let
         pkgs = import nixpkgs {
