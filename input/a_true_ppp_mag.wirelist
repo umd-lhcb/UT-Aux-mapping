@@ -466,12 +466,12 @@ PLB16F36                        P36            PLB16F8000
 [00092] JP2 JPU0 P2W LV Source
         P2         7       7              PASSIVE     PLB16F2
 
-[00093] JP2 JPU0 P3 LV Return
+[00093] JP2 JPU1 P3 LV Return
         P3         14      14             PASSIVE     PLB16F3
         P9         14      14             PASSIVE     PLB16F9
         P15        14      14             PASSIVE     PLB16F15
 
-[00094] JP2 JPU0 P3 LV Source
+[00094] JP2 JPU1 P3 LV Source
         P3         6       6              PASSIVE     PLB16F3
         P9         6       6              PASSIVE     PLB16F9
         P15        6       6              PASSIVE     PLB16F15
@@ -496,10 +496,10 @@ PLB16F36                        P36            PLB16F8000
         P9         1       1              PASSIVE     PLB16F9
         P15        1       1              PASSIVE     PLB16F15
 
-[00099] JP3 JPU1 P1E LV Return
+[00099] JP3 JPU0 P1E LV Return
         P3         15      15             PASSIVE     PLB16F3
 
-[00100] JP3 JPU1 P1E LV Source
+[00100] JP3 JPU0 P1E LV Source
         P3         7       7              PASSIVE     PLB16F3
 
 [00101] JP3 JPU1 P2E LV Return
@@ -1593,4 +1593,3 @@ PLB16F36                        P36            PLB16F8000
 
 [00740] UTbX_9C_T_MG_P3_HV_Return
         DS4        25      25             PASSIVE     DSub37
-
