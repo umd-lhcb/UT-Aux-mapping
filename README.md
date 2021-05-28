@@ -22,6 +22,6 @@ nix develop -c make all
 ## PPP correspondence
 
 - `A-BOT-IP-MIRROR  <-> C-TOP-IP-MIRROR` (`a_mirror_ppp_ip <-> c_mirror_ppp_ip`)
-- `A-TOP-MAG-MIRROR <-> C-BOT-MAG-MIRROR?` (`a_mirror_ppp_mag <-> ?`)
-- `A-TOP-IP-TRUE    <-> C-BOT-IP-TRUE?` (`a_true_ppp_ip <-> ?`)
+- `A-TOP-MAG-MIRROR <-> C-BOT-MAG-MIRROR` (`a_mirror_ppp_mag <-> c_mirror_ppp_mag`)
+- `A-TOP-IP-TRUE    <-> C-BOT-IP-TRUE` (`a_true_ppp_ip <-> c_true_ppp_ip`)
 - `A-BOT-MAG-TRUE   <-> C-TOP-MAG-TRUE` (`a_true_ppp_mag <-> c_true_ppp_mag`)
