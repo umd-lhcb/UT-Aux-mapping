@@ -2,7 +2,7 @@
 #
 # Author: Yipeng Sun
 # License: BSD 2-clause
-# Last Change: Fri May 28, 2021 at 03:05 AM +0200
+# Last Change: Fri May 28, 2021 at 03:36 AM +0200
 
 import re
 
@@ -42,6 +42,11 @@ p2b2_netlist_spec = {
 p2b2_netlist_spec['C-BOT-IP-TRUE'] = p2b2_netlist_spec['C-TOP-MAG-TRUE']
 p2b2_netlist_spec['C-TOP-IP-MIRROR'] = p2b2_netlist_spec['C-BOT-MAG-MIRROR']
 
+p2b2_netlist_spec['A-BOT-IP-MIRROR'] = p2b2_netlist_spec['C-TOP-IP-MIRROR']
+p2b2_netlist_spec['A-TOP-MAG-MIRROR'] = p2b2_netlist_spec['C-BOT-MAG-MIRROR']
+p2b2_netlist_spec['A-TOP-IP-TRUE'] = p2b2_netlist_spec['C-BOT-IP-TRUE']
+p2b2_netlist_spec['A-BOT-MAG-TRUE'] = p2b2_netlist_spec['C-TOP-MAG-TRUE']
+
 ppp_netlist_spec = {
     'C-TOP-MAG-TRUE': WirelistNaiveReader(
         input_dir / Path('c_true_ppp_mag.wirelist')).read(),
@@ -51,6 +56,15 @@ ppp_netlist_spec = {
         input_dir / Path('c_mirror_ppp_mag.wirelist')).read(),
     'C-TOP-IP-MIRROR': WirelistNaiveReader(
         input_dir / Path('c_mirror_ppp_ip.wirelist')).read(),
+
+    'A-BOT-MAG-TRUE': WirelistNaiveReader(
+        input_dir / Path('a_true_ppp_mag.wirelist')).read(),
+    'A-BOT-IP-MIRROR': WirelistNaiveReader(
+        input_dir / Path('a_mirror_ppp_ip.wirelist')).read(),
+    'A-TOP-IP-TRUE': WirelistNaiveReader(
+        input_dir / Path('a_true_ppp_ip.wirelist')).read(),
+    'A-TOP-MAG-MIRROR': WirelistNaiveReader(
+        input_dir / Path('a_mirror_ppp_mag.wirelist')).read(),
 }
 
 cable_length_adj = {'JPU1': -20, 'JPU2': -10, 'JPU3': 0}
@@ -105,6 +119,11 @@ output_spec = {
 
 output_spec['C-BOT-IP-TRUE'] = deepcopy(output_spec['C-TOP-MAG-TRUE'])
 output_spec['C-TOP-IP-MIRROR'] = deepcopy(output_spec['C-BOT-MAG-MIRROR'])
+
+output_spec['A-BOT-IP-MIRROR'] = deepcopy(output_spec['C-TOP-IP-MIRROR'])
+output_spec['A-TOP-MAG-MIRROR'] = deepcopy(output_spec['C-BOT-MAG-MIRROR'])
+output_spec['A-TOP-IP-TRUE'] = deepcopy(output_spec['C-BOT-IP-TRUE'])
+output_spec['A-BOT-MAG-TRUE'] = deepcopy(output_spec['C-TOP-MAG-TRUE'])
 
 
 ############################################################
