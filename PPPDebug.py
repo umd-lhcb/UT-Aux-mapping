@@ -2,7 +2,7 @@
 #
 # Author: Yipeng Sun
 # License: BSD 2-clause
-# Last Change: Wed Dec 16, 2020 at 02:24 AM +0100
+# Last Change: Fri May 28, 2021 at 03:43 AM +0200
 
 from pathlib import Path
 from itertools import permutations
@@ -26,7 +26,7 @@ def read_net(path, name, ext='wirelist', reader=WirelistNaiveReader):
     return loc_reader.read()
 
 
-ppp_vars = ['true_ppp', 'mirror_ppp']
+ppp_vars = ['c_true_ppp_mag', 'c_mirror_ppp_mag']
 netlists.update({k: read_net(input_dir, k) for k in ppp_vars})
 
 p2b2_vars = ['true_p2b2', 'mirror_p2b2']
