@@ -1,6 +1,6 @@
 # Author: Yipeng Sun
 # License: BSD 2-clause
-# Last Change: Fri Jan 29, 2021 at 03:06 PM +0100
+# Last Change: Fri May 28, 2021 at 03:08 AM +0200
 
 export PATH	:= $(shell pwd):$(PATH)
 
@@ -40,8 +40,9 @@ P2B2toPPP-C-TOP-IP-MIRROR-Alpha.csv P2B2toPPP-C-TOP-IP-MIRROR-Beta.csv P2B2toPPP
 P2B2toPPP-C-TOP-IP-MIRROR-Alpha.tex P2B2toPPP-C-TOP-IP-MIRROR-Beta.tex P2B2toPPP-C-TOP-IP-MIRROR-Gamma.tex \
 &: \
 	P2B2toPPPMapping.py UT_Aux_mapping/helpers.py UT_Aux_mapping/tabular.py \
-	input/true_p2b2.net input/true_ppp_mag.wirelist input/true_ppp_ip.wirelist \
-	input/mirror_p2b2.net input/mirror_ppp_mag.wirelist input/mirror_ppp_ip.wirelist
+	input/true_p2b2.net input/mirror_p2b2.net \
+	input/c_true_ppp_mag.wirelist input/c_true_ppp_ip.wirelist \
+	input/c_mirror_ppp_mag.wirelist input/c_mirror_ppp_ip.wirelist
 	$<
 
 

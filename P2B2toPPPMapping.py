@@ -2,7 +2,7 @@
 #
 # Author: Yipeng Sun
 # License: BSD 2-clause
-# Last Change: Tue Feb 02, 2021 at 08:00 PM +0100
+# Last Change: Fri May 28, 2021 at 03:05 AM +0200
 
 import re
 
@@ -44,13 +44,13 @@ p2b2_netlist_spec['C-TOP-IP-MIRROR'] = p2b2_netlist_spec['C-BOT-MAG-MIRROR']
 
 ppp_netlist_spec = {
     'C-TOP-MAG-TRUE': WirelistNaiveReader(
-        input_dir / Path('true_ppp_mag.wirelist')).read(),
+        input_dir / Path('c_true_ppp_mag.wirelist')).read(),
     'C-BOT-IP-TRUE': WirelistNaiveReader(
-        input_dir / Path('true_ppp_ip.wirelist')).read(),
+        input_dir / Path('c_true_ppp_ip.wirelist')).read(),
     'C-BOT-MAG-MIRROR': WirelistNaiveReader(
-        input_dir / Path('mirror_ppp_mag.wirelist')).read(),
+        input_dir / Path('c_mirror_ppp_mag.wirelist')).read(),
     'C-TOP-IP-MIRROR': WirelistNaiveReader(
-        input_dir / Path('mirror_ppp_ip.wirelist')).read(),
+        input_dir / Path('c_mirror_ppp_ip.wirelist')).read(),
 }
 
 cable_length_adj = {'JPU1': -20, 'JPU2': -10, 'JPU3': 0}
